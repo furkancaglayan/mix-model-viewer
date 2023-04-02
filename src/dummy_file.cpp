@@ -1,6 +1,9 @@
-#include <iostream>
+#include <GL/glew.h>
 
 int main()
 {
-    return 4;
+    GLenum err = glewInit();
+    if (GLEW_OK != err)
+    {
+    }
 }
