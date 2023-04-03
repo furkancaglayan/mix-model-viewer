@@ -20,27 +20,26 @@ project "MixModelViewer"
    location "mix-model-viewer"
    
    includedirs {"../dependencies/*/include", "../dependencies/*" }
-   files { "mix-model-viewer/src/**.h", "mix-model-viewer/src/**.cpp", "mix-model-viewer/src/dummy_file.cpp" }
+   libdirs {"../dependencies/*/lib", "../dependencies/*/lib/%{cfg.buildcfg}" }
+   bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/%{cfg.buildcfg}"}
+   targetdir "../bin/%{cfg.buildcfg}"
 
+   files { "mix-model-viewer/src/**.h", "mix-model-viewer/src/**.cpp" }
    
    filter "configurations:Debug"
       defines { "DEBUG" }
       runtime "Debug"
       symbols "Full"
 		optimize "Off"
-      targetdir "mix-model-viewer/Debug"
-      libdirs {"../dependencies/*/lib", "../dependencies/*/lib/Debug" }
-      bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Debug"}
-      links {"freeglutd", "glew32", "glfw3"}
+      links {"glew32", "freeglutd", "glfw3"}
 
    filter "configurations:Release"
       defines { "NDEBUG" }
       runtime "Release"
       optimize "On"
-      targetdir "mix-model-viewer/Release"
       libdirs {"../dependencies/**/lib", "../dependencies/*/lib/Release" }
       bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Release"}
-      links {"freeglut", "glew32", "glfw3"}
+      links {"glew32", "freeglut", "glfw3"}
 
    filter "configurations"
       defines {"TARGET_SYSTEM_WIN64"}
@@ -53,4 +52,4 @@ project "MixModelViewer"
       links { "GL" }
 
 
-
+include "../dependencies/dependencies.lua"

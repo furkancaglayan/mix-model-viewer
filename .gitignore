@@ -27,3 +27,4 @@
 
 # build
 build/mix-model-viewer
+bin
