@@ -2,40 +2,34 @@
 #include <stdio.h>
 #include <iostream>
 
-GLFWwindow* mix::core::mixWindow::get_glfw_window()
+inline int mix::core::mixWindow::get_key(int key) noexcept
 {
-    return _window;
+    return glfwGetKey(_window, key);
 }
 
-void mix::core::mixWindow::set_context_as_current()
+void mix::core::mixWindow::set_context_as_current() noexcept
 {
     glfwMakeContextCurrent(_window);
 }
 
 mix::core::mixWindow::~mixWindow()
 {
-
 }
 
-GLFWmonitor* mix::core::mixWindow::get_monitor()
+void mix::core::mixWindow::close() noexcept
 {
-    return _monitor;
+    glfwDestroyWindow(_window);
 }
 
-void mix::core::mixWindow::set_fullscreen()
-{
-    //glfwSetWindowMonitor()
-}
-
-mix::core::mixWindow::mixWindow(unsigned int width, unsigned int height)
+void mix::core::mixWindow::initialize() noexcept
 {
     std::cout << "Creating Window" << std::endl;
 
-    _monitor = glfwGetPrimaryMonitor();
-    const GLFWvidmode* _mode = glfwGetVideoMode(_monitor);
+    const GLFWvidmode* _mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
 
-    if (_mode == nullptr)
+    if (!_mode)
     {
+        glfwTerminate();
         printf("Cant retrieve mode");
     }
 
@@ -44,10 +38,7 @@ mix::core::mixWindow::mixWindow(unsigned int width, unsigned int height)
     glfwWindowHint(GLFW_BLUE_BITS, _mode->blueBits);
     glfwWindowHint(GLFW_REFRESH_RATE, _mode->refreshRate);
 
-    _width = width;
-    _height = height;
-
-    _window = glfwCreateWindow(width, height, "GLFW: Window created", NULL, NULL);
+    _window = glfwCreateWindow(_width, _height, "GLFW: Window created", NULL, NULL);
     if (!_window)
     {
         glfwTerminate();
