@@ -19,9 +19,6 @@ project "MixModelViewer"
    kind "ConsoleApp"
    location "mix-model-viewer"
    
-   links {"glew32"}
-   links {"glfw3"}
- 
    includedirs {"../dependencies/*/include", "../dependencies/*" }
    files { "mix-model-viewer/src/**.h", "mix-model-viewer/src/**.cpp", "mix-model-viewer/src/dummy_file.cpp" }
 
@@ -34,7 +31,7 @@ project "MixModelViewer"
       targetdir "mix-model-viewer/Debug"
       libdirs {"../dependencies/*/lib", "../dependencies/*/lib/Debug" }
       bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Debug"}
-      links {"freeglutd"}
+      links {"freeglutd", "glew32", "glfw3"}
 
    filter "configurations:Release"
       defines { "NDEBUG" }
@@ -43,7 +40,7 @@ project "MixModelViewer"
       targetdir "mix-model-viewer/Release"
       libdirs {"../dependencies/**/lib", "../dependencies/*/lib/Release" }
       bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Release"}
-      links {"freeglut"}
+      links {"freeglut", "glew32", "glfw3"}
 
    filter "configurations"
       defines {"TARGET_SYSTEM_WIN64"}
