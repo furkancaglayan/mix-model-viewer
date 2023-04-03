@@ -1,32 +1,36 @@
 
-os.mkdir("mix-model-viewer")
-
 workspace "MixModelViewer"
    configurations { "Debug", "Release" }
+   language "C++"
+	cppdialect "C++14"
    platforms {"Win64"}
    location "mix-model-viewer"
-   targetdir "mix-model-viewer"
+   targetdir "../bin/%{cfg.system}/%{cfg.buildcfg}"
+   architecture "x86_64"
+   exceptionhandling "On"
+   functionlevellinking  "On"
+   editAndContinue "On"
+   flags { "FatalCompileWarnings", "MultiProcessorCompile" }
+
    filter { "platforms:Win64" }
       system "Windows"
-      architecture "x86_64"
 
 project "MixModelViewer"
    kind "ConsoleApp"
-   language "C++"
    location "mix-model-viewer"
    
    links {"glew32"}
    links {"glfw3"}
-
  
    includedirs {"../dependencies/*/include", "../dependencies/*" }
-
-   files { "../src/**.h", "../src/**.cpp", "../src/dummy_file.cpp" }
+   files { "mix-model-viewer/src/**.h", "mix-model-viewer/src/**.cpp", "mix-model-viewer/src/dummy_file.cpp" }
 
    
    filter "configurations:Debug"
       defines { "DEBUG" }
-      symbols "On"
+      runtime "Debug"
+      symbols "Full"
+		optimize "Off"
       targetdir "mix-model-viewer/Debug"
       libdirs {"../dependencies/*/lib", "../dependencies/*/lib/Debug" }
       bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Debug"}
@@ -34,6 +38,7 @@ project "MixModelViewer"
 
    filter "configurations:Release"
       defines { "NDEBUG" }
+      runtime "Release"
       optimize "On"
       targetdir "mix-model-viewer/Release"
       libdirs {"../dependencies/**/lib", "../dependencies/*/lib/Release" }
