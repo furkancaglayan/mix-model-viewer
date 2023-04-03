@@ -1,12 +1,4 @@
-[submodule "dependencies/glew"]
-	path = dependencies/glew
-	url = https://github.com/nigels-com/glew.git
-[submodule "dependencies/freeglut"]
-	path = dependencies/freeglut
-	url = https://github.com/FreeGLUTProject/freeglut.git
 [submodule "dependencies/imgui"]
 	path = dependencies/imgui
 	url = https://github.com/ocornut/imgui.git
-[submodule "dependencies/glfw"]
-	path = dependencies/glfw
-	url = https://github.com/glfw/glfw.git
+
