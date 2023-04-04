@@ -1,17 +1,21 @@
 #pragma once
+#include <memory>
 #include <GLFW/glfw3.h>
 #include "../core/mixWindow.h"
-#include <memory>
+
 namespace mix
 {
 	class mixEditor
 	{
 	public:
-		bool _should_run;
+		bool _should_run = false;
 		void run();
 		void start();
 		inline void select_monitor(int num);
-	private:
-		std::unique_ptr<core::mixWindow> _window;
+		static std::unique_ptr<mixEditor> _instance;
+		static void create_new();
+
+		mixEditor() = default;
+		std::unique_ptr<core::mixWindow> _window = nullptr;
 	};
 }

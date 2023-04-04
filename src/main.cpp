@@ -19,11 +19,9 @@ int main()
 		std::cout << glewGetErrorString(err) << std::endl;
 	}
 
-	auto editor = std::make_unique<mix::mixEditor>();
-	editor.get()->start();
-
-	while (editor.get()->_should_run)
+	mix::mixEditor::create_new();
+	while (mix::mixEditor::_instance->_should_run)
 	{
-		editor.get()->run();
+		mix::mixEditor::_instance->run();
 	}
 }

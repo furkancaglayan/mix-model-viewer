@@ -14,10 +14,10 @@ namespace mix
 
 		class mixWindow
 		{
+			using uint = unsigned int;
 		public:
 
-			mixWindow() = delete;
-			mixWindow(GLuint width, GLuint height) : _width{ width }, _height{ height }
+			mixWindow(uint width, uint height) : _width{ width }, _height{ height }, _x{ 100 }, _y{ 100 }
 			{
 			}
 			~mixWindow();
@@ -25,22 +25,43 @@ namespace mix
 			void set_context_as_current() noexcept;
 			void initialize() noexcept;
 			inline void close() noexcept;
-			inline void set_size(GLuint width, GLuint height) noexcept;
-			inline int get_key(int key) noexcept;
-			inline void set_window_mode(WindowMode mode);
+			int get_key(int key) noexcept;
+			void set_window_mode(WindowMode mode);
 			void set_monitor(GLFWmonitor* monitor);
 
 			GLFWwindow* get_glfw_window() const noexcept;
 			static constexpr int _context_version_min = 3;
 			static constexpr int _context_version_max = 3;
 
+			void cache_pos(int x, int y) 
+			{
+				if (_mode == WindowMode::Windowed)
+				{
+					_x = x;
+					_y = y;
+				}
+			}
+
+			void cache_size(int w, int h)
+			{
+				if (_mode == WindowMode::Windowed)
+				{
+					_width = w;
+					_height = h;
+				}
+			}
+
 		private:
 			GLFWwindow* _glfw_window = nullptr;
 			GLFWmonitor* _monitor = nullptr;
 
 			WindowMode _mode = WindowMode::Windowed;
-			GLuint _width;
-			GLuint _height;
+
+			//TODO: pack into a struct
+			uint _width;
+			uint _height;
+			uint _x;
+			uint _y;
 		};
 	}
 }

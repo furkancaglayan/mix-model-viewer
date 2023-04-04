@@ -2,50 +2,47 @@
 #include <stdio.h>
 #include <iostream>
 
-void window_close_callback(GLFWwindow* window);
-
-inline int mix::core::mixWindow::get_key(int key) noexcept
+int mix::core::mixWindow::get_key(int key) noexcept
 {
     return glfwGetKey(_glfw_window, key);
 }
 
-inline void mix::core::mixWindow::set_window_mode(WindowMode mode)
+void mix::core::mixWindow::set_window_mode(WindowMode mode)
 {
+    _mode = mode;
     if (mode == WindowMode::Windowed)
     {
-        set_size(_width, _height);
+        glfwSetWindowMonitor(_glfw_window, NULL, _x, _y, _width, _height, 0);
     }
     else if (mode == WindowMode::FullScreen)
     {
         const GLFWvidmode* _mode = glfwGetVideoMode(_monitor);
-        set_size(_mode->width, _mode->height);
+        glfwSetWindowMonitor(_glfw_window, _monitor, 0, 0, _mode->width, _mode->height, _mode->refreshRate);
     }
 }
 
 void mix::core::mixWindow::set_monitor(GLFWmonitor* monitor)
 {
-    _monitor = monitor;
-    const GLFWvidmode* mode = glfwGetVideoMode(_monitor);
-
-    if (!mode)
-    {
-        glfwTerminate();
-        printf("Cant retrieve mode");
-    }
-
-    glfwWindowHint(GLFW_RED_BITS, mode->redBits);
-    glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
-    glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
-    glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-
     if (_mode == WindowMode::FullScreen)
     {
+        _monitor = monitor;
+        const GLFWvidmode* mode = glfwGetVideoMode(_monitor);
+        if (!mode)
+        {
+            glfwTerminate();
+            printf("Cant retrieve mode");
+        }
+
+        glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+        glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
+        glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
+        glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
+
         glfwSetWindowMonitor(_glfw_window, monitor, 0, 0, mode->width, mode->height, mode->refreshRate);
     }
     else if (_mode == WindowMode::Windowed)
     {
-        //TODO_cache xpos and ypos
-        glfwSetWindowMonitor(_glfw_window, NULL, 0, 0, _width, _height, 0);
+        glfwSetWindowMonitor(_glfw_window, NULL, _x, _y, _width, _height, 0);
     }
 }
 
@@ -68,11 +65,6 @@ inline void mix::core::mixWindow::close() noexcept
     glfwDestroyWindow(_glfw_window);
 }
 
-inline void mix::core::mixWindow::set_size(GLuint width, GLuint height) noexcept
-{
-    glfwSetWindowSize(_glfw_window, width, height);
-}
-
 void mix::core::mixWindow::initialize() noexcept
 {
     std::cout << "Creating Window" << std::endl;
@@ -90,15 +82,5 @@ void mix::core::mixWindow::initialize() noexcept
     }
     set_monitor(glfwGetPrimaryMonitor());
 
-    glfwSetWindowCloseCallback(_glfw_window, window_close_callback);
-
     set_context_as_current();
-}
-
-/// <summary>
-/// Can be used to clear close flag if it should not close.
-/// </summary>
-/// <param name="window"></param>
-void window_close_callback(GLFWwindow* window)
-{
 }
