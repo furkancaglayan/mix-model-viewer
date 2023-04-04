@@ -14,26 +14,33 @@ namespace mix
 
 		class mixWindow
 		{
-			public:
+		public:
 
-				mixWindow() = delete;
-				mixWindow(GLuint width, GLuint height) : _width{ width }, _height{ height }
-				{
-				}
-				~mixWindow();
+			mixWindow() = delete;
+			mixWindow(GLuint width, GLuint height) : _width{ width }, _height{ height }
+			{
+			}
+			~mixWindow();
 
-				void set_context_as_current() noexcept;
-				void initialize() noexcept;
-				void close() noexcept;
-				inline int get_key(int key) noexcept;
+			void set_context_as_current() noexcept;
+			void initialize() noexcept;
+			inline void close() noexcept;
+			inline void set_size(GLuint width, GLuint height) noexcept;
+			inline int get_key(int key) noexcept;
+			inline void set_window_mode(WindowMode mode);
+			void set_monitor(GLFWmonitor* monitor);
 
-				static constexpr int _context_version_min = 4;
-				static constexpr int _context_version_max = 6;
+			GLFWwindow* get_glfw_window() const noexcept;
+			static constexpr int _context_version_min = 3;
+			static constexpr int _context_version_max = 3;
 
-			private:
-				GLFWwindow* _window = nullptr;
-				GLuint _width;
-				GLuint _height;
+		private:
+			GLFWwindow* _glfw_window = nullptr;
+			GLFWmonitor* _monitor = nullptr;
+
+			WindowMode _mode = WindowMode::Windowed;
+			GLuint _width;
+			GLuint _height;
 		};
 	}
 }
