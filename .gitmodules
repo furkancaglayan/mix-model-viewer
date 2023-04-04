@@ -2,3 +2,6 @@
 	path = dependencies/imgui
 	url = https://github.com/ocornut/imgui.git
 
+[submodule "dependencies/assimp"]
+	path = dependencies/assimp
+	url = https://github.com/assimp/assimp.git
