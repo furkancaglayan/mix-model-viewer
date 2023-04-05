@@ -1,55 +1,127 @@
-
-workspace "MixModelViewer"
+-- premake5.lua
+workspace "Mix"
    configurations { "Debug", "Release" }
    language "C++"
-	cppdialect "C++14"
-   platforms {"Win64"}
-   location "mix-model-viewer"
-   targetdir "../bin/%{cfg.system}/%{cfg.buildcfg}"
+   cppdialect "C++14"
    architecture "x86_64"
    exceptionhandling "On"
    functionlevellinking  "On"
    editAndContinue "On"
-   flags { "FatalCompileWarnings", "MultiProcessorCompile" }
-
-   filter { "platforms:Win64" }
-      system "Windows"
+   location ("Mix")
+   flags { 
+      "FatalCompileWarnings",
+      "MultiProcessorCompile" 
+   }
 
 project "MixModelViewer"
    kind "ConsoleApp"
-   location "mix-model-viewer"
-   
-   includedirs {"../dependencies/*/include", "../dependencies/*" }
-   libdirs {"../dependencies/*/lib", "../dependencies/*/lib/%{cfg.buildcfg}" }
-   bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/%{cfg.buildcfg}"}
+   language "C++"
+   cppdialect "C++14"
    targetdir "../bin/%{cfg.buildcfg}"
+   objdir "%{wks.location}/obj/%{cfg.buildcfg}"
+   location "%{wks.location}/%{prj.name}"
 
-   files { "mix-model-viewer/src/**.h", "mix-model-viewer/src/**.cpp" }
-   
+   files { 
+      "../src/**.h", 
+      "../src/**.cpp" }
+
+   includedirs {
+      "../dependencies/glfw/include",
+      "../dependencies/glew/include"
+   }
+   filter "system:macosx"
+      links {
+         "glfw",
+         "glew",
+         "OpenGL.framework",
+         "CoreFoundation.framework"
+      }
+      xcodebuildsettings {
+         ["GCC_ENABLE_CPP_EXCEPTIONS"] = "YES",
+         ["MACOSX_DEPLOYMENT_TARGET"] = "10.12"
+      }
+      buildoptions {
+         "-Wall",
+         "-Wextra",
+         "-Wpedantic"
+      }
+      linkoptions {
+         "-stdlib=libc++"
+      }
+   filter "system:linux"
+      links {
+         "glfw",
+         "GL",
+         "X11",
+         "Xrandr",
+         "Xi",
+         "dl",
+         "pthread",
+         "GLEW"
+      }
+      buildoptions {
+         "-Wall",
+         "-Wextra",
+         "-Wpedantic"
+      }
+   filter "system:windows"
+      links {
+         "glfw3",
+         "OpenGL32",
+         "glew32"
+      }
+      includedirs {
+         "../dependencies/glfw/include",
+         "../dependencies/glew/include"
+      }
+      libdirs {
+         "../dependencies/glfw/lib", 
+         "../dependencies/glew/lib"
+      }
+      bindirs  {
+         "../dependencies/glfw/bin", 
+         "../dependencies/glew/bin/%{cfg.buildcfg}"}
+
+      -- Add common flags for Windows
+      filter { "system:windows", "action:vs*" }
+         buildoptions {
+            "/permissive-",
+            "/TP"
+         }
+         defines {
+            "_CRT_SECURE_NO_WARNINGS",
+            "_CRT_NONSTDC_NO_WARNINGS",
+            "NOMINMAX"
+         }
+         flags {
+            "MultiProcessorCompile",
+            "NoMinimalRebuild",
+            "NoBufferSecurityCheck"
+         }
+         linkoptions {
+            "/ignore:4099"
+         }
+
+         ignoredefaultlibraries { 
+            "MSVCRT" 
+         }
+      -- Copy GLFW3 and GLEW DLLs to output directory for Windows
+      filter { "system:windows", "configurations:Debug" }
+         postbuildcommands {
+            "xcopy /y /d \"%{wks.location}\\..\\..\\dependencies\\glew\\bin\\%{cfg.buildcfg}\\glew32.dll\" \"%{wks.location}\\..\\..\\bin\\%{cfg.buildcfg}\"",
+         }
+
+      filter { "system:windows", "configurations:Release" }
+         postbuildcommands {
+            "xcopy /y /d \"%{wks.location}\\..\\..\\dependencies\\glew\\bin\\%{cfg.buildcfg}\\glew32.dll\" \"%{wks.location}\\..\\..\\bin\\%{cfg.buildcfg}\"",
+         }
+
    filter "configurations:Debug"
       defines { "DEBUG" }
       runtime "Debug"
-      symbols "Full"
-		optimize "Off"
-      links {"glew32", "freeglutd", "glfw3"}
+      symbols "On"
 
    filter "configurations:Release"
       defines { "NDEBUG" }
       runtime "Release"
       optimize "On"
-      libdirs {"../dependencies/**/lib", "../dependencies/*/lib/Release" }
-      bindirs  {"../dependencies/*/bin", "../dependencies/*/bin/Release"}
-      links {"glew32", "freeglut", "glfw3"}
-
-   filter "configurations"
-      defines {"TARGET_SYSTEM_WIN64"}
-
-   
-	filter { "system:windows" }
-      links { "OpenGL32" }
-
-   filter { "system:not windows" }
-      links { "GL" }
-
-
-include "../dependencies/dependencies.lua"

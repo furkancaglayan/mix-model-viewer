@@ -27,4 +27,7 @@
 
 # build
 build/mix-model-viewer
+build/mix
+build/MixModelViewer
+build/Mix
 bin
