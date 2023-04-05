@@ -3,11 +3,14 @@
 #include "core/mixWindow.h"
 #include "editor/mixEditor.h"
 #include <memory>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 int main() 
 {
 	GLenum err;
-
+	Assimp::Importer importer;
 	if (!glfwInit())
 	{
 		std::cout << "GLFW INIT ERROR!";
