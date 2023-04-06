@@ -27,14 +27,16 @@ project "MixModelViewer"
 
    includedirs {
       "../dependencies/glfw/include",
-      "../dependencies/glew/include"
+      "../dependencies/glew/include",
+      "../dependencies/imgui"
    }
    filter "system:macosx"
       links {
          "glfw",
          "glew",
          "OpenGL.framework",
-         "CoreFoundation.framework"
+         "CoreFoundation.framework",
+         "imgui"
       }
       xcodebuildsettings {
          ["GCC_ENABLE_CPP_EXCEPTIONS"] = "YES",
@@ -57,7 +59,8 @@ project "MixModelViewer"
          "Xi",
          "dl",
          "pthread",
-         "GLEW"
+         "GLEW",
+         "imgui"
       }
       buildoptions {
          "-Wall",
@@ -68,11 +71,13 @@ project "MixModelViewer"
       links {
          "glfw3",
          "OpenGL32",
-         "glew32"
+         "glew32",
+         "imgui"
       }
       includedirs {
          "../dependencies/glfw/include",
-         "../dependencies/glew/include"
+         "../dependencies/glew/include",
+         "../dependencies/imgui"
       }
       libdirs {
          "../dependencies/glfw/lib", 
@@ -125,3 +130,6 @@ project "MixModelViewer"
       defines { "NDEBUG" }
       runtime "Release"
       optimize "On"
+   
+group "external"
+include "../dependencies/dependencies.lua"

@@ -3,6 +3,7 @@
 #include "core/mixWindow.h"
 #include "editor/mixEditor.h"
 #include <memory>
+#include <imgui.h>
 
 int main() 
 {
@@ -12,7 +13,6 @@ int main()
 		std::cout << "GLFW INIT ERROR!";
 	}
 	glewExperimental = true;
-
 	if ((err = glewInit()) != GLEW_OK)
 	{
 		std::cout << glewGetErrorString(err) << std::endl;
