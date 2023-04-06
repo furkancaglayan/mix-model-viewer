@@ -1,9 +1,8 @@
 #include <iostream>
 #include <GL/glew.h>
-#include "core/mixWindow.h"
-#include "editor/mixEditor.h"
 #include <memory>
 #include <imgui.h>
+#include "editor/mixEditor.h"
 
 int main() 
 {

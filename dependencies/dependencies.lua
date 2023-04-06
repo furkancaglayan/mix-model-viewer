@@ -3,13 +3,8 @@ project "imgui"
    kind "StaticLib"
    language "C++"
    cppdialect "C++14"
-   location ("%{wks.location}/external")
+   location ("%{wks.location}/external/%{prj.name}")
    targetdir "%{wks.location}/../../bin/%{cfg.buildcfg}"
-
-   files { 
-    "src/*.cpp",
-    "src/*.h" 
-  }
 
    includedirs { 
     "imgui"

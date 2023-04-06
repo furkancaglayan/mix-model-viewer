@@ -22,13 +22,14 @@ project "MixModelViewer"
    location "%{wks.location}/%{prj.name}"
 
    files { 
-      "../src/**.h", 
-      "../src/**.cpp" }
+      "../src/mix/**.h", 
+      "../src/mix/**.cpp" 
+   }
 
    includedirs {
       "../dependencies/glfw/include",
       "../dependencies/glew/include",
-      "../dependencies/imgui"
+      "../dependencies/imgui",
    }
    filter "system:macosx"
       links {
@@ -36,7 +37,7 @@ project "MixModelViewer"
          "glew",
          "OpenGL.framework",
          "CoreFoundation.framework",
-         "imgui"
+         "imgui",
       }
       xcodebuildsettings {
          ["GCC_ENABLE_CPP_EXCEPTIONS"] = "YES",
@@ -60,7 +61,7 @@ project "MixModelViewer"
          "dl",
          "pthread",
          "GLEW",
-         "imgui"
+         "imgui",
       }
       buildoptions {
          "-Wall",
@@ -69,15 +70,15 @@ project "MixModelViewer"
       }
    filter "system:windows"
       links {
-         "glfw3",
+         "glfw3_mt",
          "OpenGL32",
          "glew32",
-         "imgui"
+         "imgui",
       }
       includedirs {
          "../dependencies/glfw/include",
          "../dependencies/glew/include",
-         "../dependencies/imgui"
+         "../dependencies/imgui",
       }
       libdirs {
          "../dependencies/glfw/lib", 
