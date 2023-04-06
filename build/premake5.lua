@@ -7,13 +7,14 @@ workspace "Mix"
    exceptionhandling "On"
    functionlevellinking  "On"
    editAndContinue "On"
-   location ("Mix")
    flags { 
       "FatalCompileWarnings",
       "MultiProcessorCompile" 
    }
-
-  
+   filter "system:windows"
+      location ("Win64")
+   filter "system:linux"
+      location ("Linux")
 
 project "MixModelViewer"
    kind "ConsoleApp"
@@ -24,15 +25,17 @@ project "MixModelViewer"
    location "%{wks.location}/%{prj.name}"
 
    files { 
-      "../src/mix/**.h", 
-      "../src/mix/**.cpp",
+      "%{wks.location}/%{prj.name}/src/**.cpp",
+      "%{wks.location}/%{prj.name}/src/**.h",
    }
 
+    
    includedirs {
       "../dependencies/glfw/include",
       "../dependencies/glew/include",
       "../dependencies/imgui",
       "../dependencies/stb",
+      "../dependencies/glm",
    }
 
    defines{
@@ -59,6 +62,7 @@ project "MixModelViewer"
          "-stdlib=libc++"
       }
    filter "system:linux"
+
       links {
          "glfw",
          "GL",
@@ -76,19 +80,14 @@ project "MixModelViewer"
          "-Wpedantic"
       }
    filter "system:windows"
+
       links {
          "glfw3_mt",
          "OpenGL32",
          "glew32",
          "imgui",
       }
-      includedirs {
-         "../dependencies/glfw/include",
-         "../dependencies/glew/include",
-         "../dependencies/imgui",
-         "../dependencies/stb",
-         "../dependencies/glm",
-      }
+
       libdirs {
          "../dependencies/glfw/lib", 
          "../dependencies/glew/lib"
@@ -117,8 +116,6 @@ project "MixModelViewer"
             "/ignore:4099"
          }
 
-         ignoredefaultlibraries { 
-         }
       -- Copy GLFW3 and GLEW DLLs to output directory for Windows
       filter { "system:windows", "configurations:Debug" }
          postbuildcommands {
@@ -129,7 +126,6 @@ project "MixModelViewer"
          postbuildcommands {
             "xcopy /y /d \"%{wks.location}\\..\\..\\dependencies\\glew\\bin\\%{cfg.buildcfg}\\glew32.dll\" \"%{wks.location}\\..\\..\\bin\\%{cfg.buildcfg}\"",
          }
-
    filter "configurations:Debug"
       defines { "DEBUG" }
       runtime "Debug"

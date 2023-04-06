@@ -30,4 +30,6 @@ build/mix-model-viewer
 build/mix
 build/MixModelViewer
 build/Mix
+build/Win64
+build/win64
 bin
