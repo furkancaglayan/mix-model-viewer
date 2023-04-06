@@ -43,7 +43,10 @@ project "imgui"
       pic "On"
       systemversion "latest"
       staticruntime "On"
-
+      files { 
+        "imgui/backends/imgui_impl_glfw.cpp", 
+        "imgui/backends/imgui_impl_opengl3.cpp" 
+    }
       defines
       {
             "_IMGUI_X11"

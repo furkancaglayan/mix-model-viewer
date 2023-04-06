@@ -87,6 +87,7 @@ project "MixModelViewer"
          "../dependencies/glew/include",
          "../dependencies/imgui",
          "../dependencies/stb",
+         "../dependencies/glm",
       }
       libdirs {
          "../dependencies/glfw/lib", 
