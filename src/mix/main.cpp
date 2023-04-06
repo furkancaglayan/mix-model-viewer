@@ -1,5 +1,5 @@
-#include "editor/mixEditor.h"
 #include <GL/glew.h>
+#include "editor/mixEditor.h"
 #include <glm/glm.hpp> // vec2, vec3, mat4, radians
 #include <imgui.h>
 #include <iostream>
