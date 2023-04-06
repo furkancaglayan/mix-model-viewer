@@ -13,6 +13,8 @@ workspace "Mix"
       "MultiProcessorCompile" 
    }
 
+  
+
 project "MixModelViewer"
    kind "ConsoleApp"
    language "C++"
@@ -23,13 +25,18 @@ project "MixModelViewer"
 
    files { 
       "../src/mix/**.h", 
-      "../src/mix/**.cpp" 
+      "../src/mix/**.cpp",
    }
 
    includedirs {
       "../dependencies/glfw/include",
       "../dependencies/glew/include",
       "../dependencies/imgui",
+      "../dependencies/stb",
+   }
+
+   defines{
+      "STB_IMAGE_IMPLEMENTATION",
    }
    filter "system:macosx"
       links {
@@ -79,6 +86,7 @@ project "MixModelViewer"
          "../dependencies/glfw/include",
          "../dependencies/glew/include",
          "../dependencies/imgui",
+         "../dependencies/stb",
       }
       libdirs {
          "../dependencies/glfw/lib", 
@@ -97,7 +105,7 @@ project "MixModelViewer"
          defines {
             "_CRT_SECURE_NO_WARNINGS",
             "_CRT_NONSTDC_NO_WARNINGS",
-            "NOMINMAX"
+            "NOMINMAX",
          }
          flags {
             "MultiProcessorCompile",
@@ -109,7 +117,6 @@ project "MixModelViewer"
          }
 
          ignoredefaultlibraries { 
-            "MSVCRT" 
          }
       -- Copy GLFW3 and GLEW DLLs to output directory for Windows
       filter { "system:windows", "configurations:Debug" }

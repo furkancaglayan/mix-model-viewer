@@ -48,5 +48,10 @@ project "imgui"
       {
             "_IMGUI_X11"
       }
+      -- Define the configurations
+    filter "configurations:Debug"
+    symbols "On"
+ filter "configurations:Release"
+    optimize "On"
 
    filter {}
