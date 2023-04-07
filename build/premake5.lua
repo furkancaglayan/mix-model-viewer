@@ -16,7 +16,8 @@ workspace "Mix"
    filter "system:linux"
       location ("Linux")
 
-project "MixModelViewer"
+group("mix")
+project "mix"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++14"
@@ -25,8 +26,7 @@ project "MixModelViewer"
    location "%{wks.location}/%{prj.name}"
 
    files { 
-      "%{wks.location}/%{prj.name}/src/**.cpp",
-      "%{wks.location}/%{prj.name}/src/**.h",
+      "../src/**"
    }
 
     
