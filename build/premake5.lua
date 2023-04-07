@@ -17,7 +17,7 @@ workspace "Mix"
       location ("Linux")
 
 group("mix")
-project "mix"
+project "mix-model-viewer"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++14"

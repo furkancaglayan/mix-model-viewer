@@ -398,3 +398,8 @@ SpacesInParentheses: false
 # SpacesInSquareBrackets (bool)
 # If true, spaces will be inserted after [ and before ].
 SpacesInSquareBrackets: false
+
+
+EmptyLineAfterAccessModifier: Always 
+
+NamespaceIndentation: All
