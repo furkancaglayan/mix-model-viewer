@@ -44,6 +44,9 @@ project "mix-model-viewer"
       "STB_IMAGE_IMPLEMENTATION",
    }
    filter "system:macosx"
+   defines{
+      "SYSTEM_MACOSX"
+   }
       links {
          "glfw",
          "glew",
@@ -62,7 +65,9 @@ project "mix-model-viewer"
          "-stdlib=libc++",
       }
    filter "system:linux"
-
+   defines{
+      "SYSTEM_LINUX"
+   }
       links {
          "glfw",
          "GL",
@@ -80,7 +85,9 @@ project "mix-model-viewer"
          "-Wpedantic"
       }
    filter "system:windows"
-
+      defines{
+         "SYSTEM_WIN64"
+      }
       links {
          "glfw3_mt",
          "OpenGL32",
