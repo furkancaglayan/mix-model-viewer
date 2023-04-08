@@ -8,7 +8,7 @@ project "imgui"
 
    includedirs { 
     "imgui"
- }
+  }
 
    -- imgui-specific settings
    files { 

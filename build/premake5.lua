@@ -11,6 +11,8 @@ workspace "Mix"
       "FatalCompileWarnings",
       "MultiProcessorCompile" 
    }
+   startproject "mix-model-viewer"
+
    filter "system:windows"
       location ("Win64")
    filter "system:linux"
@@ -56,10 +58,8 @@ project "mix-model-viewer"
       buildoptions {
          "-Wall",
          "-Wextra",
-         "-Wpedantic"
-      }
-      linkoptions {
-         "-stdlib=libc++"
+         "-Wpedantic",
+         "-stdlib=libc++",
       }
    filter "system:linux"
 
