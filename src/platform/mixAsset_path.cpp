@@ -1,4 +1,3 @@
-#include "mixAsset_folder.h"
 #include <iostream>
 namespace mix
 {

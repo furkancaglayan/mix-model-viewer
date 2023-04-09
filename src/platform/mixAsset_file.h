@@ -39,9 +39,19 @@ namespace mix
             bool read ();
             bool close ();
             size_t get_file_size ();
-            std::string get_content () const
+            const std::string& get_content ()
             {
                 return _content;
+            }
+
+            const std::string get_extension ()
+            {
+                return _path.get_extension();
+            }
+
+            const std::string get_name_without_extension ()
+            {
+                return _path.get_name_without_extension ();
             }
 
             mixAsset_path _path;

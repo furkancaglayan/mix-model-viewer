@@ -3,7 +3,8 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
+#include <algorithm>
+#include "typedefs.h"
 namespace mix
 {
     namespace platform
@@ -14,6 +15,17 @@ namespace mix
 
             mixAsset_path (std::string&& path) : _path{ std::move (path) }
             {
+                _name = _path.substr (_path.find_last_of ("/\\") + 1);
+                std::string::size_type const p (_name.find_last_of ('.'));
+                if (platform_utils::is_file(_path))
+                {
+                    _extension = _name.substr (p + 1);
+                }
+                else
+                {
+                    _extension = std::string ();
+                }
+                _base_name = _name.substr (0, p);
             }
 
             operator std::string () const
@@ -26,11 +38,22 @@ namespace mix
                 return std::wstring{ _path.begin (), _path.end () };
             }
 
-            std::string to_str () const
+            const std::string& to_str ()
             {
                 return _path;
             }
 
+            const std::string& get_name_without_extension ()
+            {
+                return _base_name;
+            }
+
+            const std::string& get_extension ()
+            {
+                return _extension;
+            }
+
+            
             const inline std::string& operator() ()
             {
                 return _path;
@@ -78,6 +101,9 @@ namespace mix
 
             private:
 
+            std::string _name;
+            std::string _base_name;
+            std::string _extension;
             std::string _path;
         };
     }; // namespace platform

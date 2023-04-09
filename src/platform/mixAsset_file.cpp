@@ -8,17 +8,12 @@ namespace mix
         bool mix::platform::mixAsset_file::open ()
         {
             auto w_string = std::wstring (_path);
-            /*
-            * #define GENERIC_READ                     (0x80000000L)
-#define GENERIC_WRITE                    (0x40000000L)
-#define GENERIC_EXECUTE                  (0x20000000L)
-#define GENERIC_ALL 
-            */
             auto access = GENERIC_READ;
             auto share = FILE_SHARE_READ;
             auto creation_disposition = OPEN_EXISTING;
             auto flags_and_attributes = FILE_ATTRIBUTE_NORMAL;
 
+            assert (!_handle);
             _handle = CreateFileW (w_string.c_str (), access, share, NULL,
                                    creation_disposition, flags_and_attributes, NULL);
 

@@ -33,7 +33,6 @@ namespace mix
         }
         void mixAsset_manager::load ()
         {
-            _root->collect ();
         }
         void mixAsset_manager::load_async ()
         {

@@ -21,13 +21,18 @@ int main ()
     mix::assetsystem::mixAsset_manager assets{ std::string{"C:\\Users\\furka\\Desktop\\Develop\\mix-model-viewer\\assets" } };
     assets.load ();*/
 
-    std::string path{ "C:\\Users\\furka\\Desktop\\Develop\\ubuntu.iso" };
-    mix::platform::mixAsset_file f{ std::move (path) };
-    f.open ();
+    std::string path{ "C:\\Users\\furka\\Desktop\\Develop" };
+    mix::platform::mixAsset_folder folder{ std::move (path)};
+
+    std::string path2{ "C:\\Users\\furka\\Desktop\\Develop\\ubuntu.iso" };
+    mix::platform::mixAsset_file f{ std::move (path2) };
 
    
-    f.read ();
-    f.close ();
+    if (f.open())
+    {
+        f.read ();
+        f.close ();
+    }
 
     GLenum err;
     if (!glfwInit ())

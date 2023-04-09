@@ -48,7 +48,7 @@ namespace mix
             public:
 
             mixAsset_manager (std::string&& root)
-            : _root{ std::make_unique<mix::platform::mixAsset_folder> (std::move(root), nullptr) }
+            : _root{ std::make_unique<mix::platform::mixAsset_folder> (std::move(root)) }
             {
             
             }
