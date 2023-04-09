@@ -2,7 +2,9 @@
 #include "typedefs.h"
 #include <cassert>
 #include <memory>
+#include <sstream>
 #include <string>
+#include "mixAsset_path.h"
 
 namespace mix
 {
@@ -23,7 +25,7 @@ namespace mix
             }
 
              mixAsset_file (std::string&& path)
-            : _path{ mixAsset_path (std::move (path)) }, _handle{ nullptr }, _buffer{ nullptr }
+            : _path{ mixAsset_path{ std::move(path) } }, _handle{ nullptr }, _buffer{ nullptr }
             {
             }
 

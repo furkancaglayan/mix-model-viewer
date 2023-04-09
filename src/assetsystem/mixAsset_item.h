@@ -1,10 +1,10 @@
 #pragma once
 #include <memory>
 #include <string>
-#include <fstream>
 #include <map>
 #include <vector>
 #include "../platform/typedefs.h"
+#include "../platform/mixAsset_file.h"
 
 namespace mix
 {

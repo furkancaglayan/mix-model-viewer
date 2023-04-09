@@ -9,6 +9,7 @@
 #include <string>
 
 #include "assetsystem/mixMesh.h"
+#include "platform/mixAsset_file.h"
 
 int main ()
 {

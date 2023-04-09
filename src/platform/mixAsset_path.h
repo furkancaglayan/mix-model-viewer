@@ -1,6 +1,6 @@
 #pragma once
-#include "typedefs.h"
 #include <memory>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -13,10 +13,6 @@ namespace mix
             public:
 
             mixAsset_path (std::string&& path) : _path{ std::move (path) }
-            {
-            }
-
-            mixAsset_path (std::string path) : _path{ path }
             {
             }
 
@@ -49,14 +45,14 @@ namespace mix
             {
                 std::string return_val{ _path };
                 return_val.append (str._path);
-                return mixAsset_path{ return_val };
+                return mixAsset_path{ std::move(return_val) };
             }
             // member function
             inline mixAsset_path operator+ (const std::string& str)
             {
                 std::string return_val{ _path };
                 return_val.append (str);
-                return mixAsset_path{ return_val };
+                return mixAsset_path{ std::move (return_val) };
             }
 
             bool operator== (const mixAsset_path& p)
