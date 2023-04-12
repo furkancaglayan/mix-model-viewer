@@ -1,10 +1,10 @@
 #pragma once
+#include "../core/mixGuid.h"
+#include <iostream>
+#include <map>
 #include <memory>
 #include <string>
-#include <map>
 #include <vector>
-#include "../platform/typedefs.h"
-#include "../platform/mixAsset_file.h"
 
 namespace mix
 {
@@ -13,16 +13,32 @@ namespace mix
         /// <summary>
         /// Support multiple extensions
         /// </summary>
-        
+
         class mixAsset_item
         {
             public:
-            mixAsset_item ()
-            {
 
+            /*
+            mixAsset_item (std::string& name) noexcept
+            : _name{ std::move (name) }, _guid{ mix::core::mixGuid::create_new () }
+            {
             }
 
-            virtual void construct_from (mix::platform::mixAsset_file file);
+            mixAsset_item (mixAsset_item&& other) noexcept : mixAsset_item{ other._name }
+            {
+                std::cout << "Move constructor is called." << std::endl;
+            }
+
+            mixAsset_item (const mixAsset_item& other) = default;
+
+            mixAsset_item () : _guid{ mix::core::mixGuid::create_new () }
+            {
+            }*/
+
+            protected:
+
+            std::string _name;
+            mix::core::mixGuid _guid;
         };
-    } // namespace core
+    } // namespace assetsystem
 } // namespace mix

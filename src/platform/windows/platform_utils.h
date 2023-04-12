@@ -32,6 +32,7 @@ namespace mix
                     do
                     {
                         //TODO: tidy here up...modern cpp...
+                        //TODO2: arrange folder creation. Store them as weak ptr in somewhere. 
                         auto cond =
                         (search_type == mix::platform::platform_utils::search_type::file &&
                          (data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0) ||

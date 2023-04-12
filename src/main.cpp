@@ -1,4 +1,3 @@
-#include "assetsystem/mixAsset_manager.h"
 
 #include "platform/typedefs.h"
 #include "editor/mixEditor.h"
@@ -9,7 +8,10 @@
 #include <string>
 
 #include "assetsystem/mixMesh.h"
+#include "assetsystem/loaders/mixAsset_loader_mesh.h"
 #include "platform/mixAsset_file.h"
+#include "platform/mixAsset_folder.h"
+#include "assetsystem/mixAsset_manager.h"
 
 int main ()
 {
@@ -24,13 +26,18 @@ int main ()
     std::string path{ "C:\\Users\\furka\\Desktop\\Develop" };
     mix::platform::mixAsset_folder folder{ std::move (path)};
 
-    std::string path2{ "C:\\Users\\furka\\Desktop\\Develop\\ubuntu.iso" };
+    std::string path2{ "C:\\Users\\furka\\Desktop\\Develop\\spnpccharacters.xml" };
     mix::platform::mixAsset_file f{ std::move (path2) };
 
    
+     mix::assetsystem::mixAsset_manager assets{ std::string{
+    "C:\\Users\\furka\\Desktop\\Develop\\mix-model-viewer\\assets" } };
+    assets.add_asset_map<mix::assetsystem::mixMesh> ();
+
+
     if (f.open())
     {
-        f.read ();
+        auto s = f.read_all_text ();
         f.close ();
     }
 

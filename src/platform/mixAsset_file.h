@@ -14,35 +14,32 @@ namespace mix
         /// Support multiple extensions
         /// </summary>
         ///
-        ///
+        ///TODO: guid syustem
         class mixAsset_file
         {
             public:
 
             mixAsset_file (mixAsset_path&& path)
-            : _path{ std::move (path) }, _handle{ nullptr }, _buffer{ nullptr }
+            : _path{ std::move (path) }, _handle{ INVALID_HANDLE_VALUE }
             {
             }
 
              mixAsset_file (std::string&& path)
-            : _path{ mixAsset_path{ std::move(path) } }, _handle{ nullptr }, _buffer{ nullptr }
+            : _path{ mixAsset_path{ std::move (path) } }, _handle{ INVALID_HANDLE_VALUE }
             {
             }
 
             ~mixAsset_file ()
             {
-                delete _buffer;
-                _buffer = nullptr;
-                _handle = nullptr;
+                _handle = INVALID_HANDLE_VALUE;
             }
             bool open ();
-            bool read ();
+            bool read (char* ptr);
+            std::string read_all_text ();
+
             bool close ();
             size_t get_file_size ();
-            const std::string& get_content ()
-            {
-                return _content;
-            }
+            
 
             const std::string get_extension ()
             {
@@ -59,8 +56,6 @@ namespace mix
             protected:
             private:
 
-            char* _buffer;
-            std::string _content;
             HANDLE _handle;
         };
     } // namespace platform

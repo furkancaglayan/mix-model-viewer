@@ -4,7 +4,7 @@ namespace mix
 {
     namespace platform
     {
-       
+
         bool mix::platform::mixAsset_file::open ()
         {
             auto w_string = std::wstring (_path);
@@ -13,7 +13,7 @@ namespace mix
             auto creation_disposition = OPEN_EXISTING;
             auto flags_and_attributes = FILE_ATTRIBUTE_NORMAL;
 
-            assert (!_handle);
+            assert (_handle == INVALID_HANDLE_VALUE);
             _handle = CreateFileW (w_string.c_str (), access, share, NULL,
                                    creation_disposition, flags_and_attributes, NULL);
 
@@ -29,24 +29,31 @@ namespace mix
             }
         }
 
-        bool mixAsset_file::read ()
+        bool mixAsset_file::read (char* ptr)
+        {
+            assert (ptr);
+            auto size = get_file_size ();
+            //_buffer = (char*) malloc (sizeof (char) * (size));
+            unsigned long read;
+            BOOL result = ReadFile (_handle, ptr, (DWORD) size, &read, NULL);
+            if (!result)
+            {
+                CloseHandle (_handle);
+                _handle = INVALID_HANDLE_VALUE;
+                //_content = std::string{ _buffer, read };
+            }
+
+            return result;
+        }
+
+        std::string mixAsset_file::read_all_text ()
         {
             auto size = get_file_size ();
-            _buffer = (char*) malloc (sizeof (char) * (size)); 
-            unsigned long read;
-            BOOL result = ReadFile (_handle, _buffer, (DWORD)size, &read, NULL);
-            if (result)
-            {
-                _content = std::string{ _buffer, read };
-            }
-            else
-            {
-                delete _buffer;
-                _buffer = nullptr;
-                CloseHandle (_handle);
-                _handle = nullptr;
-            }
-            return result;
+            char* buffer = (char*) malloc (sizeof (char) * (size));
+            read (buffer);
+            std::string val{ buffer, size };
+            free (buffer);
+            return val;
         }
 
         bool mixAsset_file::close ()
@@ -63,5 +70,5 @@ namespace mix
             BOOL result = GetFileSizeEx (_handle, &size);
             return result == FALSE ? -1 : size.QuadPart;
         }
-    } // namespace assetsystem
+    } // namespace platform
 } // namespace mix

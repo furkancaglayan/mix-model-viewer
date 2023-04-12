@@ -12,7 +12,6 @@ namespace mix
         {
             public:
 
-
             mixAsset_folder (mixAsset_path&& path /*, std::shared_ptr<mixAsset_folder> parent*/)
             : _path{ std::move (path) }/*, _parent{ parent }*/
             {
@@ -30,8 +29,6 @@ namespace mix
             private:
 
             mixAsset_path _path;
-            //std::weak_ptr<mixAsset_folder> _parent;
-            std::vector<std::weak_ptr<mixAsset_folder>> _children;
         };
     }; // namespace platform
 } // namespace mix

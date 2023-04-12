@@ -1,20 +1,32 @@
 #pragma once
 #include <memory>
 #include <string>
+#include "mixAsset_item.h"
 
 namespace mix
 {
     namespace assetsystem
     {
-        /*  class mixMesh  : public mixAsset_base
+        class mixMesh : public mix::assetsystem::mixAsset_item
         {
             public:
-            using mixAsset_base::read;
 
-            mixMesh (std::string&& path)
-            : mixAsset_base (std::move (path))
+            /*
+            mixMesh (std::string& name) : mixAsset_item (name)
             {
             }
-        };*/
+
+            mixMesh (mixMesh&& other) noexcept : mixMesh{ other._name }
+            {
+                std::cout << "Move constructor is called." << std::endl;
+            }
+
+            
+            mixMesh (const mixMesh& other) = default;
+            mixMesh () : mixAsset_item ()
+            {
+            
+            }*/
+        };
     } // namespace assetsystem
 } // namespace mix

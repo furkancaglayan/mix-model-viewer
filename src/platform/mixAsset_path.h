@@ -5,6 +5,8 @@
 #include <vector>
 #include <algorithm>
 #include "typedefs.h"
+#include "windows/platform_utils.h"
+
 namespace mix
 {
     namespace platform
