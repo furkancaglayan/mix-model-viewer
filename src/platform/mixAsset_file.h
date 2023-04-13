@@ -41,12 +41,12 @@ namespace mix
             size_t get_file_size ();
             
 
-            const std::string get_extension ()
+            const std::string& get_extension () const
             {
                 return _path.get_extension();
             }
 
-            const std::string get_name_without_extension ()
+            const std::string get_name_without_extension () const
             {
                 return _path.get_name_without_extension ();
             }

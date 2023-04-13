@@ -11,7 +11,7 @@ namespace mix
         namespace loaders
         {
 
-            class mixAsset_loader_mesh : public mix::assetsystem::mixAsset_loader_base
+            class mixAsset_loader_text : public mix::assetsystem::mixAsset_loader_base
             {
                 public:
                 private:

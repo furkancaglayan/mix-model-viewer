@@ -1,4 +1,5 @@
 #pragma once
+#include "../platform/mixAsset_file.h"
 #include "../platform/mixAsset_folder.h"
 #include "mixAsset_item.h"
 #include "mixAsset_loader_base.h"
@@ -43,9 +44,6 @@ namespace mix
                 std::unordered_map<mix::core::mixGuid, mix::core::mixGuid> _map;
             };
 
-            using asset_container = std::unordered_map<std::type_index, std::shared_ptr<mixAsset_map>>;
-            using loader_container = std::unordered_map<std::type_index, std::shared_ptr<mix::assetsystem::mixAsset_loader_base>>;
-
 
             public:
 
@@ -59,20 +57,7 @@ namespace mix
                 _maps.insert ({ index, std::make_shared<mixAsset_map> () });
             }
 
-            template <class T> void add_asset (T&& t) noexcept
-            {
-                auto index = std::type_index{ typeid (T) };
-                if (_maps.count (index))
-                {
-                    mixAsset_map t = static_cast<mixAsset_map> ((_maps[index])->get ());
-                    t->add (t);
-                }
-                else
-                {
-                    add_asset_map<T> ();
-                    add_asset (t);
-                }
-            }
+            template <class T> bool load_asset (const mix::platform::mixAsset_file& file) noexcept;
             template <typename T> std::shared_ptr<T> get_asset (const std::string& name) const
             {
                 auto index = std::type_index{ typeid (T) };
@@ -83,23 +68,31 @@ namespace mix
             template <typename Ttype_l, class Ttype_I> void register_loader ()
             {
                 auto index = std::type_index{ typeid (Ttype_l) };
-                assert (!_loaders[index]);
-                _loaders.insert ({ index, std::make_unique<Ttype_I> () });
+                assert (!_loaders.count(index));
+                _loaders.insert ({ index, std::make_shared<Ttype_I> () });
             }
 
-            template <class T> std::shared_ptr<mix::assetsystem::mixAsset_loader_base> get_loader ()
+            template <class T> std::shared_ptr<mix::assetsystem::mixAsset_loader_base> get_loader () const noexcept
             {
-                auto index = std::type_index{ typeid (T) };
-                return _loaders[index];
+                std::type_index index = std::type_index{ typeid (T) };
+                return _loaders.at (index);
+            }
+
+            template <class T> T resolve_asset (const mix::platform::mixAsset_file& file) noexcept
+            {
+                std::shared_ptr<mix::assetsystem::mixAsset_loader_base> loader = get_loader<T> ();
+                return loader->resolve<T> (file);
             }
 
             private:
 
-            asset_container _maps;
-            loader_container _loaders;
+
+            std::unordered_map<std::type_index, std::shared_ptr<mixAsset_map>> _maps;
+            std::unordered_map < std::type_index, std::shared_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
 
             std::unique_ptr<mix::platform::mixAsset_folder> _root;
         };
+
 
     } // namespace assetsystem
 } // namespace mix

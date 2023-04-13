@@ -35,6 +35,7 @@ int main ()
 
     assets.add_asset_map<mix::assetsystem::mixMesh> ();
      assets.register_loader<mix::assetsystem::mixMesh, mix::assetsystem::loaders::mixAsset_loader_mesh> ();
+    assets.resolve_asset<mix::assetsystem::mixMesh> (f);
 
     if (f.open())
     {

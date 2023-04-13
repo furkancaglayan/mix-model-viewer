@@ -40,17 +40,17 @@ namespace mix
                 return std::wstring{ _path.begin (), _path.end () };
             }
 
-            const std::string& to_str ()
+            const std::string& to_str () const
             {
                 return _path;
             }
 
-            const std::string& get_name_without_extension ()
+            const std::string& get_name_without_extension () const
             {
                 return _base_name;
             }
 
-            const std::string& get_extension ()
+            const std::string& get_extension () const
             {
                 return _extension;
             }
