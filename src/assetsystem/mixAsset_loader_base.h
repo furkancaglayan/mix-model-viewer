@@ -8,9 +8,8 @@ namespace mix
         /// Support multiple extensions
         /// </summary>
 
-        class mixAsset_loader_base
+        class mixAsset_loader_base 
         {
-           
         };
     } // namespace assetsystem
 } // namespace mix

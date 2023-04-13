@@ -5,8 +5,9 @@
 #include <map>
 #include <memory>
 #include <string>
-#include <vector>
 #include <typeindex>
+#include <unordered_map>
+#include <vector>
 
 namespace mix
 {
@@ -21,30 +22,30 @@ namespace mix
             class mixAsset_map
             {
                 public:
+
                 size_t get_size () const
                 {
-                    return _map.size ();
+                    // return _map.size ();
                 }
 
-                std::shared_ptr<mixAsset_item> get (const std::string& name)
+                std::shared_ptr<mixAsset_item> get (const mix::core::mixGuid& guid)
                 {
-                    for (size_t i = 0; i < _map.size (); i++)
-                    {
-                        /* if (_map[i].lock ()->get_content ().compare (name) == 0)
-                        {
-                            return _map[i];
-                        }*/
-                    }
+                    // return _map.at(guid);
                 }
 
                 inline void add (std::shared_ptr<mixAsset_item>&& t) noexcept
                 {
-                    _map.emplace_back (std::move (t));
+                    //_map.insert ({ t->_guid, t });
                 }
+
                 private:
 
-                std::vector<std::shared_ptr<mixAsset_item>> _map;
+                std::unordered_map<mix::core::mixGuid, mix::core::mixGuid> _map;
             };
+
+            using asset_container = std::unordered_map<std::type_index, std::shared_ptr<mixAsset_map>>;
+            using loader_container = std::unordered_map<std::type_index, std::shared_ptr<mix::assetsystem::mixAsset_loader_base>>;
+
 
             public:
 
@@ -55,8 +56,7 @@ namespace mix
             template <class T> void add_asset_map ()
             {
                 auto index = std::type_index{ typeid (T) };
-                auto map = std::make_shared<mixAsset_map>();
-                _maps.insert ({ index, map });
+                _maps.insert ({ index, std::make_shared<mixAsset_map> () });
             }
 
             template <class T> void add_asset (T&& t) noexcept
@@ -84,7 +84,7 @@ namespace mix
             {
                 auto index = std::type_index{ typeid (Ttype_l) };
                 assert (!_loaders[index]);
-                _loaders[index] = std::make_unique<Ttype_I> ();
+                _loaders.insert ({ index, std::make_unique<Ttype_I> () });
             }
 
             template <class T> std::shared_ptr<mix::assetsystem::mixAsset_loader_base> get_loader ()
@@ -95,8 +95,8 @@ namespace mix
 
             private:
 
-            std::map<std::type_index, std::shared_ptr<mixAsset_map>> _maps;
-            std::map<std::type_index, std::shared_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
+            asset_container _maps;
+            loader_container _loaders;
 
             std::unique_ptr<mix::platform::mixAsset_folder> _root;
         };

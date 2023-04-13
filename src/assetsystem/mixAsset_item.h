@@ -18,7 +18,6 @@ namespace mix
         {
             public:
 
-            /*
             mixAsset_item (std::string& name) noexcept
             : _name{ std::move (name) }, _guid{ mix::core::mixGuid::create_new () }
             {
@@ -33,11 +32,13 @@ namespace mix
 
             mixAsset_item () : _guid{ mix::core::mixGuid::create_new () }
             {
-            }*/
+            }
 
             protected:
 
             std::string _name;
+
+            public:
             mix::core::mixGuid _guid;
         };
     } // namespace assetsystem

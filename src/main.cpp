@@ -32,8 +32,9 @@ int main ()
    
      mix::assetsystem::mixAsset_manager assets{ std::string{
     "C:\\Users\\furka\\Desktop\\Develop\\mix-model-viewer\\assets" } };
-    assets.add_asset_map<mix::assetsystem::mixMesh> ();
 
+    assets.add_asset_map<mix::assetsystem::mixMesh> ();
+     assets.register_loader<mix::assetsystem::mixMesh, mix::assetsystem::loaders::mixAsset_loader_mesh> ();
 
     if (f.open())
     {
