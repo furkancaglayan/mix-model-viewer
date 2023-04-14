@@ -12,16 +12,11 @@ namespace mix
         {
             public:
 
-            mixAsset_folder (mixAsset_path&& path /*, std::shared_ptr<mixAsset_folder> parent*/)
-            : _path{ std::move (path) }/*, _parent{ parent }*/
-            {
-            }
+            mixAsset_folder (mixAsset_path&& path);
+            mixAsset_folder (std::string&& path);
+            mixAsset_folder (const std::string& path);
 
-            mixAsset_folder (std::string&& path /*, std::shared_ptr<mixAsset_folder> parent*/)
-            : _path{ mixAsset_path{ std::move (path) } }/*, _parent{ parent } */
-            {
-            }
-            const std::string get_name ()
+            inline const std::string get_name () const
             {
                 return _path.get_name_without_extension ();
             }

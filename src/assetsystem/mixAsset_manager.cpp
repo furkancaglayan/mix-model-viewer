@@ -4,25 +4,13 @@ namespace mix
 {
     namespace assetsystem
     {
-        template <class T> inline bool mixAsset_manager::load_asset (const mix::platform::mixAsset_file& file) noexcept
+        mixAsset_manager::mixAsset_manager (std::string&& root)
+        : _root{ std::make_unique<mix::platform::mixAsset_folder> (std::move (root)) }
         {
-            T asset = resolve_asset (file);
-            if (!asset)
-            {
-                return false;
-            }
-
-            /* auto index = std::type_index{ typeid (T) };
-            if (_maps.count (index))
-            {
-                mixAsset_map t = static_cast<mixAsset_map> ((_maps[index])->get ());
-                t->add (t);
-            }
-            else
-            {
-                add_asset_map<T> ();
-                load_asset (t);
-            }*/
+        }
+        mixAsset_manager::mixAsset_manager (const std::string& root)
+        : _root{ std::make_unique<mix::platform::mixAsset_folder> (root) }
+        {
         }
     } // namespace assetsystem
 } // namespace mix

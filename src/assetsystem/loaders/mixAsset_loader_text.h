@@ -17,10 +17,7 @@ namespace mix
                
                 protected:
 
-                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file) override
-                {
-                    return new mixText_asset (file.get_name_without_extension (), file.read_all_text ());
-                }
+                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file) override;
             };
         }
     } // namespace assetsystem

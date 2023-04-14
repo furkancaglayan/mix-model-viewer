@@ -1,5 +1,10 @@
 #include "mixGuid.h"
 
+mix::core::mixGuid::mixGuid (std::string& val) : _internal{ std::move (val) }
+{
+
+}
+
 mix::core::mixGuid mix::core::mixGuid::create_new ()
 {
     GUID guid;

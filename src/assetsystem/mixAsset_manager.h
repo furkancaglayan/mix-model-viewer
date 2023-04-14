@@ -48,10 +48,8 @@ namespace mix
 
             public:
 
-            mixAsset_manager (std::string&& root)
-            : _root{ std::make_unique<mix::platform::mixAsset_folder> (std::move (root)) }
-            {
-            }
+            mixAsset_manager (std::string&& root);
+            mixAsset_manager (const std::string& root);
 
 
             template <class T> void add_asset_map ()
@@ -59,8 +57,6 @@ namespace mix
                 auto index = std::type_index{ typeid (T) };
                 _maps.insert ({ index, std::make_unique<mixAsset_map> () });
             }
-
-            template <class T> bool load_asset (const mix::platform::mixAsset_file& file) noexcept;
 
             template <typename Ttype_l, class Ttype_I> void register_loader ()
             {

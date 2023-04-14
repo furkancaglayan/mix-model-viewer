@@ -15,48 +15,35 @@ namespace mix
         {
             public:
 
-            mixAsset_path (std::string&& path) : _path{ std::move (path) }
-            {
-                _name = _path.substr (_path.find_last_of ("/\\") + 1);
-                std::string::size_type const p (_name.find_last_of ('.'));
-                if (platform_utils::is_file(_path))
-                {
-                    _extension = _name.substr (p + 1);
-                }
-                else
-                {
-                    _extension = std::string ();
-                }
-                _base_name = _name.substr (0, p);
-            }
+            mixAsset_path (const std::string& path);
 
-            operator std::string () const
+            inline operator std::string () const
             {
                 return std::string{ _path };
             }
 
-            operator std::wstring () const
+            inline operator std::wstring () const
             {
                 return std::wstring{ _path.begin (), _path.end () };
             }
 
-            const std::string& to_str () const
+            inline const std::string& to_str () const
             {
                 return _path;
             }
 
-            const std::string& get_name_without_extension () const
+            inline const std::string& get_name_without_extension () const
             {
                 return _base_name;
             }
 
-            const std::string& get_extension () const
+            inline const std::string& get_extension () const
             {
                 return _extension;
             }
 
             
-            const inline std::string& operator() ()
+            inline const std::string& operator() ()
             {
                 return _path;
             }
@@ -66,31 +53,31 @@ namespace mix
                 return _path;
             }
 
-            inline mixAsset_path operator+ (const mixAsset_path& str)
+            inline mixAsset_path operator+ (const mixAsset_path& str) const
             {
                 std::string return_val{ _path };
                 return_val.append (str._path);
                 return mixAsset_path{ std::move(return_val) };
             }
             // member function
-            inline mixAsset_path operator+ (const std::string& str)
+            inline mixAsset_path operator+ (const std::string& str) const
             {
                 std::string return_val{ _path };
                 return_val.append (str);
                 return mixAsset_path{ std::move (return_val) };
             }
 
-            bool operator== (const mixAsset_path& p)
+            inline bool operator== (const mixAsset_path& p) const
             {
                 return !p._path.compare (_path);
             }
 
-            bool operator!= (const mixAsset_path& p)
+            inline bool operator!= (const mixAsset_path& p) const
             {
                 return p._path.compare (_path);
             }
 
-            inline std::ostream& operator<< (std::ostream& os)
+            inline std::ostream& operator<< (std::ostream& os) const
             {
                 os << _path;
                 return os;

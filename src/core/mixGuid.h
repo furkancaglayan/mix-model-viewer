@@ -24,31 +24,28 @@ namespace mix
             public:
 
             static mixGuid create_new ();
-            std::string get () const
+            inline const std::string& get () const
             {
                 return _internal;
             }
-            bool operator== (const mixGuid& p) const
+            inline bool operator== (const mixGuid& p) const
             {
                 return !_internal.compare (p._internal);
             }
 
-            bool operator!= (const mixGuid& p) const
+            inline bool operator!= (const mixGuid& p) const
             {
                 return _internal.compare (p._internal);
             }
 
-
-            mixGuid& operator= (mixGuid t)
+            inline mixGuid& operator= (mixGuid t)
             {
                 _internal = t._internal;
                 return *this;
             }
             private:
 
-            mixGuid (std::string& val) : _internal{ std::move (val) }
-            {
-            }
+            mixGuid (std::string& val);
             std::string _internal;
         };
     } // namespace core

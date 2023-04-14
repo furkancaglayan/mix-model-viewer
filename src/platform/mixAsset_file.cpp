@@ -4,6 +4,20 @@ namespace mix
 {
     namespace platform
     {
+        mixAsset_file::mixAsset_file (mixAsset_path&& path) : _path{ std::move (path) }, _handle{ INVALID_HANDLE_VALUE }
+        {
+
+        }
+
+        mixAsset_file::mixAsset_file (std::string&& path)
+        : _path{ mixAsset_path{ std::move (path) } }, _handle{ INVALID_HANDLE_VALUE }
+        {
+
+        }
+        mixAsset_file::~mixAsset_file ()
+        {
+            _handle = INVALID_HANDLE_VALUE;
+        }
 
         bool mix::platform::mixAsset_file::open ()
         {

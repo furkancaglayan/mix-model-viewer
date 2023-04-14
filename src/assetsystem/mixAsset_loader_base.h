@@ -1,8 +1,8 @@
 #pragma once
 #include "../platform/mixAsset_file.h"
 #include "mixAsset_item.h"
-#include <stdexcept>
 #include <functional>
+#include <stdexcept>
 #include <string>
 #include <unordered_map>
 namespace mix
@@ -26,11 +26,9 @@ namespace mix
 
             protected:
 
-            virtual mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file)
-            {
-                throw std::invalid_argument ("This shouldn't be called");
-            }
+            virtual mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file);
         };
+
 
     } // namespace assetsystem
 } // namespace mix
