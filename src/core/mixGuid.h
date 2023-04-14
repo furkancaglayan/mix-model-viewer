@@ -1,6 +1,5 @@
 #pragma once
 #include "../platform/typedefs.h"
-#include <GLFW/glfw3.h>
 #include <cstdint>
 #include <string>
 #include <functional>

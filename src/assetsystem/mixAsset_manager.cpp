@@ -24,10 +24,5 @@ namespace mix
                 load_asset (t);
             }*/
         }
-
-    
-
-      
-      
     } // namespace assetsystem
 } // namespace mix

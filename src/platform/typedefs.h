@@ -5,3 +5,4 @@
 #elif defined(SYSTEM_LINUX)
 #endif
 #include <GL/glew.h>
+#include <GLFW/glfw3.h>

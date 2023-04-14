@@ -1,5 +1,5 @@
 #pragma once
-#include <GLFW/glfw3.h>
+#include "../platform/typedefs.h"
 #include <cstdint>
 
 namespace mix
