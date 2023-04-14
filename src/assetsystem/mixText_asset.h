@@ -9,7 +9,16 @@ namespace mix
     {
         class mixText_asset : public mix::assetsystem::mixAsset_item
         {
+
             public:
+
+            mixText_asset (const std::string& name, std::string&& content) : mixAsset_item (name)
+            {
+                _content = std::make_unique<std::string> (std::move (content));
+            }
+            private:
+
+            std::unique_ptr<std::string> _content;
 
             /*
             mixMesh (std::string& name) : mixAsset_item (name)
@@ -27,6 +36,7 @@ namespace mix
             {
             
             }*/
+
         };
     } // namespace assetsystem
 } // namespace mix

@@ -25,13 +25,14 @@ namespace mix
             }
             else
             {
+                is_open = true;
                 return true;
             }
         }
 
         bool mixAsset_file::read (char* ptr)
         {
-            assert (ptr);
+            assert (is_open);
             auto size = get_file_size ();
             //_buffer = (char*) malloc (sizeof (char) * (size));
             unsigned long read;
@@ -39,6 +40,7 @@ namespace mix
             if (!result)
             {
                 CloseHandle (_handle);
+                is_open = false;
                 _handle = INVALID_HANDLE_VALUE;
                 //_content = std::string{ _buffer, read };
             }
@@ -48,24 +50,31 @@ namespace mix
 
         std::string mixAsset_file::read_all_text ()
         {
+            assert (!is_open);
+            open ();
+            //Change this to store the text read
             auto size = get_file_size ();
             char* buffer = (char*) malloc (sizeof (char) * (size));
             read (buffer);
             std::string val{ buffer, size };
             free (buffer);
+            close ();
             return val;
         }
 
         bool mixAsset_file::close ()
         {
             assert (_handle);
+            assert (is_open);
             BOOL result = CloseHandle (_handle);
-            _handle = nullptr;
+            _handle = INVALID_HANDLE_VALUE;
+            is_open = false;
             return result;
         }
 
         size_t mix::platform::mixAsset_file::get_file_size ()
         {
+            assert (is_open);
             LARGE_INTEGER size;
             BOOL result = GetFileSizeEx (_handle, &size);
             return result == FALSE ? -1 : size.QuadPart;

@@ -17,17 +17,16 @@ namespace mix
         {
             public:
 
-            template <class T> T* resolve (const mix::platform::mixAsset_file& file)
+            template <class T> T* resolve (mix::platform::mixAsset_file& file)
             {
-                std::string ext = file.get_extension ();
                 mixAsset_item* item = resolve_impl (file);
-                T* childPtr = static_cast<T*> (item);
-                return childPtr;
+                T* asset = static_cast<T*> (item);
+                return asset;
             }
 
             protected:
 
-            virtual mixAsset_item* resolve_impl (const mix::platform::mixAsset_file& file)
+            virtual mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file)
             {
                 throw std::invalid_argument ("This shouldn't be called");
             }

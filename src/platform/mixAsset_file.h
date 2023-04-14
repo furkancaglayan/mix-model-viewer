@@ -46,7 +46,7 @@ namespace mix
                 return _path.get_extension();
             }
 
-            const std::string get_name_without_extension () const
+            const std::string& get_name_without_extension () const
             {
                 return _path.get_name_without_extension ();
             }
@@ -56,6 +56,7 @@ namespace mix
             protected:
             private:
 
+            bool is_open = false;
             HANDLE _handle;
         };
     } // namespace platform

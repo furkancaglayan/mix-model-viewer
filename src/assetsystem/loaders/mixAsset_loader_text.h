@@ -14,20 +14,13 @@ namespace mix
 
             class mixAsset_loader_text : public mix::assetsystem::mixAsset_loader_base
             {
-                public:
-
-                mixAsset_loader_text ()
-                {
-                }
-
                
                 protected:
 
-                mix::assetsystem::mixAsset_item* resolve_impl (const mix::platform::mixAsset_file& file) override
+                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file) override
                 {
-                    return new mix::assetsystem::mixText_asset ();
+                    return new mixText_asset (file.get_name_without_extension (), file.read_all_text ());
                 }
-
             };
         }
     } // namespace assetsystem

@@ -75,7 +75,7 @@ namespace mix
                 return _loaders.at (index).get();
             }
 
-            template <class T> T* resolve_asset (const mix::platform::mixAsset_file& file) noexcept
+            template <class T> T* resolve_asset (mix::platform::mixAsset_file& file) noexcept
             {
                 mix::assetsystem::mixAsset_loader_base* loader = get_loader<T> ();
                 return loader->resolve<T> (file);
