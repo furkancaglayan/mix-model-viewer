@@ -5,6 +5,8 @@
 #include <memory>
 #include <sstream>
 #include <string>
+#include "../assetsystem/assets/mixAsset_item.h"
+#include "../assetsystem/asset_types.h"
 
 namespace mix
 {
@@ -15,13 +17,13 @@ namespace mix
         /// </summary>
         ///
         /// TODO: guid syustem
-        class mixAsset_file
+        class mixFile
         {
             public:
 
-            mixAsset_file (mixAsset_path&& path);
-            mixAsset_file (std::string&& path);
-            ~mixAsset_file ();
+            mixFile (mixAsset_path&& path);
+            mixFile (std::string&& path);
+            ~mixFile ();
 
             bool open ();
             bool read (char* ptr);
@@ -33,6 +35,11 @@ namespace mix
             inline const std::string& get_extension () const
             {
                 return _path.get_extension ();
+            }
+
+            inline const mix::assetsystem::asset_type get_asset_type () const
+            {
+                return mix::assetsystem::asset_types::get_asset_type (get_extension());
             }
 
             inline const std::string& get_name_without_extension () const

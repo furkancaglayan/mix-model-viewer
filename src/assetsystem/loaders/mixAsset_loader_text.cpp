@@ -6,7 +6,7 @@ namespace mix
     {
         namespace loaders
         {
-            mix::assetsystem::mixAsset_item* mixAsset_loader_text::resolve_impl (mix::platform::mixAsset_file& file)
+            mix::assetsystem::mixAsset_item* mixAsset_loader_text::resolve_impl (mix::platform::mixFile& file)
             {
                 return new mixText_asset (file.get_name_without_extension (), file.read_all_text ());
             }

@@ -1,6 +1,7 @@
 #pragma once
-#include "../mixAsset_loader_base.h"
-#include "../mixText_asset.h"
+#include "../loaders/mixAsset_loader_base.h"
+#include "../assets/mixText_asset.h"
+#include "../../platform/mixFile.h"
 
 namespace mix
 {
@@ -17,7 +18,7 @@ namespace mix
                
                 protected:
 
-                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file) override;
+                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
             };
         }
     } // namespace assetsystem

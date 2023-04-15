@@ -8,17 +8,22 @@ namespace mix
 {
     namespace platform
     {
-        class mixAsset_folder
+        class mixFolder
         {
             public:
 
-            mixAsset_folder (mixAsset_path&& path);
-            mixAsset_folder (std::string&& path);
-            mixAsset_folder (const std::string& path);
+            mixFolder (mixAsset_path&& path);
+            mixFolder (std::string&& path);
+            mixFolder (const std::string& path);
 
             inline const std::string get_name () const
             {
                 return _path.get_name_without_extension ();
+            }
+
+            inline const std::string get_path () const
+            {
+                return _path.to_str ();
             }
 
             private:

@@ -16,7 +16,7 @@ mix::core::mixGuid mix::core::mixGuid::create_new ()
 
     OLECHAR* guidString;
     HRESULT result = StringFromCLSID (guid, &guidString);
-    std::string str = mix::platform::platform_utils::wide_to_string (guidString);
+    std::string str = mix::platform::platform_utils::convert_wide_to_utf8 (guidString);
     CoTaskMemFree (guidString);
     return mixGuid{ str };
 }

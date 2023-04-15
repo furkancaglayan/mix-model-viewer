@@ -1,10 +1,11 @@
 #pragma once
-#include "../platform/mixAsset_file.h"
-#include "mixAsset_item.h"
 #include <functional>
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
+#include "../assets/mixAsset_item.h"
+#include "../../platform/mixFile.h"
+
 namespace mix
 {
     namespace assetsystem
@@ -17,16 +18,14 @@ namespace mix
         {
             public:
 
-            template <class T> T* resolve (mix::platform::mixAsset_file& file)
+            inline mixAsset_item* resolve (mix::platform::mixFile& file)
             {
-                mixAsset_item* item = resolve_impl (file);
-                T* asset = static_cast<T*> (item);
-                return asset;
+                return resolve_impl (file);
             }
 
             protected:
 
-            virtual mixAsset_item* resolve_impl (mix::platform::mixAsset_file& file);
+            virtual mixAsset_item* resolve_impl (mix::platform::mixFile& file);
         };
 
 

@@ -1,10 +1,11 @@
 #pragma once
-#include "../core/mixGuid.h"
+#include "../../core/mixGuid.h"
 #include <iostream>
 #include <map>
 #include <memory>
 #include <string>
 #include <vector>
+#include "../../platform/mixAsset_path.h"
 
 namespace mix
 {
@@ -13,19 +14,20 @@ namespace mix
         /// <summary>
         /// Support multiple extensions
         /// </summary>
+     
 
         class mixAsset_item
         {
             public:
 
-            mixAsset_item (std::string&& name) noexcept;
-            mixAsset_item (const std::string& name) noexcept;
+            mixAsset_item (mix::platform::mixAsset_path&& path) noexcept;
+            mixAsset_item (const mix::platform::mixAsset_path& path) noexcept;
 
             mix::core::mixGuid _guid;
            
             protected:
 
-            std::string _name;
+            mix::platform::mixAsset_path _path;
 
         };
     } // namespace assetsystem

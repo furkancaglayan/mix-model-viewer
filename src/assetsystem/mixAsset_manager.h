@@ -1,8 +1,6 @@
 #pragma once
 
 
-#include "mixAsset_loader_base.h"
-#include "../platform/mixAsset_folder.h"
 
 #include <map>
 #include <memory>
@@ -10,6 +8,11 @@
 #include <typeindex>
 #include <unordered_map>
 #include <vector>
+#include "assets/mixAsset_item.h"
+#include "loaders/mixAsset_loader_base.h"
+#include "asset_types.h"
+#include "../platform/mixFile.h"
+#include "../platform/mixFolder.h"
 
 namespace mix
 {
@@ -58,32 +61,32 @@ namespace mix
                 _maps.insert ({ index, std::make_unique<mixAsset_map> () });
             }
 
-            template <typename Ttype_l, class Ttype_I> void register_loader ()
+            template <class T> void register_loader (asset_type type)
             {
-                auto index = std::type_index{ typeid (Ttype_l) };
-                assert (!_loaders.count(index));
-                _loaders.insert ({ index, std::make_unique<Ttype_I> () });
+                assert (!_loaders.count (type));
+                _loaders.insert ({ type, std::make_unique<T> () });
             }
 
-            template <class T> mix::assetsystem::mixAsset_loader_base* get_loader () const noexcept
+            inline mix::assetsystem::mixAsset_loader_base* get_loader (const asset_type& type) const noexcept
             {
-                std::type_index index = std::type_index{ typeid (T) };
-                return _loaders.at (index).get();
+                return _loaders.at (type).get ();
             }
 
-            template <class T> T* resolve_asset (mix::platform::mixAsset_file& file) noexcept
+            inline mixAsset_item* resolve_asset (mix::platform::mixFile& file) const noexcept
             {
-                mix::assetsystem::mixAsset_loader_base* loader = get_loader<T> ();
-                return loader->resolve<T> (file);
+                mix::assetsystem::mixAsset_loader_base* loader = get_loader (file.get_asset_type());
+                return loader->resolve (file);
             }
 
-            private:
+            void resolve_all ();
+            
+        private:
 
 
             std::unordered_map<std::type_index, std::unique_ptr<mixAsset_map>> _maps;
-            std::unordered_map<std::type_index, std::unique_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
-
-            std::unique_ptr<mix::platform::mixAsset_folder> _root;
+            std::unordered_map<asset_type, std::unique_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
+            //Use multimap and bind to extensions instead
+            std::unique_ptr<mix::platform::mixFolder> _root;
         };
 
 

@@ -1,25 +1,26 @@
-#include "mixAsset_file.h"
+#include "mixFile.h"
 
 namespace mix
 {
     namespace platform
     {
-        mixAsset_file::mixAsset_file (mixAsset_path&& path) : _path{ std::move (path) }, _handle{ INVALID_HANDLE_VALUE }
-        {
 
+
+        mixFile::mixFile (mixAsset_path&& path) : _path{ std::move (path) }, _handle{ INVALID_HANDLE_VALUE }
+        {
         }
 
-        mixAsset_file::mixAsset_file (std::string&& path)
+        mixFile::mixFile (std::string&& path)
         : _path{ mixAsset_path{ std::move (path) } }, _handle{ INVALID_HANDLE_VALUE }
         {
-
         }
-        mixAsset_file::~mixAsset_file ()
+
+        mixFile::~mixFile ()
         {
             _handle = INVALID_HANDLE_VALUE;
         }
 
-        bool mix::platform::mixAsset_file::open ()
+        bool mix::platform::mixFile::open ()
         {
             auto w_string = std::wstring (_path);
             auto access = GENERIC_READ;
@@ -28,8 +29,7 @@ namespace mix
             auto flags_and_attributes = FILE_ATTRIBUTE_NORMAL;
 
             assert (_handle == INVALID_HANDLE_VALUE);
-            _handle = CreateFileW (w_string.c_str (), access, share, NULL,
-                                   creation_disposition, flags_and_attributes, NULL);
+            _handle = CreateFileW (w_string.c_str (), access, share, NULL, creation_disposition, flags_and_attributes, NULL);
 
             if (_handle == INVALID_HANDLE_VALUE)
             {
@@ -44,7 +44,7 @@ namespace mix
             }
         }
 
-        bool mixAsset_file::read (char* ptr)
+        bool mixFile::read (char* ptr)
         {
             assert (is_open);
             auto size = get_file_size ();
@@ -62,11 +62,11 @@ namespace mix
             return result;
         }
 
-        std::string mixAsset_file::read_all_text ()
+        std::string mixFile::read_all_text ()
         {
             assert (!is_open);
             open ();
-            //Change this to store the text read
+            // Change this to store the text read
             auto size = get_file_size ();
             char* buffer = (char*) malloc (sizeof (char) * (size));
             read (buffer);
@@ -76,7 +76,7 @@ namespace mix
             return val;
         }
 
-        bool mixAsset_file::close ()
+        bool mixFile::close ()
         {
             assert (_handle);
             assert (is_open);
@@ -86,7 +86,7 @@ namespace mix
             return result;
         }
 
-        size_t mix::platform::mixAsset_file::get_file_size ()
+        size_t mix::platform::mixFile::get_file_size ()
         {
             assert (is_open);
             LARGE_INTEGER size;

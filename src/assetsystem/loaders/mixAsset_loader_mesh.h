@@ -1,5 +1,5 @@
 #pragma once
-#include "../mixAsset_loader_base.h"
+#include "mixAsset_loader_base.h"
 
 namespace mix
 {

@@ -9,33 +9,27 @@
 
 #include "assetsystem/loaders/mixAsset_loader_text.h"
 #include "assetsystem/mixAsset_manager.h"
+#include "assetsystem/loaders/mixAsset_loader_mesh.h"
 
 int main ()
 {
     std::string path{ "C:\\Users\\furka\\Desktop\\Develop" };
-    mix::platform::mixAsset_folder folder{ std::move (path) };
+    mix::platform::mixFolder folder{ std::move (path) };
 
     std::string path2{ "C:\\Users\\furka\\Desktop\\Develop\\spnpccharacters.xml" };
-    mix::platform::mixAsset_file f{ std::move (path2) };
+    mix::platform::mixFile f{ std::move (path2) };
 
 
-    mix::assetsystem::mixAsset_manager assets{ std::string{
-    "C:\\Users\\furka\\Desktop\\Develop\\mix-model-viewer\\assets" } };
+    mix::assetsystem::mixAsset_manager assets{ path };
 
-    assets.add_asset_map<mix::assetsystem::mixText_asset> ();
-    assets.register_loader<mix::assetsystem::mixText_asset, mix::assetsystem::loaders::mixAsset_loader_text> ();
-    std::unique_ptr<mix::assetsystem::mixText_asset> ptr =
-    std::unique_ptr<mix::assetsystem::mixText_asset> (assets.resolve_asset<mix::assetsystem::mixText_asset> (f));
 
-    if (ptr)
-    {
-        std::cout << "uniqye" << std::endl;
-    }
-    else
-    {
-        std::cout << "not uniqye" << std::endl;
-    
-    }
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Text);
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Mesh);
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Other);
+
+    assets.resolve_all ();
+
+
     if (f.open ())
     {
         auto s = f.read_all_text ();
