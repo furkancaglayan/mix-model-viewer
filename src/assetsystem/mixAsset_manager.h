@@ -1,18 +1,18 @@
 #pragma once
 
 
-
+#include "../containers/tree_node.h"
+#include "../platform/mixFile.h"
+#include "asset_types.h"
+#include "assets/mixAsset_folder.h"
+#include "assets/mixAsset_item.h"
+#include "loaders/mixAsset_loader_base.h"
 #include <map>
 #include <memory>
 #include <string>
 #include <typeindex>
 #include <unordered_map>
 #include <vector>
-#include "assets/mixAsset_item.h"
-#include "loaders/mixAsset_loader_base.h"
-#include "asset_types.h"
-#include "../platform/mixFile.h"
-#include "../platform/mixFolder.h"
 
 namespace mix
 {
@@ -22,45 +22,19 @@ namespace mix
         /// Support multiple extensions
         /// </summary>
 
+        using asset_tree =
+        std::unique_ptr<mix::containers::tree_node<std::string, mix::assetsystem::mixAsset_item>>;
+        using asset_tree_val = mix::containers::tree_node<std::string, mix::assetsystem::mixAsset_item>;
+        using asset_tree_ptr = asset_tree_val*;
+
         class mixAsset_manager
         {
-            class mixAsset_map
-            {
-                public:
-
-                size_t get_size () const
-                {
-                    // return _map.size ();
-                }
-
-                std::shared_ptr<mixAsset_item> get (const mix::core::mixGuid& guid)
-                {
-                    // return _map.at(guid);
-                }
-
-                inline void add (std::shared_ptr<mixAsset_item>&& t) noexcept
-                {
-                    //_map.insert ({ t->_guid, t });
-                }
-
-                private:
-
-                std::unordered_map<mix::core::mixGuid, mix::core::mixGuid> _map;
-            };
-
 
             public:
 
-            mixAsset_manager (std::string&& root);
-            mixAsset_manager (const std::string& root);
-
-
-            template <class T> void add_asset_map ()
-            {
-                auto index = std::type_index{ typeid (T) };
-                _maps.insert ({ index, std::make_unique<mixAsset_map> () });
-            }
-
+            mixAsset_manager (std::unique_ptr<mix::assetsystem::mixAsset_folder> root);
+            mixAsset_manager (std::string& root_path);
+            static mixAsset_manager* instance;
             template <class T> void register_loader (asset_type type)
             {
                 assert (!_loaders.count (type));
@@ -74,19 +48,22 @@ namespace mix
 
             inline mixAsset_item* resolve_asset (mix::platform::mixFile& file) const noexcept
             {
-                mix::assetsystem::mixAsset_loader_base* loader = get_loader (file.get_asset_type());
+                mix::assetsystem::mixAsset_loader_base* loader = get_loader (file.get_asset_type ());
                 return loader->resolve (file);
             }
 
-            void resolve_all ();
-            
-        private:
+            inline void debug ()
+            {
+                _assets->print ();
+            }
 
+            void resolve_all_assets ();
+            private:
 
-            std::unordered_map<std::type_index, std::unique_ptr<mixAsset_map>> _maps;
+            static void resolve_assets_impl (const std::string& p, asset_tree_ptr node);
+
             std::unordered_map<asset_type, std::unique_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
-            //Use multimap and bind to extensions instead
-            std::unique_ptr<mix::platform::mixFolder> _root;
+            asset_tree _assets;
         };
 
 

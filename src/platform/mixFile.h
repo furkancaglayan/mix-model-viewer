@@ -47,6 +47,12 @@ namespace mix
                 return _path.get_name_without_extension ();
             }
 
+            
+            inline const std::string& get_path () const
+            {
+                return _path.to_str();
+            }
+
             mixAsset_path _path;
 
             protected:

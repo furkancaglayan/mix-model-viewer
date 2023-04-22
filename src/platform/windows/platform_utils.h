@@ -23,9 +23,11 @@ namespace mix
             static std::vector<std::string> get_files (const std::string& path, search_type search_type)
             {
                 std::vector<std::string> files;
+                char p[max_len];
+                sprintf (p, "%s\\*", path.c_str ());
+                std::wstring ws = convert_utf8_to_wide (p);
+
                 WIN32_FIND_DATA data;
-                auto path_dir = path + "/*";
-                std::wstring ws (path_dir.begin (), path_dir.end ());
                 HANDLE hFind = FindFirstFileW (ws.c_str (), &data); // DIRECTORY
 
                 if (hFind != INVALID_HANDLE_VALUE)
@@ -39,13 +41,12 @@ namespace mix
                                     (search_type == mix::platform::platform_utils::search_type::folder &&
                                      (wcscmp (data.cFileName, L".") != 0 && wcscmp (data.cFileName, L"..") != 0 &&
                                       (data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0)) ||
-                                    ((wcscmp (data.cFileName, L".") != 0 && wcscmp (data.cFileName, L"..") != 0 &&
-                                      (data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0) ||
-                                     (data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0);
+                                    (wcscmp (data.cFileName, L".") != 0 && wcscmp (data.cFileName, L"..") != 0);
 
                         if (cond)
                         {
-                            files.emplace_back (convert_wide_to_utf8 (data.cFileName));
+                            auto p = path + "/" + convert_wide_to_utf8 (data.cFileName);
+                            files.emplace_back (p);
                         }
 
 

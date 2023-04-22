@@ -1,5 +1,6 @@
 #pragma once
 #include "mixAsset_loader_base.h"
+#include "../assets/mixText_asset.h"
 
 namespace mix
 {
@@ -13,9 +14,8 @@ namespace mix
 
             class mixAsset_loader_mesh : public mix::assetsystem::mixAsset_loader_base
             {
-                public:
-                private:
-
+                protected:
+                mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
             };
         }
     } // namespace assetsystem

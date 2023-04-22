@@ -35,6 +35,7 @@ namespace mix
             {
                 DWORD err = GetLastError ();
                 HRESULT hr = HRESULT_FROM_WIN32 (err);
+                assert (false);
                 return false;
             }
             else

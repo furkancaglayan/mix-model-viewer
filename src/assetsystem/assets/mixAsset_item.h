@@ -2,9 +2,8 @@
 #include "../../core/mixGuid.h"
 #include <iostream>
 #include <map>
-#include <memory>
-#include <string>
-#include <vector>
+#include <istream>
+#include <fstream>
 #include "../../platform/mixAsset_path.h"
 
 namespace mix
@@ -23,8 +22,22 @@ namespace mix
             mixAsset_item (mix::platform::mixAsset_path&& path) noexcept;
             mixAsset_item (const mix::platform::mixAsset_path& path) noexcept;
 
-            mix::core::mixGuid _guid;
            
+            virtual inline std::string get_name () const
+            {
+                return _path.get_name ();
+            }
+
+            virtual std::ostream& operator<< (std::ostream& out) const;
+            virtual std::istream& operator>> (std::istream& in) const;
+
+            virtual operator std::string () const
+            {
+                return get_name ();
+            }
+
+            mix::core::mixGuid _guid;
+
             protected:
 
             mix::platform::mixAsset_path _path;

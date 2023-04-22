@@ -42,6 +42,11 @@ namespace mix
                 return _extension;
             }
 
+            inline const std::string& get_name () const
+            {
+                return _name;
+            }
+
             
             inline const std::string& operator() ()
             {

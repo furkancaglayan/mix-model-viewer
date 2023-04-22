@@ -43,6 +43,11 @@ namespace mix
                 _internal = t._internal;
                 return *this;
             }
+
+            inline operator std::string () const
+            {
+                return _internal;
+            } // overloaded typecast operator
             private:
 
             mixGuid (std::string& val);

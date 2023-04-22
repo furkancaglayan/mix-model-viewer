@@ -13,28 +13,18 @@
 
 int main ()
 {
-    std::string path{ "C:\\Users\\furka\\Desktop\\Develop" };
-    mix::platform::mixFolder folder{ std::move (path) };
-
-    std::string path2{ "C:\\Users\\furka\\Desktop\\Develop\\spnpccharacters.xml" };
-    mix::platform::mixFile f{ std::move (path2) };
-
-
+    std::string path{ "C:\\Users\\furka\\Desktop\\Develop\\mb3_dev\\WOTS\\Modules\\Native\\ModuleData" };
+    std::string path2{ "C:\\Users\\furka\\Desktop\\Develop" };
     mix::assetsystem::mixAsset_manager assets{ path };
 
-
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Text);
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Texture);
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Material);
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Mesh);
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Other);
 
-    assets.resolve_all ();
-
-
-    if (f.open ())
-    {
-        auto s = f.read_all_text ();
-        f.close ();
-    }
+    assets.resolve_all_assets ();
+    assets.debug ();
 
     GLenum err;
     if (!glfwInit ())
