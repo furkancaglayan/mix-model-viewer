@@ -11,15 +11,12 @@ namespace mix
     {
         class search
         {
-            template <class Key, class T, template <typename> class Container> T* binary_search (const Key& key, Container<T> container)
+            template <class ForwardIt, class T, class Compare>
+            bool binary_search (ForwardIt first, ForwardIt last, const T& value, Compare comp, size_t& pos)
             {
-
-                Container<T> output = input;
-                Container<T>::const_iterator in_it = input.begin ();
-                std::vector
-                for (Container<T>::iterator out_it = std::next (output.begin ()); out_it != output.end (); ++out_it, ++in_it)
-                    *out_it += *in_it;
-                return output;
+                last = std::lower_bound (first, last, value, comp);
+                pos = last - first;
+                return (!(first == last) && !(comp (value, *first)));
             }
         };
 

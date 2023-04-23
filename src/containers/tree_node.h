@@ -4,11 +4,12 @@
 #include <memory>
 #include <string>
 #include <vector>
-
+#include "../algorithms/binary_search.h"
 namespace mix
 {
     namespace containers
     {
+        using mix::algorithms::search;
 
         template <class Key, class T> class tree_node
         {
@@ -35,27 +36,17 @@ namespace mix
 
             tree_node<Key, T>* search (const Key& key) const
             {
-                size_t index = 0;
-                size_t size = _children.size ();
-
-                while (index <= size - 1)
+                size_t pos;
+                if (search::binary_search (
+                    _children.begin (), _children.end (), key,
+                    [] (std::unique_ptr<T> n, const Key& key) { return n->get_key () < key; }, pos))
                 {
-                    size_t m = index + (size - index) / 2;
-
-                    if (_children.at (m).get_key () == key)
-                    {
-                        return _children.at (m).get ();
-                    }
-                    else if (_children.at (m).get_key () < key)
-                    {
-                    
-                    }
-                    else// if (_children.at (m).get_key () > key)
-                    {
-                    }
 
                 }
-
+                else
+                {
+                    return nullptr;
+                }
             }
 
             inline bool has_children () const
@@ -82,7 +73,11 @@ namespace mix
 
             static void print_node (tree_node* node, int depth)
             {
-                std::cout << std::string (depth * 2, ' ');
+                std::cout << std::string (depth * 2, '-');
+                if (depth > 0)
+                {
+                    std::cout << '>';
+                }
                 auto val = (*node->_value.get ());
                 std::cout << (std::string) val << std::endl;
 
