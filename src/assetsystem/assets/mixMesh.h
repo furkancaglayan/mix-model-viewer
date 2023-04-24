@@ -1,7 +1,10 @@
 #pragma once
+#include "mixAsset_item.h"
 #include <memory>
 #include <string>
-#include "mixAsset_item.h"
+#include <vector>
+#include "../../core/vertex.h"
+#include "mixMaterial.h"
 
 namespace mix
 {
@@ -11,22 +14,20 @@ namespace mix
         {
             public:
 
-            /*
-            mixMesh (std::string& name) : mixAsset_item (name)
-            {
-            }
+            mixMesh (const mix::platform::mixAsset_path& path,
+                     std::vector<vertex>&& vertices,
+                     std::vector<unsigned>&& indices,
+                     mixMaterial&& material);
+            ~mixMesh ();
+            void load ();
+            private:
 
-            mixMesh (mixMesh&& other) noexcept : mixMesh{ other._name }
-            {
-                std::cout << "Move constructor is called." << std::endl;
-            }
-
-            
-            mixMesh (const mixMesh& other) = default;
-            mixMesh () : mixAsset_item ()
-            {
-            
-            }*/
+            GLuint VAO{};
+            GLuint VBO{};
+            GLuint EBO{};
+            std::vector<vertex> _vertices;
+            std::vector<unsigned> _indices;
+            mixMaterial _material;
         };
     } // namespace assetsystem
 } // namespace mix

@@ -23,7 +23,7 @@ namespace mix
             mixAsset_item (const mix::platform::mixAsset_path& path) noexcept;
 
            
-            virtual inline std::string get_name () const
+            virtual inline std::string get_base_name () const
             {
                 return _path.get_name ();
             }
@@ -31,12 +31,12 @@ namespace mix
             virtual std::ostream& operator<< (std::ostream& out) const;
             virtual std::istream& operator>> (std::istream& in) const;
 
-            virtual operator std::string () const
+            inline virtual operator std::string () const
             {
-                return get_name ();
+                return get_base_name ();
             }
 
-            mix::core::mixGuid _guid;
+            const mix::core::mixGuid _guid;
 
             protected:
 
