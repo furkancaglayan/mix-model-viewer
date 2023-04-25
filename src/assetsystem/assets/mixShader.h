@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <string>
+#include "mixAsset_item.h"
 
 namespace mix
 {
@@ -11,10 +12,10 @@ namespace mix
 
         public:
 
-        enum class shader_type : uint8_t
+        enum class shader_type : unsigned int
         {
-            vertex,
-            fragment,
+            vertex = GL_VERTEX_SHADER,
+            fragment = GL_FRAGMENT_SHADER,
             invalid
         };
         static shader_type get_shader_type (const std::string& ext)
@@ -34,19 +35,30 @@ namespace mix
 
     namespace assetsystem
     {
-        class mixShader
+        class mixShader : public mix::assetsystem::mixAsset_item
         {
             public:
 
-            inline const mix::shader::shader_type get_shader_type () const;
-            inline const unsigned int get_shader_id ();
-            const void load_from_text (const std::string& text);
-            void compile ();
+            mixShader (const mix::platform::mixAsset_path& path, const std::string& source, mix::shader::shader_type type);
+            mixShader (const mix::platform::mixAsset_path& path);
+            ~mixShader ();
+
+            void compile (const std::string& source, mix::shader::shader_type type);
+            inline const mix::shader::shader_type get_shader_type () const
+            {
+                return _type;
+            }
+
+            inline const unsigned get_shader_id () const
+            {
+                return shader_id;
+            }
 
             private:
 
             const mix::shader::shader_type _type;
-            unsigned int _id;
+            unsigned shader_id{};
+            bool is_compiled;
         };
     } // namespace assetsystem
 } // namespace mix

@@ -22,6 +22,7 @@ namespace mix
             public:
 
             mixFile (mixAsset_path&& path);
+            mixFile (const mixAsset_path& path);
             mixFile (std::string&& path);
             ~mixFile ();
 

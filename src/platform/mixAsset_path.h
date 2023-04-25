@@ -1,11 +1,11 @@
 #pragma once
+#include "typedefs.h"
+#include "windows/platform_utils.h"
+#include <algorithm>
 #include <memory>
 #include <sstream>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include "typedefs.h"
-#include "windows/platform_utils.h"
 
 namespace mix
 {
@@ -16,6 +16,7 @@ namespace mix
             public:
 
             mixAsset_path (const std::string& path);
+
 
             inline operator std::string () const
             {
@@ -47,7 +48,7 @@ namespace mix
                 return _name;
             }
 
-            
+
             inline const std::string& operator() ()
             {
                 return _path;
@@ -58,11 +59,17 @@ namespace mix
                 return _path;
             }
 
+            inline operator const char* ()
+            {
+                return _path.c_str();
+            }
+
+
             inline mixAsset_path operator+ (const mixAsset_path& str) const
             {
                 std::string return_val{ _path };
                 return_val.append (str._path);
-                return mixAsset_path{ std::move(return_val) };
+                return mixAsset_path{ std::move (return_val) };
             }
             // member function
             inline mixAsset_path operator+ (const std::string& str) const

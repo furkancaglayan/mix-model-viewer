@@ -16,8 +16,8 @@ namespace mix
 
             mixMesh (const mix::platform::mixAsset_path& path,
                      std::vector<vertex>&& vertices,
-                     std::vector<unsigned>&& indices,
-                     mixMaterial&& material);
+                     std::vector<unsigned>&& indices
+                     /* mixMaterial&& material*/);
             ~mixMesh ();
             void load ();
             private:
@@ -27,7 +27,7 @@ namespace mix
             GLuint EBO{};
             std::vector<vertex> _vertices;
             std::vector<unsigned> _indices;
-            mixMaterial _material;
+            //mixMaterial _material;
         };
     } // namespace assetsystem
 } // namespace mix

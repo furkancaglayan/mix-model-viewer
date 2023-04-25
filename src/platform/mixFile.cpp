@@ -10,6 +10,10 @@ namespace mix
         {
         }
 
+        mixFile::mixFile (const mixAsset_path& path) : _path{ path }, _handle{ INVALID_HANDLE_VALUE }
+        {
+        }
+
         mixFile::mixFile (std::string&& path)
         : _path{ mixAsset_path{ std::move (path) } }, _handle{ INVALID_HANDLE_VALUE }
         {
