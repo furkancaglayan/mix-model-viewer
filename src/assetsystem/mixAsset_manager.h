@@ -23,8 +23,8 @@ namespace mix
         /// </summary>
 
         using asset_tree =
-        std::unique_ptr<mix::containers::tree_node<std::string, mix::assetsystem::mixAsset_item>>;
-        using asset_tree_val = mix::containers::tree_node<std::string, mix::assetsystem::mixAsset_item>;
+        std::unique_ptr<mix::containers::tree_node>;
+        using asset_tree_val = mix::containers::tree_node;
         using asset_tree_ptr = asset_tree_val*;
 
         class mixAsset_manager
@@ -50,6 +50,16 @@ namespace mix
             {
                 mix::assetsystem::mixAsset_loader_base* loader = get_loader (file.get_asset_type ());
                 return loader->resolve (file);
+            }
+
+            inline const mixAsset_item* get_asset_with_base_name (const std::string& name) const
+            {
+                return _assets->search_with_base_name (name);
+            }
+
+             inline const mixAsset_item* get_asset_with_full_name (const std::string& name) const
+            {
+                return _assets->search_with_full_name (name);
             }
 
             inline void debug ()

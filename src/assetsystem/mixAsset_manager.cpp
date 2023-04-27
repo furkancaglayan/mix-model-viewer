@@ -8,16 +8,14 @@ namespace mix
         mixAsset_manager::mixAsset_manager (std::unique_ptr<mix::assetsystem::mixAsset_folder> root)
         {
             instance = this;
-            auto key = static_cast<std::string> (root->_guid);
-            _assets = std::make_unique<asset_tree_val> (key, std::move (root));
+            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root));
         }
 
         mixAsset_manager::mixAsset_manager (std::string& root_path)
         {
             instance = this;
             auto root = std::make_unique<mix::assetsystem::mixAsset_folder> (root_path);
-            auto key = static_cast<std::string> (root->_guid);
-            _assets = std::make_unique<asset_tree_val> (key, std::move (root));
+            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root));
         }
 
         void mixAsset_manager::resolve_all_assets ()
@@ -38,8 +36,8 @@ namespace mix
             {
                 if (mix::platform::platform_utils::is_folder(path))
                 {
-                    auto folder = std::make_unique<mix::assetsystem::mixAsset_folder> (path);
-                    auto guid = static_cast<std::string> (folder->_guid);
+                    auto folder = std::make_shared<mix::assetsystem::mixAsset_folder> (path);
+                    auto guid = folder->get_guid ();
                     auto new_node = node->insert (guid, std::move (folder));
                     //TODO: add path join
                     resolve_assets_impl (path, new_node);
@@ -48,8 +46,7 @@ namespace mix
                 {
                     mix::platform::mixFile file{ path };
                     mixAsset_item* asset = mixAsset_manager::instance->resolve_asset (file);
-                    auto guid = static_cast<std::string> (asset->_guid);
-                    node->insert (guid, std::unique_ptr<mixAsset_item>{ asset });
+                    node->insert (asset->get_guid (), std::shared_ptr<mixAsset_item>{ asset });
                     std::cout << "\t Adding file " << path << std::endl;
                 }
             }

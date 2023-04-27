@@ -12,6 +12,36 @@ mix::assetsystem::mixMesh::~mixMesh ()
 {
 }
 
-void mix::assetsystem::mixMesh::load ()
+void mix::assetsystem::mixMesh::draw ()
 {
+    glBindVertexArray (VAO);
+    glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, &_indices);
+    glBindVertexArray (0);
+}
+
+void mix::assetsystem::mixMesh::initialize_mesh ()
+{
+    glGenVertexArrays (1, &VAO);
+    glGenBuffers (1, &VBO);
+    glGenBuffers (1, &EBO);
+
+    glBindVertexArray (VAO);
+    glBindBuffer (GL_ARRAY_BUFFER, VBO);
+
+    glBufferData (GL_ARRAY_BUFFER, _vertices.size () * sizeof (vertex), &_vertices[0], GL_STATIC_DRAW);
+
+    glBindBuffer (GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData (GL_ELEMENT_ARRAY_BUFFER, _indices.size () * sizeof (unsigned int), &_indices[0], GL_STATIC_DRAW);
+
+    // vertex positions
+    glEnableVertexAttribArray (0);
+    glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) 0);
+    // vertex normals
+    glEnableVertexAttribArray (1);
+    glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
+    // vertex texture coords
+    glEnableVertexAttribArray (2);
+    glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
+
+    glBindVertexArray (0);
 }

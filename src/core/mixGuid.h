@@ -38,6 +38,17 @@ namespace mix
                 return _internal.compare (p._internal);
             }
 
+            inline bool operator< (const mixGuid& p) const
+            {
+                return _internal < p._internal;
+            }
+
+            
+            inline bool operator>(const mixGuid& p) const
+            {
+                return _internal > p._internal;
+            }
+
             inline mixGuid& operator= (mixGuid t)
             {
                 _internal = t._internal;

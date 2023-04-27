@@ -20,11 +20,11 @@ namespace mix
         };
         static shader_type get_shader_type (const std::string& ext)
         {
-            if (ext == "vs")
+            if (ext == "vert")
             {
                 return shader_type::vertex;
             }
-            else if (ext == "fs")
+            else if (ext == "frag")
             {
                 return shader_type::fragment;
             }

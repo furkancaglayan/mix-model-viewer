@@ -22,7 +22,12 @@ namespace mix
             mixAsset_item (mix::platform::mixAsset_path&& path) noexcept;
             mixAsset_item (const mix::platform::mixAsset_path& path) noexcept;
 
-            virtual inline std::string get_base_name () const
+            virtual inline const std::string& get_base_name () const
+            {
+                return _path.get_name_without_extension ();
+            }
+
+              virtual inline const std::string& get_full_name () const
             {
                 return _path.get_name ();
             }
@@ -35,8 +40,10 @@ namespace mix
                 return get_base_name ();
             }
 
-            const mix::core::mixGuid _guid;
-
+            inline const mix::core::mixGuid& get_guid () const
+            {
+                return _guid;
+            }
             void set_visible (bool v);
 
             void set_enabled (bool v);
@@ -46,6 +53,7 @@ namespace mix
             bool is_visible;
             bool is_enabled;
             bool is_readonly;
+            const mix::core::mixGuid _guid;
 
             mix::platform::mixAsset_path _path;
 

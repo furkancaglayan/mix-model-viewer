@@ -1,65 +1,45 @@
 ﻿#pragma once
+#include "../algorithms/binary_search.h"
+#include "../assetsystem/assets/mixAsset_item.h"
+#include "../core/mixGuid.h"
 #include <algorithm>
 #include <iostream>
+#include <functional>
 #include <memory>
 #include <string>
 #include <vector>
-#include "../algorithms/binary_search.h"
 namespace mix
 {
     namespace containers
     {
         using mix::algorithms::search;
 
-        template <class Key, class T> class tree_node
+        class tree_node
         {
             public:
 
-            tree_node (Key key, std::unique_ptr<T> value) : _key{ key }, _value{ std::move (value) }
+            tree_node (mix::core::mixGuid key, std::shared_ptr<mix::assetsystem::mixAsset_item> value)
+            : _key{ key }, _value{ std::move (value) }
             {
             }
 
-            tree_node<Key, T>* insert (Key key, std::unique_ptr<T> child)
-            {
-                size_t index = 0;
-                for (; index < _children.size (); index++)
-                {
-                    if (_children.at (index)->get_key () < key)
-                    {
-                        break;
-                    }
-                }
-                auto it = _children.insert (_children.begin () + index, std::make_unique<tree_node> (key, std::move (child)));
-                return _children.at (index).get();
-            }
+            tree_node* insert (const mix::core::mixGuid& key, std::shared_ptr<mix::assetsystem::mixAsset_item> child);
+            const mix::assetsystem::mixAsset_item* search_with_guid (const mix::core::mixGuid& key) const;
+            const mix::assetsystem::mixAsset_item* search_with_base_name (const std::string& name) const;
+            const mix::assetsystem::mixAsset_item* search_with_full_name (const std::string& name) const;
 
-
-            tree_node<Key, T>* search (const Key& key) const
-            {
-                size_t pos;
-                if (search::binary_search (
-                    _children.begin (), _children.end (), key,
-                    [] (std::unique_ptr<T> n, const Key& key) { return n->get_key () < key; }, pos))
-                {
-
-                }
-                else
-                {
-                    return nullptr;
-                }
-            }
 
             inline bool has_children () const
             {
                 return _children.size ();
             }
 
-            inline const Key& get_key () const
+            inline const mix::core::mixGuid& get_key () const
             {
                 return _key;
             }
 
-            inline const T* get_value () const
+            inline const mix::assetsystem::mixAsset_item* get_value () const
             {
                 return _value.get ();
             }
@@ -70,25 +50,38 @@ namespace mix
             }
 
             private:
-
-            static void print_node (tree_node* node, int depth)
+            
+            template <class T>
+            const mix::assetsystem::mixAsset_item*
+            search_with_member (T val, T(mix::assetsystem::mixAsset_item::* getter) (void) const) const
             {
-                std::cout << std::string (depth * 2, '-');
-                if (depth > 0)
+                auto s = std::invoke (getter, _value.get ());
+                if (val == s)
                 {
-                    std::cout << '>';
+                    return _value.get ();
                 }
-                auto val = (*node->_value.get ());
-                std::cout << (std::string) val << std::endl;
 
-                for (size_t i = 0; i < node->_children.size (); i++)
+                for (auto&& node : _children)
                 {
-                    print_node (node->_children.at (i).get (), depth + 1);
+                    auto s = std::invoke (getter, node->_value.get ());
+
+                    if (val == s)
+                    {
+                        return node->_value.get ();
+                    }
+
+                    auto found = node->search_with_member<T> (val, getter);
+                    if (found)
+                    {
+                        return found;
+                    }
                 }
+
+                return nullptr;
             }
-
-            Key _key;
-            std::unique_ptr<T> _value;
+            static void print_node (tree_node* node, int depth);
+            mix::core::mixGuid _key;
+            std::shared_ptr<mix::assetsystem::mixAsset_item> _value;
             std::vector<std::unique_ptr<tree_node>> _children;
         };
     } // namespace containers

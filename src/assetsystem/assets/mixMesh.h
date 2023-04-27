@@ -19,8 +19,10 @@ namespace mix
                      std::vector<unsigned>&& indices
                      /* mixMaterial&& material*/);
             ~mixMesh ();
-            void load ();
+            void draw ();
             private:
+
+            void initialize_mesh ();
 
             GLuint VAO{};
             GLuint VBO{};
