@@ -16,10 +16,10 @@ namespace mix
 
             mixMesh (const mix::platform::mixAsset_path& path,
                      std::vector<vertex>&& vertices,
-                     std::vector<unsigned>&& indices
-                     /* mixMaterial&& material*/);
+                     std::vector<unsigned>&& indices);
             ~mixMesh ();
-            void draw ();
+            void draw () const;
+            void set_material (std::shared_ptr<mixMaterial> material);
             private:
 
             void initialize_mesh ();
@@ -29,7 +29,7 @@ namespace mix
             GLuint EBO{};
             std::vector<vertex> _vertices;
             std::vector<unsigned> _indices;
-            //mixMaterial _material;
+            std::weak_ptr<mixMaterial> _material;
         };
     } // namespace assetsystem
 } // namespace mix

@@ -52,12 +52,12 @@ namespace mix
                 return loader->resolve (file);
             }
 
-            inline const mixAsset_item* get_asset_with_base_name (const std::string& name) const
+            inline mixAsset_item* get_asset_with_base_name (const std::string& name) const
             {
                 return _assets->search_with_base_name (name);
             }
 
-             inline const mixAsset_item* get_asset_with_full_name (const std::string& name) const
+             inline mixAsset_item* get_asset_with_full_name (const std::string& name) const
             {
                 return _assets->search_with_full_name (name);
             }

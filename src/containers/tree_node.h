@@ -24,9 +24,9 @@ namespace mix
             }
 
             tree_node* insert (const mix::core::mixGuid& key, std::shared_ptr<mix::assetsystem::mixAsset_item> child);
-            const mix::assetsystem::mixAsset_item* search_with_guid (const mix::core::mixGuid& key) const;
-            const mix::assetsystem::mixAsset_item* search_with_base_name (const std::string& name) const;
-            const mix::assetsystem::mixAsset_item* search_with_full_name (const std::string& name) const;
+            mix::assetsystem::mixAsset_item* search_with_guid (const mix::core::mixGuid& key) const;
+            mix::assetsystem::mixAsset_item* search_with_base_name (const std::string& name) const;
+            mix::assetsystem::mixAsset_item* search_with_full_name (const std::string& name) const;
 
 
             inline bool has_children () const
@@ -52,7 +52,7 @@ namespace mix
             private:
             
             template <class T>
-            const mix::assetsystem::mixAsset_item*
+            mix::assetsystem::mixAsset_item*
             search_with_member (T val, T(mix::assetsystem::mixAsset_item::* getter) (void) const) const
             {
                 auto s = std::invoke (getter, _value.get ());

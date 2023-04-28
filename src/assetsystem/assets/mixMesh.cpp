@@ -6,17 +6,31 @@ mix::assetsystem::mixMesh::mixMesh (const mix::platform::mixAsset_path& path,
                                     )
 : _vertices{ std::move (vertices) }, _indices{ std::move (indices) }, mix::assetsystem::mixAsset_item (path)
 {
+    //TODO: Assign default materials
+    initialize_mesh ();
 }
 
 mix::assetsystem::mixMesh::~mixMesh ()
 {
 }
 
-void mix::assetsystem::mixMesh::draw ()
+void mix::assetsystem::mixMesh::draw () const
 {
     glBindVertexArray (VAO);
-    glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, &_indices);
+
+    
+    if (!_material.expired())
+    {
+        _material.lock ()->apply ();
+    }
+
+    glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, 0);
     glBindVertexArray (0);
+}
+
+void mix::assetsystem::mixMesh::set_material (std::shared_ptr<mixMaterial> material)
+{
+    _material = material;
 }
 
 void mix::assetsystem::mixMesh::initialize_mesh ()
@@ -37,11 +51,11 @@ void mix::assetsystem::mixMesh::initialize_mesh ()
     glEnableVertexAttribArray (0);
     glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) 0);
     // vertex normals
-    glEnableVertexAttribArray (1);
-    glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
+    //glEnableVertexAttribArray (1);
+    //glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
     // vertex texture coords
-    glEnableVertexAttribArray (2);
-    glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
+   // glEnableVertexAttribArray (2);
+   //glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
 
     glBindVertexArray (0);
 }
