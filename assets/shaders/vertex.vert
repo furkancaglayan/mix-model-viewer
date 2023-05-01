@@ -1,16 +1,24 @@
 #version 330 core
-layout (location = 0) in vec3 pos;   // the position variable has attribute position 0
-layout (location = 1) in vec4 color; // the color variable has attribute position 1
-uniform mat4 Model = mat4(1);
-uniform mat4 View = mat4(1);
-uniform mat4 Projection = mat4(1);  
-out vec4 ourColor; // output a color to the fragment shader
+
+layout(location = 0) in vec3 pos;
+layout(location = 1) in vec3 normal;
+layout(location = 2) in vec2 tex_coords;
+layout(location = 3) in vec3 tangents;
+layout(location = 4) in vec2 bitangents;
+
+uniform mat4 _model;
+uniform mat4 _view;
+uniform mat4 _projection;
+
+out vec3 frag_pos;
+out vec3 frag_normal;
+out vec2 frag_tex_coords;
 
 void main()
 {
-    mat4 MVP = Projection * View * Model;
+    gl_Position = _projection * _view * _model * vec4(pos, 1.0);
 
-    gl_Position = MVP * vec4(pos, 1);
-	
-    ourColor = color; // set ourColor to the input color we got from the vertex data
-} 
+    frag_pos = vec3(_model * vec4(pos, 1.0));
+    frag_normal = mat3(transpose(inverse(_model))) * normal;
+    frag_tex_coords = tex_coords;
+}

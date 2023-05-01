@@ -28,15 +28,56 @@ void mix::assetsystem::mixShader_program::use () const
     glUseProgram (program_id);
 }
 
-void mix::assetsystem::mixShader_program::set_vec3 (int loc, glm::vec3 vec) const
+void mix::assetsystem::mixShader_program::set_1f (int loc, float f) const
+{
+    glUniform1f (loc, f);
+}
+
+void mix::assetsystem::mixShader_program::set_vec3 (int loc, vec3 vec) const
 {
     glUniform3f (loc, vec.x, vec.y, vec.z);
 }
 
-void mix::assetsystem::mixShader_program::set_vec4 (int loc, glm::vec4 vec) const
+void mix::assetsystem::mixShader_program::set_vec4 (int loc, vec4 vec) const
 {
     glUniform4f (loc, vec.x, vec.y, vec.z, vec.w);
 }
+
+void mix::assetsystem::mixShader_program::set_mat3 (int loc, mat3 mat) const
+{
+    glUniformMatrix3fv (loc, 1, true, &mat[0][0]);
+}
+
+void mix::assetsystem::mixShader_program::set_mat4 (int loc, mat4 mat) const
+{
+    glUniformMatrix4fv (loc, 1, true, &mat[0][0]);
+}
+
+void mix::assetsystem::mixShader_program::set_1f (const std::string& s, float f) const
+{
+    glUniform1f (get_uniform_location (s), f);
+}
+
+void mix::assetsystem::mixShader_program::set_vec3 (const std::string& s, vec3 vec) const
+{
+    glUniform3f (get_uniform_location (s), vec.x, vec.y, vec.z);
+}
+
+void mix::assetsystem::mixShader_program::set_vec4 (const std::string& s, vec4 vec) const
+{
+    glUniform4f (get_uniform_location (s), vec.x, vec.y, vec.z, vec.w);
+}
+
+void mix::assetsystem::mixShader_program::set_mat3 (const std::string& s, mat3 mat) const
+{
+    glUniformMatrix3fv (get_uniform_location (s), 1, true, &mat[0][0]);
+}
+
+void mix::assetsystem::mixShader_program::set_mat4 (const std::string& s, mat4 mat) const
+{
+    glUniformMatrix4fv (get_uniform_location (s), 1, true, &mat[0][0]);
+}
+
 
 unsigned mix::assetsystem::mixShader_program::get_program_id () const
 {

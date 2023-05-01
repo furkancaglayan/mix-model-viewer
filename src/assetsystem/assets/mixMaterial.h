@@ -4,8 +4,7 @@
 #include <unordered_map>
 #include "mixTexture.h"
 #include "mixShader_program.h"
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
+#include "../../math/vec.h"
 
 namespace mix
 {
@@ -19,19 +18,22 @@ namespace mix
             ~mixMaterial ();
 
             void set_shader (std::shared_ptr<mix::assetsystem::mixShader_program> shader);
-            void set_color (glm::vec4 color);
-            void set_color (glm::vec3 color);
+            void set_color (vec4 color);
+            void set_color (vec3 color);
             void set_opacity (float a);
             void apply () const;
             mix::assetsystem::mixShader_program* get_shader () const;
 
-            inline glm::vec4 get_color () const
+            inline vec4 get_color () const
             {
                 return _color;
             }
             private:
 
-            glm::vec4 _color;
+            vec4 _color;
+            float _ambient{ 1.0f };
+            float _specular{ 1.0f };
+            float _shininess{ 1.0f };
             std::weak_ptr<mix::assetsystem::mixShader_program> _shader;
             std::unordered_map<mix::texture::texture_type, std::weak_ptr<mix::assetsystem::mixTexture>> _textures;
         };

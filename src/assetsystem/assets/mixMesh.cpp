@@ -1,12 +1,9 @@
 #include "mixMesh.h"
 
-mix::assetsystem::mixMesh::mixMesh (const mix::platform::mixAsset_path& path,
-                                    std::vector<vertex>&& vertices,
-                                    std::vector<unsigned>&& indices
-                                    )
+mix::assetsystem::mixMesh::mixMesh (const mix::platform::mixAsset_path& path, std::vector<vertex>&& vertices, std::vector<unsigned>&& indices)
 : _vertices{ std::move (vertices) }, _indices{ std::move (indices) }, mix::assetsystem::mixAsset_item (path)
 {
-    //TODO: Assign default materials
+    // TODO: Assign default materials
     initialize_mesh ();
 }
 
@@ -18,8 +15,7 @@ void mix::assetsystem::mixMesh::draw () const
 {
     glBindVertexArray (VAO);
 
-    
-    if (!_material.expired())
+    if (!_material.expired ())
     {
         _material.lock ()->apply ();
     }
@@ -51,11 +47,17 @@ void mix::assetsystem::mixMesh::initialize_mesh ()
     glEnableVertexAttribArray (0);
     glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) 0);
     // vertex normals
-    //glEnableVertexAttribArray (1);
-    //glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
+    glEnableVertexAttribArray (1);
+    glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
     // vertex texture coords
-   // glEnableVertexAttribArray (2);
-   //glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
+    glEnableVertexAttribArray (2);
+    glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
+    // vertex tangents
+    glEnableVertexAttribArray (3);
+    glVertexAttribPointer (3, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tangent));
+    // vertex bitangents
+    glEnableVertexAttribArray (4);
+    glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _bitangent));
 
     glBindVertexArray (0);
 }

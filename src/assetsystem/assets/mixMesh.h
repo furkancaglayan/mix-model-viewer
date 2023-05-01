@@ -3,13 +3,15 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include "../../core/vertex.h"
+#include "../../math/vertex.h"
 #include "mixMaterial.h"
+using namespace mix::math;
 
 namespace mix
 {
     namespace assetsystem
     {
+
         class mixMesh : public mix::assetsystem::mixAsset_item
         {
             public:

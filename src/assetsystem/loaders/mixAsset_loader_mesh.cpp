@@ -25,9 +25,9 @@ namespace mix
                     return nullptr;
                 }
 
-                std::vector<glm::vec3> positions;
-                std::vector<glm::vec3> normals;
-                std::vector<glm::vec3> uvs;
+                std::vector<vec3> positions;
+                std::vector<vec3> normals;
+                std::vector<vec3> uvs;
                 std::vector<unsigned> indices;
                 std::vector<vertex> vertices;
 
@@ -42,7 +42,7 @@ namespace mix
                     if (is_vertex_definition || is_tex_definition || is_normal_definition)
                     {
                         std::istringstream s (line.substr (2));
-                        glm::vec3 v;
+                        vec3 v;
                         s >> v.x;
                         s >> v.y;
                         s >> v.z;
@@ -96,8 +96,8 @@ namespace mix
                         auto delta_uv2 = uv2 - uv0;
 
                         float r = 1.0f / (delta_uv1.x * delta_uv2.y - delta_uv1.y * delta_uv2.x);
-                        glm::vec3 t = (delta_pos_1 * delta_uv2.y - delta_pos_2 * delta_uv1.y) * r;
-                        glm::vec3 b = (delta_pos_2 * delta_uv1.x - delta_pos_1 * delta_uv2.x) * r;
+                        vec3 t = (delta_pos_1 * delta_uv2.y - delta_pos_2 * delta_uv1.y) * r;
+                        vec3 b = (delta_pos_2 * delta_uv1.x - delta_pos_1 * delta_uv2.x) * r;
 
                         vertex vert0 (v0, n0, uv0, t, b);
                         vertex vert1 (v1, n1, uv1, t, b);

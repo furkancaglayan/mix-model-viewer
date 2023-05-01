@@ -38,3 +38,4 @@ void mix::assetsystem::mixShader::compile (const std::string& source, mix::shade
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
 }
+

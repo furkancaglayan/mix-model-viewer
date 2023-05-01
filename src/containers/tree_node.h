@@ -3,8 +3,8 @@
 #include "../assetsystem/assets/mixAsset_item.h"
 #include "../core/mixGuid.h"
 #include <algorithm>
-#include <iostream>
 #include <functional>
+#include <iostream>
 #include <memory>
 #include <string>
 #include <vector>
@@ -50,10 +50,9 @@ namespace mix
             }
 
             private:
-            
+
             template <class T>
-            mix::assetsystem::mixAsset_item*
-            search_with_member (T val, T(mix::assetsystem::mixAsset_item::* getter) (void) const) const
+            mix::assetsystem::mixAsset_item* search_with_member (T val, T (mix::assetsystem::mixAsset_item::*getter) (void) const) const
             {
                 auto s = std::invoke (getter, _value.get ());
                 if (val == s)

@@ -1,8 +1,38 @@
 #version 330 core
-out vec4 FragColor;  
-in vec3 ourColor;
-  
+
+in vec3 frag_pos;
+in vec3 frag_normal;
+in vec2 frag_tex_coords;
+
+uniform vec3 _color;
+uniform vec3 _light;
+uniform vec3 _light_pos;
+uniform vec3 _view_pos;
+uniform float _ambient;
+uniform float _specular;
+uniform float _shininess;
+
+out vec4 FragColor;
+
 void main()
 {
-    FragColor = vec4(ourColor, 1.0);
+    vec3 ambient = _ambient * _light;
+    vec3 norm = normalize(frag_normal);
+
+    vec3 lightDir = normalize(_light_pos - FragPos);
+
+    float diff = max(dot(norm, lightDir), 0.0);
+
+    vec3 diffuse = diff * _light;
+
+    vec3 viewDir = normalize(_view_pos - FragPos);
+
+    vec3 reflectDir = reflect(-lightDir, norm);
+
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), _shininess);
+    vec3 specular = _specular * spec * _light;
+
+    vec3 result = (ambient + diffuse + specular) * _color;
+
+    FragColor = vec4(result, 1.0);
 }
