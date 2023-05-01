@@ -45,13 +45,9 @@ namespace mix
                 return _guid;
             }
             void set_visible (bool v);
-
-            void set_enabled (bool v);
             void create_asset ();
             protected:
 
-            bool is_visible;
-            bool is_enabled;
             bool is_readonly;
             const mix::core::mixGuid _guid;
 

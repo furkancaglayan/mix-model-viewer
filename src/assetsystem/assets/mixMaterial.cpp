@@ -50,7 +50,7 @@ void mix::assetsystem::mixMaterial::apply () const
         return;
     }
 
-    _shader.lock ()->use ();
+    //_shader.lock ()->use ();
     _shader.lock ()->set_vec4 ("_color", _color);
     _shader.lock ()->set_1f ("_ambient", _ambient);
     _shader.lock ()->set_1f ("_specular", _specular);

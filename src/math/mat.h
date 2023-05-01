@@ -7,7 +7,7 @@ using mat4 = glm::mat4;
 
 static mat4 perspective (float fov, float aspect, float near_cam, float far_cam)
 {
-    return glm::perspective (fov, aspect, near_cam, far_cam);
+    return glm::perspective (glm::radians (fov), aspect, near_cam, far_cam);
 }
 
 static mat4 ortho (float left, float right, float bottom, float top)

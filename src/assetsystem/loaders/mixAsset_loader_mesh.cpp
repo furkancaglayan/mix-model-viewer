@@ -25,7 +25,6 @@ namespace mix
                     return nullptr;
                 }
 
-                std::vector<vec3> positions;
                 std::vector<vec3> normals;
                 std::vector<vec3> uvs;
                 std::vector<unsigned> indices;
@@ -49,7 +48,7 @@ namespace mix
 
                         if (is_vertex_definition)
                         {
-                            positions.emplace_back (v);
+                            vertices.emplace_back (vertex(v));
                         }
                         else if (is_tex_definition)
                         {
@@ -72,9 +71,9 @@ namespace mix
                         indices.push_back (vertex_index[1] - 1);
                         indices.push_back (vertex_index[2] - 1);
 
-                        auto& v0 = positions.at (vertex_index[0] - 1);
-                        auto& v1 = positions.at (vertex_index[1] - 1);
-                        auto& v2 = positions.at (vertex_index[2] - 1);
+                        auto& v0 = vertices.at (vertex_index[0] - 1);
+                        auto& v1 = vertices.at (vertex_index[1] - 1);
+                        auto& v2 = vertices.at (vertex_index[2] - 1);
 
                         // Shortcuts for UVs
                         auto& uv0 = uvs.at (uv_index[0] - 1);
@@ -88,8 +87,8 @@ namespace mix
 
 
                         // Edges of the triangle : position delta
-                        auto delta_pos_1 = v1 - v0;
-                        auto delta_pos_2 = v2 - v0;
+                        auto delta_pos_1 = v1._position - v0._position;
+                        auto delta_pos_2 = v2._position - v0._position;
 
                         // UV delta
                         auto delta_uv1 = uv1 - uv0;
@@ -99,13 +98,24 @@ namespace mix
                         vec3 t = (delta_pos_1 * delta_uv2.y - delta_pos_2 * delta_uv1.y) * r;
                         vec3 b = (delta_pos_2 * delta_uv1.x - delta_pos_1 * delta_uv2.x) * r;
 
-                        vertex vert0 (v0, n0, uv0, t, b);
-                        vertex vert1 (v1, n1, uv1, t, b);
-                        vertex vert2 (v2, n2, uv2, t, b);
+                        //vertex vert0 (v0, n0, uv0, t, b);
+                        //vertex vert1 (v1, n1, uv1, t, b);
+                        //vertex vert2 (v2, n2, uv2, t, b);
+                        v0._normal = n0;
+                        v1._normal = n1;
+                        v2._normal = n2;
 
-                        vertices.push_back (vert0);
-                        vertices.push_back (vert1);
-                        vertices.push_back (vert2);
+                        v0._tex_coords = uv0;
+                        v1._tex_coords = uv1;
+                        v2._tex_coords = uv2;
+
+                        v0._tangent = t;
+                        v1._tangent = t;
+                        v2._tangent = t;
+
+                        v0._tangent = b;
+                        v1._tangent = b;
+                        v2._tangent = b;
                     }
                 }
 

@@ -3,6 +3,7 @@
 #include "../math/vec.h"
 #include "../math/constants.h"
 #include "../platform/typedefs.h"
+#include "mixEntity.h"
 #include <cstdint>
 
 namespace mix
@@ -15,10 +16,8 @@ namespace mix
             perspective,
             orthogonal
         };
-        class mixCamera
+        class mixCamera : public mixEntity
         {
-            using uint = unsigned int;
-
             public:
 
             mixCamera ()
@@ -27,26 +26,18 @@ namespace mix
             mat4 get_view_mat () const;
             mat4 get_projection_mat () const;
             void change_projection (projection_mode p);
-            void refresh ();
 
+            void update () override;
+            void debug_input (vec3 v);
             private:
 
             float _fov{ 75.0f };
-            float _yaw{};
-            float _pitch{};
             float movement_speed{ 2.0f };
             float _sensitivity{ 2.0f };
             float _zoom{ 1.0f };
-            float _near{ 0.01f };
-            float _far{ 1000.0f };
-            float _aspect{ 16.0f / 9.0f };
-
-            //TODO: replace with entity and transform
-            vec3 _forward{ 0 };
-            vec3 _up{ 0 };
-            vec3 _right{ 0 };
-            vec4 _eye{ 0 };
-            vec4 _at{ 0 };
+            float _near{ 0.1f };
+            float _far{ 100.0f };
+            float _aspect{ 1024.0f / 768.0f };
 
             projection_mode _projection{ projection_mode ::perspective };
         };

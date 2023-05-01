@@ -1,7 +1,7 @@
 #pragma once
+#include "vec.h"
 #include <memory>
 #include <string>
-#include "vec.h"
 namespace mix
 {
     namespace math
@@ -14,11 +14,17 @@ namespace mix
             : _position{ position }, _normal{ normal }, _tex_coords{ uv }, _tangent{ t }, _bitangent{ b }
             {
             }
+
+            vertex (vec3 position)
+            : _position{ position }, _normal{ vec3 (0) }, _tex_coords{ vec2 (0) }, _tangent{ vec3 (0) }, _bitangent{ vec3 (0) }
+            {
+            }
+
             vec3 _position;
             vec3 _normal;
-            vec3 _tex_coords;
+            vec2 _tex_coords;
             vec3 _tangent;
             vec3 _bitangent;
         };
-    } // namespace assetsystem
+    } // namespace math
 } // namespace mix

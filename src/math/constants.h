@@ -6,5 +6,5 @@ constexpr float DegreesToRadians = PI / 180.0f;
 
 static constexpr float degrees_to_radians (float d)
 {
-    return d * DegreesToRadians;
+    return glm::radians(d);
 }

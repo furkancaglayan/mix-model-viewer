@@ -20,7 +20,7 @@ void mix::assetsystem::mixMesh::draw () const
         _material.lock ()->apply ();
     }
 
-    glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, 0);
+    //glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, 0);
     glBindVertexArray (0);
 }
 
@@ -51,13 +51,12 @@ void mix::assetsystem::mixMesh::initialize_mesh ()
     glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
     // vertex texture coords
     glEnableVertexAttribArray (2);
-    glVertexAttribPointer (2, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
+    glVertexAttribPointer (2, 2, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
     // vertex tangents
     glEnableVertexAttribArray (3);
     glVertexAttribPointer (3, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tangent));
     // vertex bitangents
     glEnableVertexAttribArray (4);
     glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _bitangent));
-
     glBindVertexArray (0);
 }

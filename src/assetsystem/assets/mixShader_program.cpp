@@ -45,12 +45,12 @@ void mix::assetsystem::mixShader_program::set_vec4 (int loc, vec4 vec) const
 
 void mix::assetsystem::mixShader_program::set_mat3 (int loc, mat3 mat) const
 {
-    glUniformMatrix3fv (loc, 1, true, &mat[0][0]);
+    glUniformMatrix3fv (loc, 1, false, &mat[0][0]);
 }
 
 void mix::assetsystem::mixShader_program::set_mat4 (int loc, mat4 mat) const
 {
-    glUniformMatrix4fv (loc, 1, true, &mat[0][0]);
+    glUniformMatrix4fv (loc, 1, false, &mat[0][0]);
 }
 
 void mix::assetsystem::mixShader_program::set_1f (const std::string& s, float f) const
@@ -70,12 +70,12 @@ void mix::assetsystem::mixShader_program::set_vec4 (const std::string& s, vec4 v
 
 void mix::assetsystem::mixShader_program::set_mat3 (const std::string& s, mat3 mat) const
 {
-    glUniformMatrix3fv (get_uniform_location (s), 1, true, &mat[0][0]);
+    glUniformMatrix3fv (get_uniform_location (s), 1, false, &mat[0][0]);
 }
 
 void mix::assetsystem::mixShader_program::set_mat4 (const std::string& s, mat4 mat) const
 {
-    glUniformMatrix4fv (get_uniform_location (s), 1, true, &mat[0][0]);
+    glUniformMatrix4fv (get_uniform_location (s), 1, false, &mat[0][0]);
 }
 
 

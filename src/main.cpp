@@ -14,6 +14,11 @@
 
 #include "core/mixCamera.h"
 
+#include "core/components/mixTransform.h"
+void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods);
+
+std::unique_ptr<mix::core::mixCamera> _camera;
+
 int main ()
 {
     GLenum err;
@@ -62,54 +67,92 @@ int main ()
     auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, x, y);
 
     auto material = std::make_shared<mix::assetsystem::mixMaterial> (program);
-    material->set_color (vec3(0.4f, 0.89f, 0.12f));
+    material->set_color (vec4 (1));
     mesh->set_material (material);
-    /*x float vertices[] = {
-    // positions         // colors
-     0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
-    -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
-     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
-};    
+ 
 
-     unsigned int VBO, VAO;
-    glGenVertexArrays (1, &VAO);
-    glGenBuffers (1, &VBO);
-    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
-    glBindVertexArray (VAO);
+    _camera = std::make_unique<mix::core::mixCamera> ();
+    mat4 model = mat4 (1);
+    vec3 _light{ 0.35f };
+    mix::components::mixTransform t{ vec3 (0) };
+    vec3 _light_pos{ 4.0f, -3.0f, 3.0f };
 
-    glBindBuffer (GL_ARRAY_BUFFER, VBO);
-    glBufferData (GL_ARRAY_BUFFER, sizeof (vertices), vertices, GL_STATIC_DRAW);
+    glfwSetKeyCallback (mix::mixEditor::_instance->_window->get_glfw_window (), key_callback);
+    glEnable (GL_DEPTH_TEST);
 
-    // position attribute
-    glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof (float), (void*) 0);
-    glEnableVertexAttribArray (0);
-    // color attribute
-    glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof (float), (void*) (3 * sizeof (float)));
-    glEnableVertexAttribArray (1);
-    */
+        float vertices[] = {
+        -0.5f, -0.5f, -0.5f, 0.5f,  -0.5f, -0.5f, 0.5f,  0.5f,  -0.5f,
+        0.5f,  0.5f,  -0.5f, -0.5f, 0.5f,  -0.5f, -0.5f, -0.5f, -0.5f,
 
-    auto camera = std::make_shared<mix::core::mixCamera> ();
+        -0.5f, -0.5f, 0.5f,  0.5f,  -0.5f, 0.5f,  0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,  -0.5f, 0.5f,  0.5f,  -0.5f, -0.5f, 0.5f,
 
-    mat4 model = mat4 (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -5, 0, 0, 0, 1);
-    vec3 _light = vec3 (1, 1, 1);
-    vec3 _light_pos = vec3 (-1, -1, -1);
-    vec3 _view_pos = vec3 (0, 0, +5);
+        -0.5f, 0.5f,  0.5f,  -0.5f, 0.5f,  -0.5f, -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, 0.5f,  -0.5f, 0.5f,  0.5f,
 
+        0.5f,  0.5f,  0.5f,  0.5f,  0.5f,  -0.5f, 0.5f,  -0.5f, -0.5f,
+        0.5f,  -0.5f, -0.5f, 0.5f,  -0.5f, 0.5f,  0.5f,  0.5f,  0.5f,
+
+        -0.5f, -0.5f, -0.5f, 0.5f,  -0.5f, -0.5f, 0.5f,  -0.5f, 0.5f,
+        0.5f,  -0.5f, 0.5f,  -0.5f, -0.5f, 0.5f,  -0.5f, -0.5f, -0.5f,
+
+        -0.5f, 0.5f,  -0.5f, 0.5f,  0.5f,  -0.5f, 0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,  -0.5f, 0.5f,  0.5f,  -0.5f, 0.5f,  -0.5f,
+    };
+
+    glEnable (GL_CULL_FACE);
+    glCullFace (GL_BACK);
+    glEnable (GL_DEPTH_TEST);
+    glDepthFunc (GL_LESS);
+    glEnable (GL_BLEND);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     while (mix::mixEditor::_instance->_should_run)
     {
         glClearColor (0.2f, 0.3f, 0.3f, 1.0f);
-        glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        camera->refresh ();
-        mesh->draw ();
-        program->set_mat4 ("_model", model);
-        program->set_mat4 ("_view", camera->get_view_mat ());
-        program->set_mat4 ("_projection", camera->get_projection_mat ());
+        glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+         //mesh->draw ();
+        glDepthMask (GL_FALSE);
+        glUseProgram (program->get_program_id ());
+
+        program->set_mat4 ("_model", t.get_model_mat());
+        program->set_mat4 ("_view", _camera->get_view_mat ());
+        program->set_mat4 ("_projection", _camera->get_projection_mat ());
         program->set_vec3 ("_light", _light);
         program->set_vec3 ("_light_pos", _light_pos);
-        program->set_vec3 ("_view_pos", _view_pos);
+        program->set_vec3 ("_view_pos", _camera->_transform->get_position());
+        material->apply ();
+
+        glBindVertexArray (mesh->get_vao ());
+        auto x = static_cast<GLsizei> (mesh->get_indices ().size ());
+        glDrawElements (GL_TRIANGLES, x, GL_UNSIGNED_INT, 0);
+        glBindVertexArray (0);
+
+        _camera->update ();
         glfwSwapBuffers (mix::mixEditor::_instance->_window->get_glfw_window ());
         glfwPollEvents ();
-        //mix::mixEditor::_instance->run ();
+        // mix::mixEditor::_instance->run ();
+        glDepthMask (GL_FALSE);
+    }
+}
+
+void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    const float cameraSpeed = 1.0f; // adjust accordingly
+    if (key == GLFW_KEY_W && action == GLFW_REPEAT)
+    {
+        _camera->_transform->translate (cameraSpeed * mix::transform::forward);
+    }
+    if (key == GLFW_KEY_S && action == GLFW_REPEAT)
+    {
+        _camera->_transform->translate (-cameraSpeed * mix::transform::forward);
+    }
+    if (key == GLFW_KEY_A && action == GLFW_REPEAT)
+    {
+        _camera->_transform->translate (-mix::transform::right * cameraSpeed);
+    }
+    if (key == GLFW_KEY_D && action == GLFW_REPEAT)
+    {
+        _camera->_transform->translate (mix::transform::right * cameraSpeed);
     }
 }
