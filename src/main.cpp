@@ -13,8 +13,8 @@
 #include "assetsystem/mixAsset_manager.h"
 
 #include "core/mixCamera.h"
+#include "core/mixTransform.h"
 
-#include "core/components/mixTransform.h"
 void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods);
 
 std::unique_ptr<mix::core::mixCamera> _camera;
@@ -74,7 +74,7 @@ int main ()
     _camera = std::make_unique<mix::core::mixCamera> ();
     mat4 model = mat4 (1);
     vec3 _light{ 0.35f };
-    mix::components::mixTransform t{ vec3 (0) };
+    mix::core::mixTransform t{ vec3 (0) };
     vec3 _light_pos{ 4.0f, -3.0f, 3.0f };
 
     glfwSetKeyCallback (mix::mixEditor::_instance->_window->get_glfw_window (), key_callback);

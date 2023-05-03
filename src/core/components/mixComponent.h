@@ -6,10 +6,11 @@ namespace mix
 {
     namespace components
     {
-        struct mixComponent
+        class mixComponent
         {
             public:
 
+            virtual void update () = 0;
         };
     } // namespace assetsystem
 } // namespace mix

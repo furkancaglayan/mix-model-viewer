@@ -1,7 +1,7 @@
 #pragma once
-#include "../../math/mat.h"
-#include "../../math/vec.h"
-#include "../../math/constants.h"
+#include "../math/mat.h"
+#include "../math/vec.h"
+#include "../math/constants.h"
 #include <memory>
 #include <string>
 
@@ -16,7 +16,7 @@ namespace mix
         constexpr static vec3 up{ vec3 (0, 1, 0) };
     };
 
-    namespace components
+    namespace core
     {
         struct mixTransform
         {
