@@ -9,7 +9,7 @@ namespace mix
             size_t index = 0;
             for (; index < _children.size (); index++)
             {
-                if (_children.at (index)->get_key() < key)
+                if (_children.at (index)->get_key () < key)
                 {
                     break;
                 }
@@ -26,12 +26,14 @@ namespace mix
         {
             return search_with_member<const std::string&> (name, &mix::assetsystem::mixAsset_item::get_base_name);
         }
-
-          mix::assetsystem::mixAsset_item* tree_node::search_with_full_name (const std::string& name) const
+        mix::assetsystem::mixAsset_item* tree_node::search_with_full_name (const std::string& name) const
         {
             return search_with_member<const std::string&> (name, &mix::assetsystem::mixAsset_item::get_full_name);
         }
-
+        mix::assetsystem::mixAsset_item* tree_node::search_with_path (const std::string& path) const
+        {
+            return search_with_member<const std::string&> (path, &mix::assetsystem::mixAsset_item::get_path);
+        }
 
         void tree_node::print_node (tree_node* node, int depth)
         {

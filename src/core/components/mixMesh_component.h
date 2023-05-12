@@ -14,6 +14,7 @@ namespace mix
             public:
 
             mixMesh_component (std::shared_ptr<mixMesh> mesh);
+            void render () override;
 
             private:
 

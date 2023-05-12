@@ -1,31 +1,21 @@
-#include "mixEntity.h"
-#include "mixCamera.h"
+#include "mixScene.h"
 
 
-mix::core::mixEntity::mixEntity () : mixEntity ("Entity", vec3 (0))
+mix::scene_management::mixScene::mixScene () : mixScene (new mix::core::mixEntity ("Root"))
 {
 }
 
-mix::core::mixEntity::mixEntity (vec3 pos) : mixEntity ("Entity", pos)
+mix::scene_management::mixScene::mixScene (mix::core::mixEntity* r)
 {
+    _root = std::unique_ptr<mix::core::mixEntity> (r);
 }
 
-mix::core::mixEntity::mixEntity (std::string name) : mixEntity (name, vec3(0))
+void mix::scene_management::mixScene::update ()
 {
+    _root->update ();
 }
 
-mix::core::mixEntity::mixEntity (std::string name, vec3 pos) : _name{ "Entity" }
+void mix::scene_management::mixScene::render ()
 {
-    _transform = std::make_unique<mix::core::mixTransform> (pos);
-    _transform->set_position (pos);
-}
-
-void mix::core::mixEntity::set_name (std::string name)
-{
-    _name = name;
-}
-
-void mix::core::mixEntity::update ()
-{
-    _transform->update ();
+    _root->render ();
 }

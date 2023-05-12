@@ -22,8 +22,7 @@ namespace mix
         /// Support multiple extensions
         /// </summary>
 
-        using asset_tree =
-        std::unique_ptr<mix::containers::tree_node>;
+        using asset_tree = std::unique_ptr<mix::containers::tree_node>;
         using asset_tree_val = mix::containers::tree_node;
         using asset_tree_ptr = asset_tree_val*;
 
@@ -57,9 +56,14 @@ namespace mix
                 return _assets->search_with_base_name (name);
             }
 
-             inline mixAsset_item* get_asset_with_full_name (const std::string& name) const
+            inline mixAsset_item* get_asset_with_full_name (const std::string& name) const
             {
                 return _assets->search_with_full_name (name);
+            }
+
+            inline mixAsset_item* get_asset_with_path (const std::string& path) const
+            {
+                return _assets->search_with_path (path);
             }
 
             inline void debug ()
@@ -68,6 +72,7 @@ namespace mix
             }
 
             void resolve_all_assets ();
+
             private:
 
             static void resolve_assets_impl (const std::string& p, asset_tree_ptr node);

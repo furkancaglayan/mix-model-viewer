@@ -27,6 +27,7 @@ namespace mix
             mix::assetsystem::mixAsset_item* search_with_guid (const mix::core::mixGuid& key) const;
             mix::assetsystem::mixAsset_item* search_with_base_name (const std::string& name) const;
             mix::assetsystem::mixAsset_item* search_with_full_name (const std::string& name) const;
+            mix::assetsystem::mixAsset_item* search_with_path (const std::string& path) const;
 
 
             inline bool has_children () const

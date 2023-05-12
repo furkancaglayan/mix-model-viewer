@@ -1,10 +1,10 @@
 #pragma once
 #include "../../core/mixGuid.h"
-#include <iostream>
-#include <map>
-#include <istream>
-#include <fstream>
 #include "../../platform/mixAsset_path.h"
+#include <fstream>
+#include <iostream>
+#include <istream>
+#include <map>
 
 namespace mix
 {
@@ -13,7 +13,7 @@ namespace mix
         /// <summary>
         /// Support multiple extensions
         /// </summary>
-     
+
 
         class mixAsset_item
         {
@@ -27,9 +27,14 @@ namespace mix
                 return _path.get_name_without_extension ();
             }
 
-              virtual inline const std::string& get_full_name () const
+            virtual inline const std::string& get_full_name () const
             {
                 return _path.get_name ();
+            }
+
+            virtual inline const std::string& get_path () const
+            {
+                return _path.to_str ();
             }
 
             virtual std::ostream& operator<< (std::ostream& out) const;
@@ -45,14 +50,14 @@ namespace mix
                 return _guid;
             }
             void set_visible (bool v);
-            void create_asset ();
+            void save ();
+
             protected:
 
             bool is_readonly;
             const mix::core::mixGuid _guid;
 
             mix::platform::mixAsset_path _path;
-
         };
     } // namespace assetsystem
 } // namespace mix

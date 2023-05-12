@@ -11,6 +11,7 @@ namespace mix
             public:
 
             virtual void update () = 0;
+            virtual void render () = 0;
         };
     } // namespace assetsystem
 } // namespace mix
