@@ -13,9 +13,11 @@ namespace mix
             public:
 
             mixText_asset (const mix::platform::mixAsset_path& path, std::string&& content);
+
+            const std::string get_content () const;
             private:
 
-            std::unique_ptr<std::string> _content;
+            std::string _content;
         };
     } // namespace assetsystem
 } // namespace mix

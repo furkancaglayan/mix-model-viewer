@@ -15,10 +15,10 @@ namespace mix
 
             class mixAsset_loader_text : public mix::assetsystem::mixAsset_loader_base
             {
-               
                 protected:
 
                 mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
+                bool save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item) override;
             };
         }
     } // namespace assetsystem

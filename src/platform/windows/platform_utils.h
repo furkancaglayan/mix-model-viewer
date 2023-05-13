@@ -92,13 +92,21 @@ namespace mix
                 }
             }
 
-
             static bool is_folder (const std::string& path)
             {
-                auto wide = convert_utf8_to_wide (path.c_str());
+                auto wide = convert_utf8_to_wide (path.c_str ());
                 DWORD dwAttrib = GetFileAttributesW (wide.c_str ());
 
                 return (dwAttrib != INVALID_FILE_ATTRIBUTES && (dwAttrib & FILE_ATTRIBUTE_DIRECTORY));
+            }
+            static bool file_exists (const std::string& path)
+            {
+                return is_file (path);
+            }
+
+            static bool folder_exists (const std::string& path)
+            {
+                return is_folder (path);
             }
 
             static bool is_file (const std::string& path)

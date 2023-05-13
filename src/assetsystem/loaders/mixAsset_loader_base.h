@@ -1,10 +1,10 @@
 #pragma once
+#include "../../platform/mixFile.h"
+#include "../assets/mixAsset_item.h"
 #include <functional>
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
-#include "../assets/mixAsset_item.h"
-#include "../../platform/mixFile.h"
 
 namespace mix
 {
@@ -22,10 +22,15 @@ namespace mix
             {
                 return resolve_impl (file);
             }
+            inline bool save (mix::platform::mixFile& file, mixAsset_item* item)
+            {
+                return save_impl (file, item);
+            }
 
             protected:
 
-            virtual mixAsset_item* resolve_impl (mix::platform::mixFile& file);
+            virtual mixAsset_item* resolve_impl (mix::platform::mixFile& file) = 0;
+            virtual bool save_impl (mix::platform::mixFile& file, mixAsset_item* item) = 0;
         };
 
 

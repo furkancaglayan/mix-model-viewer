@@ -28,6 +28,8 @@ namespace mix
 
             bool open ();
             bool read (char* ptr);
+            bool write (std::string content, bool leave_open = false);
+            bool exists ();
             std::string read_all_text ();
             bool close ();
             size_t get_file_size ();

@@ -49,8 +49,6 @@ namespace mix
             {
                 return _guid;
             }
-            void set_visible (bool v);
-            void save ();
 
             protected:
 

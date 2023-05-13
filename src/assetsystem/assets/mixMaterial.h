@@ -10,7 +10,7 @@ namespace mix
 {
     namespace assetsystem
     {
-        class mixMaterial 
+        class mixMaterial : public mix::assetsystem::mixAsset_item
         {
             public:
 

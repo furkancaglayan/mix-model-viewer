@@ -29,7 +29,13 @@ namespace mix
             auto w_string = std::wstring (_path);
             auto access = GENERIC_READ;
             auto share = FILE_SHARE_READ;
+            // TODO: If not exists, create new
             auto creation_disposition = OPEN_EXISTING;
+            if (!platform::platform_utils::file_exists (_path))
+            {
+                creation_disposition = CREATE_NEW;
+                access = GENERIC_WRITE;
+            }
             auto flags_and_attributes = FILE_ATTRIBUTE_NORMAL;
 
             assert (_handle == INVALID_HANDLE_VALUE);
@@ -49,6 +55,21 @@ namespace mix
             }
         }
 
+        bool mixFile::write (std::string content, bool leave_open)
+        {
+            assert (is_open);
+            assert (_handle != INVALID_HANDLE_VALUE);
+            // Write data to the file
+            auto w_string = std::wstring (_path);
+            DWORD bytesWritten;
+            BOOL result = WriteFile (_handle, content.c_str (), (DWORD) content.size (), &bytesWritten, nullptr);
+            if (!leave_open)
+            {
+                close ();
+            }
+            return result;
+        }
+
         bool mixFile::read (char* ptr)
         {
             assert (is_open);
@@ -58,10 +79,7 @@ namespace mix
             BOOL result = ReadFile (_handle, ptr, (DWORD) size, &read, NULL);
             if (!result)
             {
-                CloseHandle (_handle);
-                is_open = false;
-                _handle = INVALID_HANDLE_VALUE;
-                //_content = std::string{ _buffer, read };
+                close ();
             }
 
             return result;
@@ -97,6 +115,11 @@ namespace mix
             LARGE_INTEGER size;
             BOOL result = GetFileSizeEx (_handle, &size);
             return result == FALSE ? -1 : size.QuadPart;
+        }
+
+        bool mix::platform::mixFile::exists ()
+        {
+            return platform::platform_utils::file_exists (_path);
         }
     } // namespace platform
 } // namespace mix

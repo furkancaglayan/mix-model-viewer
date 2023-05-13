@@ -16,6 +16,11 @@ namespace mix
                 return load_obj (file.get_path ());
             }
 
+            bool mixAsset_loader_mesh::save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item)
+            {
+                return false;
+            }
+
             mix::assetsystem::mixMesh* mixAsset_loader_mesh::load_obj (mix::platform::mixAsset_path path)
             {
                 std::ifstream in (static_cast<const char*> (path), std::ios::in);
@@ -48,7 +53,7 @@ namespace mix
 
                         if (is_vertex_definition)
                         {
-                            vertices.emplace_back (vertex(v));
+                            vertices.emplace_back (vertex (v));
                         }
                         else if (is_tex_definition)
                         {
@@ -98,9 +103,9 @@ namespace mix
                         vec3 t = (delta_pos_1 * delta_uv2.y - delta_pos_2 * delta_uv1.y) * r;
                         vec3 b = (delta_pos_2 * delta_uv1.x - delta_pos_1 * delta_uv2.x) * r;
 
-                        //vertex vert0 (v0, n0, uv0, t, b);
-                        //vertex vert1 (v1, n1, uv1, t, b);
-                        //vertex vert2 (v2, n2, uv2, t, b);
+                        // vertex vert0 (v0, n0, uv0, t, b);
+                        // vertex vert1 (v1, n1, uv1, t, b);
+                        // vertex vert2 (v2, n2, uv2, t, b);
                         v0._normal = n0;
                         v1._normal = n1;
                         v2._normal = n2;

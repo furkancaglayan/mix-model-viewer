@@ -39,6 +39,13 @@ int main ()
     std::string path{ "C:\\Users\\furka\\Desktop\\Develop\\mb3_dev\\WOTS\\Modules\\Native\\ModuleData" };
     std::string path2{ "C:\\Users\\furka\\Desktop\\Develop" };
     std::string path3{ "..\\..\\..\\assets" };
+    std::string pathtext{ "..\\..\\..\\assets\\sometext.txt" };
+
+    auto file = mix::platform::mixFile{ pathtext };
+    auto exists = file.exists ();
+    file.open ();
+    bool wrote = file.write ("hebele gübele", true);
+    auto size = file.get_file_size ();
     mix::assetsystem::mixAsset_manager assets{ path3 };
 
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Text);
