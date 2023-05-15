@@ -1,6 +1,5 @@
 #pragma once
 #include "../math/mat.h"
-#include "../math/vec.h"
 #include "../math/constants.h"
 #include <memory>
 #include <string>

@@ -8,6 +8,7 @@ mix::scene_management::mixScene::mixScene () : mixScene (new mix::core::mixEntit
 mix::scene_management::mixScene::mixScene (mix::core::mixEntity* r)
 {
     _root = std::unique_ptr<mix::core::mixEntity> (r);
+    //_active_cam = std::make_unique<mix::core::mixCamera> ();
 }
 
 void mix::scene_management::mixScene::update ()
@@ -15,7 +16,35 @@ void mix::scene_management::mixScene::update ()
     _root->update ();
 }
 
-void mix::scene_management::mixScene::render ()
+void mix::scene_management::mixScene::render (mix::rendering::rendering_context* rendering)
 {
-    _root->render ();
+    _root->render (rendering);
+}
+
+void mix::scene_management::mixScene::set_parameters (mix::rendering::rendering_context* rendering) const
+{
+    //rendering->set_mat4 ("_view", _active_cam->get_view_mat ());
+    //rendering->set_mat4 ("_projection", _active_cam->get_projection_mat ());
+    //rendering->set_vec3 ("_view_pos", _active_cam->_transform->get_position ());
+
+    auto size = _lights.size ();
+    rendering->set_1i ("num_lights", static_cast<int> (size));
+
+    for (size_t i = 0; i < size; i++)
+    {
+        std::weak_ptr<mix::core::light::mixLight> light = _lights.at (0);
+        std::string pos = "_light[" + std::to_string (i) + "].position";
+        std::string diff = "_light[" + std::to_string (i) + "].diffuse";
+        std::string spec = "_light[" + std::to_string (i) + "].specular";
+        std::string ambient = "_light[" + std::to_string (i) + "].ambient";
+        std::string intensity = "_light[" + std::to_string (i) + "].intensity";
+        std::string att = "_light[" + std::to_string (i) + "].attenuation";
+    
+        rendering->set_vec3 (pos, light.lock ()->_transform->get_position ());
+        rendering->set_vec3 (spec, vec3 (1));
+        rendering->set_vec3 (ambient, vec3 (1));
+        rendering->set_vec3 (diff, light.lock ()->get_color ());
+        rendering->set_1f (intensity, light.lock ()->get_intensity ());
+        rendering->set_1f (att, 1.0f);
+    }
 }

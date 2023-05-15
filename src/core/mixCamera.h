@@ -20,9 +20,7 @@ namespace mix
         {
             public:
 
-            mixCamera ()
-            {
-            }
+            mixCamera ();
             mat4 get_view_mat () const;
             mat4 get_projection_mat () const;
             void change_projection (projection_mode p);

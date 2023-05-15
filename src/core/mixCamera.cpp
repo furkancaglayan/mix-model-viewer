@@ -1,5 +1,9 @@
 #include "mixCamera.h"
 
+mix::core::mixCamera::mixCamera () : mixEntity ()
+{
+}
+
 mat4 mix::core::mixCamera::get_view_mat () const
 {
     auto at = _transform->get_position ();

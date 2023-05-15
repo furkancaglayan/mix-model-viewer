@@ -1,8 +1,6 @@
 #include "mixEntity.h"
-#include "mixCamera.h"
 
-
-mix::core::mixEntity::mixEntity () : mixEntity ("Entity", vec3 (0))
+mix::core::mixEntity::mixEntity () : mixEntity ("Entity")
 {
 }
 
@@ -20,14 +18,14 @@ mix::core::mixEntity::mixEntity (std::string name, vec3 pos) : _name{ "Entity" }
     _transform->set_position (pos);
 }
 
-void mix::core::mixEntity::add_component (std::unique_ptr<mixComponent> comp)
+void mix::core::mixEntity::add_component (std::unique_ptr<mix::components::mixComponent> comp)
 {
     _components.emplace_back (std::move (comp));
 }
 
-void mix::core::mixEntity::add_component (mixComponent* comp)
+void mix::core::mixEntity::add_component (mix::components::mixComponent* comp)
 {
-    add_component (std::unique_ptr<mixComponent> (comp));
+    add_component (std::unique_ptr<mix::components::mixComponent> (comp));
 }
 
 void mix::core::mixEntity::add_child (std::shared_ptr<mixEntity> ch)
@@ -78,11 +76,17 @@ void mix::core::mixEntity::update ()
     }
 }
 
-void mix::core::mixEntity::render ()
+void mix::core::mixEntity::render (mix::rendering::rendering_context* rendering)
 {
     for (auto it = _components.cbegin (); it < _components.cend (); it++)
     {
         auto comp = (*it).get ();
-        comp->render ();
+        comp->render (rendering, static_cast<const mix::core::mixTransform*> (_transform.get ()));
+    }
+
+    for (auto it = _children.cbegin (); it < _children.cend (); it++)
+    {
+        auto ch = (*it).get ();
+        ch->render (rendering);
     }
 }

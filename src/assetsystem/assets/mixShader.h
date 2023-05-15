@@ -46,17 +46,8 @@ namespace mix
 
             void compile (const std::string& source, mix::shader::shader_type type);
 
-         
-           
-            inline const mix::shader::shader_type get_shader_type () const
-            {
-                return _type;
-            }
-
-            inline const unsigned get_shader_id () const
-            {
-                return shader_id;
-            }
+            const mix::shader::shader_type get_shader_type () const;
+            const unsigned get_shader_id () const;
 
          
 

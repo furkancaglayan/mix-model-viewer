@@ -11,22 +11,34 @@ mix::assetsystem::mixMesh::~mixMesh ()
 {
 }
 
-void mix::assetsystem::mixMesh::draw () const
+void mix::assetsystem::mixMesh::draw (mix::rendering::rendering_context* rendering) const
 {
-    glBindVertexArray (VAO);
-
     if (!_material.expired ())
     {
-        _material.lock ()->apply ();
+        rendering->_active_program = _material.lock ()->apply ();
     }
-
-    //glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_indices.size ()), GL_UNSIGNED_INT, 0);
-    glBindVertexArray (0);
+  
+    //glBindVertexArray (0);
 }
 
 void mix::assetsystem::mixMesh::set_material (std::shared_ptr<mixMaterial> material)
 {
     _material = material;
+}
+
+const std::vector<unsigned>& mix::assetsystem::mixMesh::get_indices () const
+{
+    return _indices;
+}
+
+const std::vector<vertex>& mix::assetsystem::mixMesh::get_vertices () const
+{
+    return _vertices;
+}
+
+const unsigned mix::assetsystem::mixMesh::get_vao () const
+{
+    return VAO;
 }
 
 void mix::assetsystem::mixMesh::initialize_mesh ()

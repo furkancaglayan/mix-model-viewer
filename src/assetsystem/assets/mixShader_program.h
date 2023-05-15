@@ -19,28 +19,19 @@ namespace mix
 
             mixShader_program () = delete;
             ~mixShader_program ();
-            inline const unsigned get_uniform_location (const std::string& s) const
-            {
-                return glGetUniformLocation (program_id, s.c_str ());
-            }
-            inline const unsigned get_uniform_location (const char* s) const
-            {
-                return glGetUniformLocation (program_id, s);
-            }
+
+            const unsigned get_uniform_location (const std::string& s) const;
+            const unsigned get_uniform_location (const char* s) const;
+
             void compile (const mix::assetsystem::mixShader& vertex_shader, const mix::assetsystem::mixShader& fragment_shader);
             void use () const;
 
-            void set_1f (int loc, float f) const;
-            void set_vec3 (int loc, vec3 vec) const;
-            void set_mat3 (int loc, mat3 mat) const;
-            void set_vec4 (int loc, vec4 vec) const;
-            void set_mat4 (int loc, mat4 mat) const;
-
-            void set_1f (const std::string& s, float f) const;
-            void set_vec3 (const std::string& s, vec3 vec) const;
-            void set_mat3 (const std::string& s, mat3 vec) const;
-            void set_vec4 (const std::string& s, vec4 vec) const;
-            void set_mat4 (const std::string& s, mat4 vec) const;
+          
+            void set_1f (const std::string& s, float f);
+            void set_vec3 (const std::string& s, vec3 vec);
+            void set_vec4 (const std::string& s, vec4 vec);
+            void set_mat3 (const std::string& s, mat3 mat);
+            void set_mat4 (const std::string& s, mat4 mat);
 
             unsigned get_program_id () const;
 

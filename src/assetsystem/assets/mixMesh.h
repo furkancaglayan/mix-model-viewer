@@ -5,6 +5,7 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include "../../rendering/rendering_context.h"
 using namespace mix::math;
 
 namespace mix
@@ -18,23 +19,12 @@ namespace mix
 
             mixMesh (const mix::platform::mixAsset_path& path, std::vector<vertex>&& vertices, std::vector<unsigned>&& indices);
             ~mixMesh ();
-            void draw () const;
+            void draw (mix::rendering::rendering_context* rendering) const;
             void set_material (std::shared_ptr<mixMaterial> material);
-            inline const std::vector<unsigned>& get_indices () const
-            {
-                return _indices;
-            }
 
-            inline const std::vector<vertex>& get_vertices () const
-            {
-                return _vertices;
-            }
-
-            inline const unsigned get_vao () const
-            {
-                return VAO;
-            }
-
+            const std::vector<unsigned>& get_indices () const;
+            const std::vector<vertex>& get_vertices () const;
+            const unsigned get_vao () const;
             void initialize_mesh ();
 
             private:

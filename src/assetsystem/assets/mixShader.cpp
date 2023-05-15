@@ -39,3 +39,13 @@ void mix::assetsystem::mixShader::compile (const std::string& source, mix::shade
     }
 }
 
+const mix::shader::shader_type mix::assetsystem::mixShader::get_shader_type () const
+{
+    return _type;
+}
+
+const unsigned mix::assetsystem::mixShader::get_shader_id () const
+{
+    return shader_id;
+}
+

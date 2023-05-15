@@ -1,20 +1,32 @@
 #pragma once
-#include <memory>
 #include "../core/mixWindow.h"
+#include "../scene_management/mixScene.h"
+#include <memory>
 
 namespace mix
 {
-	class mixEditor
-	{
-	public:
-		bool _should_run = false;
-		void run();
-		void start();
-		inline void select_monitor(int num);
-		static std::unique_ptr<mixEditor> _instance;
-		static void create_new();
+    class mixEditor
+    {
+        public:
 
-		mixEditor() = default;
-		std::unique_ptr<core::mixWindow> _window = nullptr;
-	};
-}
+        static std::unique_ptr<mixEditor> _instance;
+        static void create_new ();
+
+        bool _should_run = false;
+        void run ();
+        inline void select_monitor (int num);
+        
+        mixEditor ();
+     
+        mix::core::mixWindow* get_window () const;
+        mix::scene_management::mixScene* get_active_scene () const;
+        std::unique_ptr<mix::core::mixWindow> _window;
+
+        private:
+
+        void render ();
+        std::unique_ptr<mix::rendering::rendering_context> _rendering;
+        std::unique_ptr<mix::scene_management::mixScene> _active_scene;
+        void start ();
+    };
+} // namespace mix

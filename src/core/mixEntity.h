@@ -3,10 +3,10 @@
 #include "../math/mat.h"
 #include "../math/vec.h"
 #include "../platform/typedefs.h"
-#include "mixTransform.h"
+#include "components/mixComponent.h"
+
 #include <cstdint>
 #include <vector>
-#include "components/mixComponent.h"
 
 using namespace mix::components;
 
@@ -36,7 +36,7 @@ namespace mix
             std::vector<std::shared_ptr<mixEntity>> get_children () const;
 
             virtual void update ();
-            virtual void render ();
+            virtual void render (mix::rendering::rendering_context* rendering);
             protected:
 
             bool _is_enabled{ true };

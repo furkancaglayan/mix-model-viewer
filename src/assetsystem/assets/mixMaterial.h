@@ -14,20 +14,17 @@ namespace mix
         {
             public:
 
-            mixMaterial (std::shared_ptr<mix::assetsystem::mixShader_program> shader);
+            mixMaterial (const mix::platform::mixAsset_path& path, std::shared_ptr<mix::assetsystem::mixShader_program> shader);
             ~mixMaterial ();
 
             void set_shader (std::shared_ptr<mix::assetsystem::mixShader_program> shader);
             void set_color (vec4 color);
             void set_color (vec3 color);
             void set_opacity (float a);
-            void apply () const;
+            unsigned apply () const;
             mix::assetsystem::mixShader_program* get_shader () const;
 
-            inline vec4 get_color () const
-            {
-                return _color;
-            }
+            vec4 get_color () const;
             private:
 
             vec4 _color;
