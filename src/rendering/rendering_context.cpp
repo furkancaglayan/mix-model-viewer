@@ -3,13 +3,13 @@
 
 void mix::rendering::rendering_context::initialize () const
 {
-    glEnable (GL_DEPTH_TEST);
+    /* glEnable (GL_DEPTH_TEST);
     glEnable (GL_CULL_FACE);
     glCullFace (GL_BACK);
     glEnable (GL_DEPTH_TEST);
     glDepthFunc (GL_LESS);
     glEnable (GL_BLEND);
-    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);*/
 }
 
 void mix::rendering::rendering_context::finalize () const
@@ -49,7 +49,7 @@ void mix::rendering::rendering_context::set_mat4 (int loc, mat4 mat)
 
 void mix::rendering::rendering_context::set_1f (const std::string& s, float f)
 {
-    glUniform1f (glGetUniformLocation (_active_program, s.c_str()), f);
+    glUniform1f (glGetUniformLocation (_active_program, s.c_str ()), f);
 }
 
 void mix::rendering::rendering_context::set_1i (const std::string& s, int f)
@@ -77,4 +77,3 @@ void mix::rendering::rendering_context::set_mat4 (const std::string& s, mat4 mat
 {
     glUniformMatrix4fv (glGetUniformLocation (_active_program, s.c_str ()), 1, false, &mat[0][0]);
 }
-

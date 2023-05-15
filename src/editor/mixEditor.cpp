@@ -27,9 +27,9 @@ void mix::mixEditor::create_new ()
 
 void mix::mixEditor::run ()
 {
+    _active_scene->update ();
     glClearColor (0.2f, 0.3f, 0.3f, 1.0f);
-    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glDepthMask (GL_TRUE);
+    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
     _should_run = _window->get_key (GLFW_KEY_ESCAPE) != GLFW_PRESS;
     /*
@@ -54,7 +54,6 @@ void mix::mixEditor::run ()
 
     glfwSwapBuffers (_window->get_glfw_window ());
     glfwPollEvents ();
-    glDepthMask (GL_FALSE);
 }
 
 void mix::mixEditor::render ()
@@ -77,7 +76,7 @@ void mix::mixEditor::start ()
     _window = std::make_unique<mix::core::mixWindow> (1024, 768);
     _window->initialize ();
     _should_run = true;
-    _rendering = std::unique_ptr<mix::rendering::rendering_context> ();
+    _rendering = std::make_unique<mix::rendering::rendering_context> ();
     _rendering->initialize ();
 
     glfwSetWindowPosCallback (_window->get_glfw_window (), window_pos_callback);

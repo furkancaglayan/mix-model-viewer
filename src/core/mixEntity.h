@@ -28,6 +28,10 @@ namespace mix
 
             void add_component (std::unique_ptr<mixComponent> comp);
             void add_component (mixComponent* comp);
+            /* template <class Tcomponent, class... Targs> void add_component (Targs&&... args)
+            {
+                add_component (std::make_unique<Tcomponent> (std::forward<Targs> (args)...));
+            }*/
             void set_name (std::string name);
             void add_child (std::shared_ptr<mixEntity> ch);
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "../math/constants.h"
 #include "../math/mat.h"
+#include <vector>
 #include <string>
-
 namespace mix
 {
     namespace rendering
@@ -29,6 +29,7 @@ namespace mix
             void initialize () const;
             void finalize () const;
             unsigned _active_program;
+
         };
     } // namespace rendering
 } // namespace mix

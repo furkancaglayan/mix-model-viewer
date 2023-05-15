@@ -18,6 +18,7 @@ namespace mix
                          mix::rendering::rendering_context* rendering,
                          const mix::core::mixTransform* transform) override;
 
+            void update () override;
             private:
 
             std::weak_ptr<mix::assetsystem::mixMesh> _mesh;

@@ -29,12 +29,12 @@ namespace mix
             void debug_input (vec3 v);
             private:
 
-            float _fov{ 75.0f };
+            float _fov{ 35.0f };
             float movement_speed{ 2.0f };
             float _sensitivity{ 2.0f };
             float _zoom{ 1.0f };
-            float _near{ 0.1f };
-            float _far{ 100.0f };
+            float _near{ 0.01f };
+            float _far{ 1000.0f };
             float _aspect{ 1024.0f / 768.0f };
 
             projection_mode _projection{ projection_mode ::perspective };

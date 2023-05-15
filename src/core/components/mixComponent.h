@@ -11,6 +11,7 @@ namespace mix
         {
             public:
 
+            mixComponent ();
             virtual void update () = 0;
             virtual void render (/* mix::scene_management::mixScene* scene,*/
                                  mix::rendering::rendering_context* rendering,

@@ -15,6 +15,7 @@ namespace mix
             public:
 
             mixMaterial (const mix::platform::mixAsset_path& path, std::shared_ptr<mix::assetsystem::mixShader_program> shader);
+            mixMaterial (const std::string& path, std::shared_ptr<mix::assetsystem::mixShader_program> shader);
             ~mixMaterial ();
 
             void set_shader (std::shared_ptr<mix::assetsystem::mixShader_program> shader);

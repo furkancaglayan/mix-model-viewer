@@ -7,6 +7,12 @@ mix::assetsystem::mixMaterial::mixMaterial (const mix::platform::mixAsset_path& 
     _shader = shader;
 }
 
+mix::assetsystem::mixMaterial::mixMaterial (const std::string& path, std::shared_ptr<mix::assetsystem::mixShader_program> shader)
+: mix::assetsystem::mixAsset_item (path), _color{ vec4 (1.0f, 1.0f, 1.0f, 1.0f) }
+{
+    _shader = shader;
+}
+
 mix::assetsystem::mixMaterial::~mixMaterial ()
 {
 }
@@ -58,6 +64,7 @@ unsigned mix::assetsystem::mixMaterial::apply () const
 
     _shader.lock ()->use ();
     _shader.lock ()->set_vec4 ("_color", _color);
+    _shader.lock ()->set_1f ("_shininess", _shininess);
 
     return _shader.lock ()->get_program_id ();
 }
