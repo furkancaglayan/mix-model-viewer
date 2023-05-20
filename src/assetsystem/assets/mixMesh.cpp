@@ -41,6 +41,16 @@ const unsigned mix::assetsystem::mixMesh::get_vao () const
     return VAO;
 }
 
+const unsigned mix::assetsystem::mixMesh::get_ebo () const
+{
+    return EBO;
+}
+
+const unsigned mix::assetsystem::mixMesh::get_vbo () const
+{
+    return VBO;
+}
+
 void mix::assetsystem::mixMesh::initialize_mesh ()
 {
     glGenVertexArrays (1, &VAO);
@@ -62,13 +72,13 @@ void mix::assetsystem::mixMesh::initialize_mesh ()
     glEnableVertexAttribArray (1);
     glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _normal));
     // vertex texture coords
-    /* glEnableVertexAttribArray (2);
+    glEnableVertexAttribArray (2);
     glVertexAttribPointer (2, 2, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tex_coords));
     // vertex tangents
     glEnableVertexAttribArray (3);
     glVertexAttribPointer (3, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _tangent));
     // vertex bitangents
     glEnableVertexAttribArray (4);
-    glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _bitangent));*/
+    glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _bitangent));
     glBindVertexArray (0);
 }

@@ -12,7 +12,7 @@ mix::core::mixEntity::mixEntity (std::string name) : mixEntity (name, vec3 (0))
 {
 }
 
-mix::core::mixEntity::mixEntity (std::string name, vec3 pos) : _name{ "Entity" }
+mix::core::mixEntity::mixEntity (std::string name, vec3 pos) : _name{ name }
 {
     _transform = std::make_unique<mix::core::mixTransform> (pos);
     _transform->set_position (pos);

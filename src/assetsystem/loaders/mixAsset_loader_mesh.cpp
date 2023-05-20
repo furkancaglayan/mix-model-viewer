@@ -31,7 +31,7 @@ namespace mix
                 }
 
                 std::vector<vec3> normals;
-                std::vector<vec3> uvs;
+                std::vector<vec2> uvs;
                 std::vector<unsigned> indices;
                 std::vector<vertex> vertices;
 
@@ -118,9 +118,9 @@ namespace mix
                         v1._tangent = t;
                         v2._tangent = t;
 
-                        v0._tangent = b;
-                        v1._tangent = b;
-                        v2._tangent = b;
+                        v0._bitangent = b;
+                        v1._bitangent = b;
+                        v2._bitangent = b;
                     }
                 }
 

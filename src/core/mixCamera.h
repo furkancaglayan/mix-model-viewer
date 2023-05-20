@@ -29,7 +29,7 @@ namespace mix
             void debug_input (vec3 v);
             private:
 
-            float _fov{ 35.0f };
+            float _fov{ 45.0f };
             float movement_speed{ 2.0f };
             float _sensitivity{ 2.0f };
             float _zoom{ 1.0f };

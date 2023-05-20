@@ -6,10 +6,17 @@ using vec2 = glm::vec2;
 using vec3 = glm::vec3;
 using vec4 = glm::vec4;
 
+using vec1i = glm::ivec2;
+using vec2i = glm::ivec2;
+using vec3i = glm::ivec3;
+using vec4i = glm::ivec4;
+
+
 static vec3 normalize (const vec3& v)
 {
     return glm::normalize (v);
 }
+
 
 static vec3 cross (const vec3& v1, const vec3& v2)
 {

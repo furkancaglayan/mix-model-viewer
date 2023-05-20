@@ -17,20 +17,20 @@ namespace mix
             auto it = _children.insert (_children.begin () + index, std::make_unique<tree_node> (key, std::move (child)));
             return _children.at (index).get ();
         }
-        mix::assetsystem::mixAsset_item* tree_node::search_with_guid (const mix::core::mixGuid& key) const
+        std::shared_ptr<mix::assetsystem::mixAsset_item> tree_node::search_with_guid (const mix::core::mixGuid& key) const
         {
             return search_with_member<const mix::core::mixGuid&> (key, &mix::assetsystem::mixAsset_item::get_guid);
         }
 
-        mix::assetsystem::mixAsset_item* tree_node::search_with_base_name (const std::string& name) const
+        std::shared_ptr<mix::assetsystem::mixAsset_item> tree_node::search_with_base_name (const std::string& name) const
         {
             return search_with_member<const std::string&> (name, &mix::assetsystem::mixAsset_item::get_base_name);
         }
-        mix::assetsystem::mixAsset_item* tree_node::search_with_full_name (const std::string& name) const
+        std::shared_ptr<mix::assetsystem::mixAsset_item> tree_node::search_with_full_name (const std::string& name) const
         {
             return search_with_member<const std::string&> (name, &mix::assetsystem::mixAsset_item::get_full_name);
         }
-        mix::assetsystem::mixAsset_item* tree_node::search_with_path (const std::string& path) const
+        std::shared_ptr<mix::assetsystem::mixAsset_item> tree_node::search_with_path (const std::string& path) const
         {
             return search_with_member<const std::string&> (path, &mix::assetsystem::mixAsset_item::get_path);
         }

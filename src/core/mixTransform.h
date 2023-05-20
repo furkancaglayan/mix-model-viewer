@@ -36,7 +36,8 @@ namespace mix
             void set_scale (vec3 v);
             void translate (vec3 v);
             void scale (vec3 v);
-            void rotate (vec3 v);
+            //void rotate (vec3 v);
+            void rotate_around (float x, float y, float z);
             void update ();
 
             mat4 get_model_mat () const;

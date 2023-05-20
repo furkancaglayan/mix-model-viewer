@@ -19,6 +19,13 @@ static mat4 lookat (const vec3& eye, const vec3& at, const vec3& up)
 {
     return glm::lookAt (eye, at, up);
 }
+
+
+static mat4 rotate (const mat4& model, const float& degrees, const vec3& axis)
+{
+    return glm::rotate (model, glm::radians (degrees), axis);
+}
+
 /*using vec1 = vec<float, 1>;
 using vec2 = vec<float, 2>;
 typedef vec<float, 3> vec3;

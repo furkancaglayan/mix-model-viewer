@@ -25,6 +25,8 @@ namespace mix
             const std::vector<unsigned>& get_indices () const;
             const std::vector<vertex>& get_vertices () const;
             const unsigned get_vao () const;
+            const unsigned get_ebo () const;
+            const unsigned get_vbo () const;
             void initialize_mesh ();
 
             private:

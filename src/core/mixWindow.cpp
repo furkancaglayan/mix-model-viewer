@@ -32,6 +32,7 @@ void mix::core::mixWindow::set_monitor (GLFWmonitor* monitor)
         {
             glfwTerminate ();
             printf ("Cant retrieve mode");
+            return;
         }
 
         glfwWindowHint (GLFW_RED_BITS, mode->redBits);
@@ -48,14 +49,25 @@ void mix::core::mixWindow::set_monitor (GLFWmonitor* monitor)
     }
 }
 
+vec2 mix::core::mixWindow::get_window_size () const
+{
+    vec2i s;
+    glfwGetWindowSize (_glfw_window, &s.x, &s.y);
+    return s;
+}
+
 GLFWwindow* mix::core::mixWindow::get_glfw_window () const noexcept
 {
     return _glfw_window;
 }
 
-void mix::core::mixWindow::set_context_as_current () noexcept
+mix::core::mixWindow::mixWindow ()
 {
-    glfwMakeContextCurrent (_glfw_window);
+    const GLFWvidmode* mode = glfwGetVideoMode (glfwGetPrimaryMonitor ());
+    _width = mode->width;
+    _height = mode->height;
+    _x = 0;
+    _y = 0;
 }
 
 mix::core::mixWindow::~mixWindow ()
@@ -70,8 +82,6 @@ inline void mix::core::mixWindow::close () noexcept
 void mix::core::mixWindow::initialize () noexcept
 {
     std::cout << "Creating Window" << std::endl;
-
-
     glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, _context_version_max);
     glfwWindowHint (GLFW_CONTEXT_VERSION_MINOR, _context_version_min);
     glfwWindowHint (GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -83,6 +93,5 @@ void mix::core::mixWindow::initialize () noexcept
         printf ("Failed to create a window");
     }
     set_monitor (glfwGetPrimaryMonitor ());
-
-    set_context_as_current ();
+    glfwMakeContextCurrent (_glfw_window);
 }

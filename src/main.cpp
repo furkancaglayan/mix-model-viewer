@@ -11,7 +11,9 @@
 #include "assetsystem/loaders/mixAsset_loader_shader.h"
 #include "assetsystem/loaders/mixAsset_loader_text.h"
 #include "assetsystem/mixAsset_manager.h"
+
 #include "core/components/mixMesh_component.h"
+#include "assetsystem/loaders/mixAsset_loader_texture.h"
 
 
 void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -32,7 +34,7 @@ int main ()
     }
     glewExperimental = true;
 
-
+   
     std::string path{ "C:\\Users\\furka\\Desktop\\Develop\\mb3_dev\\WOTS\\Modules\\Native\\ModuleData" };
     std::string path2{ "C:\\Users\\furka\\Desktop\\Develop" };
     std::string path3{ "..\\..\\..\\assets" };
@@ -41,7 +43,7 @@ int main ()
     mix::assetsystem::mixAsset_manager assets{ path3 };
 
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Text);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Texture);
+    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_texture> (mix::assetsystem::asset_type::Texture);
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Material);
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Mesh);
     assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Other);
@@ -50,13 +52,16 @@ int main ()
 
     assets.resolve_all_assets ();
     assets.debug ();
-    auto mesh = std::shared_ptr<mix::assetsystem::mixMesh> (
-    static_cast<mix::assetsystem::mixMesh*> (assets.get_asset_with_full_name ("Skull.obj")));
-    auto vertex_shader = assets.get_asset_with_full_name ("vertex.vert");
-    assert (vertex_shader);
+    auto mesh = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("cube.obj");
+    auto tex = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("albedo_17.jpg");
+    auto normal = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("normal_wood.jpg");
+    auto mesh2 = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("Skull2.obj");
 
-    auto fragment_shader = assets.get_asset_with_full_name ("fragment.frag");
-    assert (fragment_shader);
+    auto vertex_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_vertex.vert");
+   // assert (vertex_shader);
+
+    auto fragment_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
+    //assert (fragment_shader);
 
     glfwSetKeyCallback (mix::mixEditor::_instance->_window->get_glfw_window (), key_callback);
     glEnable (GL_DEPTH_TEST);
@@ -64,20 +69,42 @@ int main ()
 
     std::string path4{ "..\\..\\..\\assets\\shaders\\program.p" };
     mix::platform::mixAsset_path p (path4);
-    mix::assetsystem::mixShader x{ *static_cast<mix::assetsystem::mixShader*> (vertex_shader) };
-    mix::assetsystem::mixShader y{ *static_cast<mix::assetsystem::mixShader*> (fragment_shader) };
-    auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, x, y);
+    auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, vertex_shader.get (), fragment_shader.get());
 
     auto model = std::make_shared<mix::core::mixEntity> ();
-    auto component = new mix::components::mixMesh_component (mesh);
-    auto material = std::make_shared<mix::assetsystem::mixMaterial> (path4, program);
-    mesh->set_material (material);
-    model->add_component (component);
-    mix::scene_management::mixScene::_instance->get_root ()->add_child (model);
-    auto light = std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (1, 0, 0));
-    light->_transform->set_position (vec3 (4, 3, 2));
+    auto model2 = std::make_shared<mix::core::mixEntity> ();
+    model->_transform->set_position (vec3 (0, 0, 15));
+    model2->_transform->set_position (vec3 (0, 0, -15));
 
-    mix::scene_management::mixScene::_instance->add_light (light);
+
+    auto component = new mix::components::mixMesh_component (mesh);
+    auto component2 = new mix::components::mixMesh_component (mesh2);
+
+
+    auto material = std::make_shared<mix::assetsystem::mixMaterial> (path4, program);
+    auto material2 = std::make_shared<mix::assetsystem::mixMaterial> (path4, program);
+    material->set_color (vec3 (1));
+    material->set_texture (mix::texture::texture_type::diffuse, tex);
+    material2->set_texture (mix::texture::texture_type::diffuse, tex);
+    material->set_texture (mix::texture::texture_type::normal, normal);
+
+    mesh->set_material (material);
+    mesh2->set_material (material2);
+    model->add_component (component);
+    model->set_name ("Gameobject 1");
+    model2->add_component (component2);
+    model2->set_name ("Gameobject 2");
+    mix::scene_management::mixScene::_instance->get_root ()->add_child (model);
+    mix::scene_management::mixScene::_instance->get_root ()->add_child (model2);
+    auto light = std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (0.33, 0.33, 0));
+    light->_transform->set_position (vec3 (0, 10, 10));
+    auto light2 =
+    std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (1));
+    light2->_transform->set_position (vec3 (0, -10,-10));
+    light2->set_intensity (0.33f);
+
+    mix::scene_management::mixScene::_instance->add_light (light2);
+    //mix::scene_management::mixScene::_instance->add_light (light);
     while (mix::mixEditor::_instance->_should_run)
     {
         mix::mixEditor::_instance->run ();

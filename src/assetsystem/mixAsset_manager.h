@@ -51,19 +51,34 @@ namespace mix
                 return loader->resolve (file);
             }
 
-            inline mixAsset_item* get_asset_with_base_name (const std::string& name) const
+            inline std::shared_ptr<mixAsset_item> get_asset_with_base_name (const std::string& name) const
             {
                 return _assets->search_with_base_name (name);
             }
 
-            inline mixAsset_item* get_asset_with_full_name (const std::string& name) const
+            template <class T> inline std::shared_ptr<T> search_with_base_name (const std::string& name) const
+            {
+                return std::static_pointer_cast<T> (_assets->search_with_base_name (name));
+            }
+
+            inline std::shared_ptr<mixAsset_item> get_asset_with_full_name (const std::string& name) const
             {
                 return _assets->search_with_full_name (name);
             }
 
-            inline mixAsset_item* get_asset_with_path (const std::string& path) const
+            template <class T> inline std::shared_ptr<T> get_asset_with_full_name (const std::string& name) const
+            {
+                return std::static_pointer_cast<T> (_assets->search_with_full_name (name));
+            }
+
+            inline std::shared_ptr<mixAsset_item> get_asset_with_path (const std::string& path) const
             {
                 return _assets->search_with_path (path);
+            }
+
+            template <class T> inline std::shared_ptr<T> get_asset_with_path (const std::string& name) const
+            {
+                return std::static_pointer_cast<T> (_assets->search_with_path (name));
             }
 
             inline void debug ()

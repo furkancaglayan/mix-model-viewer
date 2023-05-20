@@ -2,6 +2,7 @@
 #include "../core/mixWindow.h"
 #include "../scene_management/mixScene.h"
 #include <memory>
+#include "../gui/mixGui.h"
 
 namespace mix
 {
@@ -21,7 +22,7 @@ namespace mix
         mix::core::mixWindow* get_window () const;
         mix::scene_management::mixScene* get_active_scene () const;
         std::unique_ptr<mix::core::mixWindow> _window;
-
+        mix::gui::test_gui test_gui;
         private:
 
         void render ();

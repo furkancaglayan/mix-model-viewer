@@ -32,6 +32,11 @@ mix::assetsystem::mixShader_program* mix::assetsystem::mixMaterial::get_shader (
     return _shader.lock ().get ();
 }
 
+void mix::assetsystem::mixMaterial::set_texture (mix::texture::texture_type type, std::shared_ptr<mix::assetsystem::mixTexture> texture)
+{
+    _textures[type] = texture;
+}
+
 vec4 mix::assetsystem::mixMaterial::get_color () const
 {
     return _color;
@@ -65,6 +70,16 @@ unsigned mix::assetsystem::mixMaterial::apply () const
     _shader.lock ()->use ();
     _shader.lock ()->set_vec4 ("_color", _color);
     _shader.lock ()->set_1f ("_shininess", _shininess);
+
+    for (auto& it : _textures)
+    {
+        if (!it.second.expired ())
+        {
+            it.second.lock ()->bind ();
+            _shader.lock ()->set_1i (mix::texture::get_texture_target(it.first), static_cast<int>(it.first));
+        }
+    }
+
 
     return _shader.lock ()->get_program_id ();
 }

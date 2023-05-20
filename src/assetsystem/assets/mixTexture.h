@@ -11,16 +11,17 @@ namespace mix
 
         enum class texture_type : uint8_t
         {
-            diffuse,
-            normal,
-            specular,
-            height
+            diffuse = 0,
+            normal = 2,
+            specular = 4,
+            height = 8
         };
 
         enum class texture_wrapping : int
         {
             repeat = GL_REPEAT,
             mirrored_repeat = GL_MIRRORED_REPEAT,
+            clamp = GL_CLAMP,
             clamp_to_edge = GL_CLAMP_TO_EDGE,
             clamp_to_border = GL_CLAMP_TO_BORDER,
         };
@@ -50,6 +51,10 @@ namespace mix
         // glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
         // glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+        static std::string get_texture_target (texture_type type)
+        {
+            return std::string ("texture") + std::to_string (static_cast<int> (type));
+        }
         texture () = delete;
         ~texture () = delete;
     };
@@ -60,21 +65,25 @@ namespace mix
         {
             public:
 
+            mixTexture (const mix::platform::mixAsset_path& path, texture::texture_type type = texture::texture_type::diffuse);
+
             inline const mix::texture::texture_type get_texture_type () const
             {
                 return _type;
             }
 
             void set_wrapping (texture::texture_wrapping wrapping);
-
-            void set_filtering (texture::texture_filtering filtering);
+            void set_filtering (texture::texture_filtering filtering_min, texture::texture_filtering filtering_mag);
+            void bind () const;
+            void change_type (mix::texture::texture_type t);
 
             private:
 
+            void initialize (const mix::platform::mixAsset_path& path);
             unsigned int _id;
-            const texture::texture_type _type;
-            const texture::texture_wrapping _wrapping{ texture::texture_wrapping ::repeat };
-            const texture::texture_filtering _filtering{ texture::texture_filtering ::nearest };
+            texture::texture_type _type{ texture::texture_type::diffuse };
+            texture::texture_wrapping _wrapping{ texture::texture_wrapping ::repeat };
+            texture::texture_filtering _filtering{ texture::texture_filtering ::nearest };
         };
     } // namespace assetsystem
 } // namespace mix

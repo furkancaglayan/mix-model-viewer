@@ -2,7 +2,7 @@
 
 std::unique_ptr<mix::scene_management::mixScene> mix::scene_management::mixScene::_instance = nullptr;
 
-mix::scene_management::mixScene::mixScene () : mixScene (new mix::core::mixEntity ("Root"))
+mix::scene_management::mixScene::mixScene () : mixScene (new mix::core::mixEntity ("New Scene"))
 {
 }
 

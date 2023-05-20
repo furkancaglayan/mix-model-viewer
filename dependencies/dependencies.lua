@@ -15,7 +15,16 @@ project "imgui"
     "imgui/*.cpp", 
     "imgui/*.h" 
     }
+    links {
+      "glfw3_mt",
+   }
 
+   libdirs {
+      "glfw/lib", 
+   }
+   includedirs {
+      "glfw/include", 
+   }
 	filter "system:windows"
       systemversion "latest"
 	  staticruntime "On"
@@ -30,7 +39,7 @@ project "imgui"
       }
 
       files { 
-        "imgui/backends/imgui_impl_win32.cpp", 
+        "imgui/backends/imgui_impl_glfw.cpp", 
         "imgui/backends/imgui_impl_opengl3.cpp", 
     }
     filter "system:macosx"

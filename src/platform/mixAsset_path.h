@@ -33,6 +33,11 @@ namespace mix
                 return _path;
             }
 
+             inline const char* to_cstr () const
+            {
+                return _path.c_str();
+            }
+
             inline const std::string& get_name_without_extension () const
             {
                 return _base_name;

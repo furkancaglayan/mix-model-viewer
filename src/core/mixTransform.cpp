@@ -35,13 +35,23 @@ void mix::core::mixTransform::scale (vec3 v)
 {
 }
 
-void mix::core::mixTransform::rotate (vec3 v)
+
+void mix::core::mixTransform::rotate_around (float x, float y, float z)
 {
+    _rotation.x += x;
+    _rotation.y += y;
+    _rotation.z += z;
+    _is_dirty = true;
 }
 
 mat4 mix::core::mixTransform::get_model_mat () const
 {
-    return mat4 (1, 0, 0, _position.x, 0, 1, 0, _position.y, 0, 0, 1, _position.z, 0, 0, 0, 1);
+    mat4 m (1.0f);
+    m = rotate (m, _rotation.x, transform::right);
+    m = rotate (m, _rotation.y, transform::up);
+    m = rotate (m, _rotation.z, transform::forward);
+    m = glm::translate (m, _position);
+    return m;
 }
 
 mix::core::mixTransform::mixTransform () : mixTransform (vec3 (0), vec3 (0), vec3 (1))
@@ -87,7 +97,5 @@ void mix::core::mixTransform::update_vectors ()
 
     _right = normalize (cross (_forward, transform::up));
     _up = normalize (cross (_right, _forward));
-    std::cout << _position.x << "," << _position.y
-              << "," << _position.z << std::endl;
 }
 

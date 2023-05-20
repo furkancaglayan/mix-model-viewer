@@ -1,6 +1,7 @@
 #pragma once
 #include "../platform/typedefs.h"
 #include <cstdint>
+#include "../math/vec.h"
 
 namespace mix
 {
@@ -17,17 +18,16 @@ namespace mix
 			using uint = unsigned int;
 		public:
 
-			mixWindow(uint width, uint height) : _width{ width }, _height{ height }, _x{ 100 }, _y{ 100 }
-			{
-			}
+			mixWindow ();
 			~mixWindow();
 
-			void set_context_as_current() noexcept;
 			void initialize() noexcept;
 			inline void close() noexcept;
 			int get_key(int key) noexcept;
 			void set_window_mode(WindowMode mode);
 			void set_monitor(GLFWmonitor* monitor);
+
+			vec2 get_window_size () const;
 
 			GLFWwindow* get_glfw_window() const noexcept;
 			static constexpr int _context_version_min = 3;

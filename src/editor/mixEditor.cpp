@@ -52,6 +52,9 @@ void mix::mixEditor::run ()
 
     render ();
 
+    // Start the Dear ImGui frame
+  
+    test_gui.new_frame (_active_scene->get_root(), _active_scene->get_lights(), _window.get());
     glfwSwapBuffers (_window->get_glfw_window ());
     glfwPollEvents ();
 }
@@ -73,7 +76,7 @@ mix::scene_management::mixScene* mix::mixEditor::get_active_scene () const
 
 void mix::mixEditor::start ()
 {
-    _window = std::make_unique<mix::core::mixWindow> (1024, 768);
+    _window = std::make_unique<mix::core::mixWindow> ();
     _window->initialize ();
     _should_run = true;
     _rendering = std::make_unique<mix::rendering::rendering_context> ();
@@ -82,6 +85,8 @@ void mix::mixEditor::start ()
     glfwSetWindowPosCallback (_window->get_glfw_window (), window_pos_callback);
     glfwSetWindowCloseCallback (_window->get_glfw_window (), window_close_callback);
     glfwSetWindowSizeCallback (_window->get_glfw_window (), window_size_callback);
+
+    test_gui.init (_window.get ());
 }
 
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos)

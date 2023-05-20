@@ -12,11 +12,14 @@ void mix::components::mixMesh_component::render (/*mix::scene_management::mixSce
     if (!_mesh.expired())
     {
         glBindVertexArray (_mesh.lock ()->get_vao ());
+     
         _mesh.lock ()->draw (rendering);
+        
         rendering->set_mat4 ("_model", transform->get_model_mat ());
         mix::scene_management::mixScene::_instance->set_parameters (rendering);
 
         glDrawElements (GL_TRIANGLES, static_cast<GLsizei> (_mesh.lock ()->get_indices ().size ()), GL_UNSIGNED_INT, 0);
+        glBindTexture (GL_TEXTURE_2D, 0);
         glBindVertexArray (0);
     }
 }
