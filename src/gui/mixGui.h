@@ -1,25 +1,29 @@
 #pragma once
 
-#include <imgui.h>
-#include <backends/imgui_impl_glfw.h>
-#include <backends/imgui_impl_opengl3.h>
-#include "../core/mixWindow.h"
-#include "../core/mixEntity.h"
-#include "../core/light/mixLight.h"
+#include "gui_window.h"
+#include <GLFW/glfw3.h>
 
-namespace mix
+namespace mixImGui
 {
-    namespace gui
+
+    class mixGui
     {
+        friend class mixImGui::gui_window;
+        using w_ptr = std::unique_ptr<mixImGui::gui_window>;
 
-        class test_gui
+        public:
+
+        static void init (GLFWwindow* window);
+        static void render ();
+        template <class Comp, class... Args> static mixImGui::gui_window* add_window_with_component (Args&&... args)
         {
-            public:
+            return std::unique_ptr<mixImGui::gui_window> (new mixImGui::gui_window (std::forward<Args> (args)...));
+        }
 
-            void init (mix::core::mixWindow* window);
-            void new_frame (mix::core::mixEntity* root,
-                            std::vector<std::weak_ptr<mix::core::light::mixLight>> lights,
-                            mix::core::mixWindow* w);
-        };
-    } // namespace core
-} // namespace mix
+        private:
+
+        static void begin ();
+        static void end ();
+        static std::vector<w_ptr> _windows;
+    };
+} // namespace mixImGui

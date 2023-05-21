@@ -19,8 +19,8 @@ namespace mix
 
                 mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
                 bool save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item) override;
-
                 private:
+
                 mix::assetsystem::mixMesh* load_obj (mix::platform::mixAsset_path path);
             };
         } // namespace loaders

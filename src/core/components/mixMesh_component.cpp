@@ -13,7 +13,7 @@ void mix::components::mixMesh_component::render (/*mix::scene_management::mixSce
     {
         glBindVertexArray (_mesh.lock ()->get_vao ());
      
-        _mesh.lock ()->draw (rendering);
+        rendering->_active_program = _material.lock ()->apply ();
         
         rendering->set_mat4 ("_model", transform->get_model_mat ());
         mix::scene_management::mixScene::_instance->set_parameters (rendering);
@@ -22,6 +22,11 @@ void mix::components::mixMesh_component::render (/*mix::scene_management::mixSce
         glBindTexture (GL_TEXTURE_2D, 0);
         glBindVertexArray (0);
     }
+}
+
+void mix::components::mixMesh_component::set_material (std::shared_ptr<mix::assetsystem::mixMaterial> material)
+{
+    _material = material;
 }
 
 void mix::components::mixMesh_component::update ()

@@ -1,8 +1,6 @@
 #include "mixGui.h"
-void render_entities (const std::vector<std::shared_ptr<mix::core::mixEntity>> scene_objs, int depth);
-void render_lights (std::vector<std::weak_ptr<mix::core::light::mixLight>> lights);
 
-void mix::gui::test_gui::init (mix::core::mixWindow* window)
+void mixImGui::mixGui::init (GLFWwindow* window)
 {
     IMGUI_CHECKVERSION ();
     ImGui::CreateContext ();
@@ -16,33 +14,34 @@ void mix::gui::test_gui::init (mix::core::mixWindow* window)
     // ImGui::StyleColorsLight();
     const char* glsl_version = "#version 130";
     // Setup Platform/Renderer backends
-    ImGui_ImplGlfw_InitForOpenGL (window->get_glfw_window (), true);
+    ImGui_ImplGlfw_InitForOpenGL (window, true);
     ImGui_ImplOpenGL3_Init (glsl_version);
 }
 
-void mix::gui::test_gui::new_frame (mix::core::mixEntity* root,
-                                    std::vector<std::weak_ptr<mix::core::light::mixLight>> lights, mix::core::mixWindow* w)
+void mixImGui::mixGui::render ()
+{
+    for (auto& w : _windows )
+    {
+        w->render ();
+    }
+}
+
+
+void mixImGui::mixGui::begin ()
 {
     ImGui_ImplOpenGL3_NewFrame ();
     ImGui_ImplGlfw_NewFrame ();
     ImGui::NewFrame ();
-    bool show_demo_window = true;
-    ImGui::SetNextWindowPos (ImVec2 (0, 0));
-    ImGui::Begin (root->get_name ().c_str (), 0,
-                  ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse); // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
-    auto width = ImGui::GetWindowWidth ();
-    ImGui::SetWindowSize (ImVec2 (width, w->get_window_size().y));
-    ImGui::Text (root->get_name ().c_str ());
-    render_entities (root->get_children(), 0);
+}
 
-    ImGui::Text ("Lights");
-    render_lights (lights);
-
+void mixImGui::mixGui::end ()
+{
     ImGui::End ();
     ImGui::Render ();
     ImGui_ImplOpenGL3_RenderDrawData (ImGui::GetDrawData ());
 }
 
+/*
 void render_entities (const std::vector<std::shared_ptr<mix::core::mixEntity>> scene_objs, int depth)
 {
     for (auto it = scene_objs.cbegin(); it < scene_objs.cend(); it++)
@@ -111,14 +110,14 @@ void render_lights (std::vector<std::weak_ptr<mix::core::light::mixLight>> light
          ImGui::ColorPicker3 (color.c_str (), &col.x);
          light->set_color (col);
 
-        /*
         cursor_pos_x = ImGui::GetCursorPosX ();
         auto r_z = std::string ("Rotate Z##") + light->get_name ();
         ImGui::SetCursorPos (ImVec2 (cursor_pos_x + btn_size.x * 3, cursor_pos_y)); // Move cursor on needed positions
         if (ImGui::Button (r_z.c_str (), btn_size))
         {
             light->_transform->rotate_around (0, 0, 5);
-        }*/
+        }
         // 8, 75
     }
 }
+    */

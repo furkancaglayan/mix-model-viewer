@@ -2,7 +2,6 @@
 #include "editor/mixEditor.h"
 #include "platform/typedefs.h"
 
-#include <imgui.h>
 #include <iostream>
 #include <memory>
 #include <string>
@@ -87,9 +86,10 @@ int main ()
     material->set_texture (mix::texture::texture_type::diffuse, tex);
     material2->set_texture (mix::texture::texture_type::diffuse, tex);
     material->set_texture (mix::texture::texture_type::normal, normal);
+    material2->set_texture (mix::texture::texture_type::normal, normal);
 
-    mesh->set_material (material);
-    mesh2->set_material (material2);
+    component->set_material (material);
+    component2->set_material (material2);
     model->add_component (component);
     model->set_name ("Gameobject 1");
     model2->add_component (component2);
@@ -100,7 +100,7 @@ int main ()
     light->_transform->set_position (vec3 (0, 10, 10));
     auto light2 =
     std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (1));
-    light2->_transform->set_position (vec3 (0, -10,-10));
+    light2->_transform->set_position (vec3 (0, 10,0));
     light2->set_intensity (0.33f);
 
     mix::scene_management::mixScene::_instance->add_light (light2);

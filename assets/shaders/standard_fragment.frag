@@ -1,6 +1,5 @@
 #version 330 core
 #define MAX_LIGHTS 128
-
 uniform vec3 _view_pos;
 in VS_OUT {
     vec3 frag_pos;
@@ -59,4 +58,4 @@ vec3 calculate_light(Light light, vec3 normal, vec3 viewDir)
 
     vec3 result = diffuse + ambient + specular;
     return result;
-}  
+}

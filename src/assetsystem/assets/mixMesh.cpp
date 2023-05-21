@@ -11,20 +11,6 @@ mix::assetsystem::mixMesh::~mixMesh ()
 {
 }
 
-void mix::assetsystem::mixMesh::draw (mix::rendering::rendering_context* rendering) const
-{
-    if (!_material.expired ())
-    {
-        rendering->_active_program = _material.lock ()->apply ();
-    }
-  
-    //glBindVertexArray (0);
-}
-
-void mix::assetsystem::mixMesh::set_material (std::shared_ptr<mixMaterial> material)
-{
-    _material = material;
-}
 
 const std::vector<unsigned>& mix::assetsystem::mixMesh::get_indices () const
 {

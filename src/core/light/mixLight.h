@@ -1,6 +1,7 @@
 #pragma once
 #include "../mixEntity.h"
 #include <cstdint>
+#include "../../gui/i_guicomponent.h"
 
 namespace mix
 {
@@ -14,7 +15,7 @@ namespace mix
                 spot,
                 point
             };
-            class mixLight : public mix::core::mixEntity
+            class mixLight : public mix::core::mixEntity, public mixImGui::i_guicomponent
             {
                 public:
 
