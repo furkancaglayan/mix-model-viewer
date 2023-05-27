@@ -71,3 +71,12 @@ std::vector<std::weak_ptr<mix::core::light::mixLight>> mix::scene_management::mi
 {
     return _lights;
 }
+
+void mix::scene_management::mixScene::gui_impl ()
+{
+}
+
+std::string mix::scene_management::mixScene::get_name ()
+{
+    return std::string ();
+}

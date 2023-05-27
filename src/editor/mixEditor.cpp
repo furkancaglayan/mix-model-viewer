@@ -62,6 +62,7 @@ void mix::mixEditor::run ()
 void mix::mixEditor::render ()
 {
     _active_scene->render (_rendering.get());
+    gui_pass ();
 }
 
 mix::core::mixWindow* mix::mixEditor::get_window () const
@@ -86,12 +87,14 @@ void mix::mixEditor::start ()
     glfwSetWindowCloseCallback (_window->get_glfw_window (), window_close_callback);
     glfwSetWindowSizeCallback (_window->get_glfw_window (), window_size_callback);
 
-    //mix::gui::mixGui::init (_window.get());
+    mixImGui::mixGui::init (_window->get_glfw_window());
+    mixImGui::mixGui::add_window (new editor::windows::hierarchy_window (std::string ("Scene"),
+                                  mixImGui::window_rect (0, 0, 200, 500, 200, 600)));
 }
 
 void mix::mixEditor::gui_pass ()
 {
-    //mix::gui::mixGui::render ();
+    mixImGui::mixGui::render ();
 }
 
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos)

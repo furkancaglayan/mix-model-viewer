@@ -15,7 +15,7 @@ namespace mix
                 spot,
                 point
             };
-            class mixLight : public mix::core::mixEntity, public mixImGui::i_guicomponent
+            class mixLight : public mix::core::mixEntity, virtual public mixImGui::i_guicomponent
             {
                 public:
 
@@ -31,11 +31,19 @@ namespace mix
                 vec3 get_color () const;
                 void set_color (vec3 color);
 
+           
+             
                 private:
 
                 light_type _type;
                 float _intensity;
                 vec3 _color;
+
+                // Inherited via i_guicomponent
+                virtual std::string get_name () override;
+
+                // Inherited via i_guicomponent
+                virtual void gui_impl () override;
             };
         } // namespace light
     }     // namespace components

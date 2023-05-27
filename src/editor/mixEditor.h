@@ -2,6 +2,8 @@
 #include "../core/mixWindow.h"
 #include "../scene_management/mixScene.h"
 #include <memory>
+#include "scene_window.h"
+#include "hierarchy_window.h"
 
 namespace mix
 {

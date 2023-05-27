@@ -42,3 +42,12 @@ void mix::core::light::mixLight::set_color (vec3 color)
 {
     _color = color;
 }
+
+std::string mix::core::light::mixLight::get_name ()
+{
+    return std::string ();
+}
+
+void mix::core::light::mixLight::gui_impl ()
+{
+}

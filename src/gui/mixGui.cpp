@@ -1,5 +1,7 @@
 #include "mixGui.h"
 
+std::vector<mixImGui::mixGui::w_ptr> mixImGui::mixGui::_windows;
+
 void mixImGui::mixGui::init (GLFWwindow* window)
 {
     IMGUI_CHECKVERSION ();
@@ -20,12 +22,13 @@ void mixImGui::mixGui::init (GLFWwindow* window)
 
 void mixImGui::mixGui::render ()
 {
-    for (auto& w : _windows )
+    begin ();
+    for (size_t i = 0; i < _windows.size(); i++)
     {
-        w->render ();
+        _windows.at (i)->render ();
     }
+    end ();
 }
-
 
 void mixImGui::mixGui::begin ()
 {
@@ -36,7 +39,6 @@ void mixImGui::mixGui::begin ()
 
 void mixImGui::mixGui::end ()
 {
-    ImGui::End ();
     ImGui::Render ();
     ImGui_ImplOpenGL3_RenderDrawData (ImGui::GetDrawData ());
 }

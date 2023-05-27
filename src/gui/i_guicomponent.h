@@ -13,10 +13,7 @@ namespace mixImGui
     {
         public:
 
-        template <class Comp> void gui_impl ()
-        {
-
-        }
+        virtual void gui_impl () = 0;
         virtual std::string get_name () = 0;
 
         private:
