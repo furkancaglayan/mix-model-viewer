@@ -59,8 +59,7 @@ namespace mixImGui
         static void begin_vertical (window_rect r = window_rect (_cursor.x, _cursor.y, 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
-
-     
+        static void slider_float (const char* label, float* value, float min, float max);
         private:
 
         gui_layout (mixImGui::layout_type new_layout, window_rect r);

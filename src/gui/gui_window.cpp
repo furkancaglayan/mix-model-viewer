@@ -38,9 +38,11 @@ void mixImGui::gui_window::begin ()
         size.y = _rect._min_y;
     }
     ImGui::SetWindowSize (size);
+    gui_layout::begin_vertical ();
 }
 
 void mixImGui::gui_window::end () const
 {
+    gui_layout::end_vertical ();
     ImGui::End ();
 }

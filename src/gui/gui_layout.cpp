@@ -10,6 +10,7 @@ mixImGui::gui_layout::gui_layout (mixImGui::layout_type new_layout, window_rect 
     _rect = r;
     _current_layout = new_layout;
     _last_layout = _global_layout;
+    _cursor = ImGui::GetCursorPos ();
 }
 
 void mixImGui::gui_layout::begin_horizontal (window_rect r)
@@ -38,6 +39,12 @@ void mixImGui::gui_layout::text_label (std::string s)
     block->add_gui_element ([=] () { ImGui::Text (s.c_str ()); });
 }
 
+void mixImGui::gui_layout::slider_float (const char* label, float* value, float min, float max)
+{
+    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    block->add_gui_element ([=] () { ImGui::SliderFloat (label, value, min, max); });
+}
+
 void mixImGui::gui_layout::add_gui_element (const std::function<void ()>& command)
 {
     _commands.push_back (command);
@@ -55,17 +62,19 @@ void mixImGui::gui_layout::render_gui_element (const std::function<void ()>& com
 {
     auto w_size = ImGui::GetWindowSize ();
     auto w_pos = ImGui::GetWindowPos ();
-    ImVec2& new_pos = _cursor;
     auto element_count = _commands.size ();
     auto eq_size = w_size.x / element_count;
+
+    auto cursor_pos = ImGui::GetCursorPos ();
+
+    ImGui::SetCursorPos (ImVec2 (_local_cursor.x + _cursor.x, _local_cursor.y + _cursor.y));
+
     if (_global_layout == mixImGui::layout_type::horizontal)
     {
-        new_pos.x += eq_size;
+        _local_cursor.x += eq_size;
     }
 
     command ();
-    ImGui::SetCursorPos (new_pos);
-    _cursor = new_pos;
 }
 
 mixImGui::layout_type mixImGui::gui_layout::get_layout () const
@@ -87,7 +96,6 @@ void mixImGui::gui_layout::add_block (mixImGui::gui_layout* layout)
 {
     mixImGui::gui_layout::_layouts.push (std::unique_ptr<mixImGui::gui_layout> (layout));
     set_global_layout (layout->get_layout());
-    _cursor = ImGui::GetCursorPos ();
 }
 
 void mixImGui::gui_layout::end_current_block (mixImGui::layout_type target_layout)
@@ -95,9 +103,17 @@ void mixImGui::gui_layout::end_current_block (mixImGui::layout_type target_layou
     auto block = mixImGui::gui_layout::_layouts.top ().get();
     assert (block->get_layout () == target_layout);
     block->render_layout ();
-    _cursor = ImVec2 (_cursor.x + block->_rect._x, _cursor.y + block->_rect._y);
+    auto cursor_pos = ImGui::GetCursorPos ();
+
+    _cursor = ImVec2 (cursor_pos.x, cursor_pos.y + block->_rect._h);
+    ImGui::SetCursorPos (_cursor);
     set_global_layout (block->get_previous_layout ());
     mixImGui::gui_layout::_layouts.pop ();
+
+    if (_layouts.size () == 0)
+    {
+        _cursor = ImVec2 ();
+    }
 }
 
 ImVec2 mixImGui::gui_layout::get_new_cursor_pos ()
