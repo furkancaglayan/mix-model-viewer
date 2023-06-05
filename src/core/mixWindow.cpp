@@ -61,11 +61,22 @@ GLFWwindow* mix::core::mixWindow::get_glfw_window () const noexcept
     return _glfw_window;
 }
 
+void mix::core::mixWindow::on_window_size_changed (int w, int h)
+{
+    if (_mode == WindowMode::Windowed)
+    {
+        _width = w;
+        _height = h;
+    }
+}
+
 mix::core::mixWindow::mixWindow ()
 {
     const GLFWvidmode* mode = glfwGetVideoMode (glfwGetPrimaryMonitor ());
-    _width = mode->width;
-    _height = mode->height;
+   //_width = mode->width;
+   //_height = mode->height;
+    _width = 1024;
+    _height = 768;
     _x = 0;
     _y = 0;
 }

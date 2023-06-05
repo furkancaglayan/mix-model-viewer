@@ -22,13 +22,25 @@ void mixImGui::gui_window::enable ()
     _is_open = true;
 }
 
+void mixImGui::gui_window::rescale (int w, int h, int w_sizex, int w_sizey)
+{
+    _rect._w = static_cast<float>(w);
+    _rect._h = static_cast<float> (h);
+}
+
+void mixImGui::gui_window::set_title (std::string s)
+{
+    _window_name = s;
+}
+
 void mixImGui::gui_window::begin ()
 {
     ImGui::SetNextWindowPos (ImVec2 (_rect._x, _rect._y));
     ImGui::Begin (_window_name.c_str (), &_is_open, static_cast<ImGuiWindowFlags_> (_flags));
     auto size = ImGui::GetWindowSize ();
+    ImGui::SetWindowSize (ImVec2 (_rect._w, _rect._h));
 
-    if (_rect._min_x != -1 && size.x < _rect._min_x)
+    /* if (_rect._min_x != -1 && size.x < _rect._min_x)
     {
         size.x = _rect._min_x;
     }
@@ -36,8 +48,7 @@ void mixImGui::gui_window::begin ()
     if (_rect._min_y != -1 && size.y < _rect._min_y)
     {
         size.y = _rect._min_y;
-    }
-    ImGui::SetWindowSize (size);
+    }*/
     gui_layout::begin_vertical ();
 }
 

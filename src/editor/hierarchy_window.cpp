@@ -2,35 +2,65 @@
 
 void mix::editor::windows::hierarchy_window::render ()
 {
-    begin ();
+    auto scene = mix::mixEditor::_instance->get_active_scene ();
+    if (scene)
+    {
+        set_title (scene->get_root ()->get_name ());
+        begin ();
 
-    float c1 = 0.0f;
-    gui_layout::slider_float ("Slider", &c1, 0.0f, 10.0f);
+        gui_layout::begin_vertical ();
+        gui_layout::collapsing_label ("Objects", &_visible_entities);
 
-    gui_layout::begin_vertical ();
+        if (_visible_entities)
+        {
+            auto children = scene->get_root ()->get_children ();
 
-
-    gui_layout::begin_horizontal (mixImGui::window_rect(0, 0, 100, 200));
-    gui_layout::text_label ("Value: ");
-    float c = 0.0f;
-    gui_layout::slider_float ("Slider", &c, 0.0f, 10.0f);
-    gui_layout::end_horizontal ();
-
-    gui_layout::begin_horizontal (mixImGui::window_rect (0, 0, 100, 200));
-    gui_layout::text_label ("Text1");
-    gui_layout::text_label ("Text2");
-    gui_layout::text_label ("Text3");
-    gui_layout::end_horizontal ();
-
-    gui_layout::end_vertical ();
-    end ();
+            for (size_t i = 0; i < children.size (); i++)
+            {
+                render_entity (children.at (i).get (), static_cast<int>(i));
+            }
+        }
+        else
+        {
+            _selected_entity = -1;
+        }
+   
+        gui_layout::end_vertical ();
+        end ();
+    }
 }
 
 mix::editor::windows::hierarchy_window::hierarchy_window (std::string window_name, mixImGui::window_rect r)
 : mixImGui::gui_window (window_name,
                         r,
-                        mixImGui::window_flags::AlwaysUseWindowPadding | mixImGui::window_flags::MenuBar |
-                        mixImGui::window_flags::NoCollapse |
-                        mixImGui::window_flags::NoMove)
+                        mixImGui::window_flags::MenuBar |
+                        mixImGui::window_flags::NoCollapse | mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize)
+
 {
+}
+
+mix::editor::windows::hierarchy_window::~hierarchy_window ()
+{
+}
+
+void mix::editor::windows::hierarchy_window::initialize (vec2 w_size)
+{
+    auto WINDOW_SIZE = 0.75f;
+    auto WINDOW_BEGIN_POS = 0.75f;
+
+    mixImGui::mixGui::add_window (
+    new editor::windows::hierarchy_window (std::string ("Hierarchy"),
+                                           mixImGui::window_rect (w_size.x * WINDOW_BEGIN_POS,
+                                                                  0, w_size.x * WINDOW_SIZE, w_size.y)));
+}
+
+void mix::editor::windows::hierarchy_window::render_entity (mix::core::mixEntity* entity, int i)
+{
+    gui_layout::horizontal_space (20);
+    bool selected = i == _selected_entity;
+
+    if (gui_layout::selectable (entity->get_name (), selected))
+    {
+        _selected_entity = i;
+    }
 }

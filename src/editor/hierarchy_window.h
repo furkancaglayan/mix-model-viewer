@@ -1,5 +1,5 @@
 #pragma once
-#include "../gui/mixGui.h"
+#include "mixEditor.h"
 
 namespace mix
 {
@@ -14,6 +14,15 @@ namespace mix
 
                 void render () override;
                 hierarchy_window (std::string window_name, mixImGui::window_rect r);
+                ~hierarchy_window ();
+
+                static void initialize (vec2 window_size);
+
+                private:
+
+                void render_entity (mix::core::mixEntity* entity, int i);
+                bool _visible_entities = true;
+                int _selected_entity;
             };
         } // namespace windows
     }     // namespace editor

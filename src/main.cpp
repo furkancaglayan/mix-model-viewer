@@ -32,7 +32,7 @@ int main ()
         std::cout << glewGetErrorString (err) << std::endl;
     }
     glewExperimental = true;
-
+    mix::mixEditor::_instance->init_render_buffers ();
    
     std::string path{ "C:\\Users\\furka\\Desktop\\Develop\\mb3_dev\\WOTS\\Modules\\Native\\ModuleData" };
     std::string path2{ "C:\\Users\\furka\\Desktop\\Develop" };
@@ -57,18 +57,17 @@ int main ()
     auto mesh2 = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("Skull2.obj");
 
     auto vertex_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_vertex.vert");
-   // assert (vertex_shader);
+    // assert (vertex_shader);
 
     auto fragment_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
-    //assert (fragment_shader);
+    // assert (fragment_shader);
 
     glfwSetKeyCallback (mix::mixEditor::_instance->_window->get_glfw_window (), key_callback);
-    glEnable (GL_DEPTH_TEST);
 
 
     std::string path4{ "..\\..\\..\\assets\\shaders\\program.p" };
     mix::platform::mixAsset_path p (path4);
-    auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, vertex_shader.get (), fragment_shader.get());
+    auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, vertex_shader.get (), fragment_shader.get ());
 
     auto model = std::make_shared<mix::core::mixEntity> ();
     auto model2 = std::make_shared<mix::core::mixEntity> ();
@@ -96,6 +95,7 @@ int main ()
     model2->set_name ("Gameobject 2");
     mix::scene_management::mixScene::_instance->get_root ()->add_child (model);
     mix::scene_management::mixScene::_instance->get_root ()->add_child (model2);
+
     auto light = std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (0.33, 0.33, 0));
     light->_transform->set_position (vec3 (0, 10, 10));
     auto light2 =
@@ -108,6 +108,7 @@ int main ()
     while (mix::mixEditor::_instance->_should_run)
     {
         mix::mixEditor::_instance->run ();
+        mix::mixEditor::_instance->render ();
     }
 }
 

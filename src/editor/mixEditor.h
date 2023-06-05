@@ -4,6 +4,7 @@
 #include <memory>
 #include "scene_window.h"
 #include "hierarchy_window.h"
+#include "../containers/frame_buffer.h"
 
 namespace mix
 {
@@ -16,19 +17,23 @@ namespace mix
 
         bool _should_run = false;
         void run ();
-        inline void select_monitor (int num);
-        
         mixEditor ();
+
+        void render ();
+        inline void select_monitor (int num);
+        void init_render_buffers ();
+        unsigned get_rendered_texture () const;
+        void on_window_size_changed (int w, int h);
      
         mix::core::mixWindow* get_window () const;
         mix::scene_management::mixScene* get_active_scene () const;
         std::unique_ptr<mix::core::mixWindow> _window;
         private:
 
-        void render ();
         void gui_pass ();
+        void start ();
+        std::unique_ptr<mix::containers::frame_buffer> _frame_buffer;
         std::unique_ptr<mix::rendering::rendering_context> _rendering;
         std::unique_ptr<mix::scene_management::mixScene> _active_scene;
-        void start ();
     };
 } // namespace mix

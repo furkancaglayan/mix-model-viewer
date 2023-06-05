@@ -1,5 +1,6 @@
 #include "mixEditor.h"
 #include <cassert>
+#include <iostream>
 
 std::unique_ptr<mix::mixEditor> mix::mixEditor::_instance = nullptr;
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos);
@@ -15,6 +16,17 @@ inline void mix::mixEditor::select_monitor (int index)
     _window->set_monitor (monitor);
 }
 
+void mix::mixEditor::init_render_buffers ()
+{
+    auto size = _window->get_window_size ();
+    _frame_buffer = std::make_unique<mix::containers::frame_buffer> (static_cast<int> (size.x), static_cast<int> (size.y));
+}
+
+unsigned mix::mixEditor::get_rendered_texture () const
+{
+    return _frame_buffer->get_render_texture ();
+}
+
 mix::mixEditor::mixEditor () : _active_scene{ std::make_unique<mix::scene_management::mixScene> () }, _window{ nullptr }
 {
 }
@@ -28,51 +40,38 @@ void mix::mixEditor::create_new ()
 void mix::mixEditor::run ()
 {
     _active_scene->update ();
-    glClearColor (0.2f, 0.3f, 0.3f, 1.0f);
-    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-
     _should_run = _window->get_key (GLFW_KEY_ESCAPE) != GLFW_PRESS;
-    /*
-    if (_window->get_key (GLFW_KEY_F1) == GLFW_PRESS)
-    {
-        select_monitor (0);
-    }
-    else if (_window->get_key (GLFW_KEY_F2) == GLFW_PRESS)
-    {
-        select_monitor (1);
-    }
-    else if (_window->get_key (GLFW_KEY_F3) == GLFW_PRESS)
-    {
-        _window->set_window_mode (core::WindowMode::FullScreen);
-    }
-    else if (_window->get_key (GLFW_KEY_F4) == GLFW_PRESS)
-    {
-        _window->set_window_mode (core::WindowMode::Windowed);
-    }*/
-
-    render ();
-
-    // Start the Dear ImGui frame
-  
-    //test_gui.new_frame (_active_scene->get_root(), _active_scene->get_lights(), _window.get());
-    glfwSwapBuffers (_window->get_glfw_window ());
-    glfwPollEvents ();
 }
 
 void mix::mixEditor::render ()
 {
-    _active_scene->render (_rendering.get());
+    _frame_buffer->bind ();
+
+    glClearColor (0.2f, 0.3f, 0.3f, 1.0f);
+    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+    _active_scene->render (_rendering.get ());
+    glBindVertexArray (0);
+
+    _frame_buffer->unbind ();
+
+    glClearColor (0.0f, 0.0f, 0.0f, 0.0f);
+    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
     gui_pass ();
+    glfwSwapBuffers (_window->get_glfw_window ());
+    glfwPollEvents ();
+    glBindVertexArray (0);
 }
 
 mix::core::mixWindow* mix::mixEditor::get_window () const
 {
-    return nullptr;
+    return _window.get ();
 }
 
 mix::scene_management::mixScene* mix::mixEditor::get_active_scene () const
 {
-    return nullptr;
+    return _active_scene.get ();
 }
 
 void mix::mixEditor::start ()
@@ -87,14 +86,29 @@ void mix::mixEditor::start ()
     glfwSetWindowCloseCallback (_window->get_glfw_window (), window_close_callback);
     glfwSetWindowSizeCallback (_window->get_glfw_window (), window_size_callback);
 
-    mixImGui::mixGui::init (_window->get_glfw_window());
-    mixImGui::mixGui::add_window (new editor::windows::hierarchy_window (std::string ("Scene"),
-                                  mixImGui::window_rect (0, 0, 200, 500, 200, 600)));
+    mixImGui::mixGui::init (_window->get_glfw_window ());
+
+
+    auto w_size = _window->get_window_size ();
+
+    mix::editor::windows::scene_window::initialize (w_size);
+    mix::editor::windows::hierarchy_window::initialize (w_size);
+}
+
+void mix::mixEditor::on_window_size_changed (int w, int h)
+{
+    _window->on_window_size_changed (w, h);
+
+    vec2 w_size = _window->get_window_size ();
+
+    mixImGui::mixGui::on_window_size_changed (w, h, static_cast<int> (w_size.x), static_cast<int> (w_size.y));
+    glViewport (0, 0, w, h);
+    _frame_buffer->rescale (w, h);
 }
 
 void mix::mixEditor::gui_pass ()
 {
-    mixImGui::mixGui::render ();
+    mixImGui::mixGui::render (_frame_buffer.get ());
 }
 
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos)
@@ -113,5 +127,5 @@ void window_close_callback (GLFWwindow* window)
 
 void window_size_callback (GLFWwindow* window, int width, int height)
 {
-    mix::mixEditor::_instance->_window->cache_size (width, height);
+    mix::mixEditor::_instance->on_window_size_changed (width, height);
 }

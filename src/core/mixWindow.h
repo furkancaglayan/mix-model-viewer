@@ -42,14 +42,7 @@ namespace mix
 				}
 			}
 
-			void cache_size(int w, int h)
-			{
-				if (_mode == WindowMode::Windowed)
-				{
-					_width = w;
-					_height = h;
-				}
-			}
+			void on_window_size_changed (int w, int h);
 
 		private:
 			GLFWwindow* _glfw_window = nullptr;

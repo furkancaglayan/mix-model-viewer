@@ -24,7 +24,7 @@ namespace mix
             void add_light (std::shared_ptr<mix::core::light::mixLight> l);
             mix::core::mixCamera* get_main_cam () const;
             mix::core::mixEntity* get_root () const;
-            std::vector<std::weak_ptr<mix::core::light::mixLight>> get_lights() const;
+            std::vector<std::weak_ptr<mix::core::light::mixLight>> get_lights () const;
 
             private:
 

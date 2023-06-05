@@ -59,7 +59,14 @@ namespace mixImGui
         static void begin_vertical (window_rect r = window_rect (_cursor.x, _cursor.y, 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
+        static void begin_child (std::string s);
+        static void end_child ();
+        static void add_image (void* texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);
         static void slider_float (const char* label, float* value, float min, float max);
+        static void horizontal_space (float space);
+        static void collapsing_label (std::string s, bool* is_visible);
+        static bool selectable (std::string s, bool is_selected);
+
         private:
 
         gui_layout (mixImGui::layout_type new_layout, window_rect r);
@@ -72,16 +79,15 @@ namespace mixImGui
         static mixImGui::layout_type _global_layout;
         static std::stack<std::unique_ptr<gui_layout>> _layouts;
 
-        void add_gui_element (const std::function<void ()>& command);
-        void render_layout ();
-        void render_gui_element (const std::function<void ()>& command);
+        void before_render ();
+        void after_render ();
         mixImGui::layout_type get_layout () const;
         mixImGui::layout_type get_previous_layout () const;
 
-        std::vector<std::function<void()>> _commands;
         ImVec2 _local_cursor;
         window_rect _rect;
         mixImGui::layout_type _current_layout;
         mixImGui::layout_type _last_layout;
+        int _render_index;
     };
 } // namespace mixImGui

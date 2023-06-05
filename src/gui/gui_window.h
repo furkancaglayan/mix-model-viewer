@@ -46,7 +46,9 @@ namespace mixImGui
 
         void disable ();
         void enable ();
+        void rescale (int w, int h, int w_sizex, int w_sizey);
 
+        void set_title (std::string s);
         protected:
 
         void begin ();
