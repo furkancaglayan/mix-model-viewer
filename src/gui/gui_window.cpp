@@ -22,7 +22,7 @@ void mixImGui::gui_window::enable ()
     _is_open = true;
 }
 
-void mixImGui::gui_window::rescale (int w, int h, int w_sizex, int w_sizey)
+void mixImGui::gui_window::on_window_size_changed (int w, int h)
 {
     _rect._w = static_cast<float>(w);
     _rect._h = static_cast<float> (h);
@@ -56,4 +56,16 @@ void mixImGui::gui_window::end () const
 {
     gui_layout::end_vertical ();
     ImGui::End ();
+}
+
+void mixImGui::gui_window::rescale (float w, float h)
+{
+    _rect._w = w;
+    _rect._h = h;
+}
+
+void mixImGui::gui_window::set_position (float x, float y)
+{
+    _rect._x = x;
+    _rect._y = y;
 }

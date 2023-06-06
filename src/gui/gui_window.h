@@ -41,18 +41,22 @@ namespace mixImGui
     {
         public:
 
-        virtual void render ();
         gui_window (std::string window_name, window_rect r, window_flags flags = window_flags::None);
+
+        virtual void render ();
+        virtual void on_window_size_changed (int w, int h);
 
         void disable ();
         void enable ();
-        void rescale (int w, int h, int w_sizex, int w_sizey);
 
         void set_title (std::string s);
         protected:
 
         void begin ();
         void end () const;
+        void rescale (float w, float h);
+        void set_position (float x, float y);
+
         bool _is_open = true;
         std::string _window_name;
         window_rect _rect;

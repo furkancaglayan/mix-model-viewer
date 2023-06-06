@@ -47,7 +47,7 @@ void mix::mixEditor::render ()
 {
     _frame_buffer->bind ();
 
-    glClearColor (0.2f, 0.3f, 0.3f, 1.0f);
+    glClearColor (0.9f, 0.9f, 0.9f, 1.0f);
     glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
     _active_scene->render (_rendering.get ());
@@ -93,15 +93,13 @@ void mix::mixEditor::start ()
 
     mix::editor::windows::scene_window::initialize (w_size);
     mix::editor::windows::hierarchy_window::initialize (w_size);
+    mix::editor::windows::shortcuts_window::initialize (w_size);
 }
 
 void mix::mixEditor::on_window_size_changed (int w, int h)
 {
     _window->on_window_size_changed (w, h);
-
-    vec2 w_size = _window->get_window_size ();
-
-    mixImGui::mixGui::on_window_size_changed (w, h, static_cast<int> (w_size.x), static_cast<int> (w_size.y));
+    mixImGui::mixGui::on_window_size_changed (w, h);
     glViewport (0, 0, w, h);
     _frame_buffer->rescale (w, h);
 }

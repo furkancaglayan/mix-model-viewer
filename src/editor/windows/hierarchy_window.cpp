@@ -30,6 +30,15 @@ void mix::editor::windows::hierarchy_window::render ()
     }
 }
 
+void mix::editor::windows::hierarchy_window::on_window_size_changed (int w, int h)
+{
+    auto WINDOW_BEGIN_POS = 0.75f;
+    auto WINDOW_SIZE = 0.25f;
+    auto width = w * WINDOW_SIZE;
+    rescale (width, static_cast<float> (h));
+    set_position (w * WINDOW_BEGIN_POS, 0);
+}
+
 mix::editor::windows::hierarchy_window::hierarchy_window (std::string window_name, mixImGui::window_rect r)
 : mixImGui::gui_window (window_name,
                         r,
@@ -45,9 +54,9 @@ mix::editor::windows::hierarchy_window::~hierarchy_window ()
 
 void mix::editor::windows::hierarchy_window::initialize (vec2 w_size)
 {
-    auto WINDOW_SIZE = 0.75f;
+    //TODO: MAKE ALL INT ARGUMENTS AS W, H TO VEC2
     auto WINDOW_BEGIN_POS = 0.75f;
-
+    auto WINDOW_SIZE = 0.25f;
     mixImGui::mixGui::add_window (
     new editor::windows::hierarchy_window (std::string ("Hierarchy"),
                                            mixImGui::window_rect (w_size.x * WINDOW_BEGIN_POS,

@@ -98,11 +98,11 @@ void mixImGui::mixGui::render (mix::containers::frame_buffer* buffer)
     end ();
 }
 
-void mixImGui::mixGui::on_window_size_changed (int w, int h, int w_sizex, int w_sizey)
+void mixImGui::mixGui::on_window_size_changed (int w, int h)
 {
     for (auto& win : _windows)
     {
-        win->rescale (w, h, w_sizex, w_sizey);
+        win->on_window_size_changed (w, h);
     }
     
 }

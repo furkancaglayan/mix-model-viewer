@@ -25,10 +25,19 @@ void mix::editor::windows::scene_window::render ()
     end ();
 }
 
+void mix::editor::windows::scene_window::on_window_size_changed (int w, int h)
+{
+    auto WINDOW_BEGIN_POS = 0.05f;
+    auto WINDOW_SIZE = 0.7f;
+    auto width = w * WINDOW_SIZE;
+    rescale (width, static_cast<float> (h));
+    set_position (w * WINDOW_BEGIN_POS, 0);
+}
+
 void mix::editor::windows::scene_window::initialize (vec2 w_size)
 {
-    auto WINDOW_BEGIN_POS = 0.15f;
-    auto WINDOW_SIZE = 0.65f;
+    auto WINDOW_BEGIN_POS = 0.05f;
+    auto WINDOW_SIZE = 0.7f;
     mixImGui::mixGui::add_window (new editor::windows::scene_window (std::string ("Viewport"), mixImGui::window_rect (w_size.x * WINDOW_BEGIN_POS, 0,
                                                                                         w_size.x * WINDOW_SIZE, w_size.y)));
 }

@@ -1,5 +1,5 @@
 #pragma once
-#include "mixEditor.h"
+#include "../mixEditor.h"
 
 namespace mix
 {
@@ -13,6 +13,7 @@ namespace mix
                 public:
 
                 void render () override;
+                void on_window_size_changed (int w, int h) override;
                 hierarchy_window (std::string window_name, mixImGui::window_rect r);
                 ~hierarchy_window ();
 
