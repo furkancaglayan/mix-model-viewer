@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gui_layout.h"
-#include "i_guicomponent.h"
+#include "i_guielement.h"
 #include <memory>
 #include <string>
 #include <vector>

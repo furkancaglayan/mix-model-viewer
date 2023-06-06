@@ -42,6 +42,14 @@ void mixImGui::gui_layout::text_label (std::string s)
     block->after_render ();
 }
 
+void mixImGui::gui_layout::begin_selectable_list ()
+{
+}
+
+void mixImGui::gui_layout::end_selectable_list ()
+{
+}
+
 void mixImGui::gui_layout::begin_child (std::string s)
 {
     ImGui::BeginChild (s.c_str ());

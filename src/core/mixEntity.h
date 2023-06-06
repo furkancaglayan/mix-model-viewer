@@ -4,7 +4,7 @@
 #include "../math/vec.h"
 #include "../platform/typedefs.h"
 #include "components/mixComponent.h"
-
+#include "../gui/i_guielement.h"
 #include <cstdint>
 #include <vector>
 
@@ -15,7 +15,7 @@ namespace mix
     namespace core
     {
 
-        class mixEntity
+        class mixEntity : public mixImGui::i_guielement
         {
             public:
 
@@ -50,6 +50,9 @@ namespace mix
             std::weak_ptr<mixEntity> _parent;
             std::vector<std::shared_ptr<mixEntity>> _children;
             std::vector<std::unique_ptr<mixComponent>> _components;
+
+            // Inherited via i_guielement
+            virtual void on_gui () override;
         };
     } // namespace core
 } // namespace mix

@@ -10,7 +10,7 @@ void mix::editor::windows::hierarchy_window::render ()
 
         gui_layout::begin_vertical ();
         gui_layout::collapsing_label ("Objects", &_visible_entities);
-
+        
         if (_visible_entities)
         {
             auto children = scene->get_root ()->get_children ();

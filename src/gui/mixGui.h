@@ -25,6 +25,20 @@ namespace mixImGui
             _windows.emplace_back (std::move (w));
             return wp;
         }
+
+
+        /* template <class T> static mixImGui::gui_window* get_window ()
+        {
+            auto is_same = [] (const w_ptr& w) { return std::is_same<decltype (*w.get ()), T> (); };
+            auto result = std::find_if (_windows.cbegin (), _windows.cend (), is_same);
+
+            if (result != _windows.cend ())
+            {
+                return (*result).get ();
+            }
+            return nullptr;
+        }*/
+
         static void show_style_editor (ImGuiStyle& style);
 
         private:

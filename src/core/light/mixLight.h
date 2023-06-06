@@ -1,7 +1,6 @@
 #pragma once
 #include "../mixEntity.h"
 #include <cstdint>
-#include "../../gui/i_guicomponent.h"
 
 namespace mix
 {
@@ -15,7 +14,7 @@ namespace mix
                 spot,
                 point
             };
-            class mixLight : public mix::core::mixEntity, virtual public mixImGui::i_guicomponent
+            class mixLight : public mix::core::mixEntity
             {
                 public:
 
@@ -39,11 +38,6 @@ namespace mix
                 float _intensity;
                 vec3 _color;
 
-                // Inherited via i_guicomponent
-                virtual std::string get_name () override;
-
-                // Inherited via i_guicomponent
-                virtual void gui_impl () override;
             };
         } // namespace light
     }     // namespace components

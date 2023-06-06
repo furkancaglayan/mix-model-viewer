@@ -9,12 +9,11 @@
 #include <vector>
 namespace mixImGui
 {
-    class i_guicomponent
+    class i_guielement
     {
         public:
 
-        virtual void gui_impl () = 0;
-        virtual std::string get_name () = 0;
+        virtual void on_gui () = 0;
 
         private:
     };

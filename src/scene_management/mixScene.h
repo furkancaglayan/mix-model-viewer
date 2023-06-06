@@ -10,7 +10,7 @@ namespace mix
     namespace scene_management
     {
 
-        class mixScene :virtual public mixImGui::i_guicomponent
+        class mixScene
         {
             public:
 
@@ -32,9 +32,6 @@ namespace mix
             std::vector<std::weak_ptr<mix::core::light::mixLight>> _lights;
             std::unique_ptr<mix::core::mixEntity> _root;
 
-            // Inherited via i_guicomponent
-            virtual void gui_impl () override;
-            virtual std::string get_name () override;
         };
     } // namespace scene_management
 } // namespace mix

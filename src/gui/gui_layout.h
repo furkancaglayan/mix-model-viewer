@@ -59,6 +59,8 @@ namespace mixImGui
         static void begin_vertical (window_rect r = window_rect (_cursor.x, _cursor.y, 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
+        static void begin_selectable_list ();
+        static void end_selectable_list ();
         static void begin_child (std::string s);
         static void end_child ();
         static void add_image (void* texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);

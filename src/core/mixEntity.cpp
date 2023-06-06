@@ -90,3 +90,7 @@ void mix::core::mixEntity::render (mix::rendering::rendering_context* rendering)
         ch->render (rendering);
     }
 }
+
+void mix::core::mixEntity::on_gui ()
+{
+}
