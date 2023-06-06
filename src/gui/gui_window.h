@@ -1,12 +1,12 @@
 #pragma once
 
+#include "../math/vec.h"
 #include "gui_layout.h"
 #include "i_guielement.h"
+#include <map>
 #include <memory>
 #include <string>
 #include <vector>
-#include <map>
-#include "../math/vec.h"
 
 namespace mixImGui
 {
@@ -14,6 +14,12 @@ namespace mixImGui
     {
         horizontal_bind,
         vertical_bind
+    };
+
+    enum class window_positioning
+    {
+        flexible,
+        fixed
     };
 
     enum class window_flags
@@ -38,13 +44,24 @@ namespace mixImGui
         AlwaysUseWindowPadding = 1 << 16,
         NoNavInputs = 1 << 18,
         NoNavFocus = 1 << 19,
-        UnsavedDocument = 1 << 20,      
+        UnsavedDocument = 1 << 20,
     };
 
     inline window_flags operator| (window_flags a, window_flags b)
     {
         return static_cast<window_flags> (static_cast<int> (a) | static_cast<int> (b));
     }
+
+    inline window_flags operator& (window_flags a, window_flags b)
+    {
+        return static_cast<window_flags> (static_cast<int> (a) & static_cast<int> (b));
+    }
+
+    inline window_flags operator~(window_flags a)
+    {
+        return static_cast<window_flags> (~static_cast<int> (a));
+    }
+
     class gui_window
     {
         public:
@@ -60,19 +77,30 @@ namespace mixImGui
         std::vector<gui_window*> get_window_binds (window_binds bind) const;
 
         void bind_with_window (gui_window* other, window_binds bind);
+        void set_contrainsts (window_rect constraints);
+        void clear_constraints ();
+
+        void set_positioning (window_positioning wp);
 
         protected:
 
         std::map<window_binds, std::vector<gui_window*>> _window_binds;
         void begin ();
         void end () const;
-        void rescale (vec2i size);
-        void set_position (vec2i pos);
+        void rescale (const vec2i& size);
+        void set_position (const vec2i& pos);
         virtual void on_editor_window_size_changed_impl (const vec2i& size) = 0;
+        virtual void on_window_resized (const vec2i& old_size, const vec2i& new_size);
 
         bool _is_open = true;
         std::string _window_name;
-        window_rect _rect;
+        window_rect _rect, _constraints;
+
+        private:
+
         window_flags _flags;
+        window_positioning _positioning = window_positioning::fixed;
+
+        bool _has_constraints = false;
     };
 } // namespace mixImGui

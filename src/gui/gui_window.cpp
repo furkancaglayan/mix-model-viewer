@@ -49,22 +49,54 @@ void mixImGui::gui_window::bind_with_window (mixImGui::gui_window* other, window
     vec_other.push_back (this);
 }
 
+void mixImGui::gui_window::set_contrainsts (window_rect constraints)
+{
+    _constraints = constraints;
+    _has_constraints = true;
+}
+
+void mixImGui::gui_window::clear_constraints ()
+{
+    _has_constraints = false;
+}
+
+void mixImGui::gui_window::set_positioning (window_positioning wp)
+{
+    _positioning = wp;
+
+    if (wp == window_positioning::flexible)
+    {
+        _flags = _flags & ~window_flags::NoResize;
+    }
+}
+
 void mixImGui::gui_window::begin ()
 {
-    ImGui::SetNextWindowPos (ImVec2 (static_cast<float> (_rect._x), static_cast<float> (_rect._y)));
-    ImGui::Begin (_window_name.c_str (), &_is_open, static_cast<ImGuiWindowFlags_> (_flags));
-    auto size = ImGui::GetWindowSize ();
-    ImGui::SetWindowSize (ImVec2 (static_cast<float> (_rect._w), static_cast<float> (_rect._h)));
-
-    /* if (_rect._min_x != -1 && size.x < _rect._min_x)
+    if (_has_constraints)
     {
-        size.x = _rect._min_x;
+        ImGui::SetNextWindowSizeConstraints (ImVec2 (static_cast<float> (_constraints._x),
+                                                     static_cast<float> (_constraints._y)),
+                                             ImVec2 (static_cast<float> (_constraints._w),
+                                                     static_cast<float> (_constraints._h)));
+    }
+    else
+    {
+        // fixed
+        _flags = _flags | window_flags::NoResize;
     }
 
-    if (_rect._min_y != -1 && size.y < _rect._min_y)
+    ImGui::SetNextWindowSize (ImVec2 (static_cast<float> (_rect._w), static_cast<float> (_rect._h)));
+    ImGui::SetNextWindowPos (ImVec2 (static_cast<float> (_rect._x), static_cast<float> (_rect._y)));
+
+    ImGui::Begin (_window_name.c_str (), &_is_open, static_cast<ImGuiWindowFlags_> (_flags));
+    auto size = ImGui::GetWindowSize ();
+
+    if (_positioning == window_positioning::flexible && (_rect._w != static_cast<int> (size.x) ||
+        _rect._h != static_cast<int> (size.y)))
     {
-        size.y = _rect._min_y;
-    }*/
+        on_window_resized (vec2i (_rect._w, _rect._h), vec2i (size.x, size.y));
+    }
+    
     gui_layout::begin_vertical ();
 }
 
@@ -74,14 +106,20 @@ void mixImGui::gui_window::end () const
     ImGui::End ();
 }
 
-void mixImGui::gui_window::rescale (vec2i size)
+void mixImGui::gui_window::rescale (const vec2i& size)
 {
     _rect._w = size.x;
     _rect._h = size.y;
 }
 
-void mixImGui::gui_window::set_position (vec2i pos)
+void mixImGui::gui_window::set_position (const vec2i& pos)
 {
     _rect._x = pos.x;
     _rect._y = pos.y;
+}
+
+void mixImGui::gui_window::on_window_resized (const vec2i& old_size, const vec2i& new_size)
+{
+    rescale (new_size);
+    auto diff = new_size - old_size;
 }

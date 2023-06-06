@@ -19,22 +19,11 @@ namespace mixImGui
 
      struct window_rect
     {
-         window_rect (int x, int y, int min_x, int min_y, int w, int h)
-        {
-            _x = x;
-            _y = y;
-            _min_x = min_x;
-            _min_y = min_y;
-            _w = w;
-            _h = h;
-        }
 
         window_rect (int x, int y, int w, int h)
         {
             _x = x;
             _y = y;
-            _min_x = -1;
-            _min_y = -1;
             _w = w;
             _h = h;
         }
@@ -45,9 +34,14 @@ namespace mixImGui
             _y = 0;
         }
 
+        bool operator== (const ImVec4& vec)
+        {
+            return _x == vec.x && _y == vec.y && _w == vec.z && _h == vec.w;
+        }
+
         public:
 
-        int _x, _y, _min_x, _min_y, _w, _h;
+        int _x, _y, _w, _h;
     };
 
     struct gui_layout

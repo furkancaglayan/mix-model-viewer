@@ -12,11 +12,6 @@ namespace mix
 {
     namespace platform
     {
-        /// <summary>
-        /// Support multiple extensions
-        /// </summary>
-        ///
-        /// TODO: guid syustem
         class mixFile
         {
             public:

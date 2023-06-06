@@ -34,6 +34,19 @@ void mix::editor::windows::scene_window::on_editor_window_size_changed_impl (con
     set_position (vec2i (size.x * WINDOW_BEGIN_POS, 0));
 }
 
+void mix::editor::windows::scene_window::on_window_resized (const vec2i& old_size, const vec2i& new_size)
+{
+    mixImGui::gui_window::on_window_resized (old_size, new_size);
+    auto WINDOW_BEGIN_POS = 0.05f;
+    auto WINDOW_SIZE = 0.7f;
+
+    auto editor_window_size = mixEditor::_instance->get_window ()->get_window_size ();
+    auto width = editor_window_size.x * WINDOW_SIZE;
+
+    auto constraints = mixImGui::window_rect ((int) (width / 2), (int) editor_window_size.y, (int) width, (int) editor_window_size.y);
+    set_contrainsts (constraints);
+}
+
 void mix::editor::windows::scene_window::initialize (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.05f;
