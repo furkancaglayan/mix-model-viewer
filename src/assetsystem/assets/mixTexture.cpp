@@ -7,6 +7,11 @@ mix::assetsystem::mixTexture::mixTexture (const mix::platform::mixAsset_path& pa
     initialize (path);
 }
 
+mix::assetsystem::mixTexture::~mixTexture ()
+{
+    glDeleteTextures (1, &_id);
+}
+
 void mix::assetsystem::mixTexture::set_wrapping (texture::texture_wrapping wrapping)
 {
     glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, static_cast<int> (wrapping));

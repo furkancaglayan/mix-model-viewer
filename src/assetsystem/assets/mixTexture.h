@@ -66,6 +66,7 @@ namespace mix
             public:
 
             mixTexture (const mix::platform::mixAsset_path& path, texture::texture_type type = texture::texture_type::diffuse);
+            ~mixTexture ();
 
             inline const mix::texture::texture_type get_texture_type () const
             {

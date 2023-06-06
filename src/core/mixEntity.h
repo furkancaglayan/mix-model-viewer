@@ -26,7 +26,6 @@ namespace mix
             mixEntity (std::string name);
             mixEntity (std::string name, vec3 pos);
 
-            void add_component (std::unique_ptr<mixComponent> comp);
             void add_component (mixComponent* comp);
             /* template <class Tcomponent, class... Targs> void add_component (Targs&&... args)
             {

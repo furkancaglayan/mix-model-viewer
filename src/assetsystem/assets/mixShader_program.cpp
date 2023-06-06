@@ -10,6 +10,7 @@ mix::assetsystem::mixShader_program::mixShader_program (const mix::platform::mix
 
 mix::assetsystem::mixShader_program::~mixShader_program ()
 {
+    glDeleteProgram (program_id);
 }
 
 const unsigned mix::assetsystem::mixShader_program::get_uniform_location (const std::string& s) const

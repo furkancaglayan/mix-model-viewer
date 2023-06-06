@@ -18,14 +18,9 @@ mix::core::mixEntity::mixEntity (std::string name, vec3 pos) : _name{ name }
     _transform->set_position (pos);
 }
 
-void mix::core::mixEntity::add_component (std::unique_ptr<mix::components::mixComponent> comp)
-{
-    _components.emplace_back (std::move (comp));
-}
-
 void mix::core::mixEntity::add_component (mix::components::mixComponent* comp)
 {
-    add_component (std::unique_ptr<mix::components::mixComponent> (comp));
+    _components.emplace_back (std::unique_ptr<mix::components::mixComponent> (comp));
 }
 
 void mix::core::mixEntity::add_child (std::shared_ptr<mixEntity> ch)
