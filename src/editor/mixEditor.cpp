@@ -96,12 +96,12 @@ void mix::mixEditor::start ()
     mix::editor::windows::shortcuts_window::initialize (w_size);
 }
 
-void mix::mixEditor::on_window_size_changed (int w, int h)
+void mix::mixEditor::on_window_size_changed (const vec2i& size)
 {
-    _window->on_window_size_changed (w, h);
-    mixImGui::mixGui::on_window_size_changed (w, h);
-    glViewport (0, 0, w, h);
-    _frame_buffer->rescale (w, h);
+    _window->on_window_size_changed (size);
+    mixImGui::mixGui::on_window_size_changed (size);
+    glViewport (0, 0, size.x, size.y);
+    _frame_buffer->rescale (size.x, size.y);
 }
 
 void mix::mixEditor::gui_pass ()
@@ -125,5 +125,5 @@ void window_close_callback (GLFWwindow* window)
 
 void window_size_callback (GLFWwindow* window, int width, int height)
 {
-    mix::mixEditor::_instance->on_window_size_changed (width, height);
+    mix::mixEditor::_instance->on_window_size_changed (vec2i (width, height));
 }

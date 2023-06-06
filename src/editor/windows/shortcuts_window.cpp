@@ -12,22 +12,22 @@ void mix::editor::windows::shortcuts_window::render ()
     end ();
 }
 
-void mix::editor::windows::shortcuts_window::on_window_size_changed (int w, int h)
+void mix::editor::windows::shortcuts_window::on_editor_window_size_changed_impl (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.0f;
     auto WINDOW_SIZE = 0.05f;
-    auto width = w * WINDOW_SIZE;
-    rescale (width, static_cast<float> (h));
-    set_position (w * WINDOW_BEGIN_POS, 0);
+    auto width = size.x * WINDOW_SIZE;
+    rescale (vec2i (width, static_cast<float> (size.y)));
+    set_position (vec2i (size.x * WINDOW_BEGIN_POS, 0));
 }
 
-void mix::editor::windows::shortcuts_window::initialize (vec2 w_size)
+void mix::editor::windows::shortcuts_window::initialize (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.0f;
     auto WINDOW_SIZE = 0.05f;
-    mixImGui::mixGui::add_window (new editor::windows::shortcuts_window (
-    std::string ("Shortcuts"), mixImGui::window_rect (w_size.x * WINDOW_BEGIN_POS, 0,
-                                                                                        w_size.x * WINDOW_SIZE, w_size.y)));
+    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE), size.y);
+
+    mixImGui::mixGui::add_window (new editor::windows::shortcuts_window (std::string ("Shortcuts"), rect));
 }
 
 mix::editor::windows::shortcuts_window::shortcuts_window (std::string window_name, mixImGui::window_rect r)

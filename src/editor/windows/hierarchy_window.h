@@ -13,11 +13,11 @@ namespace mix
                 public:
 
                 void render () override;
-                void on_window_size_changed (int w, int h) override;
+                void on_editor_window_size_changed_impl (const vec2i& size) override;
                 hierarchy_window (std::string window_name, mixImGui::window_rect r);
                 ~hierarchy_window ();
 
-                static void initialize (vec2 window_size);
+                static void initialize (const vec2i& size);
 
                 private:
 

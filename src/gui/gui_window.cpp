@@ -22,10 +22,10 @@ void mixImGui::gui_window::enable ()
     _is_open = true;
 }
 
-void mixImGui::gui_window::on_window_size_changed (int w, int h)
+void mixImGui::gui_window::on_editor_window_size_changed (const vec2i& size)
 {
-    _rect._w = static_cast<float>(w);
-    _rect._h = static_cast<float> (h);
+    vec2i old_size = vec2i (_rect._w, _rect._h);
+    on_editor_window_size_changed_impl (size);
 }
 
 void mixImGui::gui_window::set_title (std::string s)
@@ -33,12 +33,28 @@ void mixImGui::gui_window::set_title (std::string s)
     _window_name = s;
 }
 
+std::vector<mixImGui::gui_window*> mixImGui::gui_window::get_window_binds (window_binds bind) const
+{
+    return _window_binds.at (bind);
+}
+
+void mixImGui::gui_window::bind_with_window (mixImGui::gui_window* other, window_binds bind)
+{
+    auto& vec = _window_binds.at (bind);
+    auto& vec_other = other->_window_binds.at (bind);
+    assert (!std::count (vec.begin (), vec.end (), other));
+    assert (!std::count (vec_other.begin (), vec_other.end (), this));
+
+    vec.push_back (other);
+    vec_other.push_back (this);
+}
+
 void mixImGui::gui_window::begin ()
 {
-    ImGui::SetNextWindowPos (ImVec2 (_rect._x, _rect._y));
+    ImGui::SetNextWindowPos (ImVec2 (static_cast<float> (_rect._x), static_cast<float> (_rect._y)));
     ImGui::Begin (_window_name.c_str (), &_is_open, static_cast<ImGuiWindowFlags_> (_flags));
     auto size = ImGui::GetWindowSize ();
-    ImGui::SetWindowSize (ImVec2 (_rect._w, _rect._h));
+    ImGui::SetWindowSize (ImVec2 (static_cast<float> (_rect._w), static_cast<float> (_rect._h)));
 
     /* if (_rect._min_x != -1 && size.x < _rect._min_x)
     {
@@ -58,14 +74,14 @@ void mixImGui::gui_window::end () const
     ImGui::End ();
 }
 
-void mixImGui::gui_window::rescale (float w, float h)
+void mixImGui::gui_window::rescale (vec2i size)
 {
-    _rect._w = w;
-    _rect._h = h;
+    _rect._w = size.x;
+    _rect._h = size.y;
 }
 
-void mixImGui::gui_window::set_position (float x, float y)
+void mixImGui::gui_window::set_position (vec2i pos)
 {
-    _rect._x = x;
-    _rect._y = y;
+    _rect._x = pos.x;
+    _rect._y = pos.y;
 }

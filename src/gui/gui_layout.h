@@ -19,7 +19,7 @@ namespace mixImGui
 
      struct window_rect
     {
-        window_rect (float x, float y, float min_x, float min_y, float w, float h)
+         window_rect (int x, int y, int min_x, int min_y, int w, int h)
         {
             _x = x;
             _y = y;
@@ -29,7 +29,7 @@ namespace mixImGui
             _h = h;
         }
 
-        window_rect (float x, float y, float w, float h)
+        window_rect (int x, int y, int w, int h)
         {
             _x = x;
             _y = y;
@@ -47,16 +47,18 @@ namespace mixImGui
 
         public:
 
-        float _x, _y, _min_x, _min_y, _w, _h;
+        int _x, _y, _min_x, _min_y, _w, _h;
     };
 
     struct gui_layout
     {
         public:
 
-        static void begin_horizontal (window_rect r = window_rect(_cursor.x, _cursor.y, 0, 0));
+        static void
+        begin_horizontal (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
         static void end_horizontal ();
-        static void begin_vertical (window_rect r = window_rect (_cursor.x, _cursor.y, 0, 0));
+        static void
+        begin_vertical (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
         static void begin_selectable_list ();

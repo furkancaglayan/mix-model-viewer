@@ -5,9 +5,17 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <map>
+#include "../math/vec.h"
 
 namespace mixImGui
 {
+    enum class window_binds
+    {
+        horizontal_bind,
+        vertical_bind
+    };
+
     enum class window_flags
     {
         None = 0,
@@ -44,18 +52,23 @@ namespace mixImGui
         gui_window (std::string window_name, window_rect r, window_flags flags = window_flags::None);
 
         virtual void render ();
-        virtual void on_window_size_changed (int w, int h);
 
         void disable ();
         void enable ();
-
+        virtual void on_editor_window_size_changed (const vec2i& size);
         void set_title (std::string s);
+        std::vector<gui_window*> get_window_binds (window_binds bind) const;
+
+        void bind_with_window (gui_window* other, window_binds bind);
+
         protected:
 
+        std::map<window_binds, std::vector<gui_window*>> _window_binds;
         void begin ();
         void end () const;
-        void rescale (float w, float h);
-        void set_position (float x, float y);
+        void rescale (vec2i size);
+        void set_position (vec2i pos);
+        virtual void on_editor_window_size_changed_impl (const vec2i& size) = 0;
 
         bool _is_open = true;
         std::string _window_name;

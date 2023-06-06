@@ -61,12 +61,12 @@ GLFWwindow* mix::core::mixWindow::get_glfw_window () const noexcept
     return _glfw_window;
 }
 
-void mix::core::mixWindow::on_window_size_changed (int w, int h)
+void mix::core::mixWindow::on_window_size_changed (const vec2i& size)
 {
     if (_mode == WindowMode::Windowed)
     {
-        _width = w;
-        _height = h;
+        _width = size.x;
+        _height = size.y;
     }
 }
 

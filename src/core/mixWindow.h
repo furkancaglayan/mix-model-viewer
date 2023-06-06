@@ -42,7 +42,7 @@ namespace mix
 				}
 			}
 
-			void on_window_size_changed (int w, int h);
+			void on_window_size_changed (const vec2i& size);
 
 		private:
 			GLFWwindow* _glfw_window = nullptr;

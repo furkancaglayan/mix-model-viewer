@@ -88,7 +88,7 @@ void mixImGui::mixGui::render (mix::containers::frame_buffer* buffer)
 {
     begin ();
 
-    //mixImGui::mixGui::show_style_editor (ImGui::GetStyle ());
+    mixImGui::mixGui::show_style_editor (ImGui::GetStyle ());
 
     for (size_t i = 0; i < _windows.size(); i++)
     {
@@ -98,11 +98,11 @@ void mixImGui::mixGui::render (mix::containers::frame_buffer* buffer)
     end ();
 }
 
-void mixImGui::mixGui::on_window_size_changed (int w, int h)
+void mixImGui::mixGui::on_window_size_changed (const vec2i& size)
 {
     for (auto& win : _windows)
     {
-        win->on_window_size_changed (w, h);
+        win->on_editor_window_size_changed (size);
     }
     
 }

@@ -25,27 +25,28 @@ void mix::editor::windows::scene_window::render ()
     end ();
 }
 
-void mix::editor::windows::scene_window::on_window_size_changed (int w, int h)
+void mix::editor::windows::scene_window::on_editor_window_size_changed_impl (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.05f;
     auto WINDOW_SIZE = 0.7f;
-    auto width = w * WINDOW_SIZE;
-    rescale (width, static_cast<float> (h));
-    set_position (w * WINDOW_BEGIN_POS, 0);
+    auto width = size.x * WINDOW_SIZE;
+    rescale (vec2i (width, static_cast<float> (size.y)));
+    set_position (vec2i (size.x * WINDOW_BEGIN_POS, 0));
 }
 
-void mix::editor::windows::scene_window::initialize (vec2 w_size)
+void mix::editor::windows::scene_window::initialize (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.05f;
     auto WINDOW_SIZE = 0.7f;
-    mixImGui::mixGui::add_window (new editor::windows::scene_window (std::string ("Viewport"), mixImGui::window_rect (w_size.x * WINDOW_BEGIN_POS, 0,
-                                                                                        w_size.x * WINDOW_SIZE, w_size.y)));
+
+    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE), size.y);
+    mixImGui::mixGui::add_window (new editor::windows::scene_window (std::string ("Viewport"), rect));
 }
 
 mix::editor::windows::scene_window::scene_window (std::string window_name, mixImGui::window_rect r)
 : mixImGui::gui_window (window_name,
                         r,
-                        mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse /*|
-                         mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize*/)
+                        mixImGui::window_flags::NoCollapse |
+                        mixImGui::window_flags::NoMove/*| | mixImGui::window_flags::NoResize*/)
 {
 }

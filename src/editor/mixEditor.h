@@ -24,7 +24,7 @@ namespace mix
         inline void select_monitor (int num);
         void init_render_buffers ();
         unsigned get_rendered_texture () const;
-        void on_window_size_changed (int w, int h);
+        void on_window_size_changed (const vec2i& size);
      
         mix::core::mixWindow* get_window () const;
         mix::scene_management::mixScene* get_active_scene () const;

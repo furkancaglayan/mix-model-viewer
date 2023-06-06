@@ -13,7 +13,7 @@ namespace mixImGui
 
         static void init (GLFWwindow* window);
         static void render (mix::containers::frame_buffer* buffer);
-        static void on_window_size_changed (int w, int h);
+        static void on_window_size_changed (const vec2i& size);
 
       
 
