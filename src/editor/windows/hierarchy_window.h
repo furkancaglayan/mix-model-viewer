@@ -21,11 +21,10 @@ namespace mix
 
                 private:
 
-                void render_entity (mix::core::mixEntity* entity, int i);
                 bool _visible_entities = true;
                 bool _visible_lights = true;
                 bool _visible_cameras = true;
-                int _selected_entity;
+                i_guielement* _selected_entity;
             };
         } // namespace windows
     }     // namespace editor

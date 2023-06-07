@@ -9,11 +9,14 @@ void mix::editor::windows::hierarchy_window::render ()
         begin ();
 
         gui_layout::begin_vertical ();
+        gui_layout::begin_selectable_list (_selected_entity);
+
         gui_layout::collapsing_label ("Cameras", &_visible_cameras);
+
         if (_visible_cameras)
         {
-            gui_layout::begin_selectable_list ();
-            render_entity (scene->get_main_cam (), 0);
+            gui_layout::add_selectable (static_cast<i_guielement*> (scene->get_main_cam ()));
+            gui_layout::render_added_selectables ();
         }
 
         gui_layout::collapsing_label ("Lights", &_visible_lights);
@@ -22,11 +25,12 @@ void mix::editor::windows::hierarchy_window::render ()
             auto children = scene->get_lights();
             for (size_t i = 0; i < children.size (); i++)
             {
-                if (!children.at (i).expired())
+                if (!children.at (i).expired ())
                 {
-                    render_entity (children.at (i).lock ().get (), static_cast<int> (i));
+                    gui_layout::add_selectable (static_cast<i_guielement*> (children.at (i).lock ().get ()));
                 }
             }
+            gui_layout::render_added_selectables ();
         }
         gui_layout::collapsing_label ("Entities", &_visible_entities);
 
@@ -36,12 +40,15 @@ void mix::editor::windows::hierarchy_window::render ()
 
             for (size_t i = 0; i < children.size (); i++)
             {
-                render_entity (children.at (i).get (), static_cast<int> (i));
+                gui_layout::add_selectable (static_cast<i_guielement*> (children.at (i).get ()));
             }
         }
-        else
+     
+        _selected_entity = gui_layout::end_selectable_list ();
+
+        if (_selected_entity != nullptr)
         {
-            _selected_entity = -1;
+            _selected_entity->on_gui ();
         }
 
         gui_layout::end_vertical ();
@@ -65,6 +72,7 @@ mix::editor::windows::hierarchy_window::hierarchy_window (std::string window_nam
                         mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize)
 
 {
+    _selected_entity = nullptr;
 }
 
 mix::editor::windows::hierarchy_window::~hierarchy_window ()
@@ -78,15 +86,4 @@ void mix::editor::windows::hierarchy_window::initialize (const vec2i& size)
     auto WINDOW_SIZE = 0.25f;
     auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE), size.y);
     mixImGui::mixGui::add_window (new editor::windows::hierarchy_window (std::string ("Hierarchy"), rect));
-}
-
-void mix::editor::windows::hierarchy_window::render_entity (mix::core::mixEntity* entity, int item_index)
-{
-    gui_layout::horizontal_space (20);
-    bool selected = item_index == _selected_entity;
-
-    if (gui_layout::selectable (entity->get_name (), selected))
-    {
-        _selected_entity = item_index;
-    }
 }

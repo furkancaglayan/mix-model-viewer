@@ -5,6 +5,7 @@
 #include "../platform/typedefs.h"
 #include "components/mixComponent.h"
 #include "../gui/i_guielement.h"
+#include "../gui/gui_layout.h"
 #include <cstdint>
 #include <vector>
 
@@ -54,6 +55,7 @@ namespace mix
             virtual void on_gui () override;
             virtual void on_inspector_gui () override;
             virtual void on_scene_gui () override;
+            virtual std::string get_gui_name () override;
         };
     } // namespace core
 } // namespace mix

@@ -56,28 +56,8 @@ namespace mixImGui
         begin_vertical (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
-        template <class T> static void begin_selectable_list (const std::vector<T>& vec)
-        {
-            begin_vertical ();
-
-            for (auto& t : vec)
-            {
-                gui_layout::horizontal_space (20);
-                bool selected = static_cast<i_guielement> (t) == _selected;
-
-                if (gui_layout::selectable (entity->get_name (), selected))
-                {
-                    _selected_entity = item_index;
-                }
-
-            }
-           
-            end_vertical ();
-        }
-        template <class T> static T* end_selectable_list ()
-        {
-
-        }
+        static void begin_selectable_list (i_guielement* previously_selected);
+        static i_guielement* end_selectable_list ();
 
         static void begin_child (std::string s);
         static void end_child ();
@@ -85,7 +65,8 @@ namespace mixImGui
         static void slider_float (const char* label, float* value, float min, float max);
         static void horizontal_space (float space);
         static void collapsing_label (std::string s, bool* is_visible);
-        static bool selectable (std::string s, bool is_selected);
+        static void add_selectable (i_guielement* element);
+        static void render_added_selectables ();
 
         private:
 
@@ -98,6 +79,7 @@ namespace mixImGui
         static ImVec2 _cursor;
         static mixImGui::layout_type _global_layout;
         static std::stack<std::unique_ptr<gui_layout>> _layouts;
+        static bool selectable_text (std::string label, bool is_selected);
 
         void before_render ();
         void after_render ();
@@ -106,10 +88,14 @@ namespace mixImGui
 
         ImVec2 _local_cursor;
         window_rect _rect;
-        i_guielement* _selected;
         mixImGui::layout_type _current_layout;
         mixImGui::layout_type _last_layout;
         int _render_index;
+
+        //selectables
+        i_guielement* _selected;
+        std::vector<i_guielement*> _selectables;
+        int _last_selectable_index;
     };
    
 } // namespace mixImGui

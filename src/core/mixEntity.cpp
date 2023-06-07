@@ -88,6 +88,21 @@ void mix::core::mixEntity::render (mix::rendering::rendering_context* rendering)
 
 void mix::core::mixEntity::on_gui ()
 {
+    mixImGui::gui_layout::begin_vertical ();
+    mixImGui::gui_layout::text_label (get_name ());
+    mixImGui::gui_layout::begin_horizontal ();
+    mixImGui::gui_layout::text_label ("Position: ");
+    mixImGui::gui_layout::horizontal_space(10);
+
+    auto pos = _transform->get_position();
+    mixImGui::gui_layout::text_label ("X: ");
+    mixImGui::gui_layout::text_label (std::to_string(pos.x));
+    mixImGui::gui_layout::text_label ("Y: ");
+    mixImGui::gui_layout::text_label (std::to_string (pos.y));
+    mixImGui::gui_layout::text_label ("Z: ");
+    mixImGui::gui_layout::text_label (std::to_string (pos.z));
+    mixImGui::gui_layout::end_horizontal ();
+    mixImGui::gui_layout::end_vertical ();
 }
 
 void mix::core::mixEntity::on_inspector_gui ()
@@ -96,4 +111,9 @@ void mix::core::mixEntity::on_inspector_gui ()
 
 void mix::core::mixEntity::on_scene_gui ()
 {
+}
+
+std::string mix::core::mixEntity::get_gui_name ()
+{
+    return get_name ();
 }

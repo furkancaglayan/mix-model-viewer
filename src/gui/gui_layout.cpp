@@ -12,6 +12,7 @@ mixImGui::gui_layout::gui_layout (mixImGui::layout_type new_layout, window_rect 
     _last_layout = _global_layout;
     _cursor = ImGui::GetCursorPos ();
     _render_index = 0;
+    _last_selectable_index = 0;
 }
 
 void mixImGui::gui_layout::begin_horizontal (window_rect r)
@@ -42,6 +43,27 @@ void mixImGui::gui_layout::text_label (std::string s)
     block->after_render ();
 }
 
+void mixImGui::gui_layout::begin_selectable_list (i_guielement* previously_selected)
+{
+    begin_vertical ();
+    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    block->_selected = previously_selected;
+}
+
+mixImGui::i_guielement* mixImGui::gui_layout::end_selectable_list ()
+{
+    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    if (block->_last_selectable_index != block->_selectables.size())
+    {
+        render_added_selectables ();
+    }
+
+    i_guielement* selected = block->_selected;
+    end_vertical ();
+
+    return selected;
+}
+
 
 void mixImGui::gui_layout::begin_child (std::string s)
 {
@@ -59,13 +81,38 @@ void mixImGui::gui_layout::add_image (void* texture, const ImVec2& p_min, const 
 }
 
 
-bool mixImGui::gui_layout::selectable (std::string label, bool is_selected)
+bool mixImGui::gui_layout::selectable_text (std::string label, bool is_selected)
 {
     auto block = mixImGui::gui_layout::_layouts.top ().get ();
     block->before_render ();
     bool pressed = ImGui::Selectable (label.c_str (), is_selected, ImGuiSelectableFlags_DontClosePopups);
     block->after_render ();
     return pressed;
+}
+
+void mixImGui::gui_layout::add_selectable (i_guielement* element)
+{
+    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    block->_selectables.push_back (element);
+}
+
+void mixImGui::gui_layout::render_added_selectables ()
+{
+    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto start_index = block->_last_selectable_index;
+    size_t i;
+    for (i = start_index; i < block->_selectables.size (); i++)
+    {
+        auto element = block->_selectables.at (i);
+        gui_layout::horizontal_space (20);
+        bool selected = element == block->_selected;
+
+        if (gui_layout::selectable_text (element->get_gui_name (), selected))
+        {
+            block->_selected = element;
+        }
+    }
+    block->_last_selectable_index = static_cast<int> (i);
 }
 
 void mixImGui::gui_layout::collapsing_label (std::string s, bool* is_visible)
@@ -75,7 +122,6 @@ void mixImGui::gui_layout::collapsing_label (std::string s, bool* is_visible)
     *is_visible = ImGui::CollapsingHeader (s.c_str (), ImGuiTreeNodeFlags_Framed | ImGuiTreeNodeFlags_DefaultOpen);
     block->after_render ();
 }
-
 
 void mixImGui::gui_layout::slider_float (const char* label, float* value, float min, float max)
 {
