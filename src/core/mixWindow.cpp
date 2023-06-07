@@ -56,9 +56,50 @@ vec2 mix::core::mixWindow::get_window_size () const
     return s;
 }
 
+void mix::core::mixWindow::set_window_size (const vec2i& size) const
+{
+    glfwSetWindowSize (_glfw_window, size.x, size.y);
+}
+
+void mix::core::mixWindow::set_aspect_ratio (int w, int h) const
+{
+    glfwSetWindowAspectRatio (_glfw_window, w, h);
+}
+
+void mix::core::mixWindow::set_icon (GLFWimage* images, int count)
+{
+    //assert (width == height);
+    glfwSetWindowIcon (_glfw_window, count, images);
+}
+
+void mix::core::mixWindow::set_title (std::string title)
+{
+    glfwSetWindowTitle (_glfw_window, title.c_str());
+}
+
+void mix::core::mixWindow::maximize () const
+{
+    glfwMaximizeWindow (_glfw_window);
+}
+
+void mix::core::mixWindow::restore () const
+{
+    glfwRestoreWindow (_glfw_window);
+}
+
 GLFWwindow* mix::core::mixWindow::get_glfw_window () const noexcept
 {
     return _glfw_window;
+}
+
+void mix::core::mixWindow::hide () const
+{
+    glfwHideWindow (_glfw_window);
+}
+
+void mix::core::mixWindow::show () const
+{
+    glfwShowWindow (_glfw_window);
 }
 
 void mix::core::mixWindow::on_window_size_changed (const vec2i& size)
@@ -96,6 +137,7 @@ void mix::core::mixWindow::initialize () noexcept
     glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, _context_version_max);
     glfwWindowHint (GLFW_CONTEXT_VERSION_MINOR, _context_version_min);
     glfwWindowHint (GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint (GLFW_VISIBLE, GLFW_FALSE);
 
     _glfw_window = glfwCreateWindow (_width, _height, "GLFW: Window created", NULL, NULL);
     if (!_glfw_window)

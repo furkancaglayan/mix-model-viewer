@@ -28,8 +28,15 @@ namespace mix
 			void set_monitor(GLFWmonitor* monitor);
 
 			vec2 get_window_size () const;
+            void set_window_size (const vec2i& size) const;
+            void set_aspect_ratio (int w, int h) const;
+            void set_icon (GLFWimage* images, int count);
+            void set_title (std::string title);
 
-			GLFWwindow* get_glfw_window() const noexcept;
+			void maximize () const;
+            void restore () const;
+
+            GLFWwindow* get_glfw_window () const noexcept;
 			static constexpr int _context_version_min = 3;
 			static constexpr int _context_version_max = 3;
 
@@ -42,7 +49,9 @@ namespace mix
 				}
 			}
 
-			void on_window_size_changed (const vec2i& size);
+			void hide () const;
+            void show () const;
+            void on_window_size_changed (const vec2i& size);
 
 		private:
 			GLFWwindow* _glfw_window = nullptr;

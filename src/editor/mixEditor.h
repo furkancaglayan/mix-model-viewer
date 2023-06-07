@@ -28,11 +28,12 @@ namespace mix
      
         mix::core::mixWindow* get_window () const;
         mix::scene_management::mixScene* get_active_scene () const;
-        std::unique_ptr<mix::core::mixWindow> _window;
         private:
 
         void gui_pass ();
         void start ();
+        
+        std::unique_ptr<mix::core::mixWindow> _window;
         std::unique_ptr<mix::containers::frame_buffer> _frame_buffer;
         std::unique_ptr<mix::rendering::rendering_context> _rendering;
         std::unique_ptr<mix::scene_management::mixScene> _active_scene;

@@ -7,6 +7,7 @@
 #include <vector>
 #include <memory>
 #include <functional>
+#include "i_guielement.h"
 
 namespace mixImGui
 {
@@ -55,8 +56,29 @@ namespace mixImGui
         begin_vertical (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
-        static void begin_selectable_list ();
-        static void end_selectable_list ();
+        template <class T> static void begin_selectable_list (const std::vector<T>& vec)
+        {
+            begin_vertical ();
+
+            for (auto& t : vec)
+            {
+                gui_layout::horizontal_space (20);
+                bool selected = static_cast<i_guielement> (t) == _selected;
+
+                if (gui_layout::selectable (entity->get_name (), selected))
+                {
+                    _selected_entity = item_index;
+                }
+
+            }
+           
+            end_vertical ();
+        }
+        template <class T> static T* end_selectable_list ()
+        {
+
+        }
+
         static void begin_child (std::string s);
         static void end_child ();
         static void add_image (void* texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);
@@ -84,8 +106,10 @@ namespace mixImGui
 
         ImVec2 _local_cursor;
         window_rect _rect;
+        i_guielement* _selected;
         mixImGui::layout_type _current_layout;
         mixImGui::layout_type _last_layout;
         int _render_index;
     };
+   
 } // namespace mixImGui

@@ -14,6 +14,8 @@ namespace mixImGui
         public:
 
         virtual void on_gui () = 0;
+        virtual void on_inspector_gui () = 0;
+        virtual void on_scene_gui () = 0;
 
         private:
     };

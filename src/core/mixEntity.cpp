@@ -89,3 +89,11 @@ void mix::core::mixEntity::render (mix::rendering::rendering_context* rendering)
 void mix::core::mixEntity::on_gui ()
 {
 }
+
+void mix::core::mixEntity::on_inspector_gui ()
+{
+}
+
+void mix::core::mixEntity::on_scene_gui ()
+{
+}

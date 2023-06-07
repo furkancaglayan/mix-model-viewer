@@ -43,3 +43,7 @@ void mix::core::mixCamera::debug_input (vec3 v)
 void mix::core::mixCamera::look_at (const vec3 pos)
 {
 }
+
+void mix::core::mixCamera::on_gui ()
+{
+}

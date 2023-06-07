@@ -32,10 +32,15 @@ void mixImGui::gui_window::set_title (std::string s)
 {
     _window_name = s;
 }
-
+/*
 std::vector<mixImGui::gui_window*> mixImGui::gui_window::get_window_binds (window_binds bind) const
 {
-    return _window_binds.at (bind);
+    if (_window_binds.count(bind))
+    {
+        return _window_binds.at (bind);
+    }
+
+    return {};
 }
 
 void mixImGui::gui_window::bind_with_window (mixImGui::gui_window* other, window_binds bind)
@@ -48,7 +53,7 @@ void mixImGui::gui_window::bind_with_window (mixImGui::gui_window* other, window
     vec.push_back (other);
     vec_other.push_back (this);
 }
-
+*/
 void mixImGui::gui_window::set_contrainsts (window_rect constraints)
 {
     _constraints = constraints;
@@ -79,9 +84,9 @@ void mixImGui::gui_window::begin ()
                                              ImVec2 (static_cast<float> (_constraints._w),
                                                      static_cast<float> (_constraints._h)));
     }
-    else
+
+    if (_positioning == window_positioning::fixed)
     {
-        // fixed
         _flags = _flags | window_flags::NoResize;
     }
 
@@ -121,5 +126,4 @@ void mixImGui::gui_window::set_position (const vec2i& pos)
 void mixImGui::gui_window::on_window_resized (const vec2i& old_size, const vec2i& new_size)
 {
     rescale (new_size);
-    auto diff = new_size - old_size;
 }

@@ -52,6 +52,8 @@ namespace mix
 
             // Inherited via i_guielement
             virtual void on_gui () override;
+            virtual void on_inspector_gui () override;
+            virtual void on_scene_gui () override;
         };
     } // namespace core
 } // namespace mix

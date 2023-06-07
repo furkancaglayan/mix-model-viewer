@@ -78,6 +78,9 @@ void mix::mixEditor::start ()
 {
     _window = std::make_unique<mix::core::mixWindow> ();
     _window->initialize ();
+    _window->hide ();
+    _window->set_title ("Mix Model Viewer");
+
     _should_run = true;
     _rendering = std::make_unique<mix::rendering::rendering_context> ();
     _rendering->initialize ();
@@ -99,7 +102,7 @@ void mix::mixEditor::start ()
 void mix::mixEditor::on_window_size_changed (const vec2i& size)
 {
     _window->on_window_size_changed (size);
-    mixImGui::mixGui::on_window_size_changed (size);
+    mixImGui::mixGui::on_editor_window_size_changed (size);
     glViewport (0, 0, size.x, size.y);
     _frame_buffer->rescale (size.x, size.y);
 }
@@ -111,7 +114,7 @@ void mix::mixEditor::gui_pass ()
 
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos)
 {
-    mix::mixEditor::_instance->_window->cache_pos (xpos, ypos);
+    mix::mixEditor::_instance->get_window ()->cache_pos (xpos, ypos);
 }
 
 
@@ -125,5 +128,9 @@ void window_close_callback (GLFWwindow* window)
 
 void window_size_callback (GLFWwindow* window, int width, int height)
 {
-    mix::mixEditor::_instance->on_window_size_changed (vec2i (width, height));
+    //This is called when the window is iconified.
+    if (width != 0 && height != 0)
+    {
+        mix::mixEditor::_instance->on_window_size_changed (vec2i (width, height));
+    }
 }

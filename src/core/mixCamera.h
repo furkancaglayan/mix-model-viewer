@@ -29,6 +29,8 @@ namespace mix
             void debug_input (vec3 v);
 
             void look_at (const vec3 pos);
+
+            virtual void on_gui () override;
             private:
 
             float _fov{ 45.0f };

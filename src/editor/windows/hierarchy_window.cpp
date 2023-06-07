@@ -9,7 +9,26 @@ void mix::editor::windows::hierarchy_window::render ()
         begin ();
 
         gui_layout::begin_vertical ();
-        gui_layout::collapsing_label ("Objects", &_visible_entities);
+        gui_layout::collapsing_label ("Cameras", &_visible_cameras);
+        if (_visible_cameras)
+        {
+            gui_layout::begin_selectable_list ();
+            render_entity (scene->get_main_cam (), 0);
+        }
+
+        gui_layout::collapsing_label ("Lights", &_visible_lights);
+        if (_visible_lights)
+        {
+            auto children = scene->get_lights();
+            for (size_t i = 0; i < children.size (); i++)
+            {
+                if (!children.at (i).expired())
+                {
+                    render_entity (children.at (i).lock ().get (), static_cast<int> (i));
+                }
+            }
+        }
+        gui_layout::collapsing_label ("Entities", &_visible_entities);
 
         if (_visible_entities)
         {
@@ -61,13 +80,13 @@ void mix::editor::windows::hierarchy_window::initialize (const vec2i& size)
     mixImGui::mixGui::add_window (new editor::windows::hierarchy_window (std::string ("Hierarchy"), rect));
 }
 
-void mix::editor::windows::hierarchy_window::render_entity (mix::core::mixEntity* entity, int i)
+void mix::editor::windows::hierarchy_window::render_entity (mix::core::mixEntity* entity, int item_index)
 {
     gui_layout::horizontal_space (20);
-    bool selected = i == _selected_entity;
+    bool selected = item_index == _selected_entity;
 
     if (gui_layout::selectable (entity->get_name (), selected))
     {
-        _selected_entity = i;
+        _selected_entity = item_index;
     }
 }

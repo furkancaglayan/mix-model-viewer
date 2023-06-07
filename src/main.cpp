@@ -51,6 +51,8 @@ int main ()
 
     assets.resolve_all_assets ();
     assets.debug ();
+
+    mix::mixEditor::_instance->get_window ()->show ();
     auto mesh = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("cube.obj");
     auto tex = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("albedo_17.jpg");
     auto normal = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("normal_wood.jpg");
@@ -62,7 +64,7 @@ int main ()
     auto fragment_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
     // assert (fragment_shader);
 
-    glfwSetKeyCallback (mix::mixEditor::_instance->_window->get_glfw_window (), key_callback);
+    glfwSetKeyCallback (mix::mixEditor::_instance->get_window ()->get_glfw_window (), key_callback);
 
 
     std::string path4{ "..\\..\\..\\assets\\shaders\\program.p" };
@@ -103,8 +105,10 @@ int main ()
     light2->_transform->set_position (vec3 (0, 10,0));
     light2->set_intensity (0.33f);
 
+    light->set_name ("Light 1");
+    light2->set_name ("Light 2");
     mix::scene_management::mixScene::_instance->add_light (light2);
-    //mix::scene_management::mixScene::_instance->add_light (light);
+    mix::scene_management::mixScene::_instance->add_light (light);
     while (mix::mixEditor::_instance->_should_run)
     {
         mix::mixEditor::_instance->run ();

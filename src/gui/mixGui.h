@@ -13,7 +13,7 @@ namespace mixImGui
 
         static void init (GLFWwindow* window);
         static void render (mix::containers::frame_buffer* buffer);
-        static void on_window_size_changed (const vec2i& size);
+        static void on_editor_window_size_changed (const vec2i& size);
 
       
 
@@ -27,17 +27,18 @@ namespace mixImGui
         }
 
 
-        /* template <class T> static mixImGui::gui_window* get_window ()
+        template <class T> static mixImGui::gui_window* get_window ()
         {
-            auto is_same = [] (const w_ptr& w) { return std::is_same<decltype (*w.get ()), T> (); };
-            auto result = std::find_if (_windows.cbegin (), _windows.cend (), is_same);
-
-            if (result != _windows.cend ())
+            for (auto& window : _windows)
             {
-                return (*result).get ();
+                auto* p = dynamic_cast<T*> (window.get());
+                if (p)
+                {
+                    return p;
+                }
             }
             return nullptr;
-        }*/
+        }
 
         static void show_style_editor (ImGuiStyle& style);
 

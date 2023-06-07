@@ -10,12 +10,13 @@
 
 namespace mixImGui
 {
+    /*
     enum class window_binds
     {
         horizontal_bind,
         vertical_bind
     };
-
+    */
     enum class window_positioning
     {
         flexible,
@@ -74,9 +75,9 @@ namespace mixImGui
         void enable ();
         virtual void on_editor_window_size_changed (const vec2i& size);
         void set_title (std::string s);
-        std::vector<gui_window*> get_window_binds (window_binds bind) const;
+        //std::vector<gui_window*> get_window_binds (window_binds bind) const;
 
-        void bind_with_window (gui_window* other, window_binds bind);
+        //void bind_with_window (gui_window* other, window_binds bind);
         void set_contrainsts (window_rect constraints);
         void clear_constraints ();
 
@@ -84,7 +85,7 @@ namespace mixImGui
 
         protected:
 
-        std::map<window_binds, std::vector<gui_window*>> _window_binds;
+        //std::map<window_binds, std::vector<gui_window*>> _window_binds;
         void begin ();
         void end () const;
         void rescale (const vec2i& size);
@@ -99,7 +100,7 @@ namespace mixImGui
         private:
 
         window_flags _flags;
-        window_positioning _positioning = window_positioning::fixed;
+        window_positioning _positioning = window_positioning::flexible;
 
         bool _has_constraints = false;
     };
