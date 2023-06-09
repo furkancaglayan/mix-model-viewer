@@ -1,6 +1,7 @@
 #pragma once
 #include "../containers/frame_buffer.h"
 #include "gui_window.h"
+#include "../assetsystem/assets/mixFont.h"
 #include <memory>
 
 namespace mixImGui
@@ -41,7 +42,7 @@ namespace mixImGui
         }
 
         static void show_style_editor (ImGuiStyle& style);
-
+        static void add_font (mix::assetsystem::mixFont* font, bool set_default = false);
         private:
 
         static std::vector<w_ptr> _windows;

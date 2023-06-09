@@ -11,7 +11,6 @@ void mixImGui::mixGui::init (GLFWwindow* window)
     (void) io;
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
-
     auto& style = ImGui::GetStyle ();
     gui_style::get_default_dark_style (style);
     // Setup Dear ImGui style
@@ -127,3 +126,15 @@ void mixImGui::mixGui::show_style_editor (ImGuiStyle& style)
 {
     ImGui::ShowStyleEditor (&style);
 }
+
+void mixImGui::mixGui::add_font (mix::assetsystem::mixFont* font, bool set_default)
+{
+    ImGuiIO& io = ImGui::GetIO ();
+    ImFont* im_font = io.Fonts->AddFontFromFileTTF (font->get_path ().c_str(), 105);
+
+    if (set_default)
+    {
+        io.FontDefault = im_font;
+    }
+}
+

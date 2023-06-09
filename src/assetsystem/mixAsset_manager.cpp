@@ -3,6 +3,7 @@
 #include "loaders/mixAsset_loader_shader.h"
 #include "loaders/mixAsset_loader_text.h"
 #include "loaders/mixAsset_loader_texture.h"
+#include "loaders/mixAsset_loader_font.h"
 
 namespace mix
 {
@@ -69,6 +70,7 @@ namespace mix
             register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Mesh);
             register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Other);
             register_loader<mix::assetsystem::loaders::mixAsset_loader_shader> (mix::assetsystem::asset_type::Shader);
+            register_loader<mix::assetsystem::loaders::mixAsset_loader_font> (mix::assetsystem::asset_type::Font);
         }
     } // namespace assetsystem
 } // namespace mix

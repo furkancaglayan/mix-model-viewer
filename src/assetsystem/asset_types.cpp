@@ -13,7 +13,7 @@ namespace mix
 
             { "png", asset_type::Texture }, { "jpg", asset_type::Texture },
 
-            { "vert", asset_type::Shader },   { "frag", asset_type::Shader },
+            { "vert", asset_type::Shader }, { "frag", asset_type::Shader }, { "ttf", asset_type::Font }
 
         };
 

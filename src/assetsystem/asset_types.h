@@ -10,6 +10,7 @@ namespace mix
         enum class asset_type
         {
             Text,
+            Font,
             Mesh,
             Shader,
             Folder,
