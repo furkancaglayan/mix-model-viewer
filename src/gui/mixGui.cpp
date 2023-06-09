@@ -1,4 +1,5 @@
 #include "mixGui.h"
+#include "gui_style.h"
 
 std::vector<mixImGui::mixGui::w_ptr> mixImGui::mixGui::_windows;
 
@@ -11,8 +12,10 @@ void mixImGui::mixGui::init (GLFWwindow* window)
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
 
+    auto& style = ImGui::GetStyle ();
+    gui_style::get_default_dark_style (style);
     // Setup Dear ImGui style
-    ImGui::StyleColorsDark ();
+    /* ImGui::StyleColorsDark ();
     auto& style = ImGui::GetStyle ();
     ImVec4* colors = style.Colors;
     const ImVec4 bgColor = ImVec4 (0.1f, 0.1f, 0.1f, 0.5f);
@@ -77,7 +80,7 @@ void mixImGui::mixGui::init (GLFWwindow* window)
    style.PopupRounding = 2.0f;
    style.TabRounding = 4.0f;
    style.ScrollbarRounding = 4.0f;
-    // ImGui::StyleColorsLight();
+    // ImGui::StyleColorsLight();*/
     const char* glsl_version = "#version 130";
     // Setup Platform/Renderer backends
     ImGui_ImplGlfw_InitForOpenGL (window, true);

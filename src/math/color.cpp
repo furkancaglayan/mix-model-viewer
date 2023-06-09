@@ -20,11 +20,13 @@ mix::math::color::color (vec3 col) : color (vec4(col.x, col.y, col.z, 1))
 {
 }
 
-mix::math::color::color (int r, int g, int b) : color (vec3 (r / 255, g / 255, b / 255))
+mix::math::color::color (int r, int g, int b)
+: color (vec3 (static_cast<float> (r) / 255, static_cast<float> (g) / 255, static_cast<float> (b) / 255))
 {
 }
 
-mix::math::color::color (int r, int g, int b, int a) : color (vec4 (r / 255, g / 255, b / 255, a / 255))
+mix::math::color::color (int r, int g, int b, int a)
+: color (vec4 (static_cast<float> (r) / 255, static_cast<float> (g) / 255, static_cast<float> (b) / 255, static_cast<float> (a) / 255))
 {
 }
 
