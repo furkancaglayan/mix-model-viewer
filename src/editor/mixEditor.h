@@ -6,6 +6,7 @@
 #include "windows/hierarchy_window.h"
 #include "windows/shortcuts_window.h"
 #include "../containers/frame_buffer.h"
+#include "../assetsystem/mixAsset_manager.h"
 
 namespace mix
 {
@@ -15,7 +16,10 @@ namespace mix
 
         static std::unique_ptr<mixEditor> _instance;
         static void create_new ();
+        static void initialize_asset_manager (std::string path);
+        static void initialize_gui ();
 
+        static mix::assetsystem::mixAsset_manager* get_asset_manager ();
         bool _should_run = false;
         void run ();
         mixEditor ();
@@ -37,5 +41,6 @@ namespace mix
         std::unique_ptr<mix::containers::frame_buffer> _frame_buffer;
         std::unique_ptr<mix::rendering::rendering_context> _rendering;
         std::unique_ptr<mix::scene_management::mixScene> _active_scene;
+        std::unique_ptr<mix::assetsystem::mixAsset_manager> _asset_manager;
     };
 } // namespace mix

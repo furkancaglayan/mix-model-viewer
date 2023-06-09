@@ -7,6 +7,14 @@ void mix::editor::windows::shortcuts_window::render ()
     if (editor)
     {
         gui_layout::text_label ("OpenGL Texture Text");
+        if (_styles_editor_tex)
+        {
+            float width = 64;
+            float height = 64;
+            ImVec2 pos = ImGui::GetCursorScreenPos ();
+            gui_layout::add_image ((void*) (intptr_t) (_styles_editor_tex->get_id()), ImVec2 (pos.x, pos.y),
+                                   ImVec2 (pos.x + width, pos.y + height), ImVec2 (0, 1), ImVec2 (1, 0));
+        }
     }
 
     end ();
@@ -36,4 +44,7 @@ mix::editor::windows::shortcuts_window::shortcuts_window (std::string window_nam
                         mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse /*|
                          mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize*/)
 {
+    _styles_editor_tex = mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("imgui.png").get();
+    assert (_styles_editor_tex);
+    _styles_editor_tex->set_format (mix::texture::texture_format::rgb_alpha);
 }

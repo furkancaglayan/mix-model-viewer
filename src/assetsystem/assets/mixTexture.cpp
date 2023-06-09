@@ -4,7 +4,7 @@
 mix::assetsystem::mixTexture::mixTexture (const mix::platform::mixAsset_path& path, texture::texture_type type)
 : _id{ 0 }, _type{ type }, mixAsset_item (path)
 {
-    initialize (path);
+    initialize (path, mix::texture::texture_format::rgb);
 }
 
 mix::assetsystem::mixTexture::~mixTexture ()
@@ -35,11 +35,25 @@ void mix::assetsystem::mixTexture::change_type (mix::texture::texture_type t)
     assert (t != _type);
     glDeleteTextures (1, &_id);
     _type = t;
-    initialize (_path);
+    initialize (_path, _format);
 }
 
-void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_path& path)
+void mix::assetsystem::mixTexture::set_format (mix::texture::texture_format format)
 {
+    glDeleteTextures (1, &_id);
+    _format = format;
+    initialize (_path, _format);
+}
+
+unsigned mix::assetsystem::mixTexture::get_id () const
+{
+    return _id;
+}
+
+void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_path& path, mix::texture::texture_format format)
+{
+    //TODO: move this to config or something like that
+    stbi_set_flip_vertically_on_load (true);
     glGenTextures (1, &_id);
     bind ();
     // set the texture wrapping/filtering options (on the currently bound texture object)
@@ -47,10 +61,11 @@ void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_pat
     set_filtering (mix::texture::texture_filtering::nearest, mix::texture::texture_filtering::linear);
     // load and generate the texture
     int width, height, nrChannels;
-    unsigned char* data = stbi_load (path.to_cstr (), &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load (path.to_cstr (), &width, &height, &nrChannels, static_cast<int> (format));
     if (data)
     {
-        glTexImage2D (GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        unsigned format = nrChannels == 4 ? GL_RGBA : GL_RGB;
+        glTexImage2D (GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap (GL_TEXTURE_2D);
     }
     else

@@ -37,6 +37,28 @@ void mix::mixEditor::create_new ()
     mix::mixEditor::_instance->start ();
 }
 
+void mix::mixEditor::initialize_asset_manager (std::string path)
+{
+    mix::mixEditor::_instance->_asset_manager = std::make_unique<mix::assetsystem::mixAsset_manager> (path);
+}
+
+void mix::mixEditor::initialize_gui ()
+{
+    assert (mix::mixEditor::_instance->_asset_manager);
+    auto _window = mix::mixEditor::_instance->_window.get();
+    mixImGui::mixGui::init (_window->get_glfw_window ());
+    auto w_size = _window->get_window_size ();
+
+    mix::editor::windows::scene_window::initialize (w_size);
+    mix::editor::windows::hierarchy_window::initialize (w_size);
+    mix::editor::windows::shortcuts_window::initialize (w_size);
+}
+
+mix::assetsystem::mixAsset_manager* mix::mixEditor::get_asset_manager ()
+{
+    return mix::mixEditor::_instance->_asset_manager.get ();
+}
+
 void mix::mixEditor::run ()
 {
     _active_scene->update ();
@@ -88,15 +110,6 @@ void mix::mixEditor::start ()
     glfwSetWindowPosCallback (_window->get_glfw_window (), window_pos_callback);
     glfwSetWindowCloseCallback (_window->get_glfw_window (), window_close_callback);
     glfwSetWindowSizeCallback (_window->get_glfw_window (), window_size_callback);
-
-    mixImGui::mixGui::init (_window->get_glfw_window ());
-
-
-    auto w_size = _window->get_window_size ();
-
-    mix::editor::windows::scene_window::initialize (w_size);
-    mix::editor::windows::hierarchy_window::initialize (w_size);
-    mix::editor::windows::shortcuts_window::initialize (w_size);
 }
 
 void mix::mixEditor::on_window_size_changed (const vec2i& size)

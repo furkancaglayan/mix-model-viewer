@@ -17,6 +17,15 @@ namespace mix
             height = 8
         };
 
+        enum class texture_format : int
+        {
+            _default = 0,
+            gray,
+            gray_alpha,
+            rgb,
+            rgb_alpha,
+        };
+
         enum class texture_wrapping : int
         {
             repeat = GL_REPEAT,
@@ -77,14 +86,17 @@ namespace mix
             void set_filtering (texture::texture_filtering filtering_min, texture::texture_filtering filtering_mag);
             void bind () const;
             void change_type (mix::texture::texture_type t);
+            void set_format (mix::texture::texture_format format);
+            unsigned get_id () const;
 
             private:
 
-            void initialize (const mix::platform::mixAsset_path& path);
-            unsigned int _id;
+            void initialize (const mix::platform::mixAsset_path& path, mix::texture::texture_format format);
+            unsigned _id;
             texture::texture_type _type{ texture::texture_type::diffuse };
             texture::texture_wrapping _wrapping{ texture::texture_wrapping ::repeat };
             texture::texture_filtering _filtering{ texture::texture_filtering ::nearest };
+            texture::texture_format _format{ texture::texture_format ::_default };
         };
     } // namespace assetsystem
 } // namespace mix

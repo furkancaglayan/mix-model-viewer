@@ -91,7 +91,7 @@ namespace mix
             private:
 
             static void resolve_assets_impl (const std::string& p, asset_tree_ptr node);
-
+            void initialize_default_asset_loaders ();
             std::unordered_map<asset_type, std::unique_ptr<mix::assetsystem::mixAsset_loader_base>> _loaders;
             asset_tree _assets;
         };

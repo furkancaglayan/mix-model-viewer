@@ -15,6 +15,8 @@
 #include "assetsystem/loaders/mixAsset_loader_texture.h"
 
 
+int main ();
+
 void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods);
 
 int main ()
@@ -39,29 +41,21 @@ int main ()
     std::string path3{ "..\\..\\..\\assets" };
     std::string pathtext{ "..\\..\\..\\assets\\sometext.txt" };
 
-    mix::assetsystem::mixAsset_manager assets{ path3 };
 
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Text);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_texture> (mix::assetsystem::asset_type::Texture);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Material);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_mesh> (mix::assetsystem::asset_type::Mesh);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_text> (mix::assetsystem::asset_type::Other);
-    assets.register_loader<mix::assetsystem::loaders::mixAsset_loader_shader> (mix::assetsystem::asset_type::Shader);
-
-
-    assets.resolve_all_assets ();
-    assets.debug ();
-
+    mix::mixEditor::initialize_asset_manager (path3);
+    mix::mixEditor::initialize_gui ();
     mix::mixEditor::_instance->get_window ()->show ();
-    auto mesh = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("cube.obj");
-    auto tex = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("albedo_17.jpg");
-    auto normal = assets.get_asset_with_full_name<mix::assetsystem::mixTexture> ("normal_wood.jpg");
-    auto mesh2 = assets.get_asset_with_full_name<mix::assetsystem::mixMesh> ("Skull2.obj");
+    mix::assetsystem::mixAsset_manager* assets = mix::mixEditor::get_asset_manager ();
 
-    auto vertex_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_vertex.vert");
+    auto mesh = assets->get_asset_with_full_name<mix::assetsystem::mixMesh> ("cube.obj");
+    auto tex = assets->get_asset_with_full_name<mix::assetsystem::mixTexture> ("albedo_17.jpg");
+    auto normal = assets->get_asset_with_full_name<mix::assetsystem::mixTexture> ("normal_wood.jpg");
+    auto mesh2 = assets->get_asset_with_full_name<mix::assetsystem::mixMesh> ("Skull2.obj");
+
+    auto vertex_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_vertex.vert");
     // assert (vertex_shader);
 
-    auto fragment_shader = assets.get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
+    auto fragment_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
     // assert (fragment_shader);
 
     glfwSetKeyCallback (mix::mixEditor::_instance->get_window ()->get_glfw_window (), key_callback);

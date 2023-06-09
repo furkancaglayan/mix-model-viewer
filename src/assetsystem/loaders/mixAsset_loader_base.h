@@ -22,6 +22,7 @@ namespace mix
             {
                 return resolve_impl (file);
             }
+
             inline bool save (mix::platform::mixFile& file, mixAsset_item* item)
             {
                 return save_impl (file, item);
