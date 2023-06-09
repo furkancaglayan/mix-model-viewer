@@ -40,6 +40,9 @@ namespace mixImGui
         gui_color _button_color;
         gui_color _frame_color;
         gui_color _seperator_color;
+        gui_color _tab_color;
+        gui_color _title_color;
+        gui_color _header_color;
         mix::math::color _border_color;
         mix::math::color _checkmark_color, _slidergrab_color;
         ImVec2 _window_title_align;
