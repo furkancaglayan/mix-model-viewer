@@ -17,7 +17,7 @@ void mix::editor::windows::scene_window::render ()
         gui_layout::text_label ("OpenGL Texture Text");
 
         ImVec2 pos = ImGui::GetCursorScreenPos ();
-        gui_layout::add_image ((void*) (intptr_t) (texture), ImVec2 (pos.x, pos.y),
+        gui_layout::add_image (texture, ImVec2 (pos.x, pos.y),
                                ImVec2 (pos.x + width, pos.y + height), ImVec2 (0, 1), ImVec2 (1, 0));
         gui_layout::end_child ();
     }

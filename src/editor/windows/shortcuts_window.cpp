@@ -12,8 +12,24 @@ void mix::editor::windows::shortcuts_window::render ()
             float width = 64;
             float height = 64;
             ImVec2 pos = ImGui::GetCursorScreenPos ();
-            gui_layout::add_image ((void*) (intptr_t) (_styles_editor_tex->get_id()), ImVec2 (pos.x, pos.y),
-                                   ImVec2 (pos.x + width, pos.y + height), ImVec2 (0, 1), ImVec2 (1, 0));
+            //gui_layout::add_image (_styles_editor_tex->get_id(), ImVec2 (pos.x, pos.y), ImVec2 (pos.x + width, pos.y + height), ImVec2 (0, 1), ImVec2 (1, 0));
+            if (gui_layout::image_button ("shortcuts-imgui-button", _styles_editor_tex->get_id ()))
+            {
+                _show_styles_editor = !_show_styles_editor;
+            }
+            gui_layout::seperator ();
+            gui_layout::button ("Label");
+            gui_layout::seperator ();
+            gui_layout::arrow_button ("Label", 30);
+            gui_layout::seperator ();
+            gui_layout::small_button ("Label");
+            gui_layout::seperator ();
+            gui_layout::radio_button ("Label", true);
+
+            if (_show_styles_editor)
+            {
+                mixGui::show_style_editor (ImGui::GetStyle());
+            }
         }
     }
 

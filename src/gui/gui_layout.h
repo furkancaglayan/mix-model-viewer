@@ -61,19 +61,35 @@ namespace mixImGui
 
         static void begin_child (std::string s);
         static void end_child ();
-        static void add_image (void* texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);
+        static void add_image (unsigned texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);
         static void slider_float (const char* label, float* value, float min, float max);
-        static void horizontal_space (float space);
         static void collapsing_label (std::string s, bool* is_visible);
         static void add_selectable (i_guielement* element);
         static void render_added_selectables ();
+
+        static void horizontal_space (float space);
+        static void vertical_space (float space);
+        static void new_line ();
+        static void seperator ();
+
+        static bool button (const std::string& label, const ImVec2& size = ImVec2 (32, 32));
+        static bool radio_button (const std::string& label, bool is_active);
+        static bool small_button (const std::string& label);
+        static bool arrow_button (const std::string& label, int dir);
+        static bool image_button (const std::string& str_id,
+                                  unsigned user_texture_id,
+                                  const ImVec2& size = ImVec2 (32, 32),
+                                  const ImVec2& uv0 = ImVec2 (0, 0),
+                                  const ImVec2& uv1 = ImVec2 (1, 1),
+                                  const ImVec4& bg_col = ImVec4 (0, 0, 0, 0),
+                                  const ImVec4& tint_col = ImVec4 (1, 1, 1, 1));
 
         template <class T> static T* get_top_block ()
         {
             return static_cast<T*> (mixImGui::gui_layout::_layouts.top ().get ());
         }
 
-        gui_layout* get_top_block ()
+        static gui_layout* get_top_block ()
         {
             return mixImGui::gui_layout::_layouts.top ().get ();
         }

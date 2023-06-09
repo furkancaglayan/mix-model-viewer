@@ -89,9 +89,9 @@ void mixImGui::gui_layout::end_child ()
     ImGui::EndChild ();
 }
 
-void mixImGui::gui_layout::add_image (void* texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max)
+void mixImGui::gui_layout::add_image (unsigned texture_id, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max)
 {
-    ImGui::GetWindowDrawList ()->AddImage (texture, p_min, p_max, uv_min, uv_max);
+    ImGui::GetWindowDrawList ()->AddImage ((void*) (intptr_t) texture_id, p_min, p_max, uv_min, uv_max);
 }
 
 
@@ -129,9 +129,61 @@ void mixImGui::gui_layout::render_added_selectables ()
     block->_last_selectable_index = static_cast<int> (i);
 }
 
+bool mixImGui::gui_layout::button (const std::string& label, const ImVec2& size)
+{
+    auto block = mixImGui::gui_layout::get_top_block ();
+    block->before_render ();
+    bool result = ImGui::Button (label.c_str (), size);
+    block->after_render ();
+    return result;
+}
+
+bool mixImGui::gui_layout::arrow_button (const std::string& label, int dir)
+{
+    auto block = mixImGui::gui_layout::get_top_block ();
+    block->before_render ();
+    bool result = ImGui::ArrowButton (label.c_str (), dir);
+    block->after_render ();
+    return result;
+}
+
+bool mixImGui::gui_layout::small_button (const std::string& label)
+{
+    auto block = mixImGui::gui_layout::get_top_block ();
+    block->before_render ();
+    bool result = ImGui::SmallButton (label.c_str ());
+    block->after_render ();
+    return result;
+}
+
+bool mixImGui::gui_layout::radio_button (const std::string& label, bool is_active)
+{
+    auto block = mixImGui::gui_layout::get_top_block ();
+    block->before_render ();
+    bool result = ImGui::RadioButton (label.c_str (), is_active);
+    block->after_render ();
+    return result;
+}
+
+bool mixImGui::gui_layout::image_button (const std::string& str_id,
+                                         unsigned user_texture_id,
+                                         const ImVec2& size,
+                                         const ImVec2& uv0,
+                                         const ImVec2& uv1,
+                                         const ImVec4& bg_col,
+                                         const ImVec4& tint_col)
+{
+    auto block = mixImGui::gui_layout::get_top_block ();
+    block->before_render ();
+    bool result = ImGui::ImageButton (str_id.c_str (), (void*) (intptr_t) (user_texture_id), size, uv0, uv1, bg_col, tint_col);
+    block->after_render ();
+    return result;
+}
+
 void mixImGui::gui_layout::collapsing_label (std::string s, bool* is_visible)
 {
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto block = mixImGui::gui_layout::get_top_block ();
+
     block->before_render ();
     *is_visible = ImGui::CollapsingHeader (s.c_str (), ImGuiTreeNodeFlags_Framed | ImGuiTreeNodeFlags_DefaultOpen);
     block->after_render ();
@@ -139,7 +191,8 @@ void mixImGui::gui_layout::collapsing_label (std::string s, bool* is_visible)
 
 void mixImGui::gui_layout::slider_float (const char* label, float* value, float min, float max)
 {
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto block = mixImGui::gui_layout::get_top_block ();
+
     block->before_render ();
     ImGui::SliderFloat (label, value, min, max);
     block->after_render ();
@@ -149,6 +202,21 @@ void mixImGui::gui_layout::horizontal_space (float space)
 {
     auto cursor_pos = ImGui::GetCursorPos ();
     ImGui::SetCursorPos (ImVec2 (cursor_pos.x + space, cursor_pos.y));
+}
+
+void mixImGui::gui_layout::vertical_space (float space)
+{
+    ImGui::Dummy (ImVec2 (0.0f, space));
+}
+
+void mixImGui::gui_layout::new_line ()
+{
+    ImGui::NewLine ();
+}
+
+void mixImGui::gui_layout::seperator ()
+{
+    ImGui::Separator ();
 }
 
 void mixImGui::gui_layout::before_render ()
