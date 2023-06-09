@@ -1,8 +1,11 @@
 #include "gui_layout.h"
+#include "gui_selectable_layout.h"
 
 ImVec2 mixImGui::gui_layout::_cursor = ImVec2 ();
 std::stack<std::unique_ptr<mixImGui::gui_layout>> mixImGui::gui_layout::_layouts;
 mixImGui::layout_type mixImGui::gui_layout::_global_layout = mixImGui::layout_type::vertical;
+
+
 
 mixImGui::gui_layout::gui_layout (mixImGui::layout_type new_layout, window_rect r)
 {
@@ -12,7 +15,6 @@ mixImGui::gui_layout::gui_layout (mixImGui::layout_type new_layout, window_rect 
     _last_layout = _global_layout;
     _cursor = ImGui::GetCursorPos ();
     _render_index = 0;
-    _last_selectable_index = 0;
 }
 
 void mixImGui::gui_layout::begin_horizontal (window_rect r)
@@ -35,6 +37,17 @@ void mixImGui::gui_layout::end_vertical ()
     end_current_block (mixImGui::layout_type::vertical);
 }
 
+void mixImGui::gui_layout::begin_vertical_selectable (window_rect r)
+{
+    add_block (new mixImGui::gui_selectable_layout (mixImGui::layout_type::vertical, r));
+}
+
+void mixImGui::gui_layout::end_vertical_selectable ()
+{
+    end_vertical ();
+}
+
+
 void mixImGui::gui_layout::text_label (std::string s)
 {
     auto block = mixImGui::gui_layout::_layouts.top ().get ();
@@ -45,21 +58,22 @@ void mixImGui::gui_layout::text_label (std::string s)
 
 void mixImGui::gui_layout::begin_selectable_list (i_guielement* previously_selected)
 {
-    begin_vertical ();
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    begin_vertical_selectable ();
+    auto block = mixImGui::gui_layout::get_top_block<mixImGui::gui_selectable_layout> ();
     block->_selected = previously_selected;
 }
 
 mixImGui::i_guielement* mixImGui::gui_layout::end_selectable_list ()
 {
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto block = mixImGui::gui_layout::get_top_block<mixImGui::gui_selectable_layout> ();
+
     if (block->_last_selectable_index != block->_selectables.size())
     {
         render_added_selectables ();
     }
 
     i_guielement* selected = block->_selected;
-    end_vertical ();
+    end_vertical_selectable ();
 
     return selected;
 }
@@ -92,13 +106,13 @@ bool mixImGui::gui_layout::selectable_text (std::string label, bool is_selected)
 
 void mixImGui::gui_layout::add_selectable (i_guielement* element)
 {
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto block = mixImGui::gui_layout::get_top_block<mixImGui::gui_selectable_layout> ();
     block->_selectables.push_back (element);
 }
 
 void mixImGui::gui_layout::render_added_selectables ()
 {
-    auto block = mixImGui::gui_layout::_layouts.top ().get ();
+    auto block = mixImGui::gui_layout::get_top_block<mixImGui::gui_selectable_layout> ();
     auto start_index = block->_last_selectable_index;
     size_t i;
     for (i = start_index; i < block->_selectables.size (); i++)

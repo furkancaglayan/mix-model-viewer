@@ -1,13 +1,13 @@
 #pragma once
 
+#include "i_guielement.h"
 #include <backends/imgui_impl_glfw.h>
 #include <backends/imgui_impl_opengl3.h>
-#include <string>
-#include <stack>
-#include <vector>
-#include <memory>
 #include <functional>
-#include "i_guielement.h"
+#include <memory>
+#include <stack>
+#include <string>
+#include <vector>
 
 namespace mixImGui
 {
@@ -18,7 +18,7 @@ namespace mixImGui
         vertical
     };
 
-     struct window_rect
+    struct window_rect
     {
 
         window_rect (int x, int y, int w, int h)
@@ -68,9 +68,24 @@ namespace mixImGui
         static void add_selectable (i_guielement* element);
         static void render_added_selectables ();
 
-        private:
+        template <class T> static T* get_top_block ()
+        {
+            return static_cast<T*> (mixImGui::gui_layout::_layouts.top ().get ());
+        }
 
+        gui_layout* get_top_block ()
+        {
+            return mixImGui::gui_layout::_layouts.top ().get ();
+        }
+
+        protected:
+
+        static void
+        begin_vertical_selectable (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
+        static void end_vertical_selectable ();
         gui_layout (mixImGui::layout_type new_layout, window_rect r);
+
+        private:
 
         static void set_global_layout (mixImGui::layout_type new_layout);
         static void add_block (gui_layout* layout);
@@ -91,11 +106,6 @@ namespace mixImGui
         mixImGui::layout_type _current_layout;
         mixImGui::layout_type _last_layout;
         int _render_index;
-
-        //selectables
-        i_guielement* _selected;
-        std::vector<i_guielement*> _selectables;
-        int _last_selectable_index;
     };
-   
+
 } // namespace mixImGui
