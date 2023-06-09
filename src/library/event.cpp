@@ -1,16 +1,8 @@
 #include "event.h"
 
-mix::library::event::event ()
+void mix::library::event_base::add_listener (ievent_callback_base* action)
 {
-}
-
-mix::library::event::~event ()
-{
-}
-
-void mix::library::event::add_listener (ievent_callback_base* action)
-{
-    std::vector<ievent_callback_base*>::iterator position = std::find (_actions.begin (), _actions.end (), action);
+    typename _action_list_base::iterator position = std::find (_actions.begin (), _actions.end (), action);
 
     if (position == _actions.end ())
     {
@@ -18,9 +10,9 @@ void mix::library::event::add_listener (ievent_callback_base* action)
     }
 }
 
-void mix::library::event::remove_listener (ievent_callback_base* action)
+void mix::library::event_base::remove_listener (ievent_callback_base* action)
 {
-    std::vector<ievent_callback_base*>::iterator position = std::find (_actions.begin (), _actions.end (), action);
+    typename _action_list_base::iterator position = std::find (_actions.begin (), _actions.end (), action);
 
     if (position != _actions.end ())
     {
@@ -28,7 +20,7 @@ void mix::library::event::remove_listener (ievent_callback_base* action)
     }
 }
 
-void mix::library::event::dispatch ()
+void mix::library::event_base::dispatch ()
 {
     for (ievent_callback_base* action : _actions)
     {

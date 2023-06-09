@@ -15,10 +15,6 @@ namespace mix
                 }
                 return new mix::assetsystem::mixTexture (file.get_path (), type);
             }
-            bool mixAsset_loader_texture::save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item)
-            {
-                return false;
-            }
         } // namespace loaders
     }         // namespace assetsystem
 } // namespace mix

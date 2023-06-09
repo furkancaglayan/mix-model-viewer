@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
-
+#include "../../library/event.h"
 namespace mix
 {
     namespace assetsystem
@@ -18,20 +18,18 @@ namespace mix
         {
             public:
 
+            mixAsset_loader_base ();
             inline mixAsset_item* resolve (mix::platform::mixFile& file)
             {
-                return resolve_impl (file);
-            }
-
-            inline bool save (mix::platform::mixFile& file, mixAsset_item* item)
-            {
-                return save_impl (file, item);
+                auto item = resolve_impl (file);
+                _postprocess_item_event->dispatch (item);
+                return item;
             }
 
             protected:
 
+            std::unique_ptr<mix::library::event<mixAsset_item>> _postprocess_item_event;
             virtual mixAsset_item* resolve_impl (mix::platform::mixFile& file) = 0;
-            virtual bool save_impl (mix::platform::mixFile& file, mixAsset_item* item) = 0;
         };
 
 

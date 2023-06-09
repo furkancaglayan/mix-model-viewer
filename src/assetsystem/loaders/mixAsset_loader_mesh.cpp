@@ -16,10 +16,6 @@ namespace mix
                 return load_obj (file.get_path ());
             }
 
-            bool mixAsset_loader_mesh::save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item)
-            {
-                return false;
-            }
 
             mix::assetsystem::mixMesh* mixAsset_loader_mesh::load_obj (mix::platform::mixAsset_path path)
             {

@@ -7,25 +7,46 @@ namespace mix
     namespace library
     {
 
-        template <typename T> class ievent_callback_base : public ievent_callback_base
+        template <typename T> class event_callback : public ievent_callback_base
         {
             public:
 
-            ievent_callback_base (T* instance, void (T::*function) ())
+            event_callback (T* instance, void (T::*function) ())
             {
-                _callback = std::unique_ptr (instance);
+                _instance = instance;
                 _function = function;
             }
 
             void operator() () override
             {
-                (_callback->*_function) ();
+                (_instance->*_function) ();
             }
 
             private:
 
             void (T::*_function) ();
-            std::unique_ptr<T> _callback;
+            T* _instance;
+        };
+
+         template <class T, class U> class event_callback : public ievent_callback_base_with_args<U>
+        {
+            public:
+
+            event_callback (T* instance, void (T::*function) (U*), U* obj)
+            {
+                _instance = instance;
+                _function = function;
+            }
+
+            void operator(U* obj) () override
+            {
+                (_instance->*_function) (obj);
+            }
+
+            private:
+
+            void (T::*_function) (U*);
+            T* _instance;
         };
     } // namespace core
 } // namespace mix

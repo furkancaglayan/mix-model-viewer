@@ -18,7 +18,6 @@ namespace mix
                 protected:
 
                 mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
-                bool save_impl (mix::platform::mixFile& file, mix::assetsystem::mixAsset_item* item) override;
             };
         } // namespace loaders
     }     // namespace assetsystem

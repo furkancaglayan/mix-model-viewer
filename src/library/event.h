@@ -6,20 +6,57 @@ namespace mix
     namespace library
     {
 
-        class event
+        class event_base
         {
             public:
 
-            event ();
-            ~event ();
+            typedef std::vector<ievent_callback_base*> _action_list_base;
 
-            void add_listener (ievent_callback_base* action);
-            void remove_listener (ievent_callback_base* action);
-            void dispatch ();
+            virtual void add_listener (ievent_callback_base* action);
+            virtual void remove_listener (ievent_callback_base* action);
+            virtual void dispatch ();
 
-            private:
+            protected:
 
-            std::vector<ievent_callback_base*> _actions;
+           _action_list_base _actions;
+        };
+
+        template <class U> class event
+        {
+            public:
+
+            typedef std::vector<ievent_callback_base_with_args<U>*> _action_list;
+            virtual void add_listener (ievent_callback_base_with_args<U>* action)
+            {
+                typename _action_list::iterator position =
+                std::find (_actions.begin (), _actions.end (), action);
+
+                if (position == _actions.end ())
+                {
+                    _actions.push_back (action);
+                }
+            }
+            virtual void remove_listener (ievent_callback_base_with_args<U>* action)
+            {
+                typename _action_list::iterator position =
+                std::find (_actions.begin (), _actions.end (), action);
+
+                if (position != _actions.end ())
+                {
+                    _actions.erase (position);
+                }
+            }
+            virtual void dispatch (U* obj)
+            {
+                for (ievent_callback_base_with_args<U>* action : _actions)
+                {
+                    (*action) (obj);
+                }
+            }
+
+            protected:
+
+            _action_list _actions;
         };
     } // namespace library
 } // namespace mix
