@@ -56,7 +56,7 @@ namespace mix
                 return _assets->search_with_base_name (name);
             }
 
-            template <class T> inline std::shared_ptr<T> search_with_base_name (const std::string& name) const
+            template <class T> inline std::shared_ptr<T> get_asset_with_base_name (const std::string& name) const
             {
                 return std::static_pointer_cast<T> (_assets->search_with_base_name (name));
             }
@@ -80,6 +80,9 @@ namespace mix
             {
                 return std::static_pointer_cast<T> (_assets->search_with_path (name));
             }
+
+            const mix::assetsystem::mixAsset_folder* get_root_folder () const;
+            const asset_tree_ptr get_root_node () const;
 
             inline void debug ()
             {

@@ -13,7 +13,7 @@ namespace mix
         mixAsset_manager::mixAsset_manager (std::unique_ptr<mix::assetsystem::mixAsset_folder> root)
         {
             instance = this;
-            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root));
+            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root), nullptr);
             initialize_default_asset_loaders ();
             resolve_all_assets ();
             debug ();
@@ -23,10 +23,20 @@ namespace mix
         {
             instance = this;
             auto root = std::make_unique<mix::assetsystem::mixAsset_folder> (root_path);
-            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root));
+            _assets = std::make_unique<asset_tree_val> (root->get_guid (), std::move (root), nullptr);
             initialize_default_asset_loaders ();
             resolve_all_assets ();
             debug ();
+        }
+
+        const mix::assetsystem::mixAsset_folder* mixAsset_manager::get_root_folder () const
+        {
+            return static_cast<const mix::assetsystem::mixAsset_folder*> (_assets->get_value ());
+        }
+
+        const asset_tree_ptr mixAsset_manager::get_root_node () const
+        {
+            return _assets.get();
         }
 
         void mixAsset_manager::resolve_all_assets ()

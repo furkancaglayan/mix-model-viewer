@@ -58,10 +58,10 @@ void mix::editor::windows::hierarchy_window::render ()
 
 void mix::editor::windows::hierarchy_window::on_editor_window_size_changed_impl (const vec2i& size)
 {
-    auto WINDOW_BEGIN_POS = 0.75f;
-    auto WINDOW_SIZE = 0.25f;
+    auto WINDOW_BEGIN_POS = 0.85f;
+    auto WINDOW_SIZE = 0.15f;
     auto width = size.x * WINDOW_SIZE;
-    rescale (vec2i (width, static_cast<float> (size.y)));
+    rescale (vec2i (width, static_cast<int> (size.y * 0.75f)));
     set_position (vec2i (size.x * WINDOW_BEGIN_POS, 0));
 }
 
@@ -69,7 +69,7 @@ mix::editor::windows::hierarchy_window::hierarchy_window (std::string window_nam
 : mixImGui::gui_window (window_name,
                         r,
                         mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse |
-                        mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize)
+                        mixImGui::window_flags::NoMove)
 
 {
     _selected_entity = nullptr;
@@ -82,8 +82,9 @@ mix::editor::windows::hierarchy_window::~hierarchy_window ()
 void mix::editor::windows::hierarchy_window::initialize (const vec2i& size)
 {
     // TODO: MAKE ALL INT ARGUMENTS AS W, H TO VEC2
-    auto WINDOW_BEGIN_POS = 0.75f;
-    auto WINDOW_SIZE = 0.25f;
-    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE), size.y);
+    auto WINDOW_BEGIN_POS = 0.85f;
+    auto WINDOW_SIZE = 0.15f;
+    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE),
+                                       static_cast<int> (size.y * 0.75f));
     mixImGui::mixGui::add_window (new editor::windows::hierarchy_window (std::string ("Hierarchy"), rect));
 }

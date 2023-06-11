@@ -123,7 +123,22 @@ void mixImGui::gui_window::set_position (const vec2i& pos)
     _rect._y = pos.y;
 }
 
+vec2i mixImGui::gui_window::get_position () const
+{
+    return vec2i (_rect._x, _rect._y);
+}
+
+vec2i mixImGui::gui_window::get_size () const
+{
+    return vec2i (_rect._w, _rect._h);
+}
+
 void mixImGui::gui_window::on_window_resized (const vec2i& old_size, const vec2i& new_size)
 {
     rescale (new_size);
+}
+
+mixImGui::window_flags mixImGui::gui_window::get_flags () const
+{
+    return _flags;
 }

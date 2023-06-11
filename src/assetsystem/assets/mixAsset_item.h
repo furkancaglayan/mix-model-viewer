@@ -5,7 +5,6 @@
 #include <iostream>
 #include <istream>
 #include <map>
-
 namespace mix
 {
     namespace assetsystem
@@ -35,6 +34,11 @@ namespace mix
             virtual inline const std::string& get_path () const
             {
                 return _path.to_str ();
+            }
+
+            inline const std::string& get_extension () const
+            {
+                return _path.get_extension ();
             }
 
             virtual std::ostream& operator<< (std::ostream& out) const;

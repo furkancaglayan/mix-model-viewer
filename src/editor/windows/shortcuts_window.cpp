@@ -30,6 +30,8 @@ void mix::editor::windows::shortcuts_window::render ()
             {
                 mixGui::show_style_editor (ImGui::GetStyle());
             }
+
+            gui_layout::progress_bar (0.25f);
         }
     }
 
@@ -39,17 +41,18 @@ void mix::editor::windows::shortcuts_window::render ()
 void mix::editor::windows::shortcuts_window::on_editor_window_size_changed_impl (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.0f;
-    auto WINDOW_SIZE = 0.05f;
+    auto WINDOW_SIZE = 0.20f;
     auto width = size.x * WINDOW_SIZE;
-    rescale (vec2i (width, static_cast<float> (size.y)));
+    rescale (vec2i (width, static_cast<int> (size.y)));
     set_position (vec2i (size.x * WINDOW_BEGIN_POS, 0));
 }
 
 void mix::editor::windows::shortcuts_window::initialize (const vec2i& size)
 {
     auto WINDOW_BEGIN_POS = 0.0f;
-    auto WINDOW_SIZE = 0.05f;
-    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE), size.y);
+    auto WINDOW_SIZE = 0.20f;
+    auto rect = mixImGui::window_rect ((int) (size.x * WINDOW_BEGIN_POS), 0, (int) (size.x * WINDOW_SIZE),
+                                       static_cast<int> (size.y));
 
     mixImGui::mixGui::add_window (new editor::windows::shortcuts_window (std::string ("Shortcuts"), rect));
 }
@@ -57,8 +60,8 @@ void mix::editor::windows::shortcuts_window::initialize (const vec2i& size)
 mix::editor::windows::shortcuts_window::shortcuts_window (std::string window_name, mixImGui::window_rect r)
 : mixImGui::gui_window (window_name,
                         r,
-                        mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse /*|
-                         mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize*/)
+                        mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse |
+                         mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize)
 {
     _styles_editor_tex = mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("imgui.png").get();
     assert (_styles_editor_tex);

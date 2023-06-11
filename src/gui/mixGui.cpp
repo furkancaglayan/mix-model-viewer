@@ -127,10 +127,10 @@ void mixImGui::mixGui::show_style_editor (ImGuiStyle& style)
     ImGui::ShowStyleEditor (&style);
 }
 
-void mixImGui::mixGui::add_font (mix::assetsystem::mixFont* font, bool set_default)
+void mixImGui::mixGui::add_font (mix::assetsystem::mixFont* font, float size, bool set_default)
 {
     ImGuiIO& io = ImGui::GetIO ();
-    ImFont* im_font = io.Fonts->AddFontFromFileTTF (font->get_path ().c_str(), 105);
+    ImFont* im_font = io.Fonts->AddFontFromFileTTF (font->get_path ().c_str (), 20);
 
     if (set_default)
     {

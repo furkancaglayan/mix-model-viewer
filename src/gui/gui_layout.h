@@ -56,21 +56,32 @@ namespace mixImGui
         begin_vertical (window_rect r = window_rect (static_cast<int> (_cursor.x), static_cast<int> (_cursor.y), 0, 0));
         static void end_vertical ();
         static void text_label (std::string s);
+
+
         static void begin_selectable_list (i_guielement* previously_selected);
         static i_guielement* end_selectable_list ();
+        static void selectable_image (std::string id,  const ImVec2& size, unsigned image, bool& pressed, bool& double_clicked);
+        static void render_added_selectables ();
+        static void add_selectable (i_guielement* element);
 
         static void begin_child (std::string s);
+        static void begin_child (std::string s, const ImVec2& size, bool border = true, int flags = 0);
         static void end_child ();
-        static void add_image (unsigned texture, const ImVec2& p_min, const ImVec2& p_max, const ImVec2& uv_min, const ImVec2& uv_max);
+        static void add_image (unsigned texture_id,
+                               const ImVec2& size,
+                               const ImVec2& uv_min,
+                               const ImVec2& uv_max,
+                               const ImVec4& tint_color = ImVec4 (1, 1, 1, 1),
+                               const ImVec4& border_color = ImVec4(0, 0, 0, 0));
         static void slider_float (const char* label, float* value, float min, float max);
         static void collapsing_label (std::string s, bool* is_visible);
-        static void add_selectable (i_guielement* element);
-        static void render_added_selectables ();
 
         static void horizontal_space (float space);
         static void vertical_space (float space);
         static void new_line ();
         static void seperator ();
+
+        static void progress_bar (float r);
 
         static bool button (const std::string& label, const ImVec2& size = ImVec2 (32, 32));
         static bool radio_button (const std::string& label, bool is_active);
@@ -82,16 +93,29 @@ namespace mixImGui
                                   const ImVec2& uv0 = ImVec2 (0, 0),
                                   const ImVec2& uv1 = ImVec2 (1, 1),
                                   const ImVec4& bg_col = ImVec4 (0, 0, 0, 0),
-                                  const ImVec4& tint_col = ImVec4 (1, 1, 1, 1));
+                                  const ImVec4& tint_col = ImVec4 (0, 0, 0, 0));
 
+        static bool is_double_clicked ();
+        static ImVec2 get_cursor ();
         template <class T> static T* get_top_block ()
         {
-            return static_cast<T*> (mixImGui::gui_layout::_layouts.top ().get ());
+            if (!mixImGui::gui_layout::_layouts.empty ())
+            {
+                return static_cast<T*> (mixImGui::gui_layout::_layouts.top ().get ());
+            }
+
+            return nullptr;
         }
 
         static gui_layout* get_top_block ()
         {
-            return mixImGui::gui_layout::_layouts.top ().get ();
+            //assert (!mixImGui::gui_layout::_layouts.empty ());
+            if (!mixImGui::gui_layout::_layouts.empty ())
+            {
+                return mixImGui::gui_layout::_layouts.top ().get ();
+            }
+
+            return nullptr;
         }
 
         protected:
@@ -106,7 +130,6 @@ namespace mixImGui
         static void set_global_layout (mixImGui::layout_type new_layout);
         static void add_block (gui_layout* layout);
         static void end_current_block (mixImGui::layout_type target_layout);
-        static ImVec2 get_new_cursor_pos ();
         static ImVec2 _cursor;
         static mixImGui::layout_type _global_layout;
         static std::stack<std::unique_ptr<gui_layout>> _layouts;
@@ -117,7 +140,6 @@ namespace mixImGui
         mixImGui::layout_type get_layout () const;
         mixImGui::layout_type get_previous_layout () const;
 
-        ImVec2 _local_cursor;
         window_rect _rect;
         mixImGui::layout_type _current_layout;
         mixImGui::layout_type _last_layout;

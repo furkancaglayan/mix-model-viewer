@@ -4,7 +4,8 @@ namespace mix
 {
     namespace containers
     {
-        tree_node* tree_node::insert (const mix::core::mixGuid& key, std::shared_ptr<mix::assetsystem::mixAsset_item> child)
+        tree_node* tree_node::insert (const mix::core::mixGuid& key,
+                                      std::shared_ptr<mix::assetsystem::mixAsset_item> child)
         {
             size_t index = 0;
             for (; index < _children.size (); index++)
@@ -14,7 +15,7 @@ namespace mix
                     break;
                 }
             }
-            auto it = _children.insert (_children.begin () + index, std::make_unique<tree_node> (key, std::move (child)));
+            auto it = _children.insert (_children.begin () + index, std::make_unique<tree_node> (key, std::move (child), this));
             return _children.at (index).get ();
         }
         std::shared_ptr<mix::assetsystem::mixAsset_item> tree_node::search_with_guid (const mix::core::mixGuid& key) const

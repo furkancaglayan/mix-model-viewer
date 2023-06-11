@@ -18,12 +18,13 @@ namespace mix
         {
             public:
 
-            tree_node (mix::core::mixGuid key, std::shared_ptr<mix::assetsystem::mixAsset_item> value)
-            : _key{ key }, _value{ std::move (value) }
+            tree_node (mix::core::mixGuid key, std::shared_ptr<mix::assetsystem::mixAsset_item> value, tree_node* parent)
+            : _key{ key }, _value{ std::move (value) }, _parent { parent }
             {
             }
 
-            tree_node* insert (const mix::core::mixGuid& key, std::shared_ptr<mix::assetsystem::mixAsset_item> child);
+            tree_node* insert (const mix::core::mixGuid& key,
+                               std::shared_ptr<mix::assetsystem::mixAsset_item> child);
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_guid (const mix::core::mixGuid& key) const;
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_base_name (const std::string& name) const;
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_full_name (const std::string& name) const;
@@ -35,6 +36,11 @@ namespace mix
                 return _children.size ();
             }
 
+            inline std::vector<std::unique_ptr<tree_node>>& get_children ()
+            {
+                return _children;
+            }
+
             inline const mix::core::mixGuid& get_key () const
             {
                 return _key;
@@ -43,6 +49,16 @@ namespace mix
             inline const mix::assetsystem::mixAsset_item* get_value () const
             {
                 return _value.get ();
+            }
+
+            inline const bool is_root () const
+            {
+                return _parent == nullptr;
+            }
+
+            inline const tree_node* get_parent () const
+            {
+                return _parent;
             }
 
             inline void print ()
@@ -84,6 +100,7 @@ namespace mix
             mix::core::mixGuid _key;
             std::shared_ptr<mix::assetsystem::mixAsset_item> _value;
             std::vector<std::unique_ptr<tree_node>> _children;
+            tree_node* _parent;
         };
     } // namespace containers
 } // namespace mix

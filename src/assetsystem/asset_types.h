@@ -19,6 +19,7 @@ namespace mix
             Other
         };
 
+
         class asset_types
         {
             asset_types () = delete;
@@ -33,6 +34,17 @@ namespace mix
                 }
 
                 return asset_type::Other;
+            };
+
+
+            const static std::string get_asset_default_icon_name (const std::string& ext)
+            {
+                if (extension_map.count (ext))
+                {
+                    return "default_" + ext;
+                }
+
+                return "default_other";
             };
 
             private:

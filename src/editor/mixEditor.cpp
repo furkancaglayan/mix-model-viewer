@@ -1,20 +1,12 @@
 #include "mixEditor.h"
 #include <cassert>
 #include <iostream>
+#include "windows/project_window.h"
 
 std::unique_ptr<mix::mixEditor> mix::mixEditor::_instance = nullptr;
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos);
 void window_close_callback (GLFWwindow* window);
 void window_size_callback (GLFWwindow* window, int width, int height);
-
-inline void mix::mixEditor::select_monitor (int index)
-{
-    int count;
-    auto monitors = glfwGetMonitors (&count);
-    assert (index < count);
-    auto monitor = monitors[index];
-    _window->set_monitor (monitor);
-}
 
 void mix::mixEditor::init_render_buffers ()
 {
@@ -31,10 +23,10 @@ mix::mixEditor::mixEditor () : _active_scene{ std::make_unique<mix::scene_manage
 {
 }
 
-void mix::mixEditor::create_new ()
+void mix::mixEditor::create_new (editor_config config)
 {
     mix::mixEditor::_instance = std::make_unique<mix::mixEditor> ();
-    mix::mixEditor::_instance->start ();
+    mix::mixEditor::_instance->start (config);
 }
 
 void mix::mixEditor::initialize_asset_manager (std::string path)
@@ -47,11 +39,14 @@ void mix::mixEditor::initialize_gui ()
     assert (mix::mixEditor::_instance->_asset_manager);
     auto _window = mix::mixEditor::_instance->_window.get();
     mixImGui::mixGui::init (_window->get_glfw_window ());
+    mixImGui::mixGui::add_font (mix::mixEditor::_instance->_asset_manager->get_asset_with_full_name<mix::assetsystem::mixFont> ("Raleway-Medium.ttf").get(), true);
+
     auto w_size = _window->get_window_size ();
 
     mix::editor::windows::scene_window::initialize (w_size);
     mix::editor::windows::hierarchy_window::initialize (w_size);
     mix::editor::windows::shortcuts_window::initialize (w_size);
+    mix::editor::windows::project_window::initialize (w_size);
 }
 
 mix::assetsystem::mixAsset_manager* mix::mixEditor::get_asset_manager ()
@@ -96,10 +91,10 @@ mix::scene_management::mixScene* mix::mixEditor::get_active_scene () const
     return _active_scene.get ();
 }
 
-void mix::mixEditor::start ()
+void mix::mixEditor::start (editor_config config)
 {
     _window = std::make_unique<mix::core::mixWindow> ();
-    _window->initialize ();
+    _window->initialize (vec2i(1024, 768));
     _window->hide ();
     _window->set_title ("Mix Model Viewer");
 
@@ -127,7 +122,7 @@ void mix::mixEditor::gui_pass ()
 
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos)
 {
-    mix::mixEditor::_instance->get_window ()->cache_pos (xpos, ypos);
+    mix::mixEditor::_instance->get_window ()->on_window_position_changed (xpos, ypos);
 }
 
 

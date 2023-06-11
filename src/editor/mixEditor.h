@@ -7,6 +7,7 @@
 #include "windows/shortcuts_window.h"
 #include "../containers/frame_buffer.h"
 #include "../assetsystem/mixAsset_manager.h"
+#include "editor_config.h"
 
 namespace mix
 {
@@ -15,7 +16,7 @@ namespace mix
         public:
 
         static std::unique_ptr<mixEditor> _instance;
-        static void create_new ();
+        static void create_new (editor_config config);
         static void initialize_asset_manager (std::string path);
         static void initialize_gui ();
 
@@ -25,7 +26,6 @@ namespace mix
         mixEditor ();
 
         void render ();
-        inline void select_monitor (int num);
         void init_render_buffers ();
         unsigned get_rendered_texture () const;
         void on_window_size_changed (const vec2i& size);
@@ -35,7 +35,7 @@ namespace mix
         private:
 
         void gui_pass ();
-        void start ();
+        void start (editor_config config);
         
         std::unique_ptr<mix::core::mixWindow> _window;
         std::unique_ptr<mix::containers::frame_buffer> _frame_buffer;

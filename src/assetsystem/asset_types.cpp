@@ -4,8 +4,6 @@ namespace mix
 {
     namespace assetsystem
     {
-
-
         const std::unordered_map<std::string, asset_type> asset_types::extension_map = {
             { "txt", asset_type::Text },    { "xml", asset_type::Text },    { "json", asset_type::Text },
 

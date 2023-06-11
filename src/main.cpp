@@ -27,7 +27,8 @@ int main ()
         std::cout << "GLFW INIT ERROR!";
     }
 
-    mix::mixEditor::create_new ();
+    mix::editor_config config = mix::editor_config ();
+    mix::mixEditor::create_new (config);
 
     if ((err = glewInit ()) != GLEW_OK)
     {

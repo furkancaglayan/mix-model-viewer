@@ -90,6 +90,8 @@ namespace mixImGui
         void end () const;
         void rescale (const vec2i& size);
         void set_position (const vec2i& pos);
+        vec2i get_position () const;
+        vec2i get_size () const;
         virtual void on_editor_window_size_changed_impl (const vec2i& size) = 0;
         virtual void on_window_resized (const vec2i& old_size, const vec2i& new_size);
 
@@ -97,6 +99,7 @@ namespace mixImGui
         std::string _window_name;
         window_rect _rect, _constraints;
 
+        window_flags get_flags () const;
         private:
 
         window_flags _flags;

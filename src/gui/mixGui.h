@@ -42,7 +42,7 @@ namespace mixImGui
         }
 
         static void show_style_editor (ImGuiStyle& style);
-        static void add_font (mix::assetsystem::mixFont* font, bool set_default = false);
+        static void add_font (mix::assetsystem::mixFont* font, float size = 32.0f, bool set_default = false);
         private:
 
         static std::vector<w_ptr> _windows;

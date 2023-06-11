@@ -7,12 +7,6 @@ namespace mix
 {
 	namespace core
 	{
-		enum class WindowMode: std::uint8_t
-		{
-			Windowed,
-			FullScreen
-		};
-
 		class mixWindow
 		{
 			using uint = unsigned int;
@@ -21,14 +15,13 @@ namespace mix
 			mixWindow ();
 			~mixWindow();
 
-			void initialize() noexcept;
+			void initialize (vec2i size) noexcept;
 			inline void close() noexcept;
 			int get_key(int key) noexcept;
-			void set_window_mode(WindowMode mode);
-			void set_monitor(GLFWmonitor* monitor);
 
 			vec2 get_window_size () const;
             void set_window_size (const vec2i& size) const;
+            void get_frame_rect (vec2i& xy, vec2i zw) const;
             void set_aspect_ratio (int w, int h) const;
             void set_icon (GLFWimage* images, int count);
             void set_title (std::string title);
@@ -40,14 +33,7 @@ namespace mix
 			static constexpr int _context_version_min = 3;
 			static constexpr int _context_version_max = 3;
 
-			void cache_pos(int x, int y) 
-			{
-				if (_mode == WindowMode::Windowed)
-				{
-					_x = x;
-					_y = y;
-				}
-			}
+			void on_window_position_changed (int x, int y);
 
 			void hide () const;
             void show () const;
@@ -56,8 +42,6 @@ namespace mix
 		private:
 			GLFWwindow* _glfw_window = nullptr;
 			GLFWmonitor* _monitor = nullptr;
-
-			WindowMode _mode = WindowMode::Windowed;
 
 			//TODO: pack into a struct
 			uint _width;
