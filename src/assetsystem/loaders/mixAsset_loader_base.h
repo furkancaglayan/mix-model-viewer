@@ -66,10 +66,12 @@ namespace mix
 
             void set_asset_processor (mix::assetsystem::asset_processor* processor)
             {
-                assert (_asset_processor == nullptr);
+                if (_asset_processor != nullptr)
+                {
+                    _asset_processor.reset ();
+                }
+
                 _asset_processor = std::unique_ptr<mix::assetsystem::asset_processor> (processor);
-
-
                 auto callback = 
                 event_callback_args<asset_processor, mixAsset_item>::create_callback (_asset_processor.get (),
                                                                                       &mix::assetsystem::asset_processor::post_process);
