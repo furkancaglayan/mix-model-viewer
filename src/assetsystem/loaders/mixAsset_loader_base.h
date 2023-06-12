@@ -13,12 +13,36 @@ namespace mix
 {
     namespace assetsystem
     {
+        using namespace mix::library;
+        using namespace mix::assetsystem;
+
         /// <summary>
         /// Support multiple extensions
         /// </summary>
+        /* class asset_postprocess_event_callback
+        {
+            using proc_call = event_callback_args<asset_processor, mixAsset_item>;
+
+            public:
+
+            asset_postprocess_event_callback (asset_processor* processor)
+            {
+                _callback = std::unique_ptr<proc_call> (proc_call::create_callback (processor, &asset_processor::post_process));
+            }
+
+            void operator() (mixAsset_item* asset)
+            {
+                _callback->operator() (asset);
+            }
+
+            private:
+
+            std::unique_ptr<event_callback_args<asset_processor, mixAsset_item>> _callback;
+        };*/
 
         class mixAsset_loader_base
         {
+
             public:
 
 
@@ -44,9 +68,12 @@ namespace mix
             {
                 assert (_asset_processor == nullptr);
                 _asset_processor = std::unique_ptr<mix::assetsystem::asset_processor> (processor);
-                auto event_callback = new mix::library::event_callback<mix::assetsystem::asset_processor, mixAsset_item> (
-                _asset_processor.get (), &mix::assetsystem::asset_processor::post_process);
-                _postprocess_item_event->add_listener (event_callback);
+
+
+                auto callback = 
+                event_callback_args<asset_processor, mixAsset_item>::create_callback (_asset_processor.get (),
+                                                                                      &mix::assetsystem::asset_processor::post_process);
+                _postprocess_item_event->add_listener (callback);
             }
 
             protected:

@@ -5,8 +5,6 @@ namespace mix
 {
     namespace library
     {
-
-        /* 
         class event_base
         {
             public:
@@ -19,9 +17,9 @@ namespace mix
 
             protected:
 
-           _action_list_base _actions;
+            _action_list_base _actions;
         };
-        */
+
         template <class U> class event
         {
             public:
@@ -29,8 +27,7 @@ namespace mix
             typedef std::vector<ievent_callback_base_with_args<U>*> _action_list;
             virtual void add_listener (ievent_callback_base_with_args<U>* action)
             {
-                typename _action_list::iterator position =
-                std::find (_actions.begin (), _actions.end (), action);
+                typename _action_list::iterator position = std::find (_actions.begin (), _actions.end (), action);
 
                 if (position == _actions.end ())
                 {
@@ -39,8 +36,7 @@ namespace mix
             }
             virtual void remove_listener (ievent_callback_base_with_args<U>* action)
             {
-                typename _action_list::iterator position =
-                std::find (_actions.begin (), _actions.end (), action);
+                typename _action_list::iterator position = std::find (_actions.begin (), _actions.end (), action);
 
                 if (position != _actions.end ())
                 {

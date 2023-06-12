@@ -10,7 +10,6 @@ mix::editor::windows::project_window::project_window (std::string window_name, m
     _folder_icon =
     mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("folder.png").get ();
     assert (_folder_icon);
-    _folder_icon->set_format (mix::texture::texture_format::rgb_alpha);
 
     auto assets = mix::mixEditor::get_asset_manager ();
     _root_node = assets->get_root_node ();
@@ -42,14 +41,7 @@ void mix::editor::windows::project_window::render ()
 
         for (int i = (int) vec.size () - 1; i >= 0; i--)
         {
-            if (i != 0)
-            {
-                gui_layout::text_label (vec.at (i)->get_value ()->get_base_name ());
-            }
-            else
-            {
-                gui_layout::text_label (vec.at (i)->get_value ()->get_base_name ());
-            }
+            gui_layout::text_label (vec.at (i)->get_value ()->get_full_name ());
         }
 
         gui_layout::end_horizontal ();
@@ -79,7 +71,7 @@ void mix::editor::windows::project_window::render ()
                         }
 
 
-                        gui_layout::text_label (folder->get_base_name());
+                        gui_layout::text_label (folder->get_shortened_name());
                     }
                    
                 }
@@ -91,11 +83,11 @@ void mix::editor::windows::project_window::render ()
                         auto icon = mix::assetsystem::default_assets::get_asset_default_icon (file->get_extension ());
                         bool pressed, double_clicked;
                         gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon->get_id (), pressed, double_clicked);
-                        gui_layout::text_label (file->get_base_name ());
+                        gui_layout::text_label (file->get_shortened_name ());
                     }
                 }
                 gui_layout::end_vertical ();
-                gui_layout::horizontal_space (25);
+                gui_layout::horizontal_space (35);
                 index++;
             }
         }

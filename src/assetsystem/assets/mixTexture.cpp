@@ -40,6 +40,7 @@ void mix::assetsystem::mixTexture::change_type (mix::texture::texture_type t)
 
 void mix::assetsystem::mixTexture::set_format (mix::texture::texture_format format)
 {
+    assert (format != _format);
     glDeleteTextures (1, &_id);
     _format = format;
     initialize (_path, _format);
@@ -58,14 +59,14 @@ void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_pat
     bind ();
     // set the texture wrapping/filtering options (on the currently bound texture object)
     set_wrapping (texture::texture_wrapping::clamp_to_edge);
-    set_filtering (mix::texture::texture_filtering::nearest, mix::texture::texture_filtering::linear);
+    set_filtering (mix::texture::texture_filtering::nearest, mix::texture::texture_filtering::nearest);
     // load and generate the texture
     int width, height, nrChannels;
     unsigned char* data = stbi_load (path.to_cstr (), &width, &height, &nrChannels, static_cast<int> (format));
     if (data)
     {
-        unsigned format = nrChannels == 4 ? GL_RGBA : GL_RGB;
-        glTexImage2D (GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+        unsigned f = nrChannels == 4 ? GL_RGBA : GL_RGB;
+        glTexImage2D (GL_TEXTURE_2D, 0, f, width, height, 0, f, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap (GL_TEXTURE_2D);
     }
     else
