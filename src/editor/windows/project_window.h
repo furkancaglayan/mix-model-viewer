@@ -23,7 +23,7 @@ namespace mix
 
                 private:
 
-                mix::assetsystem::mixTexture *_folder_icon;
+                mix::assetsystem::mixTexture *_folder_icon, *_empty_folder_icon;
                 mix::assetsystem::mixAsset_folder* _selected_folder;
                 mix::assetsystem::asset_tree_ptr _root_node;
             };

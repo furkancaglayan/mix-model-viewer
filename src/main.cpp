@@ -53,10 +53,10 @@ int main ()
     auto normal = assets->get_asset_with_full_name<mix::assetsystem::mixTexture> ("normal_wood.jpg");
     auto mesh2 = assets->get_asset_with_full_name<mix::assetsystem::mixMesh> ("Skull2.obj");
 
-    auto vertex_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_vertex.vert");
+    auto vertex_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("_vertex.vert");
     // assert (vertex_shader);
 
-    auto fragment_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("standard_fragment.frag");
+    auto fragment_shader = assets->get_asset_with_full_name<mix::assetsystem::mixShader> ("_fragment.frag");
     // assert (fragment_shader);
 
     glfwSetKeyCallback (mix::mixEditor::_instance->get_window ()->get_glfw_window (), key_callback);

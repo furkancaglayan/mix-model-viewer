@@ -10,7 +10,8 @@ mix::editor::windows::project_window::project_window (std::string window_name, m
     _folder_icon =
     mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("folder.png").get ();
     assert (_folder_icon);
-
+    _empty_folder_icon =
+    mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("empty_folder.png").get ();
     auto assets = mix::mixEditor::get_asset_manager ();
     _root_node = assets->get_root_node ();
 }
@@ -31,10 +32,10 @@ void mix::editor::windows::project_window::render ()
         gui_layout::begin_horizontal ();
         std::vector<mix::assetsystem::asset_tree_ptr> vec{};
 
-        while (!node->is_root())
+        while (!node->is_root ())
         {
             vec.push_back (node);
-            //gui_layout::text_label (node->get_value ()->get_base_name ());
+            // gui_layout::text_label (node->get_value ()->get_base_name ());
             node = (mix::assetsystem::asset_tree_ptr) node->get_parent ();
         }
         vec.push_back (assets_node);
@@ -52,14 +53,14 @@ void mix::editor::windows::project_window::render ()
             {
                 gui_layout::begin_vertical ();
 
-                if (mix::platform::platform_utils::is_folder (it->get_value()->get_path()))
+                if (mix::platform::platform_utils::is_folder (it->get_value ()->get_path ()))
                 {
                     auto folder = static_cast<const mix::assetsystem::mixAsset_folder*> (it->get_value ());
 
                     {
                         bool pressed, double_clicked;
-                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64),
-                                                      _folder_icon->get_id (), pressed, double_clicked);
+                        auto icon = it->has_children () ? _folder_icon->get_id () : _empty_folder_icon->get_id ();
+                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon, pressed, double_clicked);
                         if (pressed)
                         {
                             _selected_folder = (mix::assetsystem::mixAsset_folder*) folder;
@@ -71,9 +72,8 @@ void mix::editor::windows::project_window::render ()
                         }
 
 
-                        gui_layout::text_label (folder->get_shortened_name());
+                        gui_layout::text_label (folder->get_shortened_name ());
                     }
-                   
                 }
                 else
                 {

@@ -72,6 +72,7 @@ namespace mix
                 }
 
                 _asset_processor = std::unique_ptr<mix::assetsystem::asset_processor> (processor);
+                //TODO: FiX remove behabior
                 auto callback = 
                 event_callback_args<asset_processor, mixAsset_item>::create_callback (_asset_processor.get (),
                                                                                       &mix::assetsystem::asset_processor::post_process);
