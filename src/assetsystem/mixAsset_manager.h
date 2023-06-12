@@ -40,6 +40,12 @@ namespace mix
                 _loaders.insert ({ type, std::make_unique<T> () });
             }
 
+            template <class T> void register_loader (asset_type type, asset_processor* processor)
+            {
+                assert (!_loaders.count (type));
+                _loaders.insert ({ type, std::make_unique<T> (processor) });
+            }
+
             inline mix::assetsystem::mixAsset_loader_base* get_loader (const asset_type& type) const noexcept
             {
                 return _loaders.at (type).get ();

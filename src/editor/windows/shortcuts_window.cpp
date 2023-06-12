@@ -63,7 +63,7 @@ mix::editor::windows::shortcuts_window::shortcuts_window (std::string window_nam
                         mixImGui::window_flags::MenuBar | mixImGui::window_flags::NoCollapse |
                          mixImGui::window_flags::NoMove | mixImGui::window_flags::NoResize)
 {
-    _styles_editor_tex = mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("imgui.png").get();
+    _styles_editor_tex = mixEditor::get_asset_manager ()->get_asset_with_full_name<mix::assetsystem::mixTexture> ("default_other.png").get();
     assert (_styles_editor_tex);
     _styles_editor_tex->set_format (mix::texture::texture_format::rgb_alpha);
 }

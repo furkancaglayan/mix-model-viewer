@@ -6,6 +6,7 @@ namespace mix
     namespace library
     {
 
+        /* 
         class event_base
         {
             public:
@@ -20,7 +21,7 @@ namespace mix
 
            _action_list_base _actions;
         };
-
+        */
         template <class U> class event
         {
             public:

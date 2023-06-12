@@ -1,7 +1,7 @@
 #pragma once
+#include "../assets/mixMesh.h"
 #include "../assets/mixText_asset.h"
 #include "mixAsset_loader_base.h"
-#include "../assets/mixMesh.h"
 
 namespace mix
 {
@@ -15,6 +15,14 @@ namespace mix
 
             class mixAsset_loader_texture : public mix::assetsystem::mixAsset_loader_base
             {
+                public:
+
+                mixAsset_loader_texture (mix::assetsystem::asset_processor* processor)
+                : mixAsset_loader_base (processor)
+                {
+
+                }
+
                 protected:
 
                 mix::assetsystem::mixAsset_item* resolve_impl (mix::platform::mixFile& file) override;
