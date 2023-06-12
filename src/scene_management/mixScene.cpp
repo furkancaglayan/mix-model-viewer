@@ -1,6 +1,6 @@
 #include "mixScene.h"
 
-std::unique_ptr<mix::scene_management::mixScene> mix::scene_management::mixScene::_instance = nullptr;
+mix::scene_management::mixScene* mix::scene_management::mixScene::_instance = nullptr;
 
 mix::scene_management::mixScene::mixScene () : mixScene (new mix::core::mixEntity ("New Scene"))
 {
@@ -10,7 +10,7 @@ mix::scene_management::mixScene::mixScene (mix::core::mixEntity* r)
 {
     _root = std::unique_ptr<mix::core::mixEntity> (r);
     _active_cam = std::make_unique<mix::core::mixCamera> ();
-    _instance = std::unique_ptr<mix::scene_management::mixScene> (this);
+    _instance = this;
 }
 
 void mix::scene_management::mixScene::update ()
@@ -67,7 +67,7 @@ mix::core::mixEntity* mix::scene_management::mixScene::get_root () const
     return _root.get();
 }
 
-std::vector<std::weak_ptr<mix::core::light::mixLight>> mix::scene_management::mixScene::get_lights () const
+std::vector<std::shared_ptr<mix::core::light::mixLight>> mix::scene_management::mixScene::get_lights () const
 {
     return _lights;
 }

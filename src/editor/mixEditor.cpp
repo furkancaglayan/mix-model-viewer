@@ -29,6 +29,11 @@ void mix::mixEditor::create_new (editor_config config)
     mix::mixEditor::_instance->start (config);
 }
 
+void mix::mixEditor::destroy ()
+{
+    mix::mixEditor::_instance.reset ();
+}
+
 void mix::mixEditor::initialize_asset_manager (std::string path)
 {
     mix::mixEditor::_instance->_asset_manager = std::make_unique<mix::assetsystem::mixAsset_manager> (path);

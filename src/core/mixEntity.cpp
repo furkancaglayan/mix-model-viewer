@@ -1,4 +1,5 @@
 #include "mixEntity.h"
+#include <iostream>
 
 mix::core::mixEntity::mixEntity () : mixEntity ("Entity")
 {

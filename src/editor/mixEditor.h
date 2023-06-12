@@ -17,6 +17,7 @@ namespace mix
 
         static std::unique_ptr<mixEditor> _instance;
         static void create_new (editor_config config);
+        static void destroy ();
         static void initialize_asset_manager (std::string path);
         static void initialize_gui ();
 

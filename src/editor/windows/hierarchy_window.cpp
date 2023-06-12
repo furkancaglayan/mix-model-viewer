@@ -25,10 +25,7 @@ void mix::editor::windows::hierarchy_window::render ()
             auto children = scene->get_lights();
             for (size_t i = 0; i < children.size (); i++)
             {
-                if (!children.at (i).expired ())
-                {
-                    gui_layout::add_selectable (static_cast<i_guielement*> (children.at (i).lock ().get ()));
-                }
+                gui_layout::add_selectable (static_cast<i_guielement*> (children.at (i).get ()));
             }
             gui_layout::render_added_selectables ();
         }

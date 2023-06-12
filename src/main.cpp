@@ -90,8 +90,8 @@ int main ()
     model->set_name ("Gameobject 1");
     model2->add_component (component2);
     model2->set_name ("Gameobject 2");
-    mix::scene_management::mixScene::_instance->get_root ()->add_child (model);
-    mix::scene_management::mixScene::_instance->get_root ()->add_child (model2);
+    mix::scene_management::mixScene::_instance->get_root ()->add_child (std::move(model));
+    mix::scene_management::mixScene::_instance->get_root ()->add_child (std::move (model2));
 
     auto light = std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (0.33, 0.33, 0));
     light->_transform->set_position (vec3 (0, 10, 10));
@@ -102,13 +102,15 @@ int main ()
 
     light->set_name ("Light 1");
     light2->set_name ("Light 2");
-    mix::scene_management::mixScene::_instance->add_light (light2);
-    mix::scene_management::mixScene::_instance->add_light (light);
+    mix::scene_management::mixScene::_instance->add_light (std::move (light2));
+    mix::scene_management::mixScene::_instance->add_light (std::move (light));
     while (mix::mixEditor::_instance->_should_run)
     {
         mix::mixEditor::_instance->run ();
         mix::mixEditor::_instance->render ();
     }
+
+    mix::mixEditor::destroy ();
 }
 
 void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -133,13 +135,13 @@ void key_callback (GLFWwindow* window, int key, int scancode, int action, int mo
 
     if (key == GLFW_KEY_X && action == GLFW_REPEAT)
     {
-        mix::scene_management::mixScene::_instance->get_lights ().at (0).lock ()->set_intensity (
-        mix::scene_management::mixScene::_instance->get_lights ().at (0).lock ()->get_intensity () - 0.1f);
+        mix::scene_management::mixScene::_instance->get_lights ().at (0)->set_intensity (
+        mix::scene_management::mixScene::_instance->get_lights ().at (0)->get_intensity () - 0.1f);
     }
 
     if (key == GLFW_KEY_C && action == GLFW_REPEAT)
     {
-        mix::scene_management::mixScene::_instance->get_lights ().at (0).lock ()->set_intensity (
-        mix::scene_management::mixScene::_instance->get_lights ().at (0).lock ()->get_intensity () + 0.1f);
+        mix::scene_management::mixScene::_instance->get_lights ().at (0)->set_intensity (
+        mix::scene_management::mixScene::_instance->get_lights ().at (0)->get_intensity () + 0.1f);
     }
 }
