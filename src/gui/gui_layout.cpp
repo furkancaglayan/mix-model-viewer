@@ -121,7 +121,18 @@ bool mixImGui::gui_layout::is_double_clicked ()
     return ImGui::IsItemHovered () && ImGui::IsMouseDoubleClicked (0);
 }
 
-void mixImGui::gui_layout::selectable_image (std::string id, const ImVec2& size, unsigned image, bool& pressed, bool& double_clicked)
+bool mixImGui::gui_layout::is_left_clicked ()
+{
+    return ImGui::IsItemHovered () && ImGui::IsMouseClicked (0);
+}
+
+
+bool mixImGui::gui_layout::is_right_clicked ()
+{
+    return ImGui::IsItemHovered () && ImGui::IsMouseClicked (1);
+}
+
+void mixImGui::gui_layout::selectable_image (std::string id, const ImVec2& size, unsigned image, bool& pressed, bool& double_clicked, bool& right_clicked)
     {
     auto block = mixImGui::gui_layout::_layouts.top ().get ();
     block->before_render ();
@@ -136,6 +147,7 @@ void mixImGui::gui_layout::selectable_image (std::string id, const ImVec2& size,
     pressed = ImGui::Selectable ((std::string ("##") + id).c_str (), false,
                                       ImGuiSelectableFlags_DontClosePopups | ImGuiSelectableFlags_AllowDoubleClick, size);
     double_clicked = is_double_clicked ();
+    right_clicked = is_right_clicked ();
     ImGui::PopStyleColor (2);
     ImGui::SetCursorPos (cursor);
     {
@@ -228,6 +240,17 @@ bool mixImGui::gui_layout::image_button (const std::string& str_id,
     block->after_render ();
     return result;
 }
+
+void mixImGui::gui_layout::begin_context_menu (const std::string& id)
+{
+    ImGui::OpenPopup (id.c_str ());
+}
+
+void mixImGui::gui_layout::end_context_menu ()
+{
+    ImGui::EndPopup ();
+}
+
 
 ImVec2 mixImGui::gui_layout::get_cursor ()
 {

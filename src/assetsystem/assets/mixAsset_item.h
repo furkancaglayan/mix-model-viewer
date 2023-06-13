@@ -26,17 +26,7 @@ namespace mix
                 return _path.get_name_without_extension ();
             }
 
-            virtual const std::string get_shortened_name () const
-            {
-                std::string name = get_full_name ();
-                if (name.size() > 8)
-                {
-                    name = name.substr (0, 8);
-                    name.append ("...");
-                }
-
-                return name;
-            }
+            virtual const std::string get_shortened_name () const;
 
             virtual inline const std::string& get_full_name () const
             {

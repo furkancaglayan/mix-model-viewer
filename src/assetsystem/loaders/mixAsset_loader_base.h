@@ -16,68 +16,16 @@ namespace mix
         using namespace mix::library;
         using namespace mix::assetsystem;
 
-        /// <summary>
-        /// Support multiple extensions
-        /// </summary>
-        /* class asset_postprocess_event_callback
-        {
-            using proc_call = event_callback_args<asset_processor, mixAsset_item>;
-
-            public:
-
-            asset_postprocess_event_callback (asset_processor* processor)
-            {
-                _callback = std::unique_ptr<proc_call> (proc_call::create_callback (processor, &asset_processor::post_process));
-            }
-
-            void operator() (mixAsset_item* asset)
-            {
-                _callback->operator() (asset);
-            }
-
-            private:
-
-            std::unique_ptr<event_callback_args<asset_processor, mixAsset_item>> _callback;
-        };*/
-
         class mixAsset_loader_base
         {
 
             public:
 
+            mixAsset_loader_base ();
+            mixAsset_loader_base (mix::assetsystem::asset_processor* processor);
 
-            mixAsset_loader_base ()
-            {
-                _postprocess_item_event = std::make_unique<mix::library::event<mixAsset_item>> ();
-            }
-
-            mixAsset_loader_base (mix::assetsystem::asset_processor* processor)
-            {
-                _postprocess_item_event = std::make_unique<mix::library::event<mixAsset_item>> ();
-                set_asset_processor (processor);
-            }
-
-            inline mixAsset_item* resolve (mix::platform::mixFile& file)
-            {
-                auto item = resolve_impl (file);
-                _postprocess_item_event->dispatch (item);
-                return item;
-            }
-
-            void set_asset_processor (mix::assetsystem::asset_processor* processor)
-            {
-                if (_asset_processor != nullptr)
-                {
-                    _asset_processor.reset ();
-                }
-
-                _asset_processor = std::unique_ptr<mix::assetsystem::asset_processor> (processor);
-                //TODO: FiX remove behabior
-                auto callback = 
-                event_callback_args<asset_processor, mixAsset_item>::create_callback (_asset_processor.get (),
-                                                                                      &mix::assetsystem::asset_processor::post_process);
-                _postprocess_item_event->add_listener (callback);
-            }
+            mixAsset_item* resolve (mix::platform::mixFile& file);
+            void set_asset_processor (mix::assetsystem::asset_processor* processor);
 
             protected:
 

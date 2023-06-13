@@ -60,7 +60,8 @@ namespace mixImGui
 
         static void begin_selectable_list (i_guielement* previously_selected);
         static i_guielement* end_selectable_list ();
-        static void selectable_image (std::string id,  const ImVec2& size, unsigned image, bool& pressed, bool& double_clicked);
+        static void
+        selectable_image (std::string id, const ImVec2& size, unsigned image, bool& pressed, bool& double_clicked, bool& right_clicked);
         static void render_added_selectables ();
         static void add_selectable (i_guielement* element);
 
@@ -96,6 +97,13 @@ namespace mixImGui
                                   const ImVec4& tint_col = ImVec4 (0, 0, 0, 0));
 
         static bool is_double_clicked ();
+        static bool is_left_clicked ();
+        static bool is_right_clicked ();
+
+
+        static void begin_context_menu (const std::string& id);
+        static void end_context_menu ();
+
         static ImVec2 get_cursor ();
         template <class T> static T* get_top_block ()
         {

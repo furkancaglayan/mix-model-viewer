@@ -30,8 +30,6 @@ namespace mix
                 vec3 get_color () const;
                 void set_color (vec3 color);
 
-           
-             
                 private:
 
                 light_type _type;

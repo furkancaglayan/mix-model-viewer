@@ -49,12 +49,6 @@ namespace mix
             const mix::shader::shader_type get_shader_type () const;
             const unsigned get_shader_id () const;
 
-         
-
-            //void set2fv (const std::string& s, vec2 v);
-            //void set3fv (const std::string& s, vec3 v);
-            //void set4fv (const std::string& s, vec4 v);
-
             private:
 
             const mix::shader::shader_type _type;

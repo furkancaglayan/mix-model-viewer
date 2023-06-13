@@ -124,7 +124,8 @@ void mixImGui::mixGui::end ()
 
 void mixImGui::mixGui::show_style_editor (ImGuiStyle& style)
 {
-    ImGui::ShowStyleEditor (&style);
+    bool a = true;
+    ImGui::ShowDemoWindow (&a);
 }
 
 void mixImGui::mixGui::add_font (mix::assetsystem::mixFont* font, float size, bool set_default)

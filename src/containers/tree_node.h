@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "../algorithms/binary_search.h"
 #include "../assetsystem/assets/mixAsset_item.h"
 #include "../core/mixGuid.h"
 #include <algorithm>
@@ -12,19 +11,16 @@ namespace mix
 {
     namespace containers
     {
-        using mix::algorithms::search;
-
         class tree_node
         {
             public:
 
             tree_node (mix::core::mixGuid key, std::shared_ptr<mix::assetsystem::mixAsset_item> value, tree_node* parent)
-            : _key{ key }, _value{ std::move (value) }, _parent { parent }
+            : _key{ key }, _value{ std::move (value) }, _parent{ parent }
             {
             }
 
-            tree_node* insert (const mix::core::mixGuid& key,
-                               std::shared_ptr<mix::assetsystem::mixAsset_item> child);
+            tree_node* insert (const mix::core::mixGuid& key, std::shared_ptr<mix::assetsystem::mixAsset_item> child);
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_guid (const mix::core::mixGuid& key) const;
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_base_name (const std::string& name) const;
             std::shared_ptr<mix::assetsystem::mixAsset_item> search_with_full_name (const std::string& name) const;

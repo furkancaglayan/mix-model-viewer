@@ -16,5 +16,5 @@ namespace mix
                 return new mix::assetsystem::mixTexture (file.get_path (), type);
             }
         } // namespace loaders
-    }         // namespace assetsystem
+    }     // namespace assetsystem
 } // namespace mix

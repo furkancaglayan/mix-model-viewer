@@ -1,6 +1,6 @@
 #pragma once
-#include "../math/mat.h"
 #include "../math/constants.h"
+#include "../math/mat.h"
 #include <memory>
 #include <string>
 
@@ -36,7 +36,7 @@ namespace mix
             void set_scale (vec3 v);
             void translate (vec3 v);
             void scale (vec3 v);
-            //void rotate (vec3 v);
+            // void rotate (vec3 v);
             void rotate_around (float x, float y, float z);
             void update ();
 
@@ -57,7 +57,7 @@ namespace mix
                 return _right;
             }
 
-             inline float yaw () const
+            inline float yaw () const
             {
                 return _rotation.x;
             }
@@ -76,7 +76,7 @@ namespace mix
             {
                 return _position;
             }
-            
+
             inline vec3 get_local_position () const
             {
                 return _local_position;
@@ -98,7 +98,7 @@ namespace mix
 
             vec3 _position;
             vec3 _local_position;
-            //yaw, pitch, roll
+            // yaw, pitch, roll
             vec3 _rotation;
             vec3 _scale;
 
@@ -108,5 +108,6 @@ namespace mix
 
             bool _is_dirty;
         };
-    } // namespace components
+    } // namespace core
 } // namespace mix
+m 

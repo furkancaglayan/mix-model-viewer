@@ -58,9 +58,9 @@ void mix::editor::windows::project_window::render ()
                     auto folder = static_cast<const mix::assetsystem::mixAsset_folder*> (it->get_value ());
 
                     {
-                        bool pressed, double_clicked;
+                        bool pressed, double_clicked, right_clicked;
                         auto icon = it->has_children () ? _folder_icon->get_id () : _empty_folder_icon->get_id ();
-                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon, pressed, double_clicked);
+                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon, pressed, double_clicked, right_clicked);
                         if (pressed)
                         {
                             _selected_folder = (mix::assetsystem::mixAsset_folder*) folder;
@@ -69,6 +69,9 @@ void mix::editor::windows::project_window::render ()
                             {
                                 _root_node = it.get ();
                             }
+                        }
+                        else if (right_clicked)
+                        {
                         }
 
 
@@ -81,8 +84,9 @@ void mix::editor::windows::project_window::render ()
 
                     {
                         auto icon = mix::assetsystem::default_assets::get_asset_default_icon (file->get_extension ());
-                        bool pressed, double_clicked;
-                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon->get_id (), pressed, double_clicked);
+                        bool pressed, double_clicked, right_clicked;
+                        gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon->get_id (), pressed,
+                                                      double_clicked, right_clicked);
                         gui_layout::text_label (file->get_shortened_name ());
                     }
                 }
