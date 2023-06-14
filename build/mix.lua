@@ -1,6 +1,6 @@
 -- premake5.lua
 workspace "Mix"
-   configurations { "Debug", "Release" }
+   configurations { "Debug", "Release", "Shipping" }
    language "C++"
    cppdialect "C++14"
    architecture "x86_64"
@@ -24,11 +24,14 @@ project "mix-model-viewer"
    language "C++"
    cppdialect "C++14"
    targetdir "../bin/%{cfg.buildcfg}"
-   objdir "%{wks.location}/obj/%{cfg.buildcfg}"
+   objdir "%{wks.location}/obj"
    location "%{wks.location}/%{prj.name}"
 
    files { 
       "../src/**"
+   }
+   removefiles{
+       "../src/test/**"
    }
 
     
@@ -124,15 +127,11 @@ project "mix-model-viewer"
          }
 
       -- Copy GLFW3 and GLEW DLLs to output directory for Windows
-      filter { "system:windows", "configurations:Debug" }
+      filter { "system:windows", "configurations:*" }
          postbuildcommands {
             "xcopy /y /d \"%{wks.location}\\..\\..\\dependencies\\glew\\bin\\%{cfg.buildcfg}\\glew32.dll\" \"%{wks.location}\\..\\..\\bin\\%{cfg.buildcfg}\"",
          }
 
-      filter { "system:windows", "configurations:Release" }
-         postbuildcommands {
-            "xcopy /y /d \"%{wks.location}\\..\\..\\dependencies\\glew\\bin\\%{cfg.buildcfg}\\glew32.dll\" \"%{wks.location}\\..\\..\\bin\\%{cfg.buildcfg}\"",
-         }
    filter "configurations:Debug"
       defines { "DEBUG" }
       runtime "Debug"
@@ -142,6 +141,49 @@ project "mix-model-viewer"
       defines { "NDEBUG" }
       runtime "Release"
       optimize "On"
+
+   filter "configurations:Shipping"
+      defines { "NDEBUG" }
+      runtime "Release"
+      optimize "On"
+filter{}
+project "mix-model-viewer-test"
+   kind "ConsoleApp"
+   language "C++"
+   cppdialect "C++14"
+   targetdir "../bin/%{cfg.buildcfg}"
+   objdir "%{wks.location}/obj"
+   location "%{wks.location}/%{prj.name}"
+
+   files { 
+      "../src/test/**"
+   }
+
+    
+   includedirs {
    
+       "../dependencies/googletest/googletest/include"
+   }
+
+   links {
+       "googletest"
+   }
+
+   staticruntime "on"
+   filter "configurations:Debug"
+      defines { "DEBUG" }
+      runtime "Debug"
+      symbols "On"
+
+   filter "configurations:Release"
+      defines { "NDEBUG" }
+      runtime "Release"
+      optimize "On"
+
+   filter "configurations:Shipping"
+      defines { "NDEBUG" }
+      runtime "Release"
+      optimize "On"
+
 group "external"
 include "../dependencies/dependencies.lua"

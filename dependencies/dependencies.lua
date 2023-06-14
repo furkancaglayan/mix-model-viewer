@@ -66,4 +66,46 @@ project "imgui"
  filter "configurations:Release"
     optimize "On"
 
+
+project "googletest"
+   kind "StaticLib"
+   language "C++"
+   cppdialect "C++14"
+   location ("%{wks.location}/external/%{prj.name}")
+   targetdir "%{wks.location}/../../bin/%{cfg.buildcfg}"
+
+   includedirs { 
+        "googletest/googletest/include",
+        "googletest/googletest/",
+   }
+
+   -- imgui-specific settings
+   files { 
+      "googletest/googletest/**.h",
+      "googletest/googletest/**.hpp",
+      "googletest/googletest/src/gtest-all.cc"
+   }
+
+
+	filter "system:windows"
+      systemversion "latest"
+	  staticruntime "On"
+
+	
+    filter "system:windows"
+      systemversion "latest"
+	  staticruntime "On"
+
+    filter "system:linux"
+      pic "On"
+      systemversion "latest"
+      staticruntime "On"
+
+      -- Define the configurations
+    filter "configurations:Debug"
+    symbols "On"
+ filter "configurations:Release"
+    optimize "On"
+
+
    filter {}
