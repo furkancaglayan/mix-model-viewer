@@ -1,6 +1,7 @@
 #include "mixWindow.h"
 #include <iostream>
 #include <stdio.h>
+#include "../library/debug.h"
 
 int mix::core::mixWindow::get_key (int key) noexcept
 {
@@ -93,8 +94,10 @@ inline void mix::core::mixWindow::close () noexcept
     glfwDestroyWindow (_glfw_window);
 }
 
-void mix::core::mixWindow::initialize (vec2i size) noexcept
+bool mix::core::mixWindow::initialize (vec2i size) noexcept
 {
+    auto result = true;
+
     std::cout << "Creating Window" << std::endl;
     glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, _context_version_max);
     glfwWindowHint (GLFW_CONTEXT_VERSION_MINOR, _context_version_min);
@@ -110,7 +113,8 @@ void mix::core::mixWindow::initialize (vec2i size) noexcept
     if (!_glfw_window)
     {
         glfwTerminate ();
-        printf ("Failed to create a window");
+        result = false;
+        FAILED_ASSERT ("Failed to initialize a window. Check if glfw was initialized!");
     }
 
     vec2i frame_xy;
@@ -120,4 +124,5 @@ void mix::core::mixWindow::initialize (vec2i size) noexcept
 
     glfwSetWindowMonitor (_glfw_window, NULL, _x, _y, _width, _height, 0);
     glfwMakeContextCurrent (_glfw_window);
+    return result;
 }

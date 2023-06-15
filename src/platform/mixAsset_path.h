@@ -1,6 +1,5 @@
 #pragma once
 #include "typedefs.h"
-#include "windows/platform_utils.h"
 #include <algorithm>
 #include <memory>
 #include <sstream>

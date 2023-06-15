@@ -2,7 +2,6 @@
 #include "../math/constants.h"
 #include "../math/mat.h"
 #include "../math/vec.h"
-#include "../platform/typedefs.h"
 #include "components/mixComponent.h"
 #include "../gui/i_guielement.h"
 #include "../gui/gui_layout.h"

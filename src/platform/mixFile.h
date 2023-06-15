@@ -7,6 +7,7 @@
 #include <string>
 #include "../assetsystem/assets/mixAsset_item.h"
 #include "../assetsystem/asset_types.h"
+#include "windows/platform_utils.h"
 
 namespace mix
 {

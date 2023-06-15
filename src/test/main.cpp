@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "window/window_test.h"
 
 int main (int argc, char** argv)
 {

@@ -24,7 +24,7 @@ namespace mix
             {
                 std::vector<std::string> files;
                 char p[max_len];
-                sprintf (p, "%s\\*", path.c_str ());
+                sprintf_s (p, "%s\\*", path.c_str ());
                 std::wstring ws = convert_utf8_to_wide (p);
 
                 WIN32_FIND_DATA data;
@@ -60,7 +60,7 @@ namespace mix
             static void get_all_dfs (const std::string& root, std::vector<std::string>& list)
             {
                 char p[max_len];
-                sprintf (p, "%s\\*", root.c_str ());
+                sprintf_s (p, "%s\\*", root.c_str ());
                 std::wstring ws = convert_utf8_to_wide (p);
 
                 WIN32_FIND_DATA data;

@@ -2,7 +2,7 @@
 #include "../platform/typedefs.h"
 #include <cstdint>
 #include "../math/vec.h"
-
+#include <string>
 namespace mix
 {
 	namespace core
@@ -15,7 +15,7 @@ namespace mix
 			mixWindow ();
 			~mixWindow();
 
-			void initialize (vec2i size) noexcept;
+			bool initialize (vec2i size) noexcept;
 			inline void close() noexcept;
 			int get_key(int key) noexcept;
 

@@ -1,6 +1,4 @@
-
 #include "editor/mixEditor.h"
-#include "platform/typedefs.h"
 
 #include <iostream>
 #include <memory>
@@ -14,14 +12,14 @@
 #include "core/components/mixMesh_component.h"
 #include "assetsystem/loaders/mixAsset_loader_texture.h"
 
-
-int main ();
+#include "library/debug.h"
 
 void key_callback (GLFWwindow* window, int key, int scancode, int action, int mods);
 
 int main ()
 {
     GLenum err;
+    LOG ("Initializing GLFW");
     if (!glfwInit ())
     {
         std::cout << "GLFW INIT ERROR!";
