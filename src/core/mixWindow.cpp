@@ -112,6 +112,7 @@ void mix::core::mixWindow::close () noexcept
 
 bool mix::core::mixWindow::initialize (vec2i size) noexcept
 {
+    INFO (mix::core::mixWindow::initialize);
     auto result = true;
 
     std::cout << "Creating Window" << std::endl;
