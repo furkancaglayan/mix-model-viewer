@@ -16,11 +16,14 @@ namespace mix
 			~mixWindow();
 
 			bool initialize (vec2i size) noexcept;
-			inline void close() noexcept;
+			void close() noexcept;
 			int get_key(int key) noexcept;
 
-			vec2 get_window_size () const;
+			vec2i get_window_size () const;
             void set_window_size (const vec2i& size) const;
+            vec2i get_window_position () const;
+            void set_window_position (const vec2i& size) const;
+
             void get_frame_rect (vec2i& xy, vec2i zw) const;
             void set_aspect_ratio (int w, int h) const;
             void set_icon (GLFWimage* images, int count);

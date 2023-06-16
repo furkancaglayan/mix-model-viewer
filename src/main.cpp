@@ -19,10 +19,10 @@ void key_callback (GLFWwindow* window, int key, int scancode, int action, int mo
 int main ()
 {
     GLenum err;
-    LOG ("Initializing GLFW");
+    DEBUG_LOG ("Initializing GLFW");
     if (!glfwInit ())
     {
-        std::cout << "GLFW INIT ERROR!";
+        FAILED_ASSERT ("GLFW initialization error!");
     }
 
     mix::editor_config config = mix::editor_config ();
@@ -30,7 +30,8 @@ int main ()
 
     if ((err = glewInit ()) != GLEW_OK)
     {
-        std::cout << glewGetErrorString (err) << std::endl;
+        DEBUG_LOG (glewGetErrorString (err));
+        FAILED_ASSERT ("GLEW initialization error!");
     }
     glewExperimental = true;
     mix::mixEditor::_instance->init_render_buffers ();

@@ -1,5 +1,6 @@
 #include "mixTexture.h"
 #include <stb_image.h>
+#include "../../library/debug.h"
 
 mix::assetsystem::mixTexture::mixTexture (const mix::platform::mixAsset_path& path, texture::texture_type type)
 : _id{ 0 }, _type{ type }, mixAsset_item (path)
@@ -71,7 +72,7 @@ void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_pat
     }
     else
     {
-        std::cout << "Failed to load texture" << std::endl;
+        LOG_ERROR ("Failed to load texture at: " + path.get_name());
     }
     stbi_image_free (data);
 }

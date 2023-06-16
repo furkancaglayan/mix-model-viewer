@@ -2,6 +2,7 @@
 #include <cassert>
 #include <iostream>
 #include "windows/project_window.h"
+#include "../library/debug.h"
 
 std::unique_ptr<mix::mixEditor> mix::mixEditor::_instance = nullptr;
 void window_pos_callback (GLFWwindow* window, int xpos, int ypos);
@@ -25,6 +26,7 @@ mix::mixEditor::mixEditor () : _active_scene{ std::make_unique<mix::scene_manage
 
 void mix::mixEditor::create_new (editor_config config)
 {
+    INFO (mix::mixEditor::create_new);
     mix::mixEditor::_instance = std::make_unique<mix::mixEditor> ();
     mix::mixEditor::_instance->start (config);
 }

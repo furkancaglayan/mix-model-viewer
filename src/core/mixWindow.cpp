@@ -8,7 +8,7 @@ int mix::core::mixWindow::get_key (int key) noexcept
     return glfwGetKey (_glfw_window, key);
 }
 
-vec2 mix::core::mixWindow::get_window_size () const
+vec2i mix::core::mixWindow::get_window_size () const
 {
     vec2i s;
     glfwGetWindowSize (_glfw_window, &s.x, &s.y);
@@ -18,6 +18,18 @@ vec2 mix::core::mixWindow::get_window_size () const
 void mix::core::mixWindow::set_window_size (const vec2i& size) const
 {
     glfwSetWindowSize (_glfw_window, size.x, size.y);
+}
+
+vec2i mix::core::mixWindow::get_window_position () const
+{
+    vec2i s;
+    glfwGetWindowPos (_glfw_window, &s.x, &s.y);
+    return s;
+}
+
+void mix::core::mixWindow::set_window_position (const vec2i& size) const
+{
+    glfwSetWindowPos (_glfw_window, size.x, size.y);
 }
 
 void mix::core::mixWindow::get_frame_rect (vec2i& xy, vec2i zw) const
@@ -86,12 +98,16 @@ mix::core::mixWindow::mixWindow ()
 
 mix::core::mixWindow::~mixWindow ()
 {
-    glfwDestroyWindow (_glfw_window);
+    if (_glfw_window != nullptr)
+    {
+        close ();
+    }
 }
 
-inline void mix::core::mixWindow::close () noexcept
+void mix::core::mixWindow::close () noexcept
 {
     glfwDestroyWindow (_glfw_window);
+    _glfw_window = nullptr;
 }
 
 bool mix::core::mixWindow::initialize (vec2i size) noexcept
