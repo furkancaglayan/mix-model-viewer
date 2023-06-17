@@ -1,6 +1,7 @@
 #pragma once
 #include <cassert>
 #include <memory>
+
 namespace mix
 {
     namespace library
@@ -19,7 +20,6 @@ namespace mix
             virtual void operator() (T* t) = 0;
             void operator() () override
             {
-                assert (false);
             }
         };
     } // namespace library

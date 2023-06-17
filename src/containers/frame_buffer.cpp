@@ -1,4 +1,5 @@
 #include "frame_buffer.h"
+#include "../library/debug.h"
 
 mix::containers::frame_buffer::frame_buffer (int w, int h)
 {
@@ -61,7 +62,7 @@ void mix::containers::frame_buffer::initialize (int w, int h)
 
     if (glCheckFramebufferStatus (GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
     {
-        std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
+        LOG_ERROR ("Framebuffer is not complete!");
     }
     glBindFramebuffer (GL_FRAMEBUFFER, 0);
     glBindTexture (GL_TEXTURE_2D, 0);

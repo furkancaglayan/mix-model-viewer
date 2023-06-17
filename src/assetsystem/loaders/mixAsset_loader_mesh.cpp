@@ -22,7 +22,6 @@ namespace mix
                 std::ifstream in (static_cast<const char*> (path), std::ios::in);
                 if (!in)
                 {
-                    // assert
                     return nullptr;
                 }
 

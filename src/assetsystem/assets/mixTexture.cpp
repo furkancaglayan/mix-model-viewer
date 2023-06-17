@@ -33,7 +33,7 @@ void mix::assetsystem::mixTexture::bind () const
 
 void mix::assetsystem::mixTexture::change_type (mix::texture::texture_type t)
 {
-    assert (t != _type);
+    ASSERT (t != _type);
     glDeleteTextures (1, &_id);
     _type = t;
     initialize (_path, _format);
@@ -41,7 +41,7 @@ void mix::assetsystem::mixTexture::change_type (mix::texture::texture_type t)
 
 void mix::assetsystem::mixTexture::set_format (mix::texture::texture_format format)
 {
-    assert (format != _format);
+    ASSERT (format != _format);
     glDeleteTextures (1, &_id);
     _format = format;
     initialize (_path, _format);

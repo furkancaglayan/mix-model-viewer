@@ -115,7 +115,6 @@ bool mix::core::mixWindow::initialize (vec2i size) noexcept
     INFO (mix::core::mixWindow::initialize);
     auto result = true;
 
-    std::cout << "Creating Window" << std::endl;
     glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, _context_version_max);
     glfwWindowHint (GLFW_CONTEXT_VERSION_MINOR, _context_version_min);
     glfwWindowHint (GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -125,7 +124,6 @@ bool mix::core::mixWindow::initialize (vec2i size) noexcept
     _width = size.x;
     _height = size.y;
   
-    
     _glfw_window = glfwCreateWindow (_width, _height, "GLFW: Window created", NULL, NULL);
     if (!_glfw_window)
     {
