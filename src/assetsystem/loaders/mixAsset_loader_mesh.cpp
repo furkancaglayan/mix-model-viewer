@@ -1,5 +1,5 @@
 #include "mixAsset_loader_mesh.h"
-
+#include "../../library/debug.h"
 namespace mix
 {
     namespace assetsystem
@@ -22,6 +22,7 @@ namespace mix
                 std::ifstream in (static_cast<const char*> (path), std::ios::in);
                 if (!in)
                 {
+                    FAILED_ASSERT ("Can't find path: " + path.get_name());
                     return nullptr;
                 }
 

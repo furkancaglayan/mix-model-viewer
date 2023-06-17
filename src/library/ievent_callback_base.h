@@ -1,6 +1,7 @@
 #pragma once
 #include <cassert>
 #include <memory>
+#include "debug.h"
 
 namespace mix
 {
@@ -20,6 +21,7 @@ namespace mix
             virtual void operator() (T* t) = 0;
             void operator() () override
             {
+                FAILED_ASSERT ("Should not use this.");
             }
         };
     } // namespace library

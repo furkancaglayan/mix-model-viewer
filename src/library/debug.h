@@ -1,5 +1,4 @@
 #pragma once
-#include "ievent_callback_base.h"
 #include <vector>
 #include <chrono>
 #include <string>
@@ -29,6 +28,7 @@ namespace mix
 
             static void _failed_assert ();
             static void _failed_assert (const char* msg);
+            static void _failed_assert (std::string msg);
             static void _assert (bool cond);
             static void _assert (bool cond, const char* msg);
             static void _break ();

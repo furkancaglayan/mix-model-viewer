@@ -12,6 +12,11 @@ void mix::library::debug::_failed_assert (const char* msg)
     _assert (false, msg);
 }
 
+void mix::library::debug::_failed_assert (std::string msg)
+{
+    _assert (false, msg.c_str());
+}
+
 void mix::library::debug::_assert (bool cond)
 {
     if (!cond)
