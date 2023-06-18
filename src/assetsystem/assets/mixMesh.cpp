@@ -69,5 +69,6 @@ void mix::assetsystem::mixMesh::initialize_mesh ()
     // vertex bitangents
     glEnableVertexAttribArray (4);
     glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, sizeof (vertex), (void*) offsetof (vertex, _bitangent));
+
     glBindVertexArray (0);
 }

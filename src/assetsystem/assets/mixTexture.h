@@ -93,6 +93,7 @@ namespace mix
 
             void initialize (const mix::platform::mixAsset_path& path, mix::texture::texture_format format);
             unsigned _id;
+            unsigned char* _data;
             texture::texture_type _type{ texture::texture_type::diffuse };
             texture::texture_wrapping _wrapping{ texture::texture_wrapping ::repeat };
             texture::texture_filtering _filtering{ texture::texture_filtering ::nearest };

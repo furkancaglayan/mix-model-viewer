@@ -35,6 +35,10 @@ void mix::core::mixTransform::scale (vec3 v)
 {
 }
 
+void mix::core::mixTransform::look_at (const vec3& pos)
+{
+}
+
 
 void mix::core::mixTransform::rotate_around (float x, float y, float z)
 {

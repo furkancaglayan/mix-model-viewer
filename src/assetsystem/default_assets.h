@@ -15,7 +15,7 @@ namespace mix
 
             public:
 
-            const static mix::assetsystem::mixTexture* get_asset_default_icon (const std::string& ext);
+            const static mix::assetsystem::mixTexture* get_asset_default_icon (const mix::assetsystem::mixAsset_item* item);
 
             private:
         };

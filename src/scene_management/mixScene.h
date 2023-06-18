@@ -21,15 +21,16 @@ namespace mix
             void update ();
             void render (mix::rendering::rendering_context* rendering);
             void set_parameters (mix::rendering::rendering_context* rendering) const;
-            void add_light (std::shared_ptr<mix::core::light::mixLight> l);
+            void add_entity (const std::shared_ptr<mix::core::mixEntity>& entity);
+
             mix::core::mixCamera* get_main_cam () const;
             mix::core::mixEntity* get_root () const;
-            std::vector<std::shared_ptr<mix::core::light::mixLight>> get_lights () const;
+            std::vector<std::weak_ptr<mix::core::light::mixLight>> get_lights () const;
 
             private:
 
+            std::vector<std::weak_ptr<mix::core::light::mixLight>> _lights;
             std::shared_ptr<mix::core::mixCamera> _active_cam;
-            std::vector<std::shared_ptr<mix::core::light::mixLight>> _lights;
             std::unique_ptr<mix::core::mixEntity> _root;
 
         };

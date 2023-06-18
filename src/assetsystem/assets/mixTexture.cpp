@@ -1,15 +1,18 @@
 #include "mixTexture.h"
-#include <stb_image.h>
 #include "../../library/debug.h"
+#include <stb_image.h>
 
 mix::assetsystem::mixTexture::mixTexture (const mix::platform::mixAsset_path& path, texture::texture_type type)
 : _id{ 0 }, _type{ type }, mixAsset_item (path)
 {
+    _data = nullptr;
     initialize (path, mix::texture::texture_format::rgb);
 }
 
 mix::assetsystem::mixTexture::~mixTexture ()
 {
+    stbi_image_free (_data);
+    _data = nullptr;
     glDeleteTextures (1, &_id);
 }
 
@@ -54,7 +57,7 @@ unsigned mix::assetsystem::mixTexture::get_id () const
 
 void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_path& path, mix::texture::texture_format format)
 {
-    //TODO: move this to config or something like that
+    // TODO: move this to config or something like that
     stbi_set_flip_vertically_on_load (true);
     glGenTextures (1, &_id);
     bind ();
@@ -63,16 +66,22 @@ void mix::assetsystem::mixTexture::initialize (const mix::platform::mixAsset_pat
     set_filtering (mix::texture::texture_filtering::nearest, mix::texture::texture_filtering::nearest);
     // load and generate the texture
     int width, height, nrChannels;
-    unsigned char* data = stbi_load (path.to_cstr (), &width, &height, &nrChannels, static_cast<int> (format));
-    if (data)
+    if (_data != nullptr)
+    {
+        stbi_image_free (_data);
+        _data = nullptr;
+    }
+    _data = stbi_load (path.to_cstr (), &width, &height, &nrChannels, 0);
+    if (_data)
     {
         unsigned f = nrChannels == 4 ? GL_RGBA : GL_RGB;
-        glTexImage2D (GL_TEXTURE_2D, 0, f, width, height, 0, f, GL_UNSIGNED_BYTE, data);
+        // ASSERT ((format != mix::texture::texture_format::rgb || nrChannels == 3) &&
+        //       (format != mix::texture::texture_format::rgb_alpha || nrChannels == 4));
+        glTexImage2D (GL_TEXTURE_2D, 0, f, width, height, 0, f, GL_UNSIGNED_BYTE, _data);
         glGenerateMipmap (GL_TEXTURE_2D);
     }
     else
     {
-        LOG_ERROR ("Failed to load texture at: " + path.get_name());
+        LOG_ERROR ("Failed to load texture at: " + path.get_name ());
     }
-    stbi_image_free (data);
 }

@@ -40,8 +40,9 @@ void mix::core::mixCamera::debug_input (vec3 v)
     _transform->translate (v * 0.015f);
 }
 
-void mix::core::mixCamera::look_at (const vec3 pos)
+void mix::core::mixCamera::look_at (const vec3& pos)
 {
+    _transform->look_at (pos);
 }
 
 void mix::core::mixCamera::on_gui ()

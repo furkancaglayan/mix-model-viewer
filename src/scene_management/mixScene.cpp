@@ -52,9 +52,14 @@ void mix::scene_management::mixScene::set_parameters (mix::rendering::rendering_
     }
 }
 
-void mix::scene_management::mixScene::add_light (std::shared_ptr<mix::core::light::mixLight> l)
+void mix::scene_management::mixScene::add_entity (const std::shared_ptr<mix::core::mixEntity>& entity)
 {
-    _lights.push_back (l);
+    get_root ()->add_child (entity);
+    if (auto light = std::dynamic_pointer_cast<mix::core::light::mixLight> (entity))
+    {
+        _lights.push_back (light);
+    }
+
 }
 
 mix::core::mixCamera* mix::scene_management::mixScene::get_main_cam () const
@@ -67,7 +72,7 @@ mix::core::mixEntity* mix::scene_management::mixScene::get_root () const
     return _root.get();
 }
 
-std::vector<std::shared_ptr<mix::core::light::mixLight>> mix::scene_management::mixScene::get_lights () const
+std::vector<std::weak_ptr<mix::core::light::mixLight>> mix::scene_management::mixScene::get_lights () const
 {
     return _lights;
 }

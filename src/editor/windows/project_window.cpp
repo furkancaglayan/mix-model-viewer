@@ -29,7 +29,6 @@ void mix::editor::windows::project_window::render ()
         assert (_root_node);
 
         auto node = _root_node;
-        gui_layout::begin_horizontal ();
         std::vector<mix::assetsystem::asset_tree_ptr> vec{};
 
         while (!node->is_root ())
@@ -39,13 +38,20 @@ void mix::editor::windows::project_window::render ()
             node = (mix::assetsystem::asset_tree_ptr) node->get_parent ();
         }
         vec.push_back (assets_node);
+        auto p_sz = get_size ();
 
+        color bg = color ();
+        gui_layout::set_background_color (bg);
+        gui_layout::begin_child ("Project", ImVec2 ((float) p_sz.x, 40), false, static_cast<int>(get_flags()));
+        gui_layout::begin_horizontal ();
         for (int i = (int) vec.size () - 1; i >= 0; i--)
         {
             gui_layout::text_label (vec.at (i)->get_value ()->get_full_name ());
         }
 
         gui_layout::end_horizontal ();
+        gui_layout::end_child ();
+        gui_layout::pop_style_vars ();
 
         gui_layout::begin_horizontal ();
         {
@@ -83,7 +89,7 @@ void mix::editor::windows::project_window::render ()
                     auto file = it->get_value ();
 
                     {
-                        auto icon = mix::assetsystem::default_assets::get_asset_default_icon (file->get_extension ());
+                        auto icon = mix::assetsystem::default_assets::get_asset_default_icon (file);
                         bool pressed, double_clicked, right_clicked;
                         gui_layout::selectable_image (it->get_key (), ImVec2 (64, 64), icon->get_id (), pressed,
                                                       double_clicked, right_clicked);

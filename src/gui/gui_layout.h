@@ -8,6 +8,7 @@
 #include <stack>
 #include <string>
 #include <vector>
+#include "../math/color.h"
 
 namespace mixImGui
 {
@@ -103,6 +104,23 @@ namespace mixImGui
 
         static void begin_context_menu (const std::string& id);
         static void end_context_menu ();
+
+        //Tree Nodes
+        static bool tree_node (const char* label, int index, bool is_selected = false, bool is_framed = false, bool is_leaf = false);
+        static bool tree_node (const char* label);
+        static void tree_pop ();
+       
+        //Drag&Drop
+        static bool begin_drag_drop_source ();
+        static void end_drag_drop_source ();
+        static bool set_drag_drop_payload (const char* label, const void* data, size_t size);
+
+        static bool begin_drag_drop_target ();
+        static void end_drag_drop_target ();
+        static void* accept_drag_drop_payload (const char* label);
+
+        static void set_background_color (mix::math::color& color);
+        static void pop_style_vars ();
 
         static ImVec2 get_cursor ();
         template <class T> static T* get_top_block ()

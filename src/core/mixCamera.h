@@ -28,7 +28,7 @@ namespace mix
             void update () override;
             void debug_input (vec3 v);
 
-            void look_at (const vec3 pos);
+            void look_at (const vec3& pos);
 
             virtual void on_gui () override;
             private:

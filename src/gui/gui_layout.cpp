@@ -171,7 +171,7 @@ void mixImGui::gui_layout::render_added_selectables ()
     for (i = start_index; i < block->_selectables.size (); i++)
     {
         auto element = block->_selectables.at (i);
-        gui_layout::horizontal_space (20);
+        //gui_layout::horizontal_space (20);
         bool selected = element == block->_selected;
 
         if (gui_layout::selectable_text (element->get_gui_name (), selected))
@@ -249,6 +249,85 @@ void mixImGui::gui_layout::begin_context_menu (const std::string& id)
 void mixImGui::gui_layout::end_context_menu ()
 {
     ImGui::EndPopup ();
+}
+
+bool mixImGui::gui_layout::tree_node (const char* label, int index, bool is_selected, bool is_framed, bool is_leaf)
+{
+    ImGuiTreeNodeFlags flags = ImGuiTreeNodeFlags_SpanAvailWidth | ImGuiTreeNodeFlags_OpenOnArrow;
+
+    if (is_selected)
+    {
+        flags |= ImGuiTreeNodeFlags_Selected;
+    }
+
+    if (is_framed)
+    {
+        flags |= ImGuiTreeNodeFlags_Framed | ImGuiTreeNodeFlags_CollapsingHeader;
+    }
+
+    if (is_leaf)
+    {
+        flags |= ImGuiTreeNodeFlags_Leaf | ImGuiTreeNodeFlags_NoTreePushOnOpen;
+    }
+
+    return ImGui::TreeNodeEx ((void*) (intptr_t) index, flags, label);
+}
+
+bool mixImGui::gui_layout::tree_node (const char* label)
+{
+    return ImGui::TreeNode (label);
+}
+
+void mixImGui::gui_layout::tree_pop ()
+{
+    ImGui::TreePop();
+}
+
+bool mixImGui::gui_layout::begin_drag_drop_source ()
+{
+    return ImGui::BeginDragDropSource ();
+}
+
+void mixImGui::gui_layout::end_drag_drop_source ()
+{
+    ImGui::EndDragDropSource ();
+}
+
+bool mixImGui::gui_layout::set_drag_drop_payload (const char* label, const void* data, size_t size)
+{
+    return ImGui::SetDragDropPayload (label, data, size);
+}
+
+bool mixImGui::gui_layout::begin_drag_drop_target ()
+{
+    return ImGui::BeginDragDropTarget();
+}
+
+void mixImGui::gui_layout::end_drag_drop_target ()
+{
+    ImGui::EndDragDropTarget ();
+}
+
+void* mixImGui::gui_layout::accept_drag_drop_payload (const char* label)
+{
+    auto payload = ImGui::AcceptDragDropPayload (label);
+    if (payload != nullptr)
+    {
+        return payload->Data;
+    }
+    return nullptr;
+}
+
+void mixImGui::gui_layout::set_background_color (mix::math::color& color)
+{
+    vec4 c = color.get_value();
+    ImVec4 imgui_color = ImVec4 (c.x, c.y, c.z, c.w);
+    ImGui::PushStyleColor (ImGuiCol_WindowBg, imgui_color);
+}
+
+void mixImGui::gui_layout::pop_style_vars ()
+{
+    ImGui::PopStyleColor ();
 }
 
 
