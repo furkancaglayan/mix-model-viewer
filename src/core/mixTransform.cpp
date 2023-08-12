@@ -37,6 +37,11 @@ void mix::core::mixTransform::scale (vec3 v)
 
 void mix::core::mixTransform::look_at (const vec3& pos)
 {
+    auto d = normalize (-pos + _position);
+    _rotation.y =radians_to_degrees ((float) atan (d.x / (-d.y)));
+    _rotation.x = radians_to_degrees ((float) atan (pow (d.x, 2) + pow (d.y, 2)));
+    _is_dirty = true;
+    update ();
 }
 
 

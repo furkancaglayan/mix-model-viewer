@@ -51,6 +51,10 @@ void mix::editor::windows::hierarchy_window::render ()
                         gui_layout::end_drag_drop_target ();
                     }
 
+                    if (gui_layout::is_double_clicked())
+                    {
+                        mix::mixEditor::_instance->get_active_scene ()->get_main_cam ()->look_at (children.at (i)->_transform->get_position());
+                    }
                     if (is_node)
                     {
                         gui_layout::tree_pop ();

@@ -10,6 +10,7 @@ mix::scene_management::mixScene::mixScene (mix::core::mixEntity* r)
 {
     _root = std::unique_ptr<mix::core::mixEntity> (r);
     _active_cam = std::make_unique<mix::core::mixCamera> ();
+    _active_cam->_transform->set_position (vec3 (0, 0, -15));
     _instance = this;
 }
 

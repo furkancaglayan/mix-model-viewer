@@ -65,33 +65,24 @@ int main ()
     mix::platform::mixAsset_path p (path4);
     auto program = std::make_shared<mix::assetsystem::mixShader_program> (p, vertex_shader.get (), fragment_shader.get ());
 
-    auto model = std::make_shared<mix::core::mixEntity> ();
-    auto model2 = std::make_shared<mix::core::mixEntity> ();
-    model->_transform->set_position (vec3 (0, 0, 15));
-    model2->_transform->set_position (vec3 (0, 0, -15));
-
-
-    auto component = new mix::components::mixMesh_component (mesh);
-    auto component2 = new mix::components::mixMesh_component (mesh2);
+   
 
 
     auto material = std::make_shared<mix::assetsystem::mixMaterial> (path4, program);
-    auto material2 = std::make_shared<mix::assetsystem::mixMaterial> (path4, program);
     material->set_color (vec3 (1));
     material->set_texture (mix::texture::texture_type::diffuse, tex);
-    material2->set_texture (mix::texture::texture_type::diffuse, tex);
     material->set_texture (mix::texture::texture_type::normal, normal);
-    material2->set_texture (mix::texture::texture_type::normal, normal);
 
-    component->set_material (material);
-    component2->set_material (material2);
-    model->add_component (component);
-    model->set_name ("Gameobject 1");
-    model2->add_component (component2);
-    model2->set_name ("Gameobject 2");
-    mix::scene_management::mixScene::_instance->add_entity (std::move(model));
-    mix::scene_management::mixScene::_instance->add_entity (std::move (model2));
-
+    for (size_t i = 0; i < 10; i++)
+    {
+        auto model = std::make_shared<mix::core::mixEntity> ();
+        model->_transform->set_position (vec3 (float (i) * 2, 1, float (i) * 2));
+        auto component = new mix::components::mixMesh_component (mesh);
+        component->set_material (material);
+        model->add_component (component);
+        model->set_name ("Cube " + std::to_string(i));
+        mix::scene_management::mixScene::_instance->add_entity (std::move (model));
+    }
     auto light = std::make_shared<mix::core::light::mixLight> (mix::core::light::light_type::directional, vec3 (0.33, 0.33, 0));
     light->_transform->set_position (vec3 (0, 10, 10));
     auto light2 =

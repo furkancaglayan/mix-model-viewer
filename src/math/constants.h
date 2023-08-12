@@ -8,3 +8,8 @@ static constexpr float degrees_to_radians (float d)
 {
     return glm::radians(d);
 }
+
+static constexpr float radians_to_degrees(float d)
+{
+    return glm::degrees (d);
+}
