@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00176" kind="file" language="C++">
+    <compoundname>mixWindow.h</compoundname>
+    <includes refid="a00314" local="yes">../platform/typedefs.h</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="a00296" local="yes">../math/vec.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="a00182" local="yes">editor_config.h</includedby>
+    <includedby refid="a00122" local="yes">frame_buffer.h</includedby>
+    <includedby refid="a00188" local="yes">mixEditor.h</includedby>
+    <includedby refid="a00173" local="yes">mixWindow.cpp</includedby>
+    <includedby refid="a00341" local="yes">test_base.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>mixWindow.h</label>
+        <link refid="a00176"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../math/vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../platform/typedefs.h</label>
+        <link refid="a00314"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="4">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="8">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>frame_buffer.cpp</label>
+        <link refid="a00119"/>
+      </node>
+      <node id="14">
+        <label>frame_buffer.h</label>
+        <link refid="a00122"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mixWindow.cpp</label>
+        <link refid="a00173"/>
+      </node>
+      <node id="1">
+        <label>mixWindow.h</label>
+        <link refid="a00176"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>editor_config.h</label>
+        <link refid="a00182"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mixEditor.cpp</label>
+        <link refid="a00185"/>
+      </node>
+      <node id="3">
+        <label>mixEditor.h</label>
+        <link refid="a00188"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hierarchy_window.cpp</label>
+        <link refid="a00191"/>
+      </node>
+      <node id="4">
+        <label>hierarchy_window.h</label>
+        <link refid="a00194"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>project_window.cpp</label>
+        <link refid="a00197"/>
+      </node>
+      <node id="8">
+        <label>project_window.h</label>
+        <link refid="a00200"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>scene_window.cpp</label>
+        <link refid="a00203"/>
+      </node>
+      <node id="10">
+        <label>scene_window.h</label>
+        <link refid="a00206"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>shortcuts_window.cpp</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="12">
+        <label>shortcuts_window.h</label>
+        <link refid="a00212"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gui_style.cpp</label>
+        <link refid="a00227"/>
+      </node>
+      <node id="17">
+        <label>gui_style.h</label>
+        <link refid="a00230"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mixGui.cpp</label>
+        <link refid="a00257"/>
+      </node>
+      <node id="16">
+        <label>mixGui.h</label>
+        <link refid="a00260"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="a00281"/>
+      </node>
+      <node id="23">
+        <label>main.cpp</label>
+        <link refid="a00637"/>
+      </node>
+      <node id="21">
+        <label>test_base.h</label>
+        <link refid="a00341"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>window_test.h</label>
+        <link refid="a00347"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00503" prot="public">mix::core::mixWindow</innerclass>
+    <innernamespace refid="a00350">mix</innernamespace>
+    <innernamespace refid="a00356">mix::core</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../platform/typedefs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/vec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="a00503" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00503" kindref="compound">mixWindow</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="a00503_1a89b0f6943b877f6254852034c60803cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1ae25411fdf0a329f177a453ffaba0a9c0" kindref="member">mixWindow</ref><sp/>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1a99663f1810227e25923134b2b6f327ed" kindref="member">~mixWindow</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00503_1a14efe79b5e7199f324516c0bb9087bfe" kindref="member">initialize</ref><sp/>(<ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>size)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a0ef208f883ee10b3ff825425aa73eba1" kindref="member">close</ref>()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00503_1a4aa8bc2fa7be78256493712514d9e837" kindref="member">get_key</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="a00503_1afee4fb7049fe4652c959aad535704c96" kindref="member">get_window_size</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a7daa5d8cccec6bdeaa9de4e465e4ef12" kindref="member">set_window_size</ref><sp/>(const<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)<sp/>const;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="a00503_1a44893df1a4b3f00a1f50f66d5ebe9cff" kindref="member">get_window_position</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a9b880f3e6383b9e1ee3d6923ff676d44" kindref="member">set_window_position</ref><sp/>(const<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)<sp/>const;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a732d1871b412eae84b3a41871a58dd70" kindref="member">get_frame_rect</ref><sp/>(<ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>xy,<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>zw)<sp/>const;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1aa213e77a14c2d4a9d013f42594980ba5" kindref="member">set_aspect_ratio</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)<sp/>const;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a99c75e0a38fe934e8f98ff38738a94e0" kindref="member">set_icon</ref><sp/>(GLFWimage*<sp/>images,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1ab7439063c98170848373d6b33b73137e" kindref="member">set_title</ref><sp/>(<ref refid="a00358" kindref="compound">std</ref>::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>title);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a73ea53b97406f37617af059df2260009" kindref="member">maximize</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a0af6c000138e69c6be2fa7c8c2afcf9f" kindref="member">restore</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLFWwindow*<sp/><ref refid="a00503_1ab4851949b76d94e40b0af66374ced1ea" kindref="member">get_glfw_window</ref><sp/>()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="36" refid="a00503_1ae740db172670f000d252f4c68cf058c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>constexpr<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00503_1ae740db172670f000d252f4c68cf058c0" kindref="member">_context_version_min</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="37" refid="a00503_1ae9fe0151a7f3ff359ad1e38be5e41994" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>constexpr<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00503_1ae9fe0151a7f3ff359ad1e38be5e41994" kindref="member">_context_version_max</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a5e6bd225c513ef14653ecd9173338116" kindref="member">on_window_position_changed</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1aad3a592d879d55ad73bd6402fa10c286" kindref="member">hide</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1a06d7925200ef59c52c80d18d3234a2cb" kindref="member">show</ref><sp/>()<sp/>const;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00503_1ab9e56a1236b0b41d021b65ee010e5030" kindref="member">on_window_size_changed</ref><sp/>(const<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="46" refid="a00503_1a2975b8ff6304b5abc7cb0e3f412a94fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLFWwindow*<sp/><ref refid="a00503_1a2975b8ff6304b5abc7cb0e3f412a94fb" kindref="member">_glfw_window</ref><sp/>=<sp/></highlight><highlight class="keywordtype">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="a00503_1acd85a09100437dcef6b117fc54c4b808" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLFWmonitor*<sp/><ref refid="a00503_1acd85a09100437dcef6b117fc54c4b808" kindref="member">_monitor</ref><sp/>=<sp/></highlight><highlight class="keywordtype">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>pack<sp/>into<sp/>a<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="a00503_1af192ad0ab4e18c33e8b717d1c500d8f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref><sp/><ref refid="a00503_1af192ad0ab4e18c33e8b717d1c500d8f9" kindref="member">_width</ref>;</highlight></codeline>
+<codeline lineno="51" refid="a00503_1ad904a0193336b30f4265d4703afee987" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref><sp/><ref refid="a00503_1ad904a0193336b30f4265d4703afee987" kindref="member">_height</ref>;</highlight></codeline>
+<codeline lineno="52" refid="a00503_1ad1a6421b502f130ffacc964752b757b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref><sp/><ref refid="a00503_1ad1a6421b502f130ffacc964752b757b2" kindref="member">_x</ref>;</highlight></codeline>
+<codeline lineno="53" refid="a00503_1a9523a0977076d507c41e53ac9318f950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref><sp/><ref refid="a00503_1a9523a0977076d507c41e53ac9318f950" kindref="member">_y</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h"/>
+  </compounddef>
+</doxygen>

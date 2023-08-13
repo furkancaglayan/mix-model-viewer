@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_894d01094d05463c7449990978a6cc04" kind="dir">
+    <compoundname>assetsystem</compoundname>
+    <innerdir refid="dir_be9069edefe7085b0977c8801b6ee652">assets</innerdir>
+    <innerdir refid="dir_ba5f11ebca5cbdf8323b56a83264073e">default_processors</innerdir>
+    <innerdir refid="dir_73ad4db3a0e32567613f5ccb54dbefca">loaders</innerdir>
+    <innerfile refid="a00056">asset_processor.h</innerfile>
+    <innerfile refid="a00059">asset_types.cpp</innerfile>
+    <innerfile refid="a00062">asset_types.h</innerfile>
+    <innerfile refid="a00065">default_assets.cpp</innerfile>
+    <innerfile refid="a00068">default_assets.h</innerfile>
+    <innerfile refid="a00113">mixAsset_manager.cpp</innerfile>
+    <innerfile refid="a00116">mixAsset_manager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/"/>
+  </compounddef>
+</doxygen>

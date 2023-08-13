@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00350" kind="namespace" language="C++">
+    <compoundname>mix</compoundname>
+    <innerclass refid="a00507" prot="public">mix::editor_config</innerclass>
+    <innerclass refid="a00511" prot="public">mix::mixEditor</innerclass>
+    <innerclass refid="a00399" prot="public">mix::shader</innerclass>
+    <innerclass refid="a00415" prot="public">mix::texture</innerclass>
+    <innerclass refid="a00495" prot="public">mix::transform</innerclass>
+    <innernamespace refid="a00351">mix::assetsystem</innernamespace>
+    <innernamespace refid="a00355">mix::components</innernamespace>
+    <innernamespace refid="a00354">mix::containers</innernamespace>
+    <innernamespace refid="a00356">mix::core</innernamespace>
+    <innernamespace refid="a00359">mix::editor</innernamespace>
+    <innernamespace refid="a00362">mix::library</innernamespace>
+    <innernamespace refid="a00363">mix::math</innernamespace>
+    <innernamespace refid="a00364">mix::platform</innernamespace>
+    <innernamespace refid="a00365">mix::rendering</innernamespace>
+    <innernamespace refid="a00366">mix::scene_management</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

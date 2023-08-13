@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00170" kind="file" language="C++">
+    <compoundname>mixTransform.h</compoundname>
+    <includes refid="a00290" local="yes">../math/constants.h</includes>
+    <includes refid="a00293" local="yes">../math/mat.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includedby refid="a00134" local="yes">mixComponent.h</includedby>
+    <includedby refid="a00167" local="yes">mixTransform.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>mixTransform.h</label>
+        <link refid="a00170"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../math/constants.h</label>
+        <link refid="a00290"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../math/mat.h</label>
+        <link refid="a00293"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="5">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>mixComponent.cpp</label>
+        <link refid="a00131"/>
+      </node>
+      <node id="2">
+        <label>mixComponent.h</label>
+        <link refid="a00134"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mixMesh_component.cpp</label>
+        <link refid="a00137"/>
+      </node>
+      <node id="20">
+        <label>mixMesh_component.h</label>
+        <link refid="a00140"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mixLight.cpp</label>
+        <link refid="a00143"/>
+      </node>
+      <node id="24">
+        <label>mixLight.h</label>
+        <link refid="a00146"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mixCamera.cpp</label>
+        <link refid="a00149"/>
+      </node>
+      <node id="5">
+        <label>mixCamera.h</label>
+        <link refid="a00152"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mixEntity.cpp</label>
+        <link refid="a00155"/>
+      </node>
+      <node id="4">
+        <label>mixEntity.h</label>
+        <link refid="a00158"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mixTransform.cpp</label>
+        <link refid="a00167"/>
+      </node>
+      <node id="1">
+        <label>mixTransform.h</label>
+        <link refid="a00170"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>editor_config.h</label>
+        <link refid="a00182"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mixEditor.cpp</label>
+        <link refid="a00185"/>
+      </node>
+      <node id="9">
+        <label>mixEditor.h</label>
+        <link refid="a00188"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>hierarchy_window.cpp</label>
+        <link refid="a00191"/>
+      </node>
+      <node id="10">
+        <label>hierarchy_window.h</label>
+        <link refid="a00194"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>project_window.cpp</label>
+        <link refid="a00197"/>
+      </node>
+      <node id="14">
+        <label>project_window.h</label>
+        <link refid="a00200"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>scene_window.cpp</label>
+        <link refid="a00203"/>
+      </node>
+      <node id="16">
+        <label>scene_window.h</label>
+        <link refid="a00206"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>shortcuts_window.cpp</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="18">
+        <label>shortcuts_window.h</label>
+        <link refid="a00212"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>main.cpp</label>
+        <link refid="a00281"/>
+      </node>
+      <node id="26">
+        <label>scene_context.h</label>
+        <link refid="a00329"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mixScene.cpp</label>
+        <link refid="a00332"/>
+      </node>
+      <node id="7">
+        <label>mixScene.h</label>
+        <link refid="a00335"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00495" prot="public">mix::transform</innerclass>
+    <innerclass refid="a00499" prot="public">mix::core::mixTransform</innerclass>
+    <innernamespace refid="a00350">mix</innernamespace>
+    <innernamespace refid="a00356">mix::core</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/mat.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="a00495" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00495" kindref="compound">transform</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="a00495_1afd85bf2666dede05bdb8cc1062a1937b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00495_1afd85bf2666dede05bdb8cc1062a1937b" kindref="member">forward</ref>{<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0,<sp/>0,<sp/>1)<sp/>};</highlight></codeline>
+<codeline lineno="14" refid="a00495_1ab554bd40cffaeb26a451ab5b73217d71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00495_1ab554bd40cffaeb26a451ab5b73217d71" kindref="member">right</ref>{<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1,<sp/>0,<sp/>0)<sp/>};</highlight></codeline>
+<codeline lineno="15" refid="a00495_1ae863cbb68786bad6ed428370089f8cdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00495_1ae863cbb68786bad6ed428370089f8cdf" kindref="member">up</ref>{<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0,<sp/>1,<sp/>0)<sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="a00499" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00499" kindref="compound">mixTransform</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mixTransform</ref><sp/>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>rot);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>rot,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a18cf7e857f941c5719b7e01ad78eca7c" kindref="member">scale</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a4031689dabde7c88d2d972576290c9ad" kindref="member">~mixTransform</ref><sp/>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="a00499_1a4cdf41ca52f87dfd92f88bc5c7c66bec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1a4cdf41ca52f87dfd92f88bc5c7c66bec" kindref="member">mixTransform</ref><sp/>(<ref refid="a00499" kindref="compound">mixTransform</ref>&amp;&amp;<sp/>move)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31" refid="a00499_1add9057e45751cfcdf8d421612a29c3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00499_1add9057e45751cfcdf8d421612a29c3f8" kindref="member">mixTransform</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00499" kindref="compound">mixTransform</ref>&amp;<sp/>copy)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a2b0616acfcb408037bc69d3a81c92210" kindref="member">set_position</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a36960b1e482875f85672a8c974564143" kindref="member">set_local_position</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1adb6232350622826eef44bce10163d3f9" kindref="member">set_rotation</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1ac4e1b87d3a8b40bb20298cb115dcaf4c" kindref="member">set_scale</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1ada09b00b432f3107d650be4b024b5401" kindref="member">translate</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a18cf7e857f941c5719b7e01ad78eca7c" kindref="member">scale</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" kindref="member">look_at</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref>&amp;<sp/>pos);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>rotate<sp/>(vec3<sp/>v);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a21bee47e7e33becf6ea86acc5625ae61" kindref="member">rotate_around</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" kindref="member">update</ref><sp/>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" kindref="member">get_model_mat</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="a00499_1a9b868ff66fe892bb7adeac34ca2fe5d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a9b868ff66fe892bb7adeac34ca2fe5d1" kindref="member">up</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1afa02bf109b0b2642036c7a53d441f331" kindref="member">_up</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="a00499_1af091b4eaa82b9e5a6c127ade72cd3a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1af091b4eaa82b9e5a6c127ade72cd3a4a" kindref="member">forward</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="52"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" kindref="member">_forward</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="a00499_1a513ac59a7c89abd8e3232a16665fbfea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a513ac59a7c89abd8e3232a16665fbfea" kindref="member">right</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1aa4d819edc3a02331bd9a22832f2a89d6" kindref="member">_right</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="a00499_1a398497c08bbe10fce0fb016d26e85936" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00499_1a398497c08bbe10fce0fb016d26e85936" kindref="member">yaw</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="62"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" kindref="member">_rotation</ref>.x;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="a00499_1aaa158307d752d9673b6a88ca5fc8f63c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00499_1aaa158307d752d9673b6a88ca5fc8f63c" kindref="member">pitch</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" kindref="member">_rotation</ref>.y;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="a00499_1a7c69fb3a9257014c0eda6e1e20ff5cf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00499_1a7c69fb3a9257014c0eda6e1e20ff5cf1" kindref="member">roll</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="72"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" kindref="member">_rotation</ref>.z;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="a00499_1a866fd851b6a5b4d0afaa00f7fd85ad85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a866fd851b6a5b4d0afaa00f7fd85ad85" kindref="member">get_position</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="77"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a5601f56c89edc199c43640509bc289e2" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="a00499_1ae23f3b7c32574fb2007b8636deb24ff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1ae23f3b7c32574fb2007b8636deb24ff3" kindref="member">get_local_position</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a3459a96c98b0764d9f1e086109fbeebc" kindref="member">_local_position</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="a00499_1a0db6c49d4cea8f8272b9f55662ea98e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a0db6c49d4cea8f8272b9f55662ea98e6" kindref="member">get_rotation</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="87"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" kindref="member">_rotation</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="a00499_1a8a3d7fecaedb09455a0155b231ad7486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a8a3d7fecaedb09455a0155b231ad7486" kindref="member">get_scale</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="92"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00499_1abdb54638a59463c965a72e2c347109ff" kindref="member">_scale</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a94de4b6193da11c60e8b4cd6f2d68152" kindref="member">update_vectors</ref><sp/>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="a00499_1a5601f56c89edc199c43640509bc289e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a5601f56c89edc199c43640509bc289e2" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="101" refid="a00499_1a3459a96c98b0764d9f1e086109fbeebc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a3459a96c98b0764d9f1e086109fbeebc" kindref="member">_local_position</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>yaw,<sp/>pitch,<sp/>roll</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a10f09d9ddf0317259ea13cded9a080f8" kindref="member">_rotation</ref>;</highlight></codeline>
+<codeline lineno="104" refid="a00499_1abdb54638a59463c965a72e2c347109ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1abdb54638a59463c965a72e2c347109ff" kindref="member">_scale</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" kindref="member">_forward</ref>;</highlight></codeline>
+<codeline lineno="107" refid="a00499_1afa02bf109b0b2642036c7a53d441f331" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1afa02bf109b0b2642036c7a53d441f331" kindref="member">_up</ref>;</highlight></codeline>
+<codeline lineno="108" refid="a00499_1aa4d819edc3a02331bd9a22832f2a89d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/><ref refid="a00499_1aa4d819edc3a02331bd9a22832f2a89d6" kindref="member">_right</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="a00499_1a108b1f373738340828df01d1dc7f0a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00499_1a108b1f373738340828df01d1dc7f0a5f" kindref="member">_is_dirty</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h"/>
+  </compounddef>
+</doxygen>

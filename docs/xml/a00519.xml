@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00519" kind="class" language="C++" prot="public">
+    <compoundname>mix::editor::windows::project_window</compoundname>
+    <basecompoundref refid="a00551" prot="public" virt="non-virtual">mixImGui::gui_window</basecompoundref>
+    <includes refid="a00200" local="no">project_window.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00519_1a701ad6a405fa5edd18438d6df57428a8" prot="private" static="no" mutable="no">
+        <type><ref refid="a00419" kindref="compound">mix::assetsystem::mixTexture</ref> *</type>
+        <definition>mix::assetsystem::mixTexture* mix::editor::windows::project_window::_folder_icon</definition>
+        <argsstring></argsstring>
+        <name>_folder_icon</name>
+        <qualifiedname>mix::editor::windows::project_window::_folder_icon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="26" column="46" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="a00519_1a04410f6d910514e395f25c09b2ccc353" compoundref="a00197" startline="4" endline="17">project_window</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00519_1a8e1f733e745940ce2e9da002a317a7cb" prot="private" static="no" mutable="no">
+        <type><ref refid="a00419" kindref="compound">mix::assetsystem::mixTexture</ref> *</type>
+        <definition>mix::assetsystem::mixTexture * mix::editor::windows::project_window::_empty_folder_icon</definition>
+        <argsstring></argsstring>
+        <name>_empty_folder_icon</name>
+        <qualifiedname>mix::editor::windows::project_window::_empty_folder_icon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="26" column="59" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="a00519_1a04410f6d910514e395f25c09b2ccc353" compoundref="a00197" startline="4" endline="17">project_window</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00519_1a7c9f415f20c52d466da803c162332912" prot="private" static="no" mutable="no">
+        <type><ref refid="a00379" kindref="compound">mix::assetsystem::mixAsset_folder</ref> *</type>
+        <definition>mix::assetsystem::mixAsset_folder* mix::editor::windows::project_window::_selected_folder</definition>
+        <argsstring></argsstring>
+        <name>_selected_folder</name>
+        <qualifiedname>mix::editor::windows::project_window::_selected_folder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="27" column="51" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00519_1a0392b79801634a21b3bddf0cbd168cad" prot="private" static="no" mutable="no">
+        <type><ref refid="a00351_1a4aaa70b8015a5f8dff21969c8890e2d9" kindref="member">mix::assetsystem::asset_tree_ptr</ref></type>
+        <definition>mix::assetsystem::asset_tree_ptr mix::editor::windows::project_window::_root_node</definition>
+        <argsstring></argsstring>
+        <name>_root_node</name>
+        <qualifiedname>mix::editor::windows::project_window::_root_node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="28" column="50" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="a00519_1a04410f6d910514e395f25c09b2ccc353" compoundref="a00197" startline="4" endline="17">project_window</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00519_1a04410f6d910514e395f25c09b2ccc353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::editor::windows::project_window::project_window</definition>
+        <argsstring>(std::string window_name, mixImGui::window_rect r)</argsstring>
+        <name>project_window</name>
+        <qualifiedname>mix::editor::windows::project_window::project_window</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>window_name</declname>
+        </param>
+        <param>
+          <type><ref refid="a00531" kindref="compound">mixImGui::window_rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="18" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.cpp" bodystart="4" bodyend="17"/>
+        <references refid="a00519_1a8e1f733e745940ce2e9da002a317a7cb" compoundref="a00200" startline="26">_empty_folder_icon</references>
+        <references refid="a00519_1a701ad6a405fa5edd18438d6df57428a8" compoundref="a00200" startline="26">_folder_icon</references>
+        <references refid="a00519_1a0392b79801634a21b3bddf0cbd168cad" compoundref="a00200" startline="28">_root_node</references>
+        <references refid="a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" compoundref="a00185" startline="59" endline="62">mix::mixEditor::get_asset_manager</references>
+        <references refid="a00455_1a0d1454f00502e53010bb99dc02bc8863" compoundref="a00116" startline="70" endline="73">mix::assetsystem::mixAsset_manager::get_asset_with_full_name</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1">mixImGui::NoCollapse</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f">mixImGui::NoMove</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe">mixImGui::NoResize</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a41a128473817e7f779586b8a80f550ea">mixImGui::NoTitleBar</references>
+      </memberdef>
+      <memberdef kind="function" id="a00519_1a0475d4c98ed276893abe1933022b2991" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::project_window::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::editor::windows::project_window::render</qualifiedname>
+        <reimplements refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4">render</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="20" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.cpp" bodystart="19" bodyend="115"/>
+        <references refid="a00535_1a0d22d33a1eeafa550f4994c98e88682b" compoundref="a00215" startline="80" endline="83">mixImGui::gui_layout::begin_child</references>
+        <references refid="a00535_1a7117bba25a15fda694fc3370dd7c0b27" compoundref="a00215" startline="18" endline="21">mixImGui::gui_layout::begin_horizontal</references>
+        <references refid="a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" compoundref="a00215" startline="28" endline="31">mixImGui::gui_layout::begin_vertical</references>
+        <references refid="a00535_1af30bb29aa9d2265d0384324ca814fd46" compoundref="a00215" startline="90" endline="93">mixImGui::gui_layout::end_child</references>
+        <references refid="a00535_1a83f6713438b52862d9a65795003695ad" compoundref="a00215" startline="23" endline="26">mixImGui::gui_layout::end_horizontal</references>
+        <references refid="a00535_1a724cab724f67db7089561715ca6163b8" compoundref="a00215" startline="33" endline="36">mixImGui::gui_layout::end_vertical</references>
+        <references refid="a00423_1ac3cc62e6065d790d9dd18f34298af149" compoundref="a00065" startline="5" endline="15">mix::assetsystem::default_assets::get_asset_default_icon</references>
+        <references refid="a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" compoundref="a00185" startline="59" endline="62">mix::mixEditor::get_asset_manager</references>
+        <references refid="a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" compoundref="a00215" startline="357" endline="361">mixImGui::gui_layout::horizontal_space</references>
+        <references refid="a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" compoundref="a00317" startline="95" endline="101">mix::platform::platform_utils::is_folder</references>
+        <references refid="a00535_1aa70d43ccf7c85a45e823e36b3fddbe67" compoundref="a00215" startline="328" endline="331">mixImGui::gui_layout::pop_style_vars</references>
+        <references refid="a00535_1a6d2796bcb5b2f23703f3be157e31b05f" compoundref="a00215" startline="135" endline="157">mixImGui::gui_layout::selectable_image</references>
+        <references refid="a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" compoundref="a00215" startline="321" endline="326">mixImGui::gui_layout::set_background_color</references>
+        <references refid="a00535_1a51fa55d14214144f3f877642c54daa67" compoundref="a00215" startline="49" endline="55">mixImGui::gui_layout::text_label</references>
+      </memberdef>
+      <memberdef kind="function" id="a00519_1a3907813cfe7996f716afaa3c64dd0f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::project_window::on_editor_window_size_changed_impl</definition>
+        <argsstring>(const vec2i &amp;size) override</argsstring>
+        <name>on_editor_window_size_changed_impl</name>
+        <qualifiedname>mix::editor::windows::project_window::on_editor_window_size_changed_impl</qualifiedname>
+        <reimplements refid="a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d">on_editor_window_size_changed_impl</reimplements>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="21" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.cpp" bodystart="117" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00519_1a1804e0a71bddd1f49d90a3a2a94b3903" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::project_window::initialize</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::editor::windows::project_window::initialize</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="22" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.cpp" bodystart="130" bodyend="139"/>
+        <references refid="a00567_1a79d97b87e7d22231df25bbe376ec5811" compoundref="a00260" startline="22" endline="28">mixImGui::mixGui::add_window</references>
+        <referencedby refid="a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" compoundref="a00185" startline="44" endline="57">mix::mixEditor::initialize_gui</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::editor::windows::project_window</label>
+        <link refid="a00519"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::gui_window</label>
+        <link refid="a00551"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>mix::assetsystem::mixAsset_folder</label>
+        <link refid="a00379"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mix::assetsystem::mixTexture</label>
+        <link refid="a00419"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="1">
+        <label>mix::editor::windows::project_window</label>
+        <link refid="a00519"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_empty_folder_icon</edgelabel>
+          <edgelabel>_folder_icon</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_selected_folder</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+      <node id="2">
+        <label>mixImGui::gui_window</label>
+        <link refid="a00551"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_constraints</edgelabel>
+          <edgelabel>_rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::window_rect</label>
+        <link refid="a00531"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" line="14" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/project_window.h" bodystart="15" bodyend="29"/>
+    <listofallmembers>
+      <member refid="a00551_1a97b151a9b07929b2b7838c9ecb956a1a" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_constraints</name></member>
+      <member refid="a00519_1a8e1f733e745940ce2e9da002a317a7cb" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_empty_folder_icon</name></member>
+      <member refid="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_flags</name></member>
+      <member refid="a00519_1a701ad6a405fa5edd18438d6df57428a8" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_folder_icon</name></member>
+      <member refid="a00551_1aa9930bf91b544df53d2d051ae740dc70" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_has_constraints</name></member>
+      <member refid="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_is_open</name></member>
+      <member refid="a00551_1a6e39227f87ebb0c7e5c999207c992f9a" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_positioning</name></member>
+      <member refid="a00551_1ae32d327e1e32115c2c0e7823f6e5f522" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_rect</name></member>
+      <member refid="a00519_1a0392b79801634a21b3bddf0cbd168cad" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_root_node</name></member>
+      <member refid="a00519_1a7c9f415f20c52d466da803c162332912" prot="private" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_selected_folder</name></member>
+      <member refid="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>_window_name</name></member>
+      <member refid="a00551_1a5b26d4ff892ca96966cedacb32a214c3" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>begin</name></member>
+      <member refid="a00551_1a5366aaa00163caca59752b9cc403c327" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>clear_constraints</name></member>
+      <member refid="a00551_1ae853e0907159148f09ba4d89b32407ca" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>disable</name></member>
+      <member refid="a00551_1ae12c27c69d083299efc96b46b43a2f76" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>enable</name></member>
+      <member refid="a00551_1a1ca29859ec280ef652b1a8a129302674" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>end</name></member>
+      <member refid="a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>get_flags</name></member>
+      <member refid="a00551_1adfaef0003b77e0673f57839c6e0ecf79" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>get_position</name></member>
+      <member refid="a00551_1a88d0684664158d82d55b77f1e0694a16" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>get_size</name></member>
+      <member refid="a00551_1a04676eb4cd71204474717447fd483d67" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>gui_window</name></member>
+      <member refid="a00519_1a1804e0a71bddd1f49d90a3a2a94b3903" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>initialize</name></member>
+      <member refid="a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" prot="public" virt="virtual"><scope>mix::editor::windows::project_window</scope><name>on_editor_window_size_changed</name></member>
+      <member refid="a00519_1a3907813cfe7996f716afaa3c64dd0f1f" prot="public" virt="virtual"><scope>mix::editor::windows::project_window</scope><name>on_editor_window_size_changed_impl</name></member>
+      <member refid="a00551_1ab37e29b679914218b5913a585ea66905" prot="protected" virt="virtual"><scope>mix::editor::windows::project_window</scope><name>on_window_resized</name></member>
+      <member refid="a00519_1a04410f6d910514e395f25c09b2ccc353" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>project_window</name></member>
+      <member refid="a00519_1a0475d4c98ed276893abe1933022b2991" prot="public" virt="virtual"><scope>mix::editor::windows::project_window</scope><name>render</name></member>
+      <member refid="a00551_1a4d3055b2bda8480b8eaeba1be84c0463" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>rescale</name></member>
+      <member refid="a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>set_contrainsts</name></member>
+      <member refid="a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" prot="protected" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>set_position</name></member>
+      <member refid="a00551_1a370936f91e7c1372384e906dac282be3" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>set_positioning</name></member>
+      <member refid="a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" prot="public" virt="non-virtual"><scope>mix::editor::windows::project_window</scope><name>set_title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

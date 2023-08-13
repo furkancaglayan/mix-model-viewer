@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00559" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mixImGui::i_guielement</compoundname>
+    <derivedcompoundref refid="a00483" prot="public" virt="non-virtual">mix::core::mixEntity</derivedcompoundref>
+    <includes refid="a00248" local="no">i_guielement.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00559_1a3d61b523c5ec64d3d495487a02188e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string mixImGui::i_guielement::get_gui_name</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_gui_name</name>
+        <qualifiedname>mixImGui::i_guielement::get_gui_name</qualifiedname>
+        <reimplementedby refid="a00483_1a0917b62e522a04962d6211ebbdb44a2a">get_gui_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" line="16" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="a00559_1a88a27f523a0a069d84188c284e9c4d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mixImGui::i_guielement::on_gui</definition>
+        <argsstring>()=0</argsstring>
+        <name>on_gui</name>
+        <qualifiedname>mixImGui::i_guielement::on_gui</qualifiedname>
+        <reimplementedby refid="a00479_1a8cd7eca473b5f4e76a9582f95d596b07">on_gui</reimplementedby>
+        <reimplementedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a">on_gui</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" line="17" column="22"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00559_1ac062707cba8ddfc82555ce12d2a6aa2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mixImGui::i_guielement::on_inspector_gui</definition>
+        <argsstring>()=0</argsstring>
+        <name>on_inspector_gui</name>
+        <qualifiedname>mixImGui::i_guielement::on_inspector_gui</qualifiedname>
+        <reimplementedby refid="a00483_1a0dfbdb6a57a08dd6398431b79f63cbf0">on_inspector_gui</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" line="18" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00559_1ada3ee8d05c23f8404760728859fa93a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mixImGui::i_guielement::on_scene_gui</definition>
+        <argsstring>()=0</argsstring>
+        <name>on_scene_gui</name>
+        <qualifiedname>mixImGui::i_guielement::on_scene_gui</qualifiedname>
+        <reimplementedby refid="a00483_1a62a60a2c5f5015097f154e050cd96709">on_scene_gui</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" line="19" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mix::core::light::mixLight</label>
+        <link refid="a00475"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mix::core::mixCamera</label>
+        <link refid="a00479"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::core::mixEntity</label>
+        <link refid="a00483"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixImGui::i_guielement</label>
+        <link refid="a00559"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" line="12" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h" bodystart="13" bodyend="22"/>
+    <listofallmembers>
+      <member refid="a00559_1a3d61b523c5ec64d3d495487a02188e1a" prot="public" virt="pure-virtual"><scope>mixImGui::i_guielement</scope><name>get_gui_name</name></member>
+      <member refid="a00559_1a88a27f523a0a069d84188c284e9c4d6c" prot="public" virt="pure-virtual"><scope>mixImGui::i_guielement</scope><name>on_gui</name></member>
+      <member refid="a00559_1ac062707cba8ddfc82555ce12d2a6aa2b" prot="public" virt="pure-virtual"><scope>mixImGui::i_guielement</scope><name>on_inspector_gui</name></member>
+      <member refid="a00559_1ada3ee8d05c23f8404760728859fa93a1" prot="public" virt="pure-virtual"><scope>mixImGui::i_guielement</scope><name>on_scene_gui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

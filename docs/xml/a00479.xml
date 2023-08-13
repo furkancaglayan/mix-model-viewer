@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00479" kind="class" language="C++" prot="public">
+    <compoundname>mix::core::mixCamera</compoundname>
+    <basecompoundref refid="a00483" prot="public" virt="non-virtual">mix::core::mixEntity</basecompoundref>
+    <includes refid="a00152" local="no">mixCamera.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00479_1a890b645ed90eac0b1ff84a14f908ec86" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_fov</definition>
+        <argsstring></argsstring>
+        <name>_fov</name>
+        <qualifiedname>mix::core::mixCamera::_fov</qualifiedname>
+        <initializer>{ 45.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="36" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1a2975f4549efb4b3d99cd8468349bcf14" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::movement_speed</definition>
+        <argsstring></argsstring>
+        <name>movement_speed</name>
+        <qualifiedname>mix::core::mixCamera::movement_speed</qualifiedname>
+        <initializer>{ 2.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="37" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1a2fa37fa4ccdd90f2dae2b0e80641ec68" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_sensitivity</definition>
+        <argsstring></argsstring>
+        <name>_sensitivity</name>
+        <qualifiedname>mix::core::mixCamera::_sensitivity</qualifiedname>
+        <initializer>{ 2.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="38" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1af355fd8dcebbb1ea11833c54b0db6644" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_zoom</definition>
+        <argsstring></argsstring>
+        <name>_zoom</name>
+        <qualifiedname>mix::core::mixCamera::_zoom</qualifiedname>
+        <initializer>{ 1.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="39" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1a43ceb76c0cd41811108f9143b12caf52" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_near</definition>
+        <argsstring></argsstring>
+        <name>_near</name>
+        <qualifiedname>mix::core::mixCamera::_near</qualifiedname>
+        <initializer>{ 0.01f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="40" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1a5fbc97844e3db5cf1198a777b2f08acf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_far</definition>
+        <argsstring></argsstring>
+        <name>_far</name>
+        <qualifiedname>mix::core::mixCamera::_far</qualifiedname>
+        <initializer>{ 1000.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="41" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1ad61fe7149d33b411a59b9ec9f9590080" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::mixCamera::_aspect</definition>
+        <argsstring></argsstring>
+        <name>_aspect</name>
+        <qualifiedname>mix::core::mixCamera::_aspect</qualifiedname>
+        <initializer>{ 1024.0f / 768.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="42" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00479_1a7770dd23598005f6eae6c5810d5b9678" prot="private" static="no" mutable="no">
+        <type><ref refid="a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref></type>
+        <definition>projection_mode mix::core::mixCamera::_projection</definition>
+        <argsstring></argsstring>
+        <name>_projection</name>
+        <qualifiedname>mix::core::mixCamera::_projection</qualifiedname>
+        <initializer>{ <ref refid="a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref> <ref refid="a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93" kindref="member">::perspective</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="44" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00479_1a7f9adfdfab8297835ffb1e530a8538bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixCamera::mixCamera</definition>
+        <argsstring>()</argsstring>
+        <name>mixCamera</name>
+        <qualifiedname>mix::core::mixCamera::mixCamera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="23" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1a67d0af35da032542aca5ac71eb395381" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+        <definition>mat4 mix::core::mixCamera::get_view_mat</definition>
+        <argsstring>() const</argsstring>
+        <name>get_view_mat</name>
+        <qualifiedname>mix::core::mixCamera::get_view_mat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="7" bodyend="12"/>
+        <references refid="a00293_1ae6a0091d27cb2fbf9226255f0214b56b" compoundref="a00293" startline="18" endline="21">lookat</references>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1a4d518f4e66226591620dbc83605ad8b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+        <definition>mat4 mix::core::mixCamera::get_projection_mat</definition>
+        <argsstring>() const</argsstring>
+        <name>get_projection_mat</name>
+        <qualifiedname>mix::core::mixCamera::get_projection_mat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="25" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="14" bodyend="25"/>
+        <references refid="a00293_1a55faa7d5dcd137013d6aa060aec588bc" compoundref="a00293" startline="13" endline="16">ortho</references>
+        <references refid="a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93">mix::core::perspective</references>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1a30a853485ed367917badb3850b031cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixCamera::change_projection</definition>
+        <argsstring>(projection_mode p)</argsstring>
+        <name>change_projection</name>
+        <qualifiedname>mix::core::mixCamera::change_projection</qualifiedname>
+        <param>
+          <type><ref refid="a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="26" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixCamera::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::core::mixCamera::update</qualifiedname>
+        <reimplements refid="a00483_1a2d0ceedf796382e3cc5a2f9d416994bf">update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="28" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="32" bodyend="36"/>
+        <references refid="a00483_1a2d0ceedf796382e3cc5a2f9d416994bf" compoundref="a00155" startline="57" endline="73">mix::core::mixEntity::update</references>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1ab47eda97f43213a08d5242b10da9fcd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixCamera::debug_input</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>debug_input</name>
+        <qualifiedname>mix::core::mixCamera::debug_input</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="29" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1ae86f9aa198400f62de0ccc9ad1a2996d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixCamera::look_at</definition>
+        <argsstring>(const vec3 &amp;pos)</argsstring>
+        <name>look_at</name>
+        <qualifiedname>mix::core::mixCamera::look_at</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="31" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="a00479_1a8cd7eca473b5f4e76a9582f95d596b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixCamera::on_gui</definition>
+        <argsstring>() override</argsstring>
+        <name>on_gui</name>
+        <qualifiedname>mix::core::mixCamera::on_gui</qualifiedname>
+        <reimplements refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a">on_gui</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="33" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::core::mixCamera</label>
+        <link refid="a00479"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::core::mixEntity</label>
+        <link refid="a00483"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::i_guielement</label>
+        <link refid="a00559"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::core::mixCamera</label>
+        <link refid="a00479"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::core::mixEntity</label>
+        <link refid="a00483"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::i_guielement</label>
+        <link refid="a00559"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="19" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="20" bodyend="45"/>
+    <listofallmembers>
+      <member refid="a00479_1ad61fe7149d33b411a59b9ec9f9590080" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_aspect</name></member>
+      <member refid="a00483_1a83d75d9af6d3a615cdc0ef688c044b59" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_children</name></member>
+      <member refid="a00483_1a1997e7f77c54d18a0f0c2e40bfd4c220" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_components</name></member>
+      <member refid="a00479_1a5fbc97844e3db5cf1198a777b2f08acf" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_far</name></member>
+      <member refid="a00479_1a890b645ed90eac0b1ff84a14f908ec86" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_fov</name></member>
+      <member refid="a00483_1aa11803e5f173af0ae6194c08b4687cc5" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_is_enabled</name></member>
+      <member refid="a00483_1a582bf51106f7e44eeca680dab379076b" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_is_visible</name></member>
+      <member refid="a00483_1a4dba2bc5d72b286432d02aafaeea2a86" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_name</name></member>
+      <member refid="a00479_1a43ceb76c0cd41811108f9143b12caf52" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_near</name></member>
+      <member refid="a00483_1a9a47d0b940b4dee87ca05f5a9cb6b964" prot="protected" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_parent</name></member>
+      <member refid="a00479_1a7770dd23598005f6eae6c5810d5b9678" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_projection</name></member>
+      <member refid="a00479_1a2fa37fa4ccdd90f2dae2b0e80641ec68" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_sensitivity</name></member>
+      <member refid="a00483_1a13cb3c790d3a4bbb0f73ad27d2405e90" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_transform</name></member>
+      <member refid="a00479_1af355fd8dcebbb1ea11833c54b0db6644" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>_zoom</name></member>
+      <member refid="a00483_1a09ceb1e2d215a9a5a2bd7c4e61b57dd6" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>add_child</name></member>
+      <member refid="a00483_1a1291f35d842526da11c1e1025a1fe763" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>add_component</name></member>
+      <member refid="a00479_1a30a853485ed367917badb3850b031cc7" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>change_projection</name></member>
+      <member refid="a00479_1ab47eda97f43213a08d5242b10da9fcd7" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>debug_input</name></member>
+      <member refid="a00483_1a2f8fc6b4a570f7a7a3c3e4a1a68f1c70" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>get_children</name></member>
+      <member refid="a00483_1a0917b62e522a04962d6211ebbdb44a2a" prot="protected" virt="virtual"><scope>mix::core::mixCamera</scope><name>get_gui_name</name></member>
+      <member refid="a00483_1a1643f0350f10c6b0e7afe1663ef201aa" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>get_name</name></member>
+      <member refid="a00483_1a3a251e4b27985264a1ee9294d8bc16a8" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>get_parent</name></member>
+      <member refid="a00479_1a4d518f4e66226591620dbc83605ad8b4" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>get_projection_mat</name></member>
+      <member refid="a00479_1a67d0af35da032542aca5ac71eb395381" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>get_view_mat</name></member>
+      <member refid="a00479_1ae86f9aa198400f62de0ccc9ad1a2996d" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>look_at</name></member>
+      <member refid="a00479_1a7f9adfdfab8297835ffb1e530a8538bb" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>mixCamera</name></member>
+      <member refid="a00483_1abb71d2ec7fc0929c11700febd99e8b4c" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>mixEntity</name></member>
+      <member refid="a00483_1ac8418c541a7acdd6e18ae8def47b5713" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>mixEntity</name></member>
+      <member refid="a00483_1a668508be93287883a78a2c8588b76002" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>mixEntity</name></member>
+      <member refid="a00483_1ae0251e855adf2ef6c3b50726074996c0" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>mixEntity</name></member>
+      <member refid="a00479_1a2975f4549efb4b3d99cd8468349bcf14" prot="private" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>movement_speed</name></member>
+      <member refid="a00479_1a8cd7eca473b5f4e76a9582f95d596b07" prot="public" virt="virtual"><scope>mix::core::mixCamera</scope><name>on_gui</name></member>
+      <member refid="a00483_1a0dfbdb6a57a08dd6398431b79f63cbf0" prot="protected" virt="virtual"><scope>mix::core::mixCamera</scope><name>on_inspector_gui</name></member>
+      <member refid="a00483_1a62a60a2c5f5015097f154e050cd96709" prot="protected" virt="virtual"><scope>mix::core::mixCamera</scope><name>on_scene_gui</name></member>
+      <member refid="a00483_1a350bbea02ae0dc4705b60f405fb5a7b0" prot="public" virt="virtual"><scope>mix::core::mixCamera</scope><name>render</name></member>
+      <member refid="a00483_1a53ebe438f1ad8d260ec91c369cb50ca6" prot="public" virt="non-virtual"><scope>mix::core::mixCamera</scope><name>set_name</name></member>
+      <member refid="a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" prot="public" virt="virtual"><scope>mix::core::mixCamera</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

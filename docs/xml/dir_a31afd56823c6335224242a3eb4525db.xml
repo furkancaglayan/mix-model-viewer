@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_a31afd56823c6335224242a3eb4525db" kind="dir">
+    <compoundname>editor</compoundname>
+    <innerdir refid="dir_8c788bc73d6aafa34694fc96d9609fd3">windows</innerdir>
+    <innerfile refid="a00179">editor_config.cpp</innerfile>
+    <innerfile refid="a00182">editor_config.h</innerfile>
+    <innerfile refid="a00185">mixEditor.cpp</innerfile>
+    <innerfile refid="a00188">mixEditor.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/"/>
+  </compounddef>
+</doxygen>

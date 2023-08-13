@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00059" kind="file" language="C++">
+    <compoundname>asset_types.cpp</compoundname>
+    <includes refid="a00062" local="yes">asset_types.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>asset_types.cpp</label>
+        <link refid="a00059"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>asset_types.h</label>
+        <link refid="a00062"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="a00350">mix</innernamespace>
+    <innernamespace refid="a00351">mix::assetsystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00062" kindref="compound">asset_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">assetsystem</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>asset_type&gt;<sp/><ref refid="a00375_1aaef7aa3f9f471b74fb5c71c6dde9a1f6" kindref="member">asset_types::extension_map</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">asset_type::Text</ref><sp/>},<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;xml&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">asset_type::Text</ref><sp/>},<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;json&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">asset_type::Text</ref><sp/>},</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;obj&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961" kindref="member">asset_type::Mesh</ref><sp/>},<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;fbx&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961" kindref="member">asset_type::Mesh</ref><sp/>},</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;png&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b" kindref="member">asset_type::Texture</ref><sp/>},<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;jpg&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b" kindref="member">asset_type::Texture</ref><sp/>},</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;vert&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660" kindref="member">asset_type::Shader</ref><sp/>},<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;frag&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660" kindref="member">asset_type::Shader</ref><sp/>},<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ttf&quot;</highlight><highlight class="normal">,<sp/><ref refid="a00351_1a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d" kindref="member">asset_type::Font</ref><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_types.cpp"/>
+  </compounddef>
+</doxygen>

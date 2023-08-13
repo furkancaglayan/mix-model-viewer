@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00379" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::mixAsset_folder</compoundname>
+    <basecompoundref refid="a00383" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_item</basecompoundref>
+    <includes refid="a00005" local="no">mixAsset_folder.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00379_1a98b8ebc69ecbf0b03e71170609ab4edf" prot="private" static="no" mutable="no">
+        <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref></type>
+        <definition>const mix::platform::mixAsset_path mix::assetsystem::mixAsset_folder::_path</definition>
+        <argsstring></argsstring>
+        <name>_path</name>
+        <qualifiedname>mix::assetsystem::mixAsset_folder::_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" line="23" column="48" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="a00379_1abd8265e2673a439c2a97b0bcd57657d3" compoundref="a00005" startline="17" endline="20">get_path_as_str</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00379_1a9bca1329b40d840c856391b6a376abf4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixAsset_folder::mixAsset_folder</definition>
+        <argsstring>(mix::platform::mixAsset_path &amp;&amp;path) noexcept</argsstring>
+        <name>mixAsset_folder</name>
+        <qualifiedname>mix::assetsystem::mixAsset_folder::mixAsset_folder</qualifiedname>
+        <param>
+          <type><ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;&amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" line="14" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="a00379_1a63cc3c55118456c0ce75da91aa6133a4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixAsset_folder::mixAsset_folder</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path) noexcept</argsstring>
+        <name>mixAsset_folder</name>
+        <qualifiedname>mix::assetsystem::mixAsset_folder::mixAsset_folder</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" line="15" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="a00379_1abd8265e2673a439c2a97b0bcd57657d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string mix::assetsystem::mixAsset_folder::get_path_as_str</definition>
+        <argsstring>() const</argsstring>
+        <name>get_path_as_str</name>
+        <qualifiedname>mix::assetsystem::mixAsset_folder::get_path_as_str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" line="17" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" bodystart="17" bodyend="20"/>
+        <references refid="a00379_1a98b8ebc69ecbf0b03e71170609ab4edf" compoundref="a00005" startline="23">_path</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::assetsystem::mixAsset_folder</label>
+        <link refid="a00379"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::assetsystem::mixAsset_folder</label>
+        <link refid="a00379"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="4">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" line="10" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.h" bodystart="11" bodyend="24"/>
+    <listofallmembers>
+      <member refid="a00383_1a5220a296886d6bb5a77b208f12aad817" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>_guid</name></member>
+      <member refid="a00379_1a98b8ebc69ecbf0b03e71170609ab4edf" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>_path</name></member>
+      <member refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_base_name</name></member>
+      <member refid="a00383_1a6e6d736bbc390e6a4544d96c8ef94065" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_extension</name></member>
+      <member refid="a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_full_name</name></member>
+      <member refid="a00383_1ae7f95f45067eeec3fb17487495c886d8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_guid</name></member>
+      <member refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_path</name></member>
+      <member refid="a00379_1abd8265e2673a439c2a97b0bcd57657d3" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_path_as_str</name></member>
+      <member refid="a00383_1ad0fd1f5410d3d1ab6d772ea32935ac7b" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>get_shortened_name</name></member>
+      <member refid="a00383_1a3a8cf3901371f85656487fafa8a7332e" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>is_readonly</name></member>
+      <member refid="a00379_1a9bca1329b40d840c856391b6a376abf4" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>mixAsset_folder</name></member>
+      <member refid="a00379_1a63cc3c55118456c0ce75da91aa6133a4" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>mixAsset_folder</name></member>
+      <member refid="a00383_1ae048c01047e4d14ed7fceff0755ab28a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1a65df15bf1da90497e61b96e6bb1b9d72" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1acb517c665ba6c0623d64a2a5fb542201" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>operator std::string</name></member>
+      <member refid="a00383_1a7b0a0b9b9160f90acd830bb989b97ceb" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>operator&lt;&lt;</name></member>
+      <member refid="a00383_1a86fcabc946908e95e6c0b36ad3370fd0" prot="public" virt="virtual"><scope>mix::assetsystem::mixAsset_folder</scope><name>operator&gt;&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

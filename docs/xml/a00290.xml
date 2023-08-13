@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00290" kind="file" language="C++">
+    <compoundname>constants.h</compoundname>
+    <includes refid="a00296" local="yes">vec.h</includes>
+    <includedby refid="a00152" local="yes">mixCamera.h</includedby>
+    <includedby refid="a00158" local="yes">mixEntity.h</includedby>
+    <includedby refid="a00170" local="yes">mixTransform.h</includedby>
+    <includedby refid="a00323" local="yes">rendering_context.h</includedby>
+    <includedby refid="a00329" local="yes">scene_context.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>constants.h</label>
+        <link refid="a00290"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="4">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="34">
+        <label>mixFont.cpp</label>
+        <link refid="a00014"/>
+      </node>
+      <node id="30">
+        <label>mixFont.h</label>
+        <link refid="a00017"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>mixMesh.cpp</label>
+        <link refid="a00026"/>
+      </node>
+      <node id="39">
+        <label>mixMesh.h</label>
+        <link refid="a00029"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>mixAsset_loader_font.cpp</label>
+        <link refid="a00083"/>
+      </node>
+      <node id="31">
+        <label>mixAsset_loader_font.h</label>
+        <link refid="a00086"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>mixAsset_loader_mesh.cpp</label>
+        <link refid="a00089"/>
+      </node>
+      <node id="40">
+        <label>mixAsset_loader_mesh.h</label>
+        <link refid="a00092"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>mixAsset_loader_shader.cpp</label>
+        <link refid="a00095"/>
+      </node>
+      <node id="42">
+        <label>mixAsset_loader_shader.h</label>
+        <link refid="a00098"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>mixAsset_loader_texture.cpp</label>
+        <link refid="a00107"/>
+      </node>
+      <node id="44">
+        <label>mixAsset_loader_texture.h</label>
+        <link refid="a00110"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>mixAsset_manager.cpp</label>
+        <link refid="a00113"/>
+      </node>
+      <node id="27">
+        <label>mixComponent.cpp</label>
+        <link refid="a00131"/>
+      </node>
+      <node id="26">
+        <label>mixComponent.h</label>
+        <link refid="a00134"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mixMesh_component.cpp</label>
+        <link refid="a00137"/>
+      </node>
+      <node id="17">
+        <label>mixMesh_component.h</label>
+        <link refid="a00140"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mixLight.cpp</label>
+        <link refid="a00143"/>
+      </node>
+      <node id="22">
+        <label>mixLight.h</label>
+        <link refid="a00146"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixCamera.cpp</label>
+        <link refid="a00149"/>
+      </node>
+      <node id="2">
+        <label>mixCamera.h</label>
+        <link refid="a00152"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mixEntity.cpp</label>
+        <link refid="a00155"/>
+      </node>
+      <node id="20">
+        <label>mixEntity.h</label>
+        <link refid="a00158"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>mixTransform.cpp</label>
+        <link refid="a00167"/>
+      </node>
+      <node id="25">
+        <label>mixTransform.h</label>
+        <link refid="a00170"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>editor_config.h</label>
+        <link refid="a00182"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mixEditor.cpp</label>
+        <link refid="a00185"/>
+      </node>
+      <node id="6">
+        <label>mixEditor.h</label>
+        <link refid="a00188"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>hierarchy_window.cpp</label>
+        <link refid="a00191"/>
+      </node>
+      <node id="7">
+        <label>hierarchy_window.h</label>
+        <link refid="a00194"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>project_window.cpp</label>
+        <link refid="a00197"/>
+      </node>
+      <node id="11">
+        <label>project_window.h</label>
+        <link refid="a00200"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>scene_window.cpp</label>
+        <link refid="a00203"/>
+      </node>
+      <node id="13">
+        <label>scene_window.h</label>
+        <link refid="a00206"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>shortcuts_window.cpp</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="15">
+        <label>shortcuts_window.h</label>
+        <link refid="a00212"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gui_style.cpp</label>
+        <link refid="a00227"/>
+      </node>
+      <node id="36">
+        <label>gui_style.h</label>
+        <link refid="a00230"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mixGui.cpp</label>
+        <link refid="a00257"/>
+      </node>
+      <node id="35">
+        <label>mixGui.h</label>
+        <link refid="a00260"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>main.cpp</label>
+        <link refid="a00281"/>
+      </node>
+      <node id="1">
+        <label>constants.h</label>
+        <link refid="a00290"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>rendering_context.cpp</label>
+        <link refid="a00320"/>
+      </node>
+      <node id="29">
+        <label>rendering_context.h</label>
+        <link refid="a00323"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>scene_context.h</label>
+        <link refid="a00329"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mixScene.cpp</label>
+        <link refid="a00332"/>
+      </node>
+      <node id="4">
+        <label>mixScene.h</label>
+        <link refid="a00335"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="a00290_1ac01434fcf858bd4b50b62784079ad3c0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= 3.14159265358979323846f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" line="4" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00290_1ab4ea40aed3858dc9f59e36f59ac07531" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float DegreesToRadians</definition>
+        <argsstring></argsstring>
+        <name>DegreesToRadians</name>
+        <initializer>= <ref refid="a00290_1ac01434fcf858bd4b50b62784079ad3c0" kindref="member">PI</ref> / 180.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" line="5" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00290_1a573b48f151a3b60b16c3221c53dc92e2" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>static constexpr float degrees_to_radians</definition>
+        <argsstring>(float d)</argsstring>
+        <name>degrees_to_radians</name>
+        <param>
+          <type>float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" line="7" column="24" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" bodystart="7" bodyend="10"/>
+        <referencedby refid="a00499_1a94de4b6193da11c60e8b4cd6f2d68152" compoundref="a00167" startline="97" endline="109">mix::core::mixTransform::update_vectors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00290_1af57b155e256b3a60e8a9b00757d451de" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>static constexpr float radians_to_degrees</definition>
+        <argsstring>(float d)</argsstring>
+        <name>radians_to_degrees</name>
+        <param>
+          <type>float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" line="12" column="24" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h" bodystart="12" bodyend="15"/>
+        <referencedby refid="a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" compoundref="a00167" startline="38" endline="45">mix::core::mixTransform::look_at</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00296" kindref="compound">vec.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="a00290_1ac01434fcf858bd4b50b62784079ad3c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00290_1ac01434fcf858bd4b50b62784079ad3c0" kindref="member">PI</ref><sp/>=<sp/>3.14159265358979323846f;</highlight></codeline>
+<codeline lineno="5" refid="a00290_1ab4ea40aed3858dc9f59e36f59ac07531" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00290_1ab4ea40aed3858dc9f59e36f59ac07531" kindref="member">DegreesToRadians</ref><sp/>=<sp/><ref refid="a00290_1ac01434fcf858bd4b50b62784079ad3c0" kindref="member">PI</ref><sp/>/<sp/>180.0f;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::radians(d);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="a00290_1af57b155e256b3a60e8a9b00757d451de" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00290_1af57b155e256b3a60e8a9b00757d451de" kindref="member">radians_to_degrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::degrees<sp/>(d);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/constants.h"/>
+  </compounddef>
+</doxygen>

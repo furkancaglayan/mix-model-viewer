@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00365" kind="namespace" language="C++">
+    <compoundname>mix::rendering</compoundname>
+    <innerclass refid="a00619" prot="public">mix::rendering::rendering_context</innerclass>
+    <innerclass refid="a00623" prot="public">mix::rendering::scene_context</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="8" column="5"/>
+  </compounddef>
+</doxygen>

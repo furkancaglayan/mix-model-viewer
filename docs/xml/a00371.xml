@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00371" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mix::assetsystem::asset_processor</compoundname>
+    <derivedcompoundref refid="a00427" prot="public" virt="non-virtual">mix::assetsystem::default_processors::default_texture_processor</derivedcompoundref>
+    <includes refid="a00056" local="no">asset_processor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00371_1a9c1290827acfd7ba4594da727891e855" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mix::assetsystem::asset_processor::post_process</definition>
+        <argsstring>(mixAsset_item *asset)=0</argsstring>
+        <name>post_process</name>
+        <qualifiedname>mix::assetsystem::asset_processor::post_process</qualifiedname>
+        <reimplementedby refid="a00427_1a934eb85ab461726f7bb51ecbbcdfc070">post_process</reimplementedby>
+        <param>
+          <type><ref refid="a00383" kindref="compound">mixAsset_item</ref> *</type>
+          <declname>asset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" line="13" column="26"/>
+        <referencedby refid="a00431_1ad36e4e395af7e88c9b618c6ceca3f35f" compoundref="a00077" startline="22" endline="35">mix::assetsystem::mixAsset_loader_base::set_asset_processor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::assetsystem::asset_processor</label>
+        <link refid="a00371"/>
+      </node>
+      <node id="2">
+        <label>mix::assetsystem::default_processors::default_texture_processor</label>
+        <link refid="a00427"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" line="10" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="a00371_1a9c1290827acfd7ba4594da727891e855" prot="public" virt="pure-virtual"><scope>mix::assetsystem::asset_processor</scope><name>post_process</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

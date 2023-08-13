@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00579" kind="class" language="C++" prot="public">
+    <compoundname>mix::library::event</compoundname>
+    <includes refid="a00272" local="no">event.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="a00579_1a3229cca7e3127209b1271a20ed19b0a0" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="a00595" kindref="compound">ievent_callback_base_with_args</ref>&lt; U &gt; * &gt;</type>
+        <definition>typedef std::vector&lt;ievent_callback_base_with_args&lt;U&gt;*&gt; mix::library::event&lt; U &gt;::_action_list</definition>
+        <argsstring></argsstring>
+        <name>_action_list</name>
+        <qualifiedname>mix::library::event::_action_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="27" column="33" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="a00579_1a71eafcddb46c292686dfd64d551d6e92" prot="protected" static="no" mutable="no">
+        <type><ref refid="a00579_1a3229cca7e3127209b1271a20ed19b0a0" kindref="member">_action_list</ref></type>
+        <definition>_action_list mix::library::event&lt; U &gt;::_actions</definition>
+        <argsstring></argsstring>
+        <name>_actions</name>
+        <qualifiedname>mix::library::event::_actions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="56" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="a00579_1a4c9271542cffaa0fd528ceca7728340b" compoundref="a00272" startline="28" endline="36">mix::library::event&lt; U &gt;::add_listener</referencedby>
+        <referencedby refid="a00579_1aacd834bbc1d23903779d59dc39f89ee8" compoundref="a00272" startline="46" endline="52">mix::library::event&lt; U &gt;::dispatch</referencedby>
+        <referencedby refid="a00579_1a42bf32b54dd697880c5977bfe53608c3" compoundref="a00272" startline="37" endline="45">mix::library::event&lt; U &gt;::remove_listener</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00579_1a4c9271542cffaa0fd528ceca7728340b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mix::library::event&lt; U &gt;::add_listener</definition>
+        <argsstring>(ievent_callback_base_with_args&lt; U &gt; *action)</argsstring>
+        <name>add_listener</name>
+        <qualifiedname>mix::library::event::add_listener</qualifiedname>
+        <param>
+          <type><ref refid="a00595" kindref="compound">ievent_callback_base_with_args</ref>&lt; U &gt; *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="28" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="28" bodyend="36"/>
+        <references refid="a00579_1a71eafcddb46c292686dfd64d551d6e92" compoundref="a00272" startline="56">mix::library::event&lt; U &gt;::_actions</references>
+      </memberdef>
+      <memberdef kind="function" id="a00579_1a42bf32b54dd697880c5977bfe53608c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mix::library::event&lt; U &gt;::remove_listener</definition>
+        <argsstring>(ievent_callback_base_with_args&lt; U &gt; *action)</argsstring>
+        <name>remove_listener</name>
+        <qualifiedname>mix::library::event::remove_listener</qualifiedname>
+        <param>
+          <type><ref refid="a00595" kindref="compound">ievent_callback_base_with_args</ref>&lt; U &gt; *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="37" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="37" bodyend="45"/>
+        <references refid="a00579_1a71eafcddb46c292686dfd64d551d6e92" compoundref="a00272" startline="56">mix::library::event&lt; U &gt;::_actions</references>
+      </memberdef>
+      <memberdef kind="function" id="a00579_1aacd834bbc1d23903779d59dc39f89ee8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mix::library::event&lt; U &gt;::dispatch</definition>
+        <argsstring>(U *obj)</argsstring>
+        <name>dispatch</name>
+        <qualifiedname>mix::library::event::dispatch</qualifiedname>
+        <param>
+          <type>U *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="46" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="46" bodyend="52"/>
+        <references refid="a00579_1a71eafcddb46c292686dfd64d551d6e92" compoundref="a00272" startline="56">mix::library::event&lt; U &gt;::_actions</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" line="23" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.h" bodystart="24" bodyend="57"/>
+    <listofallmembers>
+      <member refid="a00579_1a3229cca7e3127209b1271a20ed19b0a0" prot="public" virt="non-virtual"><scope>mix::library::event</scope><name>_action_list</name></member>
+      <member refid="a00579_1a71eafcddb46c292686dfd64d551d6e92" prot="protected" virt="non-virtual"><scope>mix::library::event</scope><name>_actions</name></member>
+      <member refid="a00579_1a4c9271542cffaa0fd528ceca7728340b" prot="public" virt="virtual"><scope>mix::library::event</scope><name>add_listener</name></member>
+      <member refid="a00579_1aacd834bbc1d23903779d59dc39f89ee8" prot="public" virt="virtual"><scope>mix::library::event</scope><name>dispatch</name></member>
+      <member refid="a00579_1a42bf32b54dd697880c5977bfe53608c3" prot="public" virt="virtual"><scope>mix::library::event</scope><name>remove_listener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

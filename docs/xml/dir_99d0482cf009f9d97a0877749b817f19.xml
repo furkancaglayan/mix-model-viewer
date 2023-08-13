@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_99d0482cf009f9d97a0877749b817f19" kind="dir">
+    <compoundname>gui</compoundname>
+    <innerfile refid="a00215">gui_layout.cpp</innerfile>
+    <innerfile refid="a00218">gui_layout.h</innerfile>
+    <innerfile refid="a00221">gui_selectable_layout.cpp</innerfile>
+    <innerfile refid="a00224">gui_selectable_layout.h</innerfile>
+    <innerfile refid="a00227">gui_style.cpp</innerfile>
+    <innerfile refid="a00230">gui_style.h</innerfile>
+    <innerfile refid="a00233">gui_window.cpp</innerfile>
+    <innerfile refid="a00236">gui_window.h</innerfile>
+    <innerfile refid="a00239">i_editor.cpp</innerfile>
+    <innerfile refid="a00242">i_editor.h</innerfile>
+    <innerfile refid="a00245">i_guielement.cpp</innerfile>
+    <innerfile refid="a00248">i_guielement.h</innerfile>
+    <innerfile refid="a00251">i_scene.cpp</innerfile>
+    <innerfile refid="a00254">i_scene.h</innerfile>
+    <innerfile refid="a00257">mixGui.cpp</innerfile>
+    <innerfile refid="a00260">mixGui.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/"/>
+  </compounddef>
+</doxygen>

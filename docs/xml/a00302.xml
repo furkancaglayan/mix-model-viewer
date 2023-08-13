@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00302" kind="file" language="C++">
+    <compoundname>mixAsset_path.cpp</compoundname>
+    <includes refid="a00305" local="yes">mixAsset_path.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>mixAsset_path.cpp</label>
+        <link refid="a00302"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixAsset_path.h</label>
+        <link refid="a00305"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>typedefs.h</label>
+        <link refid="a00314"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="5">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00305" kindref="compound">mixAsset_path.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="a00607_1a0c5a063f64eb2142fa4c2539dec02768" refkind="member"><highlight class="normal"><ref refid="a00607_1a0c5a063f64eb2142fa4c2539dec02768" kindref="member">mix::platform::mixAsset_path::mixAsset_path</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path)<sp/>:<sp/>_path{<sp/>path<sp/>}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00607_1ad470677ea0bf4cb8231135d0b8fb771e" kindref="member">_name</ref><sp/>=<sp/><ref refid="a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" kindref="member">_path</ref>.substr<sp/>(<ref refid="a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" kindref="member">_path</ref>.find_last_of<sp/>(</highlight><highlight class="stringliteral">&quot;/\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string::size_type<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p<sp/>(<ref refid="a00607_1ad470677ea0bf4cb8231135d0b8fb771e" kindref="member">_name</ref>.find_last_of<sp/>(</highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="a00615_1a07fe20c4139f8dec08c67e00ac824a93" kindref="member">platform_utils::is_file</ref><sp/>(<ref refid="a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" kindref="member">_path</ref>))</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00607_1a85c5f22f6030306ebe75c13433115d82" kindref="member">_extension</ref><sp/>=<sp/><ref refid="a00607_1ad470677ea0bf4cb8231135d0b8fb771e" kindref="member">_name</ref>.substr<sp/>(p<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00607_1a85c5f22f6030306ebe75c13433115d82" kindref="member">_extension</ref><sp/>=<sp/>std::string<sp/>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00607_1a2acfcd799df8150c0812b4c5b1ca81b0" kindref="member">_base_name</ref><sp/>=<sp/><ref refid="a00607_1ad470677ea0bf4cb8231135d0b8fb771e" kindref="member">_name</ref>.substr<sp/>(0,<sp/>p);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.cpp"/>
+  </compounddef>
+</doxygen>

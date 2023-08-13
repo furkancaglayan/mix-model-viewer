@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00511" kind="class" language="C++" prot="public">
+    <compoundname>mix::mixEditor</compoundname>
+    <includes refid="a00188" local="no">mixEditor.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="a00511_1ab03cd27e7c82e3edead6d413dfe20294" prot="public" static="yes" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00511" kindref="compound">mixEditor</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; mix::mixEditor &gt; mix::mixEditor::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>mix::mixEditor::_instance</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="18" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="a00511_1adde88c8a00fe28d92b77de9dff7ac461" compoundref="a00185" startline="27" endline="32">create_new</referencedby>
+        <referencedby refid="a00511_1a01868dbabff66d2e6d8951913bc94255" compoundref="a00185" startline="34" endline="37">destroy</referencedby>
+        <referencedby refid="a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" compoundref="a00185" startline="59" endline="62">get_asset_manager</referencedby>
+        <referencedby refid="a00511_1ad118ac1affe1b7c3045209fe0cffed22" compoundref="a00185" startline="39" endline="42">initialize_asset_manager</referencedby>
+        <referencedby refid="a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" compoundref="a00185" startline="44" endline="57">initialize_gui</referencedby>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+        <referencedby refid="a00523_1ac9f690d20225404cc66f614c6025c4ba" compoundref="a00203" startline="36" endline="47">mix::editor::windows::scene_window::on_window_resized</referencedby>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+        <referencedby refid="a00185_1a4ea3a6fa48b44b5f82991ad0efb6d4f4" compoundref="a00185" startline="130" endline="133">window_pos_callback</referencedby>
+        <referencedby refid="a00185_1a8e48b8d6b011ab4109740dc9ac53ddf2" compoundref="a00185" startline="144" endline="151">window_size_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00511_1a5e1071581a02866783ad806046797d32" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mix::mixEditor::_should_run</definition>
+        <argsstring></argsstring>
+        <name>_should_run</name>
+        <qualifiedname>mix::mixEditor::_should_run</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="25" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00511_1a9f04dedb58562aef9685ed8c0baef060" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00503" kindref="compound">mix::core::mixWindow</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::core::mixWindow&gt; mix::mixEditor::_window</definition>
+        <argsstring></argsstring>
+        <name>_window</name>
+        <qualifiedname>mix::mixEditor::_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="41" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="a00511_1ab2edc4479f985c6ba312281735cd36e1" compoundref="a00185" startline="12" endline="16">init_render_buffers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00511_1adb1740b865149f731464a4d90d2d00f9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00459" kindref="compound">mix::containers::frame_buffer</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::containers::frame_buffer&gt; mix::mixEditor::_frame_buffer</definition>
+        <argsstring></argsstring>
+        <name>_frame_buffer</name>
+        <qualifiedname>mix::mixEditor::_frame_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="42" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="a00511_1ab2edc4479f985c6ba312281735cd36e1" compoundref="a00185" startline="12" endline="16">init_render_buffers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00511_1a7d4b80b1c54859763c0618a5d644ac6a" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00619" kindref="compound">mix::rendering::rendering_context</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::rendering::rendering_context&gt; mix::mixEditor::_rendering</definition>
+        <argsstring></argsstring>
+        <name>_rendering</name>
+        <qualifiedname>mix::mixEditor::_rendering</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="43" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00511_1a4bdc21f1a63c55293868fe8a51d34b44" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00627" kindref="compound">mix::scene_management::mixScene</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::scene_management::mixScene&gt; mix::mixEditor::_active_scene</definition>
+        <argsstring></argsstring>
+        <name>_active_scene</name>
+        <qualifiedname>mix::mixEditor::_active_scene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="44" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00511_1acecae48592905e83c38a9e752b1cb150" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00455" kindref="compound">mix::assetsystem::mixAsset_manager</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::assetsystem::mixAsset_manager&gt; mix::mixEditor::_asset_manager</definition>
+        <argsstring></argsstring>
+        <name>_asset_manager</name>
+        <qualifiedname>mix::mixEditor::_asset_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="45" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00511_1adde88c8a00fe28d92b77de9dff7ac461" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::create_new</definition>
+        <argsstring>(editor_config config)</argsstring>
+        <name>create_new</name>
+        <qualifiedname>mix::mixEditor::create_new</qualifiedname>
+        <param>
+          <type><ref refid="a00507" kindref="compound">editor_config</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="19" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="27" bodyend="32"/>
+        <references refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="a00188" startline="18">_instance</references>
+        <references refid="a00511_1adde88c8a00fe28d92b77de9dff7ac461" compoundref="a00185" startline="27" endline="32">create_new</references>
+        <references refid="a00266_1a3215f683b10314f5af3b5122d5e8bc41" compoundref="a00266" startline="11">INFO</references>
+        <referencedby refid="a00511_1adde88c8a00fe28d92b77de9dff7ac461" compoundref="a00185" startline="27" endline="32">create_new</referencedby>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a01868dbabff66d2e6d8951913bc94255" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>mix::mixEditor::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="20" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="34" bodyend="37"/>
+        <references refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="a00188" startline="18">_instance</references>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1ad118ac1affe1b7c3045209fe0cffed22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::initialize_asset_manager</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>initialize_asset_manager</name>
+        <qualifiedname>mix::mixEditor::initialize_asset_manager</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="21" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="39" bodyend="42"/>
+        <references refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="a00188" startline="18">_instance</references>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::initialize_gui</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_gui</name>
+        <qualifiedname>mix::mixEditor::initialize_gui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="22" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="44" bodyend="57"/>
+        <references refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="a00188" startline="18">_instance</references>
+        <references refid="a00567_1a19d77711a8a4b14b49bbd44a3381b9f2" compoundref="a00257" startline="131" endline="140">mixImGui::mixGui::add_font</references>
+        <references refid="a00567_1a2ea1d198d6c137621b97a24d7681ed04" compoundref="a00257" startline="6" endline="87">mixImGui::mixGui::init</references>
+        <references refid="a00515_1a67f8c3a9e8f13275b061d617fc3a701b" compoundref="a00191" startline="101" endline="109">mix::editor::windows::hierarchy_window::initialize</references>
+        <references refid="a00519_1a1804e0a71bddd1f49d90a3a2a94b3903" compoundref="a00197" startline="130" endline="139">mix::editor::windows::project_window::initialize</references>
+        <references refid="a00523_1a9d488beff6382904a47364ed5773eb11" compoundref="a00203" startline="49" endline="57">mix::editor::windows::scene_window::initialize</references>
+        <references refid="a00527_1abe3afa9a0a9c2f15844b7e284b299604" compoundref="a00209" startline="50" endline="58">mix::editor::windows::shortcuts_window::initialize</references>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00455" kindref="compound">mix::assetsystem::mixAsset_manager</ref> *</type>
+        <definition>mix::assetsystem::mixAsset_manager * mix::mixEditor::get_asset_manager</definition>
+        <argsstring>()</argsstring>
+        <name>get_asset_manager</name>
+        <qualifiedname>mix::mixEditor::get_asset_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="24" column="51" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="59" bodyend="62"/>
+        <references refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="a00188" startline="18">_instance</references>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+        <referencedby refid="a00519_1a04410f6d910514e395f25c09b2ccc353" compoundref="a00197" startline="4" endline="17">mix::editor::windows::project_window::project_window</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+        <referencedby refid="a00527_1ac1927decafc45798564ac42fb84b1776" compoundref="a00209" startline="60" endline="68">mix::editor::windows::shortcuts_window::shortcuts_window</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00511_1abbe0996eccbfb0cefdab6677248252df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>mix::mixEditor::run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="26" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1ac526cc2743246abb11e4888b53e0e803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::mixEditor::mixEditor</definition>
+        <argsstring>()</argsstring>
+        <name>mixEditor</name>
+        <qualifiedname>mix::mixEditor::mixEditor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="27" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a0a2a7a238b07605fcd9d6ca0c4090368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::mixEditor::render</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="29" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="70" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1ab2edc4479f985c6ba312281735cd36e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::init_render_buffers</definition>
+        <argsstring>()</argsstring>
+        <name>init_render_buffers</name>
+        <qualifiedname>mix::mixEditor::init_render_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="30" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="12" bodyend="16"/>
+        <references refid="a00511_1adb1740b865149f731464a4d90d2d00f9" compoundref="a00188" startline="42">_frame_buffer</references>
+        <references refid="a00511_1a9f04dedb58562aef9685ed8c0baef060" compoundref="a00188" startline="41">_window</references>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1ab584aea87d06baa25949d8894099a829" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::mixEditor::get_rendered_texture</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rendered_texture</name>
+        <qualifiedname>mix::mixEditor::get_rendered_texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="31" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a6b2c47771cf2e0d19dd4e48534ce9c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::on_window_size_changed</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>on_window_size_changed</name>
+        <qualifiedname>mix::mixEditor::on_window_size_changed</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="32" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="117" bodyend="123"/>
+        <references refid="a00567_1acc6e4775fd8e9d8a680eef89b637847f" compoundref="a00257" startline="103" endline="110">mixImGui::mixGui::on_editor_window_size_changed</references>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a0da4ede2ff29e53f110838c5d5cd85ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00503" kindref="compound">mix::core::mixWindow</ref> *</type>
+        <definition>mix::core::mixWindow * mix::mixEditor::get_window</definition>
+        <argsstring>() const</argsstring>
+        <name>get_window</name>
+        <qualifiedname>mix::mixEditor::get_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="34" column="30" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1af3824beb891e7bc4500ed3d06ee6fc41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00627" kindref="compound">mix::scene_management::mixScene</ref> *</type>
+        <definition>mix::scene_management::mixScene * mix::mixEditor::get_active_scene</definition>
+        <argsstring>() const</argsstring>
+        <name>get_active_scene</name>
+        <qualifiedname>mix::mixEditor::get_active_scene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="35" column="41" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00511_1ab6be81b5d14d4c6ad144b9f463a1216b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::gui_pass</definition>
+        <argsstring>()</argsstring>
+        <name>gui_pass</name>
+        <qualifiedname>mix::mixEditor::gui_pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="38" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="125" bodyend="128"/>
+        <references refid="a00567_1a97982cfbbbc8f5a2af0d95d2e719273e" compoundref="a00257" startline="89" endline="101">mixImGui::mixGui::render</references>
+      </memberdef>
+      <memberdef kind="function" id="a00511_1a15f723dfe749369abad2b0206c86689e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::mixEditor::start</definition>
+        <argsstring>(editor_config config)</argsstring>
+        <name>start</name>
+        <qualifiedname>mix::mixEditor::start</qualifiedname>
+        <param>
+          <type><ref refid="a00507" kindref="compound">editor_config</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="39" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.cpp" bodystart="101" bodyend="115"/>
+        <references refid="a00185_1a58dc50dc37f25004828e46f0640e7ab3" compoundref="a00185" startline="140" endline="142">window_close_callback</references>
+        <references refid="a00185_1a4ea3a6fa48b44b5f82991ad0efb6d4f4" compoundref="a00185" startline="130" endline="133">window_pos_callback</references>
+        <references refid="a00185_1a8e48b8d6b011ab4109740dc9ac53ddf2" compoundref="a00185" startline="144" endline="151">window_size_callback</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" line="14" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/mixEditor.h" bodystart="15" bodyend="46"/>
+    <listofallmembers>
+      <member refid="a00511_1a4bdc21f1a63c55293868fe8a51d34b44" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>_active_scene</name></member>
+      <member refid="a00511_1acecae48592905e83c38a9e752b1cb150" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>_asset_manager</name></member>
+      <member refid="a00511_1adb1740b865149f731464a4d90d2d00f9" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>_frame_buffer</name></member>
+      <member refid="a00511_1ab03cd27e7c82e3edead6d413dfe20294" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>_instance</name></member>
+      <member refid="a00511_1a7d4b80b1c54859763c0618a5d644ac6a" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>_rendering</name></member>
+      <member refid="a00511_1a5e1071581a02866783ad806046797d32" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>_should_run</name></member>
+      <member refid="a00511_1a9f04dedb58562aef9685ed8c0baef060" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>_window</name></member>
+      <member refid="a00511_1adde88c8a00fe28d92b77de9dff7ac461" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>create_new</name></member>
+      <member refid="a00511_1a01868dbabff66d2e6d8951913bc94255" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>destroy</name></member>
+      <member refid="a00511_1af3824beb891e7bc4500ed3d06ee6fc41" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>get_active_scene</name></member>
+      <member refid="a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>get_asset_manager</name></member>
+      <member refid="a00511_1ab584aea87d06baa25949d8894099a829" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>get_rendered_texture</name></member>
+      <member refid="a00511_1a0da4ede2ff29e53f110838c5d5cd85ee" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>get_window</name></member>
+      <member refid="a00511_1ab6be81b5d14d4c6ad144b9f463a1216b" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>gui_pass</name></member>
+      <member refid="a00511_1ab2edc4479f985c6ba312281735cd36e1" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>init_render_buffers</name></member>
+      <member refid="a00511_1ad118ac1affe1b7c3045209fe0cffed22" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>initialize_asset_manager</name></member>
+      <member refid="a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>initialize_gui</name></member>
+      <member refid="a00511_1ac526cc2743246abb11e4888b53e0e803" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>mixEditor</name></member>
+      <member refid="a00511_1a6b2c47771cf2e0d19dd4e48534ce9c98" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>on_window_size_changed</name></member>
+      <member refid="a00511_1a0a2a7a238b07605fcd9d6ca0c4090368" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>render</name></member>
+      <member refid="a00511_1abbe0996eccbfb0cefdab6677248252df" prot="public" virt="non-virtual"><scope>mix::mixEditor</scope><name>run</name></member>
+      <member refid="a00511_1a15f723dfe749369abad2b0206c86689e" prot="private" virt="non-virtual"><scope>mix::mixEditor</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

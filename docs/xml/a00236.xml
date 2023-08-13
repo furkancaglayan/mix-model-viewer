@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00236" kind="file" language="C++">
+    <compoundname>gui_window.h</compoundname>
+    <includes refid="a00296" local="yes">../math/vec.h</includes>
+    <includes refid="a00218" local="yes">gui_layout.h</includes>
+    <includes refid="a00248" local="yes">i_guielement.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="a00233" local="yes">gui_window.cpp</includedby>
+    <includedby refid="a00260" local="yes">mixGui.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>gui_layout.h</label>
+        <link refid="a00218"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gui_window.h</label>
+        <link refid="a00236"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>i_guielement.h</label>
+        <link refid="a00248"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../math/color.h</label>
+        <link refid="a00287"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../math/vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="10">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="9">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="4">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="8">
+        <label>imgui.h</label>
+      </node>
+      <node id="17">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="15">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>editor_config.h</label>
+        <link refid="a00182"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mixEditor.cpp</label>
+        <link refid="a00185"/>
+      </node>
+      <node id="12">
+        <label>mixEditor.h</label>
+        <link refid="a00188"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>hierarchy_window.cpp</label>
+        <link refid="a00191"/>
+      </node>
+      <node id="13">
+        <label>hierarchy_window.h</label>
+        <link refid="a00194"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>project_window.cpp</label>
+        <link refid="a00197"/>
+      </node>
+      <node id="7">
+        <label>project_window.h</label>
+        <link refid="a00200"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>scene_window.cpp</label>
+        <link refid="a00203"/>
+      </node>
+      <node id="10">
+        <label>scene_window.h</label>
+        <link refid="a00206"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>shortcuts_window.cpp</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="16">
+        <label>shortcuts_window.h</label>
+        <link refid="a00212"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gui_style.cpp</label>
+        <link refid="a00227"/>
+      </node>
+      <node id="4">
+        <label>gui_style.h</label>
+        <link refid="a00230"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gui_window.cpp</label>
+        <link refid="a00233"/>
+      </node>
+      <node id="1">
+        <label>gui_window.h</label>
+        <link refid="a00236"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mixGui.cpp</label>
+        <link refid="a00257"/>
+      </node>
+      <node id="3">
+        <label>mixGui.h</label>
+        <link refid="a00260"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>main.cpp</label>
+        <link refid="a00281"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00551" prot="public">mixImGui::gui_window</innerclass>
+    <innernamespace refid="a00361">mixImGui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/vec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00218" kindref="compound">gui_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00248" kindref="compound">i_guielement.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00361" kindref="compound">mixImGui</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>enum<sp/>class<sp/>window_binds</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>horizontal_bind,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertical_bind</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" kindref="member">flexible</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983acec315e3d0975e5cc2811d5d8725f149" kindref="member">fixed</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a41a128473817e7f779586b8a80f550ea" kindref="member">NoTitleBar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe" kindref="member">NoResize</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f" kindref="member">NoMove</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aae89bf06303fdc372f34ec166a263749" kindref="member">NoScrollbar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aeb2432df0c12ffe8e809d00f7e3b24d6" kindref="member">NoScrollWithMouse</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1" kindref="member">NoCollapse</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>5,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a68a0892b5db3fc14b2852ff97b2bad3f" kindref="member">AlwaysAutoResize</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>6,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a117c9fb74fbb470504b073d0536ec051" kindref="member">NoBackground</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>7,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a3b3da15a8fc5adef75892f692844d42c" kindref="member">NoSavedSettings</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>8,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8acabc313a99d2b3e41e73258b3394420e" kindref="member">NoMouseInputs</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>9,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add" kindref="member">MenuBar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>10,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa211ec74a5d88b231f1a63ea575ed1fd" kindref="member">HorizontalScrollbar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>11,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8af5b42bebe544f664f6b362662ba74731" kindref="member">NoFocusOnAppearing</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>12,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa5494154d50b6e336e91abba755625b8" kindref="member">NoBringToFrontOnFocus</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>13,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a1d43b4d7370b4d2fd8ac7e716bf4d719" kindref="member">AlwaysVerticalScrollbar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>14,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa7b79ffd3ddda0f48579e4801805da83" kindref="member">AlwaysHorizontalScrollbar</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>15,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8af333f70d81772635fc8b288bf4e503d2" kindref="member">AlwaysUseWindowPadding</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a126937ae6ba5e48d67dd0160249dea8e" kindref="member">NoNavInputs</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>18,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a2271a6716f1e7c92a1276dda9367fe1c" kindref="member">NoNavFocus</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>19,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afc813e5f6a1a82a18a731fec4aa93302" kindref="member">UnsavedDocument</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>20,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="a00361_1a9e7c970f44693f56f77889aa3839aad5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/><ref refid="a00361_1a9e7c970f44693f56f77889aa3839aad5" kindref="member">operator| </ref>(<ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>a,<sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>b)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(a)<sp/>|<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(b));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="a00361_1a0629445b85b9bc5926dbd45462f3f4a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/><ref refid="a00361_1a0629445b85b9bc5926dbd45462f3f4a6" kindref="member">operator&amp; </ref>(<ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>a,<sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>b)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(a)<sp/>&amp;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(b));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="a00361_1a275203f45f31334e4abf365379a729c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/><ref refid="a00361_1a275203f45f31334e4abf365379a729c1" kindref="member">operator~</ref>(<ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>a)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(~static_cast&lt;int&gt;<sp/>(a));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="a00551" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00551" kindref="compound">gui_window</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00551" kindref="compound">gui_window</ref><sp/>(std::string<sp/>window_name,<sp/><ref refid="a00531" kindref="compound">window_rect</ref><sp/>r,<sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>flags<sp/>=<sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">window_flags::None</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" kindref="member">render</ref><sp/>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1ae853e0907159148f09ba4d89b32407ca" kindref="member">disable</ref><sp/>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1ae12c27c69d083299efc96b46b43a2f76" kindref="member">enable</ref><sp/>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" kindref="member">on_editor_window_size_changed</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" kindref="member">set_title</ref><sp/>(std::string<sp/>s);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;gui_window*&gt;<sp/>get_window_binds<sp/>(window_binds<sp/>bind)<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>bind_with_window<sp/>(gui_window*<sp/>other,<sp/>window_binds<sp/>bind);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" kindref="member">set_contrainsts</ref><sp/>(<ref refid="a00531" kindref="compound">window_rect</ref><sp/>constraints);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a5366aaa00163caca59752b9cc403c327" kindref="member">clear_constraints</ref><sp/>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a370936f91e7c1372384e906dac282be3" kindref="member">set_positioning</ref><sp/>(<ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref><sp/>wp);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::map&lt;window_binds,<sp/>std::vector&lt;gui_window*&gt;&gt;<sp/>_window_binds;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a5b26d4ff892ca96966cedacb32a214c3" kindref="member">begin</ref><sp/>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a1ca29859ec280ef652b1a8a129302674" kindref="member">end</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a4d3055b2bda8480b8eaeba1be84c0463" kindref="member">rescale</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" kindref="member">set_position</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>pos);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="a00551_1adfaef0003b77e0673f57839c6e0ecf79" kindref="member">get_position</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="a00551_1a88d0684664158d82d55b77f1e0694a16" kindref="member">get_size</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95" refid="a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d" kindref="member">on_editor_window_size_changed_impl</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00551_1ab37e29b679914218b5913a585ea66905" kindref="member">on_window_resized</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>old_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>new_size);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" kindref="member">_is_open</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99" refid="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" kindref="member">_window_name</ref>;</highlight></codeline>
+<codeline lineno="100" refid="a00551_1a97b151a9b07929b2b7838c9ecb956a1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00531" kindref="compound">window_rect</ref><sp/><ref refid="a00551_1ae32d327e1e32115c2c0e7823f6e5f522" kindref="member">_rect</ref>,<sp/><ref refid="a00551_1a97b151a9b07929b2b7838c9ecb956a1a" kindref="member">_constraints</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/><ref refid="a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" kindref="member">get_flags</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/><ref refid="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" kindref="member">_flags</ref>;</highlight></codeline>
+<codeline lineno="106" refid="a00551_1a6e39227f87ebb0c7e5c999207c992f9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref><sp/><ref refid="a00551_1a6e39227f87ebb0c7e5c999207c992f9a" kindref="member">_positioning</ref><sp/>=<sp/><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" kindref="member">window_positioning::flexible</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="a00551_1aa9930bf91b544df53d2d051ae740dc70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00551_1aa9930bf91b544df53d2d051ae740dc70" kindref="member">_has_constraints</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mixImGui</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h"/>
+  </compounddef>
+</doxygen>

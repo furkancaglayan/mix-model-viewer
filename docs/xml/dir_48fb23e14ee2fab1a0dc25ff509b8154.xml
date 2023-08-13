@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_48fb23e14ee2fab1a0dc25ff509b8154" kind="dir">
+    <compoundname>light</compoundname>
+    <innerfile refid="a00143">mixLight.cpp</innerfile>
+    <innerfile refid="a00146">mixLight.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00399" kind="class" language="C++" prot="public">
+    <compoundname>mix::shader</compoundname>
+    <includes refid="a00035" local="no">mixShader.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="a00399_1abd1f544bb198dba5e8e127a4c88d2a3c" prot="public" static="no" strong="yes">
+        <type>unsigned int</type>
+        <name>shader_type</name>
+        <qualifiedname>mix::shader::shader_type</qualifiedname>
+        <enumvalue id="a00399_1abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a" prot="public">
+          <name>vertex</name>
+          <initializer>= GL_VERTEX_SHADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00399_1abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1" prot="public">
+          <name>fragment</name>
+          <initializer>= GL_FRAGMENT_SHADER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00399_1abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3" prot="public">
+          <name>invalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" line="16" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00399_1ab85c57b3551593ebb7bb2f1277019b8c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::shader::shader</definition>
+        <argsstring>()=delete</argsstring>
+        <name>shader</name>
+        <qualifiedname>mix::shader::shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" line="11" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00399_1a33410da725d20d8a4e44a261787b4f70" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::shader::~shader</definition>
+        <argsstring>()=delete</argsstring>
+        <name>~shader</name>
+        <qualifiedname>mix::shader::~shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" line="12" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00399_1aa08b7d08664a6d8a1bb499a50ebe31fc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00399_1abd1f544bb198dba5e8e127a4c88d2a3c" kindref="member">shader_type</ref></type>
+        <definition>static shader_type mix::shader::get_shader_type</definition>
+        <argsstring>(const std::string &amp;ext)</argsstring>
+        <name>get_shader_type</name>
+        <qualifiedname>mix::shader::get_shader_type</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" line="22" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" bodystart="22" bodyend="34"/>
+        <references refid="a00399_1abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1">fragment</references>
+        <references refid="a00399_1abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3">invalid</references>
+        <references refid="a00399_1abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a">vertex</references>
+        <referencedby refid="a00443_1a6d8647ea310c82eb6c82ee7ec64d199b" compoundref="a00095" startline="10" endline="14">mix::assetsystem::loaders::mixAsset_loader_shader::resolve_impl</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" line="9" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader.h" bodystart="10" bodyend="35"/>
+    <listofallmembers>
+      <member refid="a00399_1aa08b7d08664a6d8a1bb499a50ebe31fc" prot="public" virt="non-virtual"><scope>mix::shader</scope><name>get_shader_type</name></member>
+      <member refid="a00399_1ab85c57b3551593ebb7bb2f1277019b8c" prot="private" virt="non-virtual"><scope>mix::shader</scope><name>shader</name></member>
+      <member refid="a00399_1abd1f544bb198dba5e8e127a4c88d2a3c" prot="public" virt="non-virtual"><scope>mix::shader</scope><name>shader_type</name></member>
+      <member refid="a00399_1a33410da725d20d8a4e44a261787b4f70" prot="private" virt="non-virtual"><scope>mix::shader</scope><name>~shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

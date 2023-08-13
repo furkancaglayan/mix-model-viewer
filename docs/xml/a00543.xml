@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00543" kind="struct" language="C++" prot="public">
+    <compoundname>mixImGui::gui_color</compoundname>
+    <includes refid="a00230" local="no">gui_style.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00543_1a6ba46c177ba9afd882e94f40fd389f64" prot="public" static="no" mutable="no">
+        <type><ref refid="a00599" kindref="compound">mix::math::color</ref></type>
+        <definition>mix::math::color mixImGui::gui_color::_disabled</definition>
+        <argsstring></argsstring>
+        <name>_disabled</name>
+        <qualifiedname>mixImGui::gui_color::_disabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="25" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00543_1aaa4198fcb67a298efe8cd5315e245a83" prot="public" static="no" mutable="no">
+        <type><ref refid="a00599" kindref="compound">mix::math::color</ref></type>
+        <definition>mix::math::color mixImGui::gui_color::_active</definition>
+        <argsstring></argsstring>
+        <name>_active</name>
+        <qualifiedname>mixImGui::gui_color::_active</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="26" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00543_1adcb336b80376de558389d3ed130f27a2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00599" kindref="compound">mix::math::color</ref></type>
+        <definition>mix::math::color mixImGui::gui_color::_hovered</definition>
+        <argsstring></argsstring>
+        <name>_hovered</name>
+        <qualifiedname>mixImGui::gui_color::_hovered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="27" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00543_1a24284a14fe81cb4a86ab8ca11a43cfd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mixImGui::gui_color::gui_color</definition>
+        <argsstring>()=default</argsstring>
+        <name>gui_color</name>
+        <qualifiedname>mixImGui::gui_color::gui_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="24" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::math::color</label>
+        <link refid="a00599"/>
+      </node>
+      <node id="1">
+        <label>mixImGui::gui_color</label>
+        <link refid="a00543"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_active</edgelabel>
+          <edgelabel>_disabled</edgelabel>
+          <edgelabel>_hovered</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="20" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="21" bodyend="28"/>
+    <listofallmembers>
+      <member refid="a00543_1aaa4198fcb67a298efe8cd5315e245a83" prot="public" virt="non-virtual"><scope>mixImGui::gui_color</scope><name>_active</name></member>
+      <member refid="a00543_1a6ba46c177ba9afd882e94f40fd389f64" prot="public" virt="non-virtual"><scope>mixImGui::gui_color</scope><name>_disabled</name></member>
+      <member refid="a00543_1adcb336b80376de558389d3ed130f27a2" prot="public" virt="non-virtual"><scope>mixImGui::gui_color</scope><name>_hovered</name></member>
+      <member refid="a00543_1a24284a14fe81cb4a86ab8ca11a43cfd6" prot="public" virt="non-virtual"><scope>mixImGui::gui_color</scope><name>gui_color</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

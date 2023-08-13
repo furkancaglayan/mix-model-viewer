@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00407" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::mixShader_program</compoundname>
+    <basecompoundref refid="a00383" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_item</basecompoundref>
+    <includes refid="a00041" local="no">mixShader_program.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="a00407_1ac8c197b3e79183830b7fe453f633c27d" prot="private" static="no">
+        <type><ref refid="a00403" kindref="compound">mix::assetsystem::mixShader</ref></type>
+        <definition>using mix::assetsystem::mixShader_program::shader =  mix::assetsystem::mixShader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="13" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00407_1aed6e069ce177a5c345efb2bcb6c97c3c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixShader_program::program_id</definition>
+        <argsstring></argsstring>
+        <name>program_id</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::program_id</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="41" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00407_1ac66a692e202433991d48c455f3235019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixShader_program::mixShader_program</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path, shader *vertex_shader, shader *fragment_shader)</argsstring>
+        <name>mixShader_program</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::mixShader_program</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="a00407_1ac8c197b3e79183830b7fe453f633c27d" kindref="member">shader</ref> *</type>
+          <declname>vertex_shader</declname>
+        </param>
+        <param>
+          <type><ref refid="a00407_1ac8c197b3e79183830b7fe453f633c27d" kindref="member">shader</ref> *</type>
+          <declname>fragment_shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="4" bodyend="8"/>
+        <references refid="a00407_1a058daf02da9350e45a855f1ef9cf787f" compoundref="a00038" startline="26" endline="32">compile</references>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1a97dc92e339eb58d13360561c166dae92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixShader_program::mixShader_program</definition>
+        <argsstring>()=delete</argsstring>
+        <name>mixShader_program</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::mixShader_program</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="20" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1ad1be87aac0c1946bfeba0bd8ff205a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixShader_program::~mixShader_program</definition>
+        <argsstring>()</argsstring>
+        <name>~mixShader_program</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::~mixShader_program</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="21" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1affac0c3e92ee77b97619d2dbd51a03bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned</type>
+        <definition>const unsigned mix::assetsystem::mixShader_program::get_uniform_location</definition>
+        <argsstring>(const std::string &amp;s) const</argsstring>
+        <name>get_uniform_location</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::get_uniform_location</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="23" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1a65bcb4b07e5fa6f5de97d086208c43bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned</type>
+        <definition>const unsigned mix::assetsystem::mixShader_program::get_uniform_location</definition>
+        <argsstring>(const char *s) const</argsstring>
+        <name>get_uniform_location</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::get_uniform_location</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="24" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1a058daf02da9350e45a855f1ef9cf787f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::compile</definition>
+        <argsstring>(shader *vertex_shader, shader *fragment_shader)</argsstring>
+        <name>compile</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::compile</qualifiedname>
+        <param>
+          <type><ref refid="a00407_1ac8c197b3e79183830b7fe453f633c27d" kindref="member">shader</ref> *</type>
+          <declname>vertex_shader</declname>
+        </param>
+        <param>
+          <type><ref refid="a00407_1ac8c197b3e79183830b7fe453f633c27d" kindref="member">shader</ref> *</type>
+          <declname>fragment_shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="26" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="26" bodyend="32"/>
+        <references refid="a00403_1ad30215fc86323f4e3c8a24c65be07487" compoundref="a00032" startline="48" endline="51">mix::assetsystem::mixShader::get_shader_id</references>
+        <referencedby refid="a00407_1ac66a692e202433991d48c455f3235019" compoundref="a00038" startline="4" endline="8">mixShader_program</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1afd39437f5876f766acdcf6925991663a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::use</definition>
+        <argsstring>() const</argsstring>
+        <name>use</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::use</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1a9b106383811aeb6dad8f8d3cac6d6a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_1f</definition>
+        <argsstring>(const std::string &amp;s, float f)</argsstring>
+        <name>set_1f</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_1f</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="30" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1a31ee5a7413bfcdda3e3537f1c3ec8483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_1i</definition>
+        <argsstring>(const std::string &amp;s, int i)</argsstring>
+        <name>set_1i</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_1i</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="31" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1ae823f06998e61b2c52ba38914923ce9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_vec3</definition>
+        <argsstring>(const std::string &amp;s, vec3 vec)</argsstring>
+        <name>set_vec3</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_vec3</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="32" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1afb698255d1674ba867a080703aa04f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_vec4</definition>
+        <argsstring>(const std::string &amp;s, vec4 vec)</argsstring>
+        <name>set_vec4</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_vec4</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="33" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1aea0cd6a091273bc86aa3b4f32a397a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_mat3</definition>
+        <argsstring>(const std::string &amp;s, mat3 mat)</argsstring>
+        <name>set_mat3</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_mat3</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="a00293_1a89330bc96e1968b52ef083cd277bbe3d" kindref="member">mat3</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="34" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1ab73ab38a3643a02f3d2ab1e84941f409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixShader_program::set_mat4</definition>
+        <argsstring>(const std::string &amp;s, mat4 mat)</argsstring>
+        <name>set_mat4</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::set_mat4</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="35" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="a00407_1aa2edd465696615aaa293cef858ff64ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixShader_program::get_program_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_program_id</name>
+        <qualifiedname>mix::assetsystem::mixShader_program::get_program_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="37" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixShader_program</label>
+        <link refid="a00407"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixShader_program</label>
+        <link refid="a00407"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="4">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" line="11" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.h" bodystart="12" bodyend="42"/>
+    <listofallmembers>
+      <member refid="a00383_1a5220a296886d6bb5a77b208f12aad817" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>_guid</name></member>
+      <member refid="a00383_1a0ebce5f5d9da7f50795b9519c63e629b" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>_path</name></member>
+      <member refid="a00407_1a058daf02da9350e45a855f1ef9cf787f" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>compile</name></member>
+      <member refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_base_name</name></member>
+      <member refid="a00383_1a6e6d736bbc390e6a4544d96c8ef94065" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_extension</name></member>
+      <member refid="a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_full_name</name></member>
+      <member refid="a00383_1ae7f95f45067eeec3fb17487495c886d8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_guid</name></member>
+      <member refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_path</name></member>
+      <member refid="a00407_1aa2edd465696615aaa293cef858ff64ce" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_program_id</name></member>
+      <member refid="a00383_1ad0fd1f5410d3d1ab6d772ea32935ac7b" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_shortened_name</name></member>
+      <member refid="a00407_1affac0c3e92ee77b97619d2dbd51a03bc" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_uniform_location</name></member>
+      <member refid="a00407_1a65bcb4b07e5fa6f5de97d086208c43bc" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>get_uniform_location</name></member>
+      <member refid="a00383_1a3a8cf3901371f85656487fafa8a7332e" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>is_readonly</name></member>
+      <member refid="a00383_1ae048c01047e4d14ed7fceff0755ab28a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1a65df15bf1da90497e61b96e6bb1b9d72" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>mixAsset_item</name></member>
+      <member refid="a00407_1ac66a692e202433991d48c455f3235019" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>mixShader_program</name></member>
+      <member refid="a00407_1a97dc92e339eb58d13360561c166dae92" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>mixShader_program</name></member>
+      <member refid="a00383_1acb517c665ba6c0623d64a2a5fb542201" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>operator std::string</name></member>
+      <member refid="a00383_1a7b0a0b9b9160f90acd830bb989b97ceb" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>operator&lt;&lt;</name></member>
+      <member refid="a00383_1a86fcabc946908e95e6c0b36ad3370fd0" prot="public" virt="virtual"><scope>mix::assetsystem::mixShader_program</scope><name>operator&gt;&gt;</name></member>
+      <member refid="a00407_1aed6e069ce177a5c345efb2bcb6c97c3c" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>program_id</name></member>
+      <member refid="a00407_1a9b106383811aeb6dad8f8d3cac6d6a25" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_1f</name></member>
+      <member refid="a00407_1a31ee5a7413bfcdda3e3537f1c3ec8483" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_1i</name></member>
+      <member refid="a00407_1aea0cd6a091273bc86aa3b4f32a397a5b" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_mat3</name></member>
+      <member refid="a00407_1ab73ab38a3643a02f3d2ab1e84941f409" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_mat4</name></member>
+      <member refid="a00407_1ae823f06998e61b2c52ba38914923ce9b" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_vec3</name></member>
+      <member refid="a00407_1afb698255d1674ba867a080703aa04f8c" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>set_vec4</name></member>
+      <member refid="a00407_1ac8c197b3e79183830b7fe453f633c27d" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>shader</name></member>
+      <member refid="a00407_1afd39437f5876f766acdcf6925991663a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>use</name></member>
+      <member refid="a00407_1ad1be87aac0c1946bfeba0bd8ff205a33" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixShader_program</scope><name>~mixShader_program</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

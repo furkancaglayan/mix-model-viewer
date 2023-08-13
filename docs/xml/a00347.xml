@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00347" kind="file" language="C++">
+    <compoundname>window_test.h</compoundname>
+    <includes refid="a00341" local="yes">test_base.h</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">string</includes>
+    <includedby refid="a00637" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../core/mixWindow.h</label>
+        <link refid="a00176"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../math/vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test_base.h</label>
+        <link refid="a00341"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>window_test.h</label>
+        <link refid="a00347"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="13">
+        <label>chrono</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="10">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="11">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="3">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>main.cpp</label>
+        <link refid="a00637"/>
+      </node>
+      <node id="1">
+        <label>window_test.h</label>
+        <link refid="a00347"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00347_1a1b8aeac01ec54f956253ce8895085fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(test_base, simple_window_test)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>test_base</type>
+        </param>
+        <param>
+          <type>simple_window_test</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/test/window_test.h" line="6" column="1" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/test/window_test.h" bodystart="6" bodyend="24"/>
+        <references refid="a00503_1a44893df1a4b3f00a1f50f66d5ebe9cff" compoundref="a00173" startline="23" endline="28">mix::core::mixWindow::get_window_position</references>
+        <references refid="a00503_1afee4fb7049fe4652c959aad535704c96" compoundref="a00173" startline="11" endline="16">mix::core::mixWindow::get_window_size</references>
+        <references refid="a00503_1a14efe79b5e7199f324516c0bb9087bfe" compoundref="a00173" startline="113" endline="143">mix::core::mixWindow::initialize</references>
+        <references refid="a00503_1ab7439063c98170848373d6b33b73137e" compoundref="a00173" startline="51" endline="54">mix::core::mixWindow::set_title</references>
+        <references refid="a00503_1a9b880f3e6383b9e1ee3d6923ff676d44" compoundref="a00173" startline="30" endline="33">mix::core::mixWindow::set_window_position</references>
+        <references refid="a00503_1a7daa5d8cccec6bdeaa9de4e465e4ef12" compoundref="a00173" startline="18" endline="21">mix::core::mixWindow::set_window_size</references>
+        <references refid="a00503_1a06d7925200ef59c52c80d18d3234a2cb" compoundref="a00173" startline="82" endline="85">mix::core::mixWindow::show</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00341" kindref="compound">test_base.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="a00347_1a1b8aeac01ec54f956253ce8895085fc7" refkind="member"><highlight class="normal"><ref refid="a00347_1a1b8aeac01ec54f956253ce8895085fc7" kindref="member">TEST_F</ref><sp/>(test_base,<sp/>simple_window_test)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00503" kindref="compound">mix::core::mixWindow</ref>*<sp/>window<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="a00503" kindref="compound">mix::core::mixWindow</ref><sp/>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>window-&gt;<ref refid="a00503_1a14efe79b5e7199f324516c0bb9087bfe" kindref="member">initialize</ref><sp/>(<ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(1024,<sp/>768));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_TRUE<sp/>(result);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;<ref refid="a00503_1a06d7925200ef59c52c80d18d3234a2cb" kindref="member">show</ref><sp/>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for<sp/>(std::chrono::seconds<sp/>(2));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;<ref refid="a00503_1ab7439063c98170848373d6b33b73137e" kindref="member">set_title</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Title&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for<sp/>(std::chrono::seconds<sp/>(2));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>size<sp/>=<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(1600,<sp/>900);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;<ref refid="a00503_1a7daa5d8cccec6bdeaa9de4e465e4ef12" kindref="member">set_window_size</ref><sp/>(size);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ<sp/>(size,<sp/>window-&gt;<ref refid="a00503_1afee4fb7049fe4652c959aad535704c96" kindref="member">get_window_size</ref>());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for<sp/>(std::chrono::seconds<sp/>(1));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>pos<sp/>=<sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(300,<sp/>300);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;<ref refid="a00503_1a9b880f3e6383b9e1ee3d6923ff676d44" kindref="member">set_window_position</ref><sp/>(pos);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_EQ<sp/>(pos,<sp/>window-&gt;<ref refid="a00503_1a44893df1a4b3f00a1f50f66d5ebe9cff" kindref="member">get_window_position</ref><sp/>());</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for<sp/>(std::chrono::seconds<sp/>(1));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>window;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/test/window_test.h"/>
+  </compounddef>
+</doxygen>

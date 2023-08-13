@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00627" kind="class" language="C++" prot="public">
+    <compoundname>mix::scene_management::mixScene</compoundname>
+    <includes refid="a00335" local="no">mixScene.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="a00627_1aca38c410e286c7ae197a6c82ff6eeaf6" prot="public" static="yes" mutable="no">
+        <type><ref refid="a00627" kindref="compound">mixScene</ref> *</type>
+        <definition>mix::scene_management::mixScene * mix::scene_management::mixScene::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>mix::scene_management::mixScene::_instance</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="19" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="a00281_1a286930f4e8ede059b83ff6eafa2ff718" compoundref="a00281" startline="106" endline="125">key_callback</referencedby>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+        <referencedby refid="a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" compoundref="a00137" startline="8" endline="25">mix::components::mixMesh_component::render</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00627_1a6845190681f170496a3ddc44fd03489c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::weak_ptr&lt; <ref refid="a00475" kindref="compound">mix::core::light::mixLight</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::weak_ptr&lt;mix::core::light::mixLight&gt; &gt; mix::scene_management::mixScene::_lights</definition>
+        <argsstring></argsstring>
+        <name>_lights</name>
+        <qualifiedname>mix::scene_management::mixScene::_lights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="32" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00627_1a4a6c4f61e68f07261568f525ffaa3a08" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="a00479" kindref="compound">mix::core::mixCamera</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;mix::core::mixCamera&gt; mix::scene_management::mixScene::_active_cam</definition>
+        <argsstring></argsstring>
+        <name>_active_cam</name>
+        <qualifiedname>mix::scene_management::mixScene::_active_cam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="33" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00627_1a1b2e4dac7e6c1ee77e8f3a2bc646aba4" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00483" kindref="compound">mix::core::mixEntity</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::core::mixEntity&gt; mix::scene_management::mixScene::_root</definition>
+        <argsstring></argsstring>
+        <name>_root</name>
+        <qualifiedname>mix::scene_management::mixScene::_root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="34" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00627_1a93a1863af06a3daa215318760b494f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::scene_management::mixScene::mixScene</definition>
+        <argsstring>()</argsstring>
+        <name>mixScene</name>
+        <qualifiedname>mix::scene_management::mixScene::mixScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1aa76a17b015906924bae4ee8b86266110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::scene_management::mixScene::mixScene</definition>
+        <argsstring>(mix::core::mixEntity *r)</argsstring>
+        <name>mixScene</name>
+        <qualifiedname>mix::scene_management::mixScene::mixScene</qualifiedname>
+        <param>
+          <type><ref refid="a00483" kindref="compound">mix::core::mixEntity</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="18" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1a494496438f300cb35ce6d5a5d5d7b452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::scene_management::mixScene::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::scene_management::mixScene::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="21" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1a1f6332254dd6d5f2823d2db6372df351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::scene_management::mixScene::render</definition>
+        <argsstring>(mix::rendering::rendering_context *rendering)</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::scene_management::mixScene::render</qualifiedname>
+        <param>
+          <type><ref refid="a00619" kindref="compound">mix::rendering::rendering_context</ref> *</type>
+          <declname>rendering</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1add286372da8d2cb8d2048592ce1de9ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::scene_management::mixScene::set_parameters</definition>
+        <argsstring>(mix::rendering::rendering_context *rendering) const</argsstring>
+        <name>set_parameters</name>
+        <qualifiedname>mix::scene_management::mixScene::set_parameters</qualifiedname>
+        <param>
+          <type><ref refid="a00619" kindref="compound">mix::rendering::rendering_context</ref> *</type>
+          <declname>rendering</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="23" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="28" bodyend="54"/>
+        <references refid="a00619_1a5e8e7ff025904c61a16928be26b90485" compoundref="a00320" startline="20" endline="23">mix::rendering::rendering_context::set_1f</references>
+        <references refid="a00619_1ac2b5bf66106ed64321c1c34fa17aeb56" compoundref="a00320" startline="25" endline="28">mix::rendering::rendering_context::set_1i</references>
+        <references refid="a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" compoundref="a00320" startline="45" endline="48">mix::rendering::rendering_context::set_mat4</references>
+        <references refid="a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" compoundref="a00320" startline="30" endline="33">mix::rendering::rendering_context::set_vec3</references>
+        <referencedby refid="a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" compoundref="a00137" startline="8" endline="25">mix::components::mixMesh_component::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1a4d30125a825ef66cfc3442f2f9049d9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::scene_management::mixScene::add_entity</definition>
+        <argsstring>(const std::shared_ptr&lt; mix::core::mixEntity &gt; &amp;entity)</argsstring>
+        <name>add_entity</name>
+        <qualifiedname>mix::scene_management::mixScene::add_entity</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="a00483" kindref="compound">mix::core::mixEntity</ref> &gt; &amp;</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="56" bodyend="64"/>
+        <referencedby refid="a00281_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="a00281" startline="19" endline="104">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1ab3d08d5082c539f3aada88feb5b64cd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00479" kindref="compound">mix::core::mixCamera</ref> *</type>
+        <definition>mix::core::mixCamera * mix::scene_management::mixScene::get_main_cam</definition>
+        <argsstring>() const</argsstring>
+        <name>get_main_cam</name>
+        <qualifiedname>mix::scene_management::mixScene::get_main_cam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="26" column="34" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="66" bodyend="69"/>
+        <referencedby refid="a00281_1a286930f4e8ede059b83ff6eafa2ff718" compoundref="a00281" startline="106" endline="125">key_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1adf75e0cf846769467ef97a86673de383" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00483" kindref="compound">mix::core::mixEntity</ref> *</type>
+        <definition>mix::core::mixEntity * mix::scene_management::mixScene::get_root</definition>
+        <argsstring>() const</argsstring>
+        <name>get_root</name>
+        <qualifiedname>mix::scene_management::mixScene::get_root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="27" column="34" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="a00627_1a37f1570200aa17711b82c78ee7268c2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::weak_ptr&lt; <ref refid="a00475" kindref="compound">mix::core::light::mixLight</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::weak_ptr&lt; mix::core::light::mixLight &gt; &gt; mix::scene_management::mixScene::get_lights</definition>
+        <argsstring>() const</argsstring>
+        <name>get_lights</name>
+        <qualifiedname>mix::scene_management::mixScene::get_lights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="28" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::scene_management::mixScene</label>
+        <link refid="a00627"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" line="13" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.h" bodystart="14" bodyend="36"/>
+    <listofallmembers>
+      <member refid="a00627_1a4a6c4f61e68f07261568f525ffaa3a08" prot="private" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>_active_cam</name></member>
+      <member refid="a00627_1aca38c410e286c7ae197a6c82ff6eeaf6" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>_instance</name></member>
+      <member refid="a00627_1a6845190681f170496a3ddc44fd03489c" prot="private" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>_lights</name></member>
+      <member refid="a00627_1a1b2e4dac7e6c1ee77e8f3a2bc646aba4" prot="private" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>_root</name></member>
+      <member refid="a00627_1a4d30125a825ef66cfc3442f2f9049d9c" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>add_entity</name></member>
+      <member refid="a00627_1a37f1570200aa17711b82c78ee7268c2e" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>get_lights</name></member>
+      <member refid="a00627_1ab3d08d5082c539f3aada88feb5b64cd0" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>get_main_cam</name></member>
+      <member refid="a00627_1adf75e0cf846769467ef97a86673de383" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>get_root</name></member>
+      <member refid="a00627_1a93a1863af06a3daa215318760b494f60" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>mixScene</name></member>
+      <member refid="a00627_1aa76a17b015906924bae4ee8b86266110" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>mixScene</name></member>
+      <member refid="a00627_1a1f6332254dd6d5f2823d2db6372df351" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>render</name></member>
+      <member refid="a00627_1add286372da8d2cb8d2048592ce1de9ec" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>set_parameters</name></member>
+      <member refid="a00627_1a494496438f300cb35ce6d5a5d5d7b452" prot="public" virt="non-virtual"><scope>mix::scene_management::mixScene</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

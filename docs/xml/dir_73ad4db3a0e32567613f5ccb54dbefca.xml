@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_73ad4db3a0e32567613f5ccb54dbefca" kind="dir">
+    <compoundname>loaders</compoundname>
+    <innerfile refid="a00077">mixAsset_loader_base.cpp</innerfile>
+    <innerfile refid="a00080">mixAsset_loader_base.h</innerfile>
+    <innerfile refid="a00083">mixAsset_loader_font.cpp</innerfile>
+    <innerfile refid="a00086">mixAsset_loader_font.h</innerfile>
+    <innerfile refid="a00089">mixAsset_loader_mesh.cpp</innerfile>
+    <innerfile refid="a00092">mixAsset_loader_mesh.h</innerfile>
+    <innerfile refid="a00095">mixAsset_loader_shader.cpp</innerfile>
+    <innerfile refid="a00098">mixAsset_loader_shader.h</innerfile>
+    <innerfile refid="a00101">mixAsset_loader_text.cpp</innerfile>
+    <innerfile refid="a00104">mixAsset_loader_text.h</innerfile>
+    <innerfile refid="a00107">mixAsset_loader_texture.cpp</innerfile>
+    <innerfile refid="a00110">mixAsset_loader_texture.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/"/>
+  </compounddef>
+</doxygen>

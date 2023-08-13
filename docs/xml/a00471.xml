@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00471" kind="class" language="C++" prot="public">
+    <compoundname>mix::components::mixMesh_component</compoundname>
+    <basecompoundref refid="a00467" prot="public" virt="non-virtual">mix::components::mixComponent</basecompoundref>
+    <includes refid="a00140" local="no">mixMesh_component.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00471_1a11a160df48618193bef7ca9fda587b96" prot="private" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00391" kindref="compound">mix::assetsystem::mixMaterial</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;mix::assetsystem::mixMaterial&gt; mix::components::mixMesh_component::_material</definition>
+        <argsstring></argsstring>
+        <name>_material</name>
+        <qualifiedname>mix::components::mixMesh_component::_material</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="25" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00471_1a11a589283eb9f90d799ad52bca6d2bf6" prot="private" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00395" kindref="compound">mix::assetsystem::mixMesh</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;mix::assetsystem::mixMesh&gt; mix::components::mixMesh_component::_mesh</definition>
+        <argsstring></argsstring>
+        <name>_mesh</name>
+        <qualifiedname>mix::components::mixMesh_component::_mesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="27" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00471_1a2189c6bc0419a00999a6dbbbb637100d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::components::mixMesh_component::mixMesh_component</definition>
+        <argsstring>(std::shared_ptr&lt; mix::assetsystem::mixMesh &gt; mesh)</argsstring>
+        <name>mixMesh_component</name>
+        <qualifiedname>mix::components::mixMesh_component::mixMesh_component</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00395" kindref="compound">mix::assetsystem::mixMesh</ref> &gt;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::components::mixMesh_component::render</definition>
+        <argsstring>(mix::rendering::rendering_context *rendering, const mix::core::mixTransform *transform) override</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::components::mixMesh_component::render</qualifiedname>
+        <reimplements refid="a00467_1a62d4d68c4c5428036b0c730cde7f9915">render</reimplements>
+        <param>
+          <type><ref refid="a00619" kindref="compound">mix::rendering::rendering_context</ref> *</type>
+          <declname>rendering</declname>
+        </param>
+        <param>
+          <type>const <ref refid="a00499" kindref="compound">mix::core::mixTransform</ref> *</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="18" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.cpp" bodystart="8" bodyend="25"/>
+        <references refid="a00619_1a410dfa608e003b92c2a8c2fe6eaa5580" compoundref="a00323" startline="31">mix::rendering::rendering_context::_active_program</references>
+        <references refid="a00627_1aca38c410e286c7ae197a6c82ff6eeaf6" compoundref="a00335" startline="19">mix::scene_management::mixScene::_instance</references>
+        <references refid="a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" compoundref="a00320" startline="45" endline="48">mix::rendering::rendering_context::set_mat4</references>
+        <references refid="a00627_1add286372da8d2cb8d2048592ce1de9ec" compoundref="a00332" startline="28" endline="54">mix::scene_management::mixScene::set_parameters</references>
+      </memberdef>
+      <memberdef kind="function" id="a00471_1affef6d541528ec9816f16e620d635862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::components::mixMesh_component::set_material</definition>
+        <argsstring>(std::shared_ptr&lt; mix::assetsystem::mixMaterial &gt; material)</argsstring>
+        <name>set_material</name>
+        <qualifiedname>mix::components::mixMesh_component::set_material</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00391" kindref="compound">mix::assetsystem::mixMaterial</ref> &gt;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="21" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="a00471_1ab26a0dd163808da052cf4ee031cad580" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::components::mixMesh_component::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::components::mixMesh_component::update</qualifiedname>
+        <reimplements refid="a00467_1a673f5543f4d7e6245af938840c5d3a47">update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::components::mixComponent</label>
+        <link refid="a00467"/>
+      </node>
+      <node id="1">
+        <label>mix::components::mixMesh_component</label>
+        <link refid="a00471"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::components::mixComponent</label>
+        <link refid="a00467"/>
+      </node>
+      <node id="1">
+        <label>mix::components::mixMesh_component</label>
+        <link refid="a00471"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" line="13" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixMesh_component.h" bodystart="14" bodyend="28"/>
+    <listofallmembers>
+      <member refid="a00471_1a11a160df48618193bef7ca9fda587b96" prot="private" virt="non-virtual"><scope>mix::components::mixMesh_component</scope><name>_material</name></member>
+      <member refid="a00471_1a11a589283eb9f90d799ad52bca6d2bf6" prot="private" virt="non-virtual"><scope>mix::components::mixMesh_component</scope><name>_mesh</name></member>
+      <member refid="a00467_1ac24c61df2bc6aef0a1619a8a84d576a2" prot="public" virt="non-virtual"><scope>mix::components::mixMesh_component</scope><name>mixComponent</name></member>
+      <member refid="a00471_1a2189c6bc0419a00999a6dbbbb637100d" prot="public" virt="non-virtual"><scope>mix::components::mixMesh_component</scope><name>mixMesh_component</name></member>
+      <member refid="a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" prot="public" virt="virtual"><scope>mix::components::mixMesh_component</scope><name>render</name></member>
+      <member refid="a00471_1affef6d541528ec9816f16e620d635862" prot="public" virt="non-virtual"><scope>mix::components::mixMesh_component</scope><name>set_material</name></member>
+      <member refid="a00471_1ab26a0dd163808da052cf4ee031cad580" prot="public" virt="virtual"><scope>mix::components::mixMesh_component</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

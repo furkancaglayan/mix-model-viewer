@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00354" kind="namespace" language="C++">
+    <compoundname>mix::containers</compoundname>
+    <innerclass refid="a00459" prot="public">mix::containers::frame_buffer</innerclass>
+    <innerclass refid="a00463" prot="public">mix::containers::tree_node</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="10" column="5"/>
+  </compounddef>
+</doxygen>

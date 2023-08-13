@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00507" kind="class" language="C++" prot="public">
+    <compoundname>mix::editor_config</compoundname>
+    <includes refid="a00182" local="no">editor_config.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00507_1aefe23f14f4d65a15a69f52a7abee582c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+        <definition>vec2i mix::editor_config::_editor_window_size</definition>
+        <argsstring></argsstring>
+        <name>_editor_window_size</name>
+        <qualifiedname>mix::editor_config::_editor_window_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" line="20" column="15" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00507_1a591b34f792e24c3151cb6545135f677e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::editor_config::deserialize</definition>
+        <argsstring>()</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>mix::editor_config::deserialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" line="17" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00507_1ac9f013d63dcf59e03146ed44f3e05922" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::editor_config::serialize</definition>
+        <argsstring>() const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>mix::editor_config::serialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" line="18" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" line="13" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/editor_config.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="a00507_1aefe23f14f4d65a15a69f52a7abee582c" prot="public" virt="non-virtual"><scope>mix::editor_config</scope><name>_editor_window_size</name></member>
+      <member refid="a00507_1a591b34f792e24c3151cb6545135f677e" prot="public" virt="non-virtual"><scope>mix::editor_config</scope><name>deserialize</name></member>
+      <member refid="a00507_1ac9f013d63dcf59e03146ed44f3e05922" prot="public" virt="non-virtual"><scope>mix::editor_config</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

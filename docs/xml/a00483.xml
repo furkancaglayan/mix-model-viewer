@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00483" kind="class" language="C++" prot="public">
+    <compoundname>mix::core::mixEntity</compoundname>
+    <basecompoundref refid="a00559" prot="public" virt="non-virtual">mixImGui::i_guielement</basecompoundref>
+    <derivedcompoundref refid="a00475" prot="public" virt="non-virtual">mix::core::light::mixLight</derivedcompoundref>
+    <derivedcompoundref refid="a00479" prot="public" virt="non-virtual">mix::core::mixCamera</derivedcompoundref>
+    <includes refid="a00158" local="no">mixEntity.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00483_1a13cb3c790d3a4bbb0f73ad27d2405e90" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="a00499" kindref="compound">mixTransform</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mixTransform&gt; mix::core::mixEntity::_transform</definition>
+        <argsstring></argsstring>
+        <name>_transform</name>
+        <qualifiedname>mix::core::mixEntity::_transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="22" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="a00281_1a286930f4e8ede059b83ff6eafa2ff718" compoundref="a00281" startline="106" endline="125">key_callback</referencedby>
+        <referencedby refid="a00483_1ae0251e855adf2ef6c3b50726074996c0" compoundref="a00155" startline="16" endline="20">mixEntity</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="a00483_1aa11803e5f173af0ae6194c08b4687cc5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mix::core::mixEntity::_is_enabled</definition>
+        <argsstring></argsstring>
+        <name>_is_enabled</name>
+        <qualifiedname>mix::core::mixEntity::_is_enabled</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="45" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00483_1a582bf51106f7e44eeca680dab379076b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mix::core::mixEntity::_is_visible</definition>
+        <argsstring></argsstring>
+        <name>_is_visible</name>
+        <qualifiedname>mix::core::mixEntity::_is_visible</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="46" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00483_1a4dba2bc5d72b286432d02aafaeea2a86" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::core::mixEntity::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>mix::core::mixEntity::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="48" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00483_1a9a47d0b940b4dee87ca05f5a9cb6b964" prot="protected" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00483" kindref="compound">mixEntity</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;mixEntity&gt; mix::core::mixEntity::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <qualifiedname>mix::core::mixEntity::_parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="49" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00483_1a83d75d9af6d3a615cdc0ef688c044b59" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="a00483" kindref="compound">mixEntity</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;mixEntity&gt; &gt; mix::core::mixEntity::_children</definition>
+        <argsstring></argsstring>
+        <name>_children</name>
+        <qualifiedname>mix::core::mixEntity::_children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="50" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00483_1a1997e7f77c54d18a0f0c2e40bfd4c220" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="a00467" kindref="compound">mixComponent</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;mixComponent&gt; &gt; mix::core::mixEntity::_components</definition>
+        <argsstring></argsstring>
+        <name>_components</name>
+        <qualifiedname>mix::core::mixEntity::_components</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="51" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00483_1abb71d2ec7fc0929c11700febd99e8b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixEntity::mixEntity</definition>
+        <argsstring>()</argsstring>
+        <name>mixEntity</name>
+        <qualifiedname>mix::core::mixEntity::mixEntity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="24" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1ac8418c541a7acdd6e18ae8def47b5713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixEntity::mixEntity</definition>
+        <argsstring>(vec3 pos)</argsstring>
+        <name>mixEntity</name>
+        <qualifiedname>mix::core::mixEntity::mixEntity</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="25" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a668508be93287883a78a2c8588b76002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixEntity::mixEntity</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>mixEntity</name>
+        <qualifiedname>mix::core::mixEntity::mixEntity</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="26" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1ae0251e855adf2ef6c3b50726074996c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixEntity::mixEntity</definition>
+        <argsstring>(std::string name, vec3 pos)</argsstring>
+        <name>mixEntity</name>
+        <qualifiedname>mix::core::mixEntity::mixEntity</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="27" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="16" bodyend="20"/>
+        <references refid="a00483_1a13cb3c790d3a4bbb0f73ad27d2405e90" compoundref="a00158" startline="22">_transform</references>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a1291f35d842526da11c1e1025a1fe763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::add_component</definition>
+        <argsstring>(mixComponent *comp)</argsstring>
+        <name>add_component</name>
+        <qualifiedname>mix::core::mixEntity::add_component</qualifiedname>
+        <param>
+          <type><ref refid="a00467" kindref="compound">mixComponent</ref> *</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="29" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a53ebe438f1ad8d260ec91c369cb50ca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::set_name</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>set_name</name>
+        <qualifiedname>mix::core::mixEntity::set_name</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="34" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a09ceb1e2d215a9a5a2bd7c4e61b57dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::add_child</definition>
+        <argsstring>(std::shared_ptr&lt; mixEntity &gt; ch)</argsstring>
+        <name>add_child</name>
+        <qualifiedname>mix::core::mixEntity::add_child</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00483" kindref="compound">mixEntity</ref> &gt;</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="35" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a1643f0350f10c6b0e7afe1663ef201aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mix::core::mixEntity::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <qualifiedname>mix::core::mixEntity::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="37" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a3a251e4b27985264a1ee9294d8bc16a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00483" kindref="compound">mixEntity</ref> *</type>
+        <definition>mix::core::mixEntity * mix::core::mixEntity::get_parent</definition>
+        <argsstring>() const</argsstring>
+        <name>get_parent</name>
+        <qualifiedname>mix::core::mixEntity::get_parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="38" column="23" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a2f8fc6b4a570f7a7a3c3e4a1a68f1c70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="a00483" kindref="compound">mixEntity</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; mix::core::mixEntity &gt; &gt; mix::core::mixEntity::get_children</definition>
+        <argsstring>() const</argsstring>
+        <name>get_children</name>
+        <qualifiedname>mix::core::mixEntity::get_children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="39" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a2d0ceedf796382e3cc5a2f9d416994bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::core::mixEntity::update</qualifiedname>
+        <reimplementedby refid="a00479_1a77ea534b0abce2fe94e4ac8ad29072d6">update</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="41" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="57" bodyend="73"/>
+        <referencedby refid="a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" compoundref="a00149" startline="32" endline="36">mix::core::mixCamera::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a350bbea02ae0dc4705b60f405fb5a7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::render</definition>
+        <argsstring>(mix::rendering::rendering_context *rendering)</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::core::mixEntity::render</qualifiedname>
+        <param>
+          <type><ref refid="a00619" kindref="compound">mix::rendering::rendering_context</ref> *</type>
+          <declname>rendering</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="42" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="75" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::on_gui</definition>
+        <argsstring>() override</argsstring>
+        <name>on_gui</name>
+        <qualifiedname>mix::core::mixEntity::on_gui</qualifiedname>
+        <reimplements refid="a00559_1a88a27f523a0a069d84188c284e9c4d6c">on_gui</reimplements>
+        <reimplementedby refid="a00479_1a8cd7eca473b5f4e76a9582f95d596b07">on_gui</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="54" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="90" bodyend="107"/>
+        <references refid="a00535_1a7117bba25a15fda694fc3370dd7c0b27" compoundref="a00215" startline="18" endline="21">mixImGui::gui_layout::begin_horizontal</references>
+        <references refid="a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" compoundref="a00215" startline="28" endline="31">mixImGui::gui_layout::begin_vertical</references>
+        <references refid="a00535_1a83f6713438b52862d9a65795003695ad" compoundref="a00215" startline="23" endline="26">mixImGui::gui_layout::end_horizontal</references>
+        <references refid="a00535_1a724cab724f67db7089561715ca6163b8" compoundref="a00215" startline="33" endline="36">mixImGui::gui_layout::end_vertical</references>
+        <references refid="a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" compoundref="a00215" startline="357" endline="361">mixImGui::gui_layout::horizontal_space</references>
+        <references refid="a00535_1a51fa55d14214144f3f877642c54daa67" compoundref="a00215" startline="49" endline="55">mixImGui::gui_layout::text_label</references>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a0dfbdb6a57a08dd6398431b79f63cbf0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::on_inspector_gui</definition>
+        <argsstring>() override</argsstring>
+        <name>on_inspector_gui</name>
+        <qualifiedname>mix::core::mixEntity::on_inspector_gui</qualifiedname>
+        <reimplements refid="a00559_1ac062707cba8ddfc82555ce12d2a6aa2b">on_inspector_gui</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="55" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a62a60a2c5f5015097f154e050cd96709" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::core::mixEntity::on_scene_gui</definition>
+        <argsstring>() override</argsstring>
+        <name>on_scene_gui</name>
+        <qualifiedname>mix::core::mixEntity::on_scene_gui</qualifiedname>
+        <reimplements refid="a00559_1ada3ee8d05c23f8404760728859fa93a1">on_scene_gui</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="56" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="a00483_1a0917b62e522a04962d6211ebbdb44a2a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string mix::core::mixEntity::get_gui_name</definition>
+        <argsstring>() override</argsstring>
+        <name>get_gui_name</name>
+        <qualifiedname>mix::core::mixEntity::get_gui_name</qualifiedname>
+        <reimplements refid="a00559_1a3d61b523c5ec64d3d495487a02188e1a">get_gui_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="57" column="33" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mix::core::light::mixLight</label>
+        <link refid="a00475"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mix::core::mixCamera</label>
+        <link refid="a00479"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::core::mixEntity</label>
+        <link refid="a00483"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::i_guielement</label>
+        <link refid="a00559"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::core::mixEntity</label>
+        <link refid="a00483"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::i_guielement</label>
+        <link refid="a00559"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" line="18" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixEntity.h" bodystart="19" bodyend="58"/>
+    <listofallmembers>
+      <member refid="a00483_1a83d75d9af6d3a615cdc0ef688c044b59" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_children</name></member>
+      <member refid="a00483_1a1997e7f77c54d18a0f0c2e40bfd4c220" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_components</name></member>
+      <member refid="a00483_1aa11803e5f173af0ae6194c08b4687cc5" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_is_enabled</name></member>
+      <member refid="a00483_1a582bf51106f7e44eeca680dab379076b" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_is_visible</name></member>
+      <member refid="a00483_1a4dba2bc5d72b286432d02aafaeea2a86" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_name</name></member>
+      <member refid="a00483_1a9a47d0b940b4dee87ca05f5a9cb6b964" prot="protected" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_parent</name></member>
+      <member refid="a00483_1a13cb3c790d3a4bbb0f73ad27d2405e90" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>_transform</name></member>
+      <member refid="a00483_1a09ceb1e2d215a9a5a2bd7c4e61b57dd6" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>add_child</name></member>
+      <member refid="a00483_1a1291f35d842526da11c1e1025a1fe763" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>add_component</name></member>
+      <member refid="a00483_1a2f8fc6b4a570f7a7a3c3e4a1a68f1c70" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>get_children</name></member>
+      <member refid="a00483_1a0917b62e522a04962d6211ebbdb44a2a" prot="protected" virt="virtual"><scope>mix::core::mixEntity</scope><name>get_gui_name</name></member>
+      <member refid="a00483_1a1643f0350f10c6b0e7afe1663ef201aa" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>get_name</name></member>
+      <member refid="a00483_1a3a251e4b27985264a1ee9294d8bc16a8" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>get_parent</name></member>
+      <member refid="a00483_1abb71d2ec7fc0929c11700febd99e8b4c" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>mixEntity</name></member>
+      <member refid="a00483_1ac8418c541a7acdd6e18ae8def47b5713" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>mixEntity</name></member>
+      <member refid="a00483_1a668508be93287883a78a2c8588b76002" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>mixEntity</name></member>
+      <member refid="a00483_1ae0251e855adf2ef6c3b50726074996c0" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>mixEntity</name></member>
+      <member refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" prot="protected" virt="virtual"><scope>mix::core::mixEntity</scope><name>on_gui</name></member>
+      <member refid="a00483_1a0dfbdb6a57a08dd6398431b79f63cbf0" prot="protected" virt="virtual"><scope>mix::core::mixEntity</scope><name>on_inspector_gui</name></member>
+      <member refid="a00483_1a62a60a2c5f5015097f154e050cd96709" prot="protected" virt="virtual"><scope>mix::core::mixEntity</scope><name>on_scene_gui</name></member>
+      <member refid="a00483_1a350bbea02ae0dc4705b60f405fb5a7b0" prot="public" virt="virtual"><scope>mix::core::mixEntity</scope><name>render</name></member>
+      <member refid="a00483_1a53ebe438f1ad8d260ec91c369cb50ca6" prot="public" virt="non-virtual"><scope>mix::core::mixEntity</scope><name>set_name</name></member>
+      <member refid="a00483_1a2d0ceedf796382e3cc5a2f9d416994bf" prot="public" virt="virtual"><scope>mix::core::mixEntity</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

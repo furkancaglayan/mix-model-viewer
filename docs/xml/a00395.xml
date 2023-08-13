@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00395" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::mixMesh</compoundname>
+    <basecompoundref refid="a00383" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_item</basecompoundref>
+    <includes refid="a00029" local="no">mixMesh.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00395_1a1e10482d3efc0f344b6890e830df7084" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixMesh::VAO</definition>
+        <argsstring></argsstring>
+        <name>VAO</name>
+        <qualifiedname>mix::assetsystem::mixMesh::VAO</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="32" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00395_1a62bfd51d88bc885f71975d9c6920fd70" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixMesh::VBO</definition>
+        <argsstring></argsstring>
+        <name>VBO</name>
+        <qualifiedname>mix::assetsystem::mixMesh::VBO</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="33" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00395_1abd0fd72c39b028c695af4ac699958c66" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixMesh::EBO</definition>
+        <argsstring></argsstring>
+        <name>EBO</name>
+        <qualifiedname>mix::assetsystem::mixMesh::EBO</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="34" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00395_1a6cfe37c273b7b89965e49d8b12fe5b9d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00603" kindref="compound">vertex</ref> &gt;</type>
+        <definition>std::vector&lt;vertex&gt; mix::assetsystem::mixMesh::_vertices</definition>
+        <argsstring></argsstring>
+        <name>_vertices</name>
+        <qualifiedname>mix::assetsystem::mixMesh::_vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="35" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00395_1a280d98c9697cbca05ce9e5a735c3a217" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned &gt;</type>
+        <definition>std::vector&lt;unsigned&gt; mix::assetsystem::mixMesh::_indices</definition>
+        <argsstring></argsstring>
+        <name>_indices</name>
+        <qualifiedname>mix::assetsystem::mixMesh::_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="36" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00395_1acd35f140db41ccead3313221ac7c8df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixMesh::mixMesh</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path, std::vector&lt; vertex &gt; &amp;&amp;vertices, std::vector&lt; unsigned &gt; &amp;&amp;indices)</argsstring>
+        <name>mixMesh</name>
+        <qualifiedname>mix::assetsystem::mixMesh::mixMesh</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="a00603" kindref="compound">vertex</ref> &gt; &amp;&amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned &gt; &amp;&amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="20" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="3" bodyend="8"/>
+        <references refid="a00395_1a74e02ec7ad85dc63e2ec2b87ef2d0ee0" compoundref="a00026" startline="43" endline="74">initialize_mesh</references>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1a0c5c7f21f26955a5c0d25313bb6f6bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixMesh::~mixMesh</definition>
+        <argsstring>()</argsstring>
+        <name>~mixMesh</name>
+        <qualifiedname>mix::assetsystem::mixMesh::~mixMesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="21" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1a6683f0f8ae8c897ad65e8b5a9a66d7c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; unsigned &gt; &amp;</type>
+        <definition>const std::vector&lt; unsigned &gt; &amp; mix::assetsystem::mixMesh::get_indices</definition>
+        <argsstring>() const</argsstring>
+        <name>get_indices</name>
+        <qualifiedname>mix::assetsystem::mixMesh::get_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="23" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1a9e05c31861973047f0804f7e886f0712" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="a00603" kindref="compound">vertex</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; vertex &gt; &amp; mix::assetsystem::mixMesh::get_vertices</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vertices</name>
+        <qualifiedname>mix::assetsystem::mixMesh::get_vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="24" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1aa9ce4d73c9b65cbee83184f88e5dbef0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned</type>
+        <definition>const unsigned mix::assetsystem::mixMesh::get_vao</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vao</name>
+        <qualifiedname>mix::assetsystem::mixMesh::get_vao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="25" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1a5eaf022a303a58cddb604fd1eee7cd5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned</type>
+        <definition>const unsigned mix::assetsystem::mixMesh::get_ebo</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ebo</name>
+        <qualifiedname>mix::assetsystem::mixMesh::get_ebo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="26" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1ae3882e4feaed8aebe992dbe79017ecd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned</type>
+        <definition>const unsigned mix::assetsystem::mixMesh::get_vbo</definition>
+        <argsstring>() const</argsstring>
+        <name>get_vbo</name>
+        <qualifiedname>mix::assetsystem::mixMesh::get_vbo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="27" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="a00395_1a74e02ec7ad85dc63e2ec2b87ef2d0ee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMesh::initialize_mesh</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_mesh</name>
+        <qualifiedname>mix::assetsystem::mixMesh::initialize_mesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="28" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.cpp" bodystart="43" bodyend="74"/>
+        <referencedby refid="a00395_1acd35f140db41ccead3313221ac7c8df3" compoundref="a00026" startline="3" endline="8">mixMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixMesh</label>
+        <link refid="a00395"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixMesh</label>
+        <link refid="a00395"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="4">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" line="16" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMesh.h" bodystart="17" bodyend="37"/>
+    <listofallmembers>
+      <member refid="a00383_1a5220a296886d6bb5a77b208f12aad817" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>_guid</name></member>
+      <member refid="a00395_1a280d98c9697cbca05ce9e5a735c3a217" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>_indices</name></member>
+      <member refid="a00383_1a0ebce5f5d9da7f50795b9519c63e629b" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>_path</name></member>
+      <member refid="a00395_1a6cfe37c273b7b89965e49d8b12fe5b9d" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>_vertices</name></member>
+      <member refid="a00395_1abd0fd72c39b028c695af4ac699958c66" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>EBO</name></member>
+      <member refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_base_name</name></member>
+      <member refid="a00395_1a5eaf022a303a58cddb604fd1eee7cd5d" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_ebo</name></member>
+      <member refid="a00383_1a6e6d736bbc390e6a4544d96c8ef94065" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_extension</name></member>
+      <member refid="a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_full_name</name></member>
+      <member refid="a00383_1ae7f95f45067eeec3fb17487495c886d8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_guid</name></member>
+      <member refid="a00395_1a6683f0f8ae8c897ad65e8b5a9a66d7c5" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_indices</name></member>
+      <member refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_path</name></member>
+      <member refid="a00383_1ad0fd1f5410d3d1ab6d772ea32935ac7b" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_shortened_name</name></member>
+      <member refid="a00395_1aa9ce4d73c9b65cbee83184f88e5dbef0" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_vao</name></member>
+      <member refid="a00395_1ae3882e4feaed8aebe992dbe79017ecd8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_vbo</name></member>
+      <member refid="a00395_1a9e05c31861973047f0804f7e886f0712" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>get_vertices</name></member>
+      <member refid="a00395_1a74e02ec7ad85dc63e2ec2b87ef2d0ee0" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>initialize_mesh</name></member>
+      <member refid="a00383_1a3a8cf3901371f85656487fafa8a7332e" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>is_readonly</name></member>
+      <member refid="a00383_1ae048c01047e4d14ed7fceff0755ab28a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1a65df15bf1da90497e61b96e6bb1b9d72" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>mixAsset_item</name></member>
+      <member refid="a00395_1acd35f140db41ccead3313221ac7c8df3" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>mixMesh</name></member>
+      <member refid="a00383_1acb517c665ba6c0623d64a2a5fb542201" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>operator std::string</name></member>
+      <member refid="a00383_1a7b0a0b9b9160f90acd830bb989b97ceb" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>operator&lt;&lt;</name></member>
+      <member refid="a00383_1a86fcabc946908e95e6c0b36ad3370fd0" prot="public" virt="virtual"><scope>mix::assetsystem::mixMesh</scope><name>operator&gt;&gt;</name></member>
+      <member refid="a00395_1a1e10482d3efc0f344b6890e830df7084" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>VAO</name></member>
+      <member refid="a00395_1a62bfd51d88bc885f71975d9c6920fd70" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>VBO</name></member>
+      <member refid="a00395_1a0c5c7f21f26955a5c0d25313bb6f6bc1" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMesh</scope><name>~mixMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

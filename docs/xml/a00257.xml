@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00257" kind="file" language="C++">
+    <compoundname>mixGui.cpp</compoundname>
+    <includes refid="a00260" local="yes">mixGui.h</includes>
+    <includes refid="a00230" local="yes">gui_style.h</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>mixAsset_item.h</label>
+        <link refid="a00011"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../assetsystem/assets/mixFont.h</label>
+        <link refid="a00017"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>mixMaterial.h</label>
+        <link refid="a00023"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>mixShader.h</label>
+        <link refid="a00035"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mixShader_program.h</label>
+        <link refid="a00041"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>mixTexture.h</label>
+        <link refid="a00047"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../containers/frame_buffer.h</label>
+        <link refid="a00122"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../../core/mixGuid.h</label>
+        <link refid="a00164"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../core/mixWindow.h</label>
+        <link refid="a00176"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gui_layout.h</label>
+        <link refid="a00218"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gui_style.h</label>
+        <link refid="a00230"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gui_window.h</label>
+        <link refid="a00236"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>i_guielement.h</label>
+        <link refid="a00248"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixGui.cpp</label>
+        <link refid="a00257"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixGui.h</label>
+        <link refid="a00260"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>../math/color.h</label>
+        <link refid="a00287"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../math/constants.h</label>
+        <link refid="a00290"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../../math/mat.h</label>
+        <link refid="a00293"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../math/vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../../math/vertex.h</label>
+        <link refid="a00299"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="a00305"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="a00323"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="31">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="21">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="33">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>functional</label>
+      </node>
+      <node id="10">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="11">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="20">
+        <label>imgui.h</label>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="34">
+        <label>istream</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="32">
+        <label>sstream</label>
+      </node>
+      <node id="23">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="36">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00260" kindref="compound">mixGui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00230" kindref="compound">gui_style.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">std::vector&lt;mixImGui::mixGui::w_ptr&gt;<sp/><ref refid="a00567_1a0df7a6cb3cfabd6081c4cd6eae5662aa" kindref="member">mixImGui::mixGui::_windows</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="a00567_1a2ea1d198d6c137621b97a24d7681ed04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1a2ea1d198d6c137621b97a24d7681ed04" kindref="member">mixImGui::mixGui::init</ref><sp/>(GLFWwindow*<sp/>window)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>IMGUI_CHECKVERSION<sp/>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::CreateContext<sp/>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGuiIO&amp;<sp/>io<sp/>=<sp/>ImGui::GetIO<sp/>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<sp/>io;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>io.ConfigFlags<sp/>|=<sp/>ImGuiConfigFlags_NavEnableKeyboard;<sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>Keyboard<sp/>Controls</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>io.ConfigFlags<sp/>|=<sp/>ImGuiConfigFlags_NavEnableGamepad;<sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>Gamepad<sp/>Controls</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>style<sp/>=<sp/>ImGui::GetStyle<sp/>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00547_1a8a9a0c92bd2daf197b427a7ab5dfe036" kindref="member">gui_style::get_default_dark_style</ref><sp/>(style);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>Dear<sp/>ImGui<sp/>style</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ImGui::StyleColorsDark<sp/>();</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>auto&amp;<sp/>style<sp/>=<sp/>ImGui::GetStyle<sp/>();</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>ImVec4*<sp/>colors<sp/>=<sp/>style.Colors;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>const<sp/>ImVec4<sp/>bgColor<sp/>=<sp/>ImVec4<sp/>(0.1f,<sp/>0.1f,<sp/>0.1f,<sp/>0.5f);</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Text]<sp/>=<sp/>ImVec4<sp/>(0.99f,<sp/>0.99f,<sp/>0.99f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TextDisabled]<sp/>=<sp/>ImVec4<sp/>(0.35f,<sp/>0.35f,<sp/>0.35f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_WindowBg]<sp/>=<sp/>ImVec4<sp/>(0.1f,<sp/>0.1f,<sp/>0.1f,<sp/>0.96f);</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ChildBg]<sp/>=<sp/>ImVec4<sp/>(0.00f,<sp/>0.00f,<sp/>0.00f,<sp/>0.00f);</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_PopupBg]<sp/>=<sp/>ImVec4<sp/>(0.08f,<sp/>0.08f,<sp/>0.08f,<sp/>0.94f);</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Border]<sp/>=<sp/>ImVec4<sp/>(0.00f,<sp/>0.00f,<sp/>0.00f,<sp/>0.50f);</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_BorderShadow]<sp/>=<sp/>ImVec4<sp/>(0.00f,<sp/>0.00f,<sp/>0.00f,<sp/>0.8f);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBg]<sp/>=<sp/>ImVec4<sp/>(0.00f,<sp/>0.00f,<sp/>0.00f,<sp/>0.54f);</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBgHovered]<sp/>=<sp/>ImVec4<sp/>(0.37f,<sp/>0.14f,<sp/>0.14f,<sp/>0.67f);</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBgActive]<sp/>=<sp/>ImVec4<sp/>(0.39f,<sp/>0.20f,<sp/>0.20f,<sp/>0.67f);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBg]<sp/>=<sp/>ImVec4<sp/>(0.04f,<sp/>0.04f,<sp/>0.04f,<sp/>0.8f);</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBgActive]<sp/>=<sp/>ImVec4<sp/>(0.48f,<sp/>0.16f,<sp/>0.16f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBgCollapsed]<sp/>=<sp/>ImVec4<sp/>(0.48f,<sp/>0.16f,<sp/>0.16f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_MenuBarBg]<sp/>=<sp/>ImVec4<sp/>(0.14f,<sp/>0.14f,<sp/>0.14f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ScrollbarBg]<sp/>=<sp/>ImVec4<sp/>(0.02f,<sp/>0.02f,<sp/>0.02f,<sp/>0.53f);</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ScrollbarGrab]<sp/>=<sp/>ImVec4<sp/>(0.31f,<sp/>0.31f,<sp/>0.31f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ScrollbarGrabHovered]<sp/>=<sp/>ImVec4<sp/>(0.41f,<sp/>0.41f,<sp/>0.41f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ScrollbarGrabActive]<sp/>=<sp/>ImVec4<sp/>(0.51f,<sp/>0.51f,<sp/>0.51f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_CheckMark]<sp/>=<sp/>ImVec4<sp/>(0.56f,<sp/>0.10f,<sp/>0.10f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SliderGrab]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>0.19f,<sp/>0.19f,<sp/>0.40f);</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SliderGrabActive]<sp/>=<sp/>ImVec4<sp/>(0.89f,<sp/>0.00f,<sp/>0.19f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Button]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>0.19f,<sp/>0.19f,<sp/>0.40f);</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ButtonHovered]<sp/>=<sp/>ImVec4<sp/>(0.80f,<sp/>0.17f,<sp/>0.00f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ButtonActive]<sp/>=<sp/>ImVec4<sp/>(0.89f,<sp/>0.00f,<sp/>0.19f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Header]<sp/>=<sp/>ImVec4<sp/>(0.76f,<sp/>0.28f,<sp/>0.44f,<sp/>0.37f);</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_HeaderHovered]<sp/>=<sp/>ImVec4<sp/>(0.76f,<sp/>0.28f,<sp/>0.44f,<sp/>0.57f);</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_HeaderActive]<sp/>=<sp/>ImVec4<sp/>(0.76f,<sp/>0.28f,<sp/>0.44f,<sp/>0.57f);</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Separator]<sp/>=<sp/>ImVec4<sp/>(0.32f,<sp/>0.32f,<sp/>0.32f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SeparatorHovered]<sp/>=<sp/>ImVec4<sp/>(0.32f,<sp/>0.32f,<sp/>0.32f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SeparatorActive]<sp/>=<sp/>ImVec4<sp/>(0.32f,<sp/>0.32f,<sp/>0.32f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ResizeGrip]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>1.00f,<sp/>0.85f);</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ResizeGripHovered]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>1.00f,<sp/>0.60f);</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ResizeGripActive]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>1.00f,<sp/>0.90f);</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Tab]<sp/>=<sp/>ImVec4<sp/>(0.07f,<sp/>0.07f,<sp/>0.07f,<sp/>0.51f);</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabHovered]<sp/>=<sp/>ImVec4<sp/>(0.86f,<sp/>0.23f,<sp/>0.43f,<sp/>0.67f);</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabActive]<sp/>=<sp/>ImVec4<sp/>(0.19f,<sp/>0.19f,<sp/>0.19f,<sp/>0.57f);</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabUnfocused]<sp/>=<sp/>ImVec4<sp/>(0.05f,<sp/>0.05f,<sp/>0.05f,<sp/>0.90f);</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabUnfocusedActive]<sp/>=<sp/>ImVec4<sp/>(0.13f,<sp/>0.13f,<sp/>0.13f,<sp/>0.74f);</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_PlotLines]<sp/>=<sp/>ImVec4<sp/>(0.61f,<sp/>0.61f,<sp/>0.61f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_PlotLinesHovered]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>0.43f,<sp/>0.35f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_PlotHistogram]<sp/>=<sp/>ImVec4<sp/>(0.90f,<sp/>0.70f,<sp/>0.00f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_PlotHistogramHovered]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>0.60f,<sp/>0.00f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TableHeaderBg]<sp/>=<sp/>ImVec4<sp/>(0.19f,<sp/>0.19f,<sp/>0.20f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TableBorderStrong]<sp/>=<sp/>ImVec4<sp/>(0.31f,<sp/>0.31f,<sp/>0.35f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TableBorderLight]<sp/>=<sp/>ImVec4<sp/>(0.23f,<sp/>0.23f,<sp/>0.25f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TableRowBg]<sp/>=<sp/>ImVec4<sp/>(0.00f,<sp/>0.00f,<sp/>0.00f,<sp/>0.00f);</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TableRowBgAlt]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>1.00f,<sp/>0.07f);</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TextSelectedBg]<sp/>=<sp/>ImVec4<sp/>(0.26f,<sp/>0.59f,<sp/>0.98f,<sp/>0.35f);</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_DragDropTarget]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>0.00f,<sp/>0.90f);</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_NavHighlight]<sp/>=<sp/>ImVec4<sp/>(0.26f,<sp/>0.59f,<sp/>0.98f,<sp/>1.00f);</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_NavWindowingHighlight]<sp/>=<sp/>ImVec4<sp/>(1.00f,<sp/>1.00f,<sp/>1.00f,<sp/>0.70f);</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_NavWindowingDimBg]<sp/>=<sp/>ImVec4<sp/>(0.80f,<sp/>0.80f,<sp/>0.80f,<sp/>0.20f);</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ModalWindowDimBg]<sp/>=<sp/>ImVec4<sp/>(0.80f,<sp/>0.80f,<sp/>0.80f,<sp/>0.35f);</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/>style.FrameRounding<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/>style.IndentSpacing<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/>style.WindowRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/>style.ChildRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/>style.PopupRounding<sp/>=<sp/>2.0f;</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/>style.TabRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/>style.ScrollbarRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>ImGui::StyleColorsLight();*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>glsl_version<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#version<sp/>130&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>Platform/Renderer<sp/>backends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui_ImplGlfw_InitForOpenGL<sp/>(window,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui_ImplOpenGL3_Init<sp/>(glsl_version);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="a00567_1a97982cfbbbc8f5a2af0d95d2e719273e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1a97982cfbbbc8f5a2af0d95d2e719273e" kindref="member">mixImGui::mixGui::render</ref><sp/>(<ref refid="a00459" kindref="compound">mix::containers::frame_buffer</ref>*<sp/>buffer)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>begin<sp/>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mixImGui::mixGui::show_style_editor<sp/>(ImGui::GetStyle<sp/>());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_windows.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_windows.at<sp/>(i)-&gt;render<sp/>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="a00567_1acc6e4775fd8e9d8a680eef89b637847f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1acc6e4775fd8e9d8a680eef89b637847f" kindref="member">mixImGui::mixGui::on_editor_window_size_changed</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>win<sp/>:<sp/>_windows)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>win-&gt;on_editor_window_size_changed<sp/>(size);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="a00567_1abf87adcc32912ac7b7adce5be606ace4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1abf87adcc32912ac7b7adce5be606ace4" kindref="member">mixImGui::mixGui::begin</ref><sp/>()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui_ImplOpenGL3_NewFrame<sp/>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui_ImplGlfw_NewFrame<sp/>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::NewFrame<sp/>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="a00567_1a70f6cdc1b5cded571939407cd233eb02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1a70f6cdc1b5cded571939407cd233eb02" kindref="member">mixImGui::mixGui::end</ref><sp/>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Render<sp/>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui_ImplOpenGL3_RenderDrawData<sp/>(ImGui::GetDrawData<sp/>());</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="a00567_1aed3860d8a06913972b2d52472cc5c40a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1aed3860d8a06913972b2d52472cc5c40a" kindref="member">mixImGui::mixGui::show_style_editor</ref><sp/>(ImGuiStyle&amp;<sp/>style)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>a<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::ShowDemoWindow<sp/>(&amp;a);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="a00567_1a19d77711a8a4b14b49bbd44a3381b9f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00567_1a19d77711a8a4b14b49bbd44a3381b9f2" kindref="member">mixImGui::mixGui::add_font</ref><sp/>(<ref refid="a00387" kindref="compound">mix::assetsystem::mixFont</ref>*<sp/>font,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>set_default)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGuiIO&amp;<sp/>io<sp/>=<sp/>ImGui::GetIO<sp/>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>ImFont*<sp/>im_font<sp/>=<sp/>io.Fonts-&gt;AddFontFromFileTTF<sp/>(font-&gt;<ref refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" kindref="member">get_path</ref><sp/>().c_str<sp/>(),<sp/>20);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(set_default)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>io.FontDefault<sp/>=<sp/>im_font;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp"/>
+  </compounddef>
+</doxygen>

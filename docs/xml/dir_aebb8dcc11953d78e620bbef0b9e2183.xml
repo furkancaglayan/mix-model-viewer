@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir">
+    <compoundname>core</compoundname>
+    <innerdir refid="dir_d9eb0d80e09d6ce0555608cf805d2a66">components</innerdir>
+    <innerdir refid="dir_48fb23e14ee2fab1a0dc25ff509b8154">light</innerdir>
+    <innerfile refid="a00149">mixCamera.cpp</innerfile>
+    <innerfile refid="a00152">mixCamera.h</innerfile>
+    <innerfile refid="a00155">mixEntity.cpp</innerfile>
+    <innerfile refid="a00158">mixEntity.h</innerfile>
+    <innerfile refid="a00161">mixGuid.cpp</innerfile>
+    <innerfile refid="a00164">mixGuid.h</innerfile>
+    <innerfile refid="a00167">mixTransform.cpp</innerfile>
+    <innerfile refid="a00170">mixTransform.h</innerfile>
+    <innerfile refid="a00173">mixWindow.cpp</innerfile>
+    <innerfile refid="a00176">mixWindow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/"/>
+  </compounddef>
+</doxygen>

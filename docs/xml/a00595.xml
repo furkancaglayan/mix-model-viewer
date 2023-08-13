@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00595" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mix::library::ievent_callback_base_with_args</compoundname>
+    <basecompoundref refid="a00591" prot="public" virt="non-virtual">mix::library::ievent_callback_base</basecompoundref>
+    <includes refid="a00278" local="no">ievent_callback_base.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00595_1a5f7722e2be54e665e5ce75975f79cf33" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mix::library::ievent_callback_base_with_args&lt; T &gt;::operator()</definition>
+        <argsstring>(T *t)=0</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mix::library::ievent_callback_base_with_args::operator()</qualifiedname>
+        <reimplementedby refid="a00587_1a18c2dfd153fae511995a0e1505431ad0">operator()</reimplementedby>
+        <param>
+          <type>T *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/ievent_callback_base.h" line="21" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="a00595_1abef1cff4495e8caa4ce907809b6d4348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mix::library::ievent_callback_base_with_args&lt; T &gt;::operator()</definition>
+        <argsstring>() override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mix::library::ievent_callback_base_with_args::operator()</qualifiedname>
+        <reimplements refid="a00591_1a217c3c84ff2c1fdc9d7491ff3c88ec6a">operator()</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/ievent_callback_base.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/ievent_callback_base.h" bodystart="22" bodyend="25"/>
+        <references refid="a00266_1a9b05b48519d9d58a43c333ae52d0da71" compoundref="a00266" startline="7">FAILED_ASSERT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::library::ievent_callback_base</label>
+        <link refid="a00591"/>
+      </node>
+      <node id="1">
+        <label>mix::library::ievent_callback_base_with_args&lt; T &gt;</label>
+        <link refid="a00595"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::library::ievent_callback_base</label>
+        <link refid="a00591"/>
+      </node>
+      <node id="1">
+        <label>mix::library::ievent_callback_base_with_args&lt; T &gt;</label>
+        <link refid="a00595"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/ievent_callback_base.h" line="17" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/ievent_callback_base.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="a00595_1a5f7722e2be54e665e5ce75975f79cf33" prot="public" virt="pure-virtual"><scope>mix::library::ievent_callback_base_with_args</scope><name>operator()</name></member>
+      <member refid="a00595_1abef1cff4495e8caa4ce907809b6d4348" prot="public" virt="virtual"><scope>mix::library::ievent_callback_base_with_args</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

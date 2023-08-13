@@ -1,0 +1,1387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00535" kind="struct" language="C++" prot="public">
+    <compoundname>mixImGui::gui_layout</compoundname>
+    <derivedcompoundref refid="a00539" prot="public" virt="non-virtual">mixImGui::gui_selectable_layout</derivedcompoundref>
+    <includes refid="a00218" local="no">gui_layout.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="a00535_1ab9826c3c2bfbe164187ba2ad5d1b92af" prot="private" static="yes" mutable="no">
+        <type>ImVec2</type>
+        <definition>ImVec2 mixImGui::gui_layout::_cursor</definition>
+        <argsstring></argsstring>
+        <name>_cursor</name>
+        <qualifiedname>mixImGui::gui_layout::_cursor</qualifiedname>
+        <initializer>= ImVec2 ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="159" column="23" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00535_1ae94776126f4e1693c91b1a618482e36a" prot="private" static="yes" mutable="no">
+        <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+        <definition>mixImGui::layout_type mixImGui::gui_layout::_global_layout</definition>
+        <argsstring></argsstring>
+        <name>_global_layout</name>
+        <qualifiedname>mixImGui::gui_layout::_global_layout</qualifiedname>
+        <initializer>= <ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">mixImGui::layout_type::vertical</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="160" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="160" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00535_1a97114e705677638929756a2e81e275e5" prot="private" static="yes" mutable="no">
+        <type>std::stack&lt; std::unique_ptr&lt; <ref refid="a00535" kindref="compound">gui_layout</ref> &gt; &gt;</type>
+        <definition>std::stack&lt; std::unique_ptr&lt; mixImGui::gui_layout &gt; &gt; mixImGui::gui_layout::_layouts</definition>
+        <argsstring></argsstring>
+        <name>_layouts</name>
+        <qualifiedname>mixImGui::gui_layout::_layouts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="161" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="161" bodyend="-1"/>
+        <referencedby refid="a00535_1a5051c25adde2c754e6919a7b01d7948b" compoundref="a00215" startline="434" endline="438">add_block</referencedby>
+        <referencedby refid="a00535_1a83395d46391c762a3c0e9a5a38739ba2" compoundref="a00215" startline="440" endline="464">end_current_block</referencedby>
+        <referencedby refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</referencedby>
+        <referencedby refid="a00535_1a6d2796bcb5b2f23703f3be157e31b05f" compoundref="a00215" startline="135" endline="157">selectable_image</referencedby>
+        <referencedby refid="a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" compoundref="a00215" startline="109" endline="117">selectable_text</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00535_1a2a5cf8e48309732c7f64d435640d0959" prot="private" static="no" mutable="no">
+        <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+        <definition>window_rect mixImGui::gui_layout::_rect</definition>
+        <argsstring></argsstring>
+        <name>_rect</name>
+        <qualifiedname>mixImGui::gui_layout::_rect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="169" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00535_1aa16f58376c9d9b117124888d43300455" prot="private" static="no" mutable="no">
+        <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+        <definition>mixImGui::layout_type mixImGui::gui_layout::_current_layout</definition>
+        <argsstring></argsstring>
+        <name>_current_layout</name>
+        <qualifiedname>mixImGui::gui_layout::_current_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="170" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="170" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00535_1a265a7355330b67ab85e4a39c8c5b2618" prot="private" static="no" mutable="no">
+        <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+        <definition>mixImGui::layout_type mixImGui::gui_layout::_last_layout</definition>
+        <argsstring></argsstring>
+        <name>_last_layout</name>
+        <qualifiedname>mixImGui::gui_layout::_last_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="171" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="171" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00535_1ac87e26ac861e935a0994d2b7be8852d7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mixImGui::gui_layout::_render_index</definition>
+        <argsstring></argsstring>
+        <name>_render_index</name>
+        <qualifiedname>mixImGui::gui_layout::_render_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="172" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="172" bodyend="-1"/>
+        <referencedby refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" compoundref="a00215" startline="9" endline="16">gui_layout</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00535_1a7117bba25a15fda694fc3370dd7c0b27" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_horizontal</definition>
+        <argsstring>(window_rect r=window_rect(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0))</argsstring>
+        <name>begin_horizontal</name>
+        <qualifiedname>mixImGui::gui_layout::begin_horizontal</qualifiedname>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>r</declname>
+          <defval><ref refid="a00531" kindref="compound">window_rect</ref>(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="54" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="18" bodyend="21"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f">mixImGui::horizontal</references>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a83f6713438b52862d9a65795003695ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_horizontal</definition>
+        <argsstring>()</argsstring>
+        <name>end_horizontal</name>
+        <qualifiedname>mixImGui::gui_layout::end_horizontal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="55" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="23" bodyend="26"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f">mixImGui::horizontal</references>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_vertical</definition>
+        <argsstring>(window_rect r=window_rect(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0))</argsstring>
+        <name>begin_vertical</name>
+        <qualifiedname>mixImGui::gui_layout::begin_vertical</qualifiedname>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>r</declname>
+          <defval><ref refid="a00531" kindref="compound">window_rect</ref>(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="57" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="28" bodyend="31"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3">mixImGui::vertical</references>
+        <referencedby refid="a00551_1a5b26d4ff892ca96966cedacb32a214c3" compoundref="a00233" startline="78" endline="106">mixImGui::gui_window::begin</referencedby>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a724cab724f67db7089561715ca6163b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_vertical</definition>
+        <argsstring>()</argsstring>
+        <name>end_vertical</name>
+        <qualifiedname>mixImGui::gui_layout::end_vertical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="58" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="33" bodyend="36"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3">mixImGui::vertical</references>
+        <referencedby refid="a00551_1a1ca29859ec280ef652b1a8a129302674" compoundref="a00233" startline="108" endline="112">mixImGui::gui_window::end</referencedby>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a51fa55d14214144f3f877642c54daa67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::text_label</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>text_label</name>
+        <qualifiedname>mixImGui::gui_layout::text_label</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="59" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="49" bodyend="55"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a69563b6c88b8d3a286c046dbcd1b35e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_selectable_list</definition>
+        <argsstring>(i_guielement *previously_selected)</argsstring>
+        <name>begin_selectable_list</name>
+        <qualifiedname>mixImGui::gui_layout::begin_selectable_list</qualifiedname>
+        <param>
+          <type><ref refid="a00559" kindref="compound">i_guielement</ref> *</type>
+          <declname>previously_selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="62" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="57" bodyend="62"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ae574fda0ac6b4b3361b33a98bd350815" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00559" kindref="compound">i_guielement</ref> *</type>
+        <definition>mixImGui::i_guielement * mixImGui::gui_layout::end_selectable_list</definition>
+        <argsstring>()</argsstring>
+        <name>end_selectable_list</name>
+        <qualifiedname>mixImGui::gui_layout::end_selectable_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="63" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="64" bodyend="77"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a6d2796bcb5b2f23703f3be157e31b05f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::selectable_image</definition>
+        <argsstring>(std::string id, const ImVec2 &amp;size, unsigned image, bool &amp;pressed, bool &amp;double_clicked, bool &amp;right_clicked)</argsstring>
+        <name>selectable_image</name>
+        <qualifiedname>mixImGui::gui_layout::selectable_image</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>pressed</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>double_clicked</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>right_clicked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="65" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="135" bodyend="157"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a739aa63e4b579149d6ffbf3628736f29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::render_added_selectables</definition>
+        <argsstring>()</argsstring>
+        <name>render_added_selectables</name>
+        <qualifiedname>mixImGui::gui_layout::render_added_selectables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="66" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="166" bodyend="183"/>
+        <references refid="a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" compoundref="a00215" startline="109" endline="117">selectable_text</references>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ab649160af3cdfa3cb465acfe5d522a54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::add_selectable</definition>
+        <argsstring>(i_guielement *element)</argsstring>
+        <name>add_selectable</name>
+        <qualifiedname>mixImGui::gui_layout::add_selectable</qualifiedname>
+        <param>
+          <type><ref refid="a00559" kindref="compound">i_guielement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="67" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="160" bodyend="164"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a0d22d33a1eeafa550f4994c98e88682b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_child</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>begin_child</name>
+        <qualifiedname>mixImGui::gui_layout::begin_child</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="69" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="80" bodyend="83"/>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ad904a6bd3db93b8ed3baef8944ef1a01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_child</definition>
+        <argsstring>(std::string s, const ImVec2 &amp;size, bool border=true, int flags=0)</argsstring>
+        <name>begin_child</name>
+        <qualifiedname>mixImGui::gui_layout::begin_child</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>border</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="70" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1af30bb29aa9d2265d0384324ca814fd46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_child</definition>
+        <argsstring>()</argsstring>
+        <name>end_child</name>
+        <qualifiedname>mixImGui::gui_layout::end_child</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="71" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="90" bodyend="93"/>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1aefb1dc8c19e8a1d2e16f2e1348e73c49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::add_image</definition>
+        <argsstring>(unsigned texture_id, const ImVec2 &amp;size, const ImVec2 &amp;uv_min, const ImVec2 &amp;uv_max, const ImVec4 &amp;tint_color=ImVec4(1, 1, 1, 1), const ImVec4 &amp;border_color=ImVec4(0, 0, 0, 0))</argsstring>
+        <name>add_image</name>
+        <qualifiedname>mixImGui::gui_layout::add_image</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>texture_id</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>uv_min</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>uv_max</declname>
+        </param>
+        <param>
+          <type>const ImVec4 &amp;</type>
+          <declname>tint_color</declname>
+          <defval>ImVec4(1, 1, 1, 1)</defval>
+        </param>
+        <param>
+          <type>const ImVec4 &amp;</type>
+          <declname>border_color</declname>
+          <defval>ImVec4(0, 0, 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="72" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="95" bodyend="106"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a4b32e5a0b010adf76a1fe75d34f841c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::slider_float</definition>
+        <argsstring>(const char *label, float *value, float min, float max)</argsstring>
+        <name>slider_float</name>
+        <qualifiedname>mixImGui::gui_layout::slider_float</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="78" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="348" bodyend="355"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a955966b93c642457a8937d3205cc8965" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::collapsing_label</definition>
+        <argsstring>(std::string s, bool *is_visible)</argsstring>
+        <name>collapsing_label</name>
+        <qualifiedname>mixImGui::gui_layout::collapsing_label</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>is_visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="79" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="339" bodyend="346"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::horizontal_space</definition>
+        <argsstring>(float space)</argsstring>
+        <name>horizontal_space</name>
+        <qualifiedname>mixImGui::gui_layout::horizontal_space</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="81" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="357" bodyend="361"/>
+        <referencedby refid="a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" compoundref="a00155" startline="90" endline="107">mix::core::mixEntity::on_gui</referencedby>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a488d64c01f85d4216d9106fa2ce501bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::vertical_space</definition>
+        <argsstring>(float space)</argsstring>
+        <name>vertical_space</name>
+        <qualifiedname>mixImGui::gui_layout::vertical_space</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="82" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a8823ce688560cdbb6757f2c9f4fa7121" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::new_line</definition>
+        <argsstring>()</argsstring>
+        <name>new_line</name>
+        <qualifiedname>mixImGui::gui_layout::new_line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="83" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a2e38bc4f5a31c6ba9f365878402c6d22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::seperator</definition>
+        <argsstring>()</argsstring>
+        <name>seperator</name>
+        <qualifiedname>mixImGui::gui_layout::seperator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="84" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="373" bodyend="376"/>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a77746d3ef41e007832057b42738a655e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::progress_bar</definition>
+        <argsstring>(float r)</argsstring>
+        <name>progress_bar</name>
+        <qualifiedname>mixImGui::gui_layout::progress_bar</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="86" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="185" bodyend="191"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::button</definition>
+        <argsstring>(const std::string &amp;label, const ImVec2 &amp;size=ImVec2(32, 32))</argsstring>
+        <name>button</name>
+        <qualifiedname>mixImGui::gui_layout::button</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>size</declname>
+          <defval>ImVec2(32, 32)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="88" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="193" bodyend="200"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a35c4e03581120cab90d81083df25b6ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::radio_button</definition>
+        <argsstring>(const std::string &amp;label, bool is_active)</argsstring>
+        <name>radio_button</name>
+        <qualifiedname>mixImGui::gui_layout::radio_button</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="89" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="220" bodyend="227"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a4d2819c64c001d840692ab25639d465a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::small_button</definition>
+        <argsstring>(const std::string &amp;label)</argsstring>
+        <name>small_button</name>
+        <qualifiedname>mixImGui::gui_layout::small_button</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="90" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="211" bodyend="218"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a363b6b65d203f42748845fec54d6ccad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::arrow_button</definition>
+        <argsstring>(const std::string &amp;label, int dir)</argsstring>
+        <name>arrow_button</name>
+        <qualifiedname>mixImGui::gui_layout::arrow_button</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="91" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="202" bodyend="209"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a242351eaadb4aef1a324bd16c4e024fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::image_button</definition>
+        <argsstring>(const std::string &amp;str_id, unsigned user_texture_id, const ImVec2 &amp;size=ImVec2(32, 32), const ImVec2 &amp;uv0=ImVec2(0, 0), const ImVec2 &amp;uv1=ImVec2(1, 1), const ImVec4 &amp;bg_col=ImVec4(0, 0, 0, 0), const ImVec4 &amp;tint_col=ImVec4(0, 0, 0, 0))</argsstring>
+        <name>image_button</name>
+        <qualifiedname>mixImGui::gui_layout::image_button</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str_id</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>user_texture_id</declname>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>size</declname>
+          <defval>ImVec2(32, 32)</defval>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>uv0</declname>
+          <defval>ImVec2(0, 0)</defval>
+        </param>
+        <param>
+          <type>const ImVec2 &amp;</type>
+          <declname>uv1</declname>
+          <defval>ImVec2(1, 1)</defval>
+        </param>
+        <param>
+          <type>const ImVec4 &amp;</type>
+          <declname>bg_col</declname>
+          <defval>ImVec4(0, 0, 0, 0)</defval>
+        </param>
+        <param>
+          <type>const ImVec4 &amp;</type>
+          <declname>tint_col</declname>
+          <defval>ImVec4(0, 0, 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="92" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="229" bodyend="242"/>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1acf9c6115c8a1eda4beb51294b44369f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::is_double_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>is_double_clicked</name>
+        <qualifiedname>mixImGui::gui_layout::is_double_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="100" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="119" bodyend="122"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ac089bcf1bed0c202e006431845aed45a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::is_left_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>is_left_clicked</name>
+        <qualifiedname>mixImGui::gui_layout::is_left_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="101" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a6f27ea3a834458a23f22df3455db0963" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::is_right_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>is_right_clicked</name>
+        <qualifiedname>mixImGui::gui_layout::is_right_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="102" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ae4d3205f7c55533f1a3e37794320ac29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_context_menu</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>begin_context_menu</name>
+        <qualifiedname>mixImGui::gui_layout::begin_context_menu</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="105" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1af0b08f68043c4f05b77dcee6e1b44f57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_context_menu</definition>
+        <argsstring>()</argsstring>
+        <name>end_context_menu</name>
+        <qualifiedname>mixImGui::gui_layout::end_context_menu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="106" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a195a6f06b3b43ecb982545648946e1a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::tree_node</definition>
+        <argsstring>(const char *label, int index, bool is_selected=false, bool is_framed=false, bool is_leaf=false)</argsstring>
+        <name>tree_node</name>
+        <qualifiedname>mixImGui::gui_layout::tree_node</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_selected</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_framed</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_leaf</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="109" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="254" bodyend="274"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a950f198d9d065bc1d875cb3614f311ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::tree_node</definition>
+        <argsstring>(const char *label)</argsstring>
+        <name>tree_node</name>
+        <qualifiedname>mixImGui::gui_layout::tree_node</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="110" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a8437163834762f5714f4d19d31a48fad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::tree_pop</definition>
+        <argsstring>()</argsstring>
+        <name>tree_pop</name>
+        <qualifiedname>mixImGui::gui_layout::tree_pop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="111" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="281" bodyend="284"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a4ab8d7533b386a8f6a9e4582c6de08b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::begin_drag_drop_source</definition>
+        <argsstring>()</argsstring>
+        <name>begin_drag_drop_source</name>
+        <qualifiedname>mixImGui::gui_layout::begin_drag_drop_source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="114" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="286" bodyend="289"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a41d6c2c0628de00c1cbe22c3f3885533" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_drag_drop_source</definition>
+        <argsstring>()</argsstring>
+        <name>end_drag_drop_source</name>
+        <qualifiedname>mixImGui::gui_layout::end_drag_drop_source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="115" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="291" bodyend="294"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a176b266202237b8eb11a13b6bdbe6ea5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::set_drag_drop_payload</definition>
+        <argsstring>(const char *label, const void *data, size_t size)</argsstring>
+        <name>set_drag_drop_payload</name>
+        <qualifiedname>mixImGui::gui_layout::set_drag_drop_payload</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="116" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="296" bodyend="299"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1aff6c7cf065ddfe39d15d4a926246c1bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::begin_drag_drop_target</definition>
+        <argsstring>()</argsstring>
+        <name>begin_drag_drop_target</name>
+        <qualifiedname>mixImGui::gui_layout::begin_drag_drop_target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="118" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="301" bodyend="304"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a5592b3107f4d91edd353201e5a71d818" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_drag_drop_target</definition>
+        <argsstring>()</argsstring>
+        <name>end_drag_drop_target</name>
+        <qualifiedname>mixImGui::gui_layout::end_drag_drop_target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="119" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="306" bodyend="309"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a673e0d8f148336f97640d82cc53ef038" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * mixImGui::gui_layout::accept_drag_drop_payload</definition>
+        <argsstring>(const char *label)</argsstring>
+        <name>accept_drag_drop_payload</name>
+        <qualifiedname>mixImGui::gui_layout::accept_drag_drop_payload</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="120" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="311" bodyend="319"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::set_background_color</definition>
+        <argsstring>(mix::math::color &amp;color)</argsstring>
+        <name>set_background_color</name>
+        <qualifiedname>mixImGui::gui_layout::set_background_color</qualifiedname>
+        <param>
+          <type><ref refid="a00599" kindref="compound">mix::math::color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="122" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="321" bodyend="326"/>
+        <references refid="a00599_1abdb1530f119fb7bd7217b43a7720f0f1" compoundref="a00284" startline="46" endline="49">mix::math::color::get_value</references>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1aa70d43ccf7c85a45e823e36b3fddbe67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::pop_style_vars</definition>
+        <argsstring>()</argsstring>
+        <name>pop_style_vars</name>
+        <qualifiedname>mixImGui::gui_layout::pop_style_vars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="123" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="328" bodyend="331"/>
+        <referencedby refid="a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a5f47fa92fdf4570f65b73096c36be8e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ImVec2</type>
+        <definition>ImVec2 mixImGui::gui_layout::get_cursor</definition>
+        <argsstring>()</argsstring>
+        <name>get_cursor</name>
+        <qualifiedname>mixImGui::gui_layout::get_cursor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="125" column="23" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>static T * mixImGui::gui_layout::get_top_block</definition>
+        <argsstring>()</argsstring>
+        <name>get_top_block</name>
+        <qualifiedname>mixImGui::gui_layout::get_top_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="126" column="30" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="126" bodyend="134"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+        <referencedby refid="a00535_1aefb1dc8c19e8a1d2e16f2e1348e73c49" compoundref="a00215" startline="95" endline="106">add_image</referencedby>
+        <referencedby refid="a00535_1a363b6b65d203f42748845fec54d6ccad" compoundref="a00215" startline="202" endline="209">arrow_button</referencedby>
+        <referencedby refid="a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" compoundref="a00215" startline="193" endline="200">button</referencedby>
+        <referencedby refid="a00535_1a955966b93c642457a8937d3205cc8965" compoundref="a00215" startline="339" endline="346">collapsing_label</referencedby>
+        <referencedby refid="a00535_1a83395d46391c762a3c0e9a5a38739ba2" compoundref="a00215" startline="440" endline="464">end_current_block</referencedby>
+        <referencedby refid="a00535_1a242351eaadb4aef1a324bd16c4e024fa" compoundref="a00215" startline="229" endline="242">image_button</referencedby>
+        <referencedby refid="a00535_1a77746d3ef41e007832057b42738a655e" compoundref="a00215" startline="185" endline="191">progress_bar</referencedby>
+        <referencedby refid="a00535_1a35c4e03581120cab90d81083df25b6ca" compoundref="a00215" startline="220" endline="227">radio_button</referencedby>
+        <referencedby refid="a00535_1a4b32e5a0b010adf76a1fe75d34f841c6" compoundref="a00215" startline="348" endline="355">slider_float</referencedby>
+        <referencedby refid="a00535_1a4d2819c64c001d840692ab25639d465a" compoundref="a00215" startline="211" endline="218">small_button</referencedby>
+        <referencedby refid="a00535_1a51fa55d14214144f3f877642c54daa67" compoundref="a00215" startline="49" endline="55">text_label</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a113f95b309bb06bccb734c573115db72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00535" kindref="compound">gui_layout</ref> *</type>
+        <definition>static gui_layout * mixImGui::gui_layout::get_top_block</definition>
+        <argsstring>()</argsstring>
+        <name>get_top_block</name>
+        <qualifiedname>mixImGui::gui_layout::get_top_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="136" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="136" bodyend="145"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="a00535_1afad0a0a2f32a32acfe97cea48d5b409a" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::begin_vertical_selectable</definition>
+        <argsstring>(window_rect r=window_rect(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0))</argsstring>
+        <name>begin_vertical_selectable</name>
+        <qualifiedname>mixImGui::gui_layout::begin_vertical_selectable</qualifiedname>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>r</declname>
+          <defval><ref refid="a00531" kindref="compound">window_rect</ref>(static_cast&lt; int &gt;(_cursor.x), static_cast&lt; int &gt;(_cursor.y), 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="150" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="38" bodyend="41"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3">mixImGui::vertical</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a4035a1ad70461c438441cd1d2a3c49a6" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_vertical_selectable</definition>
+        <argsstring>()</argsstring>
+        <name>end_vertical_selectable</name>
+        <qualifiedname>mixImGui::gui_layout::end_vertical_selectable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="151" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mixImGui::gui_layout::gui_layout</definition>
+        <argsstring>(mixImGui::layout_type new_layout, window_rect r)</argsstring>
+        <name>gui_layout</name>
+        <qualifiedname>mixImGui::gui_layout::gui_layout</qualifiedname>
+        <param>
+          <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+          <declname>new_layout</declname>
+        </param>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="152" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="9" bodyend="16"/>
+        <references refid="a00535_1aa16f58376c9d9b117124888d43300455" compoundref="a00218" startline="170">_current_layout</references>
+        <references refid="a00535_1ab9826c3c2bfbe164187ba2ad5d1b92af" compoundref="a00218" startline="159">_cursor</references>
+        <references refid="a00535_1ae94776126f4e1693c91b1a618482e36a" compoundref="a00218" startline="160">_global_layout</references>
+        <references refid="a00535_1a265a7355330b67ab85e4a39c8c5b2618" compoundref="a00218" startline="171">_last_layout</references>
+        <references refid="a00535_1a2a5cf8e48309732c7f64d435640d0959" compoundref="a00218" startline="169">_rect</references>
+        <references refid="a00535_1ac87e26ac861e935a0994d2b7be8852d7" compoundref="a00218" startline="172">_render_index</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="a00535_1a1229a6624a42d29f1c3e1f1f4331adf1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::set_global_layout</definition>
+        <argsstring>(mixImGui::layout_type new_layout)</argsstring>
+        <name>set_global_layout</name>
+        <qualifiedname>mixImGui::gui_layout::set_global_layout</qualifiedname>
+        <param>
+          <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+          <declname>new_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="156" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a5051c25adde2c754e6919a7b01d7948b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::add_block</definition>
+        <argsstring>(gui_layout *layout)</argsstring>
+        <name>add_block</name>
+        <qualifiedname>mixImGui::gui_layout::add_block</qualifiedname>
+        <param>
+          <type><ref refid="a00535" kindref="compound">gui_layout</ref> *</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="157" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="434" bodyend="438"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+        <references refid="a00535_1ac087bd255bca976d254cc2666f9756dc" compoundref="a00215" startline="419" endline="422">get_layout</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a83395d46391c762a3c0e9a5a38739ba2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::end_current_block</definition>
+        <argsstring>(mixImGui::layout_type target_layout)</argsstring>
+        <name>end_current_block</name>
+        <qualifiedname>mixImGui::gui_layout::end_current_block</qualifiedname>
+        <param>
+          <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+          <declname>target_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="158" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="440" bodyend="464"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+        <references refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" compoundref="a00218" startline="126" endline="134">get_top_block</references>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f">mixImGui::horizontal</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_layout::selectable_text</definition>
+        <argsstring>(std::string label, bool is_selected)</argsstring>
+        <name>selectable_text</name>
+        <qualifiedname>mixImGui::gui_layout::selectable_text</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="162" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="109" bodyend="117"/>
+        <references refid="a00535_1a97114e705677638929756a2e81e275e5" compoundref="a00218" startline="161">_layouts</references>
+        <referencedby refid="a00535_1a739aa63e4b579149d6ffbf3628736f29" compoundref="a00215" startline="166" endline="183">render_added_selectables</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00535_1a6c77919f69f17241d0df9d7f119e869a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::before_render</definition>
+        <argsstring>()</argsstring>
+        <name>before_render</name>
+        <qualifiedname>mixImGui::gui_layout::before_render</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="164" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="378" bodyend="397"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f">mixImGui::horizontal</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a050ef593e3301c1efefd42f982cbfce4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_layout::after_render</definition>
+        <argsstring>()</argsstring>
+        <name>after_render</name>
+        <qualifiedname>mixImGui::gui_layout::after_render</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="165" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="399" bodyend="417"/>
+        <references refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3">mixImGui::vertical</references>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1ac087bd255bca976d254cc2666f9756dc" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+        <definition>mixImGui::layout_type mixImGui::gui_layout::get_layout</definition>
+        <argsstring>() const</argsstring>
+        <name>get_layout</name>
+        <qualifiedname>mixImGui::gui_layout::get_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="166" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="419" bodyend="422"/>
+        <referencedby refid="a00535_1a5051c25adde2c754e6919a7b01d7948b" compoundref="a00215" startline="434" endline="438">add_block</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00535_1a4cc0b94421b236a050244f06610ef96d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref></type>
+        <definition>mixImGui::layout_type mixImGui::gui_layout::get_previous_layout</definition>
+        <argsstring>() const</argsstring>
+        <name>get_previous_layout</name>
+        <qualifiedname>mixImGui::gui_layout::get_previous_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="167" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp" bodystart="424" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mixImGui::gui_layout</label>
+        <link refid="a00535"/>
+      </node>
+      <node id="2">
+        <label>mixImGui::gui_selectable_layout</label>
+        <link refid="a00539"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mixImGui::gui_layout</label>
+        <link refid="a00535"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::window_rect</label>
+        <link refid="a00531"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="49" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="50" bodyend="173"/>
+    <listofallmembers>
+      <member refid="a00535_1aa16f58376c9d9b117124888d43300455" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_current_layout</name></member>
+      <member refid="a00535_1ab9826c3c2bfbe164187ba2ad5d1b92af" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_cursor</name></member>
+      <member refid="a00535_1ae94776126f4e1693c91b1a618482e36a" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_global_layout</name></member>
+      <member refid="a00535_1a265a7355330b67ab85e4a39c8c5b2618" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_last_layout</name></member>
+      <member refid="a00535_1a97114e705677638929756a2e81e275e5" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_layouts</name></member>
+      <member refid="a00535_1a2a5cf8e48309732c7f64d435640d0959" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_rect</name></member>
+      <member refid="a00535_1ac87e26ac861e935a0994d2b7be8852d7" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>_render_index</name></member>
+      <member refid="a00535_1a673e0d8f148336f97640d82cc53ef038" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>accept_drag_drop_payload</name></member>
+      <member refid="a00535_1a5051c25adde2c754e6919a7b01d7948b" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>add_block</name></member>
+      <member refid="a00535_1aefb1dc8c19e8a1d2e16f2e1348e73c49" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>add_image</name></member>
+      <member refid="a00535_1ab649160af3cdfa3cb465acfe5d522a54" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>add_selectable</name></member>
+      <member refid="a00535_1a050ef593e3301c1efefd42f982cbfce4" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>after_render</name></member>
+      <member refid="a00535_1a363b6b65d203f42748845fec54d6ccad" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>arrow_button</name></member>
+      <member refid="a00535_1a6c77919f69f17241d0df9d7f119e869a" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>before_render</name></member>
+      <member refid="a00535_1a0d22d33a1eeafa550f4994c98e88682b" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_child</name></member>
+      <member refid="a00535_1ad904a6bd3db93b8ed3baef8944ef1a01" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_child</name></member>
+      <member refid="a00535_1ae4d3205f7c55533f1a3e37794320ac29" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_context_menu</name></member>
+      <member refid="a00535_1a4ab8d7533b386a8f6a9e4582c6de08b7" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_drag_drop_source</name></member>
+      <member refid="a00535_1aff6c7cf065ddfe39d15d4a926246c1bf" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_drag_drop_target</name></member>
+      <member refid="a00535_1a7117bba25a15fda694fc3370dd7c0b27" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_horizontal</name></member>
+      <member refid="a00535_1a69563b6c88b8d3a286c046dbcd1b35e7" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_selectable_list</name></member>
+      <member refid="a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_vertical</name></member>
+      <member refid="a00535_1afad0a0a2f32a32acfe97cea48d5b409a" prot="protected" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>begin_vertical_selectable</name></member>
+      <member refid="a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>button</name></member>
+      <member refid="a00535_1a955966b93c642457a8937d3205cc8965" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>collapsing_label</name></member>
+      <member refid="a00535_1af30bb29aa9d2265d0384324ca814fd46" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_child</name></member>
+      <member refid="a00535_1af0b08f68043c4f05b77dcee6e1b44f57" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_context_menu</name></member>
+      <member refid="a00535_1a83395d46391c762a3c0e9a5a38739ba2" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_current_block</name></member>
+      <member refid="a00535_1a41d6c2c0628de00c1cbe22c3f3885533" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_drag_drop_source</name></member>
+      <member refid="a00535_1a5592b3107f4d91edd353201e5a71d818" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_drag_drop_target</name></member>
+      <member refid="a00535_1a83f6713438b52862d9a65795003695ad" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_horizontal</name></member>
+      <member refid="a00535_1ae574fda0ac6b4b3361b33a98bd350815" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_selectable_list</name></member>
+      <member refid="a00535_1a724cab724f67db7089561715ca6163b8" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_vertical</name></member>
+      <member refid="a00535_1a4035a1ad70461c438441cd1d2a3c49a6" prot="protected" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>end_vertical_selectable</name></member>
+      <member refid="a00535_1a5f47fa92fdf4570f65b73096c36be8e9" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>get_cursor</name></member>
+      <member refid="a00535_1ac087bd255bca976d254cc2666f9756dc" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>get_layout</name></member>
+      <member refid="a00535_1a4cc0b94421b236a050244f06610ef96d" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>get_previous_layout</name></member>
+      <member refid="a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>get_top_block</name></member>
+      <member refid="a00535_1a113f95b309bb06bccb734c573115db72" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>get_top_block</name></member>
+      <member refid="a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" prot="protected" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>gui_layout</name></member>
+      <member refid="a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>horizontal_space</name></member>
+      <member refid="a00535_1a242351eaadb4aef1a324bd16c4e024fa" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>image_button</name></member>
+      <member refid="a00535_1acf9c6115c8a1eda4beb51294b44369f2" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>is_double_clicked</name></member>
+      <member refid="a00535_1ac089bcf1bed0c202e006431845aed45a" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>is_left_clicked</name></member>
+      <member refid="a00535_1a6f27ea3a834458a23f22df3455db0963" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>is_right_clicked</name></member>
+      <member refid="a00535_1a8823ce688560cdbb6757f2c9f4fa7121" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>new_line</name></member>
+      <member refid="a00535_1aa70d43ccf7c85a45e823e36b3fddbe67" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>pop_style_vars</name></member>
+      <member refid="a00535_1a77746d3ef41e007832057b42738a655e" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>progress_bar</name></member>
+      <member refid="a00535_1a35c4e03581120cab90d81083df25b6ca" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>radio_button</name></member>
+      <member refid="a00535_1a739aa63e4b579149d6ffbf3628736f29" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>render_added_selectables</name></member>
+      <member refid="a00535_1a6d2796bcb5b2f23703f3be157e31b05f" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>selectable_image</name></member>
+      <member refid="a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>selectable_text</name></member>
+      <member refid="a00535_1a2e38bc4f5a31c6ba9f365878402c6d22" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>seperator</name></member>
+      <member refid="a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>set_background_color</name></member>
+      <member refid="a00535_1a176b266202237b8eb11a13b6bdbe6ea5" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>set_drag_drop_payload</name></member>
+      <member refid="a00535_1a1229a6624a42d29f1c3e1f1f4331adf1" prot="private" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>set_global_layout</name></member>
+      <member refid="a00535_1a4b32e5a0b010adf76a1fe75d34f841c6" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>slider_float</name></member>
+      <member refid="a00535_1a4d2819c64c001d840692ab25639d465a" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>small_button</name></member>
+      <member refid="a00535_1a51fa55d14214144f3f877642c54daa67" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>text_label</name></member>
+      <member refid="a00535_1a195a6f06b3b43ecb982545648946e1a0" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>tree_node</name></member>
+      <member refid="a00535_1a950f198d9d065bc1d875cb3614f311ae" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>tree_node</name></member>
+      <member refid="a00535_1a8437163834762f5714f4d19d31a48fad" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>tree_pop</name></member>
+      <member refid="a00535_1a488d64c01f85d4216d9106fa2ce501bc" prot="public" virt="non-virtual"><scope>mixImGui::gui_layout</scope><name>vertical_space</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

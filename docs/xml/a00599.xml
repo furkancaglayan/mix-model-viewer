@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00599" kind="struct" language="C++" prot="public">
+    <compoundname>mix::math::color</compoundname>
+    <includes refid="a00287" local="no">color.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00599_1a30d7210d769ff37ac9eccb491902dc50" prot="private" static="no" mutable="no">
+        <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+        <definition>vec4 mix::math::color::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <qualifiedname>mix::math::color::_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00599_1aa04a261991877ad815dfca065e641634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>()</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="13" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a35561de2024166edf0dc0534130dccdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(float r, float g, float b)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="14" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1aeddb615e0881c9566a128051c3cb08e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(float r, float g, float b, float a)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="15" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a7901cbe807b5eac19381f7b1f8d8481a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(vec4 col)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="16" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a3f53867fff4a42e29315264c1f0d8a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(vec3 col)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a90a66f6859b72dfbeb65d240abfc9a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(int r, int g, int b)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="18" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a4d2d1cf4eeccccade97b247147f8210b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(int r, int g, int b, int a)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="19" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1a8ca8a629cb7d844e7962691e13d2b22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::color::color</definition>
+        <argsstring>(unsigned col)</argsstring>
+        <name>color</name>
+        <qualifiedname>mix::math::color::color</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="20" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1ad794db59144c49fb508fb44b43a12c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::math::color::to_uint</definition>
+        <argsstring>()</argsstring>
+        <name>to_uint</name>
+        <qualifiedname>mix::math::color::to_uint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="22" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="a00599_1abdb1530f119fb7bd7217b43a7720f0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+        <definition>vec4 mix::math::color::get_value</definition>
+        <argsstring>()</argsstring>
+        <name>get_value</name>
+        <qualifiedname>mix::math::color::get_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="46" bodyend="49"/>
+        <referencedby refid="a00227_1ae17ac2e29ad896087561367ddb2a99c9" compoundref="a00227" startline="166" endline="170">from_color</referencedby>
+        <referencedby refid="a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" compoundref="a00215" startline="321" endline="326">mixImGui::gui_layout::set_background_color</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00599_1ad5742d2b0cf7062297f3ba1d734a21bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00599" kindref="compound">color</ref></type>
+        <definition>mix::math::color mix::math::color::from_uint</definition>
+        <argsstring>(unsigned u)</argsstring>
+        <name>from_uint</name>
+        <qualifiedname>mix::math::color::from_uint</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="21" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="9" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="a00599_1a30d7210d769ff37ac9eccb491902dc50" prot="private" virt="non-virtual"><scope>mix::math::color</scope><name>_color</name></member>
+      <member refid="a00599_1aa04a261991877ad815dfca065e641634" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a35561de2024166edf0dc0534130dccdd" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1aeddb615e0881c9566a128051c3cb08e7" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a7901cbe807b5eac19381f7b1f8d8481a" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a3f53867fff4a42e29315264c1f0d8a55" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a90a66f6859b72dfbeb65d240abfc9a5a" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a4d2d1cf4eeccccade97b247147f8210b" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1a8ca8a629cb7d844e7962691e13d2b22c" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>color</name></member>
+      <member refid="a00599_1ad5742d2b0cf7062297f3ba1d734a21bf" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>from_uint</name></member>
+      <member refid="a00599_1abdb1530f119fb7bd7217b43a7720f0f1" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>get_value</name></member>
+      <member refid="a00599_1ad794db59144c49fb508fb44b43a12c05" prot="public" virt="non-virtual"><scope>mix::math::color</scope><name>to_uint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

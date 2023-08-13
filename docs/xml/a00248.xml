@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00248" kind="file" language="C++">
+    <compoundname>i_guielement.h</compoundname>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includes local="no">imgui.h</includes>
+    <includes local="no">backends/imgui_impl_opengl3.h</includes>
+    <includes local="no">backends/imgui_impl_glfw.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="a00218" local="yes">gui_layout.h</includedby>
+    <includedby refid="a00236" local="yes">gui_window.h</includedby>
+    <includedby refid="a00245" local="yes">i_guielement.cpp</includedby>
+    <includedby refid="a00158" local="yes">mixEntity.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>i_guielement.h</label>
+        <link refid="a00248"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="5">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="4">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="3">
+        <label>imgui.h</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="29">
+        <label>mixMesh_component.cpp</label>
+        <link refid="a00137"/>
+      </node>
+      <node id="28">
+        <label>mixMesh_component.h</label>
+        <link refid="a00140"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>mixLight.cpp</label>
+        <link refid="a00143"/>
+      </node>
+      <node id="32">
+        <label>mixLight.h</label>
+        <link refid="a00146"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>mixCamera.cpp</label>
+        <link refid="a00149"/>
+      </node>
+      <node id="25">
+        <label>mixCamera.h</label>
+        <link refid="a00152"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>mixEntity.cpp</label>
+        <link refid="a00155"/>
+      </node>
+      <node id="24">
+        <label>mixEntity.h</label>
+        <link refid="a00158"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>editor_config.h</label>
+        <link refid="a00182"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mixEditor.cpp</label>
+        <link refid="a00185"/>
+      </node>
+      <node id="17">
+        <label>mixEditor.h</label>
+        <link refid="a00188"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>hierarchy_window.cpp</label>
+        <link refid="a00191"/>
+      </node>
+      <node id="18">
+        <label>hierarchy_window.h</label>
+        <link refid="a00194"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>project_window.cpp</label>
+        <link refid="a00197"/>
+      </node>
+      <node id="12">
+        <label>project_window.h</label>
+        <link refid="a00200"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>scene_window.cpp</label>
+        <link refid="a00203"/>
+      </node>
+      <node id="15">
+        <label>scene_window.h</label>
+        <link refid="a00206"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>shortcuts_window.cpp</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="21">
+        <label>shortcuts_window.h</label>
+        <link refid="a00212"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gui_layout.cpp</label>
+        <link refid="a00215"/>
+      </node>
+      <node id="2">
+        <label>gui_layout.h</label>
+        <link refid="a00218"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gui_selectable_layout.cpp</label>
+        <link refid="a00221"/>
+      </node>
+      <node id="4">
+        <label>gui_selectable_layout.h</label>
+        <link refid="a00224"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gui_style.cpp</label>
+        <link refid="a00227"/>
+      </node>
+      <node id="9">
+        <label>gui_style.h</label>
+        <link refid="a00230"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gui_window.cpp</label>
+        <link refid="a00233"/>
+      </node>
+      <node id="6">
+        <label>gui_window.h</label>
+        <link refid="a00236"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>i_guielement.cpp</label>
+        <link refid="a00245"/>
+      </node>
+      <node id="1">
+        <label>i_guielement.h</label>
+        <link refid="a00248"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mixGui.cpp</label>
+        <link refid="a00257"/>
+      </node>
+      <node id="8">
+        <label>mixGui.h</label>
+        <link refid="a00260"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>main.cpp</label>
+        <link refid="a00281"/>
+      </node>
+      <node id="34">
+        <label>scene_context.h</label>
+        <link refid="a00329"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>mixScene.cpp</label>
+        <link refid="a00332"/>
+      </node>
+      <node id="27">
+        <label>mixScene.h</label>
+        <link refid="a00335"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00559" prot="public">mixImGui::i_guielement</innerclass>
+    <innernamespace refid="a00361">mixImGui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;imgui.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;backends/imgui_impl_opengl3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;backends/imgui_impl_glfw.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00361" kindref="compound">mixImGui</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="a00559" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00559" kindref="compound">i_guielement</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="a00559_1a3d61b523c5ec64d3d495487a02188e1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="a00559_1a3d61b523c5ec64d3d495487a02188e1a" kindref="member">get_gui_name</ref><sp/>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17" refid="a00559_1a88a27f523a0a069d84188c284e9c4d6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00559_1a88a27f523a0a069d84188c284e9c4d6c" kindref="member">on_gui</ref><sp/>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18" refid="a00559_1ac062707cba8ddfc82555ce12d2a6aa2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00559_1ac062707cba8ddfc82555ce12d2a6aa2b" kindref="member">on_inspector_gui</ref><sp/>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19" refid="a00559_1ada3ee8d05c23f8404760728859fa93a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00559_1ada3ee8d05c23f8404760728859fa93a1" kindref="member">on_scene_gui</ref><sp/>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mixImGui</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_guielement.h"/>
+  </compounddef>
+</doxygen>

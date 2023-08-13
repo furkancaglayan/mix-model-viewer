@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00362" kind="namespace" language="C++">
+    <compoundname>mix::library</compoundname>
+    <innerclass refid="a00571" prot="public">mix::library::debug</innerclass>
+    <innerclass refid="a00579" prot="public">mix::library::event</innerclass>
+    <innerclass refid="a00575" prot="public">mix::library::event_base</innerclass>
+    <innerclass refid="a00583" prot="public">mix::library::event_callback</innerclass>
+    <innerclass refid="a00587" prot="public">mix::library::event_callback_args</innerclass>
+    <innerclass refid="a00591" prot="public">mix::library::ievent_callback_base</innerclass>
+    <innerclass refid="a00595" prot="public">mix::library::ievent_callback_base_with_args</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00362_1ae7f932e3cfe4f0f79970eee58941680a" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>debug_level</name>
+        <qualifiedname>mix::library::debug_level</qualifiedname>
+        <enumvalue id="a00362_1ae7f932e3cfe4f0f79970eee58941680aadc1d71bbb5c4d2a5e936db79ef10c19f" prot="public">
+          <name>log</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00362_1ae7f932e3cfe4f0f79970eee58941680aacb5e100e5a9a3e7f6d1fd97512215282" prot="public">
+          <name>error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00362_1ae7f932e3cfe4f0f79970eee58941680aa7b83d3f08fa392b79e3f553b585971cd" prot="public">
+          <name>warning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00362_1ae7f932e3cfe4f0f79970eee58941680aacaf9b6b99962bf5c2264824231d7a40c" prot="public">
+          <name>info</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="18" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="16" column="5"/>
+  </compounddef>
+</doxygen>

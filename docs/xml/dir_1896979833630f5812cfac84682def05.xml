@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1896979833630f5812cfac84682def05" kind="dir">
+    <compoundname>scene_management</compoundname>
+    <innerfile refid="a00332">mixScene.cpp</innerfile>
+    <innerfile refid="a00335">mixScene.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_894d01094d05463c7449990978a6cc04">assetsystem</innerdir>
+    <innerdir refid="dir_0b61c55142250c0cc363383afd8075a4">containers</innerdir>
+    <innerdir refid="dir_aebb8dcc11953d78e620bbef0b9e2183">core</innerdir>
+    <innerdir refid="dir_a31afd56823c6335224242a3eb4525db">editor</innerdir>
+    <innerdir refid="dir_99d0482cf009f9d97a0877749b817f19">gui</innerdir>
+    <innerdir refid="dir_0aacf3aed1a5c7085b23ed9486273ee2">library</innerdir>
+    <innerdir refid="dir_ae9a93452e2a84339148a16bcf2eb561">math</innerdir>
+    <innerdir refid="dir_4b68c2fef3e151b6b93d5e93b14f1857">platform</innerdir>
+    <innerdir refid="dir_1243271318b2b38807a3b1d2ca08dd72">rendering</innerdir>
+    <innerdir refid="dir_1896979833630f5812cfac84682def05">scene_management</innerdir>
+    <innerdir refid="dir_120ed4da3e3217b1e7fc0b4f48568e79">test</innerdir>
+    <innerfile refid="a00281">main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1243271318b2b38807a3b1d2ca08dd72" kind="dir">
+    <compoundname>rendering</compoundname>
+    <innerfile refid="a00320">rendering_context.cpp</innerfile>
+    <innerfile refid="a00323">rendering_context.h</innerfile>
+    <innerfile refid="a00326">scene_context.cpp</innerfile>
+    <innerfile refid="a00329">scene_context.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/"/>
+  </compounddef>
+</doxygen>

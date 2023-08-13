@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00391" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::mixMaterial</compoundname>
+    <basecompoundref refid="a00383" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_item</basecompoundref>
+    <includes refid="a00023" local="no">mixMaterial.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00391_1a4c07c2815cd8723a0c0aaca1ddda5def" prot="private" static="no" mutable="no">
+        <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+        <definition>vec4 mix::assetsystem::mixMaterial::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="31" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00391_1ad603a11eecffd2ffe328bd60769941a2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::assetsystem::mixMaterial::_ambient</definition>
+        <argsstring></argsstring>
+        <name>_ambient</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_ambient</qualifiedname>
+        <initializer>{ 0.33f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="32" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00391_1a052b1ffbc2a7cb9ea690bbc91d16e82a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::assetsystem::mixMaterial::_specular</definition>
+        <argsstring></argsstring>
+        <name>_specular</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_specular</qualifiedname>
+        <initializer>{ 0.33f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="33" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00391_1abfc69b8ff7dc85f3d9b7cf39833200db" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::assetsystem::mixMaterial::_shininess</definition>
+        <argsstring></argsstring>
+        <name>_shininess</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_shininess</qualifiedname>
+        <initializer>{ 0.33f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="34" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00391_1a6f2763ae87a501957332411e0b892009" prot="private" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00407" kindref="compound">mix::assetsystem::mixShader_program</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;mix::assetsystem::mixShader_program&gt; mix::assetsystem::mixMaterial::_shader</definition>
+        <argsstring></argsstring>
+        <name>_shader</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="35" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="a00391_1a3a688ee5091611b34038f76c6310f13b" compoundref="a00020" startline="3" endline="8">mixMaterial</referencedby>
+        <referencedby refid="a00391_1ad319a74288d6aba007a677f0ae2756d9" compoundref="a00020" startline="10" endline="14">mixMaterial</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00391_1a98d0ab863ad31f210a07ecde1034fd76" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref>, std::weak_ptr&lt; <ref refid="a00419" kindref="compound">mix::assetsystem::mixTexture</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;mix::texture::texture_type, std::weak_ptr&lt;mix::assetsystem::mixTexture&gt; &gt; mix::assetsystem::mixMaterial::_textures</definition>
+        <argsstring></argsstring>
+        <name>_textures</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::_textures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="36" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00391_1a3a688ee5091611b34038f76c6310f13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixMaterial::mixMaterial</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path, std::shared_ptr&lt; mix::assetsystem::mixShader_program &gt; shader)</argsstring>
+        <name>mixMaterial</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::mixMaterial</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00407" kindref="compound">mix::assetsystem::mixShader_program</ref> &gt;</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="3" bodyend="8"/>
+        <references refid="a00391_1a6f2763ae87a501957332411e0b892009" compoundref="a00023" startline="35">_shader</references>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1ad319a74288d6aba007a677f0ae2756d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixMaterial::mixMaterial</definition>
+        <argsstring>(const std::string &amp;path, std::shared_ptr&lt; mix::assetsystem::mixShader_program &gt; shader)</argsstring>
+        <name>mixMaterial</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::mixMaterial</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00407" kindref="compound">mix::assetsystem::mixShader_program</ref> &gt;</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="18" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="10" bodyend="14"/>
+        <references refid="a00391_1a6f2763ae87a501957332411e0b892009" compoundref="a00023" startline="35">_shader</references>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1ad3d4616d1e11bc6463155932efcb7399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixMaterial::~mixMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>~mixMaterial</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::~mixMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="19" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a76359acf75f48da67f98155e9c90be05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMaterial::set_shader</definition>
+        <argsstring>(std::shared_ptr&lt; mix::assetsystem::mixShader_program &gt; shader)</argsstring>
+        <name>set_shader</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::set_shader</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00407" kindref="compound">mix::assetsystem::mixShader_program</ref> &gt;</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="21" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1aca99fe845ea3fea270ef7dbd294e3281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMaterial::set_color</definition>
+        <argsstring>(vec4 color)</argsstring>
+        <name>set_color</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::set_color</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1ac5dd01bd44f5dde4206c839543db635b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMaterial::set_color</definition>
+        <argsstring>(vec3 color)</argsstring>
+        <name>set_color</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::set_color</qualifiedname>
+        <param>
+          <type><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="23" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a391154e136ba0311ad1b1bb01216e1d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMaterial::set_opacity</definition>
+        <argsstring>(float a)</argsstring>
+        <name>set_opacity</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::set_opacity</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a82595022e20e4dbcea17469010b1ddb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixMaterial::apply</definition>
+        <argsstring>() const</argsstring>
+        <name>apply</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::apply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="25" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="63" bodyend="85"/>
+        <references refid="a00415_1a3af8a01bbadccb536faed4a385267391" compoundref="a00047" startline="63" endline="66">mix::texture::get_texture_target</references>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a702c6d2017a1d82af4ea1091feb87d34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00407" kindref="compound">mix::assetsystem::mixShader_program</ref> *</type>
+        <definition>mix::assetsystem::mixShader_program * mix::assetsystem::mixMaterial::get_shader</definition>
+        <argsstring>() const</argsstring>
+        <name>get_shader</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::get_shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="26" column="49" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a5f7a3c9e44cda76adf32548cf18c5099" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixMaterial::set_texture</definition>
+        <argsstring>(mix::texture::texture_type type, std::shared_ptr&lt; mix::assetsystem::mixTexture &gt; texture)</argsstring>
+        <name>set_texture</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::set_texture</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="a00419" kindref="compound">mix::assetsystem::mixTexture</ref> &gt;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="a00391_1a9e7e6d1e6715572aa6622948093c9e8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+        <definition>vec4 mix::assetsystem::mixMaterial::get_color</definition>
+        <argsstring>() const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>mix::assetsystem::mixMaterial::get_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="28" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixMaterial</label>
+        <link refid="a00391"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixMaterial</label>
+        <link refid="a00391"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="4">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" line="13" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.h" bodystart="14" bodyend="37"/>
+    <listofallmembers>
+      <member refid="a00391_1ad603a11eecffd2ffe328bd60769941a2" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_ambient</name></member>
+      <member refid="a00391_1a4c07c2815cd8723a0c0aaca1ddda5def" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_color</name></member>
+      <member refid="a00383_1a5220a296886d6bb5a77b208f12aad817" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_guid</name></member>
+      <member refid="a00383_1a0ebce5f5d9da7f50795b9519c63e629b" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_path</name></member>
+      <member refid="a00391_1a6f2763ae87a501957332411e0b892009" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_shader</name></member>
+      <member refid="a00391_1abfc69b8ff7dc85f3d9b7cf39833200db" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_shininess</name></member>
+      <member refid="a00391_1a052b1ffbc2a7cb9ea690bbc91d16e82a" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_specular</name></member>
+      <member refid="a00391_1a98d0ab863ad31f210a07ecde1034fd76" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>_textures</name></member>
+      <member refid="a00391_1a82595022e20e4dbcea17469010b1ddb6" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>apply</name></member>
+      <member refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_base_name</name></member>
+      <member refid="a00391_1a9e7e6d1e6715572aa6622948093c9e8c" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_color</name></member>
+      <member refid="a00383_1a6e6d736bbc390e6a4544d96c8ef94065" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_extension</name></member>
+      <member refid="a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_full_name</name></member>
+      <member refid="a00383_1ae7f95f45067eeec3fb17487495c886d8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_guid</name></member>
+      <member refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_path</name></member>
+      <member refid="a00391_1a702c6d2017a1d82af4ea1091feb87d34" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_shader</name></member>
+      <member refid="a00383_1ad0fd1f5410d3d1ab6d772ea32935ac7b" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>get_shortened_name</name></member>
+      <member refid="a00383_1a3a8cf3901371f85656487fafa8a7332e" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>is_readonly</name></member>
+      <member refid="a00383_1ae048c01047e4d14ed7fceff0755ab28a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1a65df15bf1da90497e61b96e6bb1b9d72" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>mixAsset_item</name></member>
+      <member refid="a00391_1a3a688ee5091611b34038f76c6310f13b" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>mixMaterial</name></member>
+      <member refid="a00391_1ad319a74288d6aba007a677f0ae2756d9" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>mixMaterial</name></member>
+      <member refid="a00383_1acb517c665ba6c0623d64a2a5fb542201" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>operator std::string</name></member>
+      <member refid="a00383_1a7b0a0b9b9160f90acd830bb989b97ceb" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>operator&lt;&lt;</name></member>
+      <member refid="a00383_1a86fcabc946908e95e6c0b36ad3370fd0" prot="public" virt="virtual"><scope>mix::assetsystem::mixMaterial</scope><name>operator&gt;&gt;</name></member>
+      <member refid="a00391_1aca99fe845ea3fea270ef7dbd294e3281" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>set_color</name></member>
+      <member refid="a00391_1ac5dd01bd44f5dde4206c839543db635b" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>set_color</name></member>
+      <member refid="a00391_1a391154e136ba0311ad1b1bb01216e1d7" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>set_opacity</name></member>
+      <member refid="a00391_1a76359acf75f48da67f98155e9c90be05" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>set_shader</name></member>
+      <member refid="a00391_1a5f7a3c9e44cda76adf32548cf18c5099" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>set_texture</name></member>
+      <member refid="a00391_1ad3d4616d1e11bc6463155932efcb7399" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixMaterial</scope><name>~mixMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

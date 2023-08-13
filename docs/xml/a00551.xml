@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00551" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mixImGui::gui_window</compoundname>
+    <derivedcompoundref refid="a00515" prot="public" virt="non-virtual">mix::editor::windows::hierarchy_window</derivedcompoundref>
+    <derivedcompoundref refid="a00519" prot="public" virt="non-virtual">mix::editor::windows::project_window</derivedcompoundref>
+    <derivedcompoundref refid="a00523" prot="public" virt="non-virtual">mix::editor::windows::scene_window</derivedcompoundref>
+    <derivedcompoundref refid="a00527" prot="public" virt="non-virtual">mix::editor::windows::shortcuts_window</derivedcompoundref>
+    <includes refid="a00236" local="no">gui_window.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_window::_is_open</definition>
+        <argsstring></argsstring>
+        <name>_is_open</name>
+        <qualifiedname>mixImGui::gui_window::_is_open</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="98" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" compoundref="a00233" startline="4" endline="8">render</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mixImGui::gui_window::_window_name</definition>
+        <argsstring></argsstring>
+        <name>_window_name</name>
+        <qualifiedname>mixImGui::gui_window::_window_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="99" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" compoundref="a00233" startline="4" endline="8">render</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00551_1ae32d327e1e32115c2c0e7823f6e5f522" prot="protected" static="no" mutable="no">
+        <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+        <definition>window_rect mixImGui::gui_window::_rect</definition>
+        <argsstring></argsstring>
+        <name>_rect</name>
+        <qualifiedname>mixImGui::gui_window::_rect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="100" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00551_1a97b151a9b07929b2b7838c9ecb956a1a" prot="protected" static="no" mutable="no">
+        <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+        <definition>window_rect mixImGui::gui_window::_constraints</definition>
+        <argsstring></argsstring>
+        <name>_constraints</name>
+        <qualifiedname>mixImGui::gui_window::_constraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="100" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" prot="private" static="no" mutable="no">
+        <type><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+        <definition>window_flags mixImGui::gui_window::_flags</definition>
+        <argsstring></argsstring>
+        <name>_flags</name>
+        <qualifiedname>mixImGui::gui_window::_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="105" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" compoundref="a00233" startline="4" endline="8">render</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00551_1a6e39227f87ebb0c7e5c999207c992f9a" prot="private" static="no" mutable="no">
+        <type><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref></type>
+        <definition>window_positioning mixImGui::gui_window::_positioning</definition>
+        <argsstring></argsstring>
+        <name>_positioning</name>
+        <qualifiedname>mixImGui::gui_window::_positioning</qualifiedname>
+        <initializer>= <ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" kindref="member">window_positioning::flexible</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="106" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00551_1aa9930bf91b544df53d2d051ae740dc70" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mixImGui::gui_window::_has_constraints</definition>
+        <argsstring></argsstring>
+        <name>_has_constraints</name>
+        <qualifiedname>mixImGui::gui_window::_has_constraints</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="108" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00551_1a04676eb4cd71204474717447fd483d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mixImGui::gui_window::gui_window</definition>
+        <argsstring>(std::string window_name, window_rect r, window_flags flags=window_flags::None)</argsstring>
+        <name>gui_window</name>
+        <qualifiedname>mixImGui::gui_window::gui_window</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>window_name</declname>
+        </param>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>flags</declname>
+          <defval><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">window_flags::None</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="70" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <qualifiedname>mixImGui::gui_window::render</qualifiedname>
+        <reimplementedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5">render</reimplementedby>
+        <reimplementedby refid="a00519_1a0475d4c98ed276893abe1933022b2991">render</reimplementedby>
+        <reimplementedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb">render</reimplementedby>
+        <reimplementedby refid="a00527_1af97c20a271421ba26420a2ca6211f504">render</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="72" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="4" bodyend="8"/>
+        <references refid="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" compoundref="a00236" startline="105">_flags</references>
+        <references refid="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" compoundref="a00236" startline="98">_is_open</references>
+        <references refid="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" compoundref="a00236" startline="99">_window_name</references>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1ae853e0907159148f09ba4d89b32407ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <qualifiedname>mixImGui::gui_window::disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="74" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1ae12c27c69d083299efc96b46b43a2f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <qualifiedname>mixImGui::gui_window::enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="75" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::on_editor_window_size_changed</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>on_editor_window_size_changed</name>
+        <qualifiedname>mixImGui::gui_window::on_editor_window_size_changed</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="76" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::set_title</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>set_title</name>
+        <qualifiedname>mixImGui::gui_window::set_title</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="77" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="31" bodyend="34"/>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::set_contrainsts</definition>
+        <argsstring>(window_rect constraints)</argsstring>
+        <name>set_contrainsts</name>
+        <qualifiedname>mixImGui::gui_window::set_contrainsts</qualifiedname>
+        <param>
+          <type><ref refid="a00531" kindref="compound">window_rect</ref></type>
+          <declname>constraints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="81" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a5366aaa00163caca59752b9cc403c327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::clear_constraints</definition>
+        <argsstring>()</argsstring>
+        <name>clear_constraints</name>
+        <qualifiedname>mixImGui::gui_window::clear_constraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="82" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a370936f91e7c1372384e906dac282be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::set_positioning</definition>
+        <argsstring>(window_positioning wp)</argsstring>
+        <name>set_positioning</name>
+        <qualifiedname>mixImGui::gui_window::set_positioning</qualifiedname>
+        <param>
+          <type><ref refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref></type>
+          <declname>wp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="84" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="68" bodyend="76"/>
+        <references refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79">mixImGui::flexible</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe">mixImGui::NoResize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="a00551_1a5b26d4ff892ca96966cedacb32a214c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>mixImGui::gui_window::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="89" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="78" bodyend="106"/>
+        <references refid="a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" compoundref="a00215" startline="28" endline="31">mixImGui::gui_layout::begin_vertical</references>
+        <references refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983acec315e3d0975e5cc2811d5d8725f149">mixImGui::fixed</references>
+        <references refid="a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79">mixImGui::flexible</references>
+        <references refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe">mixImGui::NoResize</references>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a1ca29859ec280ef652b1a8a129302674" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>mixImGui::gui_window::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="90" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="108" bodyend="112"/>
+        <references refid="a00535_1a724cab724f67db7089561715ca6163b8" compoundref="a00215" startline="33" endline="36">mixImGui::gui_layout::end_vertical</references>
+        <referencedby refid="a00515_1ac5df2365b9b82f7131d29dcf1b865be5" compoundref="a00191" startline="4" endline="76">mix::editor::windows::hierarchy_window::render</referencedby>
+        <referencedby refid="a00523_1adfc223f8b6d7a8c750321e59289ff6bb" compoundref="a00203" startline="3" endline="25">mix::editor::windows::scene_window::render</referencedby>
+        <referencedby refid="a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a4d3055b2bda8480b8eaeba1be84c0463" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::rescale</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>rescale</name>
+        <qualifiedname>mixImGui::gui_window::rescale</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="91" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::set_position</definition>
+        <argsstring>(const vec2i &amp;pos)</argsstring>
+        <name>set_position</name>
+        <qualifiedname>mixImGui::gui_window::set_position</qualifiedname>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="92" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1adfaef0003b77e0673f57839c6e0ecf79" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+        <definition>vec2i mixImGui::gui_window::get_position</definition>
+        <argsstring>() const</argsstring>
+        <name>get_position</name>
+        <qualifiedname>mixImGui::gui_window::get_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="93" column="15" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a88d0684664158d82d55b77f1e0694a16" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+        <definition>vec2i mixImGui::gui_window::get_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_size</name>
+        <qualifiedname>mixImGui::gui_window::get_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="94" column="15" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mixImGui::gui_window::on_editor_window_size_changed_impl</definition>
+        <argsstring>(const vec2i &amp;size)=0</argsstring>
+        <name>on_editor_window_size_changed_impl</name>
+        <qualifiedname>mixImGui::gui_window::on_editor_window_size_changed_impl</qualifiedname>
+        <reimplementedby refid="a00515_1a660bcd54d6a62a2cb233056e35334a07">on_editor_window_size_changed_impl</reimplementedby>
+        <reimplementedby refid="a00519_1a3907813cfe7996f716afaa3c64dd0f1f">on_editor_window_size_changed_impl</reimplementedby>
+        <reimplementedby refid="a00523_1a471b45aafe047e7def8f49e27bfde64a">on_editor_window_size_changed_impl</reimplementedby>
+        <reimplementedby refid="a00527_1adbe70fa852c009f30158425dbf6cfb1e">on_editor_window_size_changed_impl</reimplementedby>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="95" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1ab37e29b679914218b5913a585ea66905" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mixImGui::gui_window::on_window_resized</definition>
+        <argsstring>(const vec2i &amp;old_size, const vec2i &amp;new_size)</argsstring>
+        <name>on_window_resized</name>
+        <qualifiedname>mixImGui::gui_window::on_window_resized</qualifiedname>
+        <reimplementedby refid="a00523_1ac9f690d20225404cc66f614c6025c4ba">on_window_resized</reimplementedby>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>old_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="96" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="136" bodyend="139"/>
+        <referencedby refid="a00523_1ac9f690d20225404cc66f614c6025c4ba" compoundref="a00203" startline="36" endline="47">mix::editor::windows::scene_window::on_window_resized</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+        <definition>mixImGui::window_flags mixImGui::gui_window::get_flags</definition>
+        <argsstring>() const</argsstring>
+        <name>get_flags</name>
+        <qualifiedname>mixImGui::gui_window::get_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="102" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::editor::windows::hierarchy_window</label>
+        <link refid="a00515"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::editor::windows::project_window</label>
+        <link refid="a00519"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mix::editor::windows::scene_window</label>
+        <link refid="a00523"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mix::editor::windows::shortcuts_window</label>
+        <link refid="a00527"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixImGui::gui_window</label>
+        <link refid="a00551"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mixImGui::gui_window</label>
+        <link refid="a00551"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_constraints</edgelabel>
+          <edgelabel>_rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::window_rect</label>
+        <link refid="a00531"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="66" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="67" bodyend="109"/>
+    <listofallmembers>
+      <member refid="a00551_1a97b151a9b07929b2b7838c9ecb956a1a" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_constraints</name></member>
+      <member refid="a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" prot="private" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_flags</name></member>
+      <member refid="a00551_1aa9930bf91b544df53d2d051ae740dc70" prot="private" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_has_constraints</name></member>
+      <member refid="a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_is_open</name></member>
+      <member refid="a00551_1a6e39227f87ebb0c7e5c999207c992f9a" prot="private" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_positioning</name></member>
+      <member refid="a00551_1ae32d327e1e32115c2c0e7823f6e5f522" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_rect</name></member>
+      <member refid="a00551_1af59507c8ebfba3059d0fc01e24e21a8b" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>_window_name</name></member>
+      <member refid="a00551_1a5b26d4ff892ca96966cedacb32a214c3" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>begin</name></member>
+      <member refid="a00551_1a5366aaa00163caca59752b9cc403c327" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>clear_constraints</name></member>
+      <member refid="a00551_1ae853e0907159148f09ba4d89b32407ca" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>disable</name></member>
+      <member refid="a00551_1ae12c27c69d083299efc96b46b43a2f76" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>enable</name></member>
+      <member refid="a00551_1a1ca29859ec280ef652b1a8a129302674" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>end</name></member>
+      <member refid="a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>get_flags</name></member>
+      <member refid="a00551_1adfaef0003b77e0673f57839c6e0ecf79" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>get_position</name></member>
+      <member refid="a00551_1a88d0684664158d82d55b77f1e0694a16" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>get_size</name></member>
+      <member refid="a00551_1a04676eb4cd71204474717447fd483d67" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>gui_window</name></member>
+      <member refid="a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" prot="public" virt="virtual"><scope>mixImGui::gui_window</scope><name>on_editor_window_size_changed</name></member>
+      <member refid="a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d" prot="protected" virt="pure-virtual"><scope>mixImGui::gui_window</scope><name>on_editor_window_size_changed_impl</name></member>
+      <member refid="a00551_1ab37e29b679914218b5913a585ea66905" prot="protected" virt="virtual"><scope>mixImGui::gui_window</scope><name>on_window_resized</name></member>
+      <member refid="a00551_1a02427dce58f618cf32c24bb6a0b91bf4" prot="public" virt="virtual"><scope>mixImGui::gui_window</scope><name>render</name></member>
+      <member refid="a00551_1a4d3055b2bda8480b8eaeba1be84c0463" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>rescale</name></member>
+      <member refid="a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>set_contrainsts</name></member>
+      <member refid="a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" prot="protected" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>set_position</name></member>
+      <member refid="a00551_1a370936f91e7c1372384e906dac282be3" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>set_positioning</name></member>
+      <member refid="a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" prot="public" virt="non-virtual"><scope>mixImGui::gui_window</scope><name>set_title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

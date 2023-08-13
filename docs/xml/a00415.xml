@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00415" kind="class" language="C++" prot="public">
+    <compoundname>mix::texture</compoundname>
+    <includes refid="a00047" local="no">mixTexture.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>texture_type</name>
+        <qualifiedname>mix::texture::texture_type</qualifiedname>
+        <enumvalue id="a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" prot="public">
+          <name>diffuse</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a0274d2dc17e345e9ac71070cd37a4daaafea087517c26fadd409bd4b9dc642555" prot="public">
+          <name>normal</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a0274d2dc17e345e9ac71070cd37a4daaaaac994eab3caf54080fc65d8143a7843" prot="public">
+          <name>specular</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a0274d2dc17e345e9ac71070cd37a4daaab435e227d5dd201e1768b2bcb2e0aa81" prot="public">
+          <name>height</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="12" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00415_1ac1878d009ec535c0263fa5c5976c3921" prot="public" static="no" strong="yes">
+        <type>int</type>
+        <name>texture_format</name>
+        <qualifiedname>mix::texture::texture_format</qualifiedname>
+        <enumvalue id="a00415_1ac1878d009ec535c0263fa5c5976c3921af611271231707a44b6be19664cbe7c2c" prot="public">
+          <name>_default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1ac1878d009ec535c0263fa5c5976c3921acda7a650c5856cf2f6738072447d7825" prot="public">
+          <name>gray</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1ac1878d009ec535c0263fa5c5976c3921a71c9d55fc3f215c66d2534517cb9f25e" prot="public">
+          <name>gray_alpha</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1ac1878d009ec535c0263fa5c5976c3921aef70a6546536ccd835479f6cddc0188e" prot="public">
+          <name>rgb</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1ac1878d009ec535c0263fa5c5976c3921abd8e122d491d66eec591c73f5d662f4e" prot="public">
+          <name>rgb_alpha</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="20" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00415_1a538d448f06ed4102e77283c25e46b704" prot="public" static="no" strong="yes">
+        <type>int</type>
+        <name>texture_wrapping</name>
+        <qualifiedname>mix::texture::texture_wrapping</qualifiedname>
+        <enumvalue id="a00415_1a538d448f06ed4102e77283c25e46b704a32cf6da134a8b268cf4ab6b79a9a5ad9" prot="public">
+          <name>repeat</name>
+          <initializer>= GL_REPEAT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a538d448f06ed4102e77283c25e46b704a301defc6e7425fc63ef35c7827d43b44" prot="public">
+          <name>mirrored_repeat</name>
+          <initializer>= GL_MIRRORED_REPEAT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a538d448f06ed4102e77283c25e46b704aa597a055c00d084069e4bb23dc789ac9" prot="public">
+          <name>clamp</name>
+          <initializer>= GL_CLAMP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a538d448f06ed4102e77283c25e46b704a7ff5ead6fef18ca5f63119754ac76c3e" prot="public">
+          <name>clamp_to_edge</name>
+          <initializer>= GL_CLAMP_TO_EDGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a538d448f06ed4102e77283c25e46b704a80cff00baefbb1ac2ae3f57d71c8b758" prot="public">
+          <name>clamp_to_border</name>
+          <initializer>= GL_CLAMP_TO_BORDER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="29" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" prot="public" static="no" strong="yes">
+        <type>int</type>
+        <name>texture_filtering</name>
+        <qualifiedname>mix::texture::texture_filtering</qualifiedname>
+        <enumvalue id="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1ad879c351426770bc0b13c3628db1e636" prot="public">
+          <name>nearest</name>
+          <initializer>= GL_NEAREST</initializer>
+          <briefdescription>
+<para>GL_NEAREST is the default texture filtering method of OpenGL. When set to GL_NEAREST, OpenGL selects the texel that center is closest. Also known as point filtering. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1a9a932b3cb396238423eb2f33ec17d6aa" prot="public">
+          <name>linear</name>
+          <initializer>= GL_LINEAR</initializer>
+          <briefdescription>
+<para>GL_LINEAR takes an interpolated value from the texture coordinate&apos;s neighboring texels, approximating a color between the texels. The smaller the distance from the texture coordinate to a texel&apos;s center, the more that texel&apos;s color contributes to the sampled color. Also known as bi-linear filtering. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="38" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00415_1aae81f2a814638f085db18c7d22dc651d" prot="public" static="no" strong="yes">
+        <type>int</type>
+        <name>mipmap_method</name>
+        <qualifiedname>mix::texture::mipmap_method</qualifiedname>
+        <enumvalue id="a00415_1aae81f2a814638f085db18c7d22dc651da32cf6da134a8b268cf4ab6b79a9a5ad9" prot="public">
+          <name>repeat</name>
+          <initializer>= GL_NEAREST_MIPMAP_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1aae81f2a814638f085db18c7d22dc651da301defc6e7425fc63ef35c7827d43b44" prot="public">
+          <name>mirrored_repeat</name>
+          <initializer>= GL_LINEAR_MIPMAP_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1aae81f2a814638f085db18c7d22dc651da7ff5ead6fef18ca5f63119754ac76c3e" prot="public">
+          <name>clamp_to_edge</name>
+          <initializer>= GL_LINEAR_MIPMAP_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00415_1aae81f2a814638f085db18c7d22dc651da80cff00baefbb1ac2ae3f57d71c8b758" prot="public">
+          <name>clamp_to_border</name>
+          <initializer>= GL_LINEAR_MIPMAP_LINEAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="53" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="54" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00415_1a3af8a01bbadccb536faed4a385267391" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mix::texture::get_texture_target</definition>
+        <argsstring>(texture_type type)</argsstring>
+        <name>get_texture_target</name>
+        <qualifiedname>mix::texture::get_texture_target</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="63" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="63" bodyend="66"/>
+        <referencedby refid="a00391_1a82595022e20e4dbcea17469010b1ddb6" compoundref="a00020" startline="63" endline="85">mix::assetsystem::mixMaterial::apply</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00415_1a61d8248b2b1c27977c58b0a5145a4e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::texture::texture</definition>
+        <argsstring>()=delete</argsstring>
+        <name>texture</name>
+        <qualifiedname>mix::texture::texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="67" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00415_1a720637a56b8618c437f5aaa4d0dded91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::texture::~texture</definition>
+        <argsstring>()=delete</argsstring>
+        <name>~texture</name>
+        <qualifiedname>mix::texture::~texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="68" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="8" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="9" bodyend="69"/>
+    <listofallmembers>
+      <member refid="a00415_1a3af8a01bbadccb536faed4a385267391" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>get_texture_target</name></member>
+      <member refid="a00415_1aae81f2a814638f085db18c7d22dc651d" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>mipmap_method</name></member>
+      <member refid="a00415_1a61d8248b2b1c27977c58b0a5145a4e18" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>texture</name></member>
+      <member refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>texture_filtering</name></member>
+      <member refid="a00415_1ac1878d009ec535c0263fa5c5976c3921" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>texture_format</name></member>
+      <member refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>texture_type</name></member>
+      <member refid="a00415_1a538d448f06ed4102e77283c25e46b704" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>texture_wrapping</name></member>
+      <member refid="a00415_1a720637a56b8618c437f5aaa4d0dded91" prot="public" virt="non-virtual"><scope>mix::texture</scope><name>~texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00419" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::mixTexture</compoundname>
+    <basecompoundref refid="a00383" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_item</basecompoundref>
+    <includes refid="a00047" local="no">mixTexture.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00419_1aa02796abe2931d7ac55fba925f3668bd" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixTexture::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="95" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00419_1aa69e4e449ce872da304c5c605e9ad84e" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* mix::assetsystem::mixTexture::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="96" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="a00419_1a3337db4ec8e752c248302b49550c9c47" compoundref="a00044" startline="5" endline="10">mixTexture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00419_1adad6bf69bbf90563f87786676fd88255" prot="private" static="no" mutable="no">
+        <type><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture::texture_type</ref></type>
+        <definition>texture::texture_type mix::assetsystem::mixTexture::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_type</qualifiedname>
+        <initializer>{ <ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" kindref="member">texture::texture_type::diffuse</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="97" column="35" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="a00419_1a1c486968adf821cab43ee7a707c7e9c3" compoundref="a00047" startline="80" endline="83">get_texture_type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00419_1a1d8278f77a61c310279022896baed328" prot="private" static="no" mutable="no">
+        <type><ref refid="a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref></type>
+        <definition>texture::texture_wrapping mix::assetsystem::mixTexture::_wrapping</definition>
+        <argsstring></argsstring>
+        <name>_wrapping</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_wrapping</qualifiedname>
+        <initializer>{ <ref refid="a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref> ::repeat }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="98" column="39" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00419_1a24be668a03cd7bf92797688b5938a522" prot="private" static="no" mutable="no">
+        <type><ref refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref></type>
+        <definition>texture::texture_filtering mix::assetsystem::mixTexture::_filtering</definition>
+        <argsstring></argsstring>
+        <name>_filtering</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_filtering</qualifiedname>
+        <initializer>{ <ref refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref> ::nearest }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="99" column="40" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00419_1aafdb407b21bc66032d5e8a75d8cdffae" prot="private" static="no" mutable="no">
+        <type><ref refid="a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">texture::texture_format</ref></type>
+        <definition>texture::texture_format mix::assetsystem::mixTexture::_format</definition>
+        <argsstring></argsstring>
+        <name>_format</name>
+        <qualifiedname>mix::assetsystem::mixTexture::_format</qualifiedname>
+        <initializer>{ <ref refid="a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">texture::texture_format</ref> ::_default }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="100" column="37" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00419_1a3337db4ec8e752c248302b49550c9c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixTexture::mixTexture</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path, texture::texture_type type=texture::texture_type::diffuse)</argsstring>
+        <name>mixTexture</name>
+        <qualifiedname>mix::assetsystem::mixTexture::mixTexture</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture::texture_type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" kindref="member">texture::texture_type::diffuse</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="77" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="5" bodyend="10"/>
+        <references refid="a00419_1aa69e4e449ce872da304c5c605e9ad84e" compoundref="a00047" startline="96">_data</references>
+        <references refid="a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" compoundref="a00044" startline="58" endline="87">initialize</references>
+        <references refid="a00415_1ac1878d009ec535c0263fa5c5976c3921aef70a6546536ccd835479f6cddc0188e">mix::texture::rgb</references>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1a7634dc000144f362d8261889ce22d4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixTexture::~mixTexture</definition>
+        <argsstring>()</argsstring>
+        <name>~mixTexture</name>
+        <qualifiedname>mix::assetsystem::mixTexture::~mixTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="78" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1a1c486968adf821cab43ee7a707c7e9c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref></type>
+        <definition>const mix::texture::texture_type mix::assetsystem::mixTexture::get_texture_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_texture_type</name>
+        <qualifiedname>mix::assetsystem::mixTexture::get_texture_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="80" column="53" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="80" bodyend="83"/>
+        <references refid="a00419_1adad6bf69bbf90563f87786676fd88255" compoundref="a00047" startline="97">_type</references>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1ac6a27dc611c4d0f30f15fb69765429d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::set_wrapping</definition>
+        <argsstring>(texture::texture_wrapping wrapping)</argsstring>
+        <name>set_wrapping</name>
+        <qualifiedname>mix::assetsystem::mixTexture::set_wrapping</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref></type>
+          <declname>wrapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="85" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1afd8bcba95e6d6bcac07e22dd014d72fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::set_filtering</definition>
+        <argsstring>(texture::texture_filtering filtering_min, texture::texture_filtering filtering_mag)</argsstring>
+        <name>set_filtering</name>
+        <qualifiedname>mix::assetsystem::mixTexture::set_filtering</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref></type>
+          <declname>filtering_min</declname>
+        </param>
+        <param>
+          <type><ref refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref></type>
+          <declname>filtering_mag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="86" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1a2aa2fdc162d7522f1b3a6e180c76b092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::bind</definition>
+        <argsstring>() const</argsstring>
+        <name>bind</name>
+        <qualifiedname>mix::assetsystem::mixTexture::bind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="87" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1ac75d2f2a4aaf86513bad7496f55595df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::change_type</definition>
+        <argsstring>(mix::texture::texture_type t)</argsstring>
+        <name>change_type</name>
+        <qualifiedname>mix::assetsystem::mixTexture::change_type</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="88" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="37" bodyend="43"/>
+        <references refid="a00266_1a821326052e3e2bf1fb2d678e9e9a6004" compoundref="a00266" startline="6">ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1a5ae697fdfc472a9843ac360627ce7279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::set_format</definition>
+        <argsstring>(mix::texture::texture_format format)</argsstring>
+        <name>set_format</name>
+        <qualifiedname>mix::assetsystem::mixTexture::set_format</qualifiedname>
+        <param>
+          <type><ref refid="a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="89" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="45" bodyend="51"/>
+        <references refid="a00266_1a821326052e3e2bf1fb2d678e9e9a6004" compoundref="a00266" startline="6">ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="a00419_1aa1b31c880431740068d3d84aebd98282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::assetsystem::mixTexture::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <qualifiedname>mix::assetsystem::mixTexture::get_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="90" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixTexture::initialize</definition>
+        <argsstring>(const mix::platform::mixAsset_path &amp;path, mix::texture::texture_format format)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::assetsystem::mixTexture::initialize</qualifiedname>
+        <param>
+          <type>const <ref refid="a00607" kindref="compound">mix::platform::mixAsset_path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="94" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp" bodystart="58" bodyend="87"/>
+        <references refid="a00415_1a538d448f06ed4102e77283c25e46b704a7ff5ead6fef18ca5f63119754ac76c3e">mix::texture::clamp_to_edge</references>
+        <references refid="a00607_1ac980b27170298e16e93ce3a656b2c46d" compoundref="a00305" startline="50" endline="53">mix::platform::mixAsset_path::get_name</references>
+        <references refid="a00266_1a7ebf4c3b4fb05d6f9094089ded75cbdd" compoundref="a00266" startline="9">LOG_ERROR</references>
+        <references refid="a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1ad879c351426770bc0b13c3628db1e636">mix::texture::nearest</references>
+        <references refid="a00607_1ad0f76c40bcfada53738cbf10013d08ea" compoundref="a00305" startline="35" endline="38">mix::platform::mixAsset_path::to_cstr</references>
+        <referencedby refid="a00419_1a3337db4ec8e752c248302b49550c9c47" compoundref="a00044" startline="5" endline="10">mixTexture</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixTexture</label>
+        <link refid="a00419"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_item</label>
+        <link refid="a00383"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_guid</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_path</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixTexture</label>
+        <link refid="a00419"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::core::mixGuid</label>
+        <link refid="a00487"/>
+      </node>
+      <node id="4">
+        <label>mix::platform::mixAsset_path</label>
+        <link refid="a00607"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" line="73" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h" bodystart="74" bodyend="101"/>
+    <listofallmembers>
+      <member refid="a00419_1aa69e4e449ce872da304c5c605e9ad84e" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_data</name></member>
+      <member refid="a00419_1a24be668a03cd7bf92797688b5938a522" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_filtering</name></member>
+      <member refid="a00419_1aafdb407b21bc66032d5e8a75d8cdffae" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_format</name></member>
+      <member refid="a00383_1a5220a296886d6bb5a77b208f12aad817" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_guid</name></member>
+      <member refid="a00419_1aa02796abe2931d7ac55fba925f3668bd" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_id</name></member>
+      <member refid="a00383_1a0ebce5f5d9da7f50795b9519c63e629b" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_path</name></member>
+      <member refid="a00419_1adad6bf69bbf90563f87786676fd88255" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_type</name></member>
+      <member refid="a00419_1a1d8278f77a61c310279022896baed328" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>_wrapping</name></member>
+      <member refid="a00419_1a2aa2fdc162d7522f1b3a6e180c76b092" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>bind</name></member>
+      <member refid="a00419_1ac75d2f2a4aaf86513bad7496f55595df" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>change_type</name></member>
+      <member refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_base_name</name></member>
+      <member refid="a00383_1a6e6d736bbc390e6a4544d96c8ef94065" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_extension</name></member>
+      <member refid="a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_full_name</name></member>
+      <member refid="a00383_1ae7f95f45067eeec3fb17487495c886d8" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_guid</name></member>
+      <member refid="a00419_1aa1b31c880431740068d3d84aebd98282" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_id</name></member>
+      <member refid="a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_path</name></member>
+      <member refid="a00383_1ad0fd1f5410d3d1ab6d772ea32935ac7b" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_shortened_name</name></member>
+      <member refid="a00419_1a1c486968adf821cab43ee7a707c7e9c3" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>get_texture_type</name></member>
+      <member refid="a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" prot="private" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>initialize</name></member>
+      <member refid="a00383_1a3a8cf3901371f85656487fafa8a7332e" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>is_readonly</name></member>
+      <member refid="a00383_1ae048c01047e4d14ed7fceff0755ab28a" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>mixAsset_item</name></member>
+      <member refid="a00383_1a65df15bf1da90497e61b96e6bb1b9d72" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>mixAsset_item</name></member>
+      <member refid="a00419_1a3337db4ec8e752c248302b49550c9c47" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>mixTexture</name></member>
+      <member refid="a00383_1acb517c665ba6c0623d64a2a5fb542201" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>operator std::string</name></member>
+      <member refid="a00383_1a7b0a0b9b9160f90acd830bb989b97ceb" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>operator&lt;&lt;</name></member>
+      <member refid="a00383_1a86fcabc946908e95e6c0b36ad3370fd0" prot="public" virt="virtual"><scope>mix::assetsystem::mixTexture</scope><name>operator&gt;&gt;</name></member>
+      <member refid="a00419_1afd8bcba95e6d6bcac07e22dd014d72fe" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>set_filtering</name></member>
+      <member refid="a00419_1a5ae697fdfc472a9843ac360627ce7279" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>set_format</name></member>
+      <member refid="a00419_1ac6a27dc611c4d0f30f15fb69765429d7" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>set_wrapping</name></member>
+      <member refid="a00419_1a7634dc000144f362d8261889ce22d4a2" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixTexture</scope><name>~mixTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00495" kind="class" language="C++" prot="public">
+    <compoundname>mix::transform</compoundname>
+    <includes refid="a00170" local="no">mixTransform.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="a00495_1afd85bf2666dede05bdb8cc1062a1937b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>constexpr vec3 mix::transform::forward</definition>
+        <argsstring></argsstring>
+        <name>forward</name>
+        <qualifiedname>mix::transform::forward</qualifiedname>
+        <initializer>{ <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref> (0, 0, 1) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="13" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" compoundref="a00167" startline="56" endline="64">mix::core::mixTransform::get_model_mat</referencedby>
+        <referencedby refid="a00281_1a286930f4e8ede059b83ff6eafa2ff718" compoundref="a00281" startline="106" endline="125">key_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00495_1ab554bd40cffaeb26a451ab5b73217d71" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>constexpr vec3 mix::transform::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>mix::transform::right</qualifiedname>
+        <initializer>{ <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref> (1, 0, 0) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="14" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" compoundref="a00167" startline="56" endline="64">mix::core::mixTransform::get_model_mat</referencedby>
+        <referencedby refid="a00281_1a286930f4e8ede059b83ff6eafa2ff718" compoundref="a00281" startline="106" endline="125">key_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00495_1ae863cbb68786bad6ed428370089f8cdf" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>constexpr vec3 mix::transform::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <qualifiedname>mix::transform::up</qualifiedname>
+        <initializer>{ <ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref> (0, 1, 0) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="15" column="31" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" compoundref="a00167" startline="56" endline="64">mix::core::mixTransform::get_model_mat</referencedby>
+        <referencedby refid="a00499_1a94de4b6193da11c60e8b4cd6f2d68152" compoundref="a00167" startline="97" endline="109">mix::core::mixTransform::update_vectors</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="9" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="a00495_1afd85bf2666dede05bdb8cc1062a1937b" prot="public" virt="non-virtual"><scope>mix::transform</scope><name>forward</name></member>
+      <member refid="a00495_1ab554bd40cffaeb26a451ab5b73217d71" prot="public" virt="non-virtual"><scope>mix::transform</scope><name>right</name></member>
+      <member refid="a00495_1ae863cbb68786bad6ed428370089f8cdf" prot="public" virt="non-virtual"><scope>mix::transform</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

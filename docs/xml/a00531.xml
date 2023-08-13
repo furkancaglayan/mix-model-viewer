@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00531" kind="struct" language="C++" prot="public">
+    <compoundname>mixImGui::window_rect</compoundname>
+    <includes refid="a00218" local="no">gui_layout.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00531_1a0e4674e4a0809dae4fd190d0ce579a00" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mixImGui::window_rect::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>mixImGui::window_rect::_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="46" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="a00531_1afd5d4986d64ec14cd799034104e68059" compoundref="a00218" startline="39" endline="42">operator==</referencedby>
+        <referencedby refid="a00531_1a99d1a503177e6e79df220da635d43888" compoundref="a00218" startline="33" endline="37">window_rect</referencedby>
+        <referencedby refid="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" compoundref="a00218" startline="25" endline="31">window_rect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00531_1a404d4e7ed2393b8528e22327f5602f13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mixImGui::window_rect::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>mixImGui::window_rect::_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="46" column="16" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="a00531_1afd5d4986d64ec14cd799034104e68059" compoundref="a00218" startline="39" endline="42">operator==</referencedby>
+        <referencedby refid="a00531_1a99d1a503177e6e79df220da635d43888" compoundref="a00218" startline="33" endline="37">window_rect</referencedby>
+        <referencedby refid="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" compoundref="a00218" startline="25" endline="31">window_rect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00531_1a5ac1a11b0d853b4d46b60e3b52857d00" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mixImGui::window_rect::_w</definition>
+        <argsstring></argsstring>
+        <name>_w</name>
+        <qualifiedname>mixImGui::window_rect::_w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="46" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="a00531_1afd5d4986d64ec14cd799034104e68059" compoundref="a00218" startline="39" endline="42">operator==</referencedby>
+        <referencedby refid="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" compoundref="a00218" startline="25" endline="31">window_rect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="a00531_1adb745f845ecc13e47618b2bc5d0e0d44" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mixImGui::window_rect::_h</definition>
+        <argsstring></argsstring>
+        <name>_h</name>
+        <qualifiedname>mixImGui::window_rect::_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="46" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="a00531_1afd5d4986d64ec14cd799034104e68059" compoundref="a00218" startline="39" endline="42">operator==</referencedby>
+        <referencedby refid="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" compoundref="a00218" startline="25" endline="31">window_rect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mixImGui::window_rect::window_rect</definition>
+        <argsstring>(int x, int y, int w, int h)</argsstring>
+        <name>window_rect</name>
+        <qualifiedname>mixImGui::window_rect::window_rect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="25" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="25" bodyend="31"/>
+        <references refid="a00531_1adb745f845ecc13e47618b2bc5d0e0d44" compoundref="a00218" startline="46">_h</references>
+        <references refid="a00531_1a5ac1a11b0d853b4d46b60e3b52857d00" compoundref="a00218" startline="46">_w</references>
+        <references refid="a00531_1a0e4674e4a0809dae4fd190d0ce579a00" compoundref="a00218" startline="46">_x</references>
+        <references refid="a00531_1a404d4e7ed2393b8528e22327f5602f13" compoundref="a00218" startline="46">_y</references>
+      </memberdef>
+      <memberdef kind="function" id="a00531_1a99d1a503177e6e79df220da635d43888" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mixImGui::window_rect::window_rect</definition>
+        <argsstring>()</argsstring>
+        <name>window_rect</name>
+        <qualifiedname>mixImGui::window_rect::window_rect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="33" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="33" bodyend="37"/>
+        <references refid="a00531_1a0e4674e4a0809dae4fd190d0ce579a00" compoundref="a00218" startline="46">_x</references>
+        <references refid="a00531_1a404d4e7ed2393b8528e22327f5602f13" compoundref="a00218" startline="46">_y</references>
+      </memberdef>
+      <memberdef kind="function" id="a00531_1afd5d4986d64ec14cd799034104e68059" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mixImGui::window_rect::operator==</definition>
+        <argsstring>(const ImVec4 &amp;vec)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mixImGui::window_rect::operator==</qualifiedname>
+        <param>
+          <type>const ImVec4 &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="39" column="14" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="39" bodyend="42"/>
+        <references refid="a00531_1adb745f845ecc13e47618b2bc5d0e0d44" compoundref="a00218" startline="46">_h</references>
+        <references refid="a00531_1a5ac1a11b0d853b4d46b60e3b52857d00" compoundref="a00218" startline="46">_w</references>
+        <references refid="a00531_1a0e4674e4a0809dae4fd190d0ce579a00" compoundref="a00218" startline="46">_x</references>
+        <references refid="a00531_1a404d4e7ed2393b8528e22327f5602f13" compoundref="a00218" startline="46">_y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="22" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="23" bodyend="47"/>
+    <listofallmembers>
+      <member refid="a00531_1adb745f845ecc13e47618b2bc5d0e0d44" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>_h</name></member>
+      <member refid="a00531_1a5ac1a11b0d853b4d46b60e3b52857d00" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>_w</name></member>
+      <member refid="a00531_1a0e4674e4a0809dae4fd190d0ce579a00" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>_x</name></member>
+      <member refid="a00531_1a404d4e7ed2393b8528e22327f5602f13" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>_y</name></member>
+      <member refid="a00531_1afd5d4986d64ec14cd799034104e68059" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>operator==</name></member>
+      <member refid="a00531_1a7d0d18e6a831c4b8bf8208acae86c9ee" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>window_rect</name></member>
+      <member refid="a00531_1a99d1a503177e6e79df220da635d43888" prot="public" virt="non-virtual"><scope>mixImGui::window_rect</scope><name>window_rect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

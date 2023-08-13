@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00161" kind="file" language="C++">
+    <compoundname>mixGuid.cpp</compoundname>
+    <includes refid="a00164" local="yes">mixGuid.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>mixGuid.cpp</label>
+        <link refid="a00161"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixGuid.h</label>
+        <link refid="a00164"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../platform/typedefs.h</label>
+        <link refid="a00314"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="5">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00164" kindref="compound">mixGuid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="a00487_1a8840240077b652830454430ecd694ea7" refkind="member"><highlight class="normal"><ref refid="a00487_1a8840240077b652830454430ecd694ea7" kindref="member">mix::core::mixGuid::mixGuid</ref><sp/>(std::string&amp;<sp/>val)<sp/>:<sp/>_internal{<sp/><ref refid="a00358" kindref="compound">std</ref>::move<sp/>(val)<sp/>}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="a00487_1a5577d7bea50303b025b612d36d6ea541" refkind="member"><highlight class="normal"><ref refid="a00487" kindref="compound">mix::core::mixGuid</ref><sp/><ref refid="a00487_1a5577d7bea50303b025b612d36d6ea541" kindref="member">mix::core::mixGuid::create_new</ref><sp/>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>GUID<sp/>guid;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>hCreateGuid<sp/>=<sp/>CoCreateGuid<sp/>(&amp;guid);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DATA1:<sp/>refers<sp/>to<sp/>first<sp/>8<sp/>digits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DATA2:<sp/>refers<sp/>to<sp/>first<sp/>group<sp/>of<sp/>4<sp/>digits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DATA3:<sp/>refers<sp/>to<sp/>second<sp/>group<sp/>of<sp/>4<sp/>digits:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DATA4:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>OLECHAR*<sp/>guidString;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>result<sp/>=<sp/>StringFromCLSID<sp/>(guid,<sp/>&amp;guidString);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>str<sp/>=<sp/><ref refid="a00615_1a1f7d00ced82da501de72f821ddc21754" kindref="member">mix::platform::platform_utils::convert_wide_to_utf8</ref><sp/>(guidString);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>CoTaskMemFree<sp/>(guidString);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00487" kindref="compound">mixGuid</ref>{<sp/>str<sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00351" kind="namespace" language="C++">
+    <compoundname>mix::assetsystem</compoundname>
+    <innerclass refid="a00371" prot="public">mix::assetsystem::asset_processor</innerclass>
+    <innerclass refid="a00375" prot="public">mix::assetsystem::asset_types</innerclass>
+    <innerclass refid="a00423" prot="public">mix::assetsystem::default_assets</innerclass>
+    <innerclass refid="a00379" prot="public">mix::assetsystem::mixAsset_folder</innerclass>
+    <innerclass refid="a00383" prot="public">mix::assetsystem::mixAsset_item</innerclass>
+    <innerclass refid="a00431" prot="public">mix::assetsystem::mixAsset_loader_base</innerclass>
+    <innerclass refid="a00455" prot="public">mix::assetsystem::mixAsset_manager</innerclass>
+    <innerclass refid="a00387" prot="public">mix::assetsystem::mixFont</innerclass>
+    <innerclass refid="a00391" prot="public">mix::assetsystem::mixMaterial</innerclass>
+    <innerclass refid="a00395" prot="public">mix::assetsystem::mixMesh</innerclass>
+    <innerclass refid="a00403" prot="public">mix::assetsystem::mixShader</innerclass>
+    <innerclass refid="a00407" prot="public">mix::assetsystem::mixShader_program</innerclass>
+    <innerclass refid="a00411" prot="public">mix::assetsystem::mixText_asset</innerclass>
+    <innerclass refid="a00419" prot="public">mix::assetsystem::mixTexture</innerclass>
+    <innernamespace refid="a00352">mix::assetsystem::default_processors</innernamespace>
+    <innernamespace refid="a00353">mix::assetsystem::loaders</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00351_1a7a1e399982c72a880e55af2f42b99de3" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>asset_type</name>
+        <qualifiedname>mix::assetsystem::asset_type</qualifiedname>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675" prot="public">
+          <name>Text</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d" prot="public">
+          <name>Font</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961" prot="public">
+          <name>Mesh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660" prot="public">
+          <name>Shader</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3ab0f2b97dc5d2b76b26e040408bb1d8af" prot="public">
+          <name>Folder</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206" prot="public">
+          <name>Material</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b" prot="public">
+          <name>Texture</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00351_1a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387" prot="public">
+          <name>Other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_types.h" line="10" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_types.h" bodystart="11" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00351_1aa49b3eee914a13ec706b33d0b2fe67d7" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="a00463" kindref="compound">mix::containers::tree_node</ref> &gt;</type>
+        <definition>using mix::assetsystem::asset_tree = typedef std::unique_ptr&lt;mix::containers::tree_node&gt;</definition>
+        <argsstring></argsstring>
+        <name>asset_tree</name>
+        <qualifiedname>mix::assetsystem::asset_tree</qualifiedname>
+        <briefdescription>
+<para>Support multiple extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" line="25" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00351_1ab5b1c72c3f96903ffc9557a55e4b1098" prot="public" static="no">
+        <type><ref refid="a00463" kindref="compound">mix::containers::tree_node</ref></type>
+        <definition>using mix::assetsystem::asset_tree_val = typedef mix::containers::tree_node</definition>
+        <argsstring></argsstring>
+        <name>asset_tree_val</name>
+        <qualifiedname>mix::assetsystem::asset_tree_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" line="26" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00351_1a4aaa70b8015a5f8dff21969c8890e2d9" prot="public" static="no">
+        <type><ref refid="a00351_1ab5b1c72c3f96903ffc9557a55e4b1098" kindref="member">asset_tree_val</ref> *</type>
+        <definition>using mix::assetsystem::asset_tree_ptr = typedef asset_tree_val*</definition>
+        <argsstring></argsstring>
+        <name>asset_tree_ptr</name>
+        <qualifiedname>mix::assetsystem::asset_tree_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" line="27" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00351_1a1d61dcea20c6e39f1281591c197f2cb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mix::assetsystem::to_string</definition>
+        <argsstring>(const mixAsset_item &amp;item)</argsstring>
+        <name>to_string</name>
+        <qualifiedname>mix::assetsystem::to_string</qualifiedname>
+        <param>
+          <type>const <ref refid="a00383" kindref="compound">mixAsset_item</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_item.cpp" line="39" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_item.cpp" bodystart="39" bodyend="42"/>
+        <references refid="a00383_1a46d0785046788fcc9c789d1b11529ad3" compoundref="a00011" startline="24" endline="27">mix::assetsystem::mixAsset_item::get_base_name</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" line="7" column="5"/>
+  </compounddef>
+</doxygen>

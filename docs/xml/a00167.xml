@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00167" kind="file" language="C++">
+    <compoundname>mixTransform.cpp</compoundname>
+    <includes refid="a00170" local="yes">mixTransform.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>mixTransform.cpp</label>
+        <link refid="a00167"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixTransform.h</label>
+        <link refid="a00170"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../math/constants.h</label>
+        <link refid="a00290"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../math/mat.h</label>
+        <link refid="a00293"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vec.h</label>
+        <link refid="a00296"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00170" kindref="compound">mixTransform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="a00499_1a2b0616acfcb408037bc69d3a81c92210" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a2b0616acfcb408037bc69d3a81c92210" kindref="member">mix::core::mixTransform::set_position</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00499_1a5601f56c89edc199c43640509bc289e2" kindref="member">_position</ref><sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00499_1a108b1f373738340828df01d1dc7f0a5f" kindref="member">_is_dirty</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="a00499_1a36960b1e482875f85672a8c974564143" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a36960b1e482875f85672a8c974564143" kindref="member">mix::core::mixTransform::set_local_position</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>_local_position<sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="a00499_1adb6232350622826eef44bce10163d3f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1adb6232350622826eef44bce10163d3f9" kindref="member">mix::core::mixTransform::set_rotation</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation<sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="a00499_1ac4e1b87d3a8b40bb20298cb115dcaf4c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1ac4e1b87d3a8b40bb20298cb115dcaf4c" kindref="member">mix::core::mixTransform::set_scale</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>_scale<sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="a00499_1ada09b00b432f3107d650be4b024b5401" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1ada09b00b432f3107d650be4b024b5401" kindref="member">mix::core::mixTransform::translate</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>_position<sp/>+=<sp/>v;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="a00499_1a18cf7e857f941c5719b7e01ad78eca7c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a18cf7e857f941c5719b7e01ad78eca7c" kindref="member">mix::core::mixTransform::scale</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" kindref="member">mix::core::mixTransform::look_at</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref>&amp;<sp/>pos)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>d<sp/>=<sp/><ref refid="a00296_1afec26b6e42064ef2316f1be013515801" kindref="member">normalize</ref><sp/>(-pos<sp/>+<sp/>_position);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation.y<sp/>=<ref refid="a00290_1af57b155e256b3a60e8a9b00757d451de" kindref="member">radians_to_degrees</ref><sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>atan<sp/>(d.x<sp/>/<sp/>(-d.y)));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation.x<sp/>=<sp/><ref refid="a00290_1af57b155e256b3a60e8a9b00757d451de" kindref="member">radians_to_degrees</ref><sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>atan<sp/>(pow<sp/>(d.x,<sp/>2)<sp/>+<sp/>pow<sp/>(d.y,<sp/>2)));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>update<sp/>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="a00499_1a21bee47e7e33becf6ea86acc5625ae61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a21bee47e7e33becf6ea86acc5625ae61" kindref="member">mix::core::mixTransform::rotate_around</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation.x<sp/>+=<sp/>x;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation.y<sp/>+=<sp/>y;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>_rotation.z<sp/>+=<sp/>z;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" refkind="member"><highlight class="normal"><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="a00499_1a38bb16968fa8cfd2a4a5031e5653b826" kindref="member">mix::core::mixTransform::get_model_mat</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/>m<sp/>(1.0f);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/><ref refid="a00293_1a335c3f59008a4d1c63484fbc2c5146b5" kindref="member">rotate</ref><sp/>(m,<sp/>_rotation.x,<sp/><ref refid="a00495_1ab554bd40cffaeb26a451ab5b73217d71" kindref="member">transform::right</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/><ref refid="a00293_1a335c3f59008a4d1c63484fbc2c5146b5" kindref="member">rotate</ref><sp/>(m,<sp/>_rotation.y,<sp/><ref refid="a00495_1ae863cbb68786bad6ed428370089f8cdf" kindref="member">transform::up</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/><ref refid="a00293_1a335c3f59008a4d1c63484fbc2c5146b5" kindref="member">rotate</ref><sp/>(m,<sp/>_rotation.z,<sp/><ref refid="a00495_1afd85bf2666dede05bdb8cc1062a1937b" kindref="member">transform::forward</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>glm::translate<sp/>(m,<sp/>_position);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" refkind="member"><highlight class="normal"><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mix::core::mixTransform::mixTransform</ref><sp/>()<sp/>:<sp/><ref refid="a00499" kindref="compound">mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0),<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0),<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1))</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="a00499_1a8d57d6619439ce4da5d58b2e661df03d" refkind="member"><highlight class="normal"><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mix::core::mixTransform::mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos)<sp/>:<sp/><ref refid="a00499" kindref="compound">mixTransform</ref><sp/>(pos,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0),<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1))</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="a00499_1ad4217ee03c3c5eb701a092aca548f79d" refkind="member"><highlight class="normal"><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mix::core::mixTransform::mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>rot)<sp/>:<sp/><ref refid="a00499" kindref="compound">mixTransform</ref><sp/>(pos,<sp/>rot,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="a00499_1a873b289c5a58df66a7d7233a0bfac0cc" refkind="member"><highlight class="normal"><ref refid="a00499_1a7a48f640c70155d136c6b66e8acdfaa7" kindref="member">mix::core::mixTransform::mixTransform</ref><sp/>(<ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>pos,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>rot,<sp/><ref refid="a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>scale)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">:<sp/>_position{<sp/>pos<sp/>},<sp/>_local_position{<sp/>0<sp/>},<sp/>_rotation{<sp/>rot<sp/>},<sp/>_scale{<sp/>scale<sp/>},<sp/>_is_dirty{<sp/>true<sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" kindref="member">update</ref><sp/>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="a00499_1a4031689dabde7c88d2d972576290c9ad" refkind="member"><highlight class="normal"><ref refid="a00499_1a4031689dabde7c88d2d972576290c9ad" kindref="member">mix::core::mixTransform::~mixTransform</ref><sp/>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" kindref="member">mix::core::mixTransform::update</ref><sp/>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_is_dirty)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update_vectors<sp/>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_is_dirty<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="a00499_1a94de4b6193da11c60e8b4cd6f2d68152" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00499_1a94de4b6193da11c60e8b4cd6f2d68152" kindref="member">mix::core::mixTransform::update_vectors</ref><sp/>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>_yaw<sp/>=<sp/>yaw<sp/>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>_pitch<sp/>=<sp/>pitch<sp/>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>_forward.x<sp/>=<sp/>cos<sp/>(<ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(_yaw))<sp/>*<sp/>cos<sp/>(<ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(_pitch));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>_forward.y<sp/>=<sp/>sin<sp/>(<ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(_pitch));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>_forward.z<sp/>=<sp/>sin<sp/>(<ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(_yaw))<sp/>*<sp/>cos<sp/>(<ref refid="a00290_1a573b48f151a3b60b16c3221c53dc92e2" kindref="member">degrees_to_radians</ref><sp/>(_pitch));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>_forward<sp/>=<sp/><ref refid="a00296_1afec26b6e42064ef2316f1be013515801" kindref="member">normalize</ref><sp/>(_forward);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>_right<sp/>=<sp/><ref refid="a00296_1afec26b6e42064ef2316f1be013515801" kindref="member">normalize</ref><sp/>(<ref refid="a00296_1a8ac884a73edac4ccb6582c13c2ca1f88" kindref="member">cross</ref><sp/>(_forward,<sp/><ref refid="a00495_1ae863cbb68786bad6ed428370089f8cdf" kindref="member">transform::up</ref>));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>_up<sp/>=<sp/><ref refid="a00296_1afec26b6e42064ef2316f1be013515801" kindref="member">normalize</ref><sp/>(<ref refid="a00296_1a8ac884a73edac4ccb6582c13c2ca1f88" kindref="member">cross</ref><sp/>(_right,<sp/>_forward));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp"/>
+  </compounddef>
+</doxygen>

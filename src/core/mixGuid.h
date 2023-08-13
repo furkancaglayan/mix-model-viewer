@@ -14,11 +14,6 @@ namespace mix
 {
     namespace core
     {
-        /// <summary>
-        /// std::unordered_map requires the key type to implement a hash function using operator() and
-        /// comparison function for equality.
-        /// <see href="https://stackoverflow.com/questions/17016175/c-unordered-map-using-a-custom-class-type-as-the-key">Related stackoverflow pos</see>
-        /// </summary>
         class mixGuid
         {
             public:

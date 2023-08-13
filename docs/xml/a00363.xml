@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00363" kind="namespace" language="C++">
+    <compoundname>mix::math</compoundname>
+    <innerclass refid="a00599" prot="public">mix::math::color</innerclass>
+    <innerclass refid="a00603" prot="public">mix::math::vertex</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.h" line="7" column="5"/>
+  </compounddef>
+</doxygen>

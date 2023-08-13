@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="a00364" kind="namespace" language="C++">
+    <compoundname>mix::platform</compoundname>
+    <innerclass refid="a00607" prot="public">mix::platform::mixAsset_path</innerclass>
+    <innerclass refid="a00611" prot="public">mix::platform::mixFile</innerclass>
+    <innerclass refid="a00615" prot="public">mix::platform::platform_utils</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="11" column="5"/>
+  </compounddef>
+</doxygen>
