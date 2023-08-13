@@ -176,7 +176,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a97b151a9b07929b2b7838c9ecb956a1a inherit pro_attribs_a00551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00531.html">window_rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00551.html#a97b151a9b07929b2b7838c9ecb956a1a">_constraints</a></td></tr>
 <tr class="separator:a97b151a9b07929b2b7838c9ecb956a1a inherit pro_attribs_a00551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00212_source.html#l00013">13</a> of file <a class="el" href="a00212_source.html">shortcuts_window.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac1927decafc45798564ac42fb84b1776" name="ac1927decafc45798564ac42fb84b1776"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1927decafc45798564ac42fb84b1776">&#9670;&#160;</a></span>shortcuts_window()</h2>
 
@@ -202,6 +205,26 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00209_source.html#l00060">60</a> of file <a class="el" href="a00209_source.html">shortcuts_window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>: <a class="code hl_class" href="a00551.html">mixImGui::gui_window</a> (window_name,</div>
+<div class="line"><span class="lineno">   62</span>                        r,</div>
+<div class="line"><span class="lineno">   63</span>                        <a class="code hl_enumvalue" href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add">mixImGui::window_flags::MenuBar</a> | <a class="code hl_enumvalue" href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1">mixImGui::window_flags::NoCollapse</a> |</div>
+<div class="line"><span class="lineno">   64</span>                         <a class="code hl_enumvalue" href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f">mixImGui::window_flags::NoMove</a> | <a class="code hl_enumvalue" href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe">mixImGui::window_flags::NoResize</a>)</div>
+<div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    _styles_editor_tex = <a class="code hl_function" href="a00511.html#a3b346a93f0c22edf4e20e4b314afc6e3">mixEditor::get_asset_manager</a> ()-&gt;<a class="code hl_function" href="a00455.html#a0d1454f00502e53010bb99dc02bc8863">get_asset_with_full_name</a>&lt;<a class="code hl_class" href="a00419.html">mix::assetsystem::mixTexture</a>&gt; (<span class="stringliteral">&quot;default_other.png&quot;</span>).get();</div>
+<div class="line"><span class="lineno">   67</span>    assert (_styles_editor_tex);</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+<div class="ttc" id="aa00361_html_ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe"><div class="ttname"><a href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe">mixImGui::window_flags::NoResize</a></div><div class="ttdeci">@ NoResize</div></div>
+<div class="ttc" id="aa00361_html_ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f"><div class="ttname"><a href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f">mixImGui::window_flags::NoMove</a></div><div class="ttdeci">@ NoMove</div></div>
+<div class="ttc" id="aa00361_html_ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add"><div class="ttname"><a href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add">mixImGui::window_flags::MenuBar</a></div><div class="ttdeci">@ MenuBar</div></div>
+<div class="ttc" id="aa00361_html_ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1"><div class="ttname"><a href="a00361.html#ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1">mixImGui::window_flags::NoCollapse</a></div><div class="ttdeci">@ NoCollapse</div></div>
+<div class="ttc" id="aa00419_html"><div class="ttname"><a href="a00419.html">mix::assetsystem::mixTexture</a></div><div class="ttdef"><b>Definition</b> <a href="a00047_source.html#l00073">mixTexture.h:74</a></div></div>
+<div class="ttc" id="aa00455_html_a0d1454f00502e53010bb99dc02bc8863"><div class="ttname"><a href="a00455.html#a0d1454f00502e53010bb99dc02bc8863">mix::assetsystem::mixAsset_manager::get_asset_with_full_name</a></div><div class="ttdeci">std::shared_ptr&lt; mixAsset_item &gt; get_asset_with_full_name(const std::string &amp;name) const</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00070">mixAsset_manager.h:70</a></div></div>
+<div class="ttc" id="aa00511_html_a3b346a93f0c22edf4e20e4b314afc6e3"><div class="ttname"><a href="a00511.html#a3b346a93f0c22edf4e20e4b314afc6e3">mix::mixEditor::get_asset_manager</a></div><div class="ttdeci">static mix::assetsystem::mixAsset_manager * get_asset_manager()</div><div class="ttdef"><b>Definition</b> <a href="a00185_source.html#l00059">mixEditor.cpp:59</a></div></div>
+<div class="ttc" id="aa00551_html"><div class="ttname"><a href="a00551.html">mixImGui::gui_window</a></div><div class="ttdef"><b>Definition</b> <a href="a00236_source.html#l00066">gui_window.h:67</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00185_source.html#l00059">mix::mixEditor::get_asset_manager()</a>, and <a class="el" href="a00116_source.html#l00070">mix::assetsystem::mixAsset_manager::get_asset_with_full_name()</a>.</p>
 
 </div>
 </div>
@@ -229,6 +252,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00209_source.html#l00050">50</a> of file <a class="el" href="a00209_source.html">shortcuts_window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keyword">auto</span> WINDOW_BEGIN_POS = 0.0f;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> WINDOW_SIZE = 0.20f;</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> rect = <a class="code hl_struct" href="a00531.html">mixImGui::window_rect</a> ((<span class="keywordtype">int</span>) (size.x * WINDOW_BEGIN_POS), 0, (<span class="keywordtype">int</span>) (size.x * WINDOW_SIZE),</div>
+<div class="line"><span class="lineno">   55</span>                                       <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (size.y));</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="a00567.html#a79d97b87e7d22231df25bbe376ec5811">mixImGui::mixGui::add_window</a> (<span class="keyword">new</span> editor::windows::shortcuts_window (std::string (<span class="stringliteral">&quot;Shortcuts&quot;</span>), rect));</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aa00531_html"><div class="ttname"><a href="a00531.html">mixImGui::window_rect</a></div><div class="ttdef"><b>Definition</b> <a href="a00218_source.html#l00022">gui_layout.h:23</a></div></div>
+<div class="ttc" id="aa00567_html_a79d97b87e7d22231df25bbe376ec5811"><div class="ttname"><a href="a00567.html#a79d97b87e7d22231df25bbe376ec5811">mixImGui::mixGui::add_window</a></div><div class="ttdeci">static mixImGui::gui_window * add_window(T *t)</div><div class="ttdef"><b>Definition</b> <a href="a00260_source.html#l00022">mixGui.h:22</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00260_source.html#l00022">mixImGui::mixGui::add_window()</a>.</p>
 
 </div>
 </div>
@@ -258,6 +295,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="a00551.html#aa8e1f6f92a14b1e3aeed006240af3e8d">mixImGui::gui_window</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="a00209_source.html#l00041">41</a> of file <a class="el" href="a00209_source.html">shortcuts_window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keyword">auto</span> WINDOW_BEGIN_POS = 0.0f;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keyword">auto</span> WINDOW_SIZE = 0.20f;</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">auto</span> width = size.x * WINDOW_SIZE;</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="a00551.html#a4d3055b2bda8480b8eaeba1be84c0463">rescale</a> (<a class="code hl_typedef" href="a00296.html#a32111780993aa0f01182edf32f03aad7">vec2i</a> (width, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (size.y)));</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="a00551.html#a09f6118e289882b1e8f14ea9cd7f1f8e">set_position</a> (<a class="code hl_typedef" href="a00296.html#a32111780993aa0f01182edf32f03aad7">vec2i</a> (size.x * WINDOW_BEGIN_POS, 0));</div>
+<div class="line"><span class="lineno">   48</span>}</div>
+<div class="ttc" id="aa00296_html_a32111780993aa0f01182edf32f03aad7"><div class="ttname"><a href="a00296.html#a32111780993aa0f01182edf32f03aad7">vec2i</a></div><div class="ttdeci">glm::ivec2 vec2i</div><div class="ttdef"><b>Definition</b> <a href="a00296_source.html#l00010">vec.h:10</a></div></div>
+<div class="ttc" id="aa00551_html_a09f6118e289882b1e8f14ea9cd7f1f8e"><div class="ttname"><a href="a00551.html#a09f6118e289882b1e8f14ea9cd7f1f8e">mixImGui::gui_window::set_position</a></div><div class="ttdeci">void set_position(const vec2i &amp;pos)</div><div class="ttdef"><b>Definition</b> <a href="a00233_source.html#l00120">gui_window.cpp:120</a></div></div>
+<div class="ttc" id="aa00551_html_a4d3055b2bda8480b8eaeba1be84c0463"><div class="ttname"><a href="a00551.html#a4d3055b2bda8480b8eaeba1be84c0463">mixImGui::gui_window::rescale</a></div><div class="ttdeci">void rescale(const vec2i &amp;size)</div><div class="ttdef"><b>Definition</b> <a href="a00233_source.html#l00114">gui_window.cpp:114</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af97c20a271421ba26420a2ca6211f504" name="af97c20a271421ba26420a2ca6211f504"></a>
@@ -285,11 +334,63 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="a00551.html#a02427dce58f618cf32c24bb6a0b91bf4">mixImGui::gui_window</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="a00209_source.html#l00003">3</a> of file <a class="el" href="a00209_source.html">shortcuts_window.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_function" href="a00551.html#a5b26d4ff892ca96966cedacb32a214c3">begin</a> ();</div>
+<div class="line"><span class="lineno">    6</span>    <span class="keyword">auto</span> editor = <a class="code hl_variable" href="a00511.html#ab03cd27e7c82e3edead6d413dfe20294">mix::mixEditor::_instance</a>.get ();</div>
+<div class="line"><span class="lineno">    7</span>    <span class="keywordflow">if</span> (editor)</div>
+<div class="line"><span class="lineno">    8</span>    {</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_function" href="a00535.html#a51fa55d14214144f3f877642c54daa67">gui_layout::text_label</a> (<span class="stringliteral">&quot;OpenGL Texture Text&quot;</span>);</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">if</span> (_styles_editor_tex)</div>
+<div class="line"><span class="lineno">   11</span>        {</div>
+<div class="line"><span class="lineno">   12</span>            <span class="keywordtype">float</span> width = 64;</div>
+<div class="line"><span class="lineno">   13</span>            <span class="keywordtype">float</span> height = 64;</div>
+<div class="line"><span class="lineno">   14</span>            ImVec2 pos = ImGui::GetCursorScreenPos ();</div>
+<div class="line"><span class="lineno">   15</span>            <span class="comment">//gui_layout::add_image (_styles_editor_tex-&gt;get_id(), ImVec2 (pos.x, pos.y), ImVec2 (pos.x + width, pos.y + height), ImVec2 (0, 1), ImVec2 (1, 0));</span></div>
+<div class="line"><span class="lineno">   16</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="a00535.html#a242351eaadb4aef1a324bd16c4e024fa">gui_layout::image_button</a> (<span class="stringliteral">&quot;shortcuts-imgui-button&quot;</span>, _styles_editor_tex-&gt;get_id ()))</div>
+<div class="line"><span class="lineno">   17</span>            {</div>
+<div class="line"><span class="lineno">   18</span>                _show_styles_editor = !_show_styles_editor;</div>
+<div class="line"><span class="lineno">   19</span>            }</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_function" href="a00535.html#a2e38bc4f5a31c6ba9f365878402c6d22">gui_layout::seperator</a> ();</div>
+<div class="line"><span class="lineno">   21</span>            <a class="code hl_function" href="a00535.html#ac8f5c616d14ba7e00b4df09a6438c3fa">gui_layout::button</a> (<span class="stringliteral">&quot;Label&quot;</span>);</div>
+<div class="line"><span class="lineno">   22</span>            <a class="code hl_function" href="a00535.html#a2e38bc4f5a31c6ba9f365878402c6d22">gui_layout::seperator</a> ();</div>
+<div class="line"><span class="lineno">   23</span>            <a class="code hl_function" href="a00535.html#a363b6b65d203f42748845fec54d6ccad">gui_layout::arrow_button</a> (<span class="stringliteral">&quot;Label&quot;</span>, 30);</div>
+<div class="line"><span class="lineno">   24</span>            <a class="code hl_function" href="a00535.html#a2e38bc4f5a31c6ba9f365878402c6d22">gui_layout::seperator</a> ();</div>
+<div class="line"><span class="lineno">   25</span>            <a class="code hl_function" href="a00535.html#a4d2819c64c001d840692ab25639d465a">gui_layout::small_button</a> (<span class="stringliteral">&quot;Label&quot;</span>);</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_function" href="a00535.html#a2e38bc4f5a31c6ba9f365878402c6d22">gui_layout::seperator</a> ();</div>
+<div class="line"><span class="lineno">   27</span>            <a class="code hl_function" href="a00535.html#a35c4e03581120cab90d81083df25b6ca">gui_layout::radio_button</a> (<span class="stringliteral">&quot;Label&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>            <span class="keywordflow">if</span> (_show_styles_editor)</div>
+<div class="line"><span class="lineno">   30</span>            {</div>
+<div class="line"><span class="lineno">   31</span>                <a class="code hl_function" href="a00567.html#aed3860d8a06913972b2d52472cc5c40a">mixGui::show_style_editor</a> (ImGui::GetStyle());</div>
+<div class="line"><span class="lineno">   32</span>            }</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>            <a class="code hl_function" href="a00535.html#a77746d3ef41e007832057b42738a655e">gui_layout::progress_bar</a> (0.25f);</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="a00551.html#a1ca29859ec280ef652b1a8a129302674">end</a> ();</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+<div class="ttc" id="aa00511_html_ab03cd27e7c82e3edead6d413dfe20294"><div class="ttname"><a href="a00511.html#ab03cd27e7c82e3edead6d413dfe20294">mix::mixEditor::_instance</a></div><div class="ttdeci">static std::unique_ptr&lt; mixEditor &gt; _instance</div><div class="ttdef"><b>Definition</b> <a href="a00188_source.html#l00018">mixEditor.h:18</a></div></div>
+<div class="ttc" id="aa00535_html_a242351eaadb4aef1a324bd16c4e024fa"><div class="ttname"><a href="a00535.html#a242351eaadb4aef1a324bd16c4e024fa">mixImGui::gui_layout::image_button</a></div><div class="ttdeci">static bool image_button(const std::string &amp;str_id, unsigned user_texture_id, const ImVec2 &amp;size=ImVec2(32, 32), const ImVec2 &amp;uv0=ImVec2(0, 0), const ImVec2 &amp;uv1=ImVec2(1, 1), const ImVec4 &amp;bg_col=ImVec4(0, 0, 0, 0), const ImVec4 &amp;tint_col=ImVec4(0, 0, 0, 0))</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00229">gui_layout.cpp:229</a></div></div>
+<div class="ttc" id="aa00535_html_a2e38bc4f5a31c6ba9f365878402c6d22"><div class="ttname"><a href="a00535.html#a2e38bc4f5a31c6ba9f365878402c6d22">mixImGui::gui_layout::seperator</a></div><div class="ttdeci">static void seperator()</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00373">gui_layout.cpp:373</a></div></div>
+<div class="ttc" id="aa00535_html_a35c4e03581120cab90d81083df25b6ca"><div class="ttname"><a href="a00535.html#a35c4e03581120cab90d81083df25b6ca">mixImGui::gui_layout::radio_button</a></div><div class="ttdeci">static bool radio_button(const std::string &amp;label, bool is_active)</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00220">gui_layout.cpp:220</a></div></div>
+<div class="ttc" id="aa00535_html_a363b6b65d203f42748845fec54d6ccad"><div class="ttname"><a href="a00535.html#a363b6b65d203f42748845fec54d6ccad">mixImGui::gui_layout::arrow_button</a></div><div class="ttdeci">static bool arrow_button(const std::string &amp;label, int dir)</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00202">gui_layout.cpp:202</a></div></div>
+<div class="ttc" id="aa00535_html_a4d2819c64c001d840692ab25639d465a"><div class="ttname"><a href="a00535.html#a4d2819c64c001d840692ab25639d465a">mixImGui::gui_layout::small_button</a></div><div class="ttdeci">static bool small_button(const std::string &amp;label)</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00211">gui_layout.cpp:211</a></div></div>
+<div class="ttc" id="aa00535_html_a51fa55d14214144f3f877642c54daa67"><div class="ttname"><a href="a00535.html#a51fa55d14214144f3f877642c54daa67">mixImGui::gui_layout::text_label</a></div><div class="ttdeci">static void text_label(std::string s)</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00049">gui_layout.cpp:49</a></div></div>
+<div class="ttc" id="aa00535_html_a77746d3ef41e007832057b42738a655e"><div class="ttname"><a href="a00535.html#a77746d3ef41e007832057b42738a655e">mixImGui::gui_layout::progress_bar</a></div><div class="ttdeci">static void progress_bar(float r)</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00185">gui_layout.cpp:185</a></div></div>
+<div class="ttc" id="aa00535_html_ac8f5c616d14ba7e00b4df09a6438c3fa"><div class="ttname"><a href="a00535.html#ac8f5c616d14ba7e00b4df09a6438c3fa">mixImGui::gui_layout::button</a></div><div class="ttdeci">static bool button(const std::string &amp;label, const ImVec2 &amp;size=ImVec2(32, 32))</div><div class="ttdef"><b>Definition</b> <a href="a00215_source.html#l00193">gui_layout.cpp:193</a></div></div>
+<div class="ttc" id="aa00551_html_a1ca29859ec280ef652b1a8a129302674"><div class="ttname"><a href="a00551.html#a1ca29859ec280ef652b1a8a129302674">mixImGui::gui_window::end</a></div><div class="ttdeci">void end() const</div><div class="ttdef"><b>Definition</b> <a href="a00233_source.html#l00108">gui_window.cpp:108</a></div></div>
+<div class="ttc" id="aa00551_html_a5b26d4ff892ca96966cedacb32a214c3"><div class="ttname"><a href="a00551.html#a5b26d4ff892ca96966cedacb32a214c3">mixImGui::gui_window::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdef"><b>Definition</b> <a href="a00233_source.html#l00078">gui_window.cpp:78</a></div></div>
+<div class="ttc" id="aa00567_html_aed3860d8a06913972b2d52472cc5c40a"><div class="ttname"><a href="a00567.html#aed3860d8a06913972b2d52472cc5c40a">mixImGui::mixGui::show_style_editor</a></div><div class="ttdeci">static void show_style_editor(ImGuiStyle &amp;style)</div><div class="ttdef"><b>Definition</b> <a href="a00257_source.html#l00125">mixGui.cpp:125</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00188_source.html#l00018">mix::mixEditor::_instance</a>, <a class="el" href="a00215_source.html#l00202">mixImGui::gui_layout::arrow_button()</a>, <a class="el" href="a00233_source.html#l00078">mixImGui::gui_window::begin()</a>, <a class="el" href="a00215_source.html#l00193">mixImGui::gui_layout::button()</a>, <a class="el" href="a00233_source.html#l00108">mixImGui::gui_window::end()</a>, <a class="el" href="a00215_source.html#l00229">mixImGui::gui_layout::image_button()</a>, <a class="el" href="a00215_source.html#l00185">mixImGui::gui_layout::progress_bar()</a>, <a class="el" href="a00215_source.html#l00220">mixImGui::gui_layout::radio_button()</a>, <a class="el" href="a00215_source.html#l00373">mixImGui::gui_layout::seperator()</a>, <a class="el" href="a00257_source.html#l00125">mixImGui::mixGui::show_style_editor()</a>, <a class="el" href="a00215_source.html#l00211">mixImGui::gui_layout::small_button()</a>, and <a class="el" href="a00215_source.html#l00049">mixImGui::gui_layout::text_label()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00212_source.html">shortcuts_window.h</a></li>
-<li><a class="el" href="a00209.html">shortcuts_window.cpp</a></li>
+<li><a class="el" href="a00209_source.html">shortcuts_window.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -297,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00359.html">editor</a></li><li class="navelem"><a class="el" href="a00360.html">windows</a></li><li class="navelem"><a class="el" href="a00527.html">shortcuts_window</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

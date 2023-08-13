@@ -169,7 +169,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00607.html">mix::platform::mixAsset_path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a></td></tr>
 <tr class="separator:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00039">39</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afa286880289fe3349a2397c92ba38be5" name="afa286880289fe3349a2397c92ba38be5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa286880289fe3349a2397c92ba38be5">&#9670;&#160;</a></span>mixShader() <span class="overload">[1/2]</span></h2>
 
@@ -202,6 +205,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00005">5</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>: <a class="code hl_variable" href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">_type</a>{ type }, <a class="code hl_class" href="a00383.html">mix::assetsystem::mixAsset_item</a> (path)</div>
+<div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_function" href="a00403.html#a886c3c5f54fca924dbc3f5f8cb2c9a3c">compile</a> (source, <a class="code hl_variable" href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">_type</a>);</div>
+<div class="line"><span class="lineno">    9</span>}</div>
+<div class="ttc" id="aa00383_html"><div class="ttname"><a href="a00383.html">mix::assetsystem::mixAsset_item</a></div><div class="ttdoc">Support multiple extensions.</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00017">mixAsset_item.h:18</a></div></div>
+<div class="ttc" id="aa00403_html_a21d506cb27d64881fa94e5c9a69c47b2"><div class="ttname"><a href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">mix::assetsystem::mixShader::_type</a></div><div class="ttdeci">const mix::shader::shader_type _type</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00054">mixShader.h:54</a></div></div>
+<div class="ttc" id="aa00403_html_a886c3c5f54fca924dbc3f5f8cb2c9a3c"><div class="ttname"><a href="a00403.html#a886c3c5f54fca924dbc3f5f8cb2c9a3c">mix::assetsystem::mixShader::compile</a></div><div class="ttdeci">void compile(const std::string &amp;source, mix::shader::shader_type type)</div><div class="ttdef"><b>Definition</b> <a href="a00032_source.html#l00023">mixShader.cpp:23</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00035_source.html#l00054">_type</a>, and <a class="el" href="a00032_source.html#l00023">compile()</a>.</p>
+
 </div>
 </div>
 <a id="a2014c9e123ad758f38ab24eb2915b2ba" name="a2014c9e123ad758f38ab24eb2915b2ba"></a>
@@ -220,6 +234,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00011">11</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>: <a class="code hl_variable" href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">_type</a>{ <a class="code hl_function" href="a00399.html#aa08b7d08664a6d8a1bb499a50ebe31fc">mix::shader::get_shader_type</a> (path.<a class="code hl_function" href="a00607.html#a963e963961e2aa159290209cd15bb662">get_extension</a> ()) }, <a class="code hl_class" href="a00383.html">mix::assetsystem::mixAsset_item</a> (path)</div>
+<div class="line"><span class="lineno">   13</span>{</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keyword">auto</span> source = <a class="code hl_class" href="a00611.html">mix::platform::mixFile</a> (path).<a class="code hl_function" href="a00611.html#a88c176804db619d0ae8d401d5338e127">read_all_text</a>();</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_function" href="a00403.html#a886c3c5f54fca924dbc3f5f8cb2c9a3c">compile</a> (source, <a class="code hl_variable" href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">_type</a>);</div>
+<div class="line"><span class="lineno">   16</span>}</div>
+<div class="ttc" id="aa00399_html_aa08b7d08664a6d8a1bb499a50ebe31fc"><div class="ttname"><a href="a00399.html#aa08b7d08664a6d8a1bb499a50ebe31fc">mix::shader::get_shader_type</a></div><div class="ttdeci">static shader_type get_shader_type(const std::string &amp;ext)</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00022">mixShader.h:22</a></div></div>
+<div class="ttc" id="aa00607_html_a963e963961e2aa159290209cd15bb662"><div class="ttname"><a href="a00607.html#a963e963961e2aa159290209cd15bb662">mix::platform::mixAsset_path::get_extension</a></div><div class="ttdeci">const std::string &amp; get_extension() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00045">mixAsset_path.h:45</a></div></div>
+<div class="ttc" id="aa00611_html"><div class="ttname"><a href="a00611.html">mix::platform::mixFile</a></div><div class="ttdef"><b>Definition</b> <a href="a00311_source.html#l00016">mixFile.h:17</a></div></div>
+<div class="ttc" id="aa00611_html_a88c176804db619d0ae8d401d5338e127"><div class="ttname"><a href="a00611.html#a88c176804db619d0ae8d401d5338e127">mix::platform::mixFile::read_all_text</a></div><div class="ttdeci">std::string read_all_text()</div><div class="ttdef"><b>Definition</b> <a href="a00308_source.html#l00082">mixFile.cpp:82</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00035_source.html#l00054">_type</a>, <a class="el" href="a00032_source.html#l00023">compile()</a>, and <a class="el" href="a00308_source.html#l00082">mix::platform::mixFile::read_all_text()</a>.</p>
+
 </div>
 </div>
 <a id="a3931866b851ff7bf0d7c644712fe86ee" name="a3931866b851ff7bf0d7c644712fe86ee"></a>
@@ -237,6 +264,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00018">18</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>    glDeleteShader (<a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>);</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+<div class="ttc" id="aa00403_html_ae539f8cb358e96a4c09e399bffcc3c0b"><div class="ttname"><a href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">mix::assetsystem::mixShader::shader_id</a></div><div class="ttdeci">unsigned shader_id</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00055">mixShader.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -266,6 +299,32 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00023">23</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a> = glCreateShader ((GLenum)type);</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">auto</span> c_source = source.c_str ();</div>
+<div class="line"><span class="lineno">   27</span>    glShaderSource (<a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>, 1, &amp;c_source, NULL);</div>
+<div class="line"><span class="lineno">   28</span>    glCompileShader (<a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>);</div>
+<div class="line"><span class="lineno">   29</span>    <span class="comment">// print compile errors if any</span></div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> success;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">char</span> infoLog[512];</div>
+<div class="line"><span class="lineno">   33</span>    glGetShaderiv (<a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>, GL_COMPILE_STATUS, &amp;success);</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="a00403.html#a33e2273ad117ee595c1c2525aaa859dc">is_compiled</a> = success;</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (!success)</div>
+<div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="comment">//TODO: fallback to shader</span></div>
+<div class="line"><span class="lineno">   38</span>        glGetShaderInfoLog (<a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>, 512, NULL, infoLog);</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_define" href="a00266.html#a7ebf4c3b4fb05d6f9094089ded75cbdd">LOG_ERROR</a> (<a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>.<a class="code hl_function" href="a00607.html#ac980b27170298e16e93ce3a656b2c46d">get_name</a> () + <span class="stringliteral">&quot; shader compilation failed!&quot;</span>);</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+<div class="ttc" id="aa00266_html_a7ebf4c3b4fb05d6f9094089ded75cbdd"><div class="ttname"><a href="a00266.html#a7ebf4c3b4fb05d6f9094089ded75cbdd">LOG_ERROR</a></div><div class="ttdeci">#define LOG_ERROR(msg)</div><div class="ttdef"><b>Definition</b> <a href="a00266_source.html#l00009">debug.h:9</a></div></div>
+<div class="ttc" id="aa00383_html_a0ebce5f5d9da7f50795b9519c63e629b"><div class="ttname"><a href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">mix::assetsystem::mixAsset_item::_path</a></div><div class="ttdeci">mix::platform::mixAsset_path _path</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00066">mixAsset_item.h:66</a></div></div>
+<div class="ttc" id="aa00403_html_a33e2273ad117ee595c1c2525aaa859dc"><div class="ttname"><a href="a00403.html#a33e2273ad117ee595c1c2525aaa859dc">mix::assetsystem::mixShader::is_compiled</a></div><div class="ttdeci">bool is_compiled</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00056">mixShader.h:56</a></div></div>
+<div class="ttc" id="aa00607_html_ac980b27170298e16e93ce3a656b2c46d"><div class="ttname"><a href="a00607.html#ac980b27170298e16e93ce3a656b2c46d">mix::platform::mixAsset_path::get_name</a></div><div class="ttdeci">const std::string &amp; get_name() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00050">mixAsset_path.h:50</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00266_source.html#l00009">LOG_ERROR</a>.</p>
+
 </div>
 </div>
 <a id="ad30215fc86323f4e3c8a24c65be07487" name="ad30215fc86323f4e3c8a24c65be07487"></a>
@@ -283,6 +342,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00048">48</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00403.html#ae539f8cb358e96a4c09e399bffcc3c0b">shader_id</a>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3bc0e6b03d85dd515e115be9e9c46660" name="a3bc0e6b03d85dd515e115be9e9c46660"></a>
@@ -300,6 +364,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00032_source.html#l00043">43</a> of file <a class="el" href="a00032_source.html">mixShader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00403.html#a21d506cb27d64881fa94e5c9a69c47b2">_type</a>;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -323,6 +392,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00054">54</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+
 </div>
 </div>
 <a id="a33e2273ad117ee595c1c2525aaa859dc" name="a33e2273ad117ee595c1c2525aaa859dc"></a>
@@ -344,6 +415,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00056">56</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
 
 </div>
 </div>
@@ -367,11 +440,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00055">55</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00035_source.html">mixShader.h</a></li>
-<li><a class="el" href="a00032.html">mixShader.cpp</a></li>
+<li><a class="el" href="a00032_source.html">mixShader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -379,7 +454,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00403.html">mixShader</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

@@ -166,7 +166,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae1eb62cf209897c2dc65cc70474737d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00351.html#aa49b3eee914a13ec706b33d0b2fe67d7">asset_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a></td></tr>
 <tr class="separator:ae1eb62cf209897c2dc65cc70474737d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00029">29</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1c9d20b9848c9388e546e4190be56f4e" name="a1c9d20b9848c9388e546e4190be56f4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c9d20b9848c9388e546e4190be56f4e">&#9670;&#160;</a></span>mixAsset_manager() <span class="overload">[1/2]</span></h2>
 
@@ -182,6 +185,22 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00015">15</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>        {</div>
+<div class="line"><span class="lineno">   17</span>            <a class="code hl_variable" href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">instance</a> = <span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   18</span>            <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a> = std::make_unique&lt;asset_tree_val&gt; (root-&gt;get_guid (), std::move (root), <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   19</span>            <a class="code hl_function" href="a00455.html#a8bced18d57b0951dd21f8955dc66bbc7">initialize_default_asset_loaders</a> ();</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_function" href="a00455.html#a5f4ff50318f0700507b6016f01bcb506">resolve_all_assets</a> ();</div>
+<div class="line"><span class="lineno">   21</span>            <a class="code hl_function" href="a00455.html#a6cadd0a19bf63472bf5be7a87c2cf005">debug</a> ();</div>
+<div class="line"><span class="lineno">   22</span>        }</div>
+<div class="ttc" id="aa00455_html_a5f4ff50318f0700507b6016f01bcb506"><div class="ttname"><a href="a00455.html#a5f4ff50318f0700507b6016f01bcb506">mix::assetsystem::mixAsset_manager::resolve_all_assets</a></div><div class="ttdeci">void resolve_all_assets()</div><div class="ttdef"><b>Definition</b> <a href="a00113_source.html#l00044">mixAsset_manager.cpp:44</a></div></div>
+<div class="ttc" id="aa00455_html_a6cadd0a19bf63472bf5be7a87c2cf005"><div class="ttname"><a href="a00455.html#a6cadd0a19bf63472bf5be7a87c2cf005">mix::assetsystem::mixAsset_manager::debug</a></div><div class="ttdeci">void debug()</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00093">mixAsset_manager.h:93</a></div></div>
+<div class="ttc" id="aa00455_html_a78db6245156c814bbc9e983bfe02fa61"><div class="ttname"><a href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">mix::assetsystem::mixAsset_manager::instance</a></div><div class="ttdeci">static mixAsset_manager * instance</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00036">mixAsset_manager.h:36</a></div></div>
+<div class="ttc" id="aa00455_html_a8bced18d57b0951dd21f8955dc66bbc7"><div class="ttname"><a href="a00455.html#a8bced18d57b0951dd21f8955dc66bbc7">mix::assetsystem::mixAsset_manager::initialize_default_asset_loaders</a></div><div class="ttdeci">void initialize_default_asset_loaders()</div><div class="ttdef"><b>Definition</b> <a href="a00113_source.html#l00079">mixAsset_manager.cpp:79</a></div></div>
+<div class="ttc" id="aa00455_html_ae1eb62cf209897c2dc65cc70474737d6"><div class="ttname"><a href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">mix::assetsystem::mixAsset_manager::_assets</a></div><div class="ttdeci">asset_tree _assets</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00105">mixAsset_manager.h:105</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>, <a class="el" href="a00116_source.html#l00093">debug()</a>, <a class="el" href="a00113_source.html#l00079">initialize_default_asset_loaders()</a>, <a class="el" href="a00116_source.html#l00036">instance</a>, and <a class="el" href="a00113_source.html#l00044">resolve_all_assets()</a>.</p>
 
 </div>
 </div>
@@ -200,6 +219,18 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00024">24</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>        {</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_variable" href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">instance</a> = <span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keyword">auto</span> root = std::make_unique&lt;mix::assetsystem::mixAsset_folder&gt; (root_path);</div>
+<div class="line"><span class="lineno">   28</span>            <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a> = std::make_unique&lt;asset_tree_val&gt; (root-&gt;get_guid (), std::move (root), <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   29</span>            <a class="code hl_function" href="a00455.html#a8bced18d57b0951dd21f8955dc66bbc7">initialize_default_asset_loaders</a> ();</div>
+<div class="line"><span class="lineno">   30</span>            <a class="code hl_function" href="a00455.html#a5f4ff50318f0700507b6016f01bcb506">resolve_all_assets</a> ();</div>
+<div class="line"><span class="lineno">   31</span>            <a class="code hl_function" href="a00455.html#a6cadd0a19bf63472bf5be7a87c2cf005">debug</a> ();</div>
+<div class="line"><span class="lineno">   32</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>, <a class="el" href="a00116_source.html#l00093">debug()</a>, <a class="el" href="a00113_source.html#l00079">initialize_default_asset_loaders()</a>, <a class="el" href="a00116_source.html#l00036">instance</a>, and <a class="el" href="a00113_source.html#l00044">resolve_all_assets()</a>.</p>
 
 </div>
 </div>
@@ -227,6 +258,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00093">93</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>            {</div>
+<div class="line"><span class="lineno">   95</span>                <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;print ();</div>
+<div class="line"><span class="lineno">   96</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
+
 </div>
 </div>
 <a id="a18a84457368f1583c25d11c65d816ade" name="a18a84457368f1583c25d11c65d816ade"></a>
@@ -252,6 +290,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00060">60</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>            {</div>
+<div class="line"><span class="lineno">   62</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_base_name (name);</div>
+<div class="line"><span class="lineno">   63</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
 
 </div>
 </div>
@@ -281,6 +326,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00065">65</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>            {</div>
+<div class="line"><span class="lineno">   67</span>                <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt; (<a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_base_name (name));</div>
+<div class="line"><span class="lineno">   68</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
+
 </div>
 </div>
 <a id="a0d1454f00502e53010bb99dc02bc8863" name="a0d1454f00502e53010bb99dc02bc8863"></a>
@@ -306,6 +358,13 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00070">70</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>            {</div>
+<div class="line"><span class="lineno">   72</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_full_name (name);</div>
+<div class="line"><span class="lineno">   73</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
 
 </div>
 </div>
@@ -335,6 +394,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00075">75</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>            {</div>
+<div class="line"><span class="lineno">   77</span>                <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt; (<a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_full_name (name));</div>
+<div class="line"><span class="lineno">   78</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
+
 </div>
 </div>
 <a id="a76616eedb7c1b206e4b867c4930d52b3" name="a76616eedb7c1b206e4b867c4930d52b3"></a>
@@ -363,6 +429,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00085">85</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>            {</div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt; (<a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_path (name));</div>
+<div class="line"><span class="lineno">   88</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
+
 </div>
 </div>
 <a id="a06a9a9a4ec321e3ba19eefdfb04f2f8b" name="a06a9a9a4ec321e3ba19eefdfb04f2f8b"></a>
@@ -388,6 +461,13 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00080">80</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>            {</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;search_with_path (path);</div>
+<div class="line"><span class="lineno">   83</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
 
 </div>
 </div>
@@ -415,6 +495,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00049">49</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>            {</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00455.html#a66834caea19d3f49301f1172f428312d">_loaders</a>.at (type).get ();</div>
+<div class="line"><span class="lineno">   52</span>            }</div>
+<div class="ttc" id="aa00455_html_a66834caea19d3f49301f1172f428312d"><div class="ttname"><a href="a00455.html#a66834caea19d3f49301f1172f428312d">mix::assetsystem::mixAsset_manager::_loaders</a></div><div class="ttdeci">std::unordered_map&lt; asset_type, std::unique_ptr&lt; mix::assetsystem::mixAsset_loader_base &gt; &gt; _loaders</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00104">mixAsset_manager.h:104</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00104">_loaders</a>.</p>
+
 </div>
 </div>
 <a id="a2343833e0251d4f4aa9ebec46540a1cf" name="a2343833e0251d4f4aa9ebec46540a1cf"></a>
@@ -432,6 +520,14 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00034">34</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>        {</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="a00379.html">mix::assetsystem::mixAsset_folder</a>*<span class="keyword">&gt;</span> (<a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;get_value ());</div>
+<div class="line"><span class="lineno">   37</span>        }</div>
+<div class="ttc" id="aa00379_html"><div class="ttname"><a href="a00379.html">mix::assetsystem::mixAsset_folder</a></div><div class="ttdef"><b>Definition</b> <a href="a00005_source.html#l00010">mixAsset_folder.h:11</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
+
 </div>
 </div>
 <a id="ae49fa01a48e426cf3da3d8a43baad515" name="ae49fa01a48e426cf3da3d8a43baad515"></a>
@@ -448,6 +544,13 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00039">39</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>        {</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>.get ();</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>.</p>
 
 </div>
 </div>
@@ -473,6 +576,28 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00079">79</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>        {</div>
+<div class="line"><span class="lineno">   81</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_text&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675">mix::assetsystem::asset_type::Text</a>);</div>
+<div class="line"><span class="lineno">   82</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_texture&gt; (</div>
+<div class="line"><span class="lineno">   83</span>            <a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b">mix::assetsystem::asset_type::Texture</a>, <span class="keyword">new</span> <a class="code hl_class" href="a00427.html">mix::assetsystem::default_processors::default_texture_processor</a> ());</div>
+<div class="line"><span class="lineno">   84</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_mesh&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206">mix::assetsystem::asset_type::Material</a>);</div>
+<div class="line"><span class="lineno">   85</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_mesh&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961">mix::assetsystem::asset_type::Mesh</a>);</div>
+<div class="line"><span class="lineno">   86</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_text&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">mix::assetsystem::asset_type::Other</a>);</div>
+<div class="line"><span class="lineno">   87</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_shader&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660">mix::assetsystem::asset_type::Shader</a>);</div>
+<div class="line"><span class="lineno">   88</span>            register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_font&gt; (<a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d">mix::assetsystem::asset_type::Font</a>);</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d">mix::assetsystem::asset_type::Font</a></div><div class="ttdeci">@ Font</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">mix::assetsystem::asset_type::Other</a></div><div class="ttdeci">@ Other</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961">mix::assetsystem::asset_type::Mesh</a></div><div class="ttdeci">@ Mesh</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675">mix::assetsystem::asset_type::Text</a></div><div class="ttdeci">@ Text</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b">mix::assetsystem::asset_type::Texture</a></div><div class="ttdeci">@ Texture</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660">mix::assetsystem::asset_type::Shader</a></div><div class="ttdeci">@ Shader</div></div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206">mix::assetsystem::asset_type::Material</a></div><div class="ttdeci">@ Material</div></div>
+<div class="ttc" id="aa00427_html"><div class="ttname"><a href="a00427.html">mix::assetsystem::default_processors::default_texture_processor</a></div><div class="ttdef"><b>Definition</b> <a href="a00074_source.html#l00012">default_texture_processor.h:13</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d">mix::assetsystem::Font</a>, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206">mix::assetsystem::Material</a>, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961">mix::assetsystem::Mesh</a>, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">mix::assetsystem::Other</a>, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660">mix::assetsystem::Shader</a>, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675">mix::assetsystem::Text</a>, and <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b">mix::assetsystem::Texture</a>.</p>
 
 </div>
 </div>
@@ -501,6 +626,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00037">37</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>            {</div>
+<div class="line"><span class="lineno">   39</span>                assert (!<a class="code hl_variable" href="a00455.html#a66834caea19d3f49301f1172f428312d">_loaders</a>.count (type));</div>
+<div class="line"><span class="lineno">   40</span>                <a class="code hl_variable" href="a00455.html#a66834caea19d3f49301f1172f428312d">_loaders</a>.insert ({ type, std::make_unique&lt;T&gt; () });</div>
+<div class="line"><span class="lineno">   41</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00104">_loaders</a>.</p>
 
 </div>
 </div>
@@ -540,6 +673,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00043">43</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>            {</div>
+<div class="line"><span class="lineno">   45</span>                assert (!<a class="code hl_variable" href="a00455.html#a66834caea19d3f49301f1172f428312d">_loaders</a>.count (type));</div>
+<div class="line"><span class="lineno">   46</span>                <a class="code hl_variable" href="a00455.html#a66834caea19d3f49301f1172f428312d">_loaders</a>.insert ({ type, std::make_unique&lt;T&gt; (processor) });</div>
+<div class="line"><span class="lineno">   47</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00104">_loaders</a>.</p>
+
 </div>
 </div>
 <a id="a5f4ff50318f0700507b6016f01bcb506" name="a5f4ff50318f0700507b6016f01bcb506"></a>
@@ -556,6 +697,18 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00044">44</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>        {</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_define" href="a00266.html#a3215f683b10314f5af3b5122d5e8bc41">INFO</a> (<a class="code hl_function" href="a00455.html#a5f4ff50318f0700507b6016f01bcb506">mixAsset_manager::resolve_all_assets</a>);</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keyword">auto</span> root =</div>
+<div class="line"><span class="lineno">   48</span>            <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="a00379.html">mix::assetsystem::mixAsset_folder</a>*<span class="keyword">&gt;</span> (<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>mixAsset_item*<span class="keyword">&gt;</span> (<a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>-&gt;get_value ()));</div>
+<div class="line"><span class="lineno">   49</span>            <a class="code hl_function" href="a00455.html#ae09d5047c26fd969a8f310221a8d4893">resolve_assets_impl</a> (root-&gt;get_path_as_str (), <a class="code hl_variable" href="a00455.html#ae1eb62cf209897c2dc65cc70474737d6">_assets</a>.get ());</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="ttc" id="aa00266_html_a3215f683b10314f5af3b5122d5e8bc41"><div class="ttname"><a href="a00266.html#a3215f683b10314f5af3b5122d5e8bc41">INFO</a></div><div class="ttdeci">#define INFO(s)</div><div class="ttdef"><b>Definition</b> <a href="a00266_source.html#l00011">debug.h:11</a></div></div>
+<div class="ttc" id="aa00455_html_ae09d5047c26fd969a8f310221a8d4893"><div class="ttname"><a href="a00455.html#ae09d5047c26fd969a8f310221a8d4893">mix::assetsystem::mixAsset_manager::resolve_assets_impl</a></div><div class="ttdeci">static void resolve_assets_impl(const std::string &amp;p, asset_tree_ptr node)</div><div class="ttdef"><b>Definition</b> <a href="a00113_source.html#l00053">mixAsset_manager.cpp:53</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00105">_assets</a>, <a class="el" href="a00266_source.html#l00011">INFO</a>, <a class="el" href="a00113_source.html#l00044">resolve_all_assets()</a>, and <a class="el" href="a00113_source.html#l00053">resolve_assets_impl()</a>.</p>
 
 </div>
 </div>
@@ -582,6 +735,18 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00054">54</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>            {</div>
+<div class="line"><span class="lineno">   56</span>                <a class="code hl_class" href="a00431.html">mix::assetsystem::mixAsset_loader_base</a>* loader = <a class="code hl_function" href="a00455.html#a745cc1f882643db428611de6d77878ae">get_loader</a> (file.<a class="code hl_function" href="a00611.html#a76436b673e504f5d3b907947ae029435">get_asset_type</a> ());</div>
+<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">return</span> loader-&gt;<a class="code hl_function" href="a00431.html#a9e5b0c68bb400022727566f0b0a0f797">resolve</a> (file);</div>
+<div class="line"><span class="lineno">   58</span>            }</div>
+<div class="ttc" id="aa00431_html"><div class="ttname"><a href="a00431.html">mix::assetsystem::mixAsset_loader_base</a></div><div class="ttdef"><b>Definition</b> <a href="a00080_source.html#l00019">mixAsset_loader_base.h:20</a></div></div>
+<div class="ttc" id="aa00431_html_a9e5b0c68bb400022727566f0b0a0f797"><div class="ttname"><a href="a00431.html#a9e5b0c68bb400022727566f0b0a0f797">mix::assetsystem::mixAsset_loader_base::resolve</a></div><div class="ttdeci">mixAsset_item * resolve(mix::platform::mixFile &amp;file)</div><div class="ttdef"><b>Definition</b> <a href="a00077_source.html#l00015">mixAsset_loader_base.cpp:15</a></div></div>
+<div class="ttc" id="aa00455_html_a745cc1f882643db428611de6d77878ae"><div class="ttname"><a href="a00455.html#a745cc1f882643db428611de6d77878ae">mix::assetsystem::mixAsset_manager::get_loader</a></div><div class="ttdeci">mix::assetsystem::mixAsset_loader_base * get_loader(const asset_type &amp;type) const noexcept</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00049">mixAsset_manager.h:49</a></div></div>
+<div class="ttc" id="aa00611_html_a76436b673e504f5d3b907947ae029435"><div class="ttname"><a href="a00611.html#a76436b673e504f5d3b907947ae029435">mix::platform::mixFile::get_asset_type</a></div><div class="ttdeci">const mix::assetsystem::asset_type get_asset_type() const</div><div class="ttdef"><b>Definition</b> <a href="a00311_source.html#l00039">mixFile.h:39</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00116_source.html#l00049">get_loader()</a>, and <a class="el" href="a00077_source.html#l00015">mix::assetsystem::mixAsset_loader_base::resolve()</a>.</p>
 
 </div>
 </div>
@@ -619,6 +784,40 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00113_source.html#l00053">53</a> of file <a class="el" href="a00113_source.html">mixAsset_manager.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>        {</div>
+<div class="line"><span class="lineno">   55</span>            <span class="comment">// root-&gt;get_path_as_str ()</span></div>
+<div class="line"><span class="lineno">   56</span>            <span class="keyword">auto</span> all_paths = <a class="code hl_function" href="a00615.html#a235348b21738003bfb2ada01b8c9abfa">mix::platform::platform_utils::get_files</a> (p, <a class="code hl_enumvalue" href="a00615.html#ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51">mix::platform::platform_utils::search_type::all</a>);</div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_define" href="a00266.html#a21a2c7330a04ac78200a986f66609369">DEBUG_LOG</a> (<span class="stringliteral">&quot;Resolving asset: &quot;</span> + p);</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> path : all_paths)</div>
+<div class="line"><span class="lineno">   60</span>            {</div>
+<div class="line"><span class="lineno">   61</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="a00615.html#a5ebf73c4ca3791956b3b2f2fe258e394">mix::platform::platform_utils::is_folder</a> (path))</div>
+<div class="line"><span class="lineno">   62</span>                {</div>
+<div class="line"><span class="lineno">   63</span>                    <span class="keyword">auto</span> folder = std::make_shared&lt;mix::assetsystem::mixAsset_folder&gt; (path);</div>
+<div class="line"><span class="lineno">   64</span>                    <span class="keyword">auto</span> guid = folder-&gt;get_guid ();</div>
+<div class="line"><span class="lineno">   65</span>                    <span class="keyword">auto</span> new_node = node-&gt;insert (guid, std::move (folder));</div>
+<div class="line"><span class="lineno">   66</span>                    <span class="comment">// TODO: add path join</span></div>
+<div class="line"><span class="lineno">   67</span>                    <a class="code hl_function" href="a00455.html#ae09d5047c26fd969a8f310221a8d4893">resolve_assets_impl</a> (path, new_node);</div>
+<div class="line"><span class="lineno">   68</span>                }</div>
+<div class="line"><span class="lineno">   69</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   70</span>                {</div>
+<div class="line"><span class="lineno">   71</span>                    <a class="code hl_class" href="a00611.html">mix::platform::mixFile</a> file{ path };</div>
+<div class="line"><span class="lineno">   72</span>                    mixAsset_item* asset = <a class="code hl_variable" href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">mixAsset_manager::instance</a>-&gt;<a class="code hl_function" href="a00455.html#a365a984964c2c8dc231729aa19dc8231">resolve_asset</a> (file);</div>
+<div class="line"><span class="lineno">   73</span>                    node-&gt;insert (asset-&gt;get_guid (), std::shared_ptr&lt;mixAsset_item&gt;{ asset });</div>
+<div class="line"><span class="lineno">   74</span>                    <a class="code hl_define" href="a00266.html#a21a2c7330a04ac78200a986f66609369">DEBUG_LOG</a> (<span class="stringliteral">&quot;\t Adding file: &quot;</span> + path);</div>
+<div class="line"><span class="lineno">   75</span>                }</div>
+<div class="line"><span class="lineno">   76</span>            }</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="ttc" id="aa00266_html_a21a2c7330a04ac78200a986f66609369"><div class="ttname"><a href="a00266.html#a21a2c7330a04ac78200a986f66609369">DEBUG_LOG</a></div><div class="ttdeci">#define DEBUG_LOG(...)</div><div class="ttdef"><b>Definition</b> <a href="a00266_source.html#l00008">debug.h:8</a></div></div>
+<div class="ttc" id="aa00455_html_a365a984964c2c8dc231729aa19dc8231"><div class="ttname"><a href="a00455.html#a365a984964c2c8dc231729aa19dc8231">mix::assetsystem::mixAsset_manager::resolve_asset</a></div><div class="ttdeci">mixAsset_item * resolve_asset(mix::platform::mixFile &amp;file) const noexcept</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00054">mixAsset_manager.h:54</a></div></div>
+<div class="ttc" id="aa00611_html"><div class="ttname"><a href="a00611.html">mix::platform::mixFile</a></div><div class="ttdef"><b>Definition</b> <a href="a00311_source.html#l00016">mixFile.h:17</a></div></div>
+<div class="ttc" id="aa00615_html_a235348b21738003bfb2ada01b8c9abfa"><div class="ttname"><a href="a00615.html#a235348b21738003bfb2ada01b8c9abfa">mix::platform::platform_utils::get_files</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_files(const std::string &amp;path, search_type search_type)</div><div class="ttdef"><b>Definition</b> <a href="a00317_source.html#l00023">platform_utils.h:23</a></div></div>
+<div class="ttc" id="aa00615_html_a5ebf73c4ca3791956b3b2f2fe258e394"><div class="ttname"><a href="a00615.html#a5ebf73c4ca3791956b3b2f2fe258e394">mix::platform::platform_utils::is_folder</a></div><div class="ttdeci">static bool is_folder(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> <a href="a00317_source.html#l00095">platform_utils.h:95</a></div></div>
+<div class="ttc" id="aa00615_html_ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51"><div class="ttname"><a href="a00615.html#ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51">mix::platform::platform_utils::search_type::all</a></div><div class="ttdeci">@ all</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00615.html#ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51">mix::platform::platform_utils::all</a>, <a class="el" href="a00266_source.html#l00008">DEBUG_LOG</a>, <a class="el" href="a00317_source.html#l00023">mix::platform::platform_utils::get_files()</a>, <a class="el" href="a00011_source.html#l00054">mix::assetsystem::mixAsset_item::get_guid()</a>, <a class="el" href="a00125_source.html#l00004">mix::containers::tree_node::insert()</a>, <a class="el" href="a00116_source.html#l00036">instance</a>, <a class="el" href="a00317_source.html#l00095">mix::platform::platform_utils::is_folder()</a>, <a class="el" href="a00116_source.html#l00054">resolve_asset()</a>, and <a class="el" href="a00113_source.html#l00053">resolve_assets_impl()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -642,6 +841,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00105">105</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+
 </div>
 </div>
 <a id="a66834caea19d3f49301f1172f428312d" name="a66834caea19d3f49301f1172f428312d"></a>
@@ -663,6 +864,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00104">104</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -686,11 +889,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00116_source.html#l00036">36</a> of file <a class="el" href="a00116_source.html">mixAsset_manager.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00116_source.html">mixAsset_manager.h</a></li>
-<li><a class="el" href="a00113.html">mixAsset_manager.cpp</a></li>
+<li><a class="el" href="a00113_source.html">mixAsset_manager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -698,7 +903,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00455.html">mixAsset_manager</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

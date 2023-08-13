@@ -796,7 +796,7 @@
     <member refid="a00531_1a99d1a503177e6e79df220da635d43888" kind="function"><name>window_rect</name></member>
     <member refid="a00531_1afd5d4986d64ec14cd799034104e68059" kind="function"><name>operator==</name></member>
   </compound>
-  <compound refid="a00367" kind="namespace"><name>@114</name>
+  <compound refid="a00367" kind="namespace"><name>@116</name>
   </compound>
   <compound refid="a00350" kind="namespace"><name>mix</name>
   </compound>

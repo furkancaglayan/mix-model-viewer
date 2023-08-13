@@ -65,8 +65,8 @@
   <option  id='INLINE_SIMPLE_STRUCTS' default='yes' type='bool'><value>NO</value></option>
   <option  id='TYPEDEF_HIDES_STRUCT' default='yes' type='bool'><value>NO</value></option>
   <option  id='LOOKUP_CACHE_SIZE' default='yes' type='int'><value>0</value></option>
-  <option  id='NUM_PROC_THREADS' default='yes' type='int'><value>1</value></option>
-  <option  id='TIMESTAMP' default='yes' type='string'><value>NO</value></option>
+  <option  id='NUM_PROC_THREADS' default='no' type='int'><value>4</value></option>
+  <option  id='TIMESTAMP' default='no' type='string'><value>DATE</value></option>
   <option  id='EXTRACT_ALL' default='no' type='bool'><value>YES</value></option>
   <option  id='EXTRACT_PRIVATE' default='no' type='bool'><value>YES</value></option>
   <option  id='EXTRACT_PRIV_VIRTUAL' default='no' type='bool'><value>YES</value></option>
@@ -198,11 +198,11 @@
   </option>
   <option  id='USE_MDFILE_AS_MAINPAGE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='FORTRAN_COMMENT_AFTER' default='yes' type='int'><value>72</value></option>
-  <option  id='SOURCE_BROWSER' default='yes' type='bool'><value>NO</value></option>
-  <option  id='INLINE_SOURCES' default='yes' type='bool'><value>NO</value></option>
+  <option  id='SOURCE_BROWSER' default='no' type='bool'><value>YES</value></option>
+  <option  id='INLINE_SOURCES' default='no' type='bool'><value>YES</value></option>
   <option  id='STRIP_CODE_COMMENTS' default='yes' type='bool'><value>YES</value></option>
   <option  id='REFERENCED_BY_RELATION' default='yes' type='bool'><value>NO</value></option>
-  <option  id='REFERENCES_RELATION' default='yes' type='bool'><value>NO</value></option>
+  <option  id='REFERENCES_RELATION' default='no' type='bool'><value>YES</value></option>
   <option  id='REFERENCES_LINK_SOURCE' default='yes' type='bool'><value>YES</value></option>
   <option  id='SOURCE_TOOLTIPS' default='yes' type='bool'><value>YES</value></option>
   <option  id='USE_HTAGS' default='yes' type='bool'><value>NO</value></option>

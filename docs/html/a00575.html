@@ -121,7 +121,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad99cfb5e2a718625b69f245ef54dd49a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00575.html#a4bea634a0fbcf2ad8ec35e7b580eebf4">_action_list_base</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a></td></tr>
 <tr class="separator:ad99cfb5e2a718625b69f245ef54dd49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00272_source.html#l00008">8</a> of file <a class="el" href="a00272_source.html">event.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4bea634a0fbcf2ad8ec35e7b580eebf4" name="a4bea634a0fbcf2ad8ec35e7b580eebf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bea634a0fbcf2ad8ec35e7b580eebf4">&#9670;&#160;</a></span>_action_list_base</h2>
 
@@ -133,6 +136,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00272_source.html#l00012">12</a> of file <a class="el" href="a00272_source.html">event.h</a>.</p>
 
 </div>
 </div>
@@ -161,6 +166,19 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00003">3</a> of file <a class="el" href="a00269_source.html">event.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span>    <span class="keyword">typename</span> _action_list_base::iterator position = std::find (<a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.begin (), <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.end (), action);</div>
+<div class="line"><span class="lineno">    6</span> </div>
+<div class="line"><span class="lineno">    7</span>    <span class="keywordflow">if</span> (position == <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.end ())</div>
+<div class="line"><span class="lineno">    8</span>    {</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.push_back (action);</div>
+<div class="line"><span class="lineno">   10</span>    }</div>
+<div class="line"><span class="lineno">   11</span>}</div>
+<div class="ttc" id="aa00575_html_ad99cfb5e2a718625b69f245ef54dd49a"><div class="ttname"><a href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">mix::library::event_base::_actions</a></div><div class="ttdeci">_action_list_base _actions</div><div class="ttdef"><b>Definition</b> <a href="a00272_source.html#l00020">event.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00272_source.html#l00020">_actions</a>.</p>
+
 </div>
 </div>
 <a id="ae4fd6b1b7f288a8cac344b23d3f22711" name="ae4fd6b1b7f288a8cac344b23d3f22711"></a>
@@ -186,6 +204,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00023">23</a> of file <a class="el" href="a00269_source.html">event.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">for</span> (ievent_callback_base* action : <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>)</div>
+<div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>        (*action) ();</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b08eaffdd225300da1de749503fe4e6" name="a7b08eaffdd225300da1de749503fe4e6"></a>
@@ -212,6 +238,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00013">13</a> of file <a class="el" href="a00269_source.html">event.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keyword">typename</span> _action_list_base::iterator position = std::find (<a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.begin (), <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.end (), action);</div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (position != <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.end ())</div>
+<div class="line"><span class="lineno">   18</span>    {</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="a00575.html#ad99cfb5e2a718625b69f245ef54dd49a">_actions</a>.erase (position);</div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -235,11 +271,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00272_source.html#l00020">20</a> of file <a class="el" href="a00272_source.html">event.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00272_source.html">event.h</a></li>
-<li><a class="el" href="a00269.html">event.cpp</a></li>
+<li><a class="el" href="a00269_source.html">event.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -247,7 +285,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00362.html">library</a></li><li class="navelem"><a class="el" href="a00575.html">event_base</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

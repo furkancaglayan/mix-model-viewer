@@ -135,7 +135,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7a683239413abb652849898a9249616f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a></td></tr>
 <tr class="separator:a7a683239413abb652849898a9249616f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00017">17</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8840240077b652830454430ecd694ea7" name="a8840240077b652830454430ecd694ea7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8840240077b652830454430ecd694ea7">&#9670;&#160;</a></span>mixGuid()</h2>
 
@@ -160,6 +163,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00161_source.html#l00003">3</a> of file <a class="el" href="a00161_source.html">mixGuid.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                       : <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a>{ std::move (val) }</div>
+<div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span> </div>
+<div class="line"><span class="lineno">    6</span>}</div>
+<div class="ttc" id="aa00487_html_a7a683239413abb652849898a9249616f"><div class="ttname"><a href="a00487.html#a7a683239413abb652849898a9249616f">mix::core::mixGuid::_internal</a></div><div class="ttdeci">std::string _internal</div><div class="ttdef"><b>Definition</b> <a href="a00164_source.html#l00060">mixGuid.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -186,6 +196,26 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00161_source.html#l00008">8</a> of file <a class="el" href="a00161_source.html">mixGuid.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>    GUID guid;</div>
+<div class="line"><span class="lineno">   11</span>    HRESULT hCreateGuid = CoCreateGuid (&amp;guid);</div>
+<div class="line"><span class="lineno">   12</span>    <span class="comment">// DATA1: refers to first 8 digits</span></div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// DATA2: refers to first group of 4 digits</span></div>
+<div class="line"><span class="lineno">   14</span>    <span class="comment">// DATA3: refers to second group of 4 digits:</span></div>
+<div class="line"><span class="lineno">   15</span>    <span class="comment">// DATA4:</span></div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    OLECHAR* guidString;</div>
+<div class="line"><span class="lineno">   18</span>    HRESULT result = StringFromCLSID (guid, &amp;guidString);</div>
+<div class="line"><span class="lineno">   19</span>    std::string str = <a class="code hl_function" href="a00615.html#a1f7d00ced82da501de72f821ddc21754">mix::platform::platform_utils::convert_wide_to_utf8</a> (guidString);</div>
+<div class="line"><span class="lineno">   20</span>    CoTaskMemFree (guidString);</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="a00487.html#a8840240077b652830454430ecd694ea7">mixGuid</a>{ str };</div>
+<div class="line"><span class="lineno">   22</span>}</div>
+<div class="ttc" id="aa00487_html_a8840240077b652830454430ecd694ea7"><div class="ttname"><a href="a00487.html#a8840240077b652830454430ecd694ea7">mix::core::mixGuid::mixGuid</a></div><div class="ttdeci">mixGuid(std::string &amp;val)</div><div class="ttdef"><b>Definition</b> <a href="a00161_source.html#l00003">mixGuid.cpp:3</a></div></div>
+<div class="ttc" id="aa00615_html_a1f7d00ced82da501de72f821ddc21754"><div class="ttname"><a href="a00615.html#a1f7d00ced82da501de72f821ddc21754">mix::platform::platform_utils::convert_wide_to_utf8</a></div><div class="ttdeci">static std::string convert_wide_to_utf8(const wchar_t *wstr)</div><div class="ttdef"><b>Definition</b> <a href="a00317_source.html#l00137">platform_utils.h:137</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00317_source.html#l00137">mix::platform::platform_utils::convert_wide_to_utf8()</a>.</p>
+
 </div>
 </div>
 <a id="a19426b53ce97f9a2476a623ee44cee24" name="a19426b53ce97f9a2476a623ee44cee24"></a>
@@ -211,6 +241,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00022">22</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>            {</div>
+<div class="line"><span class="lineno">   24</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a>;</div>
+<div class="line"><span class="lineno">   25</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
+
 </div>
 </div>
 <a id="a420c1faf3752af3f97e405c54f177c79" name="a420c1faf3752af3f97e405c54f177c79"></a>
@@ -235,6 +272,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00053">53</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>            {</div>
+<div class="line"><span class="lineno">   55</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a>;</div>
+<div class="line"><span class="lineno">   56</span>            } <span class="comment">// overloaded typecast operator</span></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
 
 </div>
 </div>
@@ -262,6 +306,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00031">31</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>            {</div>
+<div class="line"><span class="lineno">   33</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a>.compare (p._internal);</div>
+<div class="line"><span class="lineno">   34</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
+
 </div>
 </div>
 <a id="a13c19d15ca078afb919e1402e0396703" name="a13c19d15ca078afb919e1402e0396703"></a>
@@ -287,6 +338,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00036">36</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>            {</div>
+<div class="line"><span class="lineno">   38</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a> &lt; p._internal;</div>
+<div class="line"><span class="lineno">   39</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
 
 </div>
 </div>
@@ -314,6 +372,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00047">47</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>            {</div>
+<div class="line"><span class="lineno">   49</span>                <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a> = t._internal;</div>
+<div class="line"><span class="lineno">   50</span>                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   51</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
+
 </div>
 </div>
 <a id="a92b41e36bc9d45d71a7291020dfdf82a" name="a92b41e36bc9d45d71a7291020dfdf82a"></a>
@@ -339,6 +405,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00026">26</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>            {</div>
+<div class="line"><span class="lineno">   28</span>                <span class="keywordflow">return</span> !<a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a>.compare (p._internal);</div>
+<div class="line"><span class="lineno">   29</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
 
 </div>
 </div>
@@ -366,6 +439,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00042">42</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>            {</div>
+<div class="line"><span class="lineno">   44</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00487.html#a7a683239413abb652849898a9249616f">_internal</a> &gt; p._internal;</div>
+<div class="line"><span class="lineno">   45</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00164_source.html#l00060">_internal</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -389,11 +469,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00164_source.html#l00060">60</a> of file <a class="el" href="a00164_source.html">mixGuid.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00164_source.html">mixGuid.h</a></li>
-<li><a class="el" href="a00161.html">mixGuid.cpp</a></li>
+<li><a class="el" href="a00161_source.html">mixGuid.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -401,7 +483,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00356.html">core</a></li><li class="navelem"><a class="el" href="a00487.html">mixGuid</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

@@ -119,7 +119,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:aaef7aa3f9f471b74fb5c71c6dde9a1f6"><td class="memItemLeft" align="right" valign="top">static const std::unordered_map&lt; std::string, <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3">asset_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00375.html#aaef7aa3f9f471b74fb5c71c6dde9a1f6">extension_map</a></td></tr>
 <tr class="separator:aaef7aa3f9f471b74fb5c71c6dde9a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00062_source.html#l00023">23</a> of file <a class="el" href="a00062_source.html">asset_types.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a743eedafd7980c15495cfdbcd00aace6" name="a743eedafd7980c15495cfdbcd00aace6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a743eedafd7980c15495cfdbcd00aace6">&#9670;&#160;</a></span>asset_types()</h2>
 
@@ -170,6 +173,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00062_source.html#l00040">40</a> of file <a class="el" href="a00062_source.html">asset_types.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>            {</div>
+<div class="line"><span class="lineno">   42</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="a00375.html#aaef7aa3f9f471b74fb5c71c6dde9a1f6">extension_map</a>.count (ext))</div>
+<div class="line"><span class="lineno">   43</span>                {</div>
+<div class="line"><span class="lineno">   44</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;default_&quot;</span> + ext;</div>
+<div class="line"><span class="lineno">   45</span>                }</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;default_other&quot;</span>;</div>
+<div class="line"><span class="lineno">   48</span>            };</div>
+<div class="ttc" id="aa00375_html_aaef7aa3f9f471b74fb5c71c6dde9a1f6"><div class="ttname"><a href="a00375.html#aaef7aa3f9f471b74fb5c71c6dde9a1f6">mix::assetsystem::asset_types::extension_map</a></div><div class="ttdeci">static const std::unordered_map&lt; std::string, asset_type &gt; extension_map</div><div class="ttdef"><b>Definition</b> <a href="a00062_source.html#l00052">asset_types.h:52</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00062_source.html#l00052">extension_map</a>.</p>
+
 </div>
 </div>
 <a id="a3f3eaf8da9397b7cbb36b0772b1d08cf" name="a3f3eaf8da9397b7cbb36b0772b1d08cf"></a>
@@ -195,6 +211,19 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00062_source.html#l00029">29</a> of file <a class="el" href="a00062_source.html">asset_types.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>            {</div>
+<div class="line"><span class="lineno">   31</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="a00375.html#aaef7aa3f9f471b74fb5c71c6dde9a1f6">extension_map</a>.count (ext))</div>
+<div class="line"><span class="lineno">   32</span>                {</div>
+<div class="line"><span class="lineno">   33</span>                    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00375.html#aaef7aa3f9f471b74fb5c71c6dde9a1f6">extension_map</a>.at (ext);</div>
+<div class="line"><span class="lineno">   34</span>                }</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">asset_type::Other</a>;</div>
+<div class="line"><span class="lineno">   37</span>            };</div>
+<div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">mix::assetsystem::asset_type::Other</a></div><div class="ttdeci">@ Other</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00062_source.html#l00052">extension_map</a>, and <a class="el" href="a00351.html#a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387">mix::assetsystem::Other</a>.</p>
 
 </div>
 </div>
@@ -234,11 +263,13 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b">mix::assetsystem::asset_type::Texture</a></div><div class="ttdeci">@ Texture</div></div>
 <div class="ttc" id="aa00351_html_a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660"><div class="ttname"><a href="a00351.html#a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660">mix::assetsystem::asset_type::Shader</a></div><div class="ttdeci">@ Shader</div></div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="a00062_source.html#l00052">52</a> of file <a class="el" href="a00062_source.html">asset_types.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00062_source.html">asset_types.h</a></li>
-<li><a class="el" href="a00059.html">asset_types.cpp</a></li>
+<li><a class="el" href="a00059_source.html">asset_types.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -246,7 +277,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00375.html">asset_types</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

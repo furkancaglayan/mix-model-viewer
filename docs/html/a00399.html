@@ -122,7 +122,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a33410da725d20d8a4e44a261787b4f70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00399.html#a33410da725d20d8a4e44a261787b4f70">~shader</a> ()=delete</td></tr>
 <tr class="separator:a33410da725d20d8a4e44a261787b4f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00009">9</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="abd1f544bb198dba5e8e127a4c88d2a3c" name="abd1f544bb198dba5e8e127a4c88d2a3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd1f544bb198dba5e8e127a4c88d2a3c">&#9670;&#160;</a></span>shader_type</h2>
 
@@ -148,6 +151,16 @@ Private Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3" name="abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3"></a>invalid&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00016">16</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>        {</div>
+<div class="line"><span class="lineno">   18</span>            <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a">vertex</a> = GL_VERTEX_SHADER,</div>
+<div class="line"><span class="lineno">   19</span>            <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1">fragment</a> = GL_FRAGMENT_SHADER,</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3">invalid</a></div>
+<div class="line"><span class="lineno">   21</span>        };</div>
+<div class="ttc" id="aa00399_html_abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1"><div class="ttname"><a href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1">mix::shader::shader_type::fragment</a></div><div class="ttdeci">@ fragment</div></div>
+<div class="ttc" id="aa00399_html_abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a"><div class="ttname"><a href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a">mix::shader::shader_type::vertex</a></div><div class="ttdeci">@ vertex</div></div>
+<div class="ttc" id="aa00399_html_abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3">mix::shader::shader_type::invalid</a></div><div class="ttdeci">@ invalid</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -226,6 +239,22 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00035_source.html#l00022">22</a> of file <a class="el" href="a00035_source.html">mixShader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>        {</div>
+<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">if</span> (ext == <span class="stringliteral">&quot;vert&quot;</span>)</div>
+<div class="line"><span class="lineno">   25</span>            {</div>
+<div class="line"><span class="lineno">   26</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a">shader_type::vertex</a>;</div>
+<div class="line"><span class="lineno">   27</span>            }</div>
+<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ext == <span class="stringliteral">&quot;frag&quot;</span>)</div>
+<div class="line"><span class="lineno">   29</span>            {</div>
+<div class="line"><span class="lineno">   30</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1">shader_type::fragment</a>;</div>
+<div class="line"><span class="lineno">   31</span>            }</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3">shader_type::invalid</a>;</div>
+<div class="line"><span class="lineno">   34</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca02e918fc72837d7c2689be88684dceb1">fragment</a>, <a class="el" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3cafedb2d84cafe20862cb4399751a8a7e3">invalid</a>, and <a class="el" href="a00399.html#abd1f544bb198dba5e8e127a4c88d2a3ca2b5bc093b09bd81f51de433bde9d202a">vertex</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -237,7 +266,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00399.html">shader</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

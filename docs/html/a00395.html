@@ -177,7 +177,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00607.html">mix::platform::mixAsset_path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a></td></tr>
 <tr class="separator:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00016">16</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd35f140db41ccead3313221ac7c8df3" name="acd35f140db41ccead3313221ac7c8df3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd35f140db41ccead3313221ac7c8df3">&#9670;&#160;</a></span>mixMesh()</h2>
 
@@ -210,6 +213,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00003">3</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>: <a class="code hl_variable" href="a00395.html#a6cfe37c273b7b89965e49d8b12fe5b9d">_vertices</a>{ std::move (vertices) }, <a class="code hl_variable" href="a00395.html#a280d98c9697cbca05ce9e5a735c3a217">_indices</a>{ std::move (indices) }, <a class="code hl_class" href="a00383.html">mix::assetsystem::mixAsset_item</a> (path)</div>
+<div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>    <span class="comment">// TODO: Assign default materials</span></div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_function" href="a00395.html#a74e02ec7ad85dc63e2ec2b87ef2d0ee0">initialize_mesh</a> ();</div>
+<div class="line"><span class="lineno">    8</span>}</div>
+<div class="ttc" id="aa00383_html"><div class="ttname"><a href="a00383.html">mix::assetsystem::mixAsset_item</a></div><div class="ttdoc">Support multiple extensions.</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00017">mixAsset_item.h:18</a></div></div>
+<div class="ttc" id="aa00395_html_a280d98c9697cbca05ce9e5a735c3a217"><div class="ttname"><a href="a00395.html#a280d98c9697cbca05ce9e5a735c3a217">mix::assetsystem::mixMesh::_indices</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; _indices</div><div class="ttdef"><b>Definition</b> <a href="a00029_source.html#l00036">mixMesh.h:36</a></div></div>
+<div class="ttc" id="aa00395_html_a6cfe37c273b7b89965e49d8b12fe5b9d"><div class="ttname"><a href="a00395.html#a6cfe37c273b7b89965e49d8b12fe5b9d">mix::assetsystem::mixMesh::_vertices</a></div><div class="ttdeci">std::vector&lt; vertex &gt; _vertices</div><div class="ttdef"><b>Definition</b> <a href="a00029_source.html#l00035">mixMesh.h:35</a></div></div>
+<div class="ttc" id="aa00395_html_a74e02ec7ad85dc63e2ec2b87ef2d0ee0"><div class="ttname"><a href="a00395.html#a74e02ec7ad85dc63e2ec2b87ef2d0ee0">mix::assetsystem::mixMesh::initialize_mesh</a></div><div class="ttdeci">void initialize_mesh()</div><div class="ttdef"><b>Definition</b> <a href="a00026_source.html#l00043">mixMesh.cpp:43</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00026_source.html#l00043">initialize_mesh()</a>.</p>
+
 </div>
 </div>
 <a id="a0c5c7f21f26955a5c0d25313bb6f6bc1" name="a0c5c7f21f26955a5c0d25313bb6f6bc1"></a>
@@ -227,6 +243,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00010">10</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
+<div class="line"><span class="lineno">   12</span>    glDeleteVertexArrays (1, &amp;<a class="code hl_variable" href="a00395.html#a1e10482d3efc0f344b6890e830df7084">VAO</a>);</div>
+<div class="line"><span class="lineno">   13</span>    glDeleteBuffers (1, &amp;<a class="code hl_variable" href="a00395.html#a62bfd51d88bc885f71975d9c6920fd70">VBO</a>);</div>
+<div class="line"><span class="lineno">   14</span>    glDeleteBuffers (1, &amp;<a class="code hl_variable" href="a00395.html#abd0fd72c39b028c695af4ac699958c66">EBO</a>);</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aa00395_html_a1e10482d3efc0f344b6890e830df7084"><div class="ttname"><a href="a00395.html#a1e10482d3efc0f344b6890e830df7084">mix::assetsystem::mixMesh::VAO</a></div><div class="ttdeci">unsigned VAO</div><div class="ttdef"><b>Definition</b> <a href="a00029_source.html#l00032">mixMesh.h:32</a></div></div>
+<div class="ttc" id="aa00395_html_a62bfd51d88bc885f71975d9c6920fd70"><div class="ttname"><a href="a00395.html#a62bfd51d88bc885f71975d9c6920fd70">mix::assetsystem::mixMesh::VBO</a></div><div class="ttdeci">unsigned VBO</div><div class="ttdef"><b>Definition</b> <a href="a00029_source.html#l00033">mixMesh.h:33</a></div></div>
+<div class="ttc" id="aa00395_html_abd0fd72c39b028c695af4ac699958c66"><div class="ttname"><a href="a00395.html#abd0fd72c39b028c695af4ac699958c66">mix::assetsystem::mixMesh::EBO</a></div><div class="ttdeci">unsigned EBO</div><div class="ttdef"><b>Definition</b> <a href="a00029_source.html#l00034">mixMesh.h:34</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -245,6 +271,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00033">33</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00395.html#abd0fd72c39b028c695af4ac699958c66">EBO</a>;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6683f0f8ae8c897ad65e8b5a9a66d7c5" name="a6683f0f8ae8c897ad65e8b5a9a66d7c5"></a>
@@ -262,6 +293,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00018">18</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00395.html#a280d98c9697cbca05ce9e5a735c3a217">_indices</a>;</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa9ce4d73c9b65cbee83184f88e5dbef0" name="aa9ce4d73c9b65cbee83184f88e5dbef0"></a>
@@ -279,6 +315,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00028">28</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00395.html#a1e10482d3efc0f344b6890e830df7084">VAO</a>;</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae3882e4feaed8aebe992dbe79017ecd8" name="ae3882e4feaed8aebe992dbe79017ecd8"></a>
@@ -296,6 +337,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00038">38</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00395.html#a62bfd51d88bc885f71975d9c6920fd70">VBO</a>;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e05c31861973047f0804f7e886f0712" name="a9e05c31861973047f0804f7e886f0712"></a>
@@ -313,6 +359,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00023">23</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00395.html#a6cfe37c273b7b89965e49d8b12fe5b9d">_vertices</a>;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a74e02ec7ad85dc63e2ec2b87ef2d0ee0" name="a74e02ec7ad85dc63e2ec2b87ef2d0ee0"></a>
@@ -330,6 +381,40 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00026_source.html#l00043">43</a> of file <a class="el" href="a00026_source.html">mixMesh.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    glGenVertexArrays (1, &amp;<a class="code hl_variable" href="a00395.html#a1e10482d3efc0f344b6890e830df7084">VAO</a>);</div>
+<div class="line"><span class="lineno">   46</span>    glGenBuffers (1, &amp;<a class="code hl_variable" href="a00395.html#a62bfd51d88bc885f71975d9c6920fd70">VBO</a>);</div>
+<div class="line"><span class="lineno">   47</span>    glGenBuffers (1, &amp;<a class="code hl_variable" href="a00395.html#abd0fd72c39b028c695af4ac699958c66">EBO</a>);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    glBindVertexArray (<a class="code hl_variable" href="a00395.html#a1e10482d3efc0f344b6890e830df7084">VAO</a>);</div>
+<div class="line"><span class="lineno">   50</span>    glBindBuffer (GL_ARRAY_BUFFER, <a class="code hl_variable" href="a00395.html#a62bfd51d88bc885f71975d9c6920fd70">VBO</a>);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    glBufferData (GL_ARRAY_BUFFER, <a class="code hl_variable" href="a00395.html#a6cfe37c273b7b89965e49d8b12fe5b9d">_vertices</a>.size () * sizeof (<a class="code hl_struct" href="a00603.html">vertex</a>), &amp;<a class="code hl_variable" href="a00395.html#a6cfe37c273b7b89965e49d8b12fe5b9d">_vertices</a>[0], GL_STATIC_DRAW);</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    glBindBuffer (GL_ELEMENT_ARRAY_BUFFER, <a class="code hl_variable" href="a00395.html#abd0fd72c39b028c695af4ac699958c66">EBO</a>);</div>
+<div class="line"><span class="lineno">   55</span>    glBufferData (GL_ELEMENT_ARRAY_BUFFER, <a class="code hl_variable" href="a00395.html#a280d98c9697cbca05ce9e5a735c3a217">_indices</a>.size () * sizeof (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>), &amp;<a class="code hl_variable" href="a00395.html#a280d98c9697cbca05ce9e5a735c3a217">_indices</a>[0], GL_STATIC_DRAW);</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// vertex positions</span></div>
+<div class="line"><span class="lineno">   58</span>    glEnableVertexAttribArray (0);</div>
+<div class="line"><span class="lineno">   59</span>    glVertexAttribPointer (0, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span> (<a class="code hl_struct" href="a00603.html">vertex</a>), (<span class="keywordtype">void</span>*) 0);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// vertex normals</span></div>
+<div class="line"><span class="lineno">   61</span>    glEnableVertexAttribArray (1);</div>
+<div class="line"><span class="lineno">   62</span>    glVertexAttribPointer (1, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span> (<a class="code hl_struct" href="a00603.html">vertex</a>), (<span class="keywordtype">void</span>*) offsetof (<a class="code hl_struct" href="a00603.html">vertex</a>, _normal));</div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// vertex texture coords</span></div>
+<div class="line"><span class="lineno">   64</span>    glEnableVertexAttribArray (2);</div>
+<div class="line"><span class="lineno">   65</span>    glVertexAttribPointer (2, 2, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span> (<a class="code hl_struct" href="a00603.html">vertex</a>), (<span class="keywordtype">void</span>*) offsetof (<a class="code hl_struct" href="a00603.html">vertex</a>, _tex_coords));</div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// vertex tangents</span></div>
+<div class="line"><span class="lineno">   67</span>    glEnableVertexAttribArray (3);</div>
+<div class="line"><span class="lineno">   68</span>    glVertexAttribPointer (3, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span> (<a class="code hl_struct" href="a00603.html">vertex</a>), (<span class="keywordtype">void</span>*) offsetof (<a class="code hl_struct" href="a00603.html">vertex</a>, _tangent));</div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// vertex bitangents</span></div>
+<div class="line"><span class="lineno">   70</span>    glEnableVertexAttribArray (4);</div>
+<div class="line"><span class="lineno">   71</span>    glVertexAttribPointer (4, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span> (<a class="code hl_struct" href="a00603.html">vertex</a>), (<span class="keywordtype">void</span>*) offsetof (<a class="code hl_struct" href="a00603.html">vertex</a>, _bitangent));</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    glBindVertexArray (0);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aa00603_html"><div class="ttname"><a href="a00603.html">mix::math::vertex</a></div><div class="ttdef"><b>Definition</b> <a href="a00299_source.html#l00009">vertex.h:10</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -353,6 +438,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00036">36</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
+
 </div>
 </div>
 <a id="a6cfe37c273b7b89965e49d8b12fe5b9d" name="a6cfe37c273b7b89965e49d8b12fe5b9d"></a>
@@ -374,6 +461,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00035">35</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
 
 </div>
 </div>
@@ -397,6 +486,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00034">34</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
+
 </div>
 </div>
 <a id="a1e10482d3efc0f344b6890e830df7084" name="a1e10482d3efc0f344b6890e830df7084"></a>
@@ -418,6 +509,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00032">32</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
 
 </div>
 </div>
@@ -441,11 +534,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00029_source.html#l00033">33</a> of file <a class="el" href="a00029_source.html">mixMesh.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00029_source.html">mixMesh.h</a></li>
-<li><a class="el" href="a00026.html">mixMesh.cpp</a></li>
+<li><a class="el" href="a00026_source.html">mixMesh.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -453,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00395.html">mixMesh</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

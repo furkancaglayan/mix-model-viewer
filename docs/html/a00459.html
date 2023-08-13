@@ -131,7 +131,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1c4fbbae9977213bf1ab614605c5a5d1"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a></td></tr>
 <tr class="separator:a1c4fbbae9977213bf1ab614605c5a5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00122_source.html#l00012">12</a> of file <a class="el" href="a00122_source.html">frame_buffer.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae84d5b64a44ccc4986d8472f60bd3ca7" name="ae84d5b64a44ccc4986d8472f60bd3ca7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae84d5b64a44ccc4986d8472f60bd3ca7">&#9670;&#160;</a></span>frame_buffer()</h2>
 
@@ -158,6 +161,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00004">4</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_function" href="a00459.html#adeab5dc1a1d527264b7c06a7de94318d">initialize</a> (w, h);</div>
+<div class="line"><span class="lineno">    7</span>}</div>
+<div class="ttc" id="aa00459_html_adeab5dc1a1d527264b7c06a7de94318d"><div class="ttname"><a href="a00459.html#adeab5dc1a1d527264b7c06a7de94318d">mix::containers::frame_buffer::initialize</a></div><div class="ttdeci">void initialize(int w, int h)</div><div class="ttdef"><b>Definition</b> <a href="a00119_source.html#l00044">frame_buffer.cpp:44</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00119_source.html#l00044">initialize()</a>.</p>
+
 </div>
 </div>
 <a id="aee00d5bb634b8c1a2be8b21ff177ccdd" name="aee00d5bb634b8c1a2be8b21ff177ccdd"></a>
@@ -175,6 +186,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00009">9</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>{</div>
+<div class="line"><span class="lineno">   11</span>    glDeleteFramebuffers (1, &amp;<a class="code hl_variable" href="a00459.html#a26d98f631eee679f6d5694065dcfb5b3">_fbo</a>);</div>
+<div class="line"><span class="lineno">   12</span>    glDeleteTextures (1, &amp;<a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>);</div>
+<div class="line"><span class="lineno">   13</span>    glDeleteRenderbuffers (1, &amp;<a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   14</span>}</div>
+<div class="ttc" id="aa00459_html_a1c4fbbae9977213bf1ab614605c5a5d1"><div class="ttname"><a href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">mix::containers::frame_buffer::_render_buffer</a></div><div class="ttdeci">unsigned _render_buffer</div><div class="ttdef"><b>Definition</b> <a href="a00122_source.html#l00031">frame_buffer.h:31</a></div></div>
+<div class="ttc" id="aa00459_html_a26d98f631eee679f6d5694065dcfb5b3"><div class="ttname"><a href="a00459.html#a26d98f631eee679f6d5694065dcfb5b3">mix::containers::frame_buffer::_fbo</a></div><div class="ttdeci">unsigned _fbo</div><div class="ttdef"><b>Definition</b> <a href="a00122_source.html#l00029">frame_buffer.h:29</a></div></div>
+<div class="ttc" id="aa00459_html_a4fc407b913a123544072818dd351ef1a"><div class="ttname"><a href="a00459.html#a4fc407b913a123544072818dd351ef1a">mix::containers::frame_buffer::_render_texture</a></div><div class="ttdeci">unsigned _render_texture</div><div class="ttdef"><b>Definition</b> <a href="a00122_source.html#l00030">frame_buffer.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -193,6 +214,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00016">16</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>{</div>
+<div class="line"><span class="lineno">   18</span>    glBindFramebuffer (GL_FRAMEBUFFER, <a class="code hl_variable" href="a00459.html#a26d98f631eee679f6d5694065dcfb5b3">_fbo</a>);</div>
+<div class="line"><span class="lineno">   19</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a81360f3bd714b31a6b021f7b60260d35" name="a81360f3bd714b31a6b021f7b60260d35"></a>
@@ -210,6 +236,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00039">39</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>;</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adeab5dc1a1d527264b7c06a7de94318d" name="adeab5dc1a1d527264b7c06a7de94318d"></a>
@@ -246,6 +277,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00044">44</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>    glGenFramebuffers (1, &amp;<a class="code hl_variable" href="a00459.html#a26d98f631eee679f6d5694065dcfb5b3">_fbo</a>);</div>
+<div class="line"><span class="lineno">   47</span>    glBindFramebuffer (GL_FRAMEBUFFER, <a class="code hl_variable" href="a00459.html#a26d98f631eee679f6d5694065dcfb5b3">_fbo</a>);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    glGenTextures (1, &amp;<a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>);</div>
+<div class="line"><span class="lineno">   50</span>    glBindTexture (GL_TEXTURE_2D, <a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>);</div>
+<div class="line"><span class="lineno">   51</span>    glTexImage2D (GL_TEXTURE_2D, 0, GL_RGB, w, h, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);</div>
+<div class="line"><span class="lineno">   52</span>    glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);</div>
+<div class="line"><span class="lineno">   53</span>    glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);</div>
+<div class="line"><span class="lineno">   54</span>    glFramebufferTexture2D (GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, <a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>, 0);</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    glGenRenderbuffers (1, &amp;<a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   58</span>    glBindRenderbuffer (GL_RENDERBUFFER, <a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   59</span>    glRenderbufferStorage (GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, w, h);</div>
+<div class="line"><span class="lineno">   60</span>    glFramebufferRenderbuffer (GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, <a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (glCheckFramebufferStatus (GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)</div>
+<div class="line"><span class="lineno">   64</span>    {</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_define" href="a00266.html#a7ebf4c3b4fb05d6f9094089ded75cbdd">LOG_ERROR</a> (<span class="stringliteral">&quot;Framebuffer is not complete!&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="line"><span class="lineno">   67</span>    glBindFramebuffer (GL_FRAMEBUFFER, 0);</div>
+<div class="line"><span class="lineno">   68</span>    glBindTexture (GL_TEXTURE_2D, 0);</div>
+<div class="line"><span class="lineno">   69</span>    glBindVertexArray (0);</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+<div class="ttc" id="aa00266_html_a7ebf4c3b4fb05d6f9094089ded75cbdd"><div class="ttname"><a href="a00266.html#a7ebf4c3b4fb05d6f9094089ded75cbdd">LOG_ERROR</a></div><div class="ttdeci">#define LOG_ERROR(msg)</div><div class="ttdef"><b>Definition</b> <a href="a00266_source.html#l00009">debug.h:9</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00266_source.html#l00009">LOG_ERROR</a>.</p>
+
 </div>
 </div>
 <a id="a14b03d467829cc02755a5190ca1da8f2" name="a14b03d467829cc02755a5190ca1da8f2"></a>
@@ -274,6 +336,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00026">26</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    glBindTexture (GL_TEXTURE_2D, <a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>);</div>
+<div class="line"><span class="lineno">   29</span>    glTexImage2D (GL_TEXTURE_2D, 0, GL_RGB, w, h, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);</div>
+<div class="line"><span class="lineno">   30</span>    glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);</div>
+<div class="line"><span class="lineno">   31</span>    glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);</div>
+<div class="line"><span class="lineno">   32</span>    glFramebufferTexture2D (GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, <a class="code hl_variable" href="a00459.html#a4fc407b913a123544072818dd351ef1a">_render_texture</a>, 0);</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    glBindRenderbuffer (GL_RENDERBUFFER, <a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   35</span>    glRenderbufferStorage (GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, w, h);</div>
+<div class="line"><span class="lineno">   36</span>    glFramebufferRenderbuffer (GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, <a class="code hl_variable" href="a00459.html#a1c4fbbae9977213bf1ab614605c5a5d1">_render_buffer</a>);</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a93c1a81f72fc0588b39772438fd352ad" name="a93c1a81f72fc0588b39772438fd352ad"></a>
@@ -291,6 +366,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00119_source.html#l00021">21</a> of file <a class="el" href="a00119_source.html">frame_buffer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    glBindFramebuffer (GL_FRAMEBUFFER, 0);</div>
+<div class="line"><span class="lineno">   24</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -314,6 +394,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00122_source.html#l00029">29</a> of file <a class="el" href="a00122_source.html">frame_buffer.h</a>.</p>
+
 </div>
 </div>
 <a id="a1c4fbbae9977213bf1ab614605c5a5d1" name="a1c4fbbae9977213bf1ab614605c5a5d1"></a>
@@ -335,6 +417,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00122_source.html#l00031">31</a> of file <a class="el" href="a00122_source.html">frame_buffer.h</a>.</p>
 
 </div>
 </div>
@@ -358,11 +442,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00122_source.html#l00030">30</a> of file <a class="el" href="a00122_source.html">frame_buffer.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00122_source.html">frame_buffer.h</a></li>
-<li><a class="el" href="a00119.html">frame_buffer.cpp</a></li>
+<li><a class="el" href="a00119_source.html">frame_buffer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -370,7 +456,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00354.html">containers</a></li><li class="navelem"><a class="el" href="a00459.html">frame_buffer</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

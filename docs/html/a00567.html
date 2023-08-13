@@ -139,7 +139,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a0df7a6cb3cfabd6081c4cd6eae5662aa"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="a00567.html#a83713d2f4086271f7280fe15041a4a38">w_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a></td></tr>
 <tr class="separator:a0df7a6cb3cfabd6081c4cd6eae5662aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00260_source.html#l00009">9</a> of file <a class="el" href="a00260_source.html">mixGui.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a83713d2f4086271f7280fe15041a4a38" name="a83713d2f4086271f7280fe15041a4a38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83713d2f4086271f7280fe15041a4a38">&#9670;&#160;</a></span>w_ptr</h2>
 
@@ -159,6 +162,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00260_source.html#l00011">11</a> of file <a class="el" href="a00260_source.html">mixGui.h</a>.</p>
 
 </div>
 </div>
@@ -203,6 +208,20 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00131">131</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    ImGuiIO&amp; io = ImGui::GetIO ();</div>
+<div class="line"><span class="lineno">  134</span>    ImFont* im_font = io.Fonts-&gt;AddFontFromFileTTF (font-&gt;<a class="code hl_function" href="a00383.html#a2bb7fcb2693b6fd89ac22f4d40371f76">get_path</a> ().c_str (), 20);</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (set_default)</div>
+<div class="line"><span class="lineno">  137</span>    {</div>
+<div class="line"><span class="lineno">  138</span>        io.FontDefault = im_font;</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="line"><span class="lineno">  140</span>}</div>
+<div class="ttc" id="aa00383_html_a2bb7fcb2693b6fd89ac22f4d40371f76"><div class="ttname"><a href="a00383.html#a2bb7fcb2693b6fd89ac22f4d40371f76">mix::assetsystem::mixAsset_item::get_path</a></div><div class="ttdeci">virtual const std::string &amp; get_path() const</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00036">mixAsset_item.h:36</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00036">mix::assetsystem::mixAsset_item::get_path()</a>.</p>
+
 </div>
 </div>
 <a id="a79d97b87e7d22231df25bbe376ec5811" name="a79d97b87e7d22231df25bbe376ec5811"></a>
@@ -231,6 +250,17 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00260_source.html#l00022">22</a> of file <a class="el" href="a00260_source.html">mixGui.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>        {</div>
+<div class="line"><span class="lineno">   24</span>            <span class="keyword">auto</span> w = std::unique_ptr&lt;T&gt; (t);</div>
+<div class="line"><span class="lineno">   25</span>            <span class="keyword">auto</span> wp = w.get ();</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_variable" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a>.emplace_back (std::move (w));</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keywordflow">return</span> wp;</div>
+<div class="line"><span class="lineno">   28</span>        }</div>
+<div class="ttc" id="aa00567_html_a0df7a6cb3cfabd6081c4cd6eae5662aa"><div class="ttname"><a href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">mixImGui::mixGui::_windows</a></div><div class="ttdeci">static std::vector&lt; w_ptr &gt; _windows</div><div class="ttdef"><b>Definition</b> <a href="a00260_source.html#l00048">mixGui.h:48</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00260_source.html#l00048">_windows</a>.</p>
+
 </div>
 </div>
 <a id="abf87adcc32912ac7b7adce5be606ace4" name="abf87adcc32912ac7b7adce5be606ace4"></a>
@@ -256,6 +286,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00112">112</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    ImGui_ImplOpenGL3_NewFrame ();</div>
+<div class="line"><span class="lineno">  115</span>    ImGui_ImplGlfw_NewFrame ();</div>
+<div class="line"><span class="lineno">  116</span>    ImGui::NewFrame ();</div>
+<div class="line"><span class="lineno">  117</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a70f6cdc1b5cded571939407cd233eb02" name="a70f6cdc1b5cded571939407cd233eb02"></a>
@@ -281,6 +318,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00119">119</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    ImGui::Render ();</div>
+<div class="line"><span class="lineno">  122</span>    ImGui_ImplOpenGL3_RenderDrawData (ImGui::GetDrawData ());</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae6c2ea9acb6de9a0e782795bf76a3526" name="ae6c2ea9acb6de9a0e782795bf76a3526"></a>
@@ -308,6 +351,21 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00260_source.html#l00031">31</a> of file <a class="el" href="a00260_source.html">mixGui.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>        {</div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; window : <a class="code hl_variable" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a>)</div>
+<div class="line"><span class="lineno">   34</span>            {</div>
+<div class="line"><span class="lineno">   35</span>                <span class="keyword">auto</span>* p = <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span> (window.get());</div>
+<div class="line"><span class="lineno">   36</span>                <span class="keywordflow">if</span> (p)</div>
+<div class="line"><span class="lineno">   37</span>                {</div>
+<div class="line"><span class="lineno">   38</span>                    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   39</span>                }</div>
+<div class="line"><span class="lineno">   40</span>            }</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00260_source.html#l00048">_windows</a>.</p>
+
 </div>
 </div>
 <a id="a2ea1d198d6c137621b97a24d7681ed04" name="a2ea1d198d6c137621b97a24d7681ed04"></a>
@@ -333,6 +391,92 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00006">6</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>    IMGUI_CHECKVERSION ();</div>
+<div class="line"><span class="lineno">    9</span>    ImGui::CreateContext ();</div>
+<div class="line"><span class="lineno">   10</span>    ImGuiIO&amp; io = ImGui::GetIO ();</div>
+<div class="line"><span class="lineno">   11</span>    (void) io;</div>
+<div class="line"><span class="lineno">   12</span>    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; <span class="comment">// Enable Keyboard Controls</span></div>
+<div class="line"><span class="lineno">   13</span>    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  <span class="comment">// Enable Gamepad Controls</span></div>
+<div class="line"><span class="lineno">   14</span>    <span class="keyword">auto</span>&amp; style = ImGui::GetStyle ();</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_function" href="a00547.html#a8a9a0c92bd2daf197b427a7ab5dfe036">gui_style::get_default_dark_style</a> (style);</div>
+<div class="line"><span class="lineno">   16</span>    <span class="comment">// Setup Dear ImGui style</span></div>
+<div class="line"><span class="lineno">   17</span>    <span class="comment">/* ImGui::StyleColorsDark ();</span></div>
+<div class="line"><span class="lineno">   18</span><span class="comment">    auto&amp; style = ImGui::GetStyle ();</span></div>
+<div class="line"><span class="lineno">   19</span><span class="comment">    ImVec4* colors = style.Colors;</span></div>
+<div class="line"><span class="lineno">   20</span><span class="comment">    const ImVec4 bgColor = ImVec4 (0.1f, 0.1f, 0.1f, 0.5f);</span></div>
+<div class="line"><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   22</span><span class="comment">    colors[ImGuiCol_Text] = ImVec4 (0.99f, 0.99f, 0.99f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   23</span><span class="comment">    colors[ImGuiCol_TextDisabled] = ImVec4 (0.35f, 0.35f, 0.35f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   24</span><span class="comment">    colors[ImGuiCol_WindowBg] = ImVec4 (0.1f, 0.1f, 0.1f, 0.96f);</span></div>
+<div class="line"><span class="lineno">   25</span><span class="comment">    colors[ImGuiCol_ChildBg] = ImVec4 (0.00f, 0.00f, 0.00f, 0.00f);</span></div>
+<div class="line"><span class="lineno">   26</span><span class="comment">    colors[ImGuiCol_PopupBg] = ImVec4 (0.08f, 0.08f, 0.08f, 0.94f);</span></div>
+<div class="line"><span class="lineno">   27</span><span class="comment">    colors[ImGuiCol_Border] = ImVec4 (0.00f, 0.00f, 0.00f, 0.50f);</span></div>
+<div class="line"><span class="lineno">   28</span><span class="comment">    colors[ImGuiCol_BorderShadow] = ImVec4 (0.00f, 0.00f, 0.00f, 0.8f);</span></div>
+<div class="line"><span class="lineno">   29</span><span class="comment">    colors[ImGuiCol_FrameBg] = ImVec4 (0.00f, 0.00f, 0.00f, 0.54f);</span></div>
+<div class="line"><span class="lineno">   30</span><span class="comment">    colors[ImGuiCol_FrameBgHovered] = ImVec4 (0.37f, 0.14f, 0.14f, 0.67f);</span></div>
+<div class="line"><span class="lineno">   31</span><span class="comment">    colors[ImGuiCol_FrameBgActive] = ImVec4 (0.39f, 0.20f, 0.20f, 0.67f);</span></div>
+<div class="line"><span class="lineno">   32</span><span class="comment">    colors[ImGuiCol_TitleBg] = ImVec4 (0.04f, 0.04f, 0.04f, 0.8f);</span></div>
+<div class="line"><span class="lineno">   33</span><span class="comment">    colors[ImGuiCol_TitleBgActive] = ImVec4 (0.48f, 0.16f, 0.16f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   34</span><span class="comment">    colors[ImGuiCol_TitleBgCollapsed] = ImVec4 (0.48f, 0.16f, 0.16f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   35</span><span class="comment">    colors[ImGuiCol_MenuBarBg] = ImVec4 (0.14f, 0.14f, 0.14f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   36</span><span class="comment">    colors[ImGuiCol_ScrollbarBg] = ImVec4 (0.02f, 0.02f, 0.02f, 0.53f);</span></div>
+<div class="line"><span class="lineno">   37</span><span class="comment">    colors[ImGuiCol_ScrollbarGrab] = ImVec4 (0.31f, 0.31f, 0.31f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   38</span><span class="comment">    colors[ImGuiCol_ScrollbarGrabHovered] = ImVec4 (0.41f, 0.41f, 0.41f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   39</span><span class="comment">    colors[ImGuiCol_ScrollbarGrabActive] = ImVec4 (0.51f, 0.51f, 0.51f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   40</span><span class="comment">    colors[ImGuiCol_CheckMark] = ImVec4 (0.56f, 0.10f, 0.10f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   41</span><span class="comment">    colors[ImGuiCol_SliderGrab] = ImVec4 (1.00f, 0.19f, 0.19f, 0.40f);</span></div>
+<div class="line"><span class="lineno">   42</span><span class="comment">    colors[ImGuiCol_SliderGrabActive] = ImVec4 (0.89f, 0.00f, 0.19f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   43</span><span class="comment">    colors[ImGuiCol_Button] = ImVec4 (1.00f, 0.19f, 0.19f, 0.40f);</span></div>
+<div class="line"><span class="lineno">   44</span><span class="comment">    colors[ImGuiCol_ButtonHovered] = ImVec4 (0.80f, 0.17f, 0.00f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   45</span><span class="comment">    colors[ImGuiCol_ButtonActive] = ImVec4 (0.89f, 0.00f, 0.19f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   46</span><span class="comment">    colors[ImGuiCol_Header] = ImVec4 (0.76f, 0.28f, 0.44f, 0.37f);</span></div>
+<div class="line"><span class="lineno">   47</span><span class="comment">    colors[ImGuiCol_HeaderHovered] = ImVec4 (0.76f, 0.28f, 0.44f, 0.57f);</span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment">    colors[ImGuiCol_HeaderActive] = ImVec4 (0.76f, 0.28f, 0.44f, 0.57f);</span></div>
+<div class="line"><span class="lineno">   49</span><span class="comment">    colors[ImGuiCol_Separator] = ImVec4 (0.32f, 0.32f, 0.32f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   50</span><span class="comment">    colors[ImGuiCol_SeparatorHovered] = ImVec4 (0.32f, 0.32f, 0.32f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   51</span><span class="comment">    colors[ImGuiCol_SeparatorActive] = ImVec4 (0.32f, 0.32f, 0.32f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   52</span><span class="comment">    colors[ImGuiCol_ResizeGrip] = ImVec4 (1.00f, 1.00f, 1.00f, 0.85f);</span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment">    colors[ImGuiCol_ResizeGripHovered] = ImVec4 (1.00f, 1.00f, 1.00f, 0.60f);</span></div>
+<div class="line"><span class="lineno">   54</span><span class="comment">    colors[ImGuiCol_ResizeGripActive] = ImVec4 (1.00f, 1.00f, 1.00f, 0.90f);</span></div>
+<div class="line"><span class="lineno">   55</span><span class="comment">    colors[ImGuiCol_Tab] = ImVec4 (0.07f, 0.07f, 0.07f, 0.51f);</span></div>
+<div class="line"><span class="lineno">   56</span><span class="comment">    colors[ImGuiCol_TabHovered] = ImVec4 (0.86f, 0.23f, 0.43f, 0.67f);</span></div>
+<div class="line"><span class="lineno">   57</span><span class="comment">    colors[ImGuiCol_TabActive] = ImVec4 (0.19f, 0.19f, 0.19f, 0.57f);</span></div>
+<div class="line"><span class="lineno">   58</span><span class="comment">    colors[ImGuiCol_TabUnfocused] = ImVec4 (0.05f, 0.05f, 0.05f, 0.90f);</span></div>
+<div class="line"><span class="lineno">   59</span><span class="comment">    colors[ImGuiCol_TabUnfocusedActive] = ImVec4 (0.13f, 0.13f, 0.13f, 0.74f);</span></div>
+<div class="line"><span class="lineno">   60</span><span class="comment">    colors[ImGuiCol_PlotLines] = ImVec4 (0.61f, 0.61f, 0.61f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   61</span><span class="comment">    colors[ImGuiCol_PlotLinesHovered] = ImVec4 (1.00f, 0.43f, 0.35f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   62</span><span class="comment">    colors[ImGuiCol_PlotHistogram] = ImVec4 (0.90f, 0.70f, 0.00f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   63</span><span class="comment">    colors[ImGuiCol_PlotHistogramHovered] = ImVec4 (1.00f, 0.60f, 0.00f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   64</span><span class="comment">    colors[ImGuiCol_TableHeaderBg] = ImVec4 (0.19f, 0.19f, 0.20f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   65</span><span class="comment">    colors[ImGuiCol_TableBorderStrong] = ImVec4 (0.31f, 0.31f, 0.35f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   66</span><span class="comment">    colors[ImGuiCol_TableBorderLight] = ImVec4 (0.23f, 0.23f, 0.25f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   67</span><span class="comment">    colors[ImGuiCol_TableRowBg] = ImVec4 (0.00f, 0.00f, 0.00f, 0.00f);</span></div>
+<div class="line"><span class="lineno">   68</span><span class="comment">    colors[ImGuiCol_TableRowBgAlt] = ImVec4 (1.00f, 1.00f, 1.00f, 0.07f);</span></div>
+<div class="line"><span class="lineno">   69</span><span class="comment">    colors[ImGuiCol_TextSelectedBg] = ImVec4 (0.26f, 0.59f, 0.98f, 0.35f);</span></div>
+<div class="line"><span class="lineno">   70</span><span class="comment">    colors[ImGuiCol_DragDropTarget] = ImVec4 (1.00f, 1.00f, 0.00f, 0.90f);</span></div>
+<div class="line"><span class="lineno">   71</span><span class="comment">    colors[ImGuiCol_NavHighlight] = ImVec4 (0.26f, 0.59f, 0.98f, 1.00f);</span></div>
+<div class="line"><span class="lineno">   72</span><span class="comment">    colors[ImGuiCol_NavWindowingHighlight] = ImVec4 (1.00f, 1.00f, 1.00f, 0.70f);</span></div>
+<div class="line"><span class="lineno">   73</span><span class="comment">    colors[ImGuiCol_NavWindowingDimBg] = ImVec4 (0.80f, 0.80f, 0.80f, 0.20f);</span></div>
+<div class="line"><span class="lineno">   74</span><span class="comment">    colors[ImGuiCol_ModalWindowDimBg] = ImVec4 (0.80f, 0.80f, 0.80f, 0.35f);</span></div>
+<div class="line"><span class="lineno">   75</span><span class="comment">   style.FrameRounding = 4;</span></div>
+<div class="line"><span class="lineno">   76</span><span class="comment">   style.IndentSpacing = 12.0f;</span></div>
+<div class="line"><span class="lineno">   77</span><span class="comment">   style.WindowRounding = 4.0f;</span></div>
+<div class="line"><span class="lineno">   78</span><span class="comment">   style.ChildRounding = 4.0f;</span></div>
+<div class="line"><span class="lineno">   79</span><span class="comment">   style.PopupRounding = 2.0f;</span></div>
+<div class="line"><span class="lineno">   80</span><span class="comment">   style.TabRounding = 4.0f;</span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment">   style.ScrollbarRounding = 4.0f;</span></div>
+<div class="line"><span class="lineno">   82</span><span class="comment">    // ImGui::StyleColorsLight();*/</span></div>
+<div class="line"><span class="lineno">   83</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* glsl_version = <span class="stringliteral">&quot;#version 130&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// Setup Platform/Renderer backends</span></div>
+<div class="line"><span class="lineno">   85</span>    ImGui_ImplGlfw_InitForOpenGL (window, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   86</span>    ImGui_ImplOpenGL3_Init (glsl_version);</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aa00547_html_a8a9a0c92bd2daf197b427a7ab5dfe036"><div class="ttname"><a href="a00547.html#a8a9a0c92bd2daf197b427a7ab5dfe036">mixImGui::gui_style::get_default_dark_style</a></div><div class="ttdeci">static ImGuiStyle get_default_dark_style(ImGuiStyle &amp;imgui_style)</div><div class="ttdef"><b>Definition</b> <a href="a00227_source.html#l00104">gui_style.cpp:104</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00227_source.html#l00104">mixImGui::gui_style::get_default_dark_style()</a>.</p>
 
 </div>
 </div>
@@ -360,6 +504,15 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00103">103</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; win : <a class="code hl_variable" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a>)</div>
+<div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        win-&gt;on_editor_window_size_changed (size);</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span>    </div>
+<div class="line"><span class="lineno">  110</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97982cfbbbc8f5a2af0d95d2e719273e" name="a97982cfbbbc8f5a2af0d95d2e719273e"></a>
@@ -386,6 +539,22 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00089">89</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="a00567.html#abf87adcc32912ac7b7adce5be606ace4">begin</a> ();</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">//mixImGui::mixGui::show_style_editor (ImGui::GetStyle ());</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="a00567.html#a0df7a6cb3cfabd6081c4cd6eae5662aa">_windows</a>.at (i)-&gt;render ();</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="a00567.html#a70f6cdc1b5cded571939407cd233eb02">end</a> ();</div>
+<div class="line"><span class="lineno">  101</span>}</div>
+<div class="ttc" id="aa00567_html_a70f6cdc1b5cded571939407cd233eb02"><div class="ttname"><a href="a00567.html#a70f6cdc1b5cded571939407cd233eb02">mixImGui::mixGui::end</a></div><div class="ttdeci">static void end()</div><div class="ttdef"><b>Definition</b> <a href="a00257_source.html#l00119">mixGui.cpp:119</a></div></div>
+<div class="ttc" id="aa00567_html_abf87adcc32912ac7b7adce5be606ace4"><div class="ttname"><a href="a00567.html#abf87adcc32912ac7b7adce5be606ace4">mixImGui::mixGui::begin</a></div><div class="ttdeci">static void begin()</div><div class="ttdef"><b>Definition</b> <a href="a00257_source.html#l00112">mixGui.cpp:112</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aed3860d8a06913972b2d52472cc5c40a" name="aed3860d8a06913972b2d52472cc5c40a"></a>
@@ -412,6 +581,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00125">125</a> of file <a class="el" href="a00257_source.html">mixGui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordtype">bool</span> a = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  128</span>    ImGui::ShowDemoWindow (&amp;a);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -435,11 +610,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00260_source.html#l00048">48</a> of file <a class="el" href="a00260_source.html">mixGui.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00260_source.html">mixGui.h</a></li>
-<li><a class="el" href="a00257.html">mixGui.cpp</a></li>
+<li><a class="el" href="a00257_source.html">mixGui.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -447,7 +624,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00361.html">mixImGui</a></li><li class="navelem"><a class="el" href="a00567.html">mixGui</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

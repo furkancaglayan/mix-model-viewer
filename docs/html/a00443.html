@@ -135,7 +135,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac534294fc9ee8370fa8d4ac0e017bf8c inherit pro_attribs_a00431"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="a00371.html">mix::assetsystem::asset_processor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00431.html#ac534294fc9ee8370fa8d4ac0e017bf8c">_asset_processor</a></td></tr>
 <tr class="separator:ac534294fc9ee8370fa8d4ac0e017bf8c inherit pro_attribs_a00431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00098_source.html#l00012">12</a> of file <a class="el" href="a00098_source.html">mixAsset_loader_shader.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6d8647ea310c82eb6c82ee7ec64d199b" name="a6d8647ea310c82eb6c82ee7ec64d199b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d8647ea310c82eb6c82ee7ec64d199b">&#9670;&#160;</a></span>resolve_impl()</h2>
 
@@ -162,11 +165,24 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="a00431.html#aa940694a035ddc265556740e357f311f">mix::assetsystem::mixAsset_loader_base</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="a00095_source.html#l00010">10</a> of file <a class="el" href="a00095_source.html">mixAsset_loader_shader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>            {</div>
+<div class="line"><span class="lineno">   12</span>                <span class="keyword">auto</span> type = <a class="code hl_function" href="a00399.html#aa08b7d08664a6d8a1bb499a50ebe31fc">mix::shader::get_shader_type</a> (file.<a class="code hl_function" href="a00611.html#ad0c854de5d00feac1c52568386715991">get_extension</a>());</div>
+<div class="line"><span class="lineno">   13</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="a00403.html">mix::assetsystem::mixShader</a> (file.<a class="code hl_function" href="a00611.html#a5ba930c554591f7004b93a1a979fff8e">get_path</a> (), file.<a class="code hl_function" href="a00611.html#a88c176804db619d0ae8d401d5338e127">read_all_text</a> (), type);</div>
+<div class="line"><span class="lineno">   14</span>            }</div>
+<div class="ttc" id="aa00399_html_aa08b7d08664a6d8a1bb499a50ebe31fc"><div class="ttname"><a href="a00399.html#aa08b7d08664a6d8a1bb499a50ebe31fc">mix::shader::get_shader_type</a></div><div class="ttdeci">static shader_type get_shader_type(const std::string &amp;ext)</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00022">mixShader.h:22</a></div></div>
+<div class="ttc" id="aa00403_html"><div class="ttname"><a href="a00403.html">mix::assetsystem::mixShader</a></div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00039">mixShader.h:40</a></div></div>
+<div class="ttc" id="aa00611_html_a5ba930c554591f7004b93a1a979fff8e"><div class="ttname"><a href="a00611.html#a5ba930c554591f7004b93a1a979fff8e">mix::platform::mixFile::get_path</a></div><div class="ttdeci">const std::string &amp; get_path() const</div><div class="ttdef"><b>Definition</b> <a href="a00311_source.html#l00050">mixFile.h:50</a></div></div>
+<div class="ttc" id="aa00611_html_a88c176804db619d0ae8d401d5338e127"><div class="ttname"><a href="a00611.html#a88c176804db619d0ae8d401d5338e127">mix::platform::mixFile::read_all_text</a></div><div class="ttdeci">std::string read_all_text()</div><div class="ttdef"><b>Definition</b> <a href="a00308_source.html#l00082">mixFile.cpp:82</a></div></div>
+<div class="ttc" id="aa00611_html_ad0c854de5d00feac1c52568386715991"><div class="ttname"><a href="a00611.html#ad0c854de5d00feac1c52568386715991">mix::platform::mixFile::get_extension</a></div><div class="ttdeci">const std::string &amp; get_extension() const</div><div class="ttdef"><b>Definition</b> <a href="a00311_source.html#l00034">mixFile.h:34</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00311_source.html#l00034">mix::platform::mixFile::get_extension()</a>, <a class="el" href="a00311_source.html#l00050">mix::platform::mixFile::get_path()</a>, <a class="el" href="a00035_source.html#l00022">mix::shader::get_shader_type()</a>, and <a class="el" href="a00308_source.html#l00082">mix::platform::mixFile::read_all_text()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00098_source.html">mixAsset_loader_shader.h</a></li>
-<li><a class="el" href="a00095.html">mixAsset_loader_shader.cpp</a></li>
+<li><a class="el" href="a00095_source.html">mixAsset_loader_shader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -174,7 +190,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00353.html">loaders</a></li><li class="navelem"><a class="el" href="a00443.html">mixAsset_loader_shader</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

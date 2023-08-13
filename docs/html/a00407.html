@@ -187,7 +187,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00607.html">mix::platform::mixAsset_path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a></td></tr>
 <tr class="separator:a0ebce5f5d9da7f50795b9519c63e629b inherit pro_attribs_a00383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00011">11</a> of file <a class="el" href="a00041_source.html">mixShader_program.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac8c197b3e79183830b7fe453f633c27d" name="ac8c197b3e79183830b7fe453f633c27d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8c197b3e79183830b7fe453f633c27d">&#9670;&#160;</a></span>shader</h2>
 
@@ -207,6 +210,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00013">13</a> of file <a class="el" href="a00041_source.html">mixShader_program.h</a>.</p>
 
 </div>
 </div>
@@ -242,6 +247,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00004">4</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    5</span>: <a class="code hl_class" href="a00383.html">mix::assetsystem::mixAsset_item</a> (path)</div>
+<div class="line"><span class="lineno">    6</span>{</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_function" href="a00407.html#a058daf02da9350e45a855f1ef9cf787f">compile</a> (vertex_shader, fragment_shader);</div>
+<div class="line"><span class="lineno">    8</span>}</div>
+<div class="ttc" id="aa00383_html"><div class="ttname"><a href="a00383.html">mix::assetsystem::mixAsset_item</a></div><div class="ttdoc">Support multiple extensions.</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00017">mixAsset_item.h:18</a></div></div>
+<div class="ttc" id="aa00407_html_a058daf02da9350e45a855f1ef9cf787f"><div class="ttname"><a href="a00407.html#a058daf02da9350e45a855f1ef9cf787f">mix::assetsystem::mixShader_program::compile</a></div><div class="ttdeci">void compile(shader *vertex_shader, shader *fragment_shader)</div><div class="ttdef"><b>Definition</b> <a href="a00038_source.html#l00026">mixShader_program.cpp:26</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00038_source.html#l00026">compile()</a>.</p>
 
 </div>
 </div>
@@ -285,6 +300,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00011">11</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
+<div class="line"><span class="lineno">   13</span>    glDeleteProgram (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>);</div>
+<div class="line"><span class="lineno">   14</span>}</div>
+<div class="ttc" id="aa00407_html_aed6e069ce177a5c345efb2bcb6c97c3c"><div class="ttname"><a href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">mix::assetsystem::mixShader_program::program_id</a></div><div class="ttdeci">unsigned program_id</div><div class="ttdef"><b>Definition</b> <a href="a00041_source.html#l00041">mixShader_program.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -314,6 +335,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00026">26</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a> = glCreateProgram ();</div>
+<div class="line"><span class="lineno">   29</span>    glAttachShader (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>, vertex_shader-&gt;get_shader_id ());</div>
+<div class="line"><span class="lineno">   30</span>    glAttachShader (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>, fragment_shader-&gt;get_shader_id ());</div>
+<div class="line"><span class="lineno">   31</span>    glLinkProgram (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>);</div>
+<div class="line"><span class="lineno">   32</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00032_source.html#l00048">mix::assetsystem::mixShader::get_shader_id()</a>.</p>
+
 </div>
 </div>
 <a id="aa2edd465696615aaa293cef858ff64ce" name="aa2edd465696615aaa293cef858ff64ce"></a>
@@ -331,6 +362,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00070">70</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>;</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65bcb4b07e5fa6f5de97d086208c43bc" name="a65bcb4b07e5fa6f5de97d086208c43bc"></a>
@@ -349,6 +385,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00021">21</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> glGetUniformLocation (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>, s);</div>
+<div class="line"><span class="lineno">   24</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affac0c3e92ee77b97619d2dbd51a03bc" name="affac0c3e92ee77b97619d2dbd51a03bc"></a>
@@ -367,6 +408,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00016">16</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>{</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">return</span> glGetUniformLocation (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>, s.c_str ());</div>
+<div class="line"><span class="lineno">   19</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b106383811aeb6dad8f8d3cac6d6a25" name="a9b106383811aeb6dad8f8d3cac6d6a25"></a>
@@ -395,6 +441,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00039">39</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    glUniform1f (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), f);</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+<div class="ttc" id="aa00407_html_affac0c3e92ee77b97619d2dbd51a03bc"><div class="ttname"><a href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">mix::assetsystem::mixShader_program::get_uniform_location</a></div><div class="ttdeci">const unsigned get_uniform_location(const std::string &amp;s) const</div><div class="ttdef"><b>Definition</b> <a href="a00038_source.html#l00016">mixShader_program.cpp:16</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a31ee5a7413bfcdda3e3537f1c3ec8483" name="a31ee5a7413bfcdda3e3537f1c3ec8483"></a>
@@ -423,6 +475,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00044">44</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>    glUniform1i (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), i);</div>
+<div class="line"><span class="lineno">   47</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aea0cd6a091273bc86aa3b4f32a397a5b" name="aea0cd6a091273bc86aa3b4f32a397a5b"></a>
@@ -451,6 +508,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00059">59</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{</div>
+<div class="line"><span class="lineno">   61</span>    glUniformMatrix3fv (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), 1, <span class="keyword">false</span>, &amp;mat[0][0]);</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab73ab38a3643a02f3d2ab1e84941f409" name="ab73ab38a3643a02f3d2ab1e84941f409"></a>
@@ -479,6 +541,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00064">64</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    glUniformMatrix4fv (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), 1, <span class="keyword">false</span>, &amp;mat[0][0]);</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae823f06998e61b2c52ba38914923ce9b" name="ae823f06998e61b2c52ba38914923ce9b"></a>
@@ -507,6 +574,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00049">49</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
+<div class="line"><span class="lineno">   51</span>    glUniform3f (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), vec.x, vec.y, vec.z);</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb698255d1674ba867a080703aa04f8c" name="afb698255d1674ba867a080703aa04f8c"></a>
@@ -535,6 +607,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00054">54</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    glUniform4f (<a class="code hl_function" href="a00407.html#affac0c3e92ee77b97619d2dbd51a03bc">get_uniform_location</a> (s), vec.x, vec.y, vec.z, vec.w);</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd39437f5876f766acdcf6925991663a" name="afd39437f5876f766acdcf6925991663a"></a>
@@ -552,6 +629,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00038_source.html#l00034">34</a> of file <a class="el" href="a00038_source.html">mixShader_program.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
+<div class="line"><span class="lineno">   36</span>    glUseProgram (<a class="code hl_variable" href="a00407.html#aed6e069ce177a5c345efb2bcb6c97c3c">program_id</a>);</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -575,11 +657,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00041">41</a> of file <a class="el" href="a00041_source.html">mixShader_program.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00041_source.html">mixShader_program.h</a></li>
-<li><a class="el" href="a00038.html">mixShader_program.cpp</a></li>
+<li><a class="el" href="a00038_source.html">mixShader_program.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -587,7 +671,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00407.html">mixShader_program</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

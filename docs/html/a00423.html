@@ -111,7 +111,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7615b0cf81c2e602a53f7c4e50b0c42f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00423.html#a7615b0cf81c2e602a53f7c4e50b0c42f">default_assets</a> ()=delete</td></tr>
 <tr class="separator:a7615b0cf81c2e602a53f7c4e50b0c42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="a00068_source.html#l00012">12</a> of file <a class="el" href="a00068_source.html">default_assets.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7615b0cf81c2e602a53f7c4e50b0c42f" name="a7615b0cf81c2e602a53f7c4e50b0c42f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7615b0cf81c2e602a53f7c4e50b0c42f">&#9670;&#160;</a></span>default_assets()</h2>
 
@@ -162,11 +165,31 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00065_source.html#l00005">5</a> of file <a class="el" href="a00065_source.html">default_assets.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>{</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_define" href="a00266.html#a821326052e3e2bf1fb2d678e9e9a6004">ASSERT</a> (<a class="code hl_variable" href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">mixAsset_manager::instance</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">    8</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_class" href="a00419.html">mix::assetsystem::mixTexture</a>* t = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="a00419.html">mix::assetsystem::mixTexture</a>*<span class="keyword">&gt;</span>(item))</div>
+<div class="line"><span class="lineno">    9</span>    {</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">return</span> t;</div>
+<div class="line"><span class="lineno">   11</span>    }</div>
+<div class="line"><span class="lineno">   12</span>    <span class="keyword">auto</span> name = <a class="code hl_function" href="a00375.html#a138b9956cd75429054f2788f1d553427">asset_types::get_asset_default_icon_name</a> (item-&gt;<a class="code hl_function" href="a00383.html#a6e6d736bbc390e6a4544d96c8ef94065">get_extension</a>());</div>
+<div class="line"><span class="lineno">   13</span>    <span class="keyword">auto</span> asset = <a class="code hl_variable" href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">mixAsset_manager::instance</a>-&gt;<a class="code hl_function" href="a00455.html#a18a84457368f1583c25d11c65d816ade">get_asset_with_base_name</a>&lt;<a class="code hl_class" href="a00419.html">mix::assetsystem::mixTexture</a>&gt; (name).get ();</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> asset;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aa00266_html_a821326052e3e2bf1fb2d678e9e9a6004"><div class="ttname"><a href="a00266.html#a821326052e3e2bf1fb2d678e9e9a6004">ASSERT</a></div><div class="ttdeci">#define ASSERT(...)</div><div class="ttdef"><b>Definition</b> <a href="a00266_source.html#l00006">debug.h:6</a></div></div>
+<div class="ttc" id="aa00375_html_a138b9956cd75429054f2788f1d553427"><div class="ttname"><a href="a00375.html#a138b9956cd75429054f2788f1d553427">mix::assetsystem::asset_types::get_asset_default_icon_name</a></div><div class="ttdeci">static const std::string get_asset_default_icon_name(const std::string &amp;ext)</div><div class="ttdef"><b>Definition</b> <a href="a00062_source.html#l00040">asset_types.h:40</a></div></div>
+<div class="ttc" id="aa00383_html_a6e6d736bbc390e6a4544d96c8ef94065"><div class="ttname"><a href="a00383.html#a6e6d736bbc390e6a4544d96c8ef94065">mix::assetsystem::mixAsset_item::get_extension</a></div><div class="ttdeci">const std::string &amp; get_extension() const</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00041">mixAsset_item.h:41</a></div></div>
+<div class="ttc" id="aa00419_html"><div class="ttname"><a href="a00419.html">mix::assetsystem::mixTexture</a></div><div class="ttdef"><b>Definition</b> <a href="a00047_source.html#l00073">mixTexture.h:74</a></div></div>
+<div class="ttc" id="aa00455_html_a18a84457368f1583c25d11c65d816ade"><div class="ttname"><a href="a00455.html#a18a84457368f1583c25d11c65d816ade">mix::assetsystem::mixAsset_manager::get_asset_with_base_name</a></div><div class="ttdeci">std::shared_ptr&lt; mixAsset_item &gt; get_asset_with_base_name(const std::string &amp;name) const</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00060">mixAsset_manager.h:60</a></div></div>
+<div class="ttc" id="aa00455_html_a78db6245156c814bbc9e983bfe02fa61"><div class="ttname"><a href="a00455.html#a78db6245156c814bbc9e983bfe02fa61">mix::assetsystem::mixAsset_manager::instance</a></div><div class="ttdeci">static mixAsset_manager * instance</div><div class="ttdef"><b>Definition</b> <a href="a00116_source.html#l00036">mixAsset_manager.h:36</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00266_source.html#l00006">ASSERT</a>, <a class="el" href="a00062_source.html#l00040">mix::assetsystem::asset_types::get_asset_default_icon_name()</a>, <a class="el" href="a00116_source.html#l00060">mix::assetsystem::mixAsset_manager::get_asset_with_base_name()</a>, <a class="el" href="a00011_source.html#l00041">mix::assetsystem::mixAsset_item::get_extension()</a>, and <a class="el" href="a00116_source.html#l00036">mix::assetsystem::mixAsset_manager::instance</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00068_source.html">default_assets.h</a></li>
-<li><a class="el" href="a00065.html">default_assets.cpp</a></li>
+<li><a class="el" href="a00065_source.html">default_assets.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -174,7 +197,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00423.html">default_assets</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

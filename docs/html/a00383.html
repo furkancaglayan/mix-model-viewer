@@ -158,6 +158,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Support multiple extensions. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00017">17</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae048c01047e4d14ed7fceff0755ab28a" name="ae048c01047e4d14ed7fceff0755ab28a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae048c01047e4d14ed7fceff0755ab28a">&#9670;&#160;</a></span>mixAsset_item() <span class="overload">[1/2]</span></h2>
@@ -183,6 +185,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00007">7</a> of file <a class="el" href="a00008_source.html">mixAsset_item.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>        : <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>{ std::move (path) }, <a class="code hl_variable" href="a00383.html#a5220a296886d6bb5a77b208f12aad817">_guid</a>{ <a class="code hl_function" href="a00487.html#a5577d7bea50303b025b612d36d6ea541">mix::core::mixGuid::create_new</a> () }</div>
+<div class="line"><span class="lineno">    9</span>        {</div>
+<div class="line"><span class="lineno">   10</span>        }</div>
+<div class="ttc" id="aa00383_html_a0ebce5f5d9da7f50795b9519c63e629b"><div class="ttname"><a href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">mix::assetsystem::mixAsset_item::_path</a></div><div class="ttdeci">mix::platform::mixAsset_path _path</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00066">mixAsset_item.h:66</a></div></div>
+<div class="ttc" id="aa00383_html_a5220a296886d6bb5a77b208f12aad817"><div class="ttname"><a href="a00383.html#a5220a296886d6bb5a77b208f12aad817">mix::assetsystem::mixAsset_item::_guid</a></div><div class="ttdeci">const mix::core::mixGuid _guid</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00064">mixAsset_item.h:64</a></div></div>
+<div class="ttc" id="aa00487_html_a5577d7bea50303b025b612d36d6ea541"><div class="ttname"><a href="a00487.html#a5577d7bea50303b025b612d36d6ea541">mix::core::mixGuid::create_new</a></div><div class="ttdeci">static mixGuid create_new()</div><div class="ttdef"><b>Definition</b> <a href="a00161_source.html#l00008">mixGuid.cpp:8</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65df15bf1da90497e61b96e6bb1b9d72" name="a65df15bf1da90497e61b96e6bb1b9d72"></a>
@@ -209,6 +219,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00011">11</a> of file <a class="el" href="a00008_source.html">mixAsset_item.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>        : <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>{ path }, <a class="code hl_variable" href="a00383.html#a5220a296886d6bb5a77b208f12aad817">_guid</a>{ <a class="code hl_function" href="a00487.html#a5577d7bea50303b025b612d36d6ea541">mix::core::mixGuid::create_new</a> () }</div>
+<div class="line"><span class="lineno">   13</span>        {</div>
+<div class="line"><span class="lineno">   14</span>        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -235,6 +250,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00024">24</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>            {</div>
+<div class="line"><span class="lineno">   26</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>.<a class="code hl_function" href="a00607.html#abece5b41203b730f6b4949fcc5348e45">get_name_without_extension</a> ();</div>
+<div class="line"><span class="lineno">   27</span>            }</div>
+<div class="ttc" id="aa00607_html_abece5b41203b730f6b4949fcc5348e45"><div class="ttname"><a href="a00607.html#abece5b41203b730f6b4949fcc5348e45">mix::platform::mixAsset_path::get_name_without_extension</a></div><div class="ttdeci">const std::string &amp; get_name_without_extension() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00040">mixAsset_path.h:40</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00066">_path</a>, and <a class="el" href="a00305_source.html#l00040">mix::platform::mixAsset_path::get_name_without_extension()</a>.</p>
+
 </div>
 </div>
 <a id="a6e6d736bbc390e6a4544d96c8ef94065" name="a6e6d736bbc390e6a4544d96c8ef94065"></a>
@@ -259,6 +282,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00041">41</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>            {</div>
+<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>.<a class="code hl_function" href="a00607.html#a963e963961e2aa159290209cd15bb662">get_extension</a> ();</div>
+<div class="line"><span class="lineno">   44</span>            }</div>
+<div class="ttc" id="aa00607_html_a963e963961e2aa159290209cd15bb662"><div class="ttname"><a href="a00607.html#a963e963961e2aa159290209cd15bb662">mix::platform::mixAsset_path::get_extension</a></div><div class="ttdeci">const std::string &amp; get_extension() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00045">mixAsset_path.h:45</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00066">_path</a>, and <a class="el" href="a00305_source.html#l00045">mix::platform::mixAsset_path::get_extension()</a>.</p>
 
 </div>
 </div>
@@ -285,6 +316,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00031">31</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>            {</div>
+<div class="line"><span class="lineno">   33</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>.<a class="code hl_function" href="a00607.html#ac980b27170298e16e93ce3a656b2c46d">get_name</a> ();</div>
+<div class="line"><span class="lineno">   34</span>            }</div>
+<div class="ttc" id="aa00607_html_ac980b27170298e16e93ce3a656b2c46d"><div class="ttname"><a href="a00607.html#ac980b27170298e16e93ce3a656b2c46d">mix::platform::mixAsset_path::get_name</a></div><div class="ttdeci">const std::string &amp; get_name() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00050">mixAsset_path.h:50</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00066">_path</a>, and <a class="el" href="a00305_source.html#l00050">mix::platform::mixAsset_path::get_name()</a>.</p>
+
 </div>
 </div>
 <a id="ae7f95f45067eeec3fb17487495c886d8" name="ae7f95f45067eeec3fb17487495c886d8"></a>
@@ -309,6 +348,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00054">54</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>            {</div>
+<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00383.html#a5220a296886d6bb5a77b208f12aad817">_guid</a>;</div>
+<div class="line"><span class="lineno">   57</span>            }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00064">_guid</a>.</p>
 
 </div>
 </div>
@@ -335,6 +381,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00036">36</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>            {</div>
+<div class="line"><span class="lineno">   38</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="a00383.html#a0ebce5f5d9da7f50795b9519c63e629b">_path</a>.<a class="code hl_function" href="a00607.html#ad7313ff12d386822cc941c243cd9a59e">to_str</a> ();</div>
+<div class="line"><span class="lineno">   39</span>            }</div>
+<div class="ttc" id="aa00607_html_ad7313ff12d386822cc941c243cd9a59e"><div class="ttname"><a href="a00607.html#ad7313ff12d386822cc941c243cd9a59e">mix::platform::mixAsset_path::to_str</a></div><div class="ttdeci">const std::string &amp; to_str() const</div><div class="ttdef"><b>Definition</b> <a href="a00305_source.html#l00030">mixAsset_path.h:30</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00066">_path</a>, and <a class="el" href="a00305_source.html#l00030">mix::platform::mixAsset_path::to_str()</a>.</p>
+
 </div>
 </div>
 <a id="ad0fd1f5410d3d1ab6d772ea32935ac7b" name="ad0fd1f5410d3d1ab6d772ea32935ac7b"></a>
@@ -360,6 +414,21 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00015">15</a> of file <a class="el" href="a00008_source.html">mixAsset_item.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>        {</div>
+<div class="line"><span class="lineno">   17</span>            std::string name = <a class="code hl_function" href="a00383.html#a887d3bd23d5d002ef71c4aa6a9e6ad7a">get_full_name</a> ();</div>
+<div class="line"><span class="lineno">   18</span>            <span class="keywordflow">if</span> (name.size () &gt; 8)</div>
+<div class="line"><span class="lineno">   19</span>            {</div>
+<div class="line"><span class="lineno">   20</span>                name = name.substr (0, 8);</div>
+<div class="line"><span class="lineno">   21</span>                name.append (<span class="stringliteral">&quot;...&quot;</span>);</div>
+<div class="line"><span class="lineno">   22</span>            }</div>
+<div class="line"><span class="lineno">   23</span> </div>
+<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">return</span> name;</div>
+<div class="line"><span class="lineno">   25</span>        }</div>
+<div class="ttc" id="aa00383_html_a887d3bd23d5d002ef71c4aa6a9e6ad7a"><div class="ttname"><a href="a00383.html#a887d3bd23d5d002ef71c4aa6a9e6ad7a">mix::assetsystem::mixAsset_item::get_full_name</a></div><div class="ttdeci">virtual const std::string &amp; get_full_name() const</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00031">mixAsset_item.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00031">get_full_name()</a>.</p>
+
 </div>
 </div>
 <a id="acb517c665ba6c0623d64a2a5fb542201" name="acb517c665ba6c0623d64a2a5fb542201"></a>
@@ -384,6 +453,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00049">49</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>            {</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="a00383.html#a46d0785046788fcc9c789d1b11529ad3">get_base_name</a> ();</div>
+<div class="line"><span class="lineno">   52</span>            }</div>
+<div class="ttc" id="aa00383_html_a46d0785046788fcc9c789d1b11529ad3"><div class="ttname"><a href="a00383.html#a46d0785046788fcc9c789d1b11529ad3">mix::assetsystem::mixAsset_item::get_base_name</a></div><div class="ttdeci">virtual const std::string &amp; get_base_name() const</div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00024">mixAsset_item.h:24</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00024">get_base_name()</a>.</p>
 
 </div>
 </div>
@@ -411,6 +488,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00027">27</a> of file <a class="el" href="a00008_source.html">mixAsset_item.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>        {</div>
+<div class="line"><span class="lineno">   29</span>            out &lt;&lt; <a class="code hl_function" href="a00383.html#a46d0785046788fcc9c789d1b11529ad3">get_base_name</a> ();</div>
+<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">   31</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00024">get_base_name()</a>.</p>
+
 </div>
 </div>
 <a id="a86fcabc946908e95e6c0b36ad3370fd0" name="a86fcabc946908e95e6c0b36ad3370fd0"></a>
@@ -437,6 +522,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00032">32</a> of file <a class="el" href="a00008_source.html">mixAsset_item.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>        {</div>
+<div class="line"><span class="lineno">   34</span>            <span class="keyword">auto</span> data = <a class="code hl_function" href="a00383.html#a46d0785046788fcc9c789d1b11529ad3">get_base_name</a> ();</div>
+<div class="line"><span class="lineno">   35</span>            in &gt;&gt; data;</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">return</span> in;</div>
+<div class="line"><span class="lineno">   37</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00011_source.html#l00024">get_base_name()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -460,6 +554,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00064">64</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+
 </div>
 </div>
 <a id="a0ebce5f5d9da7f50795b9519c63e629b" name="a0ebce5f5d9da7f50795b9519c63e629b"></a>
@@ -481,6 +577,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00066">66</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
 
 </div>
 </div>
@@ -504,11 +602,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00063">63</a> of file <a class="el" href="a00011_source.html">mixAsset_item.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="a00011_source.html">mixAsset_item.h</a></li>
-<li><a class="el" href="a00008.html">mixAsset_item.cpp</a></li>
+<li><a class="el" href="a00008_source.html">mixAsset_item.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -516,7 +616,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00350.html">mix</a></li><li class="navelem"><a class="el" href="a00351.html">assetsystem</a></li><li class="navelem"><a class="el" href="a00383.html">mixAsset_item</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 for Mix Model Viewer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>
