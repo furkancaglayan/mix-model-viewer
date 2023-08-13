@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/d6f/a00623" kind="class" language="C++" prot="public">
+    <compoundname>mix::rendering::scene_context</compoundname>
+    <includes refid="dd/d4e/a00329" local="no">scene_context.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d6f/a00623_1af262b9b8d862623c6a772697985cbcc1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::weak_ptr&lt; <ref refid="d1/d92/a00475" kindref="compound">mix::core::light::mixLight</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::weak_ptr&lt;mix::core::light::mixLight&gt; &gt; mix::rendering::scene_context::_lights</definition>
+        <argsstring></argsstring>
+        <name>_lights</name>
+        <qualifiedname>mix::rendering::scene_context::_lights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/scene_context.h" line="17" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/scene_context.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/scene_context.h" line="13" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/scene_context.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="df/d6f/a00623_1af262b9b8d862623c6a772697985cbcc1" prot="public" virt="non-virtual"><scope>mix::rendering::scene_context</scope><name>_lights</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

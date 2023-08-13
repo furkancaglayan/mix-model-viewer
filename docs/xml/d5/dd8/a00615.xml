@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/dd8/a00615" kind="class" language="C++" prot="public">
+    <compoundname>mix::platform::platform_utils</compoundname>
+    <includes refid="da/de0/a00317" local="no">platform_utils.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>search_type</name>
+        <qualifiedname>mix::platform::platform_utils::search_type</qualifiedname>
+        <enumvalue id="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0a8c7dd922ad47494fc02c388e12c00eac" prot="public">
+          <name>file</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0a851148b4fd8fd7ae74bd9100c5c0c898" prot="public">
+          <name>folder</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51" prot="public">
+          <name>all</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="16" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d5/dd8/a00615_1a156f95817fa9b3fce3f9380171a72410" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t mix::platform::platform_utils::max_len</definition>
+        <argsstring></argsstring>
+        <name>max_len</name>
+        <qualifiedname>mix::platform::platform_utils::max_len</qualifiedname>
+        <initializer>= 260</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="22" column="37" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</referencedby>
+        <referencedby refid="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" compoundref="da/de0/a00317" startline="23" endline="58">get_files</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>static std::vector&lt; std::string &gt; mix::platform::platform_utils::get_files</definition>
+        <argsstring>(const std::string &amp;path, search_type search_type)</argsstring>
+        <name>get_files</name>
+        <qualifiedname>mix::platform::platform_utils::get_files</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0" kindref="member">search_type</ref></type>
+          <declname>search_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="23" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="23" bodyend="58"/>
+        <references refid="d5/dd8/a00615_1a50ffbfb67072a71fffb632bf5c998250" compoundref="da/de0/a00317" startline="120" endline="134">convert_utf8_to_wide</references>
+        <references refid="d5/dd8/a00615_1a1f7d00ced82da501de72f821ddc21754" compoundref="da/de0/a00317" startline="137" endline="153">convert_wide_to_utf8</references>
+        <references refid="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0a8c7dd922ad47494fc02c388e12c00eac">file</references>
+        <references refid="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0a851148b4fd8fd7ae74bd9100c5c0c898">folder</references>
+        <references refid="d5/dd8/a00615_1a156f95817fa9b3fce3f9380171a72410" compoundref="da/de0/a00317" startline="22">max_len</references>
+        <referencedby refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" compoundref="d3/d00/a00113" startline="53" endline="77">mix::assetsystem::mixAsset_manager::resolve_assets_impl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mix::platform::platform_utils::get_all_dfs</definition>
+        <argsstring>(const std::string &amp;root, std::vector&lt; std::string &gt; &amp;list)</argsstring>
+        <name>get_all_dfs</name>
+        <qualifiedname>mix::platform::platform_utils::get_all_dfs</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="60" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="60" bodyend="93"/>
+        <references refid="d5/dd8/a00615_1a50ffbfb67072a71fffb632bf5c998250" compoundref="da/de0/a00317" startline="120" endline="134">convert_utf8_to_wide</references>
+        <references refid="d5/dd8/a00615_1a1f7d00ced82da501de72f821ddc21754" compoundref="da/de0/a00317" startline="137" endline="153">convert_wide_to_utf8</references>
+        <references refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</references>
+        <references refid="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" compoundref="da/de0/a00317" startline="95" endline="101">is_folder</references>
+        <references refid="d5/dd8/a00615_1a156f95817fa9b3fce3f9380171a72410" compoundref="da/de0/a00317" startline="22">max_len</references>
+        <referencedby refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mix::platform::platform_utils::is_folder</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>is_folder</name>
+        <qualifiedname>mix::platform::platform_utils::is_folder</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="95" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="95" bodyend="101"/>
+        <references refid="d5/dd8/a00615_1a50ffbfb67072a71fffb632bf5c998250" compoundref="da/de0/a00317" startline="120" endline="134">convert_utf8_to_wide</references>
+        <referencedby refid="d5/dd8/a00615_1abc132316905dcedbcdde5bf8591b8bbe" compoundref="da/de0/a00317" startline="107" endline="110">folder_exists</referencedby>
+        <referencedby refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</referencedby>
+        <referencedby refid="dd/d4d/a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="de/db1/a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+        <referencedby refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" compoundref="d3/d00/a00113" startline="53" endline="77">mix::assetsystem::mixAsset_manager::resolve_assets_impl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1abca74ee518f47e1ddd4c400e4ec548fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mix::platform::platform_utils::file_exists</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>file_exists</name>
+        <qualifiedname>mix::platform::platform_utils::file_exists</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="102" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="102" bodyend="105"/>
+        <references refid="d5/dd8/a00615_1a07fe20c4139f8dec08c67e00ac824a93" compoundref="da/de0/a00317" startline="112" endline="118">is_file</references>
+        <referencedby refid="dd/dc0/a00611_1a1509b8712a544c58c2b9f99077642e81" compoundref="d5/d0f/a00308" startline="114" endline="117">mix::platform::mixFile::exists</referencedby>
+        <referencedby refid="dd/dc0/a00611_1af6eefabc77fd21de2a8f22ddabb94f40" compoundref="d5/d0f/a00308" startline="21" endline="50">mix::platform::mixFile::open</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1abc132316905dcedbcdde5bf8591b8bbe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mix::platform::platform_utils::folder_exists</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>folder_exists</name>
+        <qualifiedname>mix::platform::platform_utils::folder_exists</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="107" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="107" bodyend="110"/>
+        <references refid="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" compoundref="da/de0/a00317" startline="95" endline="101">is_folder</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1a07fe20c4139f8dec08c67e00ac824a93" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mix::platform::platform_utils::is_file</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>is_file</name>
+        <qualifiedname>mix::platform::platform_utils::is_file</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="112" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="112" bodyend="118"/>
+        <referencedby refid="d5/dd8/a00615_1abca74ee518f47e1ddd4c400e4ec548fb" compoundref="da/de0/a00317" startline="102" endline="105">file_exists</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" compoundref="d0/d61/a00302" startline="4" endline="17">mix::platform::mixAsset_path::mixAsset_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1a50ffbfb67072a71fffb632bf5c998250" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::wstring</type>
+        <definition>static std::wstring mix::platform::platform_utils::convert_utf8_to_wide</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>convert_utf8_to_wide</name>
+        <qualifiedname>mix::platform::platform_utils::convert_utf8_to_wide</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="120" column="33" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="120" bodyend="134"/>
+        <referencedby refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</referencedby>
+        <referencedby refid="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" compoundref="da/de0/a00317" startline="23" endline="58">get_files</referencedby>
+        <referencedby refid="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" compoundref="da/de0/a00317" startline="95" endline="101">is_folder</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1a1f7d00ced82da501de72f821ddc21754" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mix::platform::platform_utils::convert_wide_to_utf8</definition>
+        <argsstring>(const wchar_t *wstr)</argsstring>
+        <name>convert_wide_to_utf8</name>
+        <qualifiedname>mix::platform::platform_utils::convert_wide_to_utf8</qualifiedname>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>wstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="137" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="137" bodyend="153"/>
+        <referencedby refid="dd/d9c/a00487_1a5577d7bea50303b025b612d36d6ea541" compoundref="d6/d7d/a00161" startline="8" endline="22">mix::core::mixGuid::create_new</referencedby>
+        <referencedby refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" compoundref="da/de0/a00317" startline="60" endline="93">get_all_dfs</referencedby>
+        <referencedby refid="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" compoundref="da/de0/a00317" startline="23" endline="58">get_files</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1af9c5341b724978668529c6f3e6d43b1f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mix::platform::platform_utils::convert_wide_to_ansi</definition>
+        <argsstring>(const wchar_t *wstr)</argsstring>
+        <name>convert_wide_to_ansi</name>
+        <qualifiedname>mix::platform::platform_utils::convert_wide_to_ansi</qualifiedname>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>wstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="156" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="156" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/a00615_1aceffbbcc5c6d467f6e05749c5bebbc35" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::wstring</type>
+        <definition>static std::wstring mix::platform::platform_utils::convert_ansi_to_wide</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>convert_ansi_to_wide</name>
+        <qualifiedname>mix::platform::platform_utils::convert_ansi_to_wide</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="173" column="33" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="173" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" line="12" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/windows/platform_utils.h" bodystart="13" bodyend="188"/>
+    <listofallmembers>
+      <member refid="d5/dd8/a00615_1aceffbbcc5c6d467f6e05749c5bebbc35" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>convert_ansi_to_wide</name></member>
+      <member refid="d5/dd8/a00615_1a50ffbfb67072a71fffb632bf5c998250" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>convert_utf8_to_wide</name></member>
+      <member refid="d5/dd8/a00615_1af9c5341b724978668529c6f3e6d43b1f" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>convert_wide_to_ansi</name></member>
+      <member refid="d5/dd8/a00615_1a1f7d00ced82da501de72f821ddc21754" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>convert_wide_to_utf8</name></member>
+      <member refid="d5/dd8/a00615_1abca74ee518f47e1ddd4c400e4ec548fb" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>file_exists</name></member>
+      <member refid="d5/dd8/a00615_1abc132316905dcedbcdde5bf8591b8bbe" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>folder_exists</name></member>
+      <member refid="d5/dd8/a00615_1ad2b36cc1a0b185df264e42dd98405e81" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>get_all_dfs</name></member>
+      <member refid="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>get_files</name></member>
+      <member refid="d5/dd8/a00615_1a07fe20c4139f8dec08c67e00ac824a93" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>is_file</name></member>
+      <member refid="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>is_folder</name></member>
+      <member refid="d5/dd8/a00615_1a156f95817fa9b3fce3f9380171a72410" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>max_len</name></member>
+      <member refid="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0" prot="public" virt="non-virtual"><scope>mix::platform::platform_utils</scope><name>search_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -4,16 +4,16 @@
     <compoundname>core</compoundname>
     <innerdir refid="dir_d9eb0d80e09d6ce0555608cf805d2a66">components</innerdir>
     <innerdir refid="dir_48fb23e14ee2fab1a0dc25ff509b8154">light</innerdir>
-    <innerfile refid="a00149">mixCamera.cpp</innerfile>
-    <innerfile refid="a00152">mixCamera.h</innerfile>
-    <innerfile refid="a00155">mixEntity.cpp</innerfile>
-    <innerfile refid="a00158">mixEntity.h</innerfile>
-    <innerfile refid="a00161">mixGuid.cpp</innerfile>
-    <innerfile refid="a00164">mixGuid.h</innerfile>
-    <innerfile refid="a00167">mixTransform.cpp</innerfile>
-    <innerfile refid="a00170">mixTransform.h</innerfile>
-    <innerfile refid="a00173">mixWindow.cpp</innerfile>
-    <innerfile refid="a00176">mixWindow.h</innerfile>
+    <innerfile refid="da/d1e/a00149">mixCamera.cpp</innerfile>
+    <innerfile refid="d7/d9a/a00152">mixCamera.h</innerfile>
+    <innerfile refid="d3/df8/a00155">mixEntity.cpp</innerfile>
+    <innerfile refid="d6/db8/a00158">mixEntity.h</innerfile>
+    <innerfile refid="d6/d7d/a00161">mixGuid.cpp</innerfile>
+    <innerfile refid="db/ddf/a00164">mixGuid.h</innerfile>
+    <innerfile refid="dc/de6/a00167">mixTransform.cpp</innerfile>
+    <innerfile refid="d5/dcb/a00170">mixTransform.h</innerfile>
+    <innerfile refid="d7/d3f/a00173">mixWindow.cpp</innerfile>
+    <innerfile refid="d5/de9/a00176">mixWindow.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

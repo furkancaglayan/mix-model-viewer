@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="de/d94/a00603" kind="struct" language="C++" prot="public">
+    <compoundname>mix::math::vertex</compoundname>
+    <includes refid="df/d95/a00299" local="no">vertex.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d94/a00603_1af0865c42e0cb27574a769fe4e9b49ed8" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::math::vertex::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <qualifiedname>mix::math::vertex::_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="23" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d94/a00603_1a47cb9be159c68196878d96fda9804d19" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::math::vertex::_normal</definition>
+        <argsstring></argsstring>
+        <name>_normal</name>
+        <qualifiedname>mix::math::vertex::_normal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d94/a00603_1a585b854c05a85a1507ae5fcfacf735e0" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a144e0eb67f8fd00c2cd833420827c07a" kindref="member">vec2</ref></type>
+        <definition>vec2 mix::math::vertex::_tex_coords</definition>
+        <argsstring></argsstring>
+        <name>_tex_coords</name>
+        <qualifiedname>mix::math::vertex::_tex_coords</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="25" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d94/a00603_1a7c255f7e09e92d9250c93715011d0f8b" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::math::vertex::_tangent</definition>
+        <argsstring></argsstring>
+        <name>_tangent</name>
+        <qualifiedname>mix::math::vertex::_tangent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="26" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d94/a00603_1a2e6e2a89904ea8f4728c1500fdd0ab9b" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::math::vertex::_bitangent</definition>
+        <argsstring></argsstring>
+        <name>_bitangent</name>
+        <qualifiedname>mix::math::vertex::_bitangent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d94/a00603_1adb8ffcf2242f1dd7c378f2ff9a3f4872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::vertex::vertex</definition>
+        <argsstring>(vec3 position, vec3 normal, vec3 uv, vec3 t, vec3 b)</argsstring>
+        <name>vertex</name>
+        <qualifiedname>mix::math::vertex::vertex</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>uv</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="13" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d94/a00603_1a98ab59e4ea2c48a0e9a9818af5a60473" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::math::vertex::vertex</definition>
+        <argsstring>(vec3 position)</argsstring>
+        <name>vertex</name>
+        <qualifiedname>mix::math::vertex::vertex</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="18" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" line="9" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/vertex.h" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="de/d94/a00603_1a2e6e2a89904ea8f4728c1500fdd0ab9b" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>_bitangent</name></member>
+      <member refid="de/d94/a00603_1a47cb9be159c68196878d96fda9804d19" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>_normal</name></member>
+      <member refid="de/d94/a00603_1af0865c42e0cb27574a769fe4e9b49ed8" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>_position</name></member>
+      <member refid="de/d94/a00603_1a7c255f7e09e92d9250c93715011d0f8b" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>_tangent</name></member>
+      <member refid="de/d94/a00603_1a585b854c05a85a1507ae5fcfacf735e0" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>_tex_coords</name></member>
+      <member refid="de/d94/a00603_1adb8ffcf2242f1dd7c378f2ff9a3f4872" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>vertex</name></member>
+      <member refid="de/d94/a00603_1a98ab59e4ea2c48a0e9a9818af5a60473" prot="public" virt="non-virtual"><scope>mix::math::vertex</scope><name>vertex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/d6a/a00619" kind="class" language="C++" prot="public">
+    <compoundname>mix::rendering::rendering_context</compoundname>
+    <includes refid="de/d55/a00323" local="no">rendering_context.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/d6a/a00619_1a410dfa608e003b92c2a8c2fe6eaa5580" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::rendering::rendering_context::_active_program</definition>
+        <argsstring></argsstring>
+        <name>_active_program</name>
+        <qualifiedname>mix::rendering::rendering_context::_active_program</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="31" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="d4/d4b/a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" compoundref="d2/df5/a00137" startline="8" endline="25">mix::components::mixMesh_component::render</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d6a/a00619_1a5e8e7ff025904c61a16928be26b90485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_1f</definition>
+        <argsstring>(int loc, float f)</argsstring>
+        <name>set_1f</name>
+        <qualifiedname>mix::rendering::rendering_context::set_1f</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="15" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="20" bodyend="23"/>
+        <referencedby refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" compoundref="dc/d50/a00332" startline="28" endline="54">mix::scene_management::mixScene::set_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1ac2b5bf66106ed64321c1c34fa17aeb56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_1i</definition>
+        <argsstring>(int loc, int f)</argsstring>
+        <name>set_1i</name>
+        <qualifiedname>mix::rendering::rendering_context::set_1i</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="16" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="25" bodyend="28"/>
+        <referencedby refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" compoundref="dc/d50/a00332" startline="28" endline="54">mix::scene_management::mixScene::set_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_vec3</definition>
+        <argsstring>(int loc, vec3 vec)</argsstring>
+        <name>set_vec3</name>
+        <qualifiedname>mix::rendering::rendering_context::set_vec3</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="17" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="30" bodyend="33"/>
+        <referencedby refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" compoundref="dc/d50/a00332" startline="28" endline="54">mix::scene_management::mixScene::set_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a794cfb036f58ce71067e09d16c15496f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_mat3</definition>
+        <argsstring>(int loc, mat3 mat)</argsstring>
+        <name>set_mat3</name>
+        <qualifiedname>mix::rendering::rendering_context::set_mat3</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d82/a00293_1a89330bc96e1968b52ef083cd277bbe3d" kindref="member">mat3</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="18" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a13d6eb77d13f0e0c41f0d61a80285d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_vec4</definition>
+        <argsstring>(int loc, vec4 vec)</argsstring>
+        <name>set_vec4</name>
+        <qualifiedname>mix::rendering::rendering_context::set_vec4</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="19" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_mat4</definition>
+        <argsstring>(int loc, mat4 mat)</argsstring>
+        <name>set_mat4</name>
+        <qualifiedname>mix::rendering::rendering_context::set_mat4</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="20" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="45" bodyend="48"/>
+        <referencedby refid="d4/d4b/a00471_1a2fadea7f1ce7865724f18d778c8f3f9b" compoundref="d2/df5/a00137" startline="8" endline="25">mix::components::mixMesh_component::render</referencedby>
+        <referencedby refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" compoundref="dc/d50/a00332" startline="28" endline="54">mix::scene_management::mixScene::set_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1adcf2f7b97d1bf170b05496301eabebc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_1f</definition>
+        <argsstring>(const std::string &amp;s, float f)</argsstring>
+        <name>set_1f</name>
+        <qualifiedname>mix::rendering::rendering_context::set_1f</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a56b52c88175d0a3a4b7ad580bc56945b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_1i</definition>
+        <argsstring>(const std::string &amp;s, int f)</argsstring>
+        <name>set_1i</name>
+        <qualifiedname>mix::rendering::rendering_context::set_1i</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="23" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a5a744b3570374bec941b9f4aa5d67be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_vec3</definition>
+        <argsstring>(const std::string &amp;s, vec3 vec)</argsstring>
+        <name>set_vec3</name>
+        <qualifiedname>mix::rendering::rendering_context::set_vec3</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="24" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a3fca5af3f815dfcd5ac4d263fc9ee4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_mat3</definition>
+        <argsstring>(const std::string &amp;s, mat3 mat)</argsstring>
+        <name>set_mat3</name>
+        <qualifiedname>mix::rendering::rendering_context::set_mat3</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d82/a00293_1a89330bc96e1968b52ef083cd277bbe3d" kindref="member">mat3</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="25" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1aedffd54c76c5c05d9561a5809487ca69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_vec4</definition>
+        <argsstring>(const std::string &amp;s, vec4 vec)</argsstring>
+        <name>set_vec4</name>
+        <qualifiedname>mix::rendering::rendering_context::set_vec4</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="26" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1ae1fdec9530b6e5f0e8d04643bcf2bebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::set_mat4</definition>
+        <argsstring>(const std::string &amp;s, mat4 mat)</argsstring>
+        <name>set_mat4</name>
+        <qualifiedname>mix::rendering::rendering_context::set_mat4</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a5a5e5f4285e5d5dcd0a0bb32e8b5459f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::initialize</definition>
+        <argsstring>() const</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::rendering::rendering_context::initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="29" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="4" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6a/a00619_1a840d42638ccf7c0e873e990c5a9fbea6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::rendering::rendering_context::finalize</definition>
+        <argsstring>() const</argsstring>
+        <name>finalize</name>
+        <qualifiedname>mix::rendering::rendering_context::finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="30" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" line="11" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/rendering/rendering_context.h" bodystart="12" bodyend="33"/>
+    <listofallmembers>
+      <member refid="d6/d6a/a00619_1a410dfa608e003b92c2a8c2fe6eaa5580" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>_active_program</name></member>
+      <member refid="d6/d6a/a00619_1a840d42638ccf7c0e873e990c5a9fbea6" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>finalize</name></member>
+      <member refid="d6/d6a/a00619_1a5a5e5f4285e5d5dcd0a0bb32e8b5459f" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>initialize</name></member>
+      <member refid="d6/d6a/a00619_1a5e8e7ff025904c61a16928be26b90485" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_1f</name></member>
+      <member refid="d6/d6a/a00619_1adcf2f7b97d1bf170b05496301eabebc4" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_1f</name></member>
+      <member refid="d6/d6a/a00619_1ac2b5bf66106ed64321c1c34fa17aeb56" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_1i</name></member>
+      <member refid="d6/d6a/a00619_1a56b52c88175d0a3a4b7ad580bc56945b" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_1i</name></member>
+      <member refid="d6/d6a/a00619_1a794cfb036f58ce71067e09d16c15496f" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_mat3</name></member>
+      <member refid="d6/d6a/a00619_1a3fca5af3f815dfcd5ac4d263fc9ee4bd" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_mat3</name></member>
+      <member refid="d6/d6a/a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_mat4</name></member>
+      <member refid="d6/d6a/a00619_1ae1fdec9530b6e5f0e8d04643bcf2bebf" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_mat4</name></member>
+      <member refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_vec3</name></member>
+      <member refid="d6/d6a/a00619_1a5a744b3570374bec941b9f4aa5d67be2" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_vec3</name></member>
+      <member refid="d6/d6a/a00619_1a13d6eb77d13f0e0c41f0d61a80285d55" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_vec4</name></member>
+      <member refid="d6/d6a/a00619_1aedffd54c76c5c05d9561a5809487ca69" prot="public" virt="non-virtual"><scope>mix::rendering::rendering_context</scope><name>set_vec4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

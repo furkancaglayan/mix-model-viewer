@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/da8/a00230" kind="file" language="C++">
+    <compoundname>gui_style.h</compoundname>
+    <includes refid="dd/dd7/a00260" local="yes">mixGui.h</includes>
+    <includes refid="d6/d7f/a00287" local="yes">../math/color.h</includes>
+    <includedby refid="d9/d01/a00227" local="yes">gui_style.cpp</includedby>
+    <includedby refid="d9/d39/a00257" local="yes">mixGui.cpp</includedby>
+    <incdepgraph>
+      <node id="28">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../assetsystem/assets/mixFont.h</label>
+        <link refid="d4/d51/a00017"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../containers/frame_buffer.h</label>
+        <link refid="df/dc8/a00122"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../core/mixWindow.h</label>
+        <link refid="d5/de9/a00176"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gui_style.h</label>
+        <link refid="d1/da8/a00230"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gui_window.h</label>
+        <link refid="d7/d40/a00236"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixGui.h</label>
+        <link refid="dd/dd7/a00260"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../math/vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../../math/vertex.h</label>
+        <link refid="df/d95/a00299"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="31">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="21">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="33">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>functional</label>
+      </node>
+      <node id="10">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="11">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="20">
+        <label>imgui.h</label>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="34">
+        <label>istream</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="32">
+        <label>sstream</label>
+      </node>
+      <node id="23">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="36">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>gui_style.cpp</label>
+        <link refid="d9/d01/a00227"/>
+      </node>
+      <node id="1">
+        <label>gui_style.h</label>
+        <link refid="d1/da8/a00230"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixGui.cpp</label>
+        <link refid="d9/d39/a00257"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d9c/a00543" prot="public">mixImGui::gui_color</innerclass>
+    <innerclass refid="d9/d8b/a00547" prot="public">mixImGui::gui_style</innerclass>
+    <innernamespace refid="d7/ddb/a00361">mixImGui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/dd7/a00260" kindref="compound">mixGui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabb" kindref="member">rounding</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">none</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba075a3e36a0a52dcbc568c05788e8a713" kindref="member">medium</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabbaa181a603769c1f98ad927e7367c7aa51" kindref="member">all</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15" kindref="member">theme</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15aa82fd95db10ff25dfad39f07372ebe37" kindref="member">dark</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15a2ac43aa43bf473f9a9c09b4b608619d3" kindref="member">light</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d4/d9c/a00543" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d4/d9c/a00543_1a24284a14fe81cb4a86ab8ca11a43cfd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543_1a24284a14fe81cb4a86ab8ca11a43cfd6" kindref="member">gui_color</ref><sp/>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25" refid="d4/d9c/a00543_1a6ba46c177ba9afd882e94f40fd389f64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d4/d9c/a00543_1a6ba46c177ba9afd882e94f40fd389f64" kindref="member">_disabled</ref>;</highlight></codeline>
+<codeline lineno="26" refid="d4/d9c/a00543_1aaa4198fcb67a298efe8cd5315e245a83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d4/d9c/a00543_1aaa4198fcb67a298efe8cd5315e245a83" kindref="member">_active</ref>;</highlight></codeline>
+<codeline lineno="27" refid="d4/d9c/a00543_1adcb336b80376de558389d3ed130f27a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d4/d9c/a00543_1adcb336b80376de558389d3ed130f27a2" kindref="member">_hovered</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d9/d8b/a00547" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/d8b/a00547" kindref="compound">gui_style</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d8b/a00547_1ac958bd56331a5522f86f27ab379e7b00" kindref="member">gui_style</ref><sp/>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="d9/d8b/a00547_1a21a234c347b1eadfd55d043e34292b2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/d8b/a00547_1a21a234c347b1eadfd55d043e34292b2a" kindref="member">enable_borders</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="d9/d8b/a00547_1aa61fe73ac8adbe284970ba0a1530287e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabb" kindref="member">rounding</ref><sp/><ref refid="d9/d8b/a00547_1aa61fe73ac8adbe284970ba0a1530287e" kindref="member">_rounding</ref><sp/>=<sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabbaa181a603769c1f98ad927e7367c7aa51" kindref="member">rounding::all</ref>;</highlight></codeline>
+<codeline lineno="38" refid="d9/d8b/a00547_1a2305ba27c965c5d5f44c3fc7a34acc37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15" kindref="member">theme</ref><sp/><ref refid="d9/d8b/a00547_1a2305ba27c965c5d5f44c3fc7a34acc37" kindref="member">_theme</ref><sp/>=<sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15aa82fd95db10ff25dfad39f07372ebe37" kindref="member">theme::dark</ref>;</highlight></codeline>
+<codeline lineno="39" refid="d9/d8b/a00547_1a99e0c9ecb6c72b099394a7da2f61c1c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1a99e0c9ecb6c72b099394a7da2f61c1c8" kindref="member">_text_color</ref>;</highlight></codeline>
+<codeline lineno="40" refid="d9/d8b/a00547_1afc120549d1d5fc54d04eb5e14c869a59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1afc120549d1d5fc54d04eb5e14c869a59" kindref="member">_button_color</ref>;</highlight></codeline>
+<codeline lineno="41" refid="d9/d8b/a00547_1acd49f373feec3ca51c9cbbaada2fdfe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1acd49f373feec3ca51c9cbbaada2fdfe6" kindref="member">_frame_color</ref>;</highlight></codeline>
+<codeline lineno="42" refid="d9/d8b/a00547_1a419cd3d0413de7d0a04f713320b94788" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1a419cd3d0413de7d0a04f713320b94788" kindref="member">_seperator_color</ref>;</highlight></codeline>
+<codeline lineno="43" refid="d9/d8b/a00547_1aa1c901a3fbe1542087f98ea0de37a781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1aa1c901a3fbe1542087f98ea0de37a781" kindref="member">_tab_color</ref>;</highlight></codeline>
+<codeline lineno="44" refid="d9/d8b/a00547_1a0c2c01e805850ae31c22779627f0b096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1a0c2c01e805850ae31c22779627f0b096" kindref="member">_title_color</ref>;</highlight></codeline>
+<codeline lineno="45" refid="d9/d8b/a00547_1aeec9459e2e8abe16d2f60ab53b56f7bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/><ref refid="d9/d8b/a00547_1aeec9459e2e8abe16d2f60ab53b56f7bf" kindref="member">_header_color</ref>;</highlight></codeline>
+<codeline lineno="46" refid="d9/d8b/a00547_1a70595e97b8ad658749b9c16cae01bb51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d9/d8b/a00547_1a70595e97b8ad658749b9c16cae01bb51" kindref="member">_border_color</ref>;</highlight></codeline>
+<codeline lineno="47" refid="d9/d8b/a00547_1aaf2495b9d6280ab39ffa329e301912bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d9/d8b/a00547_1aaf2495b9d6280ab39ffa329e301912bc" kindref="member">_checkmark_color</ref>,<sp/><ref refid="d9/d8b/a00547_1ab18e8319acb2eb883399ed9fcb1dd184" kindref="member">_slidergrab_color</ref>;</highlight></codeline>
+<codeline lineno="48" refid="d9/d8b/a00547_1ab48ba0374a6af9a596b773cd7ddfbbe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImVec2<sp/><ref refid="d9/d8b/a00547_1ab48ba0374a6af9a596b773cd7ddfbbe7" kindref="member">_window_title_align</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1af629e60971885b2e758f2065887c11e2" kindref="member">to_imgui_style</ref><sp/>(ImGuiStyle&amp;<sp/>style);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1a8a9a0c92bd2daf197b427a7ab5dfe036" kindref="member">get_default_dark_style</ref><sp/>(ImGuiStyle&amp;<sp/>imgui_style);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1acd324588cd84644fd0f48d38c8618234" kindref="member">get_default_light_style</ref><sp/>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mixImGui</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h"/>
+  </compounddef>
+</doxygen>

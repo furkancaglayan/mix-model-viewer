@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/ddb/a00361" kind="namespace" language="C++">
+    <compoundname>mixImGui</compoundname>
+    <innerclass refid="d4/d9c/a00543" prot="public">mixImGui::gui_color</innerclass>
+    <innerclass refid="d7/d84/a00535" prot="public">mixImGui::gui_layout</innerclass>
+    <innerclass refid="d3/d87/a00539" prot="public">mixImGui::gui_selectable_layout</innerclass>
+    <innerclass refid="d9/d8b/a00547" prot="public">mixImGui::gui_style</innerclass>
+    <innerclass refid="d9/d87/a00551" prot="public">mixImGui::gui_window</innerclass>
+    <innerclass refid="d8/d75/a00555" prot="public">mixImGui::i_editor</innerclass>
+    <innerclass refid="d2/d50/a00559" prot="public">mixImGui::i_guielement</innerclass>
+    <innerclass refid="dc/dae/a00563" prot="public">mixImGui::i_scene</innerclass>
+    <innerclass refid="d2/dd7/a00567" prot="public">mixImGui::mixGui</innerclass>
+    <innerclass refid="d0/d2a/a00531" prot="public">mixImGui::window_rect</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>layout_type</name>
+        <qualifiedname>mixImGui::layout_type</qualifiedname>
+        <enumvalue id="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a334c4a4c42fdb79d7ebc3e73b517e6f8" prot="public">
+          <name>none</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f" prot="public">
+          <name>horizontal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" prot="public">
+          <name>vertical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="15" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="enum" id="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>rounding</name>
+        <qualifiedname>mixImGui::rounding</qualifiedname>
+        <enumvalue id="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba334c4a4c42fdb79d7ebc3e73b517e6f8" prot="public">
+          <name>none</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba075a3e36a0a52dcbc568c05788e8a713" prot="public">
+          <name>medium</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabbaa181a603769c1f98ad927e7367c7aa51" prot="public">
+          <name>all</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="7" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="enum" id="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>theme</name>
+        <qualifiedname>mixImGui::theme</qualifiedname>
+        <enumvalue id="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15aa82fd95db10ff25dfad39f07372ebe37" prot="public">
+          <name>dark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15a2ac43aa43bf473f9a9c09b4b608619d3" prot="public">
+          <name>light</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" line="14" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="enum" id="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>window_positioning</name>
+        <qualifiedname>mixImGui::window_positioning</qualifiedname>
+        <enumvalue id="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" prot="public">
+          <name>flexible</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983acec315e3d0975e5cc2811d5d8725f149" prot="public">
+          <name>fixed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="20" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>window_flags</name>
+        <qualifiedname>mixImGui::window_flags</qualifiedname>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a41a128473817e7f779586b8a80f550ea" prot="public">
+          <name>NoTitleBar</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe" prot="public">
+          <name>NoResize</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f" prot="public">
+          <name>NoMove</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aae89bf06303fdc372f34ec166a263749" prot="public">
+          <name>NoScrollbar</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aeb2432df0c12ffe8e809d00f7e3b24d6" prot="public">
+          <name>NoScrollWithMouse</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1" prot="public">
+          <name>NoCollapse</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a68a0892b5db3fc14b2852ff97b2bad3f" prot="public">
+          <name>AlwaysAutoResize</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a117c9fb74fbb470504b073d0536ec051" prot="public">
+          <name>NoBackground</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a3b3da15a8fc5adef75892f692844d42c" prot="public">
+          <name>NoSavedSettings</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8acabc313a99d2b3e41e73258b3394420e" prot="public">
+          <name>NoMouseInputs</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add" prot="public">
+          <name>MenuBar</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa211ec74a5d88b231f1a63ea575ed1fd" prot="public">
+          <name>HorizontalScrollbar</name>
+          <initializer>= 1 &lt;&lt; 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8af5b42bebe544f664f6b362662ba74731" prot="public">
+          <name>NoFocusOnAppearing</name>
+          <initializer>= 1 &lt;&lt; 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa5494154d50b6e336e91abba755625b8" prot="public">
+          <name>NoBringToFrontOnFocus</name>
+          <initializer>= 1 &lt;&lt; 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a1d43b4d7370b4d2fd8ac7e716bf4d719" prot="public">
+          <name>AlwaysVerticalScrollbar</name>
+          <initializer>= 1 &lt;&lt; 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8aa7b79ffd3ddda0f48579e4801805da83" prot="public">
+          <name>AlwaysHorizontalScrollbar</name>
+          <initializer>= 1 &lt;&lt; 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8af333f70d81772635fc8b288bf4e503d2" prot="public">
+          <name>AlwaysUseWindowPadding</name>
+          <initializer>= 1 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a126937ae6ba5e48d67dd0160249dea8e" prot="public">
+          <name>NoNavInputs</name>
+          <initializer>= 1 &lt;&lt; 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a2271a6716f1e7c92a1276dda9367fe1c" prot="public">
+          <name>NoNavFocus</name>
+          <initializer>= 1 &lt;&lt; 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afc813e5f6a1a82a18a731fec4aa93302" prot="public">
+          <name>UnsavedDocument</name>
+          <initializer>= 1 &lt;&lt; 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="26" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="27" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/ddb/a00361_1a9e7c970f44693f56f77889aa3839aad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+        <definition>window_flags mixImGui::operator|</definition>
+        <argsstring>(window_flags a, window_flags b)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>mixImGui::operator|</qualifiedname>
+        <param>
+          <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="51" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/ddb/a00361_1a0629445b85b9bc5926dbd45462f3f4a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+        <definition>window_flags mixImGui::operator&amp;</definition>
+        <argsstring>(window_flags a, window_flags b)</argsstring>
+        <name>operator&amp;</name>
+        <qualifiedname>mixImGui::operator&amp;</qualifiedname>
+        <param>
+          <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="56" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/ddb/a00361_1a275203f45f31334e4abf365379a729c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+        <definition>window_flags mixImGui::operator~</definition>
+        <argsstring>(window_flags a)</argsstring>
+        <name>operator~</name>
+        <qualifiedname>mixImGui::operator~</qualifiedname>
+        <param>
+          <type><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" line="61" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d0/d65/a00360" kind="namespace" language="C++">
+    <compoundname>mix::editor::windows</compoundname>
+    <innerclass refid="dc/d19/a00515" prot="public">mix::editor::windows::hierarchy_window</innerclass>
+    <innerclass refid="dd/d4d/a00519" prot="public">mix::editor::windows::project_window</innerclass>
+    <innerclass refid="d0/de7/a00523" prot="public">mix::editor::windows::scene_window</innerclass>
+    <innerclass refid="d9/d44/a00527" prot="public">mix::editor::windows::shortcuts_window</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/hierarchy_window.h" line="8" column="9"/>
+  </compounddef>
+</doxygen>

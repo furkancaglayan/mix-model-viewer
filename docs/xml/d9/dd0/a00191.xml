@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/dd0/a00191" kind="file" language="C++">
+    <compoundname>hierarchy_window.cpp</compoundname>
+    <includes refid="dc/d57/a00194" local="yes">hierarchy_window.h</includes>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="69">
+        <label>../asset_processor.h</label>
+        <link refid="d9/d2e/a00056"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>../assetsystem/asset_types.h</label>
+        <link refid="df/d03/a00062"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>assets/mixAsset_folder.h</label>
+        <link refid="dd/dad/a00005"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../assetsystem/assets/mixFont.h</label>
+        <link refid="d4/d51/a00017"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>loaders/mixAsset_loader_base.h</label>
+        <link refid="da/dec/a00080"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../assetsystem/mixAsset_manager.h</label>
+        <link refid="d4/d3e/a00116"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../containers/frame_buffer.h</label>
+        <link refid="df/dc8/a00122"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>../containers/tree_node.h</label>
+        <link refid="d1/d88/a00128"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>components/mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../core/light/mixLight.h</label>
+        <link refid="d9/db6/a00146"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../core/mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mixEntity.h</label>
+        <link refid="d6/db8/a00158"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../mixTransform.h</label>
+        <link refid="d5/dcb/a00170"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../core/mixWindow.h</label>
+        <link refid="d5/de9/a00176"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>editor_config.h</label>
+        <link refid="d7/d25/a00182"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../mixEditor.h</label>
+        <link refid="da/d15/a00188"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hierarchy_window.cpp</label>
+        <link refid="d9/dd0/a00191"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hierarchy_window.h</label>
+        <link refid="dc/d57/a00194"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>windows/scene_window.h</label>
+        <link refid="d5/df1/a00206"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>windows/shortcuts_window.h</label>
+        <link refid="dd/dc1/a00212"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../gui/gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gui_window.h</label>
+        <link refid="d7/d40/a00236"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../gui/i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../../gui/mixGui.h</label>
+        <link refid="dd/dd7/a00260"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>debug.h</label>
+        <link refid="d5/d35/a00266"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>../../library/event.h</label>
+        <link refid="d9/dd6/a00272"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>../../library/event_callback.h</label>
+        <link refid="d3/d5e/a00275"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>ievent_callback_base.h</label>
+        <link refid="dc/d5d/a00278"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../math/vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../../math/vertex.h</label>
+        <link refid="df/d95/a00299"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../platform/mixFile.h</label>
+        <link refid="d1/d5d/a00311"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>windows/platform_utils.h</label>
+        <link refid="da/de0/a00317"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../rendering/scene_context.h</label>
+        <link refid="dd/d4e/a00329"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../scene_management/mixScene.h</label>
+        <link refid="df/d91/a00335"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="60">
+        <label>Windows.h</label>
+      </node>
+      <node id="44">
+        <label>algorithm</label>
+      </node>
+      <node id="26">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="25">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="57">
+        <label>cassert</label>
+      </node>
+      <node id="67">
+        <label>chrono</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="46">
+        <label>fstream</label>
+      </node>
+      <node id="28">
+        <label>functional</label>
+      </node>
+      <node id="10">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="11">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="24">
+        <label>imgui.h</label>
+      </node>
+      <node id="36">
+        <label>iostream</label>
+      </node>
+      <node id="47">
+        <label>istream</label>
+      </node>
+      <node id="38">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="45">
+        <label>sstream</label>
+      </node>
+      <node id="29">
+        <label>stack</label>
+      </node>
+      <node id="70">
+        <label>stdexcept</label>
+      </node>
+      <node id="73">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="61">
+        <label>tchar.h</label>
+      </node>
+      <node id="71">
+        <label>typeindex</label>
+      </node>
+      <node id="49">
+        <label>unordered_map</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d57/a00194" kindref="compound">hierarchy_window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="dc/d19/a00515_1ac5df2365b9b82f7131d29dcf1b865be5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d19/a00515_1ac5df2365b9b82f7131d29dcf1b865be5" kindref="member">mix::editor::windows::hierarchy_window::render</ref><sp/>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>scene<sp/>=<sp/><ref refid="d6/d10/a00511_1ab03cd27e7c82e3edead6d413dfe20294" kindref="member">mix::mixEditor::_instance</ref>-&gt;get_active_scene<sp/>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scene)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d87/a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" kindref="member">set_title</ref><sp/>(scene-&gt;get_root<sp/>()-&gt;get_name<sp/>());</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d87/a00551_1a5b26d4ff892ca96966cedacb32a214c3" kindref="member">begin</ref><sp/>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" kindref="member">gui_layout::begin_vertical</ref><sp/>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a69563b6c88b8d3a286c046dbcd1b35e7" kindref="member">gui_layout::begin_selectable_list</ref><sp/>(<ref refid="dc/d19/a00515_1ab72a159b94ea7b51af28bb70b8da4aa6" kindref="member">_selected_entity</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a955966b93c642457a8937d3205cc8965" kindref="member">gui_layout::collapsing_label</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Cameras&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="dc/d19/a00515_1a113e7939a302150f7eb7893a5f92cc2e" kindref="member">_visible_cameras</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/d19/a00515_1a113e7939a302150f7eb7893a5f92cc2e" kindref="member">_visible_cameras</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1ab649160af3cdfa3cb465acfe5d522a54" kindref="member">gui_layout::add_selectable</ref><sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="d2/d50/a00559" kindref="compound">i_guielement</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(scene-&gt;get_main_cam<sp/>()));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a739aa63e4b579149d6ffbf3628736f29" kindref="member">gui_layout::render_added_selectables</ref><sp/>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//gui_layout::collapsing_label<sp/>(&quot;Entities&quot;,<sp/>&amp;_visible_entities);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1a195a6f06b3b43ecb982545648946e1a0" kindref="member">gui_layout::tree_node</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Entities&quot;</highlight><highlight class="normal">,<sp/>-1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>children<sp/>=<sp/>scene-&gt;get_root<sp/>()-&gt;get_children<sp/>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>children.size<sp/>();<sp/>i++)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_node<sp/>=<sp/>children.at<sp/>(i)-&gt;get_children<sp/>().size();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1a195a6f06b3b43ecb982545648946e1a0" kindref="member">gui_layout::tree_node</ref><sp/>(children.at<sp/>(i)-&gt;get_name<sp/>().c_str<sp/>(),<sp/>i,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>!is_node))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1a4ab8d7533b386a8f6a9e4582c6de08b7" kindref="member">gui_layout::begin_drag_drop_source</ref>())</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a176b266202237b8eb11a13b6bdbe6ea5" kindref="member">gui_layout::set_drag_drop_payload</ref><sp/>(</highlight><highlight class="stringliteral">&quot;ENTITY_&quot;</highlight><highlight class="normal">,<sp/>children.at<sp/>(i).get<sp/>(),<sp/>sizeof<sp/>(<ref refid="dc/da0/a00483" kindref="compound">mix::core::mixEntity</ref>));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a41d6c2c0628de00c1cbe22c3f3885533" kindref="member">gui_layout::end_drag_drop_source</ref><sp/>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1aff6c7cf065ddfe39d15d4a926246c1bf" kindref="member">gui_layout::begin_drag_drop_target</ref><sp/>())</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/><ref refid="d7/d84/a00535_1a673e0d8f148336f97640d82cc53ef038" kindref="member">gui_layout::accept_drag_drop_payload</ref><sp/>(</highlight><highlight class="stringliteral">&quot;ENTITY_&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>target<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="dc/da0/a00483" kindref="compound">mix::core::mixEntity</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(data);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(target<sp/>!=<sp/>children.at<sp/>(i).get())</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//children.at<sp/>(i).get<sp/>()-&gt;add_child<sp/>(target);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a5592b3107f4d91edd353201e5a71d818" kindref="member">gui_layout::end_drag_drop_target</ref><sp/>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1acf9c6115c8a1eda4beb51294b44369f2" kindref="member">gui_layout::is_double_clicked</ref>())</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d10/a00511_1ab03cd27e7c82e3edead6d413dfe20294" kindref="member">mix::mixEditor::_instance</ref>-&gt;get_active_scene<sp/>()-&gt;get_main_cam<sp/>()-&gt;look_at<sp/>(children.at<sp/>(i)-&gt;_transform-&gt;get_position());</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_node)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a8437163834762f5714f4d19d31a48fad" kindref="member">gui_layout::tree_pop</ref><sp/>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d19/a00515_1ab72a159b94ea7b51af28bb70b8da4aa6" kindref="member">_selected_entity</ref><sp/>=<sp/><ref refid="d7/d84/a00535_1ae574fda0ac6b4b3361b33a98bd350815" kindref="member">gui_layout::end_selectable_list</ref><sp/>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/d19/a00515_1ab72a159b94ea7b51af28bb70b8da4aa6" kindref="member">_selected_entity</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d19/a00515_1ab72a159b94ea7b51af28bb70b8da4aa6" kindref="member">_selected_entity</ref>-&gt;<ref refid="d2/d50/a00559_1a88a27f523a0a069d84188c284e9c4d6c" kindref="member">on_gui</ref><sp/>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a724cab724f67db7089561715ca6163b8" kindref="member">gui_layout::end_vertical</ref><sp/>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d87/a00551_1a1ca29859ec280ef652b1a8a129302674" kindref="member">end</ref><sp/>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="dc/d19/a00515_1a660bcd54d6a62a2cb233056e35334a07" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d19/a00515_1a660bcd54d6a62a2cb233056e35334a07" kindref="member">mix::editor::windows::hierarchy_window::on_editor_window_size_changed_impl</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>WINDOW_BEGIN_POS<sp/>=<sp/>0.85f;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>WINDOW_SIZE<sp/>=<sp/>0.15f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>size.x<sp/>*<sp/>WINDOW_SIZE;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>rescale<sp/>(<ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(width,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(size.y<sp/>*<sp/>0.75f)));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>set_position<sp/>(<ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(size.x<sp/>*<sp/>WINDOW_BEGIN_POS,<sp/>0));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="dc/d19/a00515_1a308eb978a7dc115649ce44c474748c32" refkind="member"><highlight class="normal"><ref refid="dc/d19/a00515_1a308eb978a7dc115649ce44c474748c32" kindref="member">mix::editor::windows::hierarchy_window::hierarchy_window</ref><sp/>(std::string<sp/>window_name,<sp/><ref refid="d0/d2a/a00531" kindref="compound">mixImGui::window_rect</ref><sp/>r)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">:<sp/><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref>::<ref refid="d9/d87/a00551" kindref="compound">gui_window</ref><sp/>(window_name,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8ab15b459eaa92682a221cb9b792c98add" kindref="member">MenuBar</ref><sp/>|<sp/><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8afdefb4002997c9c81d7c610663985ac1" kindref="member">NoCollapse</ref><sp/>|</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref>::<ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a14349043a0e387b8b33024616d9b487f" kindref="member">NoMove</ref>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d19/a00515_1ab72a159b94ea7b51af28bb70b8da4aa6" kindref="member">_selected_entity</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="dc/d19/a00515_1a991cbecb0453d23e6c247ac6c0f3ab78" refkind="member"><highlight class="normal"><ref refid="dc/d19/a00515_1a991cbecb0453d23e6c247ac6c0f3ab78" kindref="member">mix::editor::windows::hierarchy_window::~hierarchy_window</ref><sp/>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="dc/d19/a00515_1a67f8c3a9e8f13275b061d617fc3a701b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d19/a00515_1a67f8c3a9e8f13275b061d617fc3a701b" kindref="member">mix::editor::windows::hierarchy_window::initialize</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>MAKE<sp/>ALL<sp/>INT<sp/>ARGUMENTS<sp/>AS<sp/>W,<sp/>H<sp/>TO<sp/>VEC2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>WINDOW_BEGIN_POS<sp/>=<sp/>0.85f;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>WINDOW_SIZE<sp/>=<sp/>0.15f;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rect<sp/>=<sp/><ref refid="d0/d2a/a00531" kindref="compound">mixImGui::window_rect</ref><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>(size.x<sp/>*<sp/>WINDOW_BEGIN_POS),<sp/>0,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>(size.x<sp/>*<sp/>WINDOW_SIZE),</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(size.y<sp/>*<sp/>0.75f));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dd7/a00567_1a79d97b87e7d22231df25bbe376ec5811" kindref="member">mixImGui::mixGui::add_window</ref><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dc/d19/a00515" kindref="compound">editor::windows::hierarchy_window</ref><sp/>(std::string<sp/>(</highlight><highlight class="stringliteral">&quot;Hierarchy&quot;</highlight><highlight class="normal">),<sp/>rect));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/hierarchy_window.cpp"/>
+  </compounddef>
+</doxygen>

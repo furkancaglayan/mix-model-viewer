@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/d9a/a00152" kind="file" language="C++">
+    <compoundname>mixCamera.h</compoundname>
+    <includes refid="d6/d82/a00293" local="yes">../math/mat.h</includes>
+    <includes refid="db/d7b/a00296" local="yes">../math/vec.h</includes>
+    <includes refid="de/d25/a00290" local="yes">../math/constants.h</includes>
+    <includes refid="d0/d39/a00314" local="yes">../platform/typedefs.h</includes>
+    <includes refid="d6/db8/a00158" local="yes">mixEntity.h</includes>
+    <includes local="no">cstdint</includes>
+    <includedby refid="da/d1e/a00149" local="yes">mixCamera.cpp</includedby>
+    <includedby refid="df/d91/a00335" local="yes">mixScene.h</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>components/mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mixEntity.h</label>
+        <link refid="d6/db8/a00158"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../mixTransform.h</label>
+        <link refid="d5/dcb/a00170"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../gui/gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../gui/i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="9">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="20">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="19">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="25">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="5">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="18">
+        <label>imgui.h</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+      <node id="23">
+        <label>stack</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>mixMesh_component.cpp</label>
+        <link refid="d2/df5/a00137"/>
+      </node>
+      <node id="16">
+        <label>mixMesh_component.h</label>
+        <link refid="d5/db1/a00140"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixCamera.cpp</label>
+        <link refid="da/d1e/a00149"/>
+      </node>
+      <node id="1">
+        <label>mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>editor_config.h</label>
+        <link refid="d7/d25/a00182"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mixEditor.cpp</label>
+        <link refid="de/df3/a00185"/>
+      </node>
+      <node id="5">
+        <label>mixEditor.h</label>
+        <link refid="da/d15/a00188"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>hierarchy_window.cpp</label>
+        <link refid="d9/dd0/a00191"/>
+      </node>
+      <node id="6">
+        <label>hierarchy_window.h</label>
+        <link refid="dc/d57/a00194"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>project_window.cpp</label>
+        <link refid="de/db1/a00197"/>
+      </node>
+      <node id="10">
+        <label>project_window.h</label>
+        <link refid="d3/db1/a00200"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>scene_window.cpp</label>
+        <link refid="de/d79/a00203"/>
+      </node>
+      <node id="12">
+        <label>scene_window.h</label>
+        <link refid="d5/df1/a00206"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>shortcuts_window.cpp</label>
+        <link refid="d3/de5/a00209"/>
+      </node>
+      <node id="14">
+        <label>shortcuts_window.h</label>
+        <link refid="dd/dc1/a00212"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>main.cpp</label>
+        <link refid="d2/d04/a00281"/>
+      </node>
+      <node id="18">
+        <label>mixScene.cpp</label>
+        <link refid="dc/d50/a00332"/>
+      </node>
+      <node id="3">
+        <label>mixScene.h</label>
+        <link refid="df/d91/a00335"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d4a/a00479" prot="public">mix::core::mixCamera</innerclass>
+    <innernamespace refid="db/d10/a00350">mix</innernamespace>
+    <innernamespace refid="d6/de1/a00356">mix::core</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/mat.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/vec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../math/constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../platform/typedefs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/db8/a00158" kindref="compound">mixEntity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/d10/a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref><sp/>:<sp/>std::uint8_t</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93" kindref="member">perspective</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65a88a486735e1314e3a3c682d2aaeba808" kindref="member">orthogonal</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19" refid="d9/d4a/a00479" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/d4a/a00479" kindref="compound">mixCamera</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dc/da0/a00483" kindref="compound">mixEntity</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d4a/a00479_1a7f9adfdfab8297835ffb1e530a8538bb" kindref="member">mixCamera</ref><sp/>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="d9/d4a/a00479_1a67d0af35da032542aca5ac71eb395381" kindref="member">get_view_mat</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="d9/d4a/a00479_1a4d518f4e66226591620dbc83605ad8b4" kindref="member">get_projection_mat</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a30a853485ed367917badb3850b031cc7" kindref="member">change_projection</ref><sp/>(<ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref><sp/>p);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" kindref="member">update</ref><sp/>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1ab47eda97f43213a08d5242b10da9fcd7" kindref="member">debug_input</ref><sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1ae86f9aa198400f62de0ccc9ad1a2996d" kindref="member">look_at</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref>&amp;<sp/>pos);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a8cd7eca473b5f4e76a9582f95d596b07" kindref="member">on_gui</ref><sp/>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d9/d4a/a00479_1a890b645ed90eac0b1ff84a14f908ec86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a890b645ed90eac0b1ff84a14f908ec86" kindref="member">_fov</ref>{<sp/>45.0f<sp/>};</highlight></codeline>
+<codeline lineno="37" refid="d9/d4a/a00479_1a2975f4549efb4b3d99cd8468349bcf14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a2975f4549efb4b3d99cd8468349bcf14" kindref="member">movement_speed</ref>{<sp/>2.0f<sp/>};</highlight></codeline>
+<codeline lineno="38" refid="d9/d4a/a00479_1a2fa37fa4ccdd90f2dae2b0e80641ec68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a2fa37fa4ccdd90f2dae2b0e80641ec68" kindref="member">_sensitivity</ref>{<sp/>2.0f<sp/>};</highlight></codeline>
+<codeline lineno="39" refid="d9/d4a/a00479_1af355fd8dcebbb1ea11833c54b0db6644" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1af355fd8dcebbb1ea11833c54b0db6644" kindref="member">_zoom</ref>{<sp/>1.0f<sp/>};</highlight></codeline>
+<codeline lineno="40" refid="d9/d4a/a00479_1a43ceb76c0cd41811108f9143b12caf52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a43ceb76c0cd41811108f9143b12caf52" kindref="member">_near</ref>{<sp/>0.01f<sp/>};</highlight></codeline>
+<codeline lineno="41" refid="d9/d4a/a00479_1a5fbc97844e3db5cf1198a777b2f08acf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a5fbc97844e3db5cf1198a777b2f08acf" kindref="member">_far</ref>{<sp/>1000.0f<sp/>};</highlight></codeline>
+<codeline lineno="42" refid="d9/d4a/a00479_1ad61fe7149d33b411a59b9ec9f9590080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1ad61fe7149d33b411a59b9ec9f9590080" kindref="member">_aspect</ref>{<sp/>1024.0f<sp/>/<sp/>768.0f<sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d9/d4a/a00479_1a7770dd23598005f6eae6c5810d5b9678" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref><sp/><ref refid="d9/d4a/a00479_1a7770dd23598005f6eae6c5810d5b9678" kindref="member">_projection</ref>{<sp/>projection_mode<sp/>::perspective<sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h"/>
+  </compounddef>
+</doxygen>

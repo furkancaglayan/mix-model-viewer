@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/d1e/a00149" kind="file" language="C++">
+    <compoundname>mixCamera.cpp</compoundname>
+    <includes refid="d7/d9a/a00152" local="yes">mixCamera.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>components/mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixCamera.cpp</label>
+        <link refid="da/d1e/a00149"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mixEntity.h</label>
+        <link refid="d6/db8/a00158"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../mixTransform.h</label>
+        <link refid="d5/dcb/a00170"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../gui/gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../gui/i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="10">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="21">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="20">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="26">
+        <label>cstdint</label>
+      </node>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="19">
+        <label>imgui.h</label>
+      </node>
+      <node id="17">
+        <label>memory</label>
+      </node>
+      <node id="24">
+        <label>stack</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d9a/a00152" kindref="compound">mixCamera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d9/d4a/a00479_1a7f9adfdfab8297835ffb1e530a8538bb" refkind="member"><highlight class="normal"><ref refid="d9/d4a/a00479_1a7f9adfdfab8297835ffb1e530a8538bb" kindref="member">mix::core::mixCamera::mixCamera</ref><sp/>()<sp/>:<sp/><ref refid="dc/da0/a00483" kindref="compound">mixEntity</ref><sp/>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d9/d4a/a00479_1a67d0af35da032542aca5ac71eb395381" refkind="member"><highlight class="normal"><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="d9/d4a/a00479_1a67d0af35da032542aca5ac71eb395381" kindref="member">mix::core::mixCamera::get_view_mat</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="8"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>at<sp/>=<sp/>_transform-&gt;get_position<sp/>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>up<sp/>=<sp/>_transform-&gt;up<sp/>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d82/a00293_1ae6a0091d27cb2fbf9226255f0214b56b" kindref="member">lookat</ref><sp/>(at,<sp/>at<sp/>+<sp/>_transform-&gt;forward<sp/>(),<sp/>up);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d9/d4a/a00479_1a4d518f4e66226591620dbc83605ad8b4" refkind="member"><highlight class="normal"><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/><ref refid="d9/d4a/a00479_1a4d518f4e66226591620dbc83605ad8b4" kindref="member">mix::core::mixCamera::get_projection_mat</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="15"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_projection<sp/>==<sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93" kindref="member">projection_mode::perspective</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93" kindref="member">perspective</ref><sp/>(_fov,<sp/>_aspect,<sp/>_near,<sp/>_far);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d82/a00293_1a55faa7d5dcd137013d6aa060aec588bc" kindref="member">ortho</ref><sp/>(-5,<sp/>5,<sp/>-5,<sp/>5);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d9/d4a/a00479_1a30a853485ed367917badb3850b031cc7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a30a853485ed367917badb3850b031cc7" kindref="member">mix::core::mixCamera::change_projection</ref><sp/>(<ref refid="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" kindref="member">projection_mode</ref><sp/>p)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>_projection<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="d9/d4a/a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a77ea534b0abce2fe94e4ac8ad29072d6" kindref="member">mix::core::mixCamera::update</ref><sp/>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/da0/a00483_1a2d0ceedf796382e3cc5a2f9d416994bf" kindref="member">mix::core::mixEntity::update</ref><sp/>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d9/d4a/a00479_1ab47eda97f43213a08d5242b10da9fcd7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1ab47eda97f43213a08d5242b10da9fcd7" kindref="member">mix::core::mixCamera::debug_input</ref><sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>v)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>_transform-&gt;translate<sp/>(v<sp/>*<sp/>0.015f);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d9/d4a/a00479_1ae86f9aa198400f62de0ccc9ad1a2996d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1ae86f9aa198400f62de0ccc9ad1a2996d" kindref="member">mix::core::mixCamera::look_at</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref>&amp;<sp/>pos)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>_transform-&gt;look_at<sp/>(pos);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d9/d4a/a00479_1a8cd7eca473b5f4e76a9582f95d596b07" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d4a/a00479_1a8cd7eca473b5f4e76a9582f95d596b07" kindref="member">mix::core::mixCamera::on_gui</ref><sp/>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.cpp"/>
+  </compounddef>
+</doxygen>

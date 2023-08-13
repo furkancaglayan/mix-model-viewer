@@ -2,14 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_8c788bc73d6aafa34694fc96d9609fd3" kind="dir">
     <compoundname>windows</compoundname>
-    <innerfile refid="a00191">hierarchy_window.cpp</innerfile>
-    <innerfile refid="a00194">hierarchy_window.h</innerfile>
-    <innerfile refid="a00197">project_window.cpp</innerfile>
-    <innerfile refid="a00200">project_window.h</innerfile>
-    <innerfile refid="a00203">scene_window.cpp</innerfile>
-    <innerfile refid="a00206">scene_window.h</innerfile>
-    <innerfile refid="a00209">shortcuts_window.cpp</innerfile>
-    <innerfile refid="a00212">shortcuts_window.h</innerfile>
+    <innerfile refid="d9/dd0/a00191">hierarchy_window.cpp</innerfile>
+    <innerfile refid="dc/d57/a00194">hierarchy_window.h</innerfile>
+    <innerfile refid="de/db1/a00197">project_window.cpp</innerfile>
+    <innerfile refid="d3/db1/a00200">project_window.h</innerfile>
+    <innerfile refid="de/d79/a00203">scene_window.cpp</innerfile>
+    <innerfile refid="d5/df1/a00206">scene_window.h</innerfile>
+    <innerfile refid="d3/de5/a00209">shortcuts_window.cpp</innerfile>
+    <innerfile refid="dd/dc1/a00212">shortcuts_window.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

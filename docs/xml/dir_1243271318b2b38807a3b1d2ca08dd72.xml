@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_1243271318b2b38807a3b1d2ca08dd72" kind="dir">
     <compoundname>rendering</compoundname>
-    <innerfile refid="a00320">rendering_context.cpp</innerfile>
-    <innerfile refid="a00323">rendering_context.h</innerfile>
-    <innerfile refid="a00326">scene_context.cpp</innerfile>
-    <innerfile refid="a00329">scene_context.h</innerfile>
+    <innerfile refid="dd/de2/a00320">rendering_context.cpp</innerfile>
+    <innerfile refid="de/d55/a00323">rendering_context.h</innerfile>
+    <innerfile refid="d8/d23/a00326">scene_context.cpp</innerfile>
+    <innerfile refid="dd/d4e/a00329">scene_context.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

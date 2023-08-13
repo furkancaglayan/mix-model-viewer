@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_48fb23e14ee2fab1a0dc25ff509b8154" kind="dir">
     <compoundname>light</compoundname>
-    <innerfile refid="a00143">mixLight.cpp</innerfile>
-    <innerfile refid="a00146">mixLight.h</innerfile>
+    <innerfile refid="d7/dce/a00143">mixLight.cpp</innerfile>
+    <innerfile refid="d9/db6/a00146">mixLight.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

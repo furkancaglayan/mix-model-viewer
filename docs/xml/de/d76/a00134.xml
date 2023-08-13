@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="de/d76/a00134" kind="file" language="C++">
+    <compoundname>mixComponent.h</compoundname>
+    <includes refid="de/d55/a00323" local="yes">../../rendering/rendering_context.h</includes>
+    <includes refid="d5/dcb/a00170" local="yes">../mixTransform.h</includes>
+    <includedby refid="d7/d06/a00131" local="yes">mixComponent.cpp</includedby>
+    <includedby refid="d6/db8/a00158" local="yes">mixEntity.h</includedby>
+    <includedby refid="d5/db1/a00140" local="yes">mixMesh_component.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../mixTransform.h</label>
+        <link refid="d5/dcb/a00170"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>mixComponent.cpp</label>
+        <link refid="d7/d06/a00131"/>
+      </node>
+      <node id="1">
+        <label>mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mixMesh_component.cpp</label>
+        <link refid="d2/df5/a00137"/>
+      </node>
+      <node id="19">
+        <label>mixMesh_component.h</label>
+        <link refid="d5/db1/a00140"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mixLight.cpp</label>
+        <link refid="d7/dce/a00143"/>
+      </node>
+      <node id="23">
+        <label>mixLight.h</label>
+        <link refid="d9/db6/a00146"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mixCamera.cpp</label>
+        <link refid="da/d1e/a00149"/>
+      </node>
+      <node id="4">
+        <label>mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mixEntity.cpp</label>
+        <link refid="d3/df8/a00155"/>
+      </node>
+      <node id="3">
+        <label>mixEntity.h</label>
+        <link refid="d6/db8/a00158"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>editor_config.h</label>
+        <link refid="d7/d25/a00182"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mixEditor.cpp</label>
+        <link refid="de/df3/a00185"/>
+      </node>
+      <node id="8">
+        <label>mixEditor.h</label>
+        <link refid="da/d15/a00188"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>hierarchy_window.cpp</label>
+        <link refid="d9/dd0/a00191"/>
+      </node>
+      <node id="9">
+        <label>hierarchy_window.h</label>
+        <link refid="dc/d57/a00194"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>project_window.cpp</label>
+        <link refid="de/db1/a00197"/>
+      </node>
+      <node id="13">
+        <label>project_window.h</label>
+        <link refid="d3/db1/a00200"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>scene_window.cpp</label>
+        <link refid="de/d79/a00203"/>
+      </node>
+      <node id="15">
+        <label>scene_window.h</label>
+        <link refid="d5/df1/a00206"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>shortcuts_window.cpp</label>
+        <link refid="d3/de5/a00209"/>
+      </node>
+      <node id="17">
+        <label>shortcuts_window.h</label>
+        <link refid="dd/dc1/a00212"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>main.cpp</label>
+        <link refid="d2/d04/a00281"/>
+      </node>
+      <node id="25">
+        <label>scene_context.h</label>
+        <link refid="dd/d4e/a00329"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mixScene.cpp</label>
+        <link refid="dc/d50/a00332"/>
+      </node>
+      <node id="6">
+        <label>mixScene.h</label>
+        <link refid="df/d91/a00335"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d5e/a00467" prot="public">mix::components::mixComponent</innerclass>
+    <innernamespace refid="db/d10/a00350">mix</innernamespace>
+    <innernamespace refid="d3/dc9/a00355">mix::components</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../rendering/rendering_context.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../mixTransform.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/d10/a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="d3/dc9/a00355" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">components</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="d7/d5e/a00467" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d5e/a00467" kindref="compound">mixComponent</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d5e/a00467_1ac24c61df2bc6aef0a1619a8a84d576a2" kindref="member">mixComponent</ref><sp/>();</highlight></codeline>
+<codeline lineno="15" refid="d7/d5e/a00467_1a673f5543f4d7e6245af938840c5d3a47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d5e/a00467_1a673f5543f4d7e6245af938840c5d3a47" kindref="member">update</ref><sp/>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16" refid="d7/d5e/a00467_1a62d4d68c4c5428036b0c730cde7f9915" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d5e/a00467_1a62d4d68c4c5428036b0c730cde7f9915" kindref="member">render</ref><sp/>(</highlight><highlight class="comment">/*<sp/>mix::scene_management::mixScene*<sp/>scene,*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d6a/a00619" kindref="compound">mix::rendering::rendering_context</ref>*<sp/>rendering,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d67/a00499" kindref="compound">mix::core::mixTransform</ref>*<sp/><ref refid="db/dc4/a00495" kindref="compound">transform</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>assetsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h"/>
+  </compounddef>
+</doxygen>

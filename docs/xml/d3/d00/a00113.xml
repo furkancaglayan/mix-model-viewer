@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/d00/a00113" kind="file" language="C++">
+    <compoundname>mixAsset_manager.cpp</compoundname>
+    <includes refid="d4/d3e/a00116" local="yes">mixAsset_manager.h</includes>
+    <includes refid="db/db6/a00074" local="yes">default_processors/default_texture_processor.h</includes>
+    <includes refid="da/d2a/a00086" local="yes">loaders/mixAsset_loader_font.h</includes>
+    <includes refid="d1/dc1/a00092" local="yes">loaders/mixAsset_loader_mesh.h</includes>
+    <includes refid="d1/d44/a00098" local="yes">loaders/mixAsset_loader_shader.h</includes>
+    <includes refid="d0/dc2/a00104" local="yes">loaders/mixAsset_loader_text.h</includes>
+    <includes refid="d4/d81/a00110" local="yes">loaders/mixAsset_loader_texture.h</includes>
+    <includes refid="d5/d35/a00266" local="yes">../library/debug.h</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>../asset_processor.h</label>
+        <link refid="d9/d2e/a00056"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../assetsystem/asset_types.h</label>
+        <link refid="df/d03/a00062"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>assets/mixAsset_folder.h</label>
+        <link refid="dd/dad/a00005"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../assetsystem/assets/mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../assets/mixFont.h</label>
+        <link refid="d4/d51/a00017"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../assets/mixMesh.h</label>
+        <link refid="d5/d16/a00029"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>../assets/mixText_asset.h</label>
+        <link refid="dc/dee/a00053"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>default_processors/default_texture_processor.h</label>
+        <link refid="db/db6/a00074"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>loaders/mixAsset_loader_base.h</label>
+        <link refid="da/dec/a00080"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>loaders/mixAsset_loader_font.h</label>
+        <link refid="da/d2a/a00086"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>loaders/mixAsset_loader_mesh.h</label>
+        <link refid="d1/dc1/a00092"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>loaders/mixAsset_loader_shader.h</label>
+        <link refid="d1/d44/a00098"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>loaders/mixAsset_loader_text.h</label>
+        <link refid="d0/dc2/a00104"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>loaders/mixAsset_loader_texture.h</label>
+        <link refid="d4/d81/a00110"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixAsset_manager.cpp</label>
+        <link refid="d3/d00/a00113"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixAsset_manager.h</label>
+        <link refid="d4/d3e/a00116"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../containers/tree_node.h</label>
+        <link refid="d1/d88/a00128"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>debug.h</label>
+        <link refid="d5/d35/a00266"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../../library/event.h</label>
+        <link refid="d9/dd6/a00272"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../../library/event_callback.h</label>
+        <link refid="d3/d5e/a00275"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ievent_callback_base.h</label>
+        <link refid="dc/d5d/a00278"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../../math/vertex.h</label>
+        <link refid="df/d95/a00299"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../platform/mixFile.h</label>
+        <link refid="d1/d5d/a00311"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>windows/platform_utils.h</label>
+        <link refid="da/de0/a00317"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="8">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="26">
+        <label>Windows.h</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>cassert</label>
+      </node>
+      <node id="33">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="43">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="44">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>istream</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="36">
+        <label>stdexcept</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="27">
+        <label>tchar.h</label>
+      </node>
+      <node id="37">
+        <label>typeindex</label>
+      </node>
+      <node id="24">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="db/d10/a00350">mix</innernamespace>
+    <innernamespace refid="d0/d48/a00351">mix::assetsystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d3e/a00116" kindref="compound">mixAsset_manager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/db6/a00074" kindref="compound">default_processors/default_texture_processor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/d2a/a00086" kindref="compound">loaders/mixAsset_loader_font.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/dc1/a00092" kindref="compound">loaders/mixAsset_loader_mesh.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d44/a00098" kindref="compound">loaders/mixAsset_loader_shader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/dc2/a00104" kindref="compound">loaders/mixAsset_loader_text.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d81/a00110" kindref="compound">loaders/mixAsset_loader_texture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../library/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/d10/a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">assetsystem</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixAsset_manager*<sp/><ref refid="dd/d63/a00455_1a78db6245156c814bbc9e983bfe02fa61" kindref="member">mixAsset_manager::instance</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15" refid="dd/d63/a00455_1a1c9d20b9848c9388e546e4190be56f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a1c9d20b9848c9388e546e4190be56f4e" kindref="member">mixAsset_manager::mixAsset_manager</ref><sp/>(std::unique_ptr&lt;mix::assetsystem::mixAsset_folder&gt;<sp/>root)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a78db6245156c814bbc9e983bfe02fa61" kindref="member">instance</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref><sp/>=<sp/>std::make_unique&lt;asset_tree_val&gt;<sp/>(root-&gt;get_guid<sp/>(),<sp/>std::move<sp/>(root),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a8bced18d57b0951dd21f8955dc66bbc7" kindref="member">initialize_default_asset_loaders</ref><sp/>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a5f4ff50318f0700507b6016f01bcb506" kindref="member">resolve_all_assets</ref><sp/>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a6cadd0a19bf63472bf5be7a87c2cf005" kindref="member">debug</ref><sp/>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="dd/d63/a00455_1aac2b01c98aa01a5acd1cc1e1c25ae12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a1c9d20b9848c9388e546e4190be56f4e" kindref="member">mixAsset_manager::mixAsset_manager</ref><sp/>(std::string&amp;<sp/>root_path)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a78db6245156c814bbc9e983bfe02fa61" kindref="member">instance</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>root<sp/>=<sp/>std::make_unique&lt;mix::assetsystem::mixAsset_folder&gt;<sp/>(root_path);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref><sp/>=<sp/>std::make_unique&lt;asset_tree_val&gt;<sp/>(root-&gt;get_guid<sp/>(),<sp/>std::move<sp/>(root),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a8bced18d57b0951dd21f8955dc66bbc7" kindref="member">initialize_default_asset_loaders</ref><sp/>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a5f4ff50318f0700507b6016f01bcb506" kindref="member">resolve_all_assets</ref><sp/>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1a6cadd0a19bf63472bf5be7a87c2cf005" kindref="member">debug</ref><sp/>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="dd/d63/a00455_1a2343833e0251d4f4aa9ebec46540a1cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d95/a00379" kindref="compound">mix::assetsystem::mixAsset_folder</ref>*<sp/><ref refid="dd/d63/a00455_1a2343833e0251d4f4aa9ebec46540a1cf" kindref="member">mixAsset_manager::get_root_folder</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="d8/d95/a00379" kindref="compound">mix::assetsystem::mixAsset_folder</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(<ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref>-&gt;get_value<sp/>());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="dd/d63/a00455_1ae49fa01a48e426cf3da3d8a43baad515" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d5d/a00463" kindref="compound">asset_tree_ptr</ref><sp/><ref refid="dd/d63/a00455_1ae49fa01a48e426cf3da3d8a43baad515" kindref="member">mixAsset_manager::get_root_node</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref>.get<sp/>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="dd/d63/a00455_1a5f4ff50318f0700507b6016f01bcb506" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d63/a00455_1a5f4ff50318f0700507b6016f01bcb506" kindref="member">mixAsset_manager::resolve_all_assets</ref><sp/>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a3215f683b10314f5af3b5122d5e8bc41" kindref="member">INFO</ref><sp/>(<ref refid="dd/d63/a00455_1a5f4ff50318f0700507b6016f01bcb506" kindref="member">mixAsset_manager::resolve_all_assets</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>root<sp/>=</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="d8/d95/a00379" kindref="compound">mix::assetsystem::mixAsset_folder</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(<ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref>-&gt;get_value<sp/>()));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" kindref="member">resolve_assets_impl</ref><sp/>(root-&gt;get_path_as_str<sp/>(),<sp/><ref refid="dd/d63/a00455_1ae1eb62cf209897c2dc65cc70474737d6" kindref="member">_assets</ref>.get<sp/>());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tree_node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" kindref="member">mixAsset_manager::resolve_assets_impl</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p,<sp/><ref refid="d3/d5d/a00463" kindref="compound">asset_tree_ptr</ref><sp/>node)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>root-&gt;get_path_as_str<sp/>()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>all_paths<sp/>=<sp/><ref refid="d5/dd8/a00615_1a235348b21738003bfb2ada01b8c9abfa" kindref="member">mix::platform::platform_utils::get_files</ref><sp/>(p,<sp/><ref refid="d5/dd8/a00615_1ac89886459c04961d2de182d51f5443f0aa181a603769c1f98ad927e7367c7aa51" kindref="member">mix::platform::platform_utils::search_type::all</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a21a2c7330a04ac78200a986f66609369" kindref="member">DEBUG_LOG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Resolving<sp/>asset:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>p);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>path<sp/>:<sp/>all_paths)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/dd8/a00615_1a5ebf73c4ca3791956b3b2f2fe258e394" kindref="member">mix::platform::platform_utils::is_folder</ref><sp/>(path))</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>folder<sp/>=<sp/>std::make_shared&lt;mix::assetsystem::mixAsset_folder&gt;<sp/>(path);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>guid<sp/>=<sp/>folder-&gt;get_guid<sp/>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_node<sp/>=<sp/>node-&gt;<ref refid="d3/d5d/a00463_1af247d1617c323094f079f2962a797555" kindref="member">insert</ref><sp/>(guid,<sp/>std::move<sp/>(folder));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>add<sp/>path<sp/>join</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d63/a00455_1ae09d5047c26fd969a8f310221a8d4893" kindref="member">resolve_assets_impl</ref><sp/>(path,<sp/>new_node);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/dc0/a00611" kindref="compound">mix::platform::mixFile</ref><sp/>file{<sp/>path<sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref>*<sp/>asset<sp/>=<sp/><ref refid="dd/d63/a00455_1a78db6245156c814bbc9e983bfe02fa61" kindref="member">mixAsset_manager::instance</ref>-&gt;<ref refid="dd/d63/a00455_1a365a984964c2c8dc231729aa19dc8231" kindref="member">resolve_asset</ref><sp/>(file);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="d3/d5d/a00463_1af247d1617c323094f079f2962a797555" kindref="member">insert</ref><sp/>(asset-&gt;<ref refid="da/dee/a00383_1ae7f95f45067eeec3fb17487495c886d8" kindref="member">get_guid</ref><sp/>(),<sp/>std::shared_ptr&lt;mixAsset_item&gt;{<sp/>asset<sp/>});</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a21a2c7330a04ac78200a986f66609369" kindref="member">DEBUG_LOG</ref><sp/>(</highlight><highlight class="stringliteral">&quot;\t<sp/>Adding<sp/>file:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>path);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="dd/d63/a00455_1a8bced18d57b0951dd21f8955dc66bbc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d63/a00455_1a8bced18d57b0951dd21f8955dc66bbc7" kindref="member">mixAsset_manager::initialize_default_asset_loaders</ref><sp/>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_text&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3a9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">mix::assetsystem::asset_type::Text</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_texture&gt;<sp/>(</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3aa3e8ae43188ae76d38f414b2bdb0077b" kindref="member">mix::assetsystem::asset_type::Texture</ref>,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="da/db6/a00427" kindref="compound">mix::assetsystem::default_processors::default_texture_processor</ref><sp/>());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_mesh&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3ad92a8333dd3ccb895cc65f7455b71206" kindref="member">mix::assetsystem::asset_type::Material</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_mesh&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3a710fdb6adb881b408116ef95335e1961" kindref="member">mix::assetsystem::asset_type::Mesh</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_text&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3a6311ae17c1ee52b36e68aaf4ad066387" kindref="member">mix::assetsystem::asset_type::Other</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_shader&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3aa88a92f4a0e793589f2341851a15c660" kindref="member">mix::assetsystem::asset_type::Shader</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_loader&lt;mix::assetsystem::loaders::mixAsset_loader_font&gt;<sp/>(<ref refid="d0/d48/a00351_1a7a1e399982c72a880e55af2f42b99de3a194f5394ae2e9c74dc3c441b92862d1d" kindref="member">mix::assetsystem::asset_type::Font</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>assetsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/mixAsset_manager.cpp"/>
+  </compounddef>
+</doxygen>

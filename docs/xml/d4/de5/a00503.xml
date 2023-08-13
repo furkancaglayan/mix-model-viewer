@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d4/de5/a00503" kind="class" language="C++" prot="public">
+    <compoundname>mix::core::mixWindow</compoundname>
+    <includes refid="d5/de9/a00176" local="no">mixWindow.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" prot="private" static="no">
+        <type>unsigned int</type>
+        <definition>using mix::core::mixWindow::uint =  unsigned int</definition>
+        <argsstring></argsstring>
+        <name>uint</name>
+        <qualifiedname>mix::core::mixWindow::uint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="12" column="1" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d4/de5/a00503_1ae740db172670f000d252f4c68cf058c0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int mix::core::mixWindow::_context_version_min</definition>
+        <argsstring></argsstring>
+        <name>_context_version_min</name>
+        <qualifiedname>mix::core::mixWindow::_context_version_min</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="36" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1ae9fe0151a7f3ff359ad1e38be5e41994" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int mix::core::mixWindow::_context_version_max</definition>
+        <argsstring></argsstring>
+        <name>_context_version_max</name>
+        <qualifiedname>mix::core::mixWindow::_context_version_max</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="37" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/de5/a00503_1a2975b8ff6304b5abc7cb0e3f412a94fb" prot="private" static="no" mutable="no">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow* mix::core::mixWindow::_glfw_window</definition>
+        <argsstring></argsstring>
+        <name>_glfw_window</name>
+        <qualifiedname>mix::core::mixWindow::_glfw_window</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="46" column="12" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="d4/de5/a00503_1afee4fb7049fe4652c959aad535704c96" compoundref="d7/d3f/a00173" startline="11" endline="16">get_window_size</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1acd85a09100437dcef6b117fc54c4b808" prot="private" static="no" mutable="no">
+        <type>GLFWmonitor *</type>
+        <definition>GLFWmonitor* mix::core::mixWindow::_monitor</definition>
+        <argsstring></argsstring>
+        <name>_monitor</name>
+        <qualifiedname>mix::core::mixWindow::_monitor</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="47" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1af192ad0ab4e18c33e8b717d1c500d8f9" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref></type>
+        <definition>uint mix::core::mixWindow::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>mix::core::mixWindow::_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="50" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1ad904a0193336b30f4265d4703afee987" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref></type>
+        <definition>uint mix::core::mixWindow::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>mix::core::mixWindow::_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="51" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1ad1a6421b502f130ffacc964752b757b2" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref></type>
+        <definition>uint mix::core::mixWindow::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>mix::core::mixWindow::_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="52" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de5/a00503_1a9523a0977076d507c41e53ac9318f950" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" kindref="member">uint</ref></type>
+        <definition>uint mix::core::mixWindow::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>mix::core::mixWindow::_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="53" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/de5/a00503_1ae25411fdf0a329f177a453ffaba0a9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixWindow::mixWindow</definition>
+        <argsstring>()</argsstring>
+        <name>mixWindow</name>
+        <qualifiedname>mix::core::mixWindow::mixWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="15" column="1" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a99663f1810227e25923134b2b6f327ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixWindow::~mixWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~mixWindow</name>
+        <qualifiedname>mix::core::mixWindow::~mixWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="16" column="1" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a14efe79b5e7199f324516c0bb9087bfe" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::core::mixWindow::initialize</definition>
+        <argsstring>(vec2i size) noexcept</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::core::mixWindow::initialize</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="18" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="113" bodyend="143"/>
+        <references refid="d5/d35/a00266_1a9b05b48519d9d58a43c333ae52d0da71" compoundref="d5/d35/a00266" startline="7">FAILED_ASSERT</references>
+        <references refid="d5/d35/a00266_1a3215f683b10314f5af3b5122d5e8bc41" compoundref="d5/d35/a00266" startline="11">INFO</references>
+        <references refid="d4/de5/a00503_1a14efe79b5e7199f324516c0bb9087bfe" compoundref="d7/d3f/a00173" startline="113" endline="143">initialize</references>
+        <referencedby refid="d4/de5/a00503_1a14efe79b5e7199f324516c0bb9087bfe" compoundref="d7/d3f/a00173" startline="113" endline="143">initialize</referencedby>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a0ef208f883ee10b3ff825425aa73eba1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::close</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>close</name>
+        <qualifiedname>mix::core::mixWindow::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="19" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a4aa8bc2fa7be78256493712514d9e837" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int mix::core::mixWindow::get_key</definition>
+        <argsstring>(int key) noexcept</argsstring>
+        <name>get_key</name>
+        <qualifiedname>mix::core::mixWindow::get_key</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="20" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1afee4fb7049fe4652c959aad535704c96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+        <definition>vec2i mix::core::mixWindow::get_window_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_window_size</name>
+        <qualifiedname>mix::core::mixWindow::get_window_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="22" column="7" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="11" bodyend="16"/>
+        <references refid="d4/de5/a00503_1a2975b8ff6304b5abc7cb0e3f412a94fb" compoundref="d5/de9/a00176" startline="46">_glfw_window</references>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a7daa5d8cccec6bdeaa9de4e465e4ef12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::set_window_size</definition>
+        <argsstring>(const vec2i &amp;size) const</argsstring>
+        <name>set_window_size</name>
+        <qualifiedname>mix::core::mixWindow::set_window_size</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="23" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="18" bodyend="21"/>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a44893df1a4b3f00a1f50f66d5ebe9cff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+        <definition>vec2i mix::core::mixWindow::get_window_position</definition>
+        <argsstring>() const</argsstring>
+        <name>get_window_position</name>
+        <qualifiedname>mix::core::mixWindow::get_window_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="24" column="19" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="23" bodyend="28"/>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a9b880f3e6383b9e1ee3d6923ff676d44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::set_window_position</definition>
+        <argsstring>(const vec2i &amp;size) const</argsstring>
+        <name>set_window_position</name>
+        <qualifiedname>mix::core::mixWindow::set_window_position</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="25" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="30" bodyend="33"/>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a732d1871b412eae84b3a41871a58dd70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::get_frame_rect</definition>
+        <argsstring>(vec2i &amp;xy, vec2i zw) const</argsstring>
+        <name>get_frame_rect</name>
+        <qualifiedname>mix::core::mixWindow::get_frame_rect</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref></type>
+          <declname>zw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1aa213e77a14c2d4a9d013f42594980ba5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::set_aspect_ratio</definition>
+        <argsstring>(int w, int h) const</argsstring>
+        <name>set_aspect_ratio</name>
+        <qualifiedname>mix::core::mixWindow::set_aspect_ratio</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="28" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a99c75e0a38fe934e8f98ff38738a94e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::set_icon</definition>
+        <argsstring>(GLFWimage *images, int count)</argsstring>
+        <name>set_icon</name>
+        <qualifiedname>mix::core::mixWindow::set_icon</qualifiedname>
+        <param>
+          <type>GLFWimage *</type>
+          <declname>images</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="29" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1ab7439063c98170848373d6b33b73137e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::set_title</definition>
+        <argsstring>(std::string title)</argsstring>
+        <name>set_title</name>
+        <qualifiedname>mix::core::mixWindow::set_title</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="30" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="51" bodyend="54"/>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a73ea53b97406f37617af059df2260009" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::maximize</definition>
+        <argsstring>() const</argsstring>
+        <name>maximize</name>
+        <qualifiedname>mix::core::mixWindow::maximize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="32" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a0af6c000138e69c6be2fa7c8c2afcf9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::restore</definition>
+        <argsstring>() const</argsstring>
+        <name>restore</name>
+        <qualifiedname>mix::core::mixWindow::restore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="33" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1ab4851949b76d94e40b0af66374ced1ea" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow * mix::core::mixWindow::get_glfw_window</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_glfw_window</name>
+        <qualifiedname>mix::core::mixWindow::get_glfw_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="35" column="24" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a5e6bd225c513ef14653ecd9173338116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::on_window_position_changed</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>on_window_position_changed</name>
+        <qualifiedname>mix::core::mixWindow::on_window_position_changed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="39" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1aad3a592d879d55ad73bd6402fa10c286" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::hide</definition>
+        <argsstring>() const</argsstring>
+        <name>hide</name>
+        <qualifiedname>mix::core::mixWindow::hide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="41" column="6" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1a06d7925200ef59c52c80d18d3234a2cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <qualifiedname>mix::core::mixWindow::show</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="42" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="82" bodyend="85"/>
+        <referencedby refid="d1/dc6/a00347_1a1b8aeac01ec54f956253ce8895085fc7" compoundref="d1/dc6/a00347" startline="6" endline="24">TEST_F</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de5/a00503_1ab9e56a1236b0b41d021b65ee010e5030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixWindow::on_window_size_changed</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>on_window_size_changed</name>
+        <qualifiedname>mix::core::mixWindow::on_window_size_changed</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="43" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.cpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" line="10" column="1" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixWindow.h" bodystart="11" bodyend="54"/>
+    <listofallmembers>
+      <member refid="d4/de5/a00503_1ae9fe0151a7f3ff359ad1e38be5e41994" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_context_version_max</name></member>
+      <member refid="d4/de5/a00503_1ae740db172670f000d252f4c68cf058c0" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_context_version_min</name></member>
+      <member refid="d4/de5/a00503_1a2975b8ff6304b5abc7cb0e3f412a94fb" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_glfw_window</name></member>
+      <member refid="d4/de5/a00503_1ad904a0193336b30f4265d4703afee987" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_height</name></member>
+      <member refid="d4/de5/a00503_1acd85a09100437dcef6b117fc54c4b808" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_monitor</name></member>
+      <member refid="d4/de5/a00503_1af192ad0ab4e18c33e8b717d1c500d8f9" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_width</name></member>
+      <member refid="d4/de5/a00503_1ad1a6421b502f130ffacc964752b757b2" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_x</name></member>
+      <member refid="d4/de5/a00503_1a9523a0977076d507c41e53ac9318f950" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>_y</name></member>
+      <member refid="d4/de5/a00503_1a0ef208f883ee10b3ff825425aa73eba1" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>close</name></member>
+      <member refid="d4/de5/a00503_1a732d1871b412eae84b3a41871a58dd70" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>get_frame_rect</name></member>
+      <member refid="d4/de5/a00503_1ab4851949b76d94e40b0af66374ced1ea" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>get_glfw_window</name></member>
+      <member refid="d4/de5/a00503_1a4aa8bc2fa7be78256493712514d9e837" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>get_key</name></member>
+      <member refid="d4/de5/a00503_1a44893df1a4b3f00a1f50f66d5ebe9cff" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>get_window_position</name></member>
+      <member refid="d4/de5/a00503_1afee4fb7049fe4652c959aad535704c96" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>get_window_size</name></member>
+      <member refid="d4/de5/a00503_1aad3a592d879d55ad73bd6402fa10c286" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>hide</name></member>
+      <member refid="d4/de5/a00503_1a14efe79b5e7199f324516c0bb9087bfe" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>initialize</name></member>
+      <member refid="d4/de5/a00503_1a73ea53b97406f37617af059df2260009" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>maximize</name></member>
+      <member refid="d4/de5/a00503_1ae25411fdf0a329f177a453ffaba0a9c0" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>mixWindow</name></member>
+      <member refid="d4/de5/a00503_1a5e6bd225c513ef14653ecd9173338116" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>on_window_position_changed</name></member>
+      <member refid="d4/de5/a00503_1ab9e56a1236b0b41d021b65ee010e5030" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>on_window_size_changed</name></member>
+      <member refid="d4/de5/a00503_1a0af6c000138e69c6be2fa7c8c2afcf9f" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>restore</name></member>
+      <member refid="d4/de5/a00503_1aa213e77a14c2d4a9d013f42594980ba5" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>set_aspect_ratio</name></member>
+      <member refid="d4/de5/a00503_1a99c75e0a38fe934e8f98ff38738a94e0" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>set_icon</name></member>
+      <member refid="d4/de5/a00503_1ab7439063c98170848373d6b33b73137e" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>set_title</name></member>
+      <member refid="d4/de5/a00503_1a9b880f3e6383b9e1ee3d6923ff676d44" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>set_window_position</name></member>
+      <member refid="d4/de5/a00503_1a7daa5d8cccec6bdeaa9de4e465e4ef12" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>set_window_size</name></member>
+      <member refid="d4/de5/a00503_1a06d7925200ef59c52c80d18d3234a2cb" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>show</name></member>
+      <member refid="d4/de5/a00503_1a89b0f6943b877f6254852034c60803cd" prot="private" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>uint</name></member>
+      <member refid="d4/de5/a00503_1a99663f1810227e25923134b2b6f327ed" prot="public" virt="non-virtual"><scope>mix::core::mixWindow</scope><name>~mixWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,10 +3,10 @@
   <compounddef id="dir_a31afd56823c6335224242a3eb4525db" kind="dir">
     <compoundname>editor</compoundname>
     <innerdir refid="dir_8c788bc73d6aafa34694fc96d9609fd3">windows</innerdir>
-    <innerfile refid="a00179">editor_config.cpp</innerfile>
-    <innerfile refid="a00182">editor_config.h</innerfile>
-    <innerfile refid="a00185">mixEditor.cpp</innerfile>
-    <innerfile refid="a00188">mixEditor.h</innerfile>
+    <innerfile refid="db/dd9/a00179">editor_config.cpp</innerfile>
+    <innerfile refid="d7/d25/a00182">editor_config.h</innerfile>
+    <innerfile refid="de/df3/a00185">mixEditor.cpp</innerfile>
+    <innerfile refid="da/d15/a00188">mixEditor.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

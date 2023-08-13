@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d8/d41/a00038" kind="file" language="C++">
+    <compoundname>mixShader_program.cpp</compoundname>
+    <includes refid="dd/d32/a00041" local="yes">mixShader_program.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixShader_program.cpp</label>
+        <link refid="d8/d41/a00038"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="14">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="21">
+        <label>fstream</label>
+      </node>
+      <node id="16">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="22">
+        <label>iostream</label>
+      </node>
+      <node id="23">
+        <label>istream</label>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d32/a00041" kindref="compound">mixShader_program.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d1/d98/a00407_1ac66a692e202433991d48c455f3235019" refkind="member"><highlight class="normal"><ref refid="d1/d98/a00407_1a97dc92e339eb58d13360561c166dae92" kindref="member">mix::assetsystem::mixShader_program::mixShader_program</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,<sp/><ref refid="d0/da0/a00403" kindref="compound">shader</ref>*<sp/>vertex_shader,<sp/><ref refid="d0/da0/a00403" kindref="compound">shader</ref>*<sp/>fragment_shader)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">:<sp/><ref refid="db/d10/a00350" kindref="compound">mix</ref>::assetsystem::<ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d98/a00407_1a058daf02da9350e45a855f1ef9cf787f" kindref="member">compile</ref><sp/>(vertex_shader,<sp/>fragment_shader);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d1/d98/a00407_1ad1be87aac0c1946bfeba0bd8ff205a33" refkind="member"><highlight class="normal"><ref refid="d1/d98/a00407_1ad1be87aac0c1946bfeba0bd8ff205a33" kindref="member">mix::assetsystem::mixShader_program::~mixShader_program</ref><sp/>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteProgram<sp/>(program_id);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d1/d98/a00407_1affac0c3e92ee77b97619d2dbd51a03bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1affac0c3e92ee77b97619d2dbd51a03bc" kindref="member">mix::assetsystem::mixShader_program::get_uniform_location</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glGetUniformLocation<sp/>(program_id,<sp/>s.c_str<sp/>());</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d1/d98/a00407_1a65bcb4b07e5fa6f5de97d086208c43bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1affac0c3e92ee77b97619d2dbd51a03bc" kindref="member">mix::assetsystem::mixShader_program::get_uniform_location</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glGetUniformLocation<sp/>(program_id,<sp/>s);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d1/d98/a00407_1a058daf02da9350e45a855f1ef9cf787f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1a058daf02da9350e45a855f1ef9cf787f" kindref="member">mix::assetsystem::mixShader_program::compile</ref><sp/>(<ref refid="d0/da0/a00403" kindref="compound">shader</ref>*<sp/>vertex_shader,<sp/><ref refid="d0/da0/a00403" kindref="compound">shader</ref>*<sp/>fragment_shader)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>program_id<sp/>=<sp/>glCreateProgram<sp/>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>glAttachShader<sp/>(program_id,<sp/>vertex_shader-&gt;<ref refid="d0/da0/a00403_1ad30215fc86323f4e3c8a24c65be07487" kindref="member">get_shader_id</ref><sp/>());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>glAttachShader<sp/>(program_id,<sp/>fragment_shader-&gt;<ref refid="d0/da0/a00403_1ad30215fc86323f4e3c8a24c65be07487" kindref="member">get_shader_id</ref><sp/>());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>glLinkProgram<sp/>(program_id);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d1/d98/a00407_1afd39437f5876f766acdcf6925991663a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1afd39437f5876f766acdcf6925991663a" kindref="member">mix::assetsystem::mixShader_program::use</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>glUseProgram<sp/>(program_id);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d1/d98/a00407_1a9b106383811aeb6dad8f8d3cac6d6a25" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1a9b106383811aeb6dad8f8d3cac6d6a25" kindref="member">mix::assetsystem::mixShader_program::set_1f</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniform1f<sp/>(get_uniform_location<sp/>(s),<sp/>f);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d1/d98/a00407_1a31ee5a7413bfcdda3e3537f1c3ec8483" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1a31ee5a7413bfcdda3e3537f1c3ec8483" kindref="member">mix::assetsystem::mixShader_program::set_1i</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniform1i<sp/>(get_uniform_location<sp/>(s),<sp/>i);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d1/d98/a00407_1ae823f06998e61b2c52ba38914923ce9b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mix::assetsystem::mixShader_program<sp/>::set_vec3<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniform3f<sp/>(get_uniform_location<sp/>(s),<sp/>vec.x,<sp/>vec.y,<sp/>vec.z);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d1/d98/a00407_1afb698255d1674ba867a080703aa04f8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1afb698255d1674ba867a080703aa04f8c" kindref="member">mix::assetsystem::mixShader_program::set_vec4</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniform4f<sp/>(get_uniform_location<sp/>(s),<sp/>vec.x,<sp/>vec.y,<sp/>vec.z,<sp/>vec.w);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d1/d98/a00407_1aea0cd6a091273bc86aa3b4f32a397a5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1aea0cd6a091273bc86aa3b4f32a397a5b" kindref="member">mix::assetsystem::mixShader_program::set_mat3</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/><ref refid="d6/d82/a00293_1a89330bc96e1968b52ef083cd277bbe3d" kindref="member">mat3</ref><sp/>mat)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniformMatrix3fv<sp/>(get_uniform_location<sp/>(s),<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>&amp;mat[0][0]);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="d1/d98/a00407_1ab73ab38a3643a02f3d2ab1e84941f409" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1ab73ab38a3643a02f3d2ab1e84941f409" kindref="member">mix::assetsystem::mixShader_program::set_mat4</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref><sp/>mat)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>glUniformMatrix4fv<sp/>(get_uniform_location<sp/>(s),<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>&amp;mat[0][0]);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="d1/d98/a00407_1aa2edd465696615aaa293cef858ff64ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d1/d98/a00407_1aa2edd465696615aaa293cef858ff64ce" kindref="member">mix::assetsystem::mixShader_program::get_program_id</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>program_id;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixShader_program.cpp"/>
+  </compounddef>
+</doxygen>

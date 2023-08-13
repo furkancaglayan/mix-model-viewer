@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/d0f/a00308" kind="file" language="C++">
+    <compoundname>mixFile.cpp</compoundname>
+    <includes refid="d1/d5d/a00311" local="yes">mixFile.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>../assetsystem/asset_types.h</label>
+        <link refid="df/d03/a00062"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../assetsystem/assets/mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixFile.cpp</label>
+        <link refid="d5/d0f/a00308"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixFile.h</label>
+        <link refid="d1/d5d/a00311"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>windows/platform_utils.h</label>
+        <link refid="da/de0/a00317"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="6">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="24">
+        <label>Windows.h</label>
+      </node>
+      <node id="7">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>cassert</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="16">
+        <label>functional</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>istream</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>tchar.h</label>
+      </node>
+      <node id="22">
+        <label>unordered_map</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d5d/a00311" kindref="compound">mixFile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="dd/dc0/a00611_1a884ea18936905cae320617e4d69036d6" refkind="member"><highlight class="normal"><ref refid="dd/dc0/a00611_1a884ea18936905cae320617e4d69036d6" kindref="member">mix::platform::mixFile::mixFile</ref><sp/>(<ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref>&amp;&amp;<sp/>path)<sp/>:<sp/>_path{<sp/><ref refid="df/d73/a00358" kindref="compound">std</ref>::move<sp/>(path)<sp/>},<sp/>_handle{<sp/>INVALID_HANDLE_VALUE<sp/>}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="dd/dc0/a00611_1a87cca1a806c1936ef682911f9beff669" refkind="member"><highlight class="normal"><ref refid="dd/dc0/a00611_1a884ea18936905cae320617e4d69036d6" kindref="member">mix::platform::mixFile::mixFile</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref>&amp;<sp/>path)<sp/>:<sp/>_path{<sp/>path<sp/>},<sp/>_handle{<sp/>INVALID_HANDLE_VALUE<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="dd/dc0/a00611_1a80fa55a93c26f2b8ace9354326ba1a2d" refkind="member"><highlight class="normal"><ref refid="dd/dc0/a00611_1a884ea18936905cae320617e4d69036d6" kindref="member">mix::platform::mixFile::mixFile</ref><sp/>(std::string&amp;&amp;<sp/>path)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">:<sp/>_path{<sp/><ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref>{<sp/><ref refid="df/d73/a00358" kindref="compound">std</ref>::move<sp/>(path)<sp/>}<sp/>},<sp/>_handle{<sp/>INVALID_HANDLE_VALUE<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="dd/dc0/a00611_1aae2dabf71eae550ad3b141d92a60334e" refkind="member"><highlight class="normal"><ref refid="dd/dc0/a00611_1aae2dabf71eae550ad3b141d92a60334e" kindref="member">mix::platform::mixFile::~mixFile</ref><sp/>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>_handle<sp/>=<sp/>INVALID_HANDLE_VALUE;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="dd/dc0/a00611_1af6eefabc77fd21de2a8f22ddabb94f40" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1af6eefabc77fd21de2a8f22ddabb94f40" kindref="member">mix::platform::mixFile::open</ref><sp/>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_string<sp/>=<sp/>std::wstring<sp/>(_path);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>access<sp/>=<sp/>GENERIC_READ;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>share<sp/>=<sp/>FILE_SHARE_READ;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>If<sp/>not<sp/>exists,<sp/>create<sp/>new</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>creation_disposition<sp/>=<sp/>OPEN_EXISTING;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="d5/dd8/a00615_1abca74ee518f47e1ddd4c400e4ec548fb" kindref="member">platform::platform_utils::file_exists</ref><sp/>(_path))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>creation_disposition<sp/>=<sp/>CREATE_NEW;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>access<sp/>=<sp/>GENERIC_WRITE;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>flags_and_attributes<sp/>=<sp/>FILE_ATTRIBUTE_NORMAL;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(_handle<sp/>==<sp/>INVALID_HANDLE_VALUE);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>_handle<sp/>=<sp/>CreateFileW<sp/>(w_string.c_str<sp/>(),<sp/>access,<sp/>share,<sp/>NULL,<sp/>creation_disposition,<sp/>flags_and_attributes,<sp/>NULL);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_handle<sp/>==<sp/>INVALID_HANDLE_VALUE)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>err<sp/>=<sp/>GetLastError<sp/>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HRESULT<sp/>hr<sp/>=<sp/>HRESULT_FROM_WIN32<sp/>(err);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert<sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_open<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="dd/dc0/a00611_1a01dc63843c52e685f5fd8271d3add193" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1a01dc63843c52e685f5fd8271d3add193" kindref="member">mix::platform::mixFile::write</ref><sp/>(std::string<sp/>content,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>leave_open)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(is_open);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(_handle<sp/>!=<sp/>INVALID_HANDLE_VALUE);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>data<sp/>to<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_string<sp/>=<sp/>std::wstring<sp/>(_path);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>DWORD<sp/>bytesWritten;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>result<sp/>=<sp/>WriteFile<sp/>(_handle,<sp/>content.c_str<sp/>(),<sp/>(DWORD)<sp/>content.size<sp/>(),<sp/>&amp;bytesWritten,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!leave_open)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>close<sp/>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="dd/dc0/a00611_1a7ee6619a1d73b1fc157696f6510379c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1a7ee6619a1d73b1fc157696f6510379c8" kindref="member">mix::platform::mixFile::read</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ptr)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(is_open);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>get_file_size<sp/>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//_buffer<sp/>=<sp/>(char*)<sp/>malloc<sp/>(sizeof<sp/>(char)<sp/>*<sp/>(size));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>read;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>result<sp/>=<sp/>ReadFile<sp/>(_handle,<sp/>ptr,<sp/>(DWORD)<sp/>size,<sp/>&amp;read,<sp/>NULL);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!result)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>close<sp/>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="dd/dc0/a00611_1a88c176804db619d0ae8d401d5338e127" refkind="member"><highlight class="normal">std::string<sp/><ref refid="dd/dc0/a00611_1a88c176804db619d0ae8d401d5338e127" kindref="member">mix::platform::mixFile::read_all_text</ref><sp/>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(!is_open);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>open<sp/>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Change<sp/>this<sp/>to<sp/>store<sp/>the<sp/>text<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>get_file_size<sp/>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>malloc<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)<sp/>*<sp/>(size));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>read<sp/>(buffer);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>val{<sp/>buffer,<sp/>size<sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>free<sp/>(buffer);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>close<sp/>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="dd/dc0/a00611_1a44f5b8b1fd7adcb556ef96f605a0f0af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1a44f5b8b1fd7adcb556ef96f605a0f0af" kindref="member">mix::platform::mixFile::close</ref><sp/>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(_handle);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(is_open);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>result<sp/>=<sp/>CloseHandle<sp/>(_handle);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>_handle<sp/>=<sp/>INVALID_HANDLE_VALUE;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>is_open<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="dd/dc0/a00611_1a8790577887e386c4daafee419fe95933" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1a8790577887e386c4daafee419fe95933" kindref="member">mix::platform::mixFile::get_file_size</ref><sp/>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(is_open);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>LARGE_INTEGER<sp/>size;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>result<sp/>=<sp/>GetFileSizeEx<sp/>(_handle,<sp/>&amp;size);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result<sp/>==<sp/>FALSE<sp/>?<sp/>-1<sp/>:<sp/>size.QuadPart;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="dd/dc0/a00611_1a1509b8712a544c58c2b9f99077642e81" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/a00611_1a1509b8712a544c58c2b9f99077642e81" kindref="member">mix::platform::mixFile::exists</ref><sp/>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/dd8/a00615_1abca74ee518f47e1ddd4c400e4ec548fb" kindref="member">platform::platform_utils::file_exists</ref><sp/>(_path);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixFile.cpp"/>
+  </compounddef>
+</doxygen>

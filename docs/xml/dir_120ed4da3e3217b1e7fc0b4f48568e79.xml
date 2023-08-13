@@ -2,11 +2,11 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_120ed4da3e3217b1e7fc0b4f48568e79" kind="dir">
     <compoundname>test</compoundname>
-    <innerfile refid="a00637">test/main.cpp</innerfile>
-    <innerfile refid="a00338">test_base.cpp</innerfile>
-    <innerfile refid="a00341">test_base.h</innerfile>
-    <innerfile refid="a00344">window_test.cpp</innerfile>
-    <innerfile refid="a00347">window_test.h</innerfile>
+    <innerfile refid="de/dbb/a00637">test/main.cpp</innerfile>
+    <innerfile refid="dc/d84/a00338">test_base.cpp</innerfile>
+    <innerfile refid="d3/d93/a00341">test_base.h</innerfile>
+    <innerfile refid="d8/d8e/a00344">window_test.cpp</innerfile>
+    <innerfile refid="d1/dc6/a00347">window_test.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

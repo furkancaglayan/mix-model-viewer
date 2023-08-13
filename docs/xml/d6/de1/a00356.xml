@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/de1/a00356" kind="namespace" language="C++">
+    <compoundname>mix::core</compoundname>
+    <innerclass refid="d9/d4a/a00479" prot="public">mix::core::mixCamera</innerclass>
+    <innerclass refid="dc/da0/a00483" prot="public">mix::core::mixEntity</innerclass>
+    <innerclass refid="dd/d9c/a00487" prot="public">mix::core::mixGuid</innerclass>
+    <innerclass refid="d8/d67/a00499" prot="public">mix::core::mixTransform</innerclass>
+    <innerclass refid="d4/de5/a00503" prot="public">mix::core::mixWindow</innerclass>
+    <innernamespace refid="df/df1/a00357">mix::core::light</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>projection_mode</name>
+        <qualifiedname>mix::core::projection_mode</qualifiedname>
+        <enumvalue id="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65ac77848cc02fefd0c360ce733a4affd93" prot="public">
+          <name>perspective</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d6/de1/a00356_1ae6a4941fd9282c9f28ac363f74f7ef65a88a486735e1314e3a3c682d2aaeba808" prot="public">
+          <name>orthogonal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" line="14" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixCamera.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="7" column="5"/>
+  </compounddef>
+</doxygen>

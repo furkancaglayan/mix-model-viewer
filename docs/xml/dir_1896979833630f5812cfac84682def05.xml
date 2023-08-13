@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_1896979833630f5812cfac84682def05" kind="dir">
     <compoundname>scene_management</compoundname>
-    <innerfile refid="a00332">mixScene.cpp</innerfile>
-    <innerfile refid="a00335">mixScene.h</innerfile>
+    <innerfile refid="dc/d50/a00332">mixScene.cpp</innerfile>
+    <innerfile refid="df/d91/a00335">mixScene.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

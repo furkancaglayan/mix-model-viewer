@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/d50/a00332" kind="file" language="C++">
+    <compoundname>mixScene.cpp</compoundname>
+    <includes refid="df/d91/a00335" local="yes">mixScene.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>components/mixComponent.h</label>
+        <link refid="de/d76/a00134"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../core/light/mixLight.h</label>
+        <link refid="d9/db6/a00146"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../core/mixCamera.h</label>
+        <link refid="d7/d9a/a00152"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mixEntity.h</label>
+        <link refid="d6/db8/a00158"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../mixTransform.h</label>
+        <link refid="d5/dcb/a00170"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../gui/gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../gui/i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../rendering/scene_context.h</label>
+        <link refid="dd/d4e/a00329"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixScene.cpp</label>
+        <link refid="dc/d50/a00332"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixScene.h</label>
+        <link refid="df/d91/a00335"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="13">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="22">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="21">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="27">
+        <label>cstdint</label>
+      </node>
+      <node id="24">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="9">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="20">
+        <label>imgui.h</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="25">
+        <label>stack</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d91/a00335" kindref="compound">mixScene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="d3/da3/a00627" kindref="compound">mix::scene_management::mixScene</ref>*<sp/><ref refid="d3/da3/a00627_1aca38c410e286c7ae197a6c82ff6eeaf6" kindref="member">mix::scene_management::mixScene::_instance</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d3/da3/a00627_1a93a1863af06a3daa215318760b494f60" refkind="member"><highlight class="normal"><ref refid="d3/da3/a00627_1a93a1863af06a3daa215318760b494f60" kindref="member">mix::scene_management::mixScene::mixScene</ref><sp/>()<sp/>:<sp/><ref refid="d3/da3/a00627" kindref="compound">mixScene</ref><sp/>(new<sp/><ref refid="db/d10/a00350" kindref="compound">mix</ref>::core::mixEntity<sp/>(</highlight><highlight class="stringliteral">&quot;New<sp/>Scene&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d3/da3/a00627_1aa76a17b015906924bae4ee8b86266110" refkind="member"><highlight class="normal"><ref refid="d3/da3/a00627_1a93a1863af06a3daa215318760b494f60" kindref="member">mix::scene_management::mixScene::mixScene</ref><sp/>(<ref refid="dc/da0/a00483" kindref="compound">mix::core::mixEntity</ref>*<sp/>r)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>_root<sp/>=<sp/>std::unique_ptr&lt;mix::core::mixEntity&gt;<sp/>(r);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>_active_cam<sp/>=<sp/>std::make_unique&lt;mix::core::mixCamera&gt;<sp/>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>_active_cam-&gt;_transform-&gt;set_position<sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(0,<sp/>0,<sp/>-15));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>_instance<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d3/da3/a00627_1a494496438f300cb35ce6d5a5d5d7b452" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/da3/a00627_1a494496438f300cb35ce6d5a5d5d7b452" kindref="member">mix::scene_management::mixScene::update</ref><sp/>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>_active_cam-&gt;update<sp/>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>_root-&gt;update<sp/>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d3/da3/a00627_1a1f6332254dd6d5f2823d2db6372df351" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/da3/a00627_1a1f6332254dd6d5f2823d2db6372df351" kindref="member">mix::scene_management::mixScene::render</ref><sp/>(<ref refid="d6/d6a/a00619" kindref="compound">mix::rendering::rendering_context</ref>*<sp/>rendering)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>_root-&gt;render<sp/>(rendering);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/da3/a00627_1add286372da8d2cb8d2048592ce1de9ec" kindref="member">mix::scene_management::mixScene::set_parameters</ref><sp/>(<ref refid="d6/d6a/a00619" kindref="compound">mix::rendering::rendering_context</ref>*<sp/>rendering)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="29"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" kindref="member">set_mat4</ref><sp/>(</highlight><highlight class="stringliteral">&quot;_view&quot;</highlight><highlight class="normal">,<sp/>_active_cam-&gt;get_view_mat<sp/>());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1aaae415c9b7963ca4ceb3ff79a2bb2488" kindref="member">set_mat4</ref><sp/>(</highlight><highlight class="stringliteral">&quot;_projection&quot;</highlight><highlight class="normal">,<sp/>_active_cam-&gt;get_projection_mat<sp/>());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" kindref="member">set_vec3</ref><sp/>(</highlight><highlight class="stringliteral">&quot;_view_pos&quot;</highlight><highlight class="normal">,<sp/>_active_cam-&gt;_transform-&gt;get_position<sp/>());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>_lights.size<sp/>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1ac2b5bf66106ed64321c1c34fa17aeb56" kindref="member">set_1i</ref><sp/>(</highlight><highlight class="stringliteral">&quot;num_lights&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(size));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::weak_ptr&lt;mix::core::light::mixLight&gt;<sp/>light<sp/>=<sp/>_lights.at<sp/>(0);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>pos<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].position&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>diff<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].diffuse&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>spec<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].specular&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>ambient<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].ambient&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>intensity<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].intensity&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>att<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;lights[&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string<sp/>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;].attenuation&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" kindref="member">set_vec3</ref><sp/>(pos,<sp/>light.lock<sp/>()-&gt;_transform-&gt;get_position<sp/>());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" kindref="member">set_vec3</ref><sp/>(spec,<sp/><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" kindref="member">set_vec3</ref><sp/>(ambient,<sp/><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(1));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5fb093fd02e1a5550ccb8bbdb9cd2215" kindref="member">set_vec3</ref><sp/>(diff,<sp/>light.lock<sp/>()-&gt;get_color<sp/>());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5e8e7ff025904c61a16928be26b90485" kindref="member">set_1f</ref><sp/>(intensity,<sp/>light.lock<sp/>()-&gt;get_intensity<sp/>());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rendering-&gt;<ref refid="d6/d6a/a00619_1a5e8e7ff025904c61a16928be26b90485" kindref="member">set_1f</ref><sp/>(att,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d3/da3/a00627_1a4d30125a825ef66cfc3442f2f9049d9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/da3/a00627_1a4d30125a825ef66cfc3442f2f9049d9c" kindref="member">mix::scene_management::mixScene::add_entity</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;mix::core::mixEntity&gt;&amp;<sp/>entity)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>get_root<sp/>()-&gt;add_child<sp/>(entity);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>light<sp/>=<sp/>std::dynamic_pointer_cast&lt;mix::core::light::mixLight&gt;<sp/>(entity))</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_lights.push_back<sp/>(light);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d3/da3/a00627_1ab3d08d5082c539f3aada88feb5b64cd0" refkind="member"><highlight class="normal"><ref refid="d9/d4a/a00479" kindref="compound">mix::core::mixCamera</ref>*<sp/><ref refid="d3/da3/a00627_1ab3d08d5082c539f3aada88feb5b64cd0" kindref="member">mix::scene_management::mixScene::get_main_cam</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_active_cam.get();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d3/da3/a00627_1adf75e0cf846769467ef97a86673de383" refkind="member"><highlight class="normal"><ref refid="dc/da0/a00483" kindref="compound">mix::core::mixEntity</ref>*<sp/><ref refid="d3/da3/a00627_1adf75e0cf846769467ef97a86673de383" kindref="member">mix::scene_management::mixScene::get_root</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="72"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_root.get();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d3/da3/a00627_1a37f1570200aa17711b82c78ee7268c2e" refkind="member"><highlight class="normal">std::vector&lt;std::weak_ptr&lt;mix::core::light::mixLight&gt;&gt;<sp/><ref refid="d3/da3/a00627_1a37f1570200aa17711b82c78ee7268c2e" kindref="member">mix::scene_management::mixScene::get_lights</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="77"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_lights;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/scene_management/mixScene.cpp"/>
+  </compounddef>
+</doxygen>

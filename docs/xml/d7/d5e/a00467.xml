@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/d5e/a00467" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mix::components::mixComponent</compoundname>
+    <derivedcompoundref refid="d4/d4b/a00471" prot="public" virt="non-virtual">mix::components::mixMesh_component</derivedcompoundref>
+    <includes refid="de/d76/a00134" local="no">mixComponent.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d5e/a00467_1ac24c61df2bc6aef0a1619a8a84d576a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::components::mixComponent::mixComponent</definition>
+        <argsstring>()</argsstring>
+        <name>mixComponent</name>
+        <qualifiedname>mix::components::mixComponent::mixComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h" line="14" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5e/a00467_1a673f5543f4d7e6245af938840c5d3a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mix::components::mixComponent::update</definition>
+        <argsstring>()=0</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::components::mixComponent::update</qualifiedname>
+        <reimplementedby refid="d4/d4b/a00471_1ab26a0dd163808da052cf4ee031cad580">update</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h" line="15" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d5e/a00467_1a62d4d68c4c5428036b0c730cde7f9915" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mix::components::mixComponent::render</definition>
+        <argsstring>(mix::rendering::rendering_context *rendering, const mix::core::mixTransform *transform)=0</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::components::mixComponent::render</qualifiedname>
+        <reimplementedby refid="d4/d4b/a00471_1a2fadea7f1ce7865724f18d778c8f3f9b">render</reimplementedby>
+        <param>
+          <type><ref refid="d6/d6a/a00619" kindref="compound">mix::rendering::rendering_context</ref> *</type>
+          <declname>rendering</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d67/a00499" kindref="compound">mix::core::mixTransform</ref> *</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h" line="16" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::components::mixComponent</label>
+        <link refid="d7/d5e/a00467"/>
+      </node>
+      <node id="2">
+        <label>mix::components::mixMesh_component</label>
+        <link refid="d4/d4b/a00471"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h" line="10" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/components/mixComponent.h" bodystart="11" bodyend="19"/>
+    <listofallmembers>
+      <member refid="d7/d5e/a00467_1ac24c61df2bc6aef0a1619a8a84d576a2" prot="public" virt="non-virtual"><scope>mix::components::mixComponent</scope><name>mixComponent</name></member>
+      <member refid="d7/d5e/a00467_1a62d4d68c4c5428036b0c730cde7f9915" prot="public" virt="pure-virtual"><scope>mix::components::mixComponent</scope><name>render</name></member>
+      <member refid="d7/d5e/a00467_1a673f5543f4d7e6245af938840c5d3a47" prot="public" virt="pure-virtual"><scope>mix::components::mixComponent</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

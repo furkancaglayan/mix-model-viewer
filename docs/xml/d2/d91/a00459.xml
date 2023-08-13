@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d2/d91/a00459" kind="class" language="C++" prot="public">
+    <compoundname>mix::containers::frame_buffer</compoundname>
+    <includes refid="df/dc8/a00122" local="no">frame_buffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d91/a00459_1a26d98f631eee679f6d5694065dcfb5b3" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::containers::frame_buffer::_fbo</definition>
+        <argsstring></argsstring>
+        <name>_fbo</name>
+        <qualifiedname>mix::containers::frame_buffer::_fbo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="29" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d91/a00459_1a4fc407b913a123544072818dd351ef1a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::containers::frame_buffer::_render_texture</definition>
+        <argsstring></argsstring>
+        <name>_render_texture</name>
+        <qualifiedname>mix::containers::frame_buffer::_render_texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="30" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d91/a00459_1a1c4fbbae9977213bf1ab614605c5a5d1" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mix::containers::frame_buffer::_render_buffer</definition>
+        <argsstring></argsstring>
+        <name>_render_buffer</name>
+        <qualifiedname>mix::containers::frame_buffer::_render_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="31" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d91/a00459_1ae84d5b64a44ccc4986d8472f60bd3ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::containers::frame_buffer::frame_buffer</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>frame_buffer</name>
+        <qualifiedname>mix::containers::frame_buffer::frame_buffer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="16" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="4" bodyend="7"/>
+        <references refid="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" compoundref="df/d6a/a00119" startline="44" endline="70">initialize</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/a00459_1aee00d5bb634b8c1a2be8b21ff177ccdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::containers::frame_buffer::~frame_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~frame_buffer</name>
+        <qualifiedname>mix::containers::frame_buffer::~frame_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/a00459_1a92eb99a183d466a5de48b31d5ce75d5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::containers::frame_buffer::bind</definition>
+        <argsstring>() const</argsstring>
+        <name>bind</name>
+        <qualifiedname>mix::containers::frame_buffer::bind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="19" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/a00459_1a93c1a81f72fc0588b39772438fd352ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::containers::frame_buffer::unbind</definition>
+        <argsstring>() const</argsstring>
+        <name>unbind</name>
+        <qualifiedname>mix::containers::frame_buffer::unbind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="21" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/a00459_1a14b03d467829cc02755a5190ca1da8f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::containers::frame_buffer::rescale</definition>
+        <argsstring>(int w, int h) const</argsstring>
+        <name>rescale</name>
+        <qualifiedname>mix::containers::frame_buffer::rescale</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="22" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="26" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/a00459_1a81360f3bd714b31a6b021f7b60260d35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned mix::containers::frame_buffer::get_render_texture</definition>
+        <argsstring>() const</argsstring>
+        <name>get_render_texture</name>
+        <qualifiedname>mix::containers::frame_buffer::get_render_texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="24" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::containers::frame_buffer::initialize</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::containers::frame_buffer::initialize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="27" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp" bodystart="44" bodyend="70"/>
+        <references refid="d5/d35/a00266_1a7ebf4c3b4fb05d6f9094089ded75cbdd" compoundref="d5/d35/a00266" startline="9">LOG_ERROR</references>
+        <referencedby refid="d2/d91/a00459_1ae84d5b64a44ccc4986d8472f60bd3ca7" compoundref="df/d6a/a00119" startline="4" endline="7">frame_buffer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" line="12" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.h" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="d2/d91/a00459_1a26d98f631eee679f6d5694065dcfb5b3" prot="private" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>_fbo</name></member>
+      <member refid="d2/d91/a00459_1a1c4fbbae9977213bf1ab614605c5a5d1" prot="private" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>_render_buffer</name></member>
+      <member refid="d2/d91/a00459_1a4fc407b913a123544072818dd351ef1a" prot="private" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>_render_texture</name></member>
+      <member refid="d2/d91/a00459_1a92eb99a183d466a5de48b31d5ce75d5c" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>bind</name></member>
+      <member refid="d2/d91/a00459_1ae84d5b64a44ccc4986d8472f60bd3ca7" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>frame_buffer</name></member>
+      <member refid="d2/d91/a00459_1a81360f3bd714b31a6b021f7b60260d35" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>get_render_texture</name></member>
+      <member refid="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" prot="private" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>initialize</name></member>
+      <member refid="d2/d91/a00459_1a14b03d467829cc02755a5190ca1da8f2" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>rescale</name></member>
+      <member refid="d2/d91/a00459_1a93c1a81f72fc0588b39772438fd352ad" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>unbind</name></member>
+      <member refid="d2/d91/a00459_1aee00d5bb634b8c1a2be8b21ff177ccdd" prot="public" virt="non-virtual"><scope>mix::containers::frame_buffer</scope><name>~frame_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

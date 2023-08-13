@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/df9/a00044" kind="file" language="C++">
+    <compoundname>mixTexture.cpp</compoundname>
+    <includes refid="d6/d2d/a00047" local="yes">mixTexture.h</includes>
+    <includes refid="d5/d35/a00266" local="yes">../../library/debug.h</includes>
+    <includes local="no">stb_image.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixTexture.cpp</label>
+        <link refid="d5/df9/a00044"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../../library/debug.h</label>
+        <link refid="d5/d35/a00266"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>chrono</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>istream</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="22">
+        <label>stb_image.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d2d/a00047" kindref="compound">mixTexture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../library/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stb_image.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d3/d29/a00419_1a3337db4ec8e752c248302b49550c9c47" refkind="member"><highlight class="normal"><ref refid="d3/d29/a00419_1a3337db4ec8e752c248302b49550c9c47" kindref="member">mix::assetsystem::mixTexture::mixTexture</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,<sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture::texture_type</ref><sp/>type)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">:<sp/>_id{<sp/>0<sp/>},<sp/>_type{<sp/>type<sp/>},<sp/><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d29/a00419_1aa69e4e449ce872da304c5c605e9ad84e" kindref="member">_data</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" kindref="member">initialize</ref><sp/>(path,<sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921aef70a6546536ccd835479f6cddc0188e" kindref="member">mix::texture::texture_format::rgb</ref>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d3/d29/a00419_1a7634dc000144f362d8261889ce22d4a2" refkind="member"><highlight class="normal"><ref refid="d3/d29/a00419_1a7634dc000144f362d8261889ce22d4a2" kindref="member">mix::assetsystem::mixTexture::~mixTexture</ref><sp/>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>stbi_image_free<sp/>(_data);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteTextures<sp/>(1,<sp/>&amp;_id);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d3/d29/a00419_1ac6a27dc611c4d0f30f15fb69765429d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ac6a27dc611c4d0f30f15fb69765429d7" kindref="member">mix::assetsystem::mixTexture::set_wrapping</ref><sp/>(<ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref><sp/>wrapping)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_S,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(wrapping));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_T,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(wrapping));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d3/d29/a00419_1afd8bcba95e6d6bcac07e22dd014d72fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1afd8bcba95e6d6bcac07e22dd014d72fe" kindref="member">mix::assetsystem::mixTexture::set_filtering</ref><sp/>(<ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref><sp/>filtering_min,<sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref><sp/>filtering_mag)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(filtering_min));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(filtering_mag));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d3/d29/a00419_1a2aa2fdc162d7522f1b3a6e180c76b092" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1a2aa2fdc162d7522f1b3a6e180c76b092" kindref="member">mix::assetsystem::mixTexture::bind</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="32"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>glActiveTexture<sp/>(GL_TEXTURE0<sp/>+<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_type));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture<sp/>(GL_TEXTURE_2D,<sp/>_id);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d3/d29/a00419_1ac75d2f2a4aaf86513bad7496f55595df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ac75d2f2a4aaf86513bad7496f55595df" kindref="member">mix::assetsystem::mixTexture::change_type</ref><sp/>(<ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref><sp/>t)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a821326052e3e2bf1fb2d678e9e9a6004" kindref="member">ASSERT</ref><sp/>(t<sp/>!=<sp/>_type);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteTextures<sp/>(1,<sp/>&amp;_id);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>_type<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>initialize<sp/>(_path,<sp/>_format);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d3/d29/a00419_1a5ae697fdfc472a9843ac360627ce7279" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1a5ae697fdfc472a9843ac360627ce7279" kindref="member">mix::assetsystem::mixTexture::set_format</ref><sp/>(<ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref><sp/>format)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a821326052e3e2bf1fb2d678e9e9a6004" kindref="member">ASSERT</ref><sp/>(format<sp/>!=<sp/>_format);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteTextures<sp/>(1,<sp/>&amp;_id);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>_format<sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>initialize<sp/>(_path,<sp/>_format);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d3/d29/a00419_1aa1b31c880431740068d3d84aebd98282" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1aa1b31c880431740068d3d84aebd98282" kindref="member">mix::assetsystem::mixTexture::get_id</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="54"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" kindref="member">mix::assetsystem::mixTexture::initialize</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,<sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref><sp/>format)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>move<sp/>this<sp/>to<sp/>config<sp/>or<sp/>something<sp/>like<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>stbi_set_flip_vertically_on_load<sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenTextures<sp/>(1,<sp/>&amp;_id);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>bind<sp/>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>texture<sp/>wrapping/filtering<sp/>options<sp/>(on<sp/>the<sp/>currently<sp/>bound<sp/>texture<sp/>object)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>set_wrapping<sp/>(<ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a7ff5ead6fef18ca5f63119754ac76c3e" kindref="member">texture::texture_wrapping::clamp_to_edge</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>set_filtering<sp/>(<ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1ad879c351426770bc0b13c3628db1e636" kindref="member">mix::texture::texture_filtering::nearest</ref>,<sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1ad879c351426770bc0b13c3628db1e636" kindref="member">mix::texture::texture_filtering::nearest</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>and<sp/>generate<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/>height,<sp/>nrChannels;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_data<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stbi_image_free<sp/>(_data);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>_data<sp/>=<sp/>stbi_load<sp/>(path.<ref refid="d9/d07/a00607_1ad0f76c40bcfada53738cbf10013d08ea" kindref="member">to_cstr</ref><sp/>(),<sp/>&amp;width,<sp/>&amp;height,<sp/>&amp;nrChannels,<sp/>0);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_data)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>f<sp/>=<sp/>nrChannels<sp/>==<sp/>4<sp/>?<sp/>GL_RGBA<sp/>:<sp/>GL_RGB;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ASSERT<sp/>((format<sp/>!=<sp/>mix::texture::texture_format::rgb<sp/>||<sp/>nrChannels<sp/>==<sp/>3)<sp/>&amp;&amp;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(format<sp/>!=<sp/>mix::texture::texture_format::rgb_alpha<sp/>||<sp/>nrChannels<sp/>==<sp/>4));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D<sp/>(GL_TEXTURE_2D,<sp/>0,<sp/>f,<sp/>width,<sp/>height,<sp/>0,<sp/>f,<sp/>GL_UNSIGNED_BYTE,<sp/>_data);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGenerateMipmap<sp/>(GL_TEXTURE_2D);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a7ebf4c3b4fb05d6f9094089ded75cbdd" kindref="member">LOG_ERROR</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>load<sp/>texture<sp/>at:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>path.<ref refid="d9/d07/a00607_1ac980b27170298e16e93ce3a656b2c46d" kindref="member">get_name</ref><sp/>());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.cpp"/>
+  </compounddef>
+</doxygen>

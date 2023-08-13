@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/d05/a00423" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::default_assets</compoundname>
+    <includes refid="da/d24/a00068" local="no">default_assets.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/d05/a00423_1a7615b0cf81c2e602a53f7c4e50b0c42f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::default_assets::default_assets</definition>
+        <argsstring>()=delete</argsstring>
+        <name>default_assets</name>
+        <qualifiedname>mix::assetsystem::default_assets::default_assets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/default_assets.h" line="14" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d1/d05/a00423_1ac3cc62e6065d790d9dd18f34298af149" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d3/d29/a00419" kindref="compound">mix::assetsystem::mixTexture</ref> *</type>
+        <definition>const mix::assetsystem::mixTexture * mix::assetsystem::default_assets::get_asset_default_icon</definition>
+        <argsstring>(const mix::assetsystem::mixAsset_item *item)</argsstring>
+        <name>get_asset_default_icon</name>
+        <qualifiedname>mix::assetsystem::default_assets::get_asset_default_icon</qualifiedname>
+        <param>
+          <type>const <ref refid="da/dee/a00383" kindref="compound">mix::assetsystem::mixAsset_item</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/default_assets.h" line="18" column="55" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/default_assets.cpp" bodystart="5" bodyend="15"/>
+        <references refid="d5/d35/a00266_1a821326052e3e2bf1fb2d678e9e9a6004" compoundref="d5/d35/a00266" startline="6">ASSERT</references>
+        <references refid="dd/dcb/a00375_1a138b9956cd75429054f2788f1d553427" compoundref="df/d03/a00062" startline="40" endline="48">mix::assetsystem::asset_types::get_asset_default_icon_name</references>
+        <references refid="dd/d63/a00455_1a18a84457368f1583c25d11c65d816ade" compoundref="d4/d3e/a00116" startline="60" endline="63">mix::assetsystem::mixAsset_manager::get_asset_with_base_name</references>
+        <references refid="da/dee/a00383_1a6e6d736bbc390e6a4544d96c8ef94065" compoundref="da/d45/a00011" startline="41" endline="44">mix::assetsystem::mixAsset_item::get_extension</references>
+        <references refid="dd/d63/a00455_1a78db6245156c814bbc9e983bfe02fa61" compoundref="d4/d3e/a00116" startline="36">mix::assetsystem::mixAsset_manager::instance</references>
+        <referencedby refid="dd/d4d/a00519_1a0475d4c98ed276893abe1933022b2991" compoundref="de/db1/a00197" startline="19" endline="115">mix::editor::windows::project_window::render</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/default_assets.h" line="12" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/default_assets.h" bodystart="13" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d1/d05/a00423_1a7615b0cf81c2e602a53f7c4e50b0c42f" prot="private" virt="non-virtual"><scope>mix::assetsystem::default_assets</scope><name>default_assets</name></member>
+      <member refid="d1/d05/a00423_1ac3cc62e6065d790d9dd18f34298af149" prot="public" virt="non-virtual"><scope>mix::assetsystem::default_assets</scope><name>get_asset_default_icon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,12 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_ae9a93452e2a84339148a16bcf2eb561" kind="dir">
     <compoundname>math</compoundname>
-    <innerfile refid="a00284">color.cpp</innerfile>
-    <innerfile refid="a00287">color.h</innerfile>
-    <innerfile refid="a00290">constants.h</innerfile>
-    <innerfile refid="a00293">mat.h</innerfile>
-    <innerfile refid="a00296">vec.h</innerfile>
-    <innerfile refid="a00299">vertex.h</innerfile>
+    <innerfile refid="db/dc3/a00284">color.cpp</innerfile>
+    <innerfile refid="d6/d7f/a00287">color.h</innerfile>
+    <innerfile refid="de/d25/a00290">constants.h</innerfile>
+    <innerfile refid="d6/d82/a00293">mat.h</innerfile>
+    <innerfile refid="db/d7b/a00296">vec.h</innerfile>
+    <innerfile refid="df/d95/a00299">vertex.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

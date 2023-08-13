@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/dae/a00563" kind="class" language="C++" prot="public">
+    <compoundname>mixImGui::i_scene</compoundname>
+    <includes refid="d7/d03/a00254" local="no">i_scene.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_scene.h" line="11" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/i_scene.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

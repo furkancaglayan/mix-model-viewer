@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/d46/a00002" kind="file" language="C++">
+    <compoundname>mixAsset_folder.cpp</compoundname>
+    <includes refid="dd/dad/a00005" local="yes">mixAsset_folder.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>mixAsset_folder.cpp</label>
+        <link refid="d7/d46/a00002"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixAsset_folder.h</label>
+        <link refid="dd/dad/a00005"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="9">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>istream</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/dad/a00005" kindref="compound">mixAsset_folder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d8/d95/a00379_1a9bca1329b40d840c856391b6a376abf4" refkind="member"><highlight class="normal"><ref refid="d8/d95/a00379_1a9bca1329b40d840c856391b6a376abf4" kindref="member">mix::assetsystem::mixAsset_folder::mixAsset_folder</ref><sp/>(<ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;&amp;<sp/>path)<sp/>noexcept</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">:<sp/><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path),<sp/>_path{<sp/>path<sp/>}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d8/d95/a00379_1a63cc3c55118456c0ce75da91aa6133a4" refkind="member"><highlight class="normal"><ref refid="d8/d95/a00379_1a9bca1329b40d840c856391b6a376abf4" kindref="member">mix::assetsystem::mixAsset_folder::mixAsset_folder</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path)<sp/>noexcept</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">:<sp/><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path),<sp/>_path{<sp/>path<sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixAsset_folder.cpp"/>
+  </compounddef>
+</doxygen>

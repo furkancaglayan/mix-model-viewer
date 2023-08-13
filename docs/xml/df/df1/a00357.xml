@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/df1/a00357" kind="namespace" language="C++">
+    <compoundname>mix::core::light</compoundname>
+    <innerclass refid="d1/d92/a00475" prot="public">mix::core::light::mixLight</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>light_type</name>
+        <qualifiedname>mix::core::light::light_type</qualifiedname>
+        <enumvalue id="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00caff17f76a314be3abfb17f7c9e849ba34" prot="public">
+          <name>directional</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00cab2e189abf85e809a51522cdb0e53083a" prot="public">
+          <name>spot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00ca78ee54aa8f813885fe2fe20d232518b9" prot="public">
+          <name>point</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="11" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" bodystart="12" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="9" column="9"/>
+  </compounddef>
+</doxygen>

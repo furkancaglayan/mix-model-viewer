@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/d60/a00491" kind="struct" language="C++" prot="public">
+    <compoundname>std::std::hash&lt; mix::core::mixGuid &gt;</compoundname>
+    <includes refid="db/ddf/a00164" local="no">mixGuid.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d60/a00491_1ab05ef207664854fd7d371e39250c297c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t std::std::hash&lt; mix::core::mixGuid &gt;::operator()</definition>
+        <argsstring>(const mix::core::mixGuid &amp;s) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>std::std::hash&lt; mix::core::mixGuid &gt;::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="dd/d9c/a00487" kindref="compound">mix::core::mixGuid</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="69" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="69" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="67" column="15" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="68" bodyend="74"/>
+    <listofallmembers>
+      <member refid="d6/d60/a00491_1ab05ef207664854fd7d371e39250c297c" prot="public" virt="non-virtual"><scope>std::std::hash&lt; mix::core::mixGuid &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

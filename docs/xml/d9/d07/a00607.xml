@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/d07/a00607" kind="class" language="C++" prot="public">
+    <compoundname>mix::platform::mixAsset_path</compoundname>
+    <includes refid="d3/d07/a00305" local="no">mixAsset_path.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d07/a00607_1ad470677ea0bf4cb8231135d0b8fb771e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::platform::mixAsset_path::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>mix::platform::mixAsset_path::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="109" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="d9/d07/a00607_1ac980b27170298e16e93ce3a656b2c46d" compoundref="d3/d07/a00305" startline="50" endline="53">get_name</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" compoundref="d0/d61/a00302" startline="4" endline="17">mixAsset_path</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d07/a00607_1a2acfcd799df8150c0812b4c5b1ca81b0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::platform::mixAsset_path::_base_name</definition>
+        <argsstring></argsstring>
+        <name>_base_name</name>
+        <qualifiedname>mix::platform::mixAsset_path::_base_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="110" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="d9/d07/a00607_1abece5b41203b730f6b4949fcc5348e45" compoundref="d3/d07/a00305" startline="40" endline="43">get_name_without_extension</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" compoundref="d0/d61/a00302" startline="4" endline="17">mixAsset_path</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d07/a00607_1a85c5f22f6030306ebe75c13433115d82" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::platform::mixAsset_path::_extension</definition>
+        <argsstring></argsstring>
+        <name>_extension</name>
+        <qualifiedname>mix::platform::mixAsset_path::_extension</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="111" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="d9/d07/a00607_1a963e963961e2aa159290209cd15bb662" compoundref="d3/d07/a00305" startline="45" endline="48">get_extension</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" compoundref="d0/d61/a00302" startline="4" endline="17">mixAsset_path</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::platform::mixAsset_path::_path</definition>
+        <argsstring></argsstring>
+        <name>_path</name>
+        <qualifiedname>mix::platform::mixAsset_path::_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="112" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" compoundref="d0/d61/a00302" startline="4" endline="17">mixAsset_path</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0cba11fd4c72291bc8bf5d3c3f50a30b" compoundref="d3/d07/a00305" startline="66" endline="69">operator const char *</referencedby>
+        <referencedby refid="d9/d07/a00607_1a2f7ff355b05c42ada8f31755cbe14b06" compoundref="d3/d07/a00305" startline="20" endline="23">operator std::string</referencedby>
+        <referencedby refid="d9/d07/a00607_1a4fca4e464375ac31c4334545ea5d0454" compoundref="d3/d07/a00305" startline="61" endline="64">operator std::string &amp;</referencedby>
+        <referencedby refid="d9/d07/a00607_1a87b19abc42edf49a5e8108b552558c5b" compoundref="d3/d07/a00305" startline="25" endline="28">operator std::wstring</referencedby>
+        <referencedby refid="d9/d07/a00607_1abec82144eca2c5ed2001c5d7c2983a90" compoundref="d3/d07/a00305" startline="91" endline="94">operator!=</referencedby>
+        <referencedby refid="d9/d07/a00607_1a80dcdba3da9a6caf197ac29133b52851" compoundref="d3/d07/a00305" startline="56" endline="59">operator()</referencedby>
+        <referencedby refid="d9/d07/a00607_1a5834afc65ec72da2d7674ea2aeec0e37" compoundref="d3/d07/a00305" startline="72" endline="77">operator+</referencedby>
+        <referencedby refid="d9/d07/a00607_1acfb90915ac223c9725a4760f3cb4a55f" compoundref="d3/d07/a00305" startline="79" endline="84">operator+</referencedby>
+        <referencedby refid="d9/d07/a00607_1a0ad24d82e265cd46db41cd294a43119a" compoundref="d3/d07/a00305" startline="96" endline="100">operator&lt;&lt;</referencedby>
+        <referencedby refid="d9/d07/a00607_1aba8a5641c94ffc239c33ea22c9bd03db" compoundref="d3/d07/a00305" startline="86" endline="89">operator==</referencedby>
+        <referencedby refid="d9/d07/a00607_1a21c5c79bade4654523740992c7f39209" compoundref="d3/d07/a00305" startline="101" endline="105">operator&gt;&gt;</referencedby>
+        <referencedby refid="d9/d07/a00607_1ad0f76c40bcfada53738cbf10013d08ea" compoundref="d3/d07/a00305" startline="35" endline="38">to_cstr</referencedby>
+        <referencedby refid="d9/d07/a00607_1ad7313ff12d386822cc941c243cd9a59e" compoundref="d3/d07/a00305" startline="30" endline="33">to_str</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::platform::mixAsset_path::mixAsset_path</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>mixAsset_path</name>
+        <qualifiedname>mix::platform::mixAsset_path::mixAsset_path</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.cpp" bodystart="4" bodyend="17"/>
+        <references refid="d9/d07/a00607_1a2acfcd799df8150c0812b4c5b1ca81b0" compoundref="d3/d07/a00305" startline="110">_base_name</references>
+        <references refid="d9/d07/a00607_1a85c5f22f6030306ebe75c13433115d82" compoundref="d3/d07/a00305" startline="111">_extension</references>
+        <references refid="d9/d07/a00607_1ad470677ea0bf4cb8231135d0b8fb771e" compoundref="d3/d07/a00305" startline="109">_name</references>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+        <references refid="d5/dd8/a00615_1a07fe20c4139f8dec08c67e00ac824a93" compoundref="da/de0/a00317" startline="112" endline="118">mix::platform::platform_utils::is_file</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a2f7ff355b05c42ada8f31755cbe14b06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::platform::mixAsset_path::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <qualifiedname>mix::platform::mixAsset_path::string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="20" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="20" bodyend="23"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a87b19abc42edf49a5e8108b552558c5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::platform::mixAsset_path::operator std::wstring</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::wstring</name>
+        <qualifiedname>mix::platform::mixAsset_path::wstring</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="25" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="25" bodyend="28"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1ad7313ff12d386822cc941c243cd9a59e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::platform::mixAsset_path::to_str</definition>
+        <argsstring>() const</argsstring>
+        <name>to_str</name>
+        <qualifiedname>mix::platform::mixAsset_path::to_str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="30" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="30" bodyend="33"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+        <referencedby refid="da/dee/a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" compoundref="da/d45/a00011" startline="36" endline="39">mix::assetsystem::mixAsset_item::get_path</referencedby>
+        <referencedby refid="dd/dc0/a00611_1a5ba930c554591f7004b93a1a979fff8e" compoundref="d1/d5d/a00311" startline="50" endline="53">mix::platform::mixFile::get_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1ad0f76c40bcfada53738cbf10013d08ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * mix::platform::mixAsset_path::to_cstr</definition>
+        <argsstring>() const</argsstring>
+        <name>to_cstr</name>
+        <qualifiedname>mix::platform::mixAsset_path::to_cstr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="35" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="35" bodyend="38"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+        <referencedby refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" compoundref="d5/df9/a00044" startline="58" endline="87">mix::assetsystem::mixTexture::initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1abece5b41203b730f6b4949fcc5348e45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::platform::mixAsset_path::get_name_without_extension</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name_without_extension</name>
+        <qualifiedname>mix::platform::mixAsset_path::get_name_without_extension</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="40" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="40" bodyend="43"/>
+        <references refid="d9/d07/a00607_1a2acfcd799df8150c0812b4c5b1ca81b0" compoundref="d3/d07/a00305" startline="110">_base_name</references>
+        <referencedby refid="da/dee/a00383_1a46d0785046788fcc9c789d1b11529ad3" compoundref="da/d45/a00011" startline="24" endline="27">mix::assetsystem::mixAsset_item::get_base_name</referencedby>
+        <referencedby refid="dd/dc0/a00611_1abb86ec0b709569fe19071ae3527f6ac5" compoundref="d1/d5d/a00311" startline="44" endline="47">mix::platform::mixFile::get_name_without_extension</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a963e963961e2aa159290209cd15bb662" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::platform::mixAsset_path::get_extension</definition>
+        <argsstring>() const</argsstring>
+        <name>get_extension</name>
+        <qualifiedname>mix::platform::mixAsset_path::get_extension</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="45" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="45" bodyend="48"/>
+        <references refid="d9/d07/a00607_1a85c5f22f6030306ebe75c13433115d82" compoundref="d3/d07/a00305" startline="111">_extension</references>
+        <referencedby refid="da/dee/a00383_1a6e6d736bbc390e6a4544d96c8ef94065" compoundref="da/d45/a00011" startline="41" endline="44">mix::assetsystem::mixAsset_item::get_extension</referencedby>
+        <referencedby refid="dd/dc0/a00611_1ad0c854de5d00feac1c52568386715991" compoundref="d1/d5d/a00311" startline="34" endline="37">mix::platform::mixFile::get_extension</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1ac980b27170298e16e93ce3a656b2c46d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::platform::mixAsset_path::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <qualifiedname>mix::platform::mixAsset_path::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="50" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="50" bodyend="53"/>
+        <references refid="d9/d07/a00607_1ad470677ea0bf4cb8231135d0b8fb771e" compoundref="d3/d07/a00305" startline="109">_name</references>
+        <referencedby refid="da/dee/a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" compoundref="da/d45/a00011" startline="31" endline="34">mix::assetsystem::mixAsset_item::get_full_name</referencedby>
+        <referencedby refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" compoundref="d5/df9/a00044" startline="58" endline="87">mix::assetsystem::mixTexture::initialize</referencedby>
+        <referencedby refid="d9/d3a/a00439_1a3725f6fd303bf0cec645a468cef9914f" compoundref="db/dab/a00089" startline="20" endline="127">mix::assetsystem::loaders::mixAsset_loader_mesh::load_obj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a80dcdba3da9a6caf197ac29133b52851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::platform::mixAsset_path::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator()</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="56" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="56" bodyend="59"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a4fca4e464375ac31c4334545ea5d0454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::platform::mixAsset_path::operator std::string &amp;</definition>
+        <argsstring>()</argsstring>
+        <name>operator std::string &amp;</name>
+        <qualifiedname>mix::platform::mixAsset_path::string &amp;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="61" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="61" bodyend="64"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a0cba11fd4c72291bc8bf5d3c3f50a30b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::platform::mixAsset_path::operator const char *</definition>
+        <argsstring>()</argsstring>
+        <name>operator const char *</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator const char *</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="66" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="66" bodyend="69"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a5834afc65ec72da2d7674ea2aeec0e37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref></type>
+        <definition>mixAsset_path mix::platform::mixAsset_path::operator+</definition>
+        <argsstring>(const mixAsset_path &amp;str) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="72" column="34" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="72" bodyend="77"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1acfb90915ac223c9725a4760f3cb4a55f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref></type>
+        <definition>mixAsset_path mix::platform::mixAsset_path::operator+</definition>
+        <argsstring>(const std::string &amp;str) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator+</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="79" column="34" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="79" bodyend="84"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1aba8a5641c94ffc239c33ea22c9bd03db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::platform::mixAsset_path::operator==</definition>
+        <argsstring>(const mixAsset_path &amp;p) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="86" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="86" bodyend="89"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1abec82144eca2c5ed2001c5d7c2983a90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::platform::mixAsset_path::operator!=</definition>
+        <argsstring>(const mixAsset_path &amp;p) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d07/a00607" kindref="compound">mixAsset_path</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="91" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="91" bodyend="94"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a0ad24d82e265cd46db41cd294a43119a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; mix::platform::mixAsset_path::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="96" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="96" bodyend="100"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d07/a00607_1a21c5c79bade4654523740992c7f39209" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::istream &amp;</type>
+        <definition>std::istream &amp; mix::platform::mixAsset_path::operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;in)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>mix::platform::mixAsset_path::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="101" column="33" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="101" bodyend="105"/>
+        <references refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" compoundref="d3/d07/a00305" startline="112">_path</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" line="13" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/platform/mixAsset_path.h" bodystart="14" bodyend="113"/>
+    <listofallmembers>
+      <member refid="d9/d07/a00607_1a2acfcd799df8150c0812b4c5b1ca81b0" prot="private" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>_base_name</name></member>
+      <member refid="d9/d07/a00607_1a85c5f22f6030306ebe75c13433115d82" prot="private" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>_extension</name></member>
+      <member refid="d9/d07/a00607_1ad470677ea0bf4cb8231135d0b8fb771e" prot="private" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>_name</name></member>
+      <member refid="d9/d07/a00607_1a59b878abe336bcc7d9a240a97a5fb7f0" prot="private" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>_path</name></member>
+      <member refid="d9/d07/a00607_1a963e963961e2aa159290209cd15bb662" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>get_extension</name></member>
+      <member refid="d9/d07/a00607_1ac980b27170298e16e93ce3a656b2c46d" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>get_name</name></member>
+      <member refid="d9/d07/a00607_1abece5b41203b730f6b4949fcc5348e45" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>get_name_without_extension</name></member>
+      <member refid="d9/d07/a00607_1a0c5a063f64eb2142fa4c2539dec02768" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>mixAsset_path</name></member>
+      <member refid="d9/d07/a00607_1a0cba11fd4c72291bc8bf5d3c3f50a30b" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator const char *</name></member>
+      <member refid="d9/d07/a00607_1a2f7ff355b05c42ada8f31755cbe14b06" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator std::string</name></member>
+      <member refid="d9/d07/a00607_1a4fca4e464375ac31c4334545ea5d0454" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator std::string &amp;</name></member>
+      <member refid="d9/d07/a00607_1a87b19abc42edf49a5e8108b552558c5b" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator std::wstring</name></member>
+      <member refid="d9/d07/a00607_1abec82144eca2c5ed2001c5d7c2983a90" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator!=</name></member>
+      <member refid="d9/d07/a00607_1a80dcdba3da9a6caf197ac29133b52851" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator()</name></member>
+      <member refid="d9/d07/a00607_1a5834afc65ec72da2d7674ea2aeec0e37" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator+</name></member>
+      <member refid="d9/d07/a00607_1acfb90915ac223c9725a4760f3cb4a55f" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator+</name></member>
+      <member refid="d9/d07/a00607_1a0ad24d82e265cd46db41cd294a43119a" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d9/d07/a00607_1aba8a5641c94ffc239c33ea22c9bd03db" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator==</name></member>
+      <member refid="d9/d07/a00607_1a21c5c79bade4654523740992c7f39209" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>operator&gt;&gt;</name></member>
+      <member refid="d9/d07/a00607_1ad0f76c40bcfada53738cbf10013d08ea" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>to_cstr</name></member>
+      <member refid="d9/d07/a00607_1ad7313ff12d386822cc941c243cd9a59e" prot="public" virt="non-virtual"><scope>mix::platform::mixAsset_path</scope><name>to_str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

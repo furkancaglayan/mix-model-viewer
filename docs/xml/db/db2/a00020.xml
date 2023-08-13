@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="db/db2/a00020" kind="file" language="C++">
+    <compoundname>mixMaterial.cpp</compoundname>
+    <includes refid="d3/d52/a00023" local="yes">mixMaterial.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixMaterial.cpp</label>
+        <link refid="db/db2/a00020"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="11">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>functional</label>
+      </node>
+      <node id="25">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="26">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="19">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>istream</label>
+      </node>
+      <node id="21">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d52/a00023" kindref="compound">mixMaterial.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="db/d95/a00391_1a3a688ee5091611b34038f76c6310f13b" refkind="member"><highlight class="normal"><ref refid="db/d95/a00391_1a3a688ee5091611b34038f76c6310f13b" kindref="member">mix::assetsystem::mixMaterial::mixMaterial</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;mix::assetsystem::mixShader_program&gt;<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">:<sp/><ref refid="db/d10/a00350" kindref="compound">mix</ref>::assetsystem::<ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path)<sp/>,<sp/>_color{<sp/><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>(1.0f,<sp/>1.0f,<sp/>1.0f,<sp/>1.0f)<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d95/a00391_1a6f2763ae87a501957332411e0b892009" kindref="member">_shader</ref><sp/>=<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="db/d95/a00391_1ad319a74288d6aba007a677f0ae2756d9" refkind="member"><highlight class="normal"><ref refid="db/d95/a00391_1a3a688ee5091611b34038f76c6310f13b" kindref="member">mix::assetsystem::mixMaterial::mixMaterial</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/>std::shared_ptr&lt;mix::assetsystem::mixShader_program&gt;<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">:<sp/><ref refid="db/d10/a00350" kindref="compound">mix</ref>::assetsystem::<ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref><sp/>(path),<sp/>_color{<sp/><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>(1.0f,<sp/>1.0f,<sp/>1.0f,<sp/>1.0f)<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d95/a00391_1a6f2763ae87a501957332411e0b892009" kindref="member">_shader</ref><sp/>=<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="db/d95/a00391_1ad3d4616d1e11bc6463155932efcb7399" refkind="member"><highlight class="normal"><ref refid="db/d95/a00391_1ad3d4616d1e11bc6463155932efcb7399" kindref="member">mix::assetsystem::mixMaterial::~mixMaterial</ref><sp/>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="db/d95/a00391_1a76359acf75f48da67f98155e9c90be05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1a76359acf75f48da67f98155e9c90be05" kindref="member">mix::assetsystem::mixMaterial::set_shader</ref><sp/>(std::shared_ptr&lt;mix::assetsystem::mixShader_program&gt;<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>_shader<sp/>=<sp/><ref refid="d1/d53/a00399" kindref="compound">shader</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="db/d95/a00391_1a702c6d2017a1d82af4ea1091feb87d34" refkind="member"><highlight class="normal"><ref refid="d1/d98/a00407" kindref="compound">mix::assetsystem::mixShader_program</ref>*<sp/><ref refid="db/d95/a00391_1a702c6d2017a1d82af4ea1091feb87d34" kindref="member">mix::assetsystem::mixMaterial::get_shader</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_shader.expired<sp/>())</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_shader.lock<sp/>().get<sp/>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="db/d95/a00391_1a5f7a3c9e44cda76adf32548cf18c5099" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1a5f7a3c9e44cda76adf32548cf18c5099" kindref="member">mix::assetsystem::mixMaterial::set_texture</ref><sp/>(<ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref><sp/>type,<sp/>std::shared_ptr&lt;mix::assetsystem::mixTexture&gt;<sp/><ref refid="d0/dd6/a00415" kindref="compound">texture</ref>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>_textures[type]<sp/>=<sp/><ref refid="d0/dd6/a00415" kindref="compound">texture</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="db/d95/a00391_1a9e7e6d1e6715572aa6622948093c9e8c" refkind="member"><highlight class="normal"><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/><ref refid="db/d95/a00391_1a9e7e6d1e6715572aa6622948093c9e8c" kindref="member">mix::assetsystem::mixMaterial::get_color</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_color;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="db/d95/a00391_1aca99fe845ea3fea270ef7dbd294e3281" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1aca99fe845ea3fea270ef7dbd294e3281" kindref="member">mix::assetsystem::mixMaterial::set_color</ref><sp/>(<ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>color)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>_color<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="db/d95/a00391_1ac5dd01bd44f5dde4206c839543db635b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1aca99fe845ea3fea270ef7dbd294e3281" kindref="member">mix::assetsystem::mixMaterial::set_color</ref><sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>color)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>_color[0]<sp/>=<sp/>color[0];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>_color[1]<sp/>=<sp/>color[1];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>_color[2]<sp/>=<sp/>color[2];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/d95/a00391_1a391154e136ba0311ad1b1bb01216e1d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1a391154e136ba0311ad1b1bb01216e1d7" kindref="member">mix::assetsystem::mixMaterial::set_opacity</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>_color[3]<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="db/d95/a00391_1a82595022e20e4dbcea17469010b1ddb6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="db/d95/a00391_1a82595022e20e4dbcea17469010b1ddb6" kindref="member">mix::assetsystem::mixMaterial::apply</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_shader.expired<sp/>())</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>_shader.lock<sp/>()-&gt;use<sp/>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>_shader.lock<sp/>()-&gt;set_vec4<sp/>(</highlight><highlight class="stringliteral">&quot;_color&quot;</highlight><highlight class="normal">,<sp/>_color);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>_shader.lock<sp/>()-&gt;set_1f<sp/>(</highlight><highlight class="stringliteral">&quot;_shininess&quot;</highlight><highlight class="normal">,<sp/>_shininess);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>it<sp/>:<sp/>_textures)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!it.second.expired<sp/>())</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it.second.lock<sp/>()-&gt;bind<sp/>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_shader.lock<sp/>()-&gt;set_1i<sp/>(<ref refid="d0/dd6/a00415_1a3af8a01bbadccb536faed4a385267391" kindref="member">mix::texture::get_texture_target</ref>(it.first),<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(it.first));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_shader.lock<sp/>()-&gt;get_program_id<sp/>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixMaterial.cpp"/>
+  </compounddef>
+</doxygen>

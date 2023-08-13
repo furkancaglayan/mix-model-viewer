@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="de/dde/a00587" kind="class" language="C++" prot="public">
+    <compoundname>mix::library::event_callback_args</compoundname>
+    <basecompoundref refid="d8/de9/a00595" prot="public" virt="non-virtual">mix::library::ievent_callback_base_with_args&lt; U &gt;</basecompoundref>
+    <includes refid="d3/d5e/a00275" local="no">event_callback.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dde/a00587_1a7f9e3bbd9c50807bec006aef3a854a2f" prot="private" static="no" mutable="no">
+        <type>void(T::*</type>
+        <definition>void(T::* mix::library::event_callback_args&lt; T, U &gt;::_function) (U *)</definition>
+        <argsstring>)(U *)</argsstring>
+        <name>_function</name>
+        <qualifiedname>mix::library::event_callback_args::_function</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="51" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="de/dde/a00587_1a2a19a8a46a914f4820dda3b038e8f806" compoundref="d3/d5e/a00275" startline="45" endline="49">mix::library::event_callback_args&lt; T, U &gt;::event_callback_args</referencedby>
+        <referencedby refid="de/dde/a00587_1a18c2dfd153fae511995a0e1505431ad0" compoundref="d3/d5e/a00275" startline="34" endline="37">mix::library::event_callback_args&lt; T, U &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/dde/a00587_1a92d3fd22a393de47264096345a24073f" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* mix::library::event_callback_args&lt; T, U &gt;::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>mix::library::event_callback_args::_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="52" column="15" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="de/dde/a00587_1a2a19a8a46a914f4820dda3b038e8f806" compoundref="d3/d5e/a00275" startline="45" endline="49">mix::library::event_callback_args&lt; T, U &gt;::event_callback_args</referencedby>
+        <referencedby refid="de/dde/a00587_1a18c2dfd153fae511995a0e1505431ad0" compoundref="d3/d5e/a00275" startline="34" endline="37">mix::library::event_callback_args&lt; T, U &gt;::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dde/a00587_1a18c2dfd153fae511995a0e1505431ad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mix::library::event_callback_args&lt; T, U &gt;::operator()</definition>
+        <argsstring>(U *obj) override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mix::library::event_callback_args::operator()</qualifiedname>
+        <reimplements refid="d8/de9/a00595_1a5f7722e2be54e665e5ce75975f79cf33">operator()</reimplements>
+        <param>
+          <type>U *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="34" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="34" bodyend="37"/>
+        <references refid="de/dde/a00587_1a7f9e3bbd9c50807bec006aef3a854a2f" compoundref="d3/d5e/a00275" startline="51">mix::library::event_callback_args&lt; T, U &gt;::_function</references>
+        <references refid="de/dde/a00587_1a92d3fd22a393de47264096345a24073f" compoundref="d3/d5e/a00275" startline="52">mix::library::event_callback_args&lt; T, U &gt;::_instance</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/dde/a00587_1a1a7d4996a89910b72b7ce94b4ec2ae7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dde/a00587" kindref="compound">event_callback_args</ref>&lt; T, U &gt; *</type>
+        <definition>static event_callback_args&lt; T, U &gt; * mix::library::event_callback_args&lt; T, U &gt;::create_callback</definition>
+        <argsstring>(T *instance, void(T::*function)(U *))</argsstring>
+        <name>create_callback</name>
+        <qualifiedname>mix::library::event_callback_args::create_callback</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>void(T::*)(U *)</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="39" column="40" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="39" bodyend="42"/>
+        <referencedby refid="df/d70/a00431_1ad36e4e395af7e88c9b618c6ceca3f35f" compoundref="d1/d09/a00077" startline="22" endline="35">mix::assetsystem::mixAsset_loader_base::set_asset_processor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/dde/a00587_1a2a19a8a46a914f4820dda3b038e8f806" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::library::event_callback_args&lt; T, U &gt;::event_callback_args</definition>
+        <argsstring>(T *instance, void(T::*function)(U *))</argsstring>
+        <name>event_callback_args</name>
+        <qualifiedname>mix::library::event_callback_args::event_callback_args</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>void(T::*)(U *)</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="45" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="45" bodyend="49"/>
+        <references refid="de/dde/a00587_1a7f9e3bbd9c50807bec006aef3a854a2f" compoundref="d3/d5e/a00275" startline="51">mix::library::event_callback_args&lt; T, U &gt;::_function</references>
+        <references refid="de/dde/a00587_1a92d3fd22a393de47264096345a24073f" compoundref="d3/d5e/a00275" startline="52">mix::library::event_callback_args&lt; T, U &gt;::_instance</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::library::ievent_callback_base_with_args&lt; U &gt;</label>
+        <link refid="d8/de9/a00595"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::library::event_callback_args&lt; T, U &gt;</label>
+        <link refid="de/dde/a00587"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::library::ievent_callback_base</label>
+        <link refid="d9/dad/a00591"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mix::library::ievent_callback_base_with_args&lt; U &gt;</label>
+        <link refid="d8/de9/a00595"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::library::event_callback_args&lt; T, U &gt;</label>
+        <link refid="de/dde/a00587"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::library::ievent_callback_base</label>
+        <link refid="d9/dad/a00591"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" line="30" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event_callback.h" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="de/dde/a00587_1a7f9e3bbd9c50807bec006aef3a854a2f" prot="private" virt="non-virtual"><scope>mix::library::event_callback_args</scope><name>_function</name></member>
+      <member refid="de/dde/a00587_1a92d3fd22a393de47264096345a24073f" prot="private" virt="non-virtual"><scope>mix::library::event_callback_args</scope><name>_instance</name></member>
+      <member refid="de/dde/a00587_1a1a7d4996a89910b72b7ce94b4ec2ae7d" prot="public" virt="non-virtual"><scope>mix::library::event_callback_args</scope><name>create_callback</name></member>
+      <member refid="de/dde/a00587_1a2a19a8a46a914f4820dda3b038e8f806" prot="private" virt="non-virtual"><scope>mix::library::event_callback_args</scope><name>event_callback_args</name></member>
+      <member refid="de/dde/a00587_1a18c2dfd153fae511995a0e1505431ad0" prot="public" virt="virtual"><scope>mix::library::event_callback_args</scope><name>operator()</name></member>
+      <member refid="d8/de9/a00595_1abef1cff4495e8caa4ce907809b6d4348" prot="public" virt="virtual" ambiguityscope="ievent_callback_base_with_args&lt; U &gt;::"><scope>mix::library::event_callback_args</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

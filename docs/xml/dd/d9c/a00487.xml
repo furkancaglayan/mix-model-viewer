@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d9c/a00487" kind="class" language="C++" prot="public">
+    <compoundname>mix::core::mixGuid</compoundname>
+    <includes refid="db/ddf/a00164" local="no">mixGuid.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mix::core::mixGuid::_internal</definition>
+        <argsstring></argsstring>
+        <name>_internal</name>
+        <qualifiedname>mix::core::mixGuid::_internal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="60" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="dd/d9c/a00487_1a19426b53ce97f9a2476a623ee44cee24" compoundref="db/ddf/a00164" startline="22" endline="25">get</referencedby>
+        <referencedby refid="dd/d9c/a00487_1a420c1faf3752af3f97e405c54f177c79" compoundref="db/ddf/a00164" startline="53" endline="56">operator std::string</referencedby>
+        <referencedby refid="dd/d9c/a00487_1abd4e22aa49515aca55883660cc34ebc2" compoundref="db/ddf/a00164" startline="31" endline="34">operator!=</referencedby>
+        <referencedby refid="dd/d9c/a00487_1a13c19d15ca078afb919e1402e0396703" compoundref="db/ddf/a00164" startline="36" endline="39">operator&lt;</referencedby>
+        <referencedby refid="dd/d9c/a00487_1a85f8581bf3c4d2e76d0b186e4ff42779" compoundref="db/ddf/a00164" startline="47" endline="51">operator=</referencedby>
+        <referencedby refid="dd/d9c/a00487_1a92b41e36bc9d45d71a7291020dfdf82a" compoundref="db/ddf/a00164" startline="26" endline="29">operator==</referencedby>
+        <referencedby refid="dd/d9c/a00487_1a928009f968c51b191f092a5934f9371c" compoundref="db/ddf/a00164" startline="42" endline="45">operator&gt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dd/d9c/a00487_1a5577d7bea50303b025b612d36d6ea541" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref></type>
+        <definition>mix::core::mixGuid mix::core::mixGuid::create_new</definition>
+        <argsstring>()</argsstring>
+        <name>create_new</name>
+        <qualifiedname>mix::core::mixGuid::create_new</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="21" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.cpp" bodystart="8" bodyend="22"/>
+        <references refid="d5/dd8/a00615_1a1f7d00ced82da501de72f821ddc21754" compoundref="da/de0/a00317" startline="137" endline="153">mix::platform::platform_utils::convert_wide_to_utf8</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d9c/a00487_1a19426b53ce97f9a2476a623ee44cee24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; mix::core::mixGuid::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>mix::core::mixGuid::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="22" column="38" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="22" bodyend="25"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1a92b41e36bc9d45d71a7291020dfdf82a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::core::mixGuid::operator==</definition>
+        <argsstring>(const mixGuid &amp;p) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mix::core::mixGuid::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="26" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="26" bodyend="29"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1abd4e22aa49515aca55883660cc34ebc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::core::mixGuid::operator!=</definition>
+        <argsstring>(const mixGuid &amp;p) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>mix::core::mixGuid::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="31" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="31" bodyend="34"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1a13c19d15ca078afb919e1402e0396703" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::core::mixGuid::operator&lt;</definition>
+        <argsstring>(const mixGuid &amp;p) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>mix::core::mixGuid::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="36" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="36" bodyend="39"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1a928009f968c51b191f092a5934f9371c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mix::core::mixGuid::operator&gt;</definition>
+        <argsstring>(const mixGuid &amp;p) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>mix::core::mixGuid::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="42" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="42" bodyend="45"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1a85f8581bf3c4d2e76d0b186e4ff42779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref> &amp;</type>
+        <definition>mixGuid &amp; mix::core::mixGuid::operator=</definition>
+        <argsstring>(mixGuid t)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mix::core::mixGuid::operator=</qualifiedname>
+        <param>
+          <type><ref refid="dd/d9c/a00487" kindref="compound">mixGuid</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="47" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="47" bodyend="51"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9c/a00487_1a420c1faf3752af3f97e405c54f177c79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixGuid::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <qualifiedname>mix::core::mixGuid::string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="53" column="20" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="53" bodyend="56"/>
+        <references refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" compoundref="db/ddf/a00164" startline="60">_internal</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d9c/a00487_1a8840240077b652830454430ecd694ea7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixGuid::mixGuid</definition>
+        <argsstring>(std::string &amp;val)</argsstring>
+        <name>mixGuid</name>
+        <qualifiedname>mix::core::mixGuid::mixGuid</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="59" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" line="17" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixGuid.h" bodystart="18" bodyend="61"/>
+    <listofallmembers>
+      <member refid="dd/d9c/a00487_1a7a683239413abb652849898a9249616f" prot="private" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>_internal</name></member>
+      <member refid="dd/d9c/a00487_1a5577d7bea50303b025b612d36d6ea541" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>create_new</name></member>
+      <member refid="dd/d9c/a00487_1a19426b53ce97f9a2476a623ee44cee24" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>get</name></member>
+      <member refid="dd/d9c/a00487_1a8840240077b652830454430ecd694ea7" prot="private" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>mixGuid</name></member>
+      <member refid="dd/d9c/a00487_1a420c1faf3752af3f97e405c54f177c79" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator std::string</name></member>
+      <member refid="dd/d9c/a00487_1abd4e22aa49515aca55883660cc34ebc2" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator!=</name></member>
+      <member refid="dd/d9c/a00487_1a13c19d15ca078afb919e1402e0396703" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator&lt;</name></member>
+      <member refid="dd/d9c/a00487_1a85f8581bf3c4d2e76d0b186e4ff42779" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator=</name></member>
+      <member refid="dd/d9c/a00487_1a92b41e36bc9d45d71a7291020dfdf82a" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator==</name></member>
+      <member refid="dd/d9c/a00487_1a928009f968c51b191f092a5934f9371c" prot="public" virt="non-virtual"><scope>mix::core::mixGuid</scope><name>operator&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

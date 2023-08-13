@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d8/d67/a00499" kind="struct" language="C++" prot="public">
+    <compoundname>mix::core::mixTransform</compoundname>
+    <includes refid="d5/dcb/a00170" local="no">mixTransform.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d67/a00499_1a5601f56c89edc199c43640509bc289e2" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <qualifiedname>mix::core::mixTransform::_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="100" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a866fd851b6a5b4d0afaa00f7fd85ad85" compoundref="d5/dcb/a00170" startline="76" endline="79">get_position</referencedby>
+        <referencedby refid="d8/d67/a00499_1a2b0616acfcb408037bc69d3a81c92210" compoundref="dc/de6/a00167" startline="4" endline="8">set_position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1a3459a96c98b0764d9f1e086109fbeebc" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_local_position</definition>
+        <argsstring></argsstring>
+        <name>_local_position</name>
+        <qualifiedname>mix::core::mixTransform::_local_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="101" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1ae23f3b7c32574fb2007b8636deb24ff3" compoundref="d5/dcb/a00170" startline="81" endline="84">get_local_position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_rotation</definition>
+        <argsstring></argsstring>
+        <name>_rotation</name>
+        <qualifiedname>mix::core::mixTransform::_rotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="103" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a0db6c49d4cea8f8272b9f55662ea98e6" compoundref="d5/dcb/a00170" startline="86" endline="89">get_rotation</referencedby>
+        <referencedby refid="d8/d67/a00499_1aaa158307d752d9673b6a88ca5fc8f63c" compoundref="d5/dcb/a00170" startline="66" endline="69">pitch</referencedby>
+        <referencedby refid="d8/d67/a00499_1a7c69fb3a9257014c0eda6e1e20ff5cf1" compoundref="d5/dcb/a00170" startline="71" endline="74">roll</referencedby>
+        <referencedby refid="d8/d67/a00499_1a398497c08bbe10fce0fb016d26e85936" compoundref="d5/dcb/a00170" startline="61" endline="64">yaw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1abdb54638a59463c965a72e2c347109ff" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_scale</definition>
+        <argsstring></argsstring>
+        <name>_scale</name>
+        <qualifiedname>mix::core::mixTransform::_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="104" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a8a3d7fecaedb09455a0155b231ad7486" compoundref="d5/dcb/a00170" startline="91" endline="94">get_scale</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_forward</definition>
+        <argsstring></argsstring>
+        <name>_forward</name>
+        <qualifiedname>mix::core::mixTransform::_forward</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="106" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1af091b4eaa82b9e5a6c127ade72cd3a4a" compoundref="d5/dcb/a00170" startline="51" endline="54">forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1afa02bf109b0b2642036c7a53d441f331" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_up</definition>
+        <argsstring></argsstring>
+        <name>_up</name>
+        <qualifiedname>mix::core::mixTransform::_up</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="107" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a9b868ff66fe892bb7adeac34ca2fe5d1" compoundref="d5/dcb/a00170" startline="46" endline="49">up</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1aa4d819edc3a02331bd9a22832f2a89d6" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::_right</definition>
+        <argsstring></argsstring>
+        <name>_right</name>
+        <qualifiedname>mix::core::mixTransform::_right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="108" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a513ac59a7c89abd8e3232a16665fbfea" compoundref="d5/dcb/a00170" startline="56" endline="59">right</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d67/a00499_1a108b1f373738340828df01d1dc7f0a5f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mix::core::mixTransform::_is_dirty</definition>
+        <argsstring></argsstring>
+        <name>_is_dirty</name>
+        <qualifiedname>mix::core::mixTransform::_is_dirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="110" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="d8/d67/a00499_1a2b0616acfcb408037bc69d3a81c92210" compoundref="dc/de6/a00167" startline="4" endline="8">set_position</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d67/a00499_1a7a48f640c70155d136c6b66e8acdfaa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>()</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="24" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a8d57d6619439ce4da5d58b2e661df03d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>(vec3 pos)</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="25" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1ad4217ee03c3c5eb701a092aca548f79d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>(vec3 pos, vec3 rot)</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>rot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="26" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a873b289c5a58df66a7d7233a0bfac0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>(vec3 pos, vec3 rot, vec3 scale)</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>rot</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="27" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="78" bodyend="82"/>
+        <references refid="d8/d67/a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" compoundref="dc/de6/a00167" startline="88" endline="95">update</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a4031689dabde7c88d2d972576290c9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::~mixTransform</definition>
+        <argsstring>()</argsstring>
+        <name>~mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::~mixTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="28" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a4cdf41ca52f87dfd92f88bc5c7c66bec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>(mixTransform &amp;&amp;move)=delete</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <param>
+          <type><ref refid="d8/d67/a00499" kindref="compound">mixTransform</ref> &amp;&amp;</type>
+          <declname>move</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="30" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1add9057e45751cfcdf8d421612a29c3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::mixTransform::mixTransform</definition>
+        <argsstring>(const mixTransform &amp;copy)=delete</argsstring>
+        <name>mixTransform</name>
+        <qualifiedname>mix::core::mixTransform::mixTransform</qualifiedname>
+        <param>
+          <type>const <ref refid="d8/d67/a00499" kindref="compound">mixTransform</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="31" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a2b0616acfcb408037bc69d3a81c92210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::set_position</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>set_position</name>
+        <qualifiedname>mix::core::mixTransform::set_position</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="33" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="4" bodyend="8"/>
+        <references refid="d8/d67/a00499_1a108b1f373738340828df01d1dc7f0a5f" compoundref="d5/dcb/a00170" startline="110">_is_dirty</references>
+        <references refid="d8/d67/a00499_1a5601f56c89edc199c43640509bc289e2" compoundref="d5/dcb/a00170" startline="100">_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a36960b1e482875f85672a8c974564143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::set_local_position</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>set_local_position</name>
+        <qualifiedname>mix::core::mixTransform::set_local_position</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="34" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1adb6232350622826eef44bce10163d3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::set_rotation</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>set_rotation</name>
+        <qualifiedname>mix::core::mixTransform::set_rotation</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="35" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1ac4e1b87d3a8b40bb20298cb115dcaf4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::set_scale</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>set_scale</name>
+        <qualifiedname>mix::core::mixTransform::set_scale</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="36" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1ada09b00b432f3107d650be4b024b5401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::translate</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>translate</name>
+        <qualifiedname>mix::core::mixTransform::translate</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="37" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a18cf7e857f941c5719b7e01ad78eca7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::scale</definition>
+        <argsstring>(vec3 v)</argsstring>
+        <name>scale</name>
+        <qualifiedname>mix::core::mixTransform::scale</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="38" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::look_at</definition>
+        <argsstring>(const vec3 &amp;pos)</argsstring>
+        <name>look_at</name>
+        <qualifiedname>mix::core::mixTransform::look_at</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="39" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="38" bodyend="45"/>
+        <references refid="db/d7b/a00296_1afec26b6e42064ef2316f1be013515801" compoundref="db/d7b/a00296" startline="15" endline="18">normalize</references>
+        <references refid="de/d25/a00290_1af57b155e256b3a60e8a9b00757d451de" compoundref="de/d25/a00290" startline="12" endline="15">radians_to_degrees</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a21bee47e7e33becf6ea86acc5625ae61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::rotate_around</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>rotate_around</name>
+        <qualifiedname>mix::core::mixTransform::rotate_around</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="41" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>mix::core::mixTransform::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="42" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="88" bodyend="95"/>
+        <referencedby refid="d8/d67/a00499_1a873b289c5a58df66a7d7233a0bfac0cc" compoundref="dc/de6/a00167" startline="78" endline="82">mixTransform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a38bb16968fa8cfd2a4a5031e5653b826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d82/a00293_1a5879d2bf8852061cc069e7607b1aafd5" kindref="member">mat4</ref></type>
+        <definition>mat4 mix::core::mixTransform::get_model_mat</definition>
+        <argsstring>() const</argsstring>
+        <name>get_model_mat</name>
+        <qualifiedname>mix::core::mixTransform::get_model_mat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="44" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="56" bodyend="64"/>
+        <references refid="db/dc4/a00495_1afd85bf2666dede05bdb8cc1062a1937b" compoundref="d5/dcb/a00170" startline="13">mix::transform::forward</references>
+        <references refid="db/dc4/a00495_1ab554bd40cffaeb26a451ab5b73217d71" compoundref="d5/dcb/a00170" startline="14">mix::transform::right</references>
+        <references refid="d6/d82/a00293_1a335c3f59008a4d1c63484fbc2c5146b5" compoundref="d6/d82/a00293" startline="24" endline="27">rotate</references>
+        <references refid="db/dc4/a00495_1ae863cbb68786bad6ed428370089f8cdf" compoundref="d5/dcb/a00170" startline="15">mix::transform::up</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a9b868ff66fe892bb7adeac34ca2fe5d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::up</definition>
+        <argsstring>() const</argsstring>
+        <name>up</name>
+        <qualifiedname>mix::core::mixTransform::up</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="46" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="46" bodyend="49"/>
+        <references refid="d8/d67/a00499_1afa02bf109b0b2642036c7a53d441f331" compoundref="d5/dcb/a00170" startline="107">_up</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1af091b4eaa82b9e5a6c127ade72cd3a4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::forward</definition>
+        <argsstring>() const</argsstring>
+        <name>forward</name>
+        <qualifiedname>mix::core::mixTransform::forward</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="51" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="51" bodyend="54"/>
+        <references refid="d8/d67/a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" compoundref="d5/dcb/a00170" startline="106">_forward</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a513ac59a7c89abd8e3232a16665fbfea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::right</definition>
+        <argsstring>() const</argsstring>
+        <name>right</name>
+        <qualifiedname>mix::core::mixTransform::right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="56" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="56" bodyend="59"/>
+        <references refid="d8/d67/a00499_1aa4d819edc3a02331bd9a22832f2a89d6" compoundref="d5/dcb/a00170" startline="108">_right</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a398497c08bbe10fce0fb016d26e85936" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mix::core::mixTransform::yaw</definition>
+        <argsstring>() const</argsstring>
+        <name>yaw</name>
+        <qualifiedname>mix::core::mixTransform::yaw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="61" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="61" bodyend="64"/>
+        <references refid="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" compoundref="d5/dcb/a00170" startline="103">_rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1aaa158307d752d9673b6a88ca5fc8f63c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mix::core::mixTransform::pitch</definition>
+        <argsstring>() const</argsstring>
+        <name>pitch</name>
+        <qualifiedname>mix::core::mixTransform::pitch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="66" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="66" bodyend="69"/>
+        <references refid="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" compoundref="d5/dcb/a00170" startline="103">_rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a7c69fb3a9257014c0eda6e1e20ff5cf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mix::core::mixTransform::roll</definition>
+        <argsstring>() const</argsstring>
+        <name>roll</name>
+        <qualifiedname>mix::core::mixTransform::roll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="71" column="26" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="71" bodyend="74"/>
+        <references refid="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" compoundref="d5/dcb/a00170" startline="103">_rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a866fd851b6a5b4d0afaa00f7fd85ad85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::get_position</definition>
+        <argsstring>() const</argsstring>
+        <name>get_position</name>
+        <qualifiedname>mix::core::mixTransform::get_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="76" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="76" bodyend="79"/>
+        <references refid="d8/d67/a00499_1a5601f56c89edc199c43640509bc289e2" compoundref="d5/dcb/a00170" startline="100">_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1ae23f3b7c32574fb2007b8636deb24ff3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::get_local_position</definition>
+        <argsstring>() const</argsstring>
+        <name>get_local_position</name>
+        <qualifiedname>mix::core::mixTransform::get_local_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="81" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="81" bodyend="84"/>
+        <references refid="d8/d67/a00499_1a3459a96c98b0764d9f1e086109fbeebc" compoundref="d5/dcb/a00170" startline="101">_local_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a0db6c49d4cea8f8272b9f55662ea98e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::get_rotation</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rotation</name>
+        <qualifiedname>mix::core::mixTransform::get_rotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="86" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="86" bodyend="89"/>
+        <references refid="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" compoundref="d5/dcb/a00170" startline="103">_rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d67/a00499_1a8a3d7fecaedb09455a0155b231ad7486" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::mixTransform::get_scale</definition>
+        <argsstring>() const</argsstring>
+        <name>get_scale</name>
+        <qualifiedname>mix::core::mixTransform::get_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="91" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="91" bodyend="94"/>
+        <references refid="d8/d67/a00499_1abdb54638a59463c965a72e2c347109ff" compoundref="d5/dcb/a00170" startline="104">_scale</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/d67/a00499_1a94de4b6193da11c60e8b4cd6f2d68152" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::mixTransform::update_vectors</definition>
+        <argsstring>()</argsstring>
+        <name>update_vectors</name>
+        <qualifiedname>mix::core::mixTransform::update_vectors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="98" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.cpp" bodystart="97" bodyend="109"/>
+        <references refid="db/d7b/a00296_1a8ac884a73edac4ccb6582c13c2ca1f88" compoundref="db/d7b/a00296" startline="21" endline="24">cross</references>
+        <references refid="de/d25/a00290_1a573b48f151a3b60b16c3221c53dc92e2" compoundref="de/d25/a00290" startline="7" endline="10">degrees_to_radians</references>
+        <references refid="db/d7b/a00296_1afec26b6e42064ef2316f1be013515801" compoundref="db/d7b/a00296" startline="15" endline="18">normalize</references>
+        <references refid="db/dc4/a00495_1ae863cbb68786bad6ed428370089f8cdf" compoundref="d5/dcb/a00170" startline="15">mix::transform::up</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" line="20" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/mixTransform.h" bodystart="21" bodyend="111"/>
+    <listofallmembers>
+      <member refid="d8/d67/a00499_1a5d3403f5bfc7ec94715aa6afd0ff691f" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_forward</name></member>
+      <member refid="d8/d67/a00499_1a108b1f373738340828df01d1dc7f0a5f" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_is_dirty</name></member>
+      <member refid="d8/d67/a00499_1a3459a96c98b0764d9f1e086109fbeebc" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_local_position</name></member>
+      <member refid="d8/d67/a00499_1a5601f56c89edc199c43640509bc289e2" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_position</name></member>
+      <member refid="d8/d67/a00499_1aa4d819edc3a02331bd9a22832f2a89d6" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_right</name></member>
+      <member refid="d8/d67/a00499_1a10f09d9ddf0317259ea13cded9a080f8" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_rotation</name></member>
+      <member refid="d8/d67/a00499_1abdb54638a59463c965a72e2c347109ff" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_scale</name></member>
+      <member refid="d8/d67/a00499_1afa02bf109b0b2642036c7a53d441f331" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>_up</name></member>
+      <member refid="d8/d67/a00499_1af091b4eaa82b9e5a6c127ade72cd3a4a" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>forward</name></member>
+      <member refid="d8/d67/a00499_1ae23f3b7c32574fb2007b8636deb24ff3" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>get_local_position</name></member>
+      <member refid="d8/d67/a00499_1a38bb16968fa8cfd2a4a5031e5653b826" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>get_model_mat</name></member>
+      <member refid="d8/d67/a00499_1a866fd851b6a5b4d0afaa00f7fd85ad85" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>get_position</name></member>
+      <member refid="d8/d67/a00499_1a0db6c49d4cea8f8272b9f55662ea98e6" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>get_rotation</name></member>
+      <member refid="d8/d67/a00499_1a8a3d7fecaedb09455a0155b231ad7486" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>get_scale</name></member>
+      <member refid="d8/d67/a00499_1a0bab59c7f1df5791af6bb0a0f7f698ae" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>look_at</name></member>
+      <member refid="d8/d67/a00499_1a7a48f640c70155d136c6b66e8acdfaa7" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1a8d57d6619439ce4da5d58b2e661df03d" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1ad4217ee03c3c5eb701a092aca548f79d" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1a873b289c5a58df66a7d7233a0bfac0cc" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1a4cdf41ca52f87dfd92f88bc5c7c66bec" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1add9057e45751cfcdf8d421612a29c3f8" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>mixTransform</name></member>
+      <member refid="d8/d67/a00499_1aaa158307d752d9673b6a88ca5fc8f63c" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>pitch</name></member>
+      <member refid="d8/d67/a00499_1a513ac59a7c89abd8e3232a16665fbfea" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>right</name></member>
+      <member refid="d8/d67/a00499_1a7c69fb3a9257014c0eda6e1e20ff5cf1" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>roll</name></member>
+      <member refid="d8/d67/a00499_1a21bee47e7e33becf6ea86acc5625ae61" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>rotate_around</name></member>
+      <member refid="d8/d67/a00499_1a18cf7e857f941c5719b7e01ad78eca7c" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>scale</name></member>
+      <member refid="d8/d67/a00499_1a36960b1e482875f85672a8c974564143" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>set_local_position</name></member>
+      <member refid="d8/d67/a00499_1a2b0616acfcb408037bc69d3a81c92210" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>set_position</name></member>
+      <member refid="d8/d67/a00499_1adb6232350622826eef44bce10163d3f9" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>set_rotation</name></member>
+      <member refid="d8/d67/a00499_1ac4e1b87d3a8b40bb20298cb115dcaf4c" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>set_scale</name></member>
+      <member refid="d8/d67/a00499_1ada09b00b432f3107d650be4b024b5401" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>translate</name></member>
+      <member refid="d8/d67/a00499_1a9b868ff66fe892bb7adeac34ca2fe5d1" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>up</name></member>
+      <member refid="d8/d67/a00499_1a6b5b9e387fd982ebab8de71d3db20d0b" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>update</name></member>
+      <member refid="d8/d67/a00499_1a94de4b6193da11c60e8b4cd6f2d68152" prot="private" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>update_vectors</name></member>
+      <member refid="d8/d67/a00499_1a398497c08bbe10fce0fb016d26e85936" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>yaw</name></member>
+      <member refid="d8/d67/a00499_1a4031689dabde7c88d2d972576290c9ad" prot="public" virt="non-virtual"><scope>mix::core::mixTransform</scope><name>~mixTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

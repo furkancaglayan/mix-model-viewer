@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/d70/a00431" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mix::assetsystem::mixAsset_loader_base</compoundname>
+    <derivedcompoundref refid="d0/dc5/a00435" prot="public" virt="non-virtual">mix::assetsystem::loaders::mixAsset_loader_font</derivedcompoundref>
+    <derivedcompoundref refid="d9/d3a/a00439" prot="public" virt="non-virtual">mix::assetsystem::loaders::mixAsset_loader_mesh</derivedcompoundref>
+    <derivedcompoundref refid="d0/dc4/a00443" prot="public" virt="non-virtual">mix::assetsystem::loaders::mixAsset_loader_shader</derivedcompoundref>
+    <derivedcompoundref refid="de/d84/a00447" prot="public" virt="non-virtual">mix::assetsystem::loaders::mixAsset_loader_text</derivedcompoundref>
+    <derivedcompoundref refid="d9/d69/a00451" prot="public" virt="non-virtual">mix::assetsystem::loaders::mixAsset_loader_texture</derivedcompoundref>
+    <includes refid="da/dec/a00080" local="no">mixAsset_loader_base.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="df/d70/a00431_1a62b58462ad7890e45621ca714f3fcc82" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dc/d4a/a00579" kindref="compound">mix::library::event</ref>&lt; <ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref> &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;mix::library::event&lt;mixAsset_item&gt; &gt; mix::assetsystem::mixAsset_loader_base::_postprocess_item_event</definition>
+        <argsstring></argsstring>
+        <name>_postprocess_item_event</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::_postprocess_item_event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="32" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="df/d70/a00431_1a4caebe457d1f5395a0f82e9708705b73" compoundref="d1/d09/a00077" startline="4" endline="7">mixAsset_loader_base</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d70/a00431_1ac534294fc9ee8370fa8d4ac0e017bf8c" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d6/d80/a00371" kindref="compound">mix::assetsystem::asset_processor</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;mix::assetsystem::asset_processor&gt; mix::assetsystem::mixAsset_loader_base::_asset_processor</definition>
+        <argsstring></argsstring>
+        <name>_asset_processor</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::_asset_processor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="33" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d70/a00431_1a4caebe457d1f5395a0f82e9708705b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixAsset_loader_base::mixAsset_loader_base</definition>
+        <argsstring>()</argsstring>
+        <name>mixAsset_loader_base</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::mixAsset_loader_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="24" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.cpp" bodystart="4" bodyend="7"/>
+        <references refid="df/d70/a00431_1a62b58462ad7890e45621ca714f3fcc82" compoundref="da/dec/a00080" startline="32">_postprocess_item_event</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d70/a00431_1aea24f23b71e09f8c5f209bdec8403e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::assetsystem::mixAsset_loader_base::mixAsset_loader_base</definition>
+        <argsstring>(mix::assetsystem::asset_processor *processor)</argsstring>
+        <name>mixAsset_loader_base</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::mixAsset_loader_base</qualifiedname>
+        <param>
+          <type><ref refid="d6/d80/a00371" kindref="compound">mix::assetsystem::asset_processor</ref> *</type>
+          <declname>processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="25" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d70/a00431_1a9e5b0c68bb400022727566f0b0a0f797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref> *</type>
+        <definition>mix::assetsystem::mixAsset_item * mix::assetsystem::mixAsset_loader_base::resolve</definition>
+        <argsstring>(mix::platform::mixFile &amp;file)</argsstring>
+        <name>resolve</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::resolve</qualifiedname>
+        <param>
+          <type><ref refid="dd/dc0/a00611" kindref="compound">mix::platform::mixFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="27" column="27" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.cpp" bodystart="15" bodyend="20"/>
+        <referencedby refid="dd/d63/a00455_1a365a984964c2c8dc231729aa19dc8231" compoundref="d4/d3e/a00116" startline="54" endline="58">mix::assetsystem::mixAsset_manager::resolve_asset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d70/a00431_1ad36e4e395af7e88c9b618c6ceca3f35f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::assetsystem::mixAsset_loader_base::set_asset_processor</definition>
+        <argsstring>(mix::assetsystem::asset_processor *processor)</argsstring>
+        <name>set_asset_processor</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::set_asset_processor</qualifiedname>
+        <param>
+          <type><ref refid="d6/d80/a00371" kindref="compound">mix::assetsystem::asset_processor</ref> *</type>
+          <declname>processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="28" column="18" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.cpp" bodystart="22" bodyend="35"/>
+        <references refid="de/dde/a00587_1a1a7d4996a89910b72b7ce94b4ec2ae7d" compoundref="d3/d5e/a00275" startline="39" endline="42">mix::library::event_callback_args&lt; T, U &gt;::create_callback</references>
+        <references refid="d6/d80/a00371_1a9c1290827acfd7ba4594da727891e855">mix::assetsystem::asset_processor::post_process</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="df/d70/a00431_1aa940694a035ddc265556740e357f311f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="da/dee/a00383" kindref="compound">mixAsset_item</ref> *</type>
+        <definition>virtual mixAsset_item * mix::assetsystem::mixAsset_loader_base::resolve_impl</definition>
+        <argsstring>(mix::platform::mixFile &amp;file)=0</argsstring>
+        <name>resolve_impl</name>
+        <qualifiedname>mix::assetsystem::mixAsset_loader_base::resolve_impl</qualifiedname>
+        <reimplementedby refid="d0/dc5/a00435_1adec4d38d7747e282131b52a5d412a22b">resolve_impl</reimplementedby>
+        <reimplementedby refid="d9/d3a/a00439_1aa68852daba6895a9c5c38d592e621b25">resolve_impl</reimplementedby>
+        <reimplementedby refid="d0/dc4/a00443_1a6d8647ea310c82eb6c82ee7ec64d199b">resolve_impl</reimplementedby>
+        <reimplementedby refid="de/d84/a00447_1a199be9682bcd0b2e08c44fc0a38cff00">resolve_impl</reimplementedby>
+        <reimplementedby refid="d9/d69/a00451_1a49304ac911e49fa890949480ec08681d">resolve_impl</reimplementedby>
+        <param>
+          <type><ref refid="dd/dc0/a00611" kindref="compound">mix::platform::mixFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="34" column="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mix::assetsystem::loaders::mixAsset_loader_font</label>
+        <link refid="d0/dc5/a00435"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mix::assetsystem::loaders::mixAsset_loader_mesh</label>
+        <link refid="d9/d3a/a00439"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mix::assetsystem::loaders::mixAsset_loader_shader</label>
+        <link refid="d0/dc4/a00443"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mix::assetsystem::loaders::mixAsset_loader_text</label>
+        <link refid="de/d84/a00447"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mix::assetsystem::loaders::mixAsset_loader_texture</label>
+        <link refid="d9/d69/a00451"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mix::assetsystem::mixAsset_loader_base</label>
+        <link refid="df/d70/a00431"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" line="19" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_base.h" bodystart="20" bodyend="35"/>
+    <listofallmembers>
+      <member refid="df/d70/a00431_1ac534294fc9ee8370fa8d4ac0e017bf8c" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>_asset_processor</name></member>
+      <member refid="df/d70/a00431_1a62b58462ad7890e45621ca714f3fcc82" prot="protected" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>_postprocess_item_event</name></member>
+      <member refid="df/d70/a00431_1a4caebe457d1f5395a0f82e9708705b73" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>mixAsset_loader_base</name></member>
+      <member refid="df/d70/a00431_1aea24f23b71e09f8c5f209bdec8403e28" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>mixAsset_loader_base</name></member>
+      <member refid="df/d70/a00431_1a9e5b0c68bb400022727566f0b0a0f797" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>resolve</name></member>
+      <member refid="df/d70/a00431_1aa940694a035ddc265556740e357f311f" prot="protected" virt="pure-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>resolve_impl</name></member>
+      <member refid="df/d70/a00431_1ad36e4e395af7e88c9b618c6ceca3f35f" prot="public" virt="non-virtual"><scope>mix::assetsystem::mixAsset_loader_base</scope><name>set_asset_processor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

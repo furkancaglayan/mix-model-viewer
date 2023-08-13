@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d2/dd7/a00567" kind="class" language="C++" prot="public">
+    <compoundname>mixImGui::mixGui</compoundname>
+    <includes refid="dd/dd7/a00260" local="no">mixGui.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d2/dd7/a00567_1a83713d2f4086271f7280fe15041a4a38" prot="private" static="no">
+        <type>std::unique_ptr&lt; <ref refid="d9/d87/a00551" kindref="compound">mixImGui::gui_window</ref> &gt;</type>
+        <definition>using mixImGui::mixGui::w_ptr =  std::unique_ptr&lt;mixImGui::gui_window&gt;</definition>
+        <argsstring></argsstring>
+        <name>w_ptr</name>
+        <qualifiedname>mixImGui::mixGui::w_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="11" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d2/dd7/a00567_1a0df7a6cb3cfabd6081c4cd6eae5662aa" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="d2/dd7/a00567_1a83713d2f4086271f7280fe15041a4a38" kindref="member">w_ptr</ref> &gt;</type>
+        <definition>std::vector&lt; mixImGui::mixGui::w_ptr &gt; mixImGui::mixGui::_windows</definition>
+        <argsstring></argsstring>
+        <name>_windows</name>
+        <qualifiedname>mixImGui::mixGui::_windows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="48" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="d2/dd7/a00567_1a79d97b87e7d22231df25bbe376ec5811" compoundref="dd/dd7/a00260" startline="22" endline="28">add_window</referencedby>
+        <referencedby refid="d2/dd7/a00567_1ae6c2ea9acb6de9a0e782795bf76a3526" compoundref="dd/dd7/a00260" startline="31" endline="42">get_window</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d2/dd7/a00567_1a2ea1d198d6c137621b97a24d7681ed04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::init</definition>
+        <argsstring>(GLFWwindow *window)</argsstring>
+        <name>init</name>
+        <qualifiedname>mixImGui::mixGui::init</qualifiedname>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="15" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="6" bodyend="87"/>
+        <references refid="d9/d8b/a00547_1a8a9a0c92bd2daf197b427a7ab5dfe036" compoundref="d9/d01/a00227" startline="104" endline="159">mixImGui::gui_style::get_default_dark_style</references>
+        <referencedby refid="d6/d10/a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" compoundref="de/df3/a00185" startline="44" endline="57">mix::mixEditor::initialize_gui</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1a97982cfbbbc8f5a2af0d95d2e719273e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::render</definition>
+        <argsstring>(mix::containers::frame_buffer *buffer)</argsstring>
+        <name>render</name>
+        <qualifiedname>mixImGui::mixGui::render</qualifiedname>
+        <param>
+          <type><ref refid="d2/d91/a00459" kindref="compound">mix::containers::frame_buffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="16" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="89" bodyend="101"/>
+        <referencedby refid="d6/d10/a00511_1ab6be81b5d14d4c6ad144b9f463a1216b" compoundref="de/df3/a00185" startline="125" endline="128">mix::mixEditor::gui_pass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1acc6e4775fd8e9d8a680eef89b637847f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::on_editor_window_size_changed</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>on_editor_window_size_changed</name>
+        <qualifiedname>mixImGui::mixGui::on_editor_window_size_changed</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="17" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="103" bodyend="110"/>
+        <referencedby refid="d6/d10/a00511_1a6b2c47771cf2e0d19dd4e48534ce9c98" compoundref="de/df3/a00185" startline="117" endline="123">mix::mixEditor::on_window_size_changed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1a79d97b87e7d22231df25bbe376ec5811" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d9/d87/a00551" kindref="compound">mixImGui::gui_window</ref> *</type>
+        <definition>static mixImGui::gui_window * mixImGui::mixGui::add_window</definition>
+        <argsstring>(T *t)</argsstring>
+        <name>add_window</name>
+        <qualifiedname>mixImGui::mixGui::add_window</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="22" column="37" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" bodystart="22" bodyend="28"/>
+        <references refid="d2/dd7/a00567_1a0df7a6cb3cfabd6081c4cd6eae5662aa" compoundref="dd/dd7/a00260" startline="48">_windows</references>
+        <referencedby refid="dc/d19/a00515_1a67f8c3a9e8f13275b061d617fc3a701b" compoundref="d9/dd0/a00191" startline="101" endline="109">mix::editor::windows::hierarchy_window::initialize</referencedby>
+        <referencedby refid="dd/d4d/a00519_1a1804e0a71bddd1f49d90a3a2a94b3903" compoundref="de/db1/a00197" startline="130" endline="139">mix::editor::windows::project_window::initialize</referencedby>
+        <referencedby refid="d0/de7/a00523_1a9d488beff6382904a47364ed5773eb11" compoundref="de/d79/a00203" startline="49" endline="57">mix::editor::windows::scene_window::initialize</referencedby>
+        <referencedby refid="d9/d44/a00527_1abe3afa9a0a9c2f15844b7e284b299604" compoundref="d3/de5/a00209" startline="50" endline="58">mix::editor::windows::shortcuts_window::initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1ae6c2ea9acb6de9a0e782795bf76a3526" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d9/d87/a00551" kindref="compound">mixImGui::gui_window</ref> *</type>
+        <definition>static mixImGui::gui_window * mixImGui::mixGui::get_window</definition>
+        <argsstring>()</argsstring>
+        <name>get_window</name>
+        <qualifiedname>mixImGui::mixGui::get_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="31" column="49" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" bodystart="31" bodyend="42"/>
+        <references refid="d2/dd7/a00567_1a0df7a6cb3cfabd6081c4cd6eae5662aa" compoundref="dd/dd7/a00260" startline="48">_windows</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1aed3860d8a06913972b2d52472cc5c40a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::show_style_editor</definition>
+        <argsstring>(ImGuiStyle &amp;style)</argsstring>
+        <name>show_style_editor</name>
+        <qualifiedname>mixImGui::mixGui::show_style_editor</qualifiedname>
+        <param>
+          <type>ImGuiStyle &amp;</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="44" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="125" bodyend="129"/>
+        <referencedby refid="d9/d44/a00527_1af97c20a271421ba26420a2ca6211f504" compoundref="d3/de5/a00209" startline="3" endline="39">mix::editor::windows::shortcuts_window::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1a19d77711a8a4b14b49bbd44a3381b9f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::add_font</definition>
+        <argsstring>(mix::assetsystem::mixFont *font, float size=32.0f, bool set_default=false)</argsstring>
+        <name>add_font</name>
+        <qualifiedname>mixImGui::mixGui::add_font</qualifiedname>
+        <param>
+          <type><ref refid="db/db9/a00387" kindref="compound">mix::assetsystem::mixFont</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size</declname>
+          <defval>32.0f</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set_default</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="45" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="131" bodyend="140"/>
+        <references refid="da/dee/a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" compoundref="da/d45/a00011" startline="36" endline="39">mix::assetsystem::mixAsset_item::get_path</references>
+        <referencedby refid="d6/d10/a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" compoundref="de/df3/a00185" startline="44" endline="57">mix::mixEditor::initialize_gui</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d2/dd7/a00567_1abf87adcc32912ac7b7adce5be606ace4" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>mixImGui::mixGui::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="49" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dd7/a00567_1a70f6cdc1b5cded571939407cd233eb02" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mixImGui::mixGui::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>mixImGui::mixGui::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="50" column="21" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.cpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" line="9" column="5" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/mixGui.h" bodystart="10" bodyend="52"/>
+    <listofallmembers>
+      <member refid="d2/dd7/a00567_1a0df7a6cb3cfabd6081c4cd6eae5662aa" prot="private" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>_windows</name></member>
+      <member refid="d2/dd7/a00567_1a19d77711a8a4b14b49bbd44a3381b9f2" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>add_font</name></member>
+      <member refid="d2/dd7/a00567_1a79d97b87e7d22231df25bbe376ec5811" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>add_window</name></member>
+      <member refid="d2/dd7/a00567_1abf87adcc32912ac7b7adce5be606ace4" prot="private" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>begin</name></member>
+      <member refid="d2/dd7/a00567_1a70f6cdc1b5cded571939407cd233eb02" prot="private" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>end</name></member>
+      <member refid="d2/dd7/a00567_1ae6c2ea9acb6de9a0e782795bf76a3526" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>get_window</name></member>
+      <member refid="d2/dd7/a00567_1a2ea1d198d6c137621b97a24d7681ed04" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>init</name></member>
+      <member refid="d2/dd7/a00567_1acc6e4775fd8e9d8a680eef89b637847f" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>on_editor_window_size_changed</name></member>
+      <member refid="d2/dd7/a00567_1a97982cfbbbc8f5a2af0d95d2e719273e" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>render</name></member>
+      <member refid="d2/dd7/a00567_1aed3860d8a06913972b2d52472cc5c40a" prot="public" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>show_style_editor</name></member>
+      <member refid="d2/dd7/a00567_1a83713d2f4086271f7280fe15041a4a38" prot="private" virt="non-virtual"><scope>mixImGui::mixGui</scope><name>w_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

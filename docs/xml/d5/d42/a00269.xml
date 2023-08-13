@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/d42/a00269" kind="file" language="C++">
+    <compoundname>event.cpp</compoundname>
+    <includes refid="d9/dd6/a00272" local="yes">event.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>debug.h</label>
+        <link refid="d5/d35/a00266"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>event.cpp</label>
+        <link refid="d5/d42/a00269"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>event.h</label>
+        <link refid="d9/dd6/a00272"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ievent_callback_base.h</label>
+        <link refid="dc/d5d/a00278"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/dd6/a00272" kindref="compound">event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d9/d42/a00575_1a4d1a18644cb7938f294a385b114fe988" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d42/a00575_1a4d1a18644cb7938f294a385b114fe988" kindref="member">mix::library::event_base::add_listener</ref><sp/>(<ref refid="d9/dad/a00591" kindref="compound">ievent_callback_base</ref>*<sp/>action)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_action_list_base::iterator<sp/>position<sp/>=<sp/>std::find<sp/>(<ref refid="d9/d42/a00575_1ad99cfb5e2a718625b69f245ef54dd49a" kindref="member">_actions</ref>.begin<sp/>(),<sp/><ref refid="d9/d42/a00575_1ad99cfb5e2a718625b69f245ef54dd49a" kindref="member">_actions</ref>.end<sp/>(),<sp/>action);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(position<sp/>==<sp/><ref refid="d9/d42/a00575_1ad99cfb5e2a718625b69f245ef54dd49a" kindref="member">_actions</ref>.end<sp/>())</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d42/a00575_1ad99cfb5e2a718625b69f245ef54dd49a" kindref="member">_actions</ref>.push_back<sp/>(action);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d9/d42/a00575_1a7b08eaffdd225300da1de749503fe4e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d42/a00575_1a7b08eaffdd225300da1de749503fe4e6" kindref="member">mix::library::event_base::remove_listener</ref><sp/>(<ref refid="d9/dad/a00591" kindref="compound">ievent_callback_base</ref>*<sp/>action)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_action_list_base::iterator<sp/>position<sp/>=<sp/>std::find<sp/>(_actions.begin<sp/>(),<sp/>_actions.end<sp/>(),<sp/>action);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(position<sp/>!=<sp/>_actions.end<sp/>())</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_actions.erase<sp/>(position);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d9/d42/a00575_1ae4fd6b1b7f288a8cac344b23d3f22711" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d42/a00575_1ae4fd6b1b7f288a8cac344b23d3f22711" kindref="member">mix::library::event_base::dispatch</ref><sp/>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d9/dad/a00591" kindref="compound">ievent_callback_base</ref>*<sp/>action<sp/>:<sp/>_actions)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*action)<sp/>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/event.cpp"/>
+  </compounddef>
+</doxygen>

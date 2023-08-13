@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/d2d/a00047" kind="file" language="C++">
+    <compoundname>mixTexture.h</compoundname>
+    <includes refid="da/d45/a00011" local="yes">mixAsset_item.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includedby refid="da/d24/a00068" local="yes">default_assets.h</includedby>
+    <includedby refid="d0/d89/a00071" local="yes">default_texture_processor.cpp</includedby>
+    <includedby refid="d3/d52/a00023" local="yes">mixMaterial.h</includedby>
+    <includedby refid="d5/df9/a00044" local="yes">mixTexture.cpp</includedby>
+    <includedby refid="d3/db1/a00200" local="yes">project_window.h</includedby>
+    <includedby refid="dd/dc1/a00212" local="yes">shortcuts_window.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="6">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="15">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>functional</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="17">
+        <label>istream</label>
+      </node>
+      <node id="18">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>mixFont.cpp</label>
+        <link refid="d2/de7/a00014"/>
+      </node>
+      <node id="7">
+        <label>mixFont.h</label>
+        <link refid="d4/d51/a00017"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mixMaterial.cpp</label>
+        <link refid="db/db2/a00020"/>
+      </node>
+      <node id="6">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>mixMesh.cpp</label>
+        <link refid="d6/d5b/a00026"/>
+      </node>
+      <node id="28">
+        <label>mixMesh.h</label>
+        <link refid="d5/d16/a00029"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mixTexture.cpp</label>
+        <link refid="d5/df9/a00044"/>
+      </node>
+      <node id="1">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>default_assets.cpp</label>
+        <link refid="de/de1/a00065"/>
+      </node>
+      <node id="2">
+        <label>default_assets.h</label>
+        <link refid="da/d24/a00068"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>default_texture_processor.cpp</label>
+        <link refid="d0/d89/a00071"/>
+      </node>
+      <node id="9">
+        <label>mixAsset_loader_font.cpp</label>
+        <link refid="d2/d1f/a00083"/>
+      </node>
+      <node id="8">
+        <label>mixAsset_loader_font.h</label>
+        <link refid="da/d2a/a00086"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>mixAsset_loader_mesh.cpp</label>
+        <link refid="db/dab/a00089"/>
+      </node>
+      <node id="29">
+        <label>mixAsset_loader_mesh.h</label>
+        <link refid="d1/dc1/a00092"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>mixAsset_loader_shader.cpp</label>
+        <link refid="d9/d77/a00095"/>
+      </node>
+      <node id="31">
+        <label>mixAsset_loader_shader.h</label>
+        <link refid="d1/d44/a00098"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>mixAsset_loader_texture.cpp</label>
+        <link refid="df/d98/a00107"/>
+      </node>
+      <node id="33">
+        <label>mixAsset_loader_texture.h</label>
+        <link refid="d4/d81/a00110"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mixAsset_manager.cpp</label>
+        <link refid="d3/d00/a00113"/>
+      </node>
+      <node id="37">
+        <label>mixMesh_component.cpp</label>
+        <link refid="d2/df5/a00137"/>
+      </node>
+      <node id="36">
+        <label>mixMesh_component.h</label>
+        <link refid="d5/db1/a00140"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>editor_config.h</label>
+        <link refid="d7/d25/a00182"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mixEditor.cpp</label>
+        <link refid="de/df3/a00185"/>
+      </node>
+      <node id="20">
+        <label>mixEditor.h</label>
+        <link refid="da/d15/a00188"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>hierarchy_window.cpp</label>
+        <link refid="d9/dd0/a00191"/>
+      </node>
+      <node id="21">
+        <label>hierarchy_window.h</label>
+        <link refid="dc/d57/a00194"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>project_window.cpp</label>
+        <link refid="de/db1/a00197"/>
+      </node>
+      <node id="16">
+        <label>project_window.h</label>
+        <link refid="d3/db1/a00200"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>scene_window.cpp</label>
+        <link refid="de/d79/a00203"/>
+      </node>
+      <node id="18">
+        <label>scene_window.h</label>
+        <link refid="d5/df1/a00206"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>shortcuts_window.cpp</label>
+        <link refid="d3/de5/a00209"/>
+      </node>
+      <node id="24">
+        <label>shortcuts_window.h</label>
+        <link refid="dd/dc1/a00212"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gui_style.cpp</label>
+        <link refid="d9/d01/a00227"/>
+      </node>
+      <node id="13">
+        <label>gui_style.h</label>
+        <link refid="d1/da8/a00230"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mixGui.cpp</label>
+        <link refid="d9/d39/a00257"/>
+      </node>
+      <node id="12">
+        <label>mixGui.h</label>
+        <link refid="dd/dd7/a00260"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>main.cpp</label>
+        <link refid="d2/d04/a00281"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/dd6/a00415" prot="public">mix::texture</innerclass>
+    <innerclass refid="d3/d29/a00419" prot="public">mix::assetsystem::mixTexture</innerclass>
+    <innernamespace refid="db/d10/a00350">mix</innernamespace>
+    <innernamespace refid="d0/d48/a00351">mix::assetsystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/d45/a00011" kindref="compound">mixAsset_item.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/d10/a00350" kindref="compound">mix</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="d0/dd6/a00415" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/dd6/a00415" kindref="compound">texture</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture_type</ref><sp/>:<sp/>uint8_t</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" kindref="member">diffuse</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaafea087517c26fadd409bd4b9dc642555" kindref="member">normal</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaaaac994eab3caf54080fc65d8143a7843" kindref="member">specular</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaab435e227d5dd201e1768b2bcb2e0aa81" kindref="member">height</ref><sp/>=<sp/>8</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">texture_format</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921af611271231707a44b6be19664cbe7c2c" kindref="member">_default</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921acda7a650c5856cf2f6738072447d7825" kindref="member">gray</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921a71c9d55fc3f215c66d2534517cb9f25e" kindref="member">gray_alpha</ref>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921aef70a6546536ccd835479f6cddc0188e" kindref="member">rgb</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921abd8e122d491d66eec591c73f5d662f4e" kindref="member">rgb_alpha</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture_wrapping</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a32cf6da134a8b268cf4ab6b79a9a5ad9" kindref="member">repeat</ref><sp/>=<sp/>GL_REPEAT,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a301defc6e7425fc63ef35c7827d43b44" kindref="member">mirrored_repeat</ref><sp/>=<sp/>GL_MIRRORED_REPEAT,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704aa597a055c00d084069e4bb23dc789ac9" kindref="member">clamp</ref><sp/>=<sp/>GL_CLAMP,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a7ff5ead6fef18ca5f63119754ac76c3e" kindref="member">clamp_to_edge</ref><sp/>=<sp/>GL_CLAMP_TO_EDGE,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a80cff00baefbb1ac2ae3f57d71c8b758" kindref="member">clamp_to_border</ref><sp/>=<sp/>GL_CLAMP_TO_BORDER,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture_filtering</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1ad879c351426770bc0b13c3628db1e636" kindref="member">nearest</ref><sp/>=<sp/>GL_NEAREST,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1a9a932b3cb396238423eb2f33ec17d6aa" kindref="member">linear</ref><sp/>=<sp/>GL_LINEAR,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d0/dd6/a00415_1aae81f2a814638f085db18c7d22dc651d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1aae81f2a814638f085db18c7d22dc651d" kindref="member">mipmap_method</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a32cf6da134a8b268cf4ab6b79a9a5ad9" kindref="member">repeat</ref><sp/>=<sp/>GL_NEAREST_MIPMAP_NEAREST,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a301defc6e7425fc63ef35c7827d43b44" kindref="member">mirrored_repeat</ref><sp/>=<sp/>GL_LINEAR_MIPMAP_NEAREST,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a7ff5ead6fef18ca5f63119754ac76c3e" kindref="member">clamp_to_edge</ref><sp/>=<sp/>GL_LINEAR_MIPMAP_NEAREST,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704a80cff00baefbb1ac2ae3f57d71c8b758" kindref="member">clamp_to_border</ref><sp/>=<sp/>GL_LINEAR_MIPMAP_LINEAR,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,<sp/>GL_LINEAR_MIPMAP_LINEAR);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d0/dd6/a00415_1a3af8a01bbadccb536faed4a385267391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="d0/dd6/a00415_1a3af8a01bbadccb536faed4a385267391" kindref="member">get_texture_target</ref><sp/>(<ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture_type</ref><sp/>type)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string<sp/>(</highlight><highlight class="stringliteral">&quot;texture&quot;</highlight><highlight class="normal">)<sp/>+<sp/>std::to_string<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(type));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67" refid="d0/dd6/a00415_1a61d8248b2b1c27977c58b0a5145a4e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a61d8248b2b1c27977c58b0a5145a4e18" kindref="member">texture</ref><sp/>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68" refid="d0/dd6/a00415_1a720637a56b8618c437f5aaa4d0dded91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a720637a56b8618c437f5aaa4d0dded91" kindref="member">~texture</ref><sp/>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">assetsystem</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73" refid="d3/d29/a00419" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d29/a00419" kindref="compound">mixTexture</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="da/dee/a00383" kindref="compound">mix::assetsystem::mixAsset_item</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d29/a00419" kindref="compound">mixTexture</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,<sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture::texture_type</ref><sp/>type<sp/>=<sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" kindref="member">texture::texture_type::diffuse</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d29/a00419_1a7634dc000144f362d8261889ce22d4a2" kindref="member">~mixTexture</ref><sp/>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d3/d29/a00419_1a1c486968adf821cab43ee7a707c7e9c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref><sp/><ref refid="d3/d29/a00419_1a1c486968adf821cab43ee7a707c7e9c3" kindref="member">get_texture_type</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1adad6bf69bbf90563f87786676fd88255" kindref="member">_type</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ac6a27dc611c4d0f30f15fb69765429d7" kindref="member">set_wrapping</ref><sp/>(<ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref><sp/>wrapping);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1afd8bcba95e6d6bcac07e22dd014d72fe" kindref="member">set_filtering</ref><sp/>(<ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref><sp/>filtering_min,<sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref><sp/>filtering_mag);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1a2aa2fdc162d7522f1b3a6e180c76b092" kindref="member">bind</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ac75d2f2a4aaf86513bad7496f55595df" kindref="member">change_type</ref><sp/>(<ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">mix::texture::texture_type</ref><sp/>t);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1a5ae697fdfc472a9843ac360627ce7279" kindref="member">set_format</ref><sp/>(<ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref><sp/>format);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1aa1b31c880431740068d3d84aebd98282" kindref="member">get_id</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1ad9cc5c023cde7fcbe7d3abac6a886655" kindref="member">initialize</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d07/a00607" kindref="compound">mix::platform::mixAsset_path</ref>&amp;<sp/>path,<sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">mix::texture::texture_format</ref><sp/>format);</highlight></codeline>
+<codeline lineno="95" refid="d3/d29/a00419_1aa02796abe2931d7ac55fba925f3668bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d3/d29/a00419_1aa02796abe2931d7ac55fba925f3668bd" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="96" refid="d3/d29/a00419_1aa69e4e449ce872da304c5c605e9ad84e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d3/d29/a00419_1aa69e4e449ce872da304c5c605e9ad84e" kindref="member">_data</ref>;</highlight></codeline>
+<codeline lineno="97" refid="d3/d29/a00419_1adad6bf69bbf90563f87786676fd88255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daa" kindref="member">texture::texture_type</ref><sp/><ref refid="d3/d29/a00419_1adad6bf69bbf90563f87786676fd88255" kindref="member">_type</ref>{<sp/><ref refid="d0/dd6/a00415_1a0274d2dc17e345e9ac71070cd37a4daaaa2b8f01051e9b67acd6050985ce2422f" kindref="member">texture::texture_type::diffuse</ref><sp/>};</highlight></codeline>
+<codeline lineno="98" refid="d3/d29/a00419_1a1d8278f77a61c310279022896baed328" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a538d448f06ed4102e77283c25e46b704" kindref="member">texture::texture_wrapping</ref><sp/><ref refid="d3/d29/a00419_1a1d8278f77a61c310279022896baed328" kindref="member">_wrapping</ref>{<sp/>texture::texture_wrapping<sp/>::repeat<sp/>};</highlight></codeline>
+<codeline lineno="99" refid="d3/d29/a00419_1a24be668a03cd7bf92797688b5938a522" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1a67e37e41c6ff85ad5d6f3f47e108cce1" kindref="member">texture::texture_filtering</ref><sp/><ref refid="d3/d29/a00419_1a24be668a03cd7bf92797688b5938a522" kindref="member">_filtering</ref>{<sp/>texture::texture_filtering<sp/>::nearest<sp/>};</highlight></codeline>
+<codeline lineno="100" refid="d3/d29/a00419_1aafdb407b21bc66032d5e8a75d8cdffae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dd6/a00415_1ac1878d009ec535c0263fa5c5976c3921" kindref="member">texture::texture_format</ref><sp/><ref refid="d3/d29/a00419_1aafdb407b21bc66032d5e8a75d8cdffae" kindref="member">_format</ref>{<sp/>texture::texture_format<sp/>::_default<sp/>};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>assetsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mix</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/assets/mixTexture.h"/>
+  </compounddef>
+</doxygen>

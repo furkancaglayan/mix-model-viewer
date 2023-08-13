@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/d6a/a00119" kind="file" language="C++">
+    <compoundname>frame_buffer.cpp</compoundname>
+    <includes refid="df/dc8/a00122" local="yes">frame_buffer.h</includes>
+    <includes refid="d5/d35/a00266" local="yes">../library/debug.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>frame_buffer.cpp</label>
+        <link refid="df/d6a/a00119"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frame_buffer.h</label>
+        <link refid="df/dc8/a00122"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../core/mixWindow.h</label>
+        <link refid="d5/de9/a00176"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../library/debug.h</label>
+        <link refid="d5/d35/a00266"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../math/vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="6">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="17">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="10">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dc8/a00122" kindref="compound">frame_buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../library/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d2/d91/a00459_1ae84d5b64a44ccc4986d8472f60bd3ca7" refkind="member"><highlight class="normal"><ref refid="d2/d91/a00459_1ae84d5b64a44ccc4986d8472f60bd3ca7" kindref="member">mix::containers::frame_buffer::frame_buffer</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" kindref="member">initialize</ref><sp/>(w,<sp/>h);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d2/d91/a00459_1aee00d5bb634b8c1a2be8b21ff177ccdd" refkind="member"><highlight class="normal"><ref refid="d2/d91/a00459_1aee00d5bb634b8c1a2be8b21ff177ccdd" kindref="member">mix::containers::frame_buffer::~frame_buffer</ref><sp/>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteFramebuffers<sp/>(1,<sp/>&amp;_fbo);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteTextures<sp/>(1,<sp/>&amp;_render_texture);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteRenderbuffers<sp/>(1,<sp/>&amp;_render_buffer);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d2/d91/a00459_1a92eb99a183d466a5de48b31d5ce75d5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d91/a00459_1a92eb99a183d466a5de48b31d5ce75d5c" kindref="member">mix::containers::frame_buffer::bind</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindFramebuffer<sp/>(GL_FRAMEBUFFER,<sp/>_fbo);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d2/d91/a00459_1a93c1a81f72fc0588b39772438fd352ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d91/a00459_1a93c1a81f72fc0588b39772438fd352ad" kindref="member">mix::containers::frame_buffer::unbind</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindFramebuffer<sp/>(GL_FRAMEBUFFER,<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d2/d91/a00459_1a14b03d467829cc02755a5190ca1da8f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d91/a00459_1a14b03d467829cc02755a5190ca1da8f2" kindref="member">mix::containers::frame_buffer::rescale</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="27"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture<sp/>(GL_TEXTURE_2D,<sp/>_render_texture);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexImage2D<sp/>(GL_TEXTURE_2D,<sp/>0,<sp/>GL_RGB,<sp/>w,<sp/>h,<sp/>0,<sp/>GL_RGB,<sp/>GL_UNSIGNED_BYTE,<sp/>NULL);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>glFramebufferTexture2D<sp/>(GL_FRAMEBUFFER,<sp/>GL_COLOR_ATTACHMENT0,<sp/>GL_TEXTURE_2D,<sp/>_render_texture,<sp/>0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindRenderbuffer<sp/>(GL_RENDERBUFFER,<sp/>_render_buffer);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>glRenderbufferStorage<sp/>(GL_RENDERBUFFER,<sp/>GL_DEPTH24_STENCIL8,<sp/>w,<sp/>h);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>glFramebufferRenderbuffer<sp/>(GL_FRAMEBUFFER,<sp/>GL_DEPTH_STENCIL_ATTACHMENT,<sp/>GL_RENDERBUFFER,<sp/>_render_buffer);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d2/d91/a00459_1a81360f3bd714b31a6b021f7b60260d35" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d2/d91/a00459_1a81360f3bd714b31a6b021f7b60260d35" kindref="member">mix::containers::frame_buffer::get_render_texture</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_render_texture;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d91/a00459_1adeab5dc1a1d527264b7c06a7de94318d" kindref="member">mix::containers::frame_buffer::initialize</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenFramebuffers<sp/>(1,<sp/>&amp;_fbo);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindFramebuffer<sp/>(GL_FRAMEBUFFER,<sp/>_fbo);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenTextures<sp/>(1,<sp/>&amp;_render_texture);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture<sp/>(GL_TEXTURE_2D,<sp/>_render_texture);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexImage2D<sp/>(GL_TEXTURE_2D,<sp/>0,<sp/>GL_RGB,<sp/>w,<sp/>h,<sp/>0,<sp/>GL_RGB,<sp/>GL_UNSIGNED_BYTE,<sp/>NULL);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri<sp/>(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>glFramebufferTexture2D<sp/>(GL_FRAMEBUFFER,<sp/>GL_COLOR_ATTACHMENT0,<sp/>GL_TEXTURE_2D,<sp/>_render_texture,<sp/>0);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenRenderbuffers<sp/>(1,<sp/>&amp;_render_buffer);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindRenderbuffer<sp/>(GL_RENDERBUFFER,<sp/>_render_buffer);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>glRenderbufferStorage<sp/>(GL_RENDERBUFFER,<sp/>GL_DEPTH24_STENCIL8,<sp/>w,<sp/>h);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>glFramebufferRenderbuffer<sp/>(GL_FRAMEBUFFER,<sp/>GL_DEPTH_STENCIL_ATTACHMENT,<sp/>GL_RENDERBUFFER,<sp/>_render_buffer);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glCheckFramebufferStatus<sp/>(GL_FRAMEBUFFER)<sp/>!=<sp/>GL_FRAMEBUFFER_COMPLETE)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d35/a00266_1a7ebf4c3b4fb05d6f9094089ded75cbdd" kindref="member">LOG_ERROR</ref><sp/>(</highlight><highlight class="stringliteral">&quot;Framebuffer<sp/>is<sp/>not<sp/>complete!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindFramebuffer<sp/>(GL_FRAMEBUFFER,<sp/>0);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture<sp/>(GL_TEXTURE_2D,<sp/>0);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindVertexArray<sp/>(0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/frame_buffer.cpp"/>
+  </compounddef>
+</doxygen>

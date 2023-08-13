@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/dfe/a00125" kind="file" language="C++">
+    <compoundname>tree_node.cpp</compoundname>
+    <includes refid="d1/d88/a00128" local="yes">tree_node.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>../assetsystem/assets/mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tree_node.cpp</label>
+        <link refid="dc/dfe/a00125"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tree_node.h</label>
+        <link refid="d1/d88/a00128"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>istream</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d88/a00128" kindref="compound">tree_node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/d5d/a00463_1af247d1617c323094f079f2962a797555" refkind="member"><highlight class="normal"><ref refid="d3/d5d/a00463" kindref="compound">mix::containers::tree_node</ref>*<sp/><ref refid="d3/d5d/a00463_1af247d1617c323094f079f2962a797555" kindref="member">mix::containers::tree_node::insert</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/d9c/a00487" kindref="compound">mix::core::mixGuid</ref>&amp;<sp/>key,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;mix::assetsystem::mixAsset_item&gt;<sp/>child)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>index<sp/>&lt;<sp/><ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.size<sp/>();<sp/>index++)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.at<sp/>(index)-&gt;get_key<sp/>()<sp/>&lt;<sp/>key)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.insert<sp/>(<ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.begin<sp/>()<sp/>+<sp/>index,<sp/>std::make_unique&lt;tree_node&gt;<sp/>(key,<sp/>std::move<sp/>(child),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.at<sp/>(index).get<sp/>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18" refid="d3/d5d/a00463_1aaa851eb3bb65895e8711dcf307a1e7b5" refkind="member"><highlight class="normal">std::shared_ptr&lt;mix::assetsystem::mixAsset_item&gt;<sp/><ref refid="d3/d5d/a00463_1aaa851eb3bb65895e8711dcf307a1e7b5" kindref="member">mix::containers::tree_node::search_with_guid</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/d9c/a00487" kindref="compound">mix::core::mixGuid</ref>&amp;<sp/>key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="19"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search_with_member&lt;const<sp/>mix::core::mixGuid&amp;&gt;<sp/>(key,<sp/>&amp;<ref refid="da/dee/a00383_1ae7f95f45067eeec3fb17487495c886d8" kindref="member">mix::assetsystem::mixAsset_item::get_guid</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d3/d5d/a00463_1ae95bc04378bcc757e62560e4a1dacc9a" refkind="member"><highlight class="normal">std::shared_ptr&lt;mix::assetsystem::mixAsset_item&gt;<sp/><ref refid="d3/d5d/a00463_1ae95bc04378bcc757e62560e4a1dacc9a" kindref="member">mix::containers::tree_node::search_with_base_name</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="24"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search_with_member&lt;const<sp/>std::string&amp;&gt;<sp/>(name,<sp/>&amp;<ref refid="da/dee/a00383_1a46d0785046788fcc9c789d1b11529ad3" kindref="member">mix::assetsystem::mixAsset_item::get_base_name</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27" refid="d3/d5d/a00463_1ac68eb1cd96a83b09a1fff358fe2219eb" refkind="member"><highlight class="normal">std::shared_ptr&lt;mix::assetsystem::mixAsset_item&gt;<sp/><ref refid="d3/d5d/a00463_1ac68eb1cd96a83b09a1fff358fe2219eb" kindref="member">mix::containers::tree_node::search_with_full_name</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="28"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search_with_member&lt;const<sp/>std::string&amp;&gt;<sp/>(name,<sp/>&amp;<ref refid="da/dee/a00383_1a887d3bd23d5d002ef71c4aa6a9e6ad7a" kindref="member">mix::assetsystem::mixAsset_item::get_full_name</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31" refid="d3/d5d/a00463_1aec76f8c37b7bfa827be0842ffafd8601" refkind="member"><highlight class="normal">std::shared_ptr&lt;mix::assetsystem::mixAsset_item&gt;<sp/><ref refid="d3/d5d/a00463_1aec76f8c37b7bfa827be0842ffafd8601" kindref="member">mix::containers::tree_node::search_with_path</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="32"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search_with_member&lt;const<sp/>std::string&amp;&gt;<sp/>(path,<sp/>&amp;<ref refid="da/dee/a00383_1a2bb7fcb2693b6fd89ac22f4d40371f76" kindref="member">mix::assetsystem::mixAsset_item::get_path</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d3/d5d/a00463_1aa512e7121feecd8ebbdd892226781829" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d5d/a00463_1aa512e7121feecd8ebbdd892226781829" kindref="member">mix::containers::tree_node::print_node</ref><sp/>(<ref refid="d3/d5d/a00463" kindref="compound">mix::containers::tree_node</ref>*<sp/>node,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::string<sp/>(depth<sp/>*<sp/>2,<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(depth<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val<sp/>=<sp/>(*node-&gt;<ref refid="d3/d5d/a00463_1a2e4e8bc18a11bda8a8ccf3ab56a5fe9c" kindref="member">_value</ref>.get<sp/>());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>(std::string)<sp/>val<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>node-&gt;<ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.size<sp/>();<sp/>i++)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_node<sp/>(node-&gt;<ref refid="d3/d5d/a00463_1a87292a3a3f5d4d9c491ee0e129b6e648" kindref="member">_children</ref>.at<sp/>(i).get<sp/>(),<sp/>depth<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/containers/tree_node.cpp"/>
+  </compounddef>
+</doxygen>

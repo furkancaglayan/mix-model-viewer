@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="db/d10/a00350" kind="namespace" language="C++">
+    <compoundname>mix</compoundname>
+    <innerclass refid="d1/d69/a00507" prot="public">mix::editor_config</innerclass>
+    <innerclass refid="d6/d10/a00511" prot="public">mix::mixEditor</innerclass>
+    <innerclass refid="d1/d53/a00399" prot="public">mix::shader</innerclass>
+    <innerclass refid="d0/dd6/a00415" prot="public">mix::texture</innerclass>
+    <innerclass refid="db/dc4/a00495" prot="public">mix::transform</innerclass>
+    <innernamespace refid="d0/d48/a00351">mix::assetsystem</innernamespace>
+    <innernamespace refid="d3/dc9/a00355">mix::components</innernamespace>
+    <innernamespace refid="d0/dc3/a00354">mix::containers</innernamespace>
+    <innernamespace refid="d6/de1/a00356">mix::core</innernamespace>
+    <innernamespace refid="d4/def/a00359">mix::editor</innernamespace>
+    <innernamespace refid="de/dd7/a00362">mix::library</innernamespace>
+    <innernamespace refid="d9/d9b/a00363">mix::math</innernamespace>
+    <innernamespace refid="dc/d59/a00364">mix::platform</innernamespace>
+    <innernamespace refid="dd/db5/a00365">mix::rendering</innernamespace>
+    <innernamespace refid="d2/d3e/a00366">mix::scene_management</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/asset_processor.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

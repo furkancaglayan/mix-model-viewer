@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d0/dc5/a00435" kind="class" language="C++" prot="public">
+    <compoundname>mix::assetsystem::loaders::mixAsset_loader_font</compoundname>
+    <basecompoundref refid="df/d70/a00431" prot="public" virt="non-virtual">mix::assetsystem::mixAsset_loader_base</basecompoundref>
+    <includes refid="da/d2a/a00086" local="no">mixAsset_loader_font.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d0/dc5/a00435_1adec4d38d7747e282131b52a5d412a22b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="da/dee/a00383" kindref="compound">mix::assetsystem::mixAsset_item</ref> *</type>
+        <definition>mix::assetsystem::mixAsset_item * mix::assetsystem::loaders::mixAsset_loader_font::resolve_impl</definition>
+        <argsstring>(mix::platform::mixFile &amp;file) override</argsstring>
+        <name>resolve_impl</name>
+        <qualifiedname>mix::assetsystem::loaders::mixAsset_loader_font::resolve_impl</qualifiedname>
+        <reimplements refid="df/d70/a00431_1aa940694a035ddc265556740e357f311f">resolve_impl</reimplements>
+        <param>
+          <type><ref refid="dd/dc0/a00611" kindref="compound">mix::platform::mixFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_font.h" line="16" column="49" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_font.cpp" bodystart="3" bodyend="6"/>
+        <references refid="dd/dc0/a00611_1a5ba930c554591f7004b93a1a979fff8e" compoundref="d1/d5d/a00311" startline="50" endline="53">mix::platform::mixFile::get_path</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::assetsystem::loaders::mixAsset_loader_font</label>
+        <link refid="d0/dc5/a00435"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_loader_base</label>
+        <link refid="df/d70/a00431"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::assetsystem::loaders::mixAsset_loader_font</label>
+        <link refid="d0/dc5/a00435"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::assetsystem::mixAsset_loader_base</label>
+        <link refid="df/d70/a00431"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_font.h" line="12" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/assetsystem/loaders/mixAsset_loader_font.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="df/d70/a00431_1ac534294fc9ee8370fa8d4ac0e017bf8c" prot="protected" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>_asset_processor</name></member>
+      <member refid="df/d70/a00431_1a62b58462ad7890e45621ca714f3fcc82" prot="protected" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>_postprocess_item_event</name></member>
+      <member refid="df/d70/a00431_1a4caebe457d1f5395a0f82e9708705b73" prot="public" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>mixAsset_loader_base</name></member>
+      <member refid="df/d70/a00431_1aea24f23b71e09f8c5f209bdec8403e28" prot="public" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>mixAsset_loader_base</name></member>
+      <member refid="df/d70/a00431_1a9e5b0c68bb400022727566f0b0a0f797" prot="public" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>resolve</name></member>
+      <member refid="d0/dc5/a00435_1adec4d38d7747e282131b52a5d412a22b" prot="protected" virt="virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>resolve_impl</name></member>
+      <member refid="df/d70/a00431_1ad36e4e395af7e88c9b618c6ceca3f35f" prot="public" virt="non-virtual"><scope>mix::assetsystem::loaders::mixAsset_loader_font</scope><name>set_asset_processor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

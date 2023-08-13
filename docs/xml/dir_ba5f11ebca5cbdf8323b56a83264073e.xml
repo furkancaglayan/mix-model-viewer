@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_ba5f11ebca5cbdf8323b56a83264073e" kind="dir">
     <compoundname>default_processors</compoundname>
-    <innerfile refid="a00071">default_texture_processor.cpp</innerfile>
-    <innerfile refid="a00074">default_texture_processor.h</innerfile>
+    <innerfile refid="d0/d89/a00071">default_texture_processor.cpp</innerfile>
+    <innerfile refid="db/db6/a00074">default_texture_processor.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

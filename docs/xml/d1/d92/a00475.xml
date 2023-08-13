@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/d92/a00475" kind="class" language="C++" prot="public">
+    <compoundname>mix::core::light::mixLight</compoundname>
+    <basecompoundref refid="dc/da0/a00483" prot="public" virt="non-virtual">mix::core::mixEntity</basecompoundref>
+    <includes refid="d9/db6/a00146" local="no">mixLight.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d92/a00475_1a1b6351db6ecdaf302fe0993a22c42813" prot="private" static="no" mutable="no">
+        <type><ref refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" kindref="member">light_type</ref></type>
+        <definition>light_type mix::core::light::mixLight::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <qualifiedname>mix::core::light::mixLight::_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="35" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d92/a00475_1aed2b73d7b6d7280c7075a66ba6beac9d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mix::core::light::mixLight::_intensity</definition>
+        <argsstring></argsstring>
+        <name>_intensity</name>
+        <qualifiedname>mix::core::light::mixLight::_intensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="36" column="23" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d92/a00475_1aeb2f9cba7f186507ba5c1f4791f6213d" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::light::mixLight::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <qualifiedname>mix::core::light::mixLight::_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="37" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d92/a00475_1ac7cd4e8b2c09b6be21d3cc5cc4c7e623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::light::mixLight::mixLight</definition>
+        <argsstring>()</argsstring>
+        <name>mixLight</name>
+        <qualifiedname>mix::core::light::mixLight::mixLight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="21" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="3" bodyend="5"/>
+        <references refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00caff17f76a314be3abfb17f7c9e849ba34">mix::core::light::directional</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1ad773599ac6386be0b893296e4ea3af94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::light::mixLight::mixLight</definition>
+        <argsstring>(light_type type)</argsstring>
+        <name>mixLight</name>
+        <qualifiedname>mix::core::light::mixLight::mixLight</qualifiedname>
+        <param>
+          <type><ref refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" kindref="member">light_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="22" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1a1b6656d7a1b6dcda18fdfd1f5f99d718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::core::light::mixLight::mixLight</definition>
+        <argsstring>(light_type type, vec3 color)</argsstring>
+        <name>mixLight</name>
+        <qualifiedname>mix::core::light::mixLight::mixLight</qualifiedname>
+        <param>
+          <type><ref refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" kindref="member">light_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="23" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1aad5e7e217386f3d26eaffa2caa1e611a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" kindref="member">light_type</ref></type>
+        <definition>mix::core::light::light_type mix::core::light::mixLight::get_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type</name>
+        <qualifiedname>mix::core::light::mixLight::get_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="24" column="28" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1aadc039d1de56475873eda4e0242ed39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::light::mixLight::set_type</definition>
+        <argsstring>(light_type t)</argsstring>
+        <name>set_type</name>
+        <qualifiedname>mix::core::light::mixLight::set_type</qualifiedname>
+        <param>
+          <type><ref refid="df/df1/a00357_1a6c0454caa073818bc510e6d72795f00c" kindref="member">light_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="25" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1a2324d099cbe99c2f7a2fd283baf22433" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mix::core::light::mixLight::get_intensity</definition>
+        <argsstring>() const</argsstring>
+        <name>get_intensity</name>
+        <qualifiedname>mix::core::light::mixLight::get_intensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="27" column="23" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1a0fad570061cc56d8d2dac62153850953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::light::mixLight::set_intensity</definition>
+        <argsstring>(float f)</argsstring>
+        <name>set_intensity</name>
+        <qualifiedname>mix::core::light::mixLight::set_intensity</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="28" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1aff43d287100c7bdf99599d7b9089cba9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+        <definition>vec3 mix::core::light::mixLight::get_color</definition>
+        <argsstring>() const</argsstring>
+        <name>get_color</name>
+        <qualifiedname>mix::core::light::mixLight::get_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="30" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d92/a00475_1a67c9138d9c2d667a106306567ced83f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::core::light::mixLight::set_color</definition>
+        <argsstring>(vec3 color)</argsstring>
+        <name>set_color</name>
+        <qualifiedname>mix::core::light::mixLight::set_color</qualifiedname>
+        <param>
+          <type><ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="31" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::core::light::mixLight</label>
+        <link refid="d1/d92/a00475"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::core::mixEntity</label>
+        <link refid="dc/da0/a00483"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::i_guielement</label>
+        <link refid="d2/d50/a00559"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::core::light::mixLight</label>
+        <link refid="d1/d92/a00475"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mix::core::mixEntity</label>
+        <link refid="dc/da0/a00483"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::i_guielement</label>
+        <link refid="d2/d50/a00559"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" line="17" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/core/light/mixLight.h" bodystart="18" bodyend="39"/>
+    <listofallmembers>
+      <member refid="dc/da0/a00483_1a83d75d9af6d3a615cdc0ef688c044b59" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_children</name></member>
+      <member refid="d1/d92/a00475_1aeb2f9cba7f186507ba5c1f4791f6213d" prot="private" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_color</name></member>
+      <member refid="dc/da0/a00483_1a1997e7f77c54d18a0f0c2e40bfd4c220" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_components</name></member>
+      <member refid="d1/d92/a00475_1aed2b73d7b6d7280c7075a66ba6beac9d" prot="private" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_intensity</name></member>
+      <member refid="dc/da0/a00483_1aa11803e5f173af0ae6194c08b4687cc5" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_is_enabled</name></member>
+      <member refid="dc/da0/a00483_1a582bf51106f7e44eeca680dab379076b" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_is_visible</name></member>
+      <member refid="dc/da0/a00483_1a4dba2bc5d72b286432d02aafaeea2a86" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_name</name></member>
+      <member refid="dc/da0/a00483_1a9a47d0b940b4dee87ca05f5a9cb6b964" prot="protected" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_parent</name></member>
+      <member refid="dc/da0/a00483_1a13cb3c790d3a4bbb0f73ad27d2405e90" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_transform</name></member>
+      <member refid="d1/d92/a00475_1a1b6351db6ecdaf302fe0993a22c42813" prot="private" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>_type</name></member>
+      <member refid="dc/da0/a00483_1a09ceb1e2d215a9a5a2bd7c4e61b57dd6" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>add_child</name></member>
+      <member refid="dc/da0/a00483_1a1291f35d842526da11c1e1025a1fe763" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>add_component</name></member>
+      <member refid="dc/da0/a00483_1a2f8fc6b4a570f7a7a3c3e4a1a68f1c70" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_children</name></member>
+      <member refid="d1/d92/a00475_1aff43d287100c7bdf99599d7b9089cba9" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_color</name></member>
+      <member refid="dc/da0/a00483_1a0917b62e522a04962d6211ebbdb44a2a" prot="protected" virt="virtual"><scope>mix::core::light::mixLight</scope><name>get_gui_name</name></member>
+      <member refid="d1/d92/a00475_1a2324d099cbe99c2f7a2fd283baf22433" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_intensity</name></member>
+      <member refid="dc/da0/a00483_1a1643f0350f10c6b0e7afe1663ef201aa" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_name</name></member>
+      <member refid="dc/da0/a00483_1a3a251e4b27985264a1ee9294d8bc16a8" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_parent</name></member>
+      <member refid="d1/d92/a00475_1aad5e7e217386f3d26eaffa2caa1e611a" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>get_type</name></member>
+      <member refid="dc/da0/a00483_1abb71d2ec7fc0929c11700febd99e8b4c" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixEntity</name></member>
+      <member refid="dc/da0/a00483_1ac8418c541a7acdd6e18ae8def47b5713" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixEntity</name></member>
+      <member refid="dc/da0/a00483_1a668508be93287883a78a2c8588b76002" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixEntity</name></member>
+      <member refid="dc/da0/a00483_1ae0251e855adf2ef6c3b50726074996c0" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixEntity</name></member>
+      <member refid="d1/d92/a00475_1ac7cd4e8b2c09b6be21d3cc5cc4c7e623" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixLight</name></member>
+      <member refid="d1/d92/a00475_1ad773599ac6386be0b893296e4ea3af94" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixLight</name></member>
+      <member refid="d1/d92/a00475_1a1b6656d7a1b6dcda18fdfd1f5f99d718" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>mixLight</name></member>
+      <member refid="dc/da0/a00483_1aa324bcf31fe7f127e4a0a148ef3eec0a" prot="protected" virt="virtual"><scope>mix::core::light::mixLight</scope><name>on_gui</name></member>
+      <member refid="dc/da0/a00483_1a0dfbdb6a57a08dd6398431b79f63cbf0" prot="protected" virt="virtual"><scope>mix::core::light::mixLight</scope><name>on_inspector_gui</name></member>
+      <member refid="dc/da0/a00483_1a62a60a2c5f5015097f154e050cd96709" prot="protected" virt="virtual"><scope>mix::core::light::mixLight</scope><name>on_scene_gui</name></member>
+      <member refid="dc/da0/a00483_1a350bbea02ae0dc4705b60f405fb5a7b0" prot="public" virt="virtual"><scope>mix::core::light::mixLight</scope><name>render</name></member>
+      <member refid="d1/d92/a00475_1a67c9138d9c2d667a106306567ced83f4" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>set_color</name></member>
+      <member refid="d1/d92/a00475_1a0fad570061cc56d8d2dac62153850953" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>set_intensity</name></member>
+      <member refid="dc/da0/a00483_1a53ebe438f1ad8d260ec91c369cb50ca6" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>set_name</name></member>
+      <member refid="d1/d92/a00475_1aadc039d1de56475873eda4e0242ed39a" prot="public" virt="non-virtual"><scope>mix::core::light::mixLight</scope><name>set_type</name></member>
+      <member refid="dc/da0/a00483_1a2d0ceedf796382e3cc5a2f9d416994bf" prot="public" virt="virtual"><scope>mix::core::light::mixLight</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

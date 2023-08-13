@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/d01/a00227" kind="file" language="C++">
+    <compoundname>gui_style.cpp</compoundname>
+    <includes refid="d1/da8/a00230" local="yes">gui_style.h</includes>
+    <incdepgraph>
+      <node id="29">
+        <label>mixAsset_item.h</label>
+        <link refid="da/d45/a00011"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../assetsystem/assets/mixFont.h</label>
+        <link refid="d4/d51/a00017"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>mixMaterial.h</label>
+        <link refid="d3/d52/a00023"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>mixShader.h</label>
+        <link refid="d4/d8c/a00035"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>mixShader_program.h</label>
+        <link refid="dd/d32/a00041"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mixTexture.h</label>
+        <link refid="d6/d2d/a00047"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../containers/frame_buffer.h</label>
+        <link refid="df/dc8/a00122"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../../core/mixGuid.h</label>
+        <link refid="db/ddf/a00164"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../core/mixWindow.h</label>
+        <link refid="d5/de9/a00176"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gui_style.cpp</label>
+        <link refid="d9/d01/a00227"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gui_style.h</label>
+        <link refid="d1/da8/a00230"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gui_window.h</label>
+        <link refid="d7/d40/a00236"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixGui.h</label>
+        <link refid="dd/dd7/a00260"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../math/constants.h</label>
+        <link refid="de/d25/a00290"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../../math/mat.h</label>
+        <link refid="d6/d82/a00293"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../math/vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../../math/vertex.h</label>
+        <link refid="df/d95/a00299"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../../platform/mixAsset_path.h</label>
+        <link refid="d3/d07/a00305"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../platform/typedefs.h</label>
+        <link refid="d0/d39/a00314"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../../rendering/rendering_context.h</label>
+        <link refid="de/d55/a00323"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="8">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="32">
+        <label>algorithm</label>
+      </node>
+      <node id="23">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="22">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="34">
+        <label>fstream</label>
+      </node>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="11">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="12">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="21">
+        <label>imgui.h</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="35">
+        <label>istream</label>
+      </node>
+      <node id="26">
+        <label>map</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+      <node id="33">
+        <label>sstream</label>
+      </node>
+      <node id="24">
+        <label>stack</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="37">
+        <label>unordered_map</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ImVec4</type>
+        <definition>ImVec4 from_color</definition>
+        <argsstring>(mix::math::color color)</argsstring>
+        <name>from_color</name>
+        <param>
+          <type><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.cpp" line="166" column="8" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.cpp" bodystart="166" bodyend="170" declfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.cpp" declline="3" declcolumn="8"/>
+        <references refid="d5/d8a/a00599_1abdb1530f119fb7bd7217b43a7720f0f1" compoundref="db/dc3/a00284" startline="46" endline="49">mix::math::color::get_value</references>
+        <referencedby refid="d9/d8b/a00547_1af629e60971885b2e758f2065887c11e2" compoundref="d9/d01/a00227" startline="9" endline="102">mixImGui::gui_style::to_imgui_style</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/da8/a00230" kindref="compound">gui_style.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">ImVec4<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(<ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref>);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d9/d8b/a00547_1ac958bd56331a5522f86f27ab379e7b00" refkind="member"><highlight class="normal"><ref refid="d9/d8b/a00547_1ac958bd56331a5522f86f27ab379e7b00" kindref="member">mixImGui::gui_style::gui_style</ref><sp/>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d9/d8b/a00547_1af629e60971885b2e758f2065887c11e2" refkind="member"><highlight class="normal">ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1af629e60971885b2e758f2065887c11e2" kindref="member">mixImGui::gui_style::to_imgui_style</ref><sp/>(ImGuiStyle&amp;<sp/>style)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colors<sp/>=<sp/>style.Colors;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Text]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_text_color._active);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TextDisabled]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_text_color._disabled);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Button]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_button_color._disabled);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ButtonHovered]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_button_color._hovered);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_ButtonActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_button_color._active);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBg]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_frame_color._disabled);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBgHovered]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_frame_color._hovered);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_FrameBgActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_frame_color._active);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Separator]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_seperator_color._disabled);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SeparatorHovered]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_seperator_color._disabled);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SeparatorActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_seperator_color._disabled);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Header]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_header_color._active);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_HeaderHovered]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_header_color._hovered);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_HeaderActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_header_color._disabled);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBg]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_title_color._active);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBgActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_title_color._active);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TitleBgCollapsed]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_title_color._disabled);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Tab]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_tab_color._active);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabHovered]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_tab_color._hovered);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_TabActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_tab_color._disabled);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_CheckMark]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_checkmark_color);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SliderGrab]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_slidergrab_color);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_SliderGrabActive]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_slidergrab_color);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_Border]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_border_color);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>colors[ImGuiCol_BorderShadow]<sp/>=<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(_border_color);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(enable_borders)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ChildBorderSize<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.FrameBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.PopupBorderSize<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.SeparatorTextBorderSize<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.TabBorderSize<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.WindowBorderSize<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ChildBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.FrameBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.PopupBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.SeparatorTextBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.TabBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.WindowBorderSize<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_rounding<sp/>==<sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">mixImGui::rounding::none</ref>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.FrameRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.IndentSpacing<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.WindowRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ChildRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.PopupRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.TabRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ScrollbarRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.GrabRounding<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_rounding<sp/>==<sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba075a3e36a0a52dcbc568c05788e8a713" kindref="member">mixImGui::rounding::medium</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.FrameRounding<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.IndentSpacing<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.WindowRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ChildRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.PopupRounding<sp/>=<sp/>2.0f;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.TabRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ScrollbarRounding<sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.GrabRounding<sp/>=<sp/>6.0f;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_rounding<sp/>==<sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabbaa181a603769c1f98ad927e7367c7aa51" kindref="member">mixImGui::rounding::all</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.FrameRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.IndentSpacing<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.WindowRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ChildRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.PopupRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.TabRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.ScrollbarRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>style.GrabRounding<sp/>=<sp/>12.0f;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>style.WindowTitleAlign<sp/>=<sp/>_window_title_align;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>style;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="d9/d8b/a00547_1a8a9a0c92bd2daf197b427a7ab5dfe036" refkind="member"><highlight class="normal">ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1a8a9a0c92bd2daf197b427a7ab5dfe036" kindref="member">mixImGui::gui_style::get_default_dark_style</ref><sp/>(ImGuiStyle&amp;<sp/>imgui_style)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>style<sp/>=<sp/><ref refid="d9/d8b/a00547" kindref="compound">gui_style</ref><sp/>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>style.enable_borders<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>style._rounding<sp/>=<sp/><ref refid="d7/ddb/a00361_1a585cb6b6c5a0511aeaf1b806aaecdabba075a3e36a0a52dcbc568c05788e8a713" kindref="member">rounding::medium</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>style._theme<sp/>=<sp/><ref refid="d7/ddb/a00361_1ad9452df70f829cc5aa13735fd5faab15aa82fd95db10ff25dfad39f07372ebe37" kindref="member">theme::dark</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>primary_active<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(204,<sp/>64,<sp/>64,<sp/>140);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>primary_hovered<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(249,<sp/>146,<sp/>146,<sp/>114);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>primary_normal<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(255,<sp/>94,<sp/>94,<sp/>102);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>secondary_active<sp/>=<sp/>primary_active;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>secondary_hovered<sp/>=<sp/>primary_hovered;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>secondary_normal<sp/>=<sp/>primary_normal;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>style._text_color<sp/>=<sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>style._text_color._active<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(212,<sp/>212,<sp/>212);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>style._text_color._hovered<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>style._text_color._disabled<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(89,<sp/>89,<sp/>89);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>also<sp/>set<sp/>checkmark<sp/>color</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>style._button_color<sp/>=<sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>style._button_color._active<sp/>=<sp/>primary_active;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>style._button_color._hovered<sp/>=<sp/>primary_hovered;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>style._button_color._disabled<sp/>=<sp/>primary_normal;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>style._frame_color<sp/>=<sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>style._frame_color._active<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(56,<sp/>56,<sp/>56);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>style._frame_color._hovered<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(56,<sp/>56,<sp/>56);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>style._frame_color._disabled<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(56,<sp/>56,<sp/>56);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>style._seperator_color<sp/>=<sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>style._seperator_color._active<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(161,<sp/>161,<sp/>161,<sp/>255);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>style._seperator_color._hovered<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(161,<sp/>161,<sp/>161,<sp/>255);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>style._seperator_color._disabled<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/>(161,<sp/>161,<sp/>161,<sp/>255);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>style._title_color<sp/>=<sp/><ref refid="d4/d9c/a00543" kindref="compound">gui_color</ref><sp/>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>style._title_color._active<sp/>=<sp/>secondary_active;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>style._title_color._hovered<sp/>=<sp/>secondary_hovered;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>style._title_color._disabled<sp/>=<sp/>secondary_normal;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>style._header_color<sp/>=<sp/>style._button_color;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>style._tab_color<sp/>=<sp/>style._button_color;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>style._border_color<sp/>=<sp/>secondary_normal;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>style._checkmark_color<sp/>=<sp/>secondary_normal;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>style._slidergrab_color<sp/>=<sp/>secondary_normal;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>style._window_title_align<sp/>=<sp/>ImVec2<sp/>(0.5f,<sp/>0.3f);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gui_color<sp/>_button_color;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mix::math::color<sp/>_border_color;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>style.to_imgui_style<sp/>(imgui_style);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="d9/d8b/a00547_1acd324588cd84644fd0f48d38c8618234" refkind="member"><highlight class="normal">ImGuiStyle<sp/><ref refid="d9/d8b/a00547_1acd324588cd84644fd0f48d38c8618234" kindref="member">mixImGui::gui_style::get_default_light_style</ref><sp/>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGuiStyle<sp/>();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" refkind="member"><highlight class="normal">ImVec4<sp/><ref refid="d9/d01/a00227_1ae17ac2e29ad896087561367ddb2a99c9" kindref="member">from_color</ref><sp/>(<ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>values<sp/>=<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref>.<ref refid="d5/d8a/a00599_1abdb1530f119fb7bd7217b43a7720f0f1" kindref="member">get_value</ref><sp/>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImVec4<sp/>(values.x,<sp/>values.y,<sp/>values.z,<sp/>values.w);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_style.cpp"/>
+  </compounddef>
+</doxygen>

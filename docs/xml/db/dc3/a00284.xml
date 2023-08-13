@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="db/dc3/a00284" kind="file" language="C++">
+    <compoundname>color.cpp</compoundname>
+    <includes refid="d6/d7f/a00287" local="yes">color.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>color.cpp</label>
+        <link refid="db/dc3/a00284"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="5">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d7f/a00287" kindref="compound">color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>()<sp/>:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(0.0f,<sp/>0.0f,<sp/>0.0f)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d5/d8a/a00599_1a35561de2024166edf0dc0534130dccdd" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b)<sp/>:<sp/>_color{<sp/>r,<sp/>g,<sp/>b,<sp/>1.0f<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d5/d8a/a00599_1aeddb615e0881c9566a128051c3cb08e7" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a)<sp/>:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(<ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref>(r,<sp/>g,<sp/>b,<sp/>a))</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d5/d8a/a00599_1a7901cbe807b5eac19381f7b1f8d8481a" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(<ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>col)<sp/>:<sp/>_color{<sp/>col<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d5/d8a/a00599_1a3f53867fff4a42e29315264c1f0d8a55" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>col)<sp/>:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(<ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref>(col.x,<sp/>col.y,<sp/>col.z,<sp/>1))</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d5/d8a/a00599_1a90a66f6859b72dfbeb65d240abfc9a5a" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(<ref refid="db/d7b/a00296_1a7274656e89c300ce226b118ab53fa84d" kindref="member">vec3</ref><sp/>(static_cast&lt;float&gt;<sp/>(r)<sp/>/<sp/>255,<sp/>static_cast&lt;float&gt;<sp/>(g)<sp/>/<sp/>255,<sp/>static_cast&lt;float&gt;<sp/>(b)<sp/>/<sp/>255))</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d5/d8a/a00599_1a4d2d1cf4eeccccade97b247147f8210b" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(<ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>(static_cast&lt;float&gt;<sp/>(r)<sp/>/<sp/>255,<sp/>static_cast&lt;float&gt;<sp/>(g)<sp/>/<sp/>255,<sp/>static_cast&lt;float&gt;<sp/>(b)<sp/>/<sp/>255,<sp/>static_cast&lt;float&gt;<sp/>(a)<sp/>/<sp/>255))</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d5/d8a/a00599_1a8ca8a629cb7d844e7962691e13d2b22c" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599_1aa04a261991877ad815dfca065e641634" kindref="member">mix::math::color::color</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>u)<sp/>:<sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>((int)(u<sp/>&amp;<sp/>0xFF000000)<sp/>&gt;&gt;<sp/>24,<sp/>(u<sp/>&amp;<sp/>0xFF000000)<sp/>&gt;&gt;<sp/>16,<sp/>(u<sp/>&amp;<sp/>0xFF000000)<sp/>&gt;&gt;<sp/>8)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d5/d8a/a00599_1ad794db59144c49fb508fb44b43a12c05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d5/d8a/a00599_1ad794db59144c49fb508fb44b43a12c05" kindref="member">mix::math::color::to_uint</ref><sp/>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>r<sp/>=<sp/>(uint8_t)<sp/>(_color.x<sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>g<sp/>=<sp/>(uint8_t)<sp/>(_color.y<sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>b<sp/>=<sp/>(uint8_t)<sp/>(_color.z<sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>a<sp/>=<sp/>(uint8_t)<sp/>(_color.w<sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)((r<sp/>&lt;&lt;<sp/>24)<sp/>|<sp/>(g<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(b<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(a<sp/>&lt;&lt;<sp/>0));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="d5/d8a/a00599_1abdb1530f119fb7bd7217b43a7720f0f1" refkind="member"><highlight class="normal"><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/><ref refid="d5/d8a/a00599_1abdb1530f119fb7bd7217b43a7720f0f1" kindref="member">mix::math::color::get_value</ref><sp/>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_color;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d5/d8a/a00599_1ad5742d2b0cf7062297f3ba1d734a21bf" refkind="member"><highlight class="normal"><ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref><sp/><ref refid="d5/d8a/a00599_1ad5742d2b0cf7062297f3ba1d734a21bf" kindref="member">mix::math::color::from_uint</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>u)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d8a/a00599" kindref="compound">color</ref><sp/>(u);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/math/color.cpp"/>
+  </compounddef>
+</doxygen>

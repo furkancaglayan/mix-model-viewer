@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/dd5/a00215" kind="file" language="C++">
+    <compoundname>gui_layout.cpp</compoundname>
+    <includes refid="dc/d9a/a00218" local="yes">gui_layout.h</includes>
+    <includes refid="d5/ddf/a00224" local="yes">gui_selectable_layout.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>gui_layout.cpp</label>
+        <link refid="d3/dd5/a00215"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gui_selectable_layout.h</label>
+        <link refid="d5/ddf/a00224"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="7">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="6">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="15">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="16">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="5">
+        <label>imgui.h</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>stack</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d9a/a00218" kindref="compound">gui_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/ddf/a00224" kindref="compound">gui_selectable_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">ImVec2<sp/><ref refid="d7/d84/a00535_1ab9826c3c2bfbe164187ba2ad5d1b92af" kindref="member">mixImGui::gui_layout::_cursor</ref><sp/>=<sp/>ImVec2<sp/>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">std::stack&lt;std::unique_ptr&lt;mixImGui::gui_layout&gt;&gt;<sp/><ref refid="d7/d84/a00535_1a97114e705677638929756a2e81e275e5" kindref="member">mixImGui::gui_layout::_layouts</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/><ref refid="d7/d84/a00535_1ae94776126f4e1693c91b1a618482e36a" kindref="member">mixImGui::gui_layout::_global_layout</ref><sp/>=<sp/><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">mixImGui::layout_type::vertical</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d7/d84/a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" refkind="member"><highlight class="normal"><ref refid="d7/d84/a00535_1a96cdfb8742a2b39dc89fdd8a8ff83eb9" kindref="member">mixImGui::gui_layout::gui_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/>new_layout,<sp/><ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>r)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a2a5cf8e48309732c7f64d435640d0959" kindref="member">_rect</ref><sp/>=<sp/>r;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1aa16f58376c9d9b117124888d43300455" kindref="member">_current_layout</ref><sp/>=<sp/>new_layout;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a265a7355330b67ab85e4a39c8c5b2618" kindref="member">_last_layout</ref><sp/>=<sp/><ref refid="d7/d84/a00535_1ae94776126f4e1693c91b1a618482e36a" kindref="member">_global_layout</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1ab9826c3c2bfbe164187ba2ad5d1b92af" kindref="member">_cursor</ref><sp/>=<sp/>ImGui::GetCursorPos<sp/>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1ac87e26ac861e935a0994d2b7be8852d7" kindref="member">_render_index</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d7/d84/a00535_1a7117bba25a15fda694fc3370dd7c0b27" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a7117bba25a15fda694fc3370dd7c0b27" kindref="member">mixImGui::gui_layout::begin_horizontal</ref><sp/>(<ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>r)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>add_block<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535" kindref="compound">mixImGui::gui_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f" kindref="member">mixImGui::layout_type::horizontal</ref>,<sp/>r));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d7/d84/a00535_1a83f6713438b52862d9a65795003695ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a83f6713438b52862d9a65795003695ad" kindref="member">mixImGui::gui_layout::end_horizontal</ref><sp/>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>end_current_block<sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f" kindref="member">mixImGui::layout_type::horizontal</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d7/d84/a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" kindref="member">mixImGui::gui_layout::begin_vertical</ref><sp/>(<ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>r)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>add_block<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535" kindref="compound">mixImGui::gui_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">mixImGui::layout_type::vertical</ref>,<sp/>r));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d7/d84/a00535_1a724cab724f67db7089561715ca6163b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a724cab724f67db7089561715ca6163b8" kindref="member">mixImGui::gui_layout::end_vertical</ref><sp/>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>end_current_block<sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">mixImGui::layout_type::vertical</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d7/d84/a00535_1afad0a0a2f32a32acfe97cea48d5b409a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1afad0a0a2f32a32acfe97cea48d5b409a" kindref="member">mixImGui::gui_layout::begin_vertical_selectable</ref><sp/>(<ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>r)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>add_block<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d3/d87/a00539" kindref="compound">mixImGui::gui_selectable_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">mixImGui::layout_type::vertical</ref>,<sp/>r));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d7/d84/a00535_1a4035a1ad70461c438441cd1d2a3c49a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a4035a1ad70461c438441cd1d2a3c49a6" kindref="member">mixImGui::gui_layout::end_vertical_selectable</ref><sp/>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>end_vertical<sp/>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d7/d84/a00535_1a51fa55d14214144f3f877642c54daa67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a51fa55d14214144f3f877642c54daa67" kindref="member">mixImGui::gui_layout::text_label</ref><sp/>(std::string<sp/>s)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Text<sp/>(s.c_str<sp/>());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="d7/d84/a00535_1a69563b6c88b8d3a286c046dbcd1b35e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a69563b6c88b8d3a286c046dbcd1b35e7" kindref="member">mixImGui::gui_layout::begin_selectable_list</ref><sp/>(<ref refid="d2/d50/a00559" kindref="compound">i_guielement</ref>*<sp/>previously_selected)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>begin_vertical_selectable<sp/>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/>mixImGui::gui_layout::get_top_block&lt;mixImGui::gui_selectable_layout&gt;<sp/>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;_selected<sp/>=<sp/>previously_selected;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="d7/d84/a00535_1ae574fda0ac6b4b3361b33a98bd350815" refkind="member"><highlight class="normal"><ref refid="d2/d50/a00559" kindref="compound">mixImGui::i_guielement</ref>*<sp/><ref refid="d7/d84/a00535_1ae574fda0ac6b4b3361b33a98bd350815" kindref="member">mixImGui::gui_layout::end_selectable_list</ref><sp/>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/>mixImGui::gui_layout::get_top_block&lt;mixImGui::gui_selectable_layout&gt;<sp/>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(block-&gt;_last_selectable_index<sp/>!=<sp/>block-&gt;_selectables.size<sp/>())</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>render_added_selectables<sp/>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d50/a00559" kindref="compound">i_guielement</ref>*<sp/>selected<sp/>=<sp/>block-&gt;_selected;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>end_vertical_selectable<sp/>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>selected;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d7/d84/a00535_1a0d22d33a1eeafa550f4994c98e88682b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a0d22d33a1eeafa550f4994c98e88682b" kindref="member">mixImGui::gui_layout::begin_child</ref><sp/>(std::string<sp/>s)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::BeginChild<sp/>(s.c_str<sp/>());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="d7/d84/a00535_1ad904a6bd3db93b8ed3baef8944ef1a01" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a0d22d33a1eeafa550f4994c98e88682b" kindref="member">mixImGui::gui_layout::begin_child</ref><sp/>(std::string<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>border,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::BeginChild<sp/>(s.c_str<sp/>(),<sp/>size,<sp/>border,<sp/>flags);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d7/d84/a00535_1af30bb29aa9d2265d0384324ca814fd46" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1af30bb29aa9d2265d0384324ca814fd46" kindref="member">mixImGui::gui_layout::end_child</ref><sp/>()</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::EndChild<sp/>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d7/d84/a00535_1aefb1dc8c19e8a1d2e16f2e1348e73c49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1aefb1dc8c19e8a1d2e16f2e1348e73c49" kindref="member">mixImGui::gui_layout::add_image</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>texture_id,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>size,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>uv_min,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>uv_max,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec4&amp;<sp/>tint_color,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec4&amp;<sp/>border_color)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Image<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>(intptr_t)<sp/>texture_id,<sp/>size,<sp/>uv_min,<sp/>uv_max,<sp/>tint_color,<sp/>border_color);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="d7/d84/a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" kindref="member">mixImGui::gui_layout::selectable_text</ref><sp/>(std::string<sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_selected)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a97114e705677638929756a2e81e275e5" kindref="member">mixImGui::gui_layout::_layouts</ref>.top<sp/>().get<sp/>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pressed<sp/>=<sp/>ImGui::Selectable<sp/>(label.c_str<sp/>(),<sp/>is_selected,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImGuiSelectableFlags_DontClosePopups<sp/>|<sp/>ImGuiSelectableFlags_AllowDoubleClick);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pressed;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="d7/d84/a00535_1acf9c6115c8a1eda4beb51294b44369f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1acf9c6115c8a1eda4beb51294b44369f2" kindref="member">mixImGui::gui_layout::is_double_clicked</ref><sp/>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::IsItemHovered<sp/>()<sp/>&amp;&amp;<sp/>ImGui::IsMouseDoubleClicked<sp/>(0);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="d7/d84/a00535_1ac089bcf1bed0c202e006431845aed45a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1ac089bcf1bed0c202e006431845aed45a" kindref="member">mixImGui::gui_layout::is_left_clicked</ref><sp/>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::IsItemHovered<sp/>()<sp/>&amp;&amp;<sp/>ImGui::IsMouseClicked<sp/>(0);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="d7/d84/a00535_1a6f27ea3a834458a23f22df3455db0963" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a6f27ea3a834458a23f22df3455db0963" kindref="member">mixImGui::gui_layout::is_right_clicked</ref><sp/>()</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::IsItemHovered<sp/>()<sp/>&amp;&amp;<sp/>ImGui::IsMouseClicked<sp/>(1);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="d7/d84/a00535_1a6d2796bcb5b2f23703f3be157e31b05f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a6d2796bcb5b2f23703f3be157e31b05f" kindref="member">mixImGui::gui_layout::selectable_image</ref><sp/>(std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>image,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>pressed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>double_clicked,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>right_clicked)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a97114e705677638929756a2e81e275e5" kindref="member">mixImGui::gui_layout::_layouts</ref>.top<sp/>().get<sp/>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cursor<sp/>=<sp/>ImGui::GetCursorPos<sp/>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>header_hover_col<sp/>=<sp/>ImGui::GetStyleColorVec4<sp/>(ImGuiCol_HeaderHovered);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>header_active_col<sp/>=<sp/>ImGui::GetStyleColorVec4<sp/>(ImGuiCol_HeaderActive);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>header_normal_col<sp/>=<sp/>ImGui::GetStyleColorVec4<sp/>(ImGuiCol_Header);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::PushStyleColor<sp/>(ImGuiCol_HeaderHovered,<sp/>ImVec4<sp/>());</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::PushStyleColor<sp/>(ImGuiCol_HeaderActive,<sp/>ImVec4<sp/>());</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>pressed<sp/>=<sp/>ImGui::Selectable<sp/>((std::string<sp/>(</highlight><highlight class="stringliteral">&quot;##&quot;</highlight><highlight class="normal">)<sp/>+<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).c_str<sp/>(),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImGuiSelectableFlags_DontClosePopups<sp/>|<sp/>ImGuiSelectableFlags_AllowDoubleClick,<sp/>size);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>double_clicked<sp/>=<sp/>is_double_clicked<sp/>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>right_clicked<sp/>=<sp/>is_right_clicked<sp/>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::PopStyleColor<sp/>(2);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetCursorPos<sp/>(cursor);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_image<sp/>(image,<sp/>size,<sp/>ImVec2<sp/>(0,<sp/>1),<sp/>ImVec2<sp/>(1,<sp/>0));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="d7/d84/a00535_1ab649160af3cdfa3cb465acfe5d522a54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1ab649160af3cdfa3cb465acfe5d522a54" kindref="member">mixImGui::gui_layout::add_selectable</ref><sp/>(<ref refid="d2/d50/a00559" kindref="compound">i_guielement</ref>*<sp/>element)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/>mixImGui::gui_layout::get_top_block&lt;mixImGui::gui_selectable_layout&gt;<sp/>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;_selectables.push_back<sp/>(element);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d7/d84/a00535_1a739aa63e4b579149d6ffbf3628736f29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a739aa63e4b579149d6ffbf3628736f29" kindref="member">mixImGui::gui_layout::render_added_selectables</ref><sp/>()</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/>mixImGui::gui_layout::get_top_block&lt;mixImGui::gui_selectable_layout&gt;<sp/>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start_index<sp/>=<sp/>block-&gt;_last_selectable_index;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>start_index;<sp/>i<sp/>&lt;<sp/>block-&gt;_selectables.size<sp/>();<sp/>i++)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>element<sp/>=<sp/>block-&gt;_selectables.at<sp/>(i);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//gui_layout::horizontal_space<sp/>(20);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>selected<sp/>=<sp/>element<sp/>==<sp/>block-&gt;_selected;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d84/a00535_1a980db10f42ad8ef27f7280c0c7c81c4b" kindref="member">gui_layout::selectable_text</ref><sp/>(element-&gt;get_gui_name<sp/>(),<sp/>selected))</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>block-&gt;_selected<sp/>=<sp/>element;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;_last_selectable_index<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(i);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="d7/d84/a00535_1a77746d3ef41e007832057b42738a655e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a77746d3ef41e007832057b42738a655e" kindref="member">mixImGui::gui_layout::progress_bar</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::ProgressBar<sp/>(r);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="d7/d84/a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" kindref="member">mixImGui::gui_layout::button</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>ImGui::Button<sp/>(label.c_str<sp/>(),<sp/>size);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="d7/d84/a00535_1a363b6b65d203f42748845fec54d6ccad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a363b6b65d203f42748845fec54d6ccad" kindref="member">mixImGui::gui_layout::arrow_button</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>ImGui::ArrowButton<sp/>(label.c_str<sp/>(),<sp/>dir);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="d7/d84/a00535_1a4d2819c64c001d840692ab25639d465a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a4d2819c64c001d840692ab25639d465a" kindref="member">mixImGui::gui_layout::small_button</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>ImGui::SmallButton<sp/>(label.c_str<sp/>());</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="d7/d84/a00535_1a35c4e03581120cab90d81083df25b6ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a35c4e03581120cab90d81083df25b6ca" kindref="member">mixImGui::gui_layout::radio_button</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_active)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>ImGui::RadioButton<sp/>(label.c_str<sp/>(),<sp/>is_active);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="d7/d84/a00535_1a242351eaadb4aef1a324bd16c4e024fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a242351eaadb4aef1a324bd16c4e024fa" kindref="member">mixImGui::gui_layout::image_button</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>str_id,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>user_texture_id,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>size,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>uv0,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec2&amp;<sp/>uv1,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec4&amp;<sp/>bg_col,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ImVec4&amp;<sp/>tint_col)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>ImGui::ImageButton<sp/>(str_id.c_str<sp/>(),<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>(intptr_t)<sp/>(user_texture_id),<sp/>size,<sp/>uv0,<sp/>uv1,<sp/>bg_col,<sp/>tint_col);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="d7/d84/a00535_1ae4d3205f7c55533f1a3e37794320ac29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1ae4d3205f7c55533f1a3e37794320ac29" kindref="member">mixImGui::gui_layout::begin_context_menu</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::OpenPopup<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">.c_str<sp/>());</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="d7/d84/a00535_1af0b08f68043c4f05b77dcee6e1b44f57" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1af0b08f68043c4f05b77dcee6e1b44f57" kindref="member">mixImGui::gui_layout::end_context_menu</ref><sp/>()</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::EndPopup<sp/>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="d7/d84/a00535_1a195a6f06b3b43ecb982545648946e1a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a195a6f06b3b43ecb982545648946e1a0" kindref="member">mixImGui::gui_layout::tree_node</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_selected,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_framed,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_leaf)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGuiTreeNodeFlags<sp/>flags<sp/>=<sp/>ImGuiTreeNodeFlags_SpanAvailWidth<sp/>|<sp/>ImGuiTreeNodeFlags_OpenOnArrow;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_selected)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/>|=<sp/>ImGuiTreeNodeFlags_Selected;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_framed)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/>|=<sp/>ImGuiTreeNodeFlags_Framed<sp/>|<sp/>ImGuiTreeNodeFlags_CollapsingHeader;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_leaf)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/>|=<sp/>ImGuiTreeNodeFlags_Leaf<sp/>|<sp/>ImGuiTreeNodeFlags_NoTreePushOnOpen;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::TreeNodeEx<sp/>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>(intptr_t)<sp/>index,<sp/>flags,<sp/>label);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="d7/d84/a00535_1a950f198d9d065bc1d875cb3614f311ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a195a6f06b3b43ecb982545648946e1a0" kindref="member">mixImGui::gui_layout::tree_node</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>label)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::TreeNode<sp/>(label);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="d7/d84/a00535_1a8437163834762f5714f4d19d31a48fad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a8437163834762f5714f4d19d31a48fad" kindref="member">mixImGui::gui_layout::tree_pop</ref><sp/>()</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::TreePop();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="d7/d84/a00535_1a4ab8d7533b386a8f6a9e4582c6de08b7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a4ab8d7533b386a8f6a9e4582c6de08b7" kindref="member">mixImGui::gui_layout::begin_drag_drop_source</ref><sp/>()</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::BeginDragDropSource<sp/>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="d7/d84/a00535_1a41d6c2c0628de00c1cbe22c3f3885533" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a41d6c2c0628de00c1cbe22c3f3885533" kindref="member">mixImGui::gui_layout::end_drag_drop_source</ref><sp/>()</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::EndDragDropSource<sp/>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="d7/d84/a00535_1a176b266202237b8eb11a13b6bdbe6ea5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a176b266202237b8eb11a13b6bdbe6ea5" kindref="member">mixImGui::gui_layout::set_drag_drop_payload</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::SetDragDropPayload<sp/>(label,<sp/>data,<sp/>size);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="d7/d84/a00535_1aff6c7cf065ddfe39d15d4a926246c1bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1aff6c7cf065ddfe39d15d4a926246c1bf" kindref="member">mixImGui::gui_layout::begin_drag_drop_target</ref><sp/>()</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ImGui::BeginDragDropTarget();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="d7/d84/a00535_1a5592b3107f4d91edd353201e5a71d818" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a5592b3107f4d91edd353201e5a71d818" kindref="member">mixImGui::gui_layout::end_drag_drop_target</ref><sp/>()</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::EndDragDropTarget<sp/>();</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="d7/d84/a00535_1a673e0d8f148336f97640d82cc53ef038" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="d7/d84/a00535_1a673e0d8f148336f97640d82cc53ef038" kindref="member">mixImGui::gui_layout::accept_drag_drop_payload</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>label)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>payload<sp/>=<sp/>ImGui::AcceptDragDropPayload<sp/>(label);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(payload<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>payload-&gt;Data;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="d7/d84/a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a1da010fc8ff1b544b091cba6aef9ac8d" kindref="member">mixImGui::gui_layout::set_background_color</ref><sp/>(<ref refid="d5/d8a/a00599" kindref="compound">mix::math::color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d7b/a00296_1a9ae62764501b2965343d3ec76a107b03" kindref="member">vec4</ref><sp/>c<sp/>=<sp/>color.<ref refid="d5/d8a/a00599_1abdb1530f119fb7bd7217b43a7720f0f1" kindref="member">get_value</ref>();</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>ImVec4<sp/>imgui_color<sp/>=<sp/>ImVec4<sp/>(c.x,<sp/>c.y,<sp/>c.z,<sp/>c.w);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::PushStyleColor<sp/>(ImGuiCol_WindowBg,<sp/>imgui_color);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="d7/d84/a00535_1aa70d43ccf7c85a45e823e36b3fddbe67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1aa70d43ccf7c85a45e823e36b3fddbe67" kindref="member">mixImGui::gui_layout::pop_style_vars</ref><sp/>()</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::PopStyleColor<sp/>();</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="d7/d84/a00535_1a5f47fa92fdf4570f65b73096c36be8e9" refkind="member"><highlight class="normal">ImVec2<sp/><ref refid="d7/d84/a00535_1a5f47fa92fdf4570f65b73096c36be8e9" kindref="member">mixImGui::gui_layout::get_cursor</ref><sp/>()</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_cursor;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="d7/d84/a00535_1a955966b93c642457a8937d3205cc8965" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a955966b93c642457a8937d3205cc8965" kindref="member">mixImGui::gui_layout::collapsing_label</ref><sp/>(std::string<sp/>s,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>is_visible)</highlight></codeline>
+<codeline lineno="340"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>*is_visible<sp/>=<sp/>ImGui::CollapsingHeader<sp/>(s.c_str<sp/>(),<sp/>ImGuiTreeNodeFlags_Framed<sp/>|<sp/>ImGuiTreeNodeFlags_DefaultOpen);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="d7/d84/a00535_1a4b32e5a0b010adf76a1fe75d34f841c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a4b32e5a0b010adf76a1fe75d34f841c6" kindref="member">mixImGui::gui_layout::slider_float</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>label,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;before_render<sp/>();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SliderFloat<sp/>(label,<sp/>value,<sp/>min,<sp/>max);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>block-&gt;after_render<sp/>();</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="d7/d84/a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a2b3b8755b5166d7c88b5f97f8b75a688" kindref="member">mixImGui::gui_layout::horizontal_space</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>space)</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>_cursor<sp/>=<sp/>ImVec2<sp/>(_cursor.x<sp/>+<sp/>space,<sp/>_cursor.y);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetCursorPos<sp/>(_cursor);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="d7/d84/a00535_1a488d64c01f85d4216d9106fa2ce501bc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a488d64c01f85d4216d9106fa2ce501bc" kindref="member">mixImGui::gui_layout::vertical_space</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>space)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Dummy<sp/>(ImVec2<sp/>(0.0f,<sp/>space));</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="d7/d84/a00535_1a8823ce688560cdbb6757f2c9f4fa7121" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a8823ce688560cdbb6757f2c9f4fa7121" kindref="member">mixImGui::gui_layout::new_line</ref><sp/>()</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::NewLine<sp/>();</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373" refid="d7/d84/a00535_1a2e38bc4f5a31c6ba9f365878402c6d22" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a2e38bc4f5a31c6ba9f365878402c6d22" kindref="member">mixImGui::gui_layout::seperator</ref><sp/>()</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Separator<sp/>();</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="d7/d84/a00535_1a6c77919f69f17241d0df9d7f119e869a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a6c77919f69f17241d0df9d7f119e869a" kindref="member">mixImGui::gui_layout::before_render</ref><sp/>()</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_size<sp/>=<sp/>ImGui::GetWindowSize<sp/>();</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_pos<sp/>=<sp/>ImGui::GetWindowPos<sp/>();</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cursor_pos<sp/>=<sp/>ImGui::GetCursorPos<sp/>();</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ImGui::SetCursorPos<sp/>(ImVec2<sp/>(_local_cursor.x<sp/>+<sp/>_cursor.x,<sp/>_local_cursor.y<sp/>+<sp/>_cursor.y));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_global_layout<sp/>==<sp/><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f" kindref="member">mixImGui::layout_type::horizontal</ref>)</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_render_index<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>last_item_size<sp/>=<sp/>ImGui::GetItemRectSize<sp/>();</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor.x<sp/>+=<sp/>(int)<sp/>last_item_size.x;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImGui::SetCursorPos<sp/>(_cursor);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>command<sp/>();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399" refid="d7/d84/a00535_1a050ef593e3301c1efefd42f982cbfce4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a050ef593e3301c1efefd42f982cbfce4" kindref="member">mixImGui::gui_layout::after_render</ref><sp/>()</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>_render_index++;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>last_item_size<sp/>=<sp/>ImGui::GetItemRectSize<sp/>();</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_current_layout<sp/>==<sp/><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597ae6dec152d6a941fccb0a5e8cc2579cc3" kindref="member">layout_type::vertical</ref>)</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rect._h<sp/>+=<sp/>(int)<sp/>last_item_size.y;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rect._w<sp/>=<sp/>std::max<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>last_item_size.y,<sp/>_rect._w);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor.y<sp/>+=<sp/>(int)<sp/>last_item_size.y;<sp/></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rect._w<sp/>+=<sp/>(int)<sp/>last_item_size.x;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rect._h<sp/>=<sp/>std::max<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>last_item_size.x,<sp/>_rect._h);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor.x<sp/>+=<sp/>(int)<sp/>last_item_size.x;</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetCursorPos<sp/>(_cursor);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="d7/d84/a00535_1ac087bd255bca976d254cc2666f9756dc" refkind="member"><highlight class="normal"><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/><ref refid="d7/d84/a00535_1ac087bd255bca976d254cc2666f9756dc" kindref="member">mixImGui::gui_layout::get_layout</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="420"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_current_layout;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="d7/d84/a00535_1a4cc0b94421b236a050244f06610ef96d" refkind="member"><highlight class="normal"><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/><ref refid="d7/d84/a00535_1a4cc0b94421b236a050244f06610ef96d" kindref="member">mixImGui::gui_layout::get_previous_layout</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="425"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_last_layout;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429" refid="d7/d84/a00535_1a1229a6624a42d29f1c3e1f1f4331adf1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a1229a6624a42d29f1c3e1f1f4331adf1" kindref="member">mixImGui::gui_layout::set_global_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/>new_layout)</highlight></codeline>
+<codeline lineno="430"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/>_global_layout<sp/>=<sp/>new_layout;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434" refid="d7/d84/a00535_1a5051c25adde2c754e6919a7b01d7948b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a5051c25adde2c754e6919a7b01d7948b" kindref="member">mixImGui::gui_layout::add_block</ref><sp/>(<ref refid="d7/d84/a00535" kindref="compound">mixImGui::gui_layout</ref>*<sp/>layout)</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a97114e705677638929756a2e81e275e5" kindref="member">mixImGui::gui_layout::_layouts</ref>.push<sp/>(std::unique_ptr&lt;mixImGui::gui_layout&gt;<sp/>(layout));</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>set_global_layout<sp/>(layout-&gt;<ref refid="d7/d84/a00535_1ac087bd255bca976d254cc2666f9756dc" kindref="member">get_layout</ref><sp/>());</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440" refid="d7/d84/a00535_1a83395d46391c762a3c0e9a5a38739ba2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535_1a83395d46391c762a3c0e9a5a38739ba2" kindref="member">mixImGui::gui_layout::end_current_block</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/>target_layout)</highlight></codeline>
+<codeline lineno="441"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>block<sp/>=<sp/><ref refid="d7/d84/a00535_1a71a1b9ea47beb5b08016df86dd3f08f5" kindref="member">mixImGui::gui_layout::get_top_block</ref><sp/>();</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(block-&gt;get_layout<sp/>()<sp/>==<sp/>target_layout);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cursor_pos<sp/>=<sp/>ImGui::GetCursorPos<sp/>();</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(block-&gt;_last_layout<sp/>==<sp/><ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597a4505cad087312551a6fbbe6ebe163e0f" kindref="member">layout_type::horizontal</ref>)</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor<sp/>=<sp/>ImVec2<sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>block-&gt;_rect._x<sp/>+<sp/>block-&gt;_rect._w,<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>block-&gt;_rect._y);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor<sp/>=<sp/>ImVec2<sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>block-&gt;_rect._x,<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>block-&gt;_rect._y<sp/>+<sp/>block-&gt;_rect._h);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetCursorPos<sp/>(_cursor);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>set_global_layout<sp/>(block-&gt;get_previous_layout<sp/>());</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a97114e705677638929756a2e81e275e5" kindref="member">mixImGui::gui_layout::_layouts</ref>.pop<sp/>();</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_layouts.size<sp/>()<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cursor<sp/>=<sp/>ImVec2<sp/>();</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_layout.cpp"/>
+  </compounddef>
+</doxygen>

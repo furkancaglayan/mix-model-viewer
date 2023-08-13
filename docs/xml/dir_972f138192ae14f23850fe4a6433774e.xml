@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_972f138192ae14f23850fe4a6433774e" kind="dir">
     <compoundname>windows</compoundname>
-    <innerfile refid="a00317">platform_utils.h</innerfile>
+    <innerfile refid="da/de0/a00317">platform_utils.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

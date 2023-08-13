@@ -5,13 +5,13 @@
     <innerdir refid="dir_be9069edefe7085b0977c8801b6ee652">assets</innerdir>
     <innerdir refid="dir_ba5f11ebca5cbdf8323b56a83264073e">default_processors</innerdir>
     <innerdir refid="dir_73ad4db3a0e32567613f5ccb54dbefca">loaders</innerdir>
-    <innerfile refid="a00056">asset_processor.h</innerfile>
-    <innerfile refid="a00059">asset_types.cpp</innerfile>
-    <innerfile refid="a00062">asset_types.h</innerfile>
-    <innerfile refid="a00065">default_assets.cpp</innerfile>
-    <innerfile refid="a00068">default_assets.h</innerfile>
-    <innerfile refid="a00113">mixAsset_manager.cpp</innerfile>
-    <innerfile refid="a00116">mixAsset_manager.h</innerfile>
+    <innerfile refid="d9/d2e/a00056">asset_processor.h</innerfile>
+    <innerfile refid="d3/d8b/a00059">asset_types.cpp</innerfile>
+    <innerfile refid="df/d03/a00062">asset_types.h</innerfile>
+    <innerfile refid="de/de1/a00065">default_assets.cpp</innerfile>
+    <innerfile refid="da/d24/a00068">default_assets.h</innerfile>
+    <innerfile refid="d3/d00/a00113">mixAsset_manager.cpp</innerfile>
+    <innerfile refid="d4/d3e/a00116">mixAsset_manager.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

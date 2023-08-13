@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/d44/a00527" kind="class" language="C++" prot="public">
+    <compoundname>mix::editor::windows::shortcuts_window</compoundname>
+    <basecompoundref refid="d9/d87/a00551" prot="public" virt="non-virtual">mixImGui::gui_window</basecompoundref>
+    <includes refid="dd/dc1/a00212" local="no">shortcuts_window.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d44/a00527_1af97c20a271421ba26420a2ca6211f504" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::shortcuts_window::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <qualifiedname>mix::editor::windows::shortcuts_window::render</qualifiedname>
+        <reimplements refid="d9/d87/a00551_1a02427dce58f618cf32c24bb6a0b91bf4">render</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" line="17" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.cpp" bodystart="3" bodyend="39"/>
+        <references refid="d6/d10/a00511_1ab03cd27e7c82e3edead6d413dfe20294" compoundref="da/d15/a00188" startline="18">mix::mixEditor::_instance</references>
+        <references refid="d7/d84/a00535_1a363b6b65d203f42748845fec54d6ccad" compoundref="d3/dd5/a00215" startline="202" endline="209">mixImGui::gui_layout::arrow_button</references>
+        <references refid="d9/d87/a00551_1a5b26d4ff892ca96966cedacb32a214c3" compoundref="d6/de1/a00233" startline="78" endline="106">mixImGui::gui_window::begin</references>
+        <references refid="d7/d84/a00535_1ac8f5c616d14ba7e00b4df09a6438c3fa" compoundref="d3/dd5/a00215" startline="193" endline="200">mixImGui::gui_layout::button</references>
+        <references refid="d9/d87/a00551_1a1ca29859ec280ef652b1a8a129302674" compoundref="d6/de1/a00233" startline="108" endline="112">mixImGui::gui_window::end</references>
+        <references refid="d7/d84/a00535_1a242351eaadb4aef1a324bd16c4e024fa" compoundref="d3/dd5/a00215" startline="229" endline="242">mixImGui::gui_layout::image_button</references>
+        <references refid="d7/d84/a00535_1a77746d3ef41e007832057b42738a655e" compoundref="d3/dd5/a00215" startline="185" endline="191">mixImGui::gui_layout::progress_bar</references>
+        <references refid="d7/d84/a00535_1a35c4e03581120cab90d81083df25b6ca" compoundref="d3/dd5/a00215" startline="220" endline="227">mixImGui::gui_layout::radio_button</references>
+        <references refid="d7/d84/a00535_1a2e38bc4f5a31c6ba9f365878402c6d22" compoundref="d3/dd5/a00215" startline="373" endline="376">mixImGui::gui_layout::seperator</references>
+        <references refid="d2/dd7/a00567_1aed3860d8a06913972b2d52472cc5c40a" compoundref="d9/d39/a00257" startline="125" endline="129">mixImGui::mixGui::show_style_editor</references>
+        <references refid="d7/d84/a00535_1a4d2819c64c001d840692ab25639d465a" compoundref="d3/dd5/a00215" startline="211" endline="218">mixImGui::gui_layout::small_button</references>
+        <references refid="d7/d84/a00535_1a51fa55d14214144f3f877642c54daa67" compoundref="d3/dd5/a00215" startline="49" endline="55">mixImGui::gui_layout::text_label</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d44/a00527_1adbe70fa852c009f30158425dbf6cfb1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::shortcuts_window::on_editor_window_size_changed_impl</definition>
+        <argsstring>(const vec2i &amp;size) override</argsstring>
+        <name>on_editor_window_size_changed_impl</name>
+        <qualifiedname>mix::editor::windows::shortcuts_window::on_editor_window_size_changed_impl</qualifiedname>
+        <reimplements refid="d9/d87/a00551_1aa8e1f6f92a14b1e3aeed006240af3e8d">on_editor_window_size_changed_impl</reimplements>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" line="18" column="22" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.cpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d44/a00527_1ac1927decafc45798564ac42fb84b1776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::editor::windows::shortcuts_window::shortcuts_window</definition>
+        <argsstring>(std::string window_name, mixImGui::window_rect r)</argsstring>
+        <name>shortcuts_window</name>
+        <qualifiedname>mix::editor::windows::shortcuts_window::shortcuts_window</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>window_name</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d2a/a00531" kindref="compound">mixImGui::window_rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" line="20" column="17" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.cpp" bodystart="60" bodyend="68"/>
+        <references refid="d6/d10/a00511_1a3b346a93f0c22edf4e20e4b314afc6e3" compoundref="de/df3/a00185" startline="59" endline="62">mix::mixEditor::get_asset_manager</references>
+        <references refid="dd/d63/a00455_1a0d1454f00502e53010bb99dc02bc8863" compoundref="d4/d3e/a00116" startline="70" endline="73">mix::assetsystem::mixAsset_manager::get_asset_with_full_name</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d44/a00527_1abe3afa9a0a9c2f15844b7e284b299604" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::editor::windows::shortcuts_window::initialize</definition>
+        <argsstring>(const vec2i &amp;size)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::editor::windows::shortcuts_window::initialize</qualifiedname>
+        <param>
+          <type>const <ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" line="19" column="29" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.cpp" bodystart="50" bodyend="58"/>
+        <references refid="d2/dd7/a00567_1a79d97b87e7d22231df25bbe376ec5811" compoundref="dd/dd7/a00260" startline="22" endline="28">mixImGui::mixGui::add_window</references>
+        <referencedby refid="d6/d10/a00511_1a62a0c9ce9f8ca9e31f6b40d3f525f9aa" compoundref="de/df3/a00185" startline="44" endline="57">mix::mixEditor::initialize_gui</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mix::editor::windows::shortcuts_window</label>
+        <link refid="d9/d44/a00527"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::gui_window</label>
+        <link refid="d9/d87/a00551"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mix::editor::windows::shortcuts_window</label>
+        <link refid="d9/d44/a00527"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mixImGui::gui_window</label>
+        <link refid="d9/d87/a00551"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_constraints</edgelabel>
+          <edgelabel>_rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mixImGui::window_rect</label>
+        <link refid="d0/d2a/a00531"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" line="13" column="13" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/editor/windows/shortcuts_window.h" bodystart="14" bodyend="28"/>
+    <listofallmembers>
+      <member refid="d9/d87/a00551_1a97b151a9b07929b2b7838c9ecb956a1a" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_constraints</name></member>
+      <member refid="d9/d87/a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" prot="private" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_flags</name></member>
+      <member refid="d9/d87/a00551_1aa9930bf91b544df53d2d051ae740dc70" prot="private" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_has_constraints</name></member>
+      <member refid="d9/d87/a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_is_open</name></member>
+      <member refid="d9/d87/a00551_1a6e39227f87ebb0c7e5c999207c992f9a" prot="private" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_positioning</name></member>
+      <member refid="d9/d87/a00551_1ae32d327e1e32115c2c0e7823f6e5f522" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_rect</name></member>
+      <member refid="d9/d87/a00551_1af59507c8ebfba3059d0fc01e24e21a8b" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>_window_name</name></member>
+      <member refid="d9/d87/a00551_1a5b26d4ff892ca96966cedacb32a214c3" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>begin</name></member>
+      <member refid="d9/d87/a00551_1a5366aaa00163caca59752b9cc403c327" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>clear_constraints</name></member>
+      <member refid="d9/d87/a00551_1ae853e0907159148f09ba4d89b32407ca" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>disable</name></member>
+      <member refid="d9/d87/a00551_1ae12c27c69d083299efc96b46b43a2f76" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>enable</name></member>
+      <member refid="d9/d87/a00551_1a1ca29859ec280ef652b1a8a129302674" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>end</name></member>
+      <member refid="d9/d87/a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>get_flags</name></member>
+      <member refid="d9/d87/a00551_1adfaef0003b77e0673f57839c6e0ecf79" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>get_position</name></member>
+      <member refid="d9/d87/a00551_1a88d0684664158d82d55b77f1e0694a16" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>get_size</name></member>
+      <member refid="d9/d87/a00551_1a04676eb4cd71204474717447fd483d67" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>gui_window</name></member>
+      <member refid="d9/d44/a00527_1abe3afa9a0a9c2f15844b7e284b299604" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>initialize</name></member>
+      <member refid="d9/d87/a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" prot="public" virt="virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>on_editor_window_size_changed</name></member>
+      <member refid="d9/d44/a00527_1adbe70fa852c009f30158425dbf6cfb1e" prot="public" virt="virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>on_editor_window_size_changed_impl</name></member>
+      <member refid="d9/d87/a00551_1ab37e29b679914218b5913a585ea66905" prot="protected" virt="virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>on_window_resized</name></member>
+      <member refid="d9/d44/a00527_1af97c20a271421ba26420a2ca6211f504" prot="public" virt="virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>render</name></member>
+      <member refid="d9/d87/a00551_1a4d3055b2bda8480b8eaeba1be84c0463" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>rescale</name></member>
+      <member refid="d9/d87/a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>set_contrainsts</name></member>
+      <member refid="d9/d87/a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" prot="protected" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>set_position</name></member>
+      <member refid="d9/d87/a00551_1a370936f91e7c1372384e906dac282be3" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>set_positioning</name></member>
+      <member refid="d9/d87/a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>set_title</name></member>
+      <member refid="d9/d44/a00527_1ac1927decafc45798564ac42fb84b1776" prot="public" virt="non-virtual"><scope>mix::editor::windows::shortcuts_window</scope><name>shortcuts_window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

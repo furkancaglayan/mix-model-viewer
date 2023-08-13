@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/de1/a00233" kind="file" language="C++">
+    <compoundname>gui_window.cpp</compoundname>
+    <includes refid="d7/d40/a00236" local="yes">gui_window.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gui_window.cpp</label>
+        <link refid="d6/de1/a00233"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gui_window.h</label>
+        <link refid="d7/d40/a00236"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../math/vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="11">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="10">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="5">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="9">
+        <label>imgui.h</label>
+      </node>
+      <node id="18">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>stack</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d40/a00236" kindref="compound">gui_window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d9/d87/a00551_1a02427dce58f618cf32c24bb6a0b91bf4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a02427dce58f618cf32c24bb6a0b91bf4" kindref="member">mixImGui::gui_window::render</ref><sp/>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Begin<sp/>(<ref refid="d9/d87/a00551_1af59507c8ebfba3059d0fc01e24e21a8b" kindref="member">_window_name</ref>.c_str<sp/>(),<sp/>&amp;<ref refid="d9/d87/a00551_1aa23bca26ce9ac213f666eeb0fe77ece0" kindref="member">_is_open</ref>,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">ImGuiWindowFlags_</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(<ref refid="d9/d87/a00551_1aacf89d40f9605fdc152cf97b5eda2b5b" kindref="member">_flags</ref>));</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::End<sp/>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d9/d87/a00551_1a04676eb4cd71204474717447fd483d67" refkind="member"><highlight class="normal"><ref refid="d9/d87/a00551_1a04676eb4cd71204474717447fd483d67" kindref="member">mixImGui::gui_window::gui_window</ref><sp/>(std::string<sp/>name,<sp/><ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>rect,<sp/><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">window_flags</ref><sp/>flags)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">:<sp/>_window_name{<sp/>name<sp/>},<sp/>_rect{<sp/>rect<sp/>},<sp/>_flags{<sp/>flags<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d9/d87/a00551_1ae853e0907159148f09ba4d89b32407ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1ae853e0907159148f09ba4d89b32407ca" kindref="member">mixImGui::gui_window::disable</ref><sp/>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_open<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d9/d87/a00551_1ae12c27c69d083299efc96b46b43a2f76" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1ae12c27c69d083299efc96b46b43a2f76" kindref="member">mixImGui::gui_window::enable</ref><sp/>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_open<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d9/d87/a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a1b505d1e1554a9934eb7ee9caa382ac6" kindref="member">mixImGui::gui_window::on_editor_window_size_changed</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>old_size<sp/>=<sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(_rect._w,<sp/>_rect._h);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>on_editor_window_size_changed_impl<sp/>(size);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d9/d87/a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a7b89db7a98d326320a2c55ef1f5a29c6" kindref="member">mixImGui::gui_window::set_title</ref><sp/>(std::string<sp/>s)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>_window_name<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">std::vector&lt;mixImGui::gui_window*&gt;<sp/>mixImGui::gui_window::get_window_binds<sp/>(window_binds<sp/>bind)<sp/>const</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(_window_binds.count(bind))</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>_window_binds.at<sp/>(bind);</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>{};</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment">void<sp/>mixImGui::gui_window::bind_with_window<sp/>(mixImGui::gui_window*<sp/>other,<sp/>window_binds<sp/>bind)</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>auto&amp;<sp/>vec<sp/>=<sp/>_window_binds.at<sp/>(bind);</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>auto&amp;<sp/>vec_other<sp/>=<sp/>other-&gt;_window_binds.at<sp/>(bind);</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>assert<sp/>(!std::count<sp/>(vec.begin<sp/>(),<sp/>vec.end<sp/>(),<sp/>other));</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>assert<sp/>(!std::count<sp/>(vec_other.begin<sp/>(),<sp/>vec_other.end<sp/>(),<sp/>this));</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>vec.push_back<sp/>(other);</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>vec_other.push_back<sp/>(this);</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="d9/d87/a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a5fc355f8d6c4f8bf4b39c0f14e8dc4eb" kindref="member">mixImGui::gui_window::set_contrainsts</ref><sp/>(<ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>constraints)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>_constraints<sp/>=<sp/>constraints;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>_has_constraints<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d9/d87/a00551_1a5366aaa00163caca59752b9cc403c327" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a5366aaa00163caca59752b9cc403c327" kindref="member">mixImGui::gui_window::clear_constraints</ref><sp/>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_has_constraints<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d9/d87/a00551_1a370936f91e7c1372384e906dac282be3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a370936f91e7c1372384e906dac282be3" kindref="member">mixImGui::gui_window::set_positioning</ref><sp/>(<ref refid="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983" kindref="member">window_positioning</ref><sp/>wp)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>_positioning<sp/>=<sp/>wp;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wp<sp/>==<sp/><ref refid="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" kindref="member">window_positioning::flexible</ref>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_flags<sp/>=<sp/>_flags<sp/>&amp;<sp/><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">~window_flags</ref><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe" kindref="member">::NoResize</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="d9/d87/a00551_1a5b26d4ff892ca96966cedacb32a214c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a5b26d4ff892ca96966cedacb32a214c3" kindref="member">mixImGui::gui_window::begin</ref><sp/>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_has_constraints)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImGui::SetNextWindowSizeConstraints<sp/>(ImVec2<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_constraints._x),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_constraints._y)),</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ImVec2<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_constraints._w),</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_constraints._h)));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_positioning<sp/>==<sp/><ref refid="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983acec315e3d0975e5cc2811d5d8725f149" kindref="member">window_positioning::fixed</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_flags<sp/>=<sp/>_flags<sp/>|<sp/><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8a137e49a657a5118d46b56f613fb52afe" kindref="member">window_flags::NoResize</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetNextWindowSize<sp/>(ImVec2<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_rect._w),<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_rect._h)));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::SetNextWindowPos<sp/>(ImVec2<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_rect._x),<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_rect._y)));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::Begin<sp/>(_window_name.c_str<sp/>(),<sp/>&amp;_is_open,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">ImGuiWindowFlags_</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_flags));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>ImGui::GetWindowSize<sp/>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_positioning<sp/>==<sp/><ref refid="d7/ddb/a00361_1a3dd4dcfdeb411ccbaf2e49d45463f983a03fb2efb70782177b821b6e4c8ba4f79" kindref="member">window_positioning::flexible</ref><sp/>&amp;&amp;<sp/>(_rect._w<sp/>!=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(size.x)<sp/>||</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rect._h<sp/>!=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(size.y)))</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_window_resized<sp/>(<ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(_rect._w,<sp/>_rect._h),<sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(size.x,<sp/>size.y));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a7bbeac07b6e9df0c8d3f646c14b28e19" kindref="member">gui_layout::begin_vertical</ref><sp/>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d9/d87/a00551_1a1ca29859ec280ef652b1a8a129302674" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a1ca29859ec280ef652b1a8a129302674" kindref="member">mixImGui::gui_window::end</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="109"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/a00535_1a724cab724f67db7089561715ca6163b8" kindref="member">gui_layout::end_vertical</ref><sp/>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>ImGui::End<sp/>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d9/d87/a00551_1a4d3055b2bda8480b8eaeba1be84c0463" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a4d3055b2bda8480b8eaeba1be84c0463" kindref="member">mixImGui::gui_window::rescale</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>_rect._w<sp/>=<sp/>size.x;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>_rect._h<sp/>=<sp/>size.y;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="d9/d87/a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1a09f6118e289882b1e8f14ea9cd7f1f8e" kindref="member">mixImGui::gui_window::set_position</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>pos)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>_rect._x<sp/>=<sp/>pos.x;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>_rect._y<sp/>=<sp/>pos.y;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="d9/d87/a00551_1adfaef0003b77e0673f57839c6e0ecf79" refkind="member"><highlight class="normal"><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="d9/d87/a00551_1adfaef0003b77e0673f57839c6e0ecf79" kindref="member">mixImGui::gui_window::get_position</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="127"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(_rect._x,<sp/>_rect._y);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="d9/d87/a00551_1a88d0684664158d82d55b77f1e0694a16" refkind="member"><highlight class="normal"><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/><ref refid="d9/d87/a00551_1a88d0684664158d82d55b77f1e0694a16" kindref="member">mixImGui::gui_window::get_size</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="132"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref><sp/>(_rect._w,<sp/>_rect._h);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="d9/d87/a00551_1ab37e29b679914218b5913a585ea66905" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d87/a00551_1ab37e29b679914218b5913a585ea66905" kindref="member">mixImGui::gui_window::on_window_resized</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>old_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d7b/a00296_1a32111780993aa0f01182edf32f03aad7" kindref="member">vec2i</ref>&amp;<sp/>new_size)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>rescale<sp/>(new_size);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="d9/d87/a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" refkind="member"><highlight class="normal"><ref refid="d7/ddb/a00361_1ad6d1e05330dd8d9a824a0eb09d8d6df8" kindref="member">mixImGui::window_flags</ref><sp/><ref refid="d9/d87/a00551_1a9a4855bdb6fd65f7a857b0f03b36229c" kindref="member">mixImGui::gui_window::get_flags</ref><sp/>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="142"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_flags;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_window.cpp"/>
+  </compounddef>
+</doxygen>

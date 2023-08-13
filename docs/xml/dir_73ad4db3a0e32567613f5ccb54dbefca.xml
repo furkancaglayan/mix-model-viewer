@@ -2,18 +2,18 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_73ad4db3a0e32567613f5ccb54dbefca" kind="dir">
     <compoundname>loaders</compoundname>
-    <innerfile refid="a00077">mixAsset_loader_base.cpp</innerfile>
-    <innerfile refid="a00080">mixAsset_loader_base.h</innerfile>
-    <innerfile refid="a00083">mixAsset_loader_font.cpp</innerfile>
-    <innerfile refid="a00086">mixAsset_loader_font.h</innerfile>
-    <innerfile refid="a00089">mixAsset_loader_mesh.cpp</innerfile>
-    <innerfile refid="a00092">mixAsset_loader_mesh.h</innerfile>
-    <innerfile refid="a00095">mixAsset_loader_shader.cpp</innerfile>
-    <innerfile refid="a00098">mixAsset_loader_shader.h</innerfile>
-    <innerfile refid="a00101">mixAsset_loader_text.cpp</innerfile>
-    <innerfile refid="a00104">mixAsset_loader_text.h</innerfile>
-    <innerfile refid="a00107">mixAsset_loader_texture.cpp</innerfile>
-    <innerfile refid="a00110">mixAsset_loader_texture.h</innerfile>
+    <innerfile refid="d1/d09/a00077">mixAsset_loader_base.cpp</innerfile>
+    <innerfile refid="da/dec/a00080">mixAsset_loader_base.h</innerfile>
+    <innerfile refid="d2/d1f/a00083">mixAsset_loader_font.cpp</innerfile>
+    <innerfile refid="da/d2a/a00086">mixAsset_loader_font.h</innerfile>
+    <innerfile refid="db/dab/a00089">mixAsset_loader_mesh.cpp</innerfile>
+    <innerfile refid="d1/dc1/a00092">mixAsset_loader_mesh.h</innerfile>
+    <innerfile refid="d9/d77/a00095">mixAsset_loader_shader.cpp</innerfile>
+    <innerfile refid="d1/d44/a00098">mixAsset_loader_shader.h</innerfile>
+    <innerfile refid="d4/d3a/a00101">mixAsset_loader_text.cpp</innerfile>
+    <innerfile refid="d0/dc2/a00104">mixAsset_loader_text.h</innerfile>
+    <innerfile refid="df/d98/a00107">mixAsset_loader_texture.cpp</innerfile>
+    <innerfile refid="d4/d81/a00110">mixAsset_loader_texture.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

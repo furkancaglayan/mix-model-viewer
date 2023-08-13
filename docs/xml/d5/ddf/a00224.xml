@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/ddf/a00224" kind="file" language="C++">
+    <compoundname>gui_selectable_layout.h</compoundname>
+    <includes refid="dc/d9a/a00218" local="yes">gui_layout.h</includes>
+    <includedby refid="d3/dd5/a00215" local="yes">gui_layout.cpp</includedby>
+    <includedby refid="dd/d52/a00221" local="yes">gui_selectable_layout.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gui_layout.h</label>
+        <link refid="dc/d9a/a00218"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gui_selectable_layout.h</label>
+        <link refid="d5/ddf/a00224"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>i_guielement.h</label>
+        <link refid="dd/dd7/a00248"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../math/color.h</label>
+        <link refid="d6/d7f/a00287"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vec.h</label>
+        <link refid="db/d7b/a00296"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="7">
+        <label>backends/imgui_impl_glfw.h</label>
+      </node>
+      <node id="6">
+        <label>backends/imgui_impl_opengl3.h</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="15">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="16">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="5">
+        <label>imgui.h</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>stack</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>gui_layout.cpp</label>
+        <link refid="d3/dd5/a00215"/>
+      </node>
+      <node id="3">
+        <label>gui_selectable_layout.cpp</label>
+        <link refid="dd/d52/a00221"/>
+      </node>
+      <node id="1">
+        <label>gui_selectable_layout.h</label>
+        <link refid="d5/ddf/a00224"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d87/a00539" prot="public">mixImGui::gui_selectable_layout</innerclass>
+    <innernamespace refid="d7/ddb/a00361">mixImGui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d9a/a00218" kindref="compound">gui_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/ddb/a00361" kindref="compound">mixImGui</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="d3/d87/a00539" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d87/a00539" kindref="compound">gui_selectable_layout</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/d84/a00535" kindref="compound">gui_layout</ref><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d87/a00539" kindref="compound">gui_selectable_layout</ref><sp/>(<ref refid="d7/ddb/a00361_1aeda92a9270888f95bcd4fb52d34cb597" kindref="member">mixImGui::layout_type</ref><sp/>new_layout,<sp/><ref refid="d0/d2a/a00531" kindref="compound">window_rect</ref><sp/>r);</highlight></codeline>
+<codeline lineno="9" refid="d3/d87/a00539_1a83ac02b9230f2e7130a3d725ffe867a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d50/a00559" kindref="compound">i_guielement</ref>*<sp/><ref refid="d3/d87/a00539_1a83ac02b9230f2e7130a3d725ffe867a8" kindref="member">_selected</ref>;</highlight></codeline>
+<codeline lineno="10" refid="d3/d87/a00539_1a7f935a4ff5a3f79a784b1a41ece5ebfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;i_guielement*&gt;<sp/><ref refid="d3/d87/a00539_1a7f935a4ff5a3f79a784b1a41ece5ebfa" kindref="member">_selectables</ref>;</highlight></codeline>
+<codeline lineno="11" refid="d3/d87/a00539_1a8bf6b4748ca6a5d08038a6e93f80907d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d87/a00539_1a8bf6b4748ca6a5d08038a6e93f80907d" kindref="member">_last_selectable_index</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mixImGui</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/gui/gui_selectable_layout.h"/>
+  </compounddef>
+</doxygen>

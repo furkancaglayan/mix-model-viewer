@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/d3a/a00571" kind="class" language="C++" prot="public">
+    <compoundname>mix::library::debug</compoundname>
+    <includes refid="d5/d35/a00266" local="no">debug.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="df/d3a/a00571_1a251dd5b8ab1182a531c2fb6b8f49e3b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_failed_assert</definition>
+        <argsstring>()</argsstring>
+        <name>_failed_assert</name>
+        <qualifiedname>mix::library::debug::_failed_assert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="29" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="5" bodyend="8"/>
+        <references refid="df/d3a/a00571_1ac641217828515454ab1693854b0831f8" compoundref="df/da9/a00263" startline="20" endline="26">_assert</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a72472b6a941cfb97db38d0d1a311972e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_failed_assert</definition>
+        <argsstring>(const char *msg)</argsstring>
+        <name>_failed_assert</name>
+        <qualifiedname>mix::library::debug::_failed_assert</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="30" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a88a364985f43ce1c29471e4aa288aae7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_failed_assert</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>_failed_assert</name>
+        <qualifiedname>mix::library::debug::_failed_assert</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="31" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1ac641217828515454ab1693854b0831f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_assert</definition>
+        <argsstring>(bool cond)</argsstring>
+        <name>_assert</name>
+        <qualifiedname>mix::library::debug::_assert</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="32" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="20" bodyend="26"/>
+        <referencedby refid="df/d3a/a00571_1a251dd5b8ab1182a531c2fb6b8f49e3b6" compoundref="df/da9/a00263" startline="5" endline="8">_failed_assert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a5a7eb51a765e85a688a90fd9a3bc1f78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_assert</definition>
+        <argsstring>(bool cond, const char *msg)</argsstring>
+        <name>_assert</name>
+        <qualifiedname>mix::library::debug::_assert</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="33" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="28" bodyend="35"/>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aacb5e100e5a9a3e7f6d1fd97512215282">mix::library::error</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a01a9918c4d0f69d86e62777426767034" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_break</definition>
+        <argsstring>()</argsstring>
+        <name>_break</name>
+        <qualifiedname>mix::library::debug::_break</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="34" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a6836286071815d4bec409d432038deae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_break</definition>
+        <argsstring>(const char *msg)</argsstring>
+        <name>_break</name>
+        <qualifiedname>mix::library::debug::_break</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="35" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="44" bodyend="48"/>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aacb5e100e5a9a3e7f6d1fd97512215282">mix::library::error</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a583203c3d3c29700b2a2d28c4cf16c59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_log</definition>
+        <argsstring>(const char *msg, debug_level level=debug_level::log)</argsstring>
+        <name>_log</name>
+        <qualifiedname>mix::library::debug::_log</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680a" kindref="member">debug_level</ref></type>
+          <declname>level</declname>
+          <defval><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aadc1d71bbb5c4d2a5e936db79ef10c19f" kindref="member">debug_level::log</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="36" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="50" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a5cc06c16bb5cc912894276001e4f8a85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_log</definition>
+        <argsstring>(std::string msg, debug_level level=debug_level::log)</argsstring>
+        <name>_log</name>
+        <qualifiedname>mix::library::debug::_log</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680a" kindref="member">debug_level</ref></type>
+          <declname>level</declname>
+          <defval><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aadc1d71bbb5c4d2a5e936db79ef10c19f" kindref="member">debug_level::log</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="37" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a37d7929a990747a02e1aeb726c4eadba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_log</definition>
+        <argsstring>(const unsigned char *msg, debug_level level=debug_level::log)</argsstring>
+        <name>_log</name>
+        <qualifiedname>mix::library::debug::_log</qualifiedname>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680a" kindref="member">debug_level</ref></type>
+          <declname>level</declname>
+          <defval><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aadc1d71bbb5c4d2a5e936db79ef10c19f" kindref="member">debug_level::log</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="38" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a26dc4f1d35927cc563ff93f8850bf62e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_info</definition>
+        <argsstring>(const char *msg)</argsstring>
+        <name>_info</name>
+        <qualifiedname>mix::library::debug::_info</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="39" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="73" bodyend="76"/>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aacaf9b6b99962bf5c2264824231d7a40c">mix::library::info</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a87b63b3dbdb927496887a3cf8ba86d13" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::_show_warning</definition>
+        <argsstring>()</argsstring>
+        <name>_show_warning</name>
+        <qualifiedname>mix::library::debug::_show_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="40" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3a/a00571_1a7288225dacc072cd19da98bcc5f920bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mix::library::debug::initialize</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>mix::library::debug::initialize</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="41" column="25" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d3a/a00571_1adc9a4d1e4890ec025e744e99c8a9ca07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mix::library::debug::debug</definition>
+        <argsstring>()=delete</argsstring>
+        <name>debug</name>
+        <qualifiedname>mix::library::debug::debug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="43" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="df/d3a/a00571_1a055b9ad4a054bb84acbfb73deec15dc7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mix::library::debug::get_level_string</definition>
+        <argsstring>(debug_level level)</argsstring>
+        <name>get_level_string</name>
+        <qualifiedname>mix::library::debug::get_level_string</qualifiedname>
+        <param>
+          <type><ref refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680a" kindref="member">debug_level</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="47" column="32" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.cpp" bodystart="86" bodyend="98"/>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aacb5e100e5a9a3e7f6d1fd97512215282">mix::library::error</references>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aacaf9b6b99962bf5c2264824231d7a40c">mix::library::info</references>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aadc1d71bbb5c4d2a5e936db79ef10c19f">mix::library::log</references>
+        <references refid="de/dd7/a00362_1ae7f932e3cfe4f0f79970eee58941680aa7b83d3f08fa392b79e3f553b585971cd">mix::library::warning</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" line="25" column="9" bodyfile="C:/Users/furka/Desktop/Develop/mix-model-viewer/src/library/debug.h" bodystart="26" bodyend="48"/>
+    <listofallmembers>
+      <member refid="df/d3a/a00571_1ac641217828515454ab1693854b0831f8" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_assert</name></member>
+      <member refid="df/d3a/a00571_1a5a7eb51a765e85a688a90fd9a3bc1f78" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_assert</name></member>
+      <member refid="df/d3a/a00571_1a01a9918c4d0f69d86e62777426767034" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_break</name></member>
+      <member refid="df/d3a/a00571_1a6836286071815d4bec409d432038deae" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_break</name></member>
+      <member refid="df/d3a/a00571_1a251dd5b8ab1182a531c2fb6b8f49e3b6" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_failed_assert</name></member>
+      <member refid="df/d3a/a00571_1a72472b6a941cfb97db38d0d1a311972e" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_failed_assert</name></member>
+      <member refid="df/d3a/a00571_1a88a364985f43ce1c29471e4aa288aae7" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_failed_assert</name></member>
+      <member refid="df/d3a/a00571_1a26dc4f1d35927cc563ff93f8850bf62e" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_info</name></member>
+      <member refid="df/d3a/a00571_1a583203c3d3c29700b2a2d28c4cf16c59" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_log</name></member>
+      <member refid="df/d3a/a00571_1a5cc06c16bb5cc912894276001e4f8a85" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_log</name></member>
+      <member refid="df/d3a/a00571_1a37d7929a990747a02e1aeb726c4eadba" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_log</name></member>
+      <member refid="df/d3a/a00571_1a87b63b3dbdb927496887a3cf8ba86d13" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>_show_warning</name></member>
+      <member refid="df/d3a/a00571_1adc9a4d1e4890ec025e744e99c8a9ca07" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>debug</name></member>
+      <member refid="df/d3a/a00571_1a055b9ad4a054bb84acbfb73deec15dc7" prot="private" virt="non-virtual"><scope>mix::library::debug</scope><name>get_level_string</name></member>
+      <member refid="df/d3a/a00571_1a7288225dacc072cd19da98bcc5f920bf" prot="public" virt="non-virtual"><scope>mix::library::debug</scope><name>initialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
